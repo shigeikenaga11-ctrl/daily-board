@@ -2432,16 +2432,21 @@ function japaneseStocksChartPage(data) {
     );
 
 
+  /*
+    棒の最大高さを88%にして、
+    上側に金額表示の余裕を残す
+  */
+
   const purchaseHeight =
     purchaseTotal /
     maxTotal *
-    100;
+    88;
 
 
   const currentHeight =
     currentTotal /
     maxTotal *
-    100;
+    88;
 
 
   const gain =
@@ -2459,13 +2464,13 @@ function japaneseStocksChartPage(data) {
 
   function stackHTML(
     values,
-    total,
-    overallHeight
+    total
   ) {
 
     if (!total) {
       return "";
     }
+
 
     return values
       .map(
@@ -2475,6 +2480,7 @@ function japaneseStocksChartPage(data) {
             value /
             total *
             100;
+
 
           return `
 
@@ -2490,10 +2496,21 @@ function japaneseStocksChartPage(data) {
             ></div>
 
           `;
+
         }
       )
       .join("");
   }
+
+
+  /*
+    compare-chart の高さは430px。
+    bar-area が290pxなので、
+    棒の上端位置から線の角度を計算する。
+
+    実際の線位置は描画後に
+    connectBars() でDOMから正確に取得する。
+  */
 
 
   return `
@@ -2504,6 +2521,7 @@ function japaneseStocksChartPage(data) {
         JAPANESE STOCKS PERFORMANCE
       </div>
 
+
       <h1 class="title">
         日本株式｜取得時 → 現在
       </h1>
@@ -2511,10 +2529,14 @@ function japaneseStocksChartPage(data) {
 
       <div class="chart-card">
 
+
         <div class="stock-chart-layout">
 
 
-          <div class="compare-chart">
+          <div
+            class="compare-chart"
+            id="stockCompareChart"
+          >
 
 
             <div class="bar-column">
@@ -2523,9 +2545,11 @@ function japaneseStocksChartPage(data) {
                 ${yen(purchaseTotal)}
               </div>
 
+
               <div class="bar-area">
 
                 <div
+                  id="stockPurchaseBar"
                   class="stock-stack"
                   style="
                     height:
@@ -2536,8 +2560,7 @@ function japaneseStocksChartPage(data) {
                   ${
                     stackHTML(
                       purchaseValues,
-                      purchaseTotal,
-                      purchaseHeight
+                      purchaseTotal
                     )
                   }
 
@@ -2545,11 +2568,13 @@ function japaneseStocksChartPage(data) {
 
               </div>
 
+
               <div class="bar-label">
                 取得時
               </div>
 
             </div>
+
 
 
             <div class="bar-column">
@@ -2560,12 +2585,16 @@ function japaneseStocksChartPage(data) {
                   ${directionClass(gain)}
                 "
               >
+
                 ${yen(currentTotal)}
+
               </div>
+
 
               <div class="bar-area">
 
                 <div
+                  id="stockCurrentBar"
                   class="stock-stack"
                   style="
                     height:
@@ -2576,8 +2605,7 @@ function japaneseStocksChartPage(data) {
                   ${
                     stackHTML(
                       currentValues,
-                      currentTotal,
-                      currentHeight
+                      currentTotal
                     )
                   }
 
@@ -2585,11 +2613,21 @@ function japaneseStocksChartPage(data) {
 
               </div>
 
+
               <div class="bar-label">
                 現在
               </div>
 
             </div>
+
+
+            <div
+              id="stockConnector"
+              class="
+                bar-connector
+                ${directionClass(gain)}
+              "
+            ></div>
 
 
           </div>
@@ -2611,6 +2649,7 @@ function japaneseStocksChartPage(data) {
                     current -
                     purchase;
 
+
                   return `
 
                     <div class="stock-legend-row">
@@ -2622,27 +2661,24 @@ function japaneseStocksChartPage(data) {
                         "
                       ></span>
 
+
                       <span class="stock-legend-name">
                         ${stock.name}
                       </span>
 
-                      <span>
 
-                        <strong>
-                          ${yen(current)}
-                        </strong>
+                      <span
+                        class="
+                          stock-legend-value
+                          ${directionClass(stockGain)}
+                        "
+                      >
 
-                        <br>
+                        ${yen(current)}
 
-                        <span
-                          class="
-                            ${directionClass(stockGain)}
-                          "
-                        >
+                        &nbsp;
 
-                          ${signedYen(stockGain)}
-
-                        </span>
+                        ${signedYen(stockGain)}
 
                       </span>
 
@@ -2666,6 +2702,7 @@ function japaneseStocksChartPage(data) {
             日本株全体
           </span>
 
+
           <span
             class="
               chart-gain
@@ -2683,6 +2720,7 @@ function japaneseStocksChartPage(data) {
 
         </div>
 
+
       </div>
 
     </div>
@@ -2690,6 +2728,108 @@ function japaneseStocksChartPage(data) {
   `;
 }
 
+  function connectBars(
+  chartId,
+  leftBarId,
+  rightBarId,
+  lineId
+) {
+
+  const chart =
+    document.getElementById(chartId);
+
+  const leftBar =
+    document.getElementById(leftBarId);
+
+  const rightBar =
+    document.getElementById(rightBarId);
+
+  const line =
+    document.getElementById(lineId);
+
+
+  if (
+    !chart ||
+    !leftBar ||
+    !rightBar ||
+    !line
+  ) {
+    return;
+  }
+
+
+  const chartRect =
+    chart.getBoundingClientRect();
+
+  const leftRect =
+    leftBar.getBoundingClientRect();
+
+  const rightRect =
+    rightBar.getBoundingClientRect();
+
+
+  /*
+    左の棒の右上端
+  */
+
+  const x1 =
+    leftRect.right -
+    chartRect.left;
+
+  const y1 =
+    leftRect.top -
+    chartRect.top;
+
+
+  /*
+    右の棒の左上端
+  */
+
+  const x2 =
+    rightRect.left -
+    chartRect.left;
+
+  const y2 =
+    rightRect.top -
+    chartRect.top;
+
+
+  const dx =
+    x2 - x1;
+
+  const dy =
+    y2 - y1;
+
+
+  const length =
+    Math.sqrt(
+      dx * dx +
+      dy * dy
+    );
+
+
+  const angle =
+    Math.atan2(
+      dy,
+      dx
+    ) *
+    180 /
+    Math.PI;
+
+
+  line.style.left =
+    x1 + "px";
+
+  line.style.top =
+    y1 + "px";
+
+  line.style.width =
+    length + "px";
+
+  line.style.transform =
+    `rotate(${angle}deg)`;
+}
+  
 
 /* =========================
    5ページ
@@ -2735,6 +2875,25 @@ function renderPage(index) {
     pages[
       index % pages.length
     ];
+
+
+  /*
+    DOM描画後に
+    日本株の棒の上端を接続
+  */
+
+  requestAnimationFrame(
+    () => {
+
+      connectBars(
+        "stockCompareChart",
+        "stockPurchaseBar",
+        "stockCurrentBar",
+        "stockConnector"
+      );
+
+    }
+  );
 }
 
 
