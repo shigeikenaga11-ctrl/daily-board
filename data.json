@@ -1,19 +1,288 @@
 {
-  "updated_at": "2026/10/07 15:39",
+  "updated_at": "2026/10/07 16:08",
   "weather": {
     "text": "晴れ",
-    "max": 18.2,
-    "min": 7.9,
+    "max": 18.3,
+    "min": 8.9,
     "rain": 0
   },
   "assets": [
     {
       "name": "第一三共",
+      "ticker": "4568.T",
       "qtyLabel": "20株",
-      "price": 2715.5,
-      "value": 54310.0,
-      "change": -1.326308139534882,
-      "history": [
+      "price": 2702.5,
+      "value": 54050.0,
+      "change": -1.798691860465118,
+      "weekChange": -2.9448734063566184,
+      "monthChange": -1.206360811551821,
+      "intraday": [
+        {
+          "label": "09:05",
+          "value": 2745.0
+        },
+        {
+          "label": "09:10",
+          "value": 2729.0
+        },
+        {
+          "label": "09:15",
+          "value": 2725.0
+        },
+        {
+          "label": "09:20",
+          "value": 2721.0
+        },
+        {
+          "label": "09:25",
+          "value": 2723.0
+        },
+        {
+          "label": "09:30",
+          "value": 2730.5
+        },
+        {
+          "label": "09:35",
+          "value": 2731.0
+        },
+        {
+          "label": "09:40",
+          "value": 2730.0
+        },
+        {
+          "label": "09:45",
+          "value": 2731.0
+        },
+        {
+          "label": "09:50",
+          "value": 2728.0
+        },
+        {
+          "label": "09:55",
+          "value": 2729.0
+        },
+        {
+          "label": "10:00",
+          "value": 2728.0
+        },
+        {
+          "label": "10:05",
+          "value": 2727.0
+        },
+        {
+          "label": "10:10",
+          "value": 2724.0
+        },
+        {
+          "label": "10:15",
+          "value": 2723.5
+        },
+        {
+          "label": "10:20",
+          "value": 2724.0
+        },
+        {
+          "label": "10:25",
+          "value": 2723.5
+        },
+        {
+          "label": "10:30",
+          "value": 2720.5
+        },
+        {
+          "label": "10:35",
+          "value": 2723.0
+        },
+        {
+          "label": "10:40",
+          "value": 2719.5
+        },
+        {
+          "label": "10:45",
+          "value": 2721.0
+        },
+        {
+          "label": "10:50",
+          "value": 2720.5
+        },
+        {
+          "label": "10:55",
+          "value": 2717.5
+        },
+        {
+          "label": "11:00",
+          "value": 2721.0
+        },
+        {
+          "label": "11:05",
+          "value": 2720.0
+        },
+        {
+          "label": "11:10",
+          "value": 2717.0
+        },
+        {
+          "label": "11:15",
+          "value": 2718.5
+        },
+        {
+          "label": "11:20",
+          "value": 2718.0
+        },
+        {
+          "label": "11:25",
+          "value": 2717.0
+        },
+        {
+          "label": "11:30",
+          "value": 2718.0
+        },
+        {
+          "label": "12:30",
+          "value": 2721.0
+        },
+        {
+          "label": "12:35",
+          "value": 2721.5
+        },
+        {
+          "label": "12:40",
+          "value": 2722.5
+        },
+        {
+          "label": "12:45",
+          "value": 2721.0
+        },
+        {
+          "label": "12:50",
+          "value": 2719.5
+        },
+        {
+          "label": "12:55",
+          "value": 2722.0
+        },
+        {
+          "label": "13:00",
+          "value": 2721.0
+        },
+        {
+          "label": "13:05",
+          "value": 2721.5
+        },
+        {
+          "label": "13:10",
+          "value": 2722.0
+        },
+        {
+          "label": "13:15",
+          "value": 2721.0
+        },
+        {
+          "label": "13:20",
+          "value": 2720.0
+        },
+        {
+          "label": "13:25",
+          "value": 2719.5
+        },
+        {
+          "label": "13:30",
+          "value": 2719.5
+        },
+        {
+          "label": "13:35",
+          "value": 2720.5
+        },
+        {
+          "label": "13:40",
+          "value": 2722.5
+        },
+        {
+          "label": "13:45",
+          "value": 2722.5
+        },
+        {
+          "label": "13:50",
+          "value": 2720.5
+        },
+        {
+          "label": "13:55",
+          "value": 2719.0
+        },
+        {
+          "label": "14:00",
+          "value": 2720.0
+        },
+        {
+          "label": "14:05",
+          "value": 2720.0
+        },
+        {
+          "label": "14:10",
+          "value": 2716.5
+        },
+        {
+          "label": "14:15",
+          "value": 2718.5
+        },
+        {
+          "label": "14:20",
+          "value": 2718.5
+        },
+        {
+          "label": "14:25",
+          "value": 2718.0
+        },
+        {
+          "label": "14:30",
+          "value": 2718.0
+        },
+        {
+          "label": "14:35",
+          "value": 2720.0
+        },
+        {
+          "label": "14:40",
+          "value": 2720.0
+        },
+        {
+          "label": "14:45",
+          "value": 2719.5
+        },
+        {
+          "label": "14:50",
+          "value": 2719.0
+        },
+        {
+          "label": "14:55",
+          "value": 2718.0
+        },
+        {
+          "label": "15:00",
+          "value": 2715.5
+        },
+        {
+          "label": "15:05",
+          "value": 2715.5
+        },
+        {
+          "label": "15:10",
+          "value": 2717.5
+        },
+        {
+          "label": "15:15",
+          "value": 2715.5
+        },
+        {
+          "label": "15:20",
+          "value": 2716.0
+        },
+        {
+          "label": "15:30",
+          "value": 2702.5
+        }
+      ],
+      "week": [
         {
           "label": "09/29",
           "value": 2784.5
@@ -40,17 +309,392 @@
         },
         {
           "label": "10/07",
-          "value": 2715.5
+          "value": 2702.5
+        }
+      ],
+      "month": [
+        {
+          "label": "09/07",
+          "value": 2735.5
+        },
+        {
+          "label": "09/08",
+          "value": 2751.0
+        },
+        {
+          "label": "09/09",
+          "value": 2710.5
+        },
+        {
+          "label": "09/10",
+          "value": 2709.0
+        },
+        {
+          "label": "09/11",
+          "value": 2772.0
+        },
+        {
+          "label": "09/14",
+          "value": 2845.5
+        },
+        {
+          "label": "09/15",
+          "value": 2836.5
+        },
+        {
+          "label": "09/16",
+          "value": 2839.0
+        },
+        {
+          "label": "09/17",
+          "value": 2933.0
+        },
+        {
+          "label": "09/18",
+          "value": 2953.5
+        },
+        {
+          "label": "09/24",
+          "value": 2880.0
+        },
+        {
+          "label": "09/25",
+          "value": 2929.0
+        },
+        {
+          "label": "09/28",
+          "value": 2830.0
+        },
+        {
+          "label": "09/29",
+          "value": 2784.5
+        },
+        {
+          "label": "09/30",
+          "value": 2800.0
+        },
+        {
+          "label": "10/01",
+          "value": 2740.5
+        },
+        {
+          "label": "10/02",
+          "value": 2709.0
+        },
+        {
+          "label": "10/05",
+          "value": 2716.0
+        },
+        {
+          "label": "10/06",
+          "value": 2752.0
+        },
+        {
+          "label": "10/07",
+          "value": 2702.5
+        }
+      ],
+      "news": [
+        {
+          "title": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説",
+          "description": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zLVI2U0Z5bnhzaGQ3cUtWbHVocDh6RVl6VzBvSUV0YkgxZWZRSUhiWDJ3aS1HQUNiWmQzdmtIUkZQdFFiTG5aNmF5OGxray1kR1Fya1lEWDNDNWhiRGJ3?oc=5"
+        },
+        {
+          "title": "決算:第一三共、1160億円の社債発行 運転資金に充当",
+          "description": "決算:第一三共、1160億円の社債発行 運転資金に充当 日本経済新聞",
+          "source": "日本経済新聞",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zZ1Z2YzhhLVU5M3o4SDhkXzJ1c0RXZ1Q1WVQ1c3lYcktIN201M0RoSmhGNjU1QlhNUlpRVUd4MW9hNEJWRG90MzNBaFJkWlhUNEZmR2VKYmFnMURzRTZqYlVVeVV0MFQyNFVjdw?oc=5"
+        },
+        {
+          "title": "第一三共は軟調、肺がん治療薬の米国での迅速承認申請を取り下げ",
+          "description": "第一三共は軟調、肺がん治療薬の米国での迅速承認申請を取り下げ 株探",
+          "source": "株探",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GLXBIQlRSaFFxSXNwU3VubVI2SkdiOVNiRml4MnFkbmRtZjl4V3c1QXgwU2tUc3hWdFNiek1GYTQzcGFyUGdPcktHZGljSWtNT3JBWlVSRWQxRlBIVE1tSA?oc=5"
         }
       ]
     },
     {
       "name": "任天堂",
+      "ticker": "7974.T",
       "qtyLabel": "10株",
-      "price": 7772.0,
-      "value": 77720.0,
-      "change": -0.55022392834293,
-      "history": [
+      "price": 7775.0,
+      "value": 77750.0,
+      "change": -0.5118362124120313,
+      "weekChange": -1.532421479229995,
+      "monthChange": -11.142857142857142,
+      "intraday": [
+        {
+          "label": "09:00",
+          "value": 7893.0
+        },
+        {
+          "label": "09:05",
+          "value": 7851.0
+        },
+        {
+          "label": "09:10",
+          "value": 7801.0
+        },
+        {
+          "label": "09:15",
+          "value": 7805.0
+        },
+        {
+          "label": "09:20",
+          "value": 7774.0
+        },
+        {
+          "label": "09:25",
+          "value": 7773.0
+        },
+        {
+          "label": "09:30",
+          "value": 7777.0
+        },
+        {
+          "label": "09:35",
+          "value": 7783.0
+        },
+        {
+          "label": "09:40",
+          "value": 7779.0
+        },
+        {
+          "label": "09:45",
+          "value": 7806.0
+        },
+        {
+          "label": "09:50",
+          "value": 7800.0
+        },
+        {
+          "label": "09:55",
+          "value": 7809.0
+        },
+        {
+          "label": "10:00",
+          "value": 7783.0
+        },
+        {
+          "label": "10:05",
+          "value": 7771.0
+        },
+        {
+          "label": "10:10",
+          "value": 7786.0
+        },
+        {
+          "label": "10:15",
+          "value": 7799.0
+        },
+        {
+          "label": "10:20",
+          "value": 7792.0
+        },
+        {
+          "label": "10:25",
+          "value": 7800.0
+        },
+        {
+          "label": "10:30",
+          "value": 7793.0
+        },
+        {
+          "label": "10:35",
+          "value": 7790.0
+        },
+        {
+          "label": "10:40",
+          "value": 7788.0
+        },
+        {
+          "label": "10:45",
+          "value": 7791.0
+        },
+        {
+          "label": "10:50",
+          "value": 7799.0
+        },
+        {
+          "label": "10:55",
+          "value": 7799.0
+        },
+        {
+          "label": "11:00",
+          "value": 7809.0
+        },
+        {
+          "label": "11:05",
+          "value": 7806.0
+        },
+        {
+          "label": "11:10",
+          "value": 7797.0
+        },
+        {
+          "label": "11:15",
+          "value": 7795.0
+        },
+        {
+          "label": "11:20",
+          "value": 7795.0
+        },
+        {
+          "label": "11:25",
+          "value": 7797.0
+        },
+        {
+          "label": "11:30",
+          "value": 7795.0
+        },
+        {
+          "label": "12:30",
+          "value": 7792.0
+        },
+        {
+          "label": "12:35",
+          "value": 7791.0
+        },
+        {
+          "label": "12:40",
+          "value": 7793.0
+        },
+        {
+          "label": "12:45",
+          "value": 7788.0
+        },
+        {
+          "label": "12:50",
+          "value": 7785.0
+        },
+        {
+          "label": "12:55",
+          "value": 7771.0
+        },
+        {
+          "label": "13:00",
+          "value": 7773.0
+        },
+        {
+          "label": "13:05",
+          "value": 7789.0
+        },
+        {
+          "label": "13:10",
+          "value": 7792.0
+        },
+        {
+          "label": "13:15",
+          "value": 7793.0
+        },
+        {
+          "label": "13:20",
+          "value": 7790.0
+        },
+        {
+          "label": "13:25",
+          "value": 7787.0
+        },
+        {
+          "label": "13:30",
+          "value": 7782.0
+        },
+        {
+          "label": "13:35",
+          "value": 7779.0
+        },
+        {
+          "label": "13:40",
+          "value": 7783.0
+        },
+        {
+          "label": "13:45",
+          "value": 7785.0
+        },
+        {
+          "label": "13:50",
+          "value": 7777.0
+        },
+        {
+          "label": "13:55",
+          "value": 7764.0
+        },
+        {
+          "label": "14:00",
+          "value": 7762.0
+        },
+        {
+          "label": "14:05",
+          "value": 7758.0
+        },
+        {
+          "label": "14:10",
+          "value": 7763.0
+        },
+        {
+          "label": "14:15",
+          "value": 7765.0
+        },
+        {
+          "label": "14:20",
+          "value": 7766.0
+        },
+        {
+          "label": "14:25",
+          "value": 7760.0
+        },
+        {
+          "label": "14:30",
+          "value": 7765.0
+        },
+        {
+          "label": "14:35",
+          "value": 7770.0
+        },
+        {
+          "label": "14:40",
+          "value": 7772.0
+        },
+        {
+          "label": "14:45",
+          "value": 7769.0
+        },
+        {
+          "label": "14:50",
+          "value": 7773.0
+        },
+        {
+          "label": "14:55",
+          "value": 7773.0
+        },
+        {
+          "label": "15:00",
+          "value": 7772.0
+        },
+        {
+          "label": "15:05",
+          "value": 7777.0
+        },
+        {
+          "label": "15:10",
+          "value": 7777.0
+        },
+        {
+          "label": "15:15",
+          "value": 7772.0
+        },
+        {
+          "label": "15:20",
+          "value": 7770.0
+        },
+        {
+          "label": "15:30",
+          "value": 7775.0
+        }
+      ],
+      "week": [
         {
           "label": "09/29",
           "value": 7896.0
@@ -77,17 +721,388 @@
         },
         {
           "label": "10/07",
-          "value": 7772.0
+          "value": 7775.0
+        }
+      ],
+      "month": [
+        {
+          "label": "09/07",
+          "value": 8750.0
+        },
+        {
+          "label": "09/08",
+          "value": 8750.0
+        },
+        {
+          "label": "09/09",
+          "value": 8401.0
+        },
+        {
+          "label": "09/10",
+          "value": 7989.0
+        },
+        {
+          "label": "09/11",
+          "value": 8093.0
+        },
+        {
+          "label": "09/14",
+          "value": 8268.0
+        },
+        {
+          "label": "09/15",
+          "value": 8118.0
+        },
+        {
+          "label": "09/16",
+          "value": 8126.0
+        },
+        {
+          "label": "09/17",
+          "value": 8475.0
+        },
+        {
+          "label": "09/18",
+          "value": 8339.0
+        },
+        {
+          "label": "09/24",
+          "value": 8196.0
+        },
+        {
+          "label": "09/25",
+          "value": 8100.0
+        },
+        {
+          "label": "09/28",
+          "value": 7999.0
+        },
+        {
+          "label": "09/29",
+          "value": 7896.0
+        },
+        {
+          "label": "09/30",
+          "value": 7944.0
+        },
+        {
+          "label": "10/01",
+          "value": 7940.0
+        },
+        {
+          "label": "10/02",
+          "value": 7849.0
+        },
+        {
+          "label": "10/05",
+          "value": 7742.0
+        },
+        {
+          "label": "10/06",
+          "value": 7815.0
+        },
+        {
+          "label": "10/07",
+          "value": 7775.0
+        }
+      ],
+      "news": [
+        {
+          "title": "任天堂、スイッチ2ソフトセット発売（時事通信）",
+          "description": "任天堂、スイッチ2ソフトセット発売（時事通信） Yahoo!ニュース スイッチ２にお得なセット ソフト１本付き―任天堂 時事ドットコム Switch2本体「選べるソフト セット」11月12日に発売決定！3本の中から好きな1本を選べるセット商品 価格は63,980円 GAME Watch 任天堂、3本から1本選べる『Nintendo Switch 2 選べるソフトセット』を発売 『マリオカート ワールド』など対象 Real Sound｜リアルサウンド 『Nintendo Switch 2（日本語・国内専用） 選べるソフト セット』発表。Switch 2本体と人気タイトルが“最大5000円”ぐらいお得に買える AUTOMATON 11月12日より「Nintendo Switch 2 選べるソフトセット」が発売！ 3本から好きな1本を選んでダウンロードできるお得な本体セットが登場 Nintendo DREAM WEB Nintendo Switch 2、割安な「選べるソフトセット」登場。『マリオカート ワールド』など3本から1本をDL可能 PHILE WEB 任天堂、3本から1本選べる『Nintendo Switch 2 選べるソフトセット』を発売 『マリオカート ワールド』など対象 ライブドアニュース Nintendo Switch 2に最大5000円お得な「選べるソフトセット」 本体と定番タイトルDL版1本の年末商戦施策 au Webポータル",
+          "source": "Yahoo!ニュース",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pcnNIVExjRktUQUUxcHo2OXNyY2Z1WUNtTW90VHozTkRtMTFMeU1wbGdzdHBKeVB0NTU1bHFHY0taMVg2b05XYzBsal9yS2g5MWc5a2ZXaXpoOVJqUkRIZ0VHbEJaRUl5dERZWDl0Q2c0MnREOFp1SGk5dTVucEE?oc=5"
+        },
+        {
+          "title": "『ゼルダの伝説 ムジュラの仮面』の楽曲がNintendo Musicで10月9日配信。メインテーマほかタルミナでの冒険を彩る楽曲が登場",
+          "description": "『ゼルダの伝説 ムジュラの仮面』の楽曲がNintendo Musicで10月9日配信。メインテーマほかタルミナでの冒険を彩る楽曲が登場 ファミ通",
+          "source": "ファミ通",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBlMm1JeHlsTVEzX1VwT01UQXNZeGJ0LXFDck5jc0pIQ1YtT2NzUFBZV2piNmtzTWpHM3NkUXVBR1h6QWRlaWJiQUc0Q3MyeXlYTTB3ZWRpbw?oc=5"
+        },
+        {
+          "title": "3本のソフトからお好きな1本を選択してダウンロードできるお得な「Nintendo Switch 2（日本語・国内専用） 選べるソフトセット」が登場。",
+          "description": "3本のソフトからお好きな1本を選択してダウンロードできるお得な「Nintendo Switch 2（日本語・国内専用） 選べるソフトセット」が登場。 Nintendo",
+          "source": "Nintendo",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSnhiVFcyUXVfNDdlVXZ4RTdna2hqbEttc2tpaEdEUi1vNElGSm41UHoxa1dlYzNPc3RocDh3UWJ0eEdGUTVDNEZEMnNmakZ1UjgzZy1BeWtBWUoxeDZJcTVqcHVwT24tNlVQbjF2RmFQTnFDSTNlQ1hLcW1xVVJLNVZCcGZvQQ?oc=5"
         }
       ]
     },
     {
       "name": "東京海上HD",
+      "ticker": "8766.T",
       "qtyLabel": "200株",
-      "price": 519.0999755859375,
-      "value": 103819.9951171875,
-      "change": -0.6126770595100361,
-      "history": [
+      "price": 516.0,
+      "value": 103200.0,
+      "change": -1.2062010224411446,
+      "weekChange": -1.3761490900313977,
+      "monthChange": -2.3097334201214292,
+      "intraday": [
+        {
+          "label": "09:05",
+          "value": 522.5
+        },
+        {
+          "label": "09:10",
+          "value": 521.8
+        },
+        {
+          "label": "09:15",
+          "value": 522.3
+        },
+        {
+          "label": "09:20",
+          "value": 524.1
+        },
+        {
+          "label": "09:25",
+          "value": 522.5
+        },
+        {
+          "label": "09:30",
+          "value": 523.0
+        },
+        {
+          "label": "09:35",
+          "value": 523.2
+        },
+        {
+          "label": "09:40",
+          "value": 524.4
+        },
+        {
+          "label": "09:45",
+          "value": 524.5
+        },
+        {
+          "label": "09:50",
+          "value": 524.7
+        },
+        {
+          "label": "09:55",
+          "value": 524.5
+        },
+        {
+          "label": "10:00",
+          "value": 523.7
+        },
+        {
+          "label": "10:05",
+          "value": 522.8
+        },
+        {
+          "label": "10:10",
+          "value": 522.6
+        },
+        {
+          "label": "10:15",
+          "value": 521.6
+        },
+        {
+          "label": "10:20",
+          "value": 522.4
+        },
+        {
+          "label": "10:25",
+          "value": 523.5
+        },
+        {
+          "label": "10:30",
+          "value": 522.3
+        },
+        {
+          "label": "10:35",
+          "value": 522.5
+        },
+        {
+          "label": "10:40",
+          "value": 523.3
+        },
+        {
+          "label": "10:45",
+          "value": 523.4
+        },
+        {
+          "label": "10:50",
+          "value": 522.2
+        },
+        {
+          "label": "10:55",
+          "value": 521.5
+        },
+        {
+          "label": "11:00",
+          "value": 521.6
+        },
+        {
+          "label": "11:05",
+          "value": 521.6
+        },
+        {
+          "label": "11:10",
+          "value": 521.3
+        },
+        {
+          "label": "11:15",
+          "value": 521.5
+        },
+        {
+          "label": "11:20",
+          "value": 520.8
+        },
+        {
+          "label": "11:25",
+          "value": 519.6
+        },
+        {
+          "label": "11:30",
+          "value": 519.7
+        },
+        {
+          "label": "12:30",
+          "value": 521.1
+        },
+        {
+          "label": "12:35",
+          "value": 521.2
+        },
+        {
+          "label": "12:40",
+          "value": 521.4
+        },
+        {
+          "label": "12:45",
+          "value": 521.7
+        },
+        {
+          "label": "12:50",
+          "value": 520.8
+        },
+        {
+          "label": "12:55",
+          "value": 519.7
+        },
+        {
+          "label": "13:00",
+          "value": 519.7
+        },
+        {
+          "label": "13:05",
+          "value": 520.9
+        },
+        {
+          "label": "13:10",
+          "value": 520.9
+        },
+        {
+          "label": "13:15",
+          "value": 521.4
+        },
+        {
+          "label": "13:20",
+          "value": 521.3
+        },
+        {
+          "label": "13:25",
+          "value": 521.3
+        },
+        {
+          "label": "13:30",
+          "value": 521.8
+        },
+        {
+          "label": "13:35",
+          "value": 520.8
+        },
+        {
+          "label": "13:40",
+          "value": 521.6
+        },
+        {
+          "label": "13:45",
+          "value": 521.8
+        },
+        {
+          "label": "13:50",
+          "value": 520.9
+        },
+        {
+          "label": "13:55",
+          "value": 520.3
+        },
+        {
+          "label": "14:00",
+          "value": 521.3
+        },
+        {
+          "label": "14:05",
+          "value": 521.3
+        },
+        {
+          "label": "14:10",
+          "value": 520.2
+        },
+        {
+          "label": "14:15",
+          "value": 520.3
+        },
+        {
+          "label": "14:20",
+          "value": 519.8
+        },
+        {
+          "label": "14:25",
+          "value": 520.0
+        },
+        {
+          "label": "14:30",
+          "value": 520.2
+        },
+        {
+          "label": "14:35",
+          "value": 519.6
+        },
+        {
+          "label": "14:40",
+          "value": 519.4
+        },
+        {
+          "label": "14:45",
+          "value": 519.5
+        },
+        {
+          "label": "14:50",
+          "value": 519.7
+        },
+        {
+          "label": "14:55",
+          "value": 519.5
+        },
+        {
+          "label": "15:00",
+          "value": 519.2
+        },
+        {
+          "label": "15:05",
+          "value": 519.3
+        },
+        {
+          "label": "15:10",
+          "value": 520.8
+        },
+        {
+          "label": "15:15",
+          "value": 519.4
+        },
+        {
+          "label": "15:20",
+          "value": 518.9
+        },
+        {
+          "label": "15:30",
+          "value": 516.0
+        }
+      ],
+      "week": [
         {
           "label": "09/29",
           "value": 523.2
@@ -114,17 +1129,388 @@
         },
         {
           "label": "10/07",
-          "value": 519.1
+          "value": 516.0
+        }
+      ],
+      "month": [
+        {
+          "label": "09/07",
+          "value": 528.2
+        },
+        {
+          "label": "09/08",
+          "value": 524.73
+        },
+        {
+          "label": "09/09",
+          "value": 513.4
+        },
+        {
+          "label": "09/10",
+          "value": 519.6
+        },
+        {
+          "label": "09/11",
+          "value": 531.33
+        },
+        {
+          "label": "09/14",
+          "value": 546.87
+        },
+        {
+          "label": "09/15",
+          "value": 538.6
+        },
+        {
+          "label": "09/16",
+          "value": 540.0
+        },
+        {
+          "label": "09/17",
+          "value": 553.2
+        },
+        {
+          "label": "09/18",
+          "value": 546.67
+        },
+        {
+          "label": "09/24",
+          "value": 528.8
+        },
+        {
+          "label": "09/25",
+          "value": 532.8
+        },
+        {
+          "label": "09/28",
+          "value": 538.33
+        },
+        {
+          "label": "09/29",
+          "value": 523.2
+        },
+        {
+          "label": "09/30",
+          "value": 537.5
+        },
+        {
+          "label": "10/01",
+          "value": 521.0
+        },
+        {
+          "label": "10/02",
+          "value": 507.4
+        },
+        {
+          "label": "10/05",
+          "value": 509.5
+        },
+        {
+          "label": "10/06",
+          "value": 522.3
+        },
+        {
+          "label": "10/07",
+          "value": 516.0
+        }
+      ],
+      "news": [
+        {
+          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説",
+          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wbDU4ajF2MlF2V3RVeDF5Z1lvYVowMHhLTXF4blNKaVRHbXJyQ1BUbm1WLUN6aTh3ZHEzeVJ6UXdDRVZwa2huRWZnNlhCZHhLbjdGNnNoejdacGRUZGVj?oc=5"
+        },
+        {
+          "title": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL",
+          "description": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL 日本経済新聞",
+          "source": "日本経済新聞",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOREZLQ2FhQ01qcXZDNGhNSE9paHlMM19VRGk0R0RoVWdaY2VVVmtNNFE1TDdWRUdITEhtUzlNSXNEY1RRaGhFLVNCcW5UTjJ5UVh0V2hrZGlVYkUwY3puekdzbmNjazhxaXJ0QUE0Q3g3S29CMjZNNE5PYWVtODVwLTNubHNra2RYcUxVU1lPbXp5UUpxcmotSGVuWEhYcHJlYUdLTEZ6c1N2cGN3SHhQZHpOSi1BQ2duRTkwNVBENjk2UzlEX25WOERfY1o?oc=5"
+        },
+        {
+          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説",
+          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtRVk4N1FnZFl4Z05fMmJJVGg5Zy1Bd3psV2xUaEoybWNYaUd4YmJiUHNSbFBGc0FpSHZ2Snd4ZGlrNERCWUZIRlM5cFdaU2RVWDBmS2p1MWxlYmZ3NUUw?oc=5"
         }
       ]
     },
     {
       "name": "北洋銀行",
+      "ticker": "8524.T",
       "qtyLabel": "50株",
-      "price": 1358.0,
-      "value": 67900.0,
-      "change": -2.8612303290414864,
-      "history": [
+      "price": 1355.0,
+      "value": 67750.0,
+      "change": -3.0758226037196024,
+      "weekChange": 0.5192878338278861,
+      "monthChange": 1.5742128935532174,
+      "intraday": [
+        {
+          "label": "09:05",
+          "value": 1394.0
+        },
+        {
+          "label": "09:10",
+          "value": 1394.0
+        },
+        {
+          "label": "09:15",
+          "value": 1392.0
+        },
+        {
+          "label": "09:20",
+          "value": 1394.0
+        },
+        {
+          "label": "09:25",
+          "value": 1390.0
+        },
+        {
+          "label": "09:30",
+          "value": 1388.0
+        },
+        {
+          "label": "09:35",
+          "value": 1385.0
+        },
+        {
+          "label": "09:40",
+          "value": 1386.0
+        },
+        {
+          "label": "09:45",
+          "value": 1384.0
+        },
+        {
+          "label": "09:50",
+          "value": 1385.0
+        },
+        {
+          "label": "09:55",
+          "value": 1384.0
+        },
+        {
+          "label": "10:00",
+          "value": 1381.0
+        },
+        {
+          "label": "10:05",
+          "value": 1382.0
+        },
+        {
+          "label": "10:10",
+          "value": 1381.0
+        },
+        {
+          "label": "10:15",
+          "value": 1382.0
+        },
+        {
+          "label": "10:20",
+          "value": 1381.0
+        },
+        {
+          "label": "10:25",
+          "value": 1380.0
+        },
+        {
+          "label": "10:30",
+          "value": 1376.0
+        },
+        {
+          "label": "10:35",
+          "value": 1376.0
+        },
+        {
+          "label": "10:40",
+          "value": 1372.0
+        },
+        {
+          "label": "10:45",
+          "value": 1373.0
+        },
+        {
+          "label": "10:50",
+          "value": 1370.0
+        },
+        {
+          "label": "10:55",
+          "value": 1367.0
+        },
+        {
+          "label": "11:00",
+          "value": 1364.0
+        },
+        {
+          "label": "11:05",
+          "value": 1365.0
+        },
+        {
+          "label": "11:10",
+          "value": 1368.0
+        },
+        {
+          "label": "11:15",
+          "value": 1369.0
+        },
+        {
+          "label": "11:20",
+          "value": 1366.0
+        },
+        {
+          "label": "11:25",
+          "value": 1365.0
+        },
+        {
+          "label": "11:30",
+          "value": 1365.0
+        },
+        {
+          "label": "12:30",
+          "value": 1362.0
+        },
+        {
+          "label": "12:35",
+          "value": 1361.0
+        },
+        {
+          "label": "12:40",
+          "value": 1360.0
+        },
+        {
+          "label": "12:45",
+          "value": 1362.0
+        },
+        {
+          "label": "12:50",
+          "value": 1361.0
+        },
+        {
+          "label": "12:55",
+          "value": 1359.0
+        },
+        {
+          "label": "13:00",
+          "value": 1359.0
+        },
+        {
+          "label": "13:05",
+          "value": 1360.0
+        },
+        {
+          "label": "13:10",
+          "value": 1359.0
+        },
+        {
+          "label": "13:15",
+          "value": 1359.0
+        },
+        {
+          "label": "13:20",
+          "value": 1359.0
+        },
+        {
+          "label": "13:25",
+          "value": 1361.0
+        },
+        {
+          "label": "13:30",
+          "value": 1360.0
+        },
+        {
+          "label": "13:35",
+          "value": 1360.0
+        },
+        {
+          "label": "13:40",
+          "value": 1361.0
+        },
+        {
+          "label": "13:45",
+          "value": 1362.0
+        },
+        {
+          "label": "13:50",
+          "value": 1364.0
+        },
+        {
+          "label": "13:55",
+          "value": 1364.0
+        },
+        {
+          "label": "14:00",
+          "value": 1362.0
+        },
+        {
+          "label": "14:05",
+          "value": 1362.0
+        },
+        {
+          "label": "14:10",
+          "value": 1360.0
+        },
+        {
+          "label": "14:15",
+          "value": 1362.0
+        },
+        {
+          "label": "14:20",
+          "value": 1362.0
+        },
+        {
+          "label": "14:25",
+          "value": 1363.0
+        },
+        {
+          "label": "14:30",
+          "value": 1363.0
+        },
+        {
+          "label": "14:35",
+          "value": 1361.0
+        },
+        {
+          "label": "14:40",
+          "value": 1362.0
+        },
+        {
+          "label": "14:45",
+          "value": 1361.0
+        },
+        {
+          "label": "14:50",
+          "value": 1361.0
+        },
+        {
+          "label": "14:55",
+          "value": 1361.0
+        },
+        {
+          "label": "15:00",
+          "value": 1362.0
+        },
+        {
+          "label": "15:05",
+          "value": 1362.0
+        },
+        {
+          "label": "15:10",
+          "value": 1361.0
+        },
+        {
+          "label": "15:15",
+          "value": 1360.0
+        },
+        {
+          "label": "15:20",
+          "value": 1358.0
+        },
+        {
+          "label": "15:30",
+          "value": 1355.0
+        }
+      ],
+      "week": [
         {
           "label": "09/29",
           "value": 1348.0
@@ -151,49 +1537,144 @@
         },
         {
           "label": "10/07",
-          "value": 1358.0
+          "value": 1355.0
+        }
+      ],
+      "month": [
+        {
+          "label": "09/07",
+          "value": 1334.0
+        },
+        {
+          "label": "09/08",
+          "value": 1294.0
+        },
+        {
+          "label": "09/09",
+          "value": 1263.0
+        },
+        {
+          "label": "09/10",
+          "value": 1293.0
+        },
+        {
+          "label": "09/11",
+          "value": 1298.0
+        },
+        {
+          "label": "09/14",
+          "value": 1323.0
+        },
+        {
+          "label": "09/15",
+          "value": 1301.0
+        },
+        {
+          "label": "09/16",
+          "value": 1335.0
+        },
+        {
+          "label": "09/17",
+          "value": 1340.0
+        },
+        {
+          "label": "09/18",
+          "value": 1322.0
+        },
+        {
+          "label": "09/24",
+          "value": 1318.0
+        },
+        {
+          "label": "09/25",
+          "value": 1375.0
+        },
+        {
+          "label": "09/28",
+          "value": 1377.0
+        },
+        {
+          "label": "09/29",
+          "value": 1348.0
+        },
+        {
+          "label": "09/30",
+          "value": 1391.0
+        },
+        {
+          "label": "10/01",
+          "value": 1365.0
+        },
+        {
+          "label": "10/02",
+          "value": 1361.0
+        },
+        {
+          "label": "10/05",
+          "value": 1351.0
+        },
+        {
+          "label": "10/06",
+          "value": 1398.0
+        },
+        {
+          "label": "10/07",
+          "value": 1355.0
+        }
+      ],
+      "news": [
+        {
+          "title": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手",
+          "description": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手 北海道新聞デジタル",
+          "source": "北海道新聞デジタル",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrMVZEU3JSc21ocXkzNVJSeVBPT1UzZktXOWQwaWxudzdpYnYxSlVCSmhacW5FS19uWXlOS0U3TkUtUDJoUTNGWUhyY3ROam03a1dCNGlEUk9qdw?oc=5"
+        },
+        {
+          "title": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手",
+          "description": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手 47NEWS",
+          "source": "47NEWS",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5ScXEzajFnakNyVFZ4QmJNamVpOER0dTIxbkU3MU14NTlIM2dIM3g0bnpmOGJfSVRtaGVhQWhXWTZMTjNqbGpiQk1nRQ?oc=5"
+        },
+        {
+          "title": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説",
+          "description": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Qekxjcll0cVlMZk9Wc1otN1F4T29WNzhaMjhoQ3NUR2ZZWFpjVmdBY2tDazl0N0xpelFReGNZTzd6dkYtWjdKSXJRTDgyM3FVYWNLRkxJcVpfVUtITVhv?oc=5"
         }
       ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
+      "ticker": "eMAXIS",
       "qtyLabel": "134,615口",
       "price": null,
       "value": null,
       "change": null,
-      "history": []
-    }
-  ],
-  "news": [
-    {
-      "title": "簗農水相は議員辞職を 維新・前原氏が主張：時事ドットコム",
-      "description": "簗農水相は議員辞職を 維新・前原氏が主張：時事ドットコム 時事ドットコム簗農相「法令に従い適切に処理」シャトルバス報道受け NHKニュース簗農水大臣、釈明も…予算削減の自治体“困惑” 市内の工事現場では、すでに影響が（テレビ朝日系（ANN）） Yahoo!ニュース【速報】農相発言、首相に任命責任あると国民代表 47NEWS道路予算「大幅カット」発言の簗農相、続投意向…国交省との面会は「明確に覚えていない」「記録がない」 読売新聞",
-      "source": "時事ドットコム",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9hLWt6eGltY2w2aE54U3pyQ0N6WnVIWGVIcDZBX1ZPdEdzaWdTNy1ZbXBTWUVvX1h3TGlnQ05rcTBHWmhmenByRFZZdlIzSXNXNXIzV1NVSElNbXlkblcwTFBYbw?oc=5"
-    },
-    {
-      "title": "イスラエル兵、祖国守る任務は誇りだったが…「無差別攻撃で軍服が恥に」「国民はガザで何が起きたか知らない」",
-      "description": "イスラエル兵、祖国守る任務は誇りだったが…「無差別攻撃で軍服が恥に」「国民はガザで何が起きたか知らない」 読売新聞ガザ戦闘から3年 死者は7万4000人 Yahoo!ニュース7歳少女が直面…足の切断 描く未来は 苦境の子どもたちと医療現場 ガザ戦闘から3年 テレ朝NEWSガザ空爆で2人死亡、ハマス襲撃3年の節目に ノバ跡地では追悼 写真4枚 国際ニュース AFPBB News安全保障、世論は不安 戦線拡大のイスラエル：時事ドットコム 時事ドットコム",
-      "source": "読売新聞",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xNGdMenhJTnRYbnhwQVh2bW9nOFFib0ZPelhibzRlT0RlWFFGQ3NWdGstU3RYTVNuT1dDaU02dEpQS3RubmhLX0JGOWZQYU94d2Z2dGJBTzljV09JaGNFOHl3?oc=5"
-    },
-    {
-      "title": "真相・ニュースの現場から：なぜ飛び降りた？ 娘を巻き添えにした男性に、父がぶつけた怒り",
-      "description": "真相・ニュースの現場から：なぜ飛び降りた？ 娘を巻き添えにした男性に、父がぶつけた怒り 毎日新聞",
-      "source": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zZDg1R084X0hGZ2NwekExLVJubGMtVjlrNzRHNnd0SUtfRVNXTVppb21rVmRNRjRaR0tWWHBKMmRlenVLdHpmalFHcEFnMFNsNEpCOWY4RGtlamktWm9hTmh0OF9PUF80?oc=5"
-    },
-    {
-      "title": "ロシアのペスト研究所の職員が死亡、アメリカは事態を「注視」していると",
-      "description": "ロシアのペスト研究所の職員が死亡、アメリカは事態を「注視」していると BBCニューヨークのJFK国際空港に着陸するアメリカン航空機のアーカイブ写真/Charly Triballeau/AFP/Getty Images/File CNN.jpトランプ大統領とプーチン大統領が電話会談へ ペスト対策研究所の職員死亡についても協議か Yahoo!ニュースロシア、国際的な保健上の報告義務に違反 米国務省が警告 ペスト疑い死亡例で 米紙報道 産経ニュース米、ペスト研究所職員の死亡巡りロシアに圧力 | The Wall Street Journal発 ダイヤモンド・オンライン",
-      "source": "BBC",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15Q2F1Zm04bWRYbGd5XzBOdUQ0UDhtNV9DZXljUVFEbUoyNUg3b0FzaXZ2dExHZHBwWjMxc25nMG54aUd2cXN6RXFodDl1RWlwbnpmaDI2TmN3aG9FRlBHetIBZkFVX3lxTE9aS1UwRmNCbnRDMzFJcGpyLXA1eGJWN0xoa1lBQ2NBbjJmTGVFV2R4N2RBM2dpbmRNN2lheXhMWkJ6eFFPZWlmX3liTHZjT1NjbkZSbks0MEI3NXVtREkwdk1FeWl1dw?oc=5"
-    },
-    {
-      "title": "執行失敗の米死刑囚 意識戻り発話",
-      "description": "執行失敗の米死刑囚 意識戻り発話 Yahoo!ニュース薬物が血管に入らず死刑執行失敗 米テネシー州、終身刑へ減刑訴え 信濃毎日新聞デジタル死刑執行を生き延びた米死刑囚、意識回復し会話 弁護団が発表 BBC死刑執行を生き延びたクリスタ・パイク死刑囚、意識戻り発話も 弁護団が明かす 米 CNN.jp死刑執行も死に至らず重体…死刑囚の女の意識回復、会話もできる状態に 弁護団が発表 アメリカ・テネシー州 日テレNEWS NNN",
-      "source": "Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LVTJic3dBTDYzYzVQd3ZZNXZGMjRVVXQ1aVl0cUxmUGc1MU9lLUs3dlBqb1BkeG5Oa3lRTk9BZF9RTlFaaEJNaVFOSXU4T091?oc=5"
+      "weekChange": null,
+      "monthChange": null,
+      "intraday": [],
+      "week": [],
+      "month": [],
+      "news": [
+        {
+          "title": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で",
+          "description": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で Reuters",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQclhCX3pNZlNnd0tRZUM5UWh0TUZLQU1yREFURGVXVmdDdVBtYUd2eEhJYU9OeHl3OXh6TUJOY0ItVUduLXAxSzF0dzYyQWJaVXRTMFc1NmFxMHZlekhsZi16ZUQyR1ZPM21md0RaY25yTHViMnFSZF9nMTk4dzBKLXRxTDJUZw?oc=5"
+        },
+        {
+          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
+          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
+        },
+        {
+          "title": "S＆P500とナスダックは最高値を更新 - 海外マーケット解説＆米国株ピックアップ",
+          "description": "S＆P500とナスダックは最高値を更新 - 海外マーケット解説＆米国株ピックアップ 日経CNBC online",
+          "source": "日経CNBC online",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45dEJEMG9QN2laZVpoOFFMOFdoYWhCX0x0cllVOERIbWw4WGxLMzlKVUpBY3FLU0dYMTlwWGdkakUxcURIeFI2RVBZWHdKWVp1ejRQRg?oc=5"
+        }
+      ]
     }
   ]
 }
