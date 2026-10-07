@@ -44,5 +44,5 @@ function flip(){let p=[...document.querySelectorAll(".page")],ds=[...document.qu
 function clock(){let d=new Date(),days=["日","月","火","水","木","金","土"];date.textContent=`${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;clockEl.textContent=d.toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"})}
 const clockEl=document.getElementById("clock"); setInterval(clock,1000);clock();setInterval(flip,10000);
 async function load(){try{let r=await fetch("data.json?t="+Date.now());render(await r.json())}catch(e){status.textContent="data.jsonを読み込めません"}}
-load(); setInterval(load,15*100*1000);
+load(); setInterval(load,15*60*1000);
 </script></body></html>
