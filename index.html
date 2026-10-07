@@ -1,2253 +1,1220 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="UTF-8">
 
 <meta
-  name="viewport"
-  content="width=device-width,initial-scale=1,viewport-fit=cover"
->
-
-<meta
-  name="apple-mobile-web-app-capable"
-  content="yes"
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
 >
 
 <title>Daily Board</title>
 
-
 <style>
 
-:root{
-
-  --bg:#090c11;
-
-  --panel:#141922;
-
-  --text:#f6f8fb;
-
-  --muted:#9aa6b2;
-
-  --line:#2a313c;
-
-  --up:#62dba4;
-
-  --down:#ff8585;
-
+* {
+    box-sizing: border-box;
 }
-
-
-*{
-  box-sizing:border-box;
-}
-
 
 html,
-body{
-
-  margin:0;
-
-  width:100%;
-
-  height:100%;
-
-  overflow:hidden;
-
-  background:var(--bg);
-
-  color:var(--text);
-
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    "Noto Sans JP",
-    sans-serif;
-
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(
+            circle at top,
+            #172333,
+            #070c13 65%
+        );
+    color: #f5f7fa;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+    overflow: hidden;
 }
 
-
-body{
-
-  padding:
-    16px
-    20px;
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.board{
-
-  height:100%;
-
-  max-width:1180px;
-
-  margin:auto;
-
-  display:grid;
-
-  grid-template-rows:
-    auto
-    minmax(0,1fr)
-    auto;
-
-  gap:12px;
-
+header {
+    height: 72px;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.08);
+    background:
+        rgba(5,10,17,0.70);
 }
 
-
-/* HEADER */
-
-header{
-
-  display:flex;
-
-  justify-content:
-    space-between;
-
-  align-items:end;
-
+.brand {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
 }
 
-
-.date{
-
-  font-size:
-    clamp(
-      21px,
-      3vw,
-      38px
-    );
-
-  font-weight:750;
-
+.header-right {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    color: #aab6c7;
+    font-size: 15px;
 }
 
-
-.clock{
-
-  font-size:
-    clamp(
-      36px,
-      6vw,
-      72px
-    );
-
-  font-weight:850;
-
+#screen {
+    position: relative;
+    flex: 1;
 }
 
-
-/* PAGE */
-
-.stage{
-
-  position:relative;
-
-  min-height:0;
-
+.page {
+    position: absolute;
+    inset: 0;
+    padding: 34px 46px;
+    opacity: 0;
+    transition:
+        opacity 2s ease;
+    pointer-events: none;
 }
 
-
-.page{
-
-  position:absolute;
-
-  inset:0;
-
-  opacity:0;
-
-  transform:
-    scale(.975);
-
-  transition:
-    opacity 2s ease,
-    transform 2s ease;
-
-  pointer-events:none;
-
+.page.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-
-.page.active{
-
-  opacity:1;
-
-  transform:
-    scale(1);
-
-  pointer-events:auto;
-
+.eyebrow {
+    color: #8392a7;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin-bottom: 12px;
 }
 
-
-/* CARD */
-
-.card{
-
-  height:100%;
-
-  background:
-    var(--panel);
-
-  border:
-    1px solid
-    var(--line);
-
-  border-radius:
-    25px;
-
-  padding:
-    clamp(
-      17px,
-      3vw,
-      38px
-    );
-
-  display:flex;
-
-  flex-direction:
-    column;
-
-  justify-content:center;
-
-  overflow:hidden;
-
+.page-title {
+    margin: 0;
+    font-size: 46px;
+    line-height: 1.08;
 }
 
-
-.eyebrow{
-
-  font-size:
-    clamp(
-      13px,
-      1.6vw,
-      21px
-    );
-
-  color:#dce6f2;
-
-  font-weight:750;
-
-  margin-bottom:13px;
-
+.subtle {
+    color: #8997aa;
 }
 
+/* WEATHER */
 
-.big{
-
-  font-size:
-    clamp(
-      40px,
-      7vw,
-      85px
-    );
-
-  font-weight:850;
-
+.weather-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
-.temp{
-
-  font-size:
-    clamp(
-      25px,
-      4vw,
-      50px
-    );
-
-  font-weight:750;
-
-  margin-top:18px;
-
+.weather-main {
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+    margin-top: 20px;
 }
 
-
-.sub{
-
-  font-size:
-    clamp(
-      13px,
-      1.65vw,
-      20px
-    );
-
-  color:
-    var(--muted);
-
-  margin-top:10px;
-
+.weather-text {
+    font-size: 72px;
+    font-weight: 800;
 }
 
-
-.name{
-
-  font-size:
-    clamp(
-      25px,
-      4vw,
-      50px
-    );
-
-  font-weight:850;
-
+.weather-temp {
+    font-size: 32px;
+    color: #c6d0dd;
+    padding-bottom: 10px;
 }
 
-
-.qty{
-
-  font-size:
-    clamp(
-      13px,
-      1.6vw,
-      21px
-    );
-
-  color:
-    var(--muted);
-
+.weather-rain {
+    margin-top: 24px;
+    font-size: 22px;
+    color: #9caabd;
 }
 
+/* ASSET SUMMARY */
 
-.assethead{
-
-  display:flex;
-
-  justify-content:
-    space-between;
-
-  align-items:end;
-
+.asset-page {
+    padding-top: 25px;
 }
 
-
-.metrics{
-
-  display:flex;
-
-  gap:24px;
-
-  align-items:
-    baseline;
-
-  margin:
-    10px 0;
-
+.asset-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 25px;
 }
 
-
-.price{
-
-  font-size:
-    clamp(
-      27px,
-      4vw,
-      51px
-    );
-
-  font-weight:800;
-
+.asset-total-label {
+    color: #a4afbd;
+    font-size: 16px;
+    margin-bottom: 6px;
 }
 
-
-.change{
-
-  font-size:
-    clamp(
-      18px,
-      2.4vw,
-      29px
-    );
-
-  font-weight:750;
-
+.asset-total {
+    font-size: 49px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
 }
 
-
-.up{
-
-  color:
-    var(--up);
-
+.asset-purchase-total {
+    margin-top: 5px;
+    color: #8794a6;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-
-.down{
-
-  color:
-    var(--down);
-
+.asset-total-change {
+    text-align: right;
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 6px;
 }
 
-
-.flat{
-
-  color:
-    var(--muted);
-
+.asset-table {
+    width: 100%;
+    border:
+        1px solid
+        rgba(255,255,255,0.09);
+    border-radius: 18px;
+    overflow: hidden;
+    background:
+        rgba(10,17,27,0.72);
+    box-shadow:
+        0 18px 60px
+        rgba(0,0,0,0.25);
 }
 
-
-/* SUMMARY */
-
-.summary-top{
-
-  border-bottom:
-    1px solid
-    var(--line);
-
-  padding-bottom:12px;
-
-  margin-bottom:5px;
-
+.asset-head,
+.asset-row {
+    display: grid;
+    grid-template-columns:
+        2fr
+        1.15fr
+        1.15fr
+        1.5fr;
+    align-items: center;
 }
 
-
-.summary-label{
-
-  color:
-    var(--muted);
-
-  font-size:
-    clamp(
-      13px,
-      1.5vw,
-      19px
-    );
-
+.asset-head {
+    min-height: 52px;
+    padding: 0 25px;
+    background:
+        rgba(255,255,255,0.045);
+    color: #8f9db0;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-
-.summary-total{
-
-  font-size:
-    clamp(
-      32px,
-      5vw,
-      64px
-    );
-
-  font-weight:850;
-
+.asset-row {
+    min-height: 88px;
+    padding: 10px 25px;
+    border-top:
+        1px solid
+        rgba(255,255,255,0.07);
 }
 
-
-.summary-delta{
-
-  font-size:
-    clamp(
-      17px,
-      2.2vw,
-      28px
-    );
-
-  font-weight:750;
-
+.asset-name {
+    font-size: 21px;
+    font-weight: 750;
 }
 
-
-/* ASSET LIST */
-
-.asset-list{
-
-  min-height:0;
-
-  overflow:auto;
-
+.asset-qty {
+    margin-top: 5px;
+    color: #8794a6;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-
-.asset-row{
-
-  display:grid;
-
-  grid-template-columns:
-    minmax(0,1fr)
-    auto;
-
-  align-items:center;
-
-  gap:15px;
-
-  padding:
-    8px 0;
-
-  border-bottom:
-    1px solid
-    var(--line);
-
+.asset-price {
+    font-size: 22px;
+    font-weight: 750;
 }
 
-
-.asset-name{
-
-  font-size:
-    clamp(
-      15px,
-      1.9vw,
-      23px
-    );
-
-  font-weight:750;
-
+.asset-cost {
+    margin-top: 5px;
+    color: #8390a2;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-
-.asset-qty{
-
-  color:
-    var(--muted);
-
-  font-size:
-    clamp(
-      11px,
-      1.2vw,
-      15px
-    );
-
+.asset-day-change {
+    font-size: 21px;
+    font-weight: 800;
 }
 
-
-.asset-amount{
-
-  text-align:right;
-
+.asset-value {
+    font-size: 23px;
+    font-weight: 800;
 }
 
-
-.asset-value{
-
-  font-size:
-    clamp(
-      18px,
-      2.2vw,
-      28px
-    );
-
-  font-weight:800;
-
+.asset-delta {
+    margin-top: 5px;
+    color: #8794a6;
+    font-size: 13px;
+    font-weight: 650;
 }
 
-
-.asset-change{
-
-  display:flex;
-
-  justify-content:
-    flex-end;
-
-  gap:12px;
-
-  margin-top:2px;
-
-  font-size:
-    clamp(
-      12px,
-      1.45vw,
-      18px
-    );
-
-  font-weight:700;
-
+.positive {
+    color: #38d996;
 }
 
-
-/* CHART */
-
-.chartwrap{
-
-  flex:1;
-
-  min-height:140px;
-
+.negative {
+    color: #ff6873;
 }
 
-
-.chart{
-
-  width:100%;
-
-  height:100%;
-
+.neutral {
+    color: #9ba7b7;
 }
 
+/* MARKET PAGES */
 
-.gridline{
-
-  stroke:#29313c;
-
-  stroke-width:1;
-
+.market-page {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.chartline{
-
-  fill:none;
-
-  stroke:#edf2f7;
-
-  stroke-width:3;
-
+.market-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
 }
 
-
-.chartpoint{
-
-  fill:#edf2f7;
-
+.market-name {
+    font-size: 42px;
+    font-weight: 800;
 }
 
-
-.axis{
-
-  fill:#a9b4c1;
-
-  font-size:15px;
-
+.market-price {
+    margin-top: 8px;
+    font-size: 25px;
+    color: #c8d1dd;
 }
 
+.market-change {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.chart-card {
+    flex: 1;
+    min-height: 0;
+    margin-top: 24px;
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+    border-radius: 20px;
+    background:
+        rgba(9,15,24,0.75);
+    padding: 20px;
+}
+
+.chart-card svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
 
 /* NEWS */
 
-.news-card{
-
-  justify-content:center;
-
+.news-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
-.news-date{
-
-  color:
-    var(--muted);
-
-  font-size:
-    clamp(
-      13px,
-      1.5vw,
-      18px
-    );
-
-  margin-top:20px;
-
+.news-card {
+    width: 100%;
+    max-width: 1100px;
+    padding: 38px 42px;
+    border:
+        1px solid
+        rgba(255,255,255,0.09);
+    border-radius: 22px;
+    background:
+        rgba(9,16,26,0.78);
 }
 
-
-.news-title{
-
-  font-size:
-    clamp(
-      25px,
-      3.5vw,
-      46px
-    );
-
-  font-weight:850;
-
-  line-height:1.3;
-
-  margin-top:10px;
-
+.news-date {
+    color: #8493a6;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-
-.news-description{
-
-  font-size:
-    clamp(
-      17px,
-      2vw,
-      26px
-    );
-
-  line-height:1.65;
-
-  color:#d3dbe5;
-
-  margin-top:22px;
-
+.news-title {
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 800;
 }
 
-
-.news-source{
-
-  color:
-    var(--muted);
-
-  font-size:
-    clamp(
-      12px,
-      1.4vw,
-      17px
-    );
-
-  margin-top:20px;
-
+.news-description {
+    margin-top: 22px;
+    color: #c0cad7;
+    font-size: 20px;
+    line-height: 1.75;
 }
 
-
-.news-link{
-
-  color:#9acbff;
-
-  text-decoration:none;
-
-  margin-top:14px;
-
-  font-size:
-    clamp(
-      13px,
-      1.5vw,
-      18px
-    );
-
+.news-source {
+    margin-top: 24px;
+    color: #7f8da0;
+    font-size: 14px;
 }
 
-
-/* FOOTER */
-
-footer{
-
-  display:flex;
-
-  justify-content:
-    space-between;
-
-  align-items:center;
-
+.news-link {
+    color: inherit;
+    text-decoration: none;
 }
 
-
-.status{
-
-  color:
-    var(--muted);
-
-  font-size:
-    clamp(
-      10px,
-      1.1vw,
-      15px
-    );
-
-}
-
-
-.dots{
-
-  display:flex;
-
-  gap:5px;
-
-  flex-wrap:wrap;
-
-  justify-content:
-    flex-end;
-
-}
-
-
-.dot{
-
-  width:6px;
-
-  height:6px;
-
-  border-radius:50%;
-
-  background:#3d4652;
-
-}
-
-
-.dot.active{
-
-  background:#fff;
-
+.footer-note {
+    position: absolute;
+    right: 28px;
+    bottom: 17px;
+    color: #5f6c7c;
+    font-size: 12px;
 }
 
 </style>
 
 </head>
 
-
 <body>
-
-
-<div class="board">
-
 
 <header>
 
-  <div
-    class="date"
-    id="date">
-  </div>
+<div class="brand">
+    DAILY BOARD
+</div>
 
-  <div
-    class="clock"
-    id="clock">
-  </div>
+<div class="header-right">
+
+<div id="updated">
+    —
+</div>
+
+<div id="clock">
+    —
+</div>
+
+</div>
 
 </header>
 
-
-<main
-  class="stage"
-  id="stage">
-
-
-<section class="page active">
-
-  <div
-    class="card"
-    id="weather">
-
-    読み込み中…
-
-  </div>
-
-</section>
-
-
-<section class="page">
-
-  <div class="card">
-
-    <div class="eyebrow">
-
-      📈 MY ASSETS
-
-    </div>
-
-    <div
-      class="summary-top"
-      id="summaryTop">
-    </div>
-
-    <div
-      class="asset-list"
-      id="assetRows">
-    </div>
-
-  </div>
-
-</section>
-
-
-</main>
-
-
-<footer>
-
-<div
-  class="status"
-  id="status">
-</div>
-
-<div
-  class="dots"
-  id="dots">
-</div>
-
-</footer>
-
-
-</div>
-
+<div id="screen"></div>
 
 <script>
 
+const screen =
+    document.getElementById("screen");
 
-let idx=0;
+let pages = [];
+let pageIndex = 0;
+let pageTimer = null;
 
-let lastSignature="";
+function yen(value) {
 
+    if (
+        value === null ||
+        value === undefined ||
+        Number.isNaN(Number(value))
+    ) {
+        return "—";
+    }
 
-const yen=n=>
-
-  n==null
-
-  ?"—"
-
-  :Math.round(n)
-   .toLocaleString("ja-JP")
-   +"円";
-
-
-const signedYen=n=>{
-
-  if(n==null){
-    return "—";
-  }
-
-  if(n>0){
-    return "+"
-      +Math.round(n)
-      .toLocaleString("ja-JP")
-      +"円";
-  }
-
-  if(n<0){
-    return "−"
-      +Math.abs(
-        Math.round(n)
-      )
-      .toLocaleString("ja-JP")
-      +"円";
-  }
-
-  return "±0円";
-
-};
-
-
-const percent=n=>{
-
-  if(n==null){
-    return "—";
-  }
-
-  if(n>0){
-    return "+"
-      +n.toFixed(2)
-      +"%";
-  }
-
-  if(n<0){
-    return "−"
-      +Math.abs(n)
-      .toFixed(2)
-      +"%";
-  }
-
-  return "±0.00%";
-
-};
-
-
-const tone=n=>
-
-  n==null
-
-  ?"flat"
-
-  :n>0
-
-  ?"up"
-
-  :n<0
-
-  ?"down"
-
-  :"flat";
-
-
-const arrow=n=>
-
-  n==null
-
-  ?""
-
-  :n>0
-
-  ?"▲ "
-
-  :n<0
-
-  ?"▼ "
-
-  :"";
-
-
-function escapeHTML(value){
-
-  return String(
-    value??""
-  ).replace(
-    /[&<>"']/g,
-    c=>({
-      "&":"&amp;",
-      "<":"&lt;",
-      ">":"&gt;",
-      '"':"&quot;",
-      "'":"&#39;"
-    }[c])
-  );
-
+    return "¥" +
+        Math.round(Number(value))
+        .toLocaleString("ja-JP");
 }
 
+function priceYen(value) {
 
-/* =========================================
-   CHART
-========================================= */
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "—";
+    }
 
+    const n = Number(value);
 
-function chartHTML(history){
+    const decimals =
+        Number.isInteger(n)
+        ? 0
+        : 1;
 
-  const v=
-    (history||[])
-    .filter(
-      x=>
-        Number.isFinite(
-          x.value
-        )
-    );
+    return "¥" +
+        n.toLocaleString(
+            "ja-JP",
+            {
+                minimumFractionDigits:
+                    decimals,
+                maximumFractionDigits: 2
+            }
+        );
+}
 
+function signedYen(value) {
 
-  if(v.length<2){
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "—";
+    }
+
+    const n =
+        Math.round(Number(value));
+
+    if (n > 0) {
+        return "+¥" +
+            n.toLocaleString("ja-JP");
+    }
+
+    if (n < 0) {
+        return "−¥" +
+            Math.abs(n)
+            .toLocaleString("ja-JP");
+    }
+
+    return "±¥0";
+}
+
+function percent(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "—";
+    }
+
+    const n = Number(value);
+
+    if (n > 0) {
+        return "+" +
+            n.toFixed(2) +
+            "%";
+    }
+
+    if (n < 0) {
+        return "−" +
+            Math.abs(n)
+            .toFixed(2) +
+            "%";
+    }
+
+    return "0.00%";
+}
+
+function directionClass(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "neutral";
+    }
+
+    if (Number(value) > 0) {
+        return "positive";
+    }
+
+    if (Number(value) < 0) {
+        return "negative";
+    }
+
+    return "neutral";
+}
+
+function arrow(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "";
+    }
+
+    if (Number(value) > 0) {
+        return "▲";
+    }
+
+    if (Number(value) < 0) {
+        return "▼";
+    }
+
+    return "•";
+}
+
+function addPage(html) {
+
+    const div =
+        document.createElement("section");
+
+    div.className = "page";
+    div.innerHTML = html;
+
+    screen.appendChild(div);
+
+    pages.push(div);
+}
+
+function weatherPage(data) {
+
+    const w = data.weather || {};
+
+    addPage(`
+        <div class="weather-wrap">
+
+            <div class="eyebrow">
+                SAPPORO WEATHER
+            </div>
+
+            <h1 class="page-title">
+                今日の札幌
+            </h1>
+
+            <div class="weather-main">
+
+                <div class="weather-text">
+                    ${w.text ?? "—"}
+                </div>
+
+                <div class="weather-temp">
+                    最高
+                    ${w.max ?? "—"}℃
+                    &nbsp;&nbsp;
+                    最低
+                    ${w.min ?? "—"}℃
+                </div>
+
+            </div>
+
+            <div class="weather-rain">
+                降水確率
+                ${w.rain ?? "—"}%
+            </div>
+
+        </div>
+    `);
+}
+
+function assetSummaryPage(data) {
+
+    const summary =
+        data.summary || {};
+
+    const assets =
+        (data.assets || [])
+        .filter(
+            a =>
+            a.ticker !== "eMAXIS"
+        );
+
+    const totalClass =
+        directionClass(
+            summary.deltaYen
+        );
+
+    const rows =
+        assets.map(a => {
+
+            const cls =
+                directionClass(
+                    a.change
+                );
+
+            return `
+                <div class="asset-row">
+
+                    <div>
+
+                        <div class="asset-name">
+                            ${a.name}
+                        </div>
+
+                        <div class="asset-qty">
+                            ${a.qtyLabel}
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="asset-price">
+                            ${priceYen(a.price)}
+                        </div>
+
+                        <div class="asset-cost">
+                            取得
+                            ${priceYen(a.cost)}
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="asset-day-change ${cls}"
+                    >
+                        ${arrow(a.change)}
+                        ${percent(a.change)}
+                    </div>
+
+                    <div>
+
+                        <div class="asset-value">
+                            ${yen(a.value)}
+                        </div>
+
+                        <div class="asset-delta">
+                            Δ
+                            ${signedYen(
+                                a.deltaYen
+                            )}
+                        </div>
+
+                    </div>
+
+                </div>
+            `;
+        })
+        .join("");
+
+    addPage(`
+        <div class="asset-page">
+
+            <div class="eyebrow">
+                MY ASSETS
+            </div>
+
+            <div class="asset-top">
+
+                <div>
+
+                    <div
+                        class="asset-total-label"
+                    >
+                        日本株評価額
+                    </div>
+
+                    <div class="asset-total">
+                        ${yen(summary.total)}
+                    </div>
+
+                    <div
+                        class="asset-purchase-total"
+                    >
+                        総取得額
+                        ${yen(
+                            summary.purchaseTotal
+                        )}
+                    </div>
+
+                </div>
+
+                <div
+                    class="
+                        asset-total-change
+                        ${totalClass}
+                    "
+                >
+                    ${arrow(
+                        summary.deltaYen
+                    )}
+                    ${signedYen(
+                        summary.deltaYen
+                    )}
+                    &nbsp;
+                    ${percent(
+                        summary.deltaPercent
+                    )}
+                </div>
+
+            </div>
+
+            <div class="asset-table">
+
+                <div class="asset-head">
+
+                    <div>銘柄</div>
+                    <div>株単価</div>
+                    <div>前日比</div>
+                    <div>評価額</div>
+
+                </div>
+
+                ${rows}
+
+            </div>
+
+        </div>
+    `);
+}
+
+function chartHTML(points) {
+
+    if (
+        !points ||
+        points.length < 2
+    ) {
+        return `
+            <div
+                style="
+                    height:100%;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:#7e8a99;
+                "
+            >
+                データ取得待ち
+            </div>
+        `;
+    }
+
+    const width = 1000;
+    const height = 430;
+
+    const left = 82;
+    const right = 28;
+    const top = 22;
+    const bottom = 48;
+
+    const values =
+        points.map(
+            p => Number(p.value)
+        );
+
+    let min =
+        Math.min(...values);
+
+    let max =
+        Math.max(...values);
+
+    if (min === max) {
+        min -= 1;
+        max += 1;
+    }
+
+    const range =
+        max - min;
+
+    min -= range * 0.08;
+    max += range * 0.08;
+
+    const plotWidth =
+        width - left - right;
+
+    const plotHeight =
+        height - top - bottom;
+
+    const x = i =>
+        left +
+        (
+            i /
+            (points.length - 1)
+        ) *
+        plotWidth;
+
+    const y = value =>
+        top +
+        (
+            (max - value) /
+            (max - min)
+        ) *
+        plotHeight;
+
+    const polyline =
+        points.map(
+            (p, i) =>
+                `${x(i)},${y(p.value)}`
+        ).join(" ");
+
+    let grid = "";
+
+    for (
+        let i = 0;
+        i < 5;
+        i++
+    ) {
+
+        const ratio =
+            i / 4;
+
+        const gy =
+            top +
+            ratio *
+            plotHeight;
+
+        const value =
+            max -
+            ratio *
+            (max - min);
+
+        grid += `
+            <line
+                x1="${left}"
+                y1="${gy}"
+                x2="${width-right}"
+                y2="${gy}"
+                stroke="rgba(255,255,255,0.08)"
+                stroke-width="1"
+            />
+
+            <text
+                x="${left-12}"
+                y="${gy+5}"
+                text-anchor="end"
+                fill="#748195"
+                font-size="13"
+            >
+                ¥${Math.round(value).toLocaleString("ja-JP")}
+            </text>
+        `;
+    }
+
+    const labelIndexes =
+        [
+            0,
+            Math.floor(
+                (points.length - 1) / 2
+            ),
+            points.length - 1
+        ];
+
+    let xLabels = "";
+
+    labelIndexes.forEach(i => {
+
+        const p =
+            points[i];
+
+        xLabels += `
+            <text
+                x="${x(i)}"
+                y="${height-13}"
+                text-anchor="middle"
+                fill="#748195"
+                font-size="13"
+            >
+                ${p.label}
+            </text>
+        `;
+    });
 
     return `
-      <div class="sub">
-        チャートデータなし
-      </div>
+        <svg
+            viewBox="
+                0 0
+                ${width}
+                ${height}
+            "
+            preserveAspectRatio="none"
+        >
+
+            ${grid}
+
+            <polyline
+                points="${polyline}"
+                fill="none"
+                stroke="#d8e1ec"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+
+            ${xLabels}
+
+        </svg>
     `;
-
-  }
-
-
-  const W=900;
-
-  const H=320;
-
-  const L=100;
-
-  const R=28;
-
-  const T=25;
-
-  const B=50;
-
-
-  const values=
-    v.map(
-      x=>x.value
-    );
-
-
-  let min=
-    Math.min(
-      ...values
-    );
-
-  let max=
-    Math.max(
-      ...values
-    );
-
-
-  let spread=
-    max-min;
-
-
-  if(spread===0){
-
-    spread=
-      Math.max(
-        Math.abs(max)*0.01,
-        1
-      );
-
-  }
-
-
-  min-=
-    spread*0.12;
-
-  max+=
-    spread*0.12;
-
-
-  const points=
-    v.map(
-      (x,i)=>({
-
-        x:
-          L+
-          i*
-          (W-L-R)
-          /
-          (v.length-1),
-
-        y:
-          H-B-
-          (
-            (x.value-min)
-            /
-            (max-min)
-          )
-          *
-          (H-T-B)
-
-      })
-    );
-
-
-  let grid="";
-
-
-  for(
-    let i=0;
-    i<5;
-    i++
-  ){
-
-    const ratio=
-      i/4;
-
-
-    const y=
-      T+
-      ratio*
-      (H-T-B);
-
-
-    const p=
-      max-
-      ratio*
-      (max-min);
-
-
-    grid+=`
-
-      <line
-
-        class="gridline"
-
-        x1="${L}"
-
-        y1="${y}"
-
-        x2="${W-R}"
-
-        y2="${y}"
-
-      />
-
-
-      <text
-
-        class="axis"
-
-        x="${L-12}"
-
-        y="${y+5}"
-
-        text-anchor="end"
-
-      >
-
-        ${Math.round(p)
-          .toLocaleString("ja-JP")}円
-
-      </text>
-
-    `;
-
-  }
-
-
-  const line=
-
-    points
-    .map(
-      p=>
-        `${p.x},${p.y}`
-    )
-    .join(" ");
-
-
-  const step=
-
-    Math.max(
-      1,
-      Math.ceil(
-        v.length/6
-      )
-    );
-
-
-  const labels=
-
-    points.map(
-      (p,i)=>{
-
-        if(
-          i%step!==0
-          &&
-          i!==v.length-1
-        ){
-
-          return "";
-
-        }
-
-        return `
-
-          <text
-
-            class="axis"
-
-            x="${p.x}"
-
-            y="${H-14}"
-
-            text-anchor="middle"
-
-          >
-
-            ${escapeHTML(
-              v[i].label
-            )}
-
-          </text>
-
-        `;
-
-      }
-
-    ).join("");
-
-
-  const last=
-    points[
-      points.length-1
-    ];
-
-
-  return `
-
-    <div class="chartwrap">
-
-      <svg
-
-        class="chart"
-
-        viewBox="0 0 ${W} ${H}"
-
-        preserveAspectRatio="none"
-
-      >
-
-        ${grid}
-
-        <polyline
-
-          class="chartline"
-
-          points="${line}"
-
-        />
-
-        <circle
-
-          class="chartpoint"
-
-          cx="${last.x}"
-
-          cy="${last.y}"
-
-          r="5"
-
-        />
-
-        ${labels}
-
-      </svg>
-
-    </div>
-
-  `;
-
 }
-
-
-/* =========================================
-   MARKET PAGE
-========================================= */
-
 
 function marketPage(
-  asset,
-  type
-){
+    asset,
+    periodLabel,
+    points,
+    change
+) {
 
-  const config={
+    if (
+        !points ||
+        points.length < 2
+    ) {
+        return;
+    }
 
-    day:[
-      "1 DAY / TODAY",
-      "intraday",
-      "change"
-    ],
+    const cls =
+        directionClass(change);
 
-    week:[
-      "1 WEEK",
-      "week",
-      "weekChange"
-    ],
+    addPage(`
+        <div class="market-page">
 
-    month:[
-      "1 MONTH",
-      "month",
-      "monthChange"
-    ]
+            <div class="eyebrow">
+                ${periodLabel}
+            </div>
 
-  }[type];
+            <div class="market-top">
 
+                <div>
 
-  const [
-    label,
-    historyKey,
-    changeKey
-  ]=config;
+                    <div class="market-name">
+                        ${asset.name}
+                    </div>
 
+                    <div class="market-price">
+                        ${priceYen(asset.price)}
+                        ・
+                        ${asset.qtyLabel}
+                    </div>
 
-  const section=
-    document.createElement(
-      "section"
-    );
+                </div>
 
+                <div
+                    class="market-change ${cls}"
+                >
+                    ${arrow(change)}
+                    ${percent(change)}
+                </div>
 
-  section.className=
-    "page dynamic";
+            </div>
 
-
-  section.innerHTML=`
-
-    <div class="card">
-
-      <div class="eyebrow">
-
-        📈 ${label}
-
-      </div>
-
-
-      <div class="assethead">
-
-        <div class="name">
-
-          ${escapeHTML(
-            asset.name
-          )}
+            <div class="chart-card">
+                ${chartHTML(points)}
+            </div>
 
         </div>
-
-        <div class="qty">
-
-          保有
-          ${escapeHTML(
-            asset.qtyLabel
-          )}
-
-        </div>
-
-      </div>
-
-
-      <div class="metrics">
-
-        <div class="price">
-
-          ${yen(
-            asset.price
-          )}
-
-        </div>
-
-        <div
-          class="
-            change
-            ${tone(
-              asset[
-                changeKey
-              ]
-            )}
-          "
-        >
-
-          ${percent(
-            asset[
-              changeKey
-            ]
-          )}
-
-        </div>
-
-      </div>
-
-
-      ${chartHTML(
-        asset[
-          historyKey
-        ]
-      )}
-
-
-      <div class="sub">
-
-        評価額
-        ${yen(
-          asset.value
-        )}
-
-      </div>
-
-    </div>
-
-  `;
-
-
-  return section;
-
+    `);
 }
 
+function newsPage(asset) {
 
-/* =========================================
-   NEWS
-========================================= */
+    if (
+        !asset.news ||
+        asset.news.length === 0
+    ) {
+        return;
+    }
 
+    const n =
+        asset.news[0];
 
-function newsPage(asset){
+    addPage(`
+        <div class="news-page">
 
-  const section=
+            <div class="eyebrow">
+                ${asset.name} NEWS
+            </div>
 
-    document
-    .createElement(
-      "section"
-    );
+            <div class="news-card">
 
+                <div class="news-date">
+                    ${n.date || ""}
+                </div>
 
-  section.className=
-    "page dynamic";
+                <div class="news-title">
+                    ${n.title || ""}
+                </div>
 
+                <div class="news-description">
+                    ${n.description || ""}
+                </div>
 
-  const news=
-    (
-      asset.news
-      ||
-      []
-    )[0];
+                <div class="news-source">
 
+                    ${
+                        n.link
+                        ?
+                        `
+                        <a
+                            class="news-link"
+                            href="${n.link}"
+                            target="_blank"
+                        >
+                            ${n.source || "記事を開く"}
+                        </a>
+                        `
+                        :
+                        (n.source || "")
+                    }
 
-  if(!news){
+                </div>
 
-    section.innerHTML=`
-
-      <div class="
-        card
-        news-card
-      ">
-
-        <div class="eyebrow">
-
-          📰 LATEST NEWS
+            </div>
 
         </div>
-
-        <div class="name">
-
-          ${escapeHTML(
-            asset.name
-          )}
-
-        </div>
-
-        <div class="sub">
-
-          説明文のある
-          最新ニュースを取得待ち
-
-        </div>
-
-      </div>
-
-    `;
-
-
-    return section;
-
-  }
-
-
-  section.innerHTML=`
-
-    <div class="
-      card
-      news-card
-    ">
-
-
-      <div class="eyebrow">
-
-        📰 LATEST NEWS
-
-      </div>
-
-
-      <div class="name">
-
-        ${escapeHTML(
-          asset.name
-        )}
-
-      </div>
-
-
-      <div class="news-date">
-
-        ${escapeHTML(
-          news.date
-        )}
-
-      </div>
-
-
-      <div class="news-title">
-
-        ${escapeHTML(
-          news.title
-        )}
-
-      </div>
-
-
-      <div class="news-description">
-
-        ${escapeHTML(
-          news.description
-        )}
-
-      </div>
-
-
-      <div class="news-source">
-
-        情報元：
-        ${escapeHTML(
-          news.source
-          ||
-          "ニュース配信元"
-        )}
-
-      </div>
-
-
-      ${
-        /^https:\/\//.test(
-          news.link||""
-        )
-
-        ?`
-
-        <a
-
-          class="news-link"
-
-          href="${escapeHTML(
-            news.link
-          )}"
-
-          target="_blank"
-
-          rel="noopener noreferrer"
-
-        >
-
-          詳細を読む ↗
-
-        </a>
-
-        `
-
-        :""
-      }
-
-
-    </div>
-
-  `;
-
-
-  return section;
-
+    `);
 }
 
-
-/* =========================================
-   RENDER
-========================================= */
-
-
-function render(data){
-
-
-  const w=
-    data.weather||{};
-
-
-  document
-  .getElementById(
-    "weather"
-  )
-  .innerHTML=`
-
-    <div class="eyebrow">
-
-      ☀ TODAY'S WEATHER
-
-    </div>
-
-
-    <div class="big">
-
-      札幌
-      ${escapeHTML(
-        w.text||"—"
-      )}
-
-    </div>
-
-
-    <div class="temp">
-
-      最高
-      ${w.max??"—"}℃
-
-      　/　
-
-      最低
-      ${w.min??"—"}℃
-
-    </div>
-
-
-    <div class="sub">
-
-      降水確率
-      ${w.rain??"—"}%
-
-    </div>
-
-  `;
-
-
-  /* =====================================
-     SUMMARY
-  ===================================== */
-
-
-  const s=
-    data.summary||{};
-
-
-  document
-  .getElementById(
-    "summaryTop"
-  )
-  .innerHTML=`
-
-    <div class="summary-label">
-
-      ${escapeHTML(
-        s.label
-        ||
-        "株式評価額"
-      )}
-
-    </div>
-
-
-    <div class="summary-total">
-
-      ${
-        s.complete
-        ?yen(s.total)
-        :"取得待ち"
-      }
-
-    </div>
-
-
-    <div
-      class="
-        summary-delta
-        ${tone(
-          s.deltaYen
-        )}
-      "
-    >
-
-      ${arrow(
-        s.deltaYen
-      )}
-
-      ${signedYen(
-        s.deltaYen
-      )}
-
-      <span
-        style="
-          font-size:.72em
-        "
-      >
-
-        ${percent(
-          s.deltaPercent
-        )}
-
-      </span>
-
-    </div>
-
-  `;
-
-
-  /* =====================================
-     ASSET LIST
-
-     評価額
-     Δ円
-     Δ%
-  ===================================== */
-
-
-  document
-  .getElementById(
-    "assetRows"
-  )
-  .innerHTML=
-
-    (
-      data.assets
-      ||
-      []
-    )
-
-    .map(
-      a=>`
-
-      <div class="asset-row">
-
-
-        <div>
-
-          <div class="asset-name">
-
-            ${escapeHTML(
-              a.name
-            )}
-
-          </div>
-
-          <div class="asset-qty">
-
-            ${escapeHTML(
-              a.qtyLabel
-            )}
-
-          </div>
-
-        </div>
-
-
-        <div class="asset-amount">
-
-
-          <div class="asset-value">
-
-            ${
-              a.value==null
-              ?"取得待ち"
-              :yen(
-                a.value
-              )
+function buildPages(data) {
+
+    screen.innerHTML = "";
+    pages = [];
+
+    weatherPage(data);
+
+    assetSummaryPage(data);
+
+    (data.assets || [])
+    .forEach(asset => {
+
+        if (
+            asset.intraday &&
+            asset.intraday.length >= 2
+        ) {
+            marketPage(
+                asset,
+                "1 DAY",
+                asset.intraday,
+                asset.change
+            );
+        }
+
+        if (
+            asset.week &&
+            asset.week.length >= 2
+        ) {
+            marketPage(
+                asset,
+                "1 WEEK",
+                asset.week,
+                asset.weekChange
+            );
+        }
+
+        if (
+            asset.month &&
+            asset.month.length >= 2
+        ) {
+            marketPage(
+                asset,
+                "1 MONTH",
+                asset.month,
+                asset.monthChange
+            );
+        }
+
+        newsPage(asset);
+    });
+
+    if (pages.length) {
+        pages[0]
+        .classList.add("active");
+    }
+
+    pageIndex = 0;
+
+    if (pageTimer) {
+        clearInterval(pageTimer);
+    }
+
+    pageTimer =
+        setInterval(
+            nextPage,
+            20000
+        );
+}
+
+function nextPage() {
+
+    if (
+        pages.length <= 1
+    ) {
+        return;
+    }
+
+    pages[pageIndex]
+    .classList.remove("active");
+
+    pageIndex =
+        (
+            pageIndex + 1
+        ) % pages.length;
+
+    pages[pageIndex]
+    .classList.add("active");
+}
+
+async function loadData() {
+
+    try {
+
+        const response =
+            await fetch(
+                "data.json?t=" +
+                Date.now()
+            );
+
+        const data =
+            await response.json();
+
+        document
+        .getElementById("updated")
+        .textContent =
+            "更新 " +
+            data.updated_at;
+
+        buildPages(data);
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "data.json load error:",
+            error
+        );
+    }
+}
+
+function updateClock() {
+
+    const now =
+        new Date();
+
+    const text =
+        now.toLocaleString(
+            "ja-JP",
+            {
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit"
             }
-
-          </div>
-
-
-          <div
-            class="
-              asset-change
-              ${tone(
-                a.change
-              )}
-            "
-          >
-
-            <span>
-
-              Δ
-              ${signedYen(
-                a.deltaYen
-              )}
-
-            </span>
-
-
-            <span>
-
-              ${percent(
-                a.change
-              )}
-
-            </span>
-
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-    `
-
-    ).join("");
-
-
-  /* =====================================
-     DYNAMIC PAGES
-  ===================================== */
-
-
-  const stage=
+        );
 
     document
-    .getElementById(
-      "stage"
-    );
-
-
-  stage
-  .querySelectorAll(
-    ".dynamic"
-  )
-  .forEach(
-    el=>el.remove()
-  );
-
-
-  (
-    data.assets
-    ||
-    []
-  )
-  .forEach(
-    asset=>{
-
-
-      if(
-        (
-          asset.intraday
-          ||
-          []
-        ).length>=2
-      ){
-
-        stage.appendChild(
-
-          marketPage(
-            asset,
-            "day"
-          )
-
-        );
-
-      }
-
-
-      if(
-        (
-          asset.week
-          ||
-          []
-        ).length>=2
-      ){
-
-        stage.appendChild(
-
-          marketPage(
-            asset,
-            "week"
-          )
-
-        );
-
-      }
-
-
-      if(
-        (
-          asset.month
-          ||
-          []
-        ).length>=2
-      ){
-
-        stage.appendChild(
-
-          marketPage(
-            asset,
-            "month"
-          )
-
-        );
-
-      }
-
-
-      stage.appendChild(
-
-        newsPage(
-          asset
-        )
-
-      );
-
-
-    }
-  );
-
-
-  idx=0;
-
-
-  const pages=[
-
-    ...document
-    .querySelectorAll(
-      ".page"
-    )
-
-  ];
-
-
-  pages.forEach(
-    (p,i)=>
-
-      p.classList.toggle(
-        "active",
-        i===0
-      )
-
-  );
-
-
-  setupDots();
-
-
-  document
-  .getElementById(
-    "status"
-  )
-  .textContent=
-
-    `更新 ${data.updated_at||"—"} ｜ 画面切替20秒`;
-
+    .getElementById("clock")
+    .textContent =
+        text;
 }
 
-
-/* =========================================
-   DOTS
-========================================= */
-
-
-function setupDots(){
-
-
-  const pages=[
-
-    ...document
-    .querySelectorAll(
-      ".page"
-    )
-
-  ];
-
-
-  document
-  .getElementById(
-    "dots"
-  )
-  .innerHTML=
-
-    pages.map(
-      (_,i)=>`
-
-        <span
-          class="
-            dot
-            ${i===0
-              ?"active"
-              :""
-            }
-          "
-        ></span>
-
-      `
-
-    ).join("");
-
-}
-
-
-/* =========================================
-   PAGE FLIP
-========================================= */
-
-
-function flip(){
-
-
-  const pages=[
-
-    ...document
-    .querySelectorAll(
-      ".page"
-    )
-
-  ];
-
-
-  const dots=[
-
-    ...document
-    .querySelectorAll(
-      ".dot"
-    )
-
-  ];
-
-
-  if(
-    !pages.length
-  ){
-    return;
-  }
-
-
-  pages[idx]
-  .classList
-  .remove(
-    "active"
-  );
-
-
-  if(
-    dots[idx]
-  ){
-
-    dots[idx]
-    .classList
-    .remove(
-      "active"
-    );
-
-  }
-
-
-  idx=
-
-    (idx+1)
-    %
-    pages.length;
-
-
-  pages[idx]
-  .classList
-  .add(
-    "active"
-  );
-
-
-  if(
-    dots[idx]
-  ){
-
-    dots[idx]
-    .classList
-    .add(
-      "active"
-    );
-
-  }
-
-}
-
-
-/* =========================================
-   CLOCK
-========================================= */
-
-
-function clock(){
-
-
-  const d=
-    new Date();
-
-
-  const days=[
-
-    "日",
-    "月",
-    "火",
-    "水",
-    "木",
-    "金",
-    "土"
-
-  ];
-
-
-  document
-  .getElementById(
-    "date"
-  )
-  .textContent=
-
-    `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
-
-
-  document
-  .getElementById(
-    "clock"
-  )
-  .textContent=
-
-    d.toLocaleTimeString(
-
-      "ja-JP",
-
-      {
-        hour:"2-digit",
-        minute:"2-digit"
-      }
-
-    );
-
-}
-
-
-/* =========================================
-   LOAD
-========================================= */
-
-
-async function load(){
-
-
-  try{
-
-
-    const response=
-
-      await fetch(
-
-        "data.json?t="
-        +
-        Date.now()
-
-      );
-
-
-    if(
-      !response.ok
-    ){
-
-      throw new Error(
-        "HTTP "
-        +
-        response.status
-      );
-
-    }
-
-
-    const data=
-
-      await response.json();
-
-
-    const signature=
-
-      JSON.stringify(
-        data
-      );
-
-
-    if(
-      signature
-      !==
-      lastSignature
-    ){
-
-      lastSignature=
-        signature;
-
-      render(
-        data
-      );
-
-    }
-
-
-  }catch(e){
-
-
-    document
-    .getElementById(
-      "status"
-    )
-    .textContent=
-
-      "データ読み込み失敗："
-      +
-      e.message;
-
-  }
-
-}
-
-
-/* =========================================
-   START
-========================================= */
-
-
-clock();
+updateClock();
 
 setInterval(
-  clock,
-  1000
+    updateClock,
+    1000
 );
 
+loadData();
 
 setInterval(
-  flip,
-  20000
+    loadData,
+    15 * 60 * 1000
 );
-
-
-load();
-
-
-setInterval(
-  load,
-  15*60*1000
-);
-
 
 </script>
-
 
 </body>
 
