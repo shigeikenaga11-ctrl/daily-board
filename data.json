@@ -1,10 +1,17 @@
 {
-  "updated_at": "2026/10/07 16:08",
+  "updated_at": "2026/10/07 17:00",
   "weather": {
     "text": "晴れ",
     "max": 18.3,
     "min": 8.9,
     "rain": 0
+  },
+  "summary": {
+    "label": "株式評価額（日本株4銘柄）",
+    "total": 302750.0,
+    "deltaYen": -4800.0,
+    "deltaPercent": -1.5607218338481548,
+    "complete": true
   },
   "assets": [
     {
@@ -12,9 +19,11 @@
       "ticker": "4568.T",
       "qtyLabel": "20株",
       "price": 2702.5,
+      "previousClose": 2752.0,
       "value": 54050.0,
+      "deltaYen": -990.0,
       "change": -1.798691860465118,
-      "weekChange": -2.9448734063566184,
+      "weekChange": -1.3866082831600068,
       "monthChange": -1.206360811551821,
       "intraday": [
         {
@@ -284,14 +293,6 @@
       ],
       "week": [
         {
-          "label": "09/29",
-          "value": 2784.5
-        },
-        {
-          "label": "09/30",
-          "value": 2800.0
-        },
-        {
           "label": "10/01",
           "value": 2740.5
         },
@@ -396,22 +397,20 @@
       ],
       "news": [
         {
-          "title": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説",
-          "description": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "title": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
           "source": "Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zLVI2U0Z5bnhzaGQ3cUtWbHVocDh6RVl6VzBvSUV0YkgxZWZRSUhiWDJ3aS1HQUNiWmQzdmtIUkZQdFFiTG5aNmF5OGxray1kR1Fya1lEWDNDNWhiRGJ3?oc=5"
+          "date": "2026/10/07",
+          "description": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zLVI2U0Z5bnhzaGQ3cUtWbHVocDh6RVl6VzBvSUV0YkgxZWZRSUhiWDJ3aS1HQUNiWmQzdmtIUkZQdFFiTG5aNmF5OGxray1kR1Fya1lEWDNDNWhiRGJ3?oc=5",
+          "type": "企業・投資ニュース"
         },
         {
-          "title": "決算:第一三共、1160億円の社債発行 運転資金に充当",
-          "description": "決算:第一三共、1160億円の社債発行 運転資金に充当 日本経済新聞",
+          "title": "決算:第一三共、1160億円の社債発行 運転資金に充当 - 日本経済新聞",
           "source": "日本経済新聞",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zZ1Z2YzhhLVU5M3o4SDhkXzJ1c0RXZ1Q1WVQ1c3lYcktIN201M0RoSmhGNjU1QlhNUlpRVUd4MW9hNEJWRG90MzNBaFJkWlhUNEZmR2VKYmFnMURzRTZqYlVVeVV0MFQyNFVjdw?oc=5"
-        },
-        {
-          "title": "第一三共は軟調、肺がん治療薬の米国での迅速承認申請を取り下げ",
-          "description": "第一三共は軟調、肺がん治療薬の米国での迅速承認申請を取り下げ 株探",
-          "source": "株探",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GLXBIQlRSaFFxSXNwU3VubVI2SkdiOVNiRml4MnFkbmRtZjl4V3c1QXgwU2tUc3hWdFNiek1GYTQzcGFyUGdPcktHZGljSWtNT3JBWlVSRWQxRlBIVE1tSA?oc=5"
+          "date": "2026/10/02",
+          "description": "決算:第一三共、1160億円の社債発行 運転資金に充当 日本経済新聞",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zZ1Z2YzhhLVU5M3o4SDhkXzJ1c0RXZ1Q1WVQ1c3lYcktIN201M0RoSmhGNjU1QlhNUlpRVUd4MW9hNEJWRG90MzNBaFJkWlhUNEZmR2VKYmFnMURzRTZqYlVVeVV0MFQyNFVjdw?oc=5",
+          "type": "企業・投資ニュース"
         }
       ]
     },
@@ -420,9 +419,11 @@
       "ticker": "7974.T",
       "qtyLabel": "10株",
       "price": 7775.0,
+      "previousClose": 7815.0,
       "value": 77750.0,
+      "deltaYen": -400.0,
       "change": -0.5118362124120313,
-      "weekChange": -1.532421479229995,
+      "weekChange": -2.0780856423173844,
       "monthChange": -11.142857142857142,
       "intraday": [
         {
@@ -696,14 +697,6 @@
       ],
       "week": [
         {
-          "label": "09/29",
-          "value": 7896.0
-        },
-        {
-          "label": "09/30",
-          "value": 7944.0
-        },
-        {
           "label": "10/01",
           "value": 7940.0
         },
@@ -808,22 +801,20 @@
       ],
       "news": [
         {
-          "title": "任天堂、スイッチ2ソフトセット発売（時事通信）",
-          "description": "任天堂、スイッチ2ソフトセット発売（時事通信） Yahoo!ニュース スイッチ２にお得なセット ソフト１本付き―任天堂 時事ドットコム Switch2本体「選べるソフト セット」11月12日に発売決定！3本の中から好きな1本を選べるセット商品 価格は63,980円 GAME Watch 任天堂、3本から1本選べる『Nintendo Switch 2 選べるソフトセット』を発売 『マリオカート ワールド』など対象 Real Sound｜リアルサウンド 『Nintendo Switch 2（日本語・国内専用） 選べるソフト セット』発表。Switch 2本体と人気タイトルが“最大5000円”ぐらいお得に買える AUTOMATON 11月12日より「Nintendo Switch 2 選べるソフトセット」が発売！ 3本から好きな1本を選んでダウンロードできるお得な本体セットが登場 Nintendo DREAM WEB Nintendo Switch 2、割安な「選べるソフトセット」登場。『マリオカート ワールド』など3本から1本をDL可能 PHILE WEB 任天堂、3本から1本選べる『Nintendo Switch 2 選べるソフトセット』を発売 『マリオカート ワールド』など対象 ライブドアニュース Nintendo Switch 2に最大5000円お得な「選べるソフトセット」 本体と定番タイトルDL版1本の年末商戦施策 au Webポータル",
-          "source": "Yahoo!ニュース",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pcnNIVExjRktUQUUxcHo2OXNyY2Z1WUNtTW90VHozTkRtMTFMeU1wbGdzdHBKeVB0NTU1bHFHY0taMVg2b05XYzBsal9yS2g5MWc5a2ZXaXpoOVJqUkRIZ0VHbEJaRUl5dERZWDl0Q2c0MnREOFp1SGk5dTVucEE?oc=5"
+          "title": "任天堂(株)【7974】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/07",
+          "description": "任天堂(株)【7974】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NTjdJRmVQS1hjZGdYanpFX0NTMEg1d3Ryakt0WFVXUk1QenF4UF9LRWlzcmdqUEtlWWJRZlFXNFdSOElfYUVDeUw1cnRkMEthelVjeGJKRGxPaWlJWXdv?oc=5",
+          "type": "企業・投資ニュース"
         },
         {
-          "title": "『ゼルダの伝説 ムジュラの仮面』の楽曲がNintendo Musicで10月9日配信。メインテーマほかタルミナでの冒険を彩る楽曲が登場",
-          "description": "『ゼルダの伝説 ムジュラの仮面』の楽曲がNintendo Musicで10月9日配信。メインテーマほかタルミナでの冒険を彩る楽曲が登場 ファミ通",
-          "source": "ファミ通",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBlMm1JeHlsTVEzX1VwT01UQXNZeGJ0LXFDck5jc0pIQ1YtT2NzUFBZV2piNmtzTWpHM3NkUXVBR1h6QWRlaWJiQUc0Q3MyeXlYTTB3ZWRpbw?oc=5"
-        },
-        {
-          "title": "3本のソフトからお好きな1本を選択してダウンロードできるお得な「Nintendo Switch 2（日本語・国内専用） 選べるソフトセット」が登場。",
-          "description": "3本のソフトからお好きな1本を選択してダウンロードできるお得な「Nintendo Switch 2（日本語・国内専用） 選べるソフトセット」が登場。 Nintendo",
-          "source": "Nintendo",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSnhiVFcyUXVfNDdlVXZ4RTdna2hqbEttc2tpaEdEUi1vNElGSm41UHoxa1dlYzNPc3RocDh3UWJ0eEdGUTVDNEZEMnNmakZ1UjgzZy1BeWtBWUoxeDZJcTVqcHVwT24tNlVQbjF2RmFQTnFDSTNlQ1hLcW1xVVJLNVZCcGZvQQ?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ ダイヤモンド・オンライン",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5",
+          "type": "企業・投資ニュース"
         }
       ]
     },
@@ -832,9 +823,11 @@
       "ticker": "8766.T",
       "qtyLabel": "200株",
       "price": 516.0,
+      "previousClose": 522.2999877929688,
       "value": 103200.0,
+      "deltaYen": -1260.0,
       "change": -1.2062010224411446,
-      "weekChange": -1.3761490900313977,
+      "weekChange": -0.9596928982725572,
       "monthChange": -2.3097334201214292,
       "intraday": [
         {
@@ -1104,14 +1097,6 @@
       ],
       "week": [
         {
-          "label": "09/29",
-          "value": 523.2
-        },
-        {
-          "label": "09/30",
-          "value": 537.5
-        },
-        {
           "label": "10/01",
           "value": 521.0
         },
@@ -1216,22 +1201,20 @@
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説",
-          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
           "source": "Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wbDU4ajF2MlF2V3RVeDF5Z1lvYVowMHhLTXF4blNKaVRHbXJyQ1BUbm1WLUN6aTh3ZHEzeVJ6UXdDRVZwa2huRWZnNlhCZHhLbjdGNnNoejdacGRUZGVj?oc=5"
+          "date": "2026/10/07",
+          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wbDU4ajF2MlF2V3RVeDF5Z1lvYVowMHhLTXF4blNKaVRHbXJyQ1BUbm1WLUN6aTh3ZHEzeVJ6UXdDRVZwa2huRWZnNlhCZHhLbjdGNnNoejdacGRUZGVj?oc=5",
+          "type": "企業・投資ニュース"
         },
         {
-          "title": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL",
-          "description": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL 日本経済新聞",
-          "source": "日本経済新聞",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOREZLQ2FhQ01qcXZDNGhNSE9paHlMM19VRGk0R0RoVWdaY2VVVmtNNFE1TDdWRUdITEhtUzlNSXNEY1RRaGhFLVNCcW5UTjJ5UVh0V2hrZGlVYkUwY3puekdzbmNjazhxaXJ0QUE0Q3g3S29CMjZNNE5PYWVtODVwLTNubHNra2RYcUxVU1lPbXp5UUpxcmotSGVuWEhYcHJlYUdLTEZ6c1N2cGN3SHhQZHpOSi1BQ2duRTkwNVBENjk2UzlEX25WOERfY1o?oc=5"
-        },
-        {
-          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説",
-          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
           "source": "Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtRVk4N1FnZFl4Z05fMmJJVGg5Zy1Bd3psV2xUaEoybWNYaUd4YmJiUHNSbFBGc0FpSHZ2Snd4ZGlrNERCWUZIRlM5cFdaU2RVWDBmS2p1MWxlYmZ3NUUw?oc=5"
+          "date": "2026/10/06",
+          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtRVk4N1FnZFl4Z05fMmJJVGg5Zy1Bd3psV2xUaEoybWNYaUd4YmJiUHNSbFBGc0FpSHZ2Snd4ZGlrNERCWUZIRlM5cFdaU2RVWDBmS2p1MWxlYmZ3NUUw?oc=5",
+          "type": "企業・投資ニュース"
         }
       ]
     },
@@ -1240,9 +1223,11 @@
       "ticker": "8524.T",
       "qtyLabel": "50株",
       "price": 1355.0,
+      "previousClose": 1398.0,
       "value": 67750.0,
+      "deltaYen": -2150.0,
       "change": -3.0758226037196024,
-      "weekChange": 0.5192878338278861,
+      "weekChange": -0.73260073260073,
       "monthChange": 1.5742128935532174,
       "intraday": [
         {
@@ -1512,14 +1497,6 @@
       ],
       "week": [
         {
-          "label": "09/29",
-          "value": 1348.0
-        },
-        {
-          "label": "09/30",
-          "value": 1391.0
-        },
-        {
           "label": "10/01",
           "value": 1365.0
         },
@@ -1624,22 +1601,20 @@
       ],
       "news": [
         {
-          "title": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手",
-          "description": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手 北海道新聞デジタル",
-          "source": "北海道新聞デジタル",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrMVZEU3JSc21ocXkzNVJSeVBPT1UzZktXOWQwaWxudzdpYnYxSlVCSmhacW5FS19uWXlOS0U3TkUtUDJoUTNGWUhyY3ROam03a1dCNGlEUk9qdw?oc=5"
-        },
-        {
-          "title": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手",
-          "description": "アプリで振り込み、法人も可能に 北洋銀行 27年10月開始へ開発着手 47NEWS",
-          "source": "47NEWS",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5ScXEzajFnakNyVFZ4QmJNamVpOER0dTIxbkU3MU14NTlIM2dIM3g0bnpmOGJfSVRtaGVhQWhXWTZMTjNqbGpiQk1nRQ?oc=5"
-        },
-        {
-          "title": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説",
-          "description": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "title": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
           "source": "Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Qekxjcll0cVlMZk9Wc1otN1F4T29WNzhaMjhoQ3NUR2ZZWFpjVmdBY2tDazl0N0xpelFReGNZTzd6dkYtWjdKSXJRTDgyM3FVYWNLRkxJcVpfVUtITVhv?oc=5"
+          "date": "2026/10/07",
+          "description": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Qekxjcll0cVlMZk9Wc1otN1F4T29WNzhaMjhoQ3NUR2ZZWFpjVmdBY2tDazl0N0xpelFReGNZTzd6dkYtWjdKSXJRTDgyM3FVYWNLRkxJcVpfVUtITVhv?oc=5",
+          "type": "企業・投資ニュース"
+        },
+        {
+          "title": "(株)北洋銀行【8524】：決算情報 - Yahoo!ファイナンス",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/08/05",
+          "description": "(株)北洋銀行【8524】：決算情報 Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0cUhYVVV4TlRzOVhZcWdLOUowamhOcWFjTDJVZ1BLZm5VcGl3NnV4VWZVRTJVZW92WDNOZkFDQmdDUmpXRjZTNnBMOVlCSk0wTFBHODB3SjVmRjU0bVRhZQ?oc=5",
+          "type": "企業・投資ニュース"
         }
       ]
     },
@@ -1648,7 +1623,9 @@
       "ticker": "eMAXIS",
       "qtyLabel": "134,615口",
       "price": null,
+      "previousClose": null,
       "value": null,
+      "deltaYen": null,
       "change": null,
       "weekChange": null,
       "monthChange": null,
@@ -1657,22 +1634,20 @@
       "month": [],
       "news": [
         {
-          "title": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で",
-          "description": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で Reuters",
+          "title": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で - Reuters",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQclhCX3pNZlNnd0tRZUM5UWh0TUZLQU1yREFURGVXVmdDdVBtYUd2eEhJYU9OeHl3OXh6TUJOY0ItVUduLXAxSzF0dzYyQWJaVXRTMFc1NmFxMHZlekhsZi16ZUQyR1ZPM21md0RaY25yTHViMnFSZF9nMTk4dzBKLXRxTDJUZw?oc=5"
+          "date": "2026/10/07",
+          "description": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で Reuters",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQclhCX3pNZlNnd0tRZUM5UWh0TUZLQU1yREFURGVXVmdDdVBtYUd2eEhJYU9OeHl3OXh6TUJOY0ItVUduLXAxSzF0dzYyQWJaVXRTMFc1NmFxMHZlekhsZi16ZUQyR1ZPM21md0RaY25yTHViMnFSZF9nMTk4dzBKLXRxTDJUZw?oc=5",
+          "type": "企業・投資ニュース"
         },
         {
-          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
-          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス",
+          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
           "source": "Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
-        },
-        {
-          "title": "S＆P500とナスダックは最高値を更新 - 海外マーケット解説＆米国株ピックアップ",
-          "description": "S＆P500とナスダックは最高値を更新 - 海外マーケット解説＆米国株ピックアップ 日経CNBC online",
-          "source": "日経CNBC online",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45dEJEMG9QN2laZVpoOFFMOFdoYWhCX0x0cllVOERIbWw4WGxLMzlKVUpBY3FLU0dYMTlwWGdkakUxcURIeFI2RVBZWHdKWVp1ejRQRg?oc=5"
+          "date": "2026/10/07",
+          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5",
+          "type": "企業・投資ニュース"
         }
       ]
     }
