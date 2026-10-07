@@ -10,15 +10,12 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT = Path("data.json")
-
-JST = datetime.timezone(
-    datetime.timedelta(hours=9)
-)
+JST = datetime.timezone(datetime.timedelta(hours=9))
 
 
-# ==============================
-# 日本株
-# ==============================
+# =========================================================
+# 保有資産
+# =========================================================
 
 STOCKS = [
     {
@@ -52,14 +49,8 @@ STOCKS = [
 ]
 
 
-# ==============================
-# eMAXIS Slim S&P500
-# ==============================
-
 EMAXIS = {
     "name": "eMAXIS Slim 米国株式（S&P500）",
-
-    # Yahoo!ファイナンスの投信コード
     "code": "03311187",
 
     # 保有口数
@@ -72,22 +63,24 @@ EMAXIS = {
 }
 
 
-# ==============================
+# =========================================================
 # HTTP
-# ==============================
+# =========================================================
 
 def request_bytes(url):
 
     headers = {
-        "User-Agent":
+        "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 "
             "(KHTML, like Gecko) "
-            "Chrome/125.0.0.0 "
-            "Safari/537.36",
-
-        "Accept-Language":
-            "ja,en-US;q=0.9,en;q=0.8"
+            "Chrome/125.0.0.0 Safari/537.36"
+        ),
+        "Accept": (
+            "text/html,application/xhtml+xml,"
+            "application/xml;q=0.9,*/*;q=0.8"
+        ),
+        "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.8"
     }
 
     last_error = None
@@ -103,7 +96,7 @@ def request_bytes(url):
 
             with urllib.request.urlopen(
                 req,
-                timeout=25
+                timeout=30
             ) as response:
 
                 return response.read()
@@ -111,10 +104,7 @@ def request_bytes(url):
         except Exception as e:
 
             last_error = e
-
-            time.sleep(
-                attempt + 1
-            )
+            time.sleep(attempt + 1)
 
     raise last_error
 
@@ -122,16 +112,13 @@ def request_bytes(url):
 def get_json(url):
 
     return json.loads(
-        request_bytes(url)
-        .decode("utf-8")
+        request_bytes(url).decode("utf-8")
     )
 
 
 def clean_html(value):
 
-    value = html.unescape(
-        value or ""
-    )
+    value = html.unescape(value or "")
 
     value = re.sub(
         r"<[^>]+>",
@@ -148,9 +135,9 @@ def clean_html(value):
     return value.strip()
 
 
-# ==============================
-# 天気
-# ==============================
+# =========================================================
+# WEATHER
+# =========================================================
 
 def weather_label(code):
 
@@ -167,17 +154,14 @@ def weather_label(code):
         return "霧"
 
     if code in (
-        51, 53, 55,
-        56, 57,
-        61, 63, 65,
-        66, 67,
+        51, 53, 55, 56, 57,
+        61, 63, 65, 66, 67,
         80, 81, 82
     ):
         return "雨"
 
     if code in (
-        71, 73, 75,
-        77, 85, 86
+        71, 73, 75, 77, 85, 86
     ):
         return "雪"
 
@@ -208,54 +192,33 @@ def get_weather():
         w = get_json(url)["daily"]
 
         return {
-            "text":
-                weather_label(
-                    w["weather_code"][0]
-                ),
-
-            "max":
-                w["temperature_2m_max"][0],
-
-            "min":
-                w["temperature_2m_min"][0],
-
-            "rain":
-                w[
-                    "precipitation_probability_max"
-                ][0]
+            "text": weather_label(
+                w["weather_code"][0]
+            ),
+            "max": w["temperature_2m_max"][0],
+            "min": w["temperature_2m_min"][0],
+            "rain": w[
+                "precipitation_probability_max"
+            ][0]
         }
 
     except Exception as e:
 
-        print(
-            "Weather error:",
-            e
-        )
+        print("Weather error:", e)
 
         return {
-            "text":
-                "取得できません",
-
-            "max":
-                None,
-
-            "min":
-                None,
-
-            "rain":
-                None
+            "text": "取得できません",
+            "max": None,
+            "min": None,
+            "rain": None
         }
 
 
-# ==============================
-# Yahoo株価
-# ==============================
+# =========================================================
+# YAHOO STOCK
+# =========================================================
 
-def yahoo_chart(
-    symbol,
-    period,
-    interval
-):
+def yahoo_chart(symbol, period, interval):
 
     url = (
         "https://query1.finance.yahoo.com/"
@@ -269,9 +232,7 @@ def yahoo_chart(
 
     data = get_json(url)
 
-    result = (
-        data["chart"]["result"][0]
-    )
+    result = data["chart"]["result"][0]
 
     timestamps = (
         result.get("timestamp")
@@ -279,8 +240,7 @@ def yahoo_chart(
     )
 
     closes = (
-        result["indicators"]
-        ["quote"][0]
+        result["indicators"]["quote"][0]
         .get("close")
         or []
     )
@@ -295,12 +255,9 @@ def yahoo_chart(
         if close is None:
             continue
 
-        dt = (
-            datetime.datetime
-            .fromtimestamp(
-                timestamp,
-                JST
-            )
+        dt = datetime.datetime.fromtimestamp(
+            timestamp,
+            JST
         )
 
         rows.append(
@@ -310,20 +267,10 @@ def yahoo_chart(
             )
         )
 
-    return (
-        rows,
-        result.get(
-            "meta",
-            {}
-        )
-    )
+    return rows, result.get("meta", {})
 
 
-def safe_chart(
-    symbol,
-    period,
-    interval
-):
+def safe_chart(symbol, period, interval):
 
     try:
 
@@ -344,31 +291,21 @@ def safe_chart(
         return [], {}
 
 
-def history_data(
-    rows,
-    fmt
-):
+def history_data(rows, fmt):
 
     return [
         {
-            "label":
-                dt.strftime(fmt),
-
-            "value":
-                round(
-                    value,
-                    2
-                )
+            "label": dt.strftime(fmt),
+            "value": round(value, 2)
         }
 
-        for dt, value
-        in rows
+        for dt, value in rows
     ]
 
 
-# ==============================
+# =========================================================
 # NEWS
-# ==============================
+# =========================================================
 
 def get_news(query):
 
@@ -384,8 +321,7 @@ def get_news(query):
         )
 
         url = (
-            "https://news.google.com/"
-            "rss/search?q="
+            "https://news.google.com/rss/search?q="
             + q
             + "&hl=ja"
             + "&gl=JP"
@@ -398,9 +334,7 @@ def get_news(query):
 
         candidates = []
 
-        for item in root.findall(
-            ".//item"
-        ):
+        for item in root.findall(".//item"):
 
             raw_title = (
                 item.findtext("title")
@@ -408,9 +342,7 @@ def get_news(query):
             ).strip()
 
             raw_description = (
-                item.findtext(
-                    "description"
-                )
+                item.findtext("description")
                 or ""
             )
 
@@ -445,15 +377,8 @@ def get_news(query):
                     1
                 )
 
-                title = (
-                    parts[0]
-                    .strip()
-                )
-
-                source = (
-                    parts[1]
-                    .strip()
-                )
+                title = parts[0].strip()
+                source = parts[1].strip()
 
             description = re.sub(
                 re.escape(title),
@@ -477,36 +402,24 @@ def get_news(query):
                 description
             ).strip()
 
-            if (
-                len(description)
-                < 45
-            ):
+            if len(description) < 45:
                 continue
 
-            if (
-                len(description)
-                > 280
-            ):
+            if len(description) > 280:
 
                 description = (
-                    description[:280]
-                    .rstrip()
+                    description[:280].rstrip()
                     + "…"
                 )
 
             try:
 
-                dt = (
-                    parsedate_to_datetime(
-                        raw_date
-                    )
-                    .astimezone(JST)
-                )
+                dt = parsedate_to_datetime(
+                    raw_date
+                ).astimezone(JST)
 
-                date_text = (
-                    dt.strftime(
-                        "%Y/%m/%d"
-                    )
+                date_text = dt.strftime(
+                    "%Y/%m/%d"
                 )
 
             except Exception:
@@ -515,28 +428,16 @@ def get_news(query):
 
             candidates.append(
                 {
-                    "title":
-                        title,
-
-                    "description":
-                        description,
-
-                    "source":
-                        source,
-
-                    "date":
-                        date_text,
-
-                    "link":
-                        link
+                    "title": title,
+                    "description": description,
+                    "source": source,
+                    "date": date_text,
+                    "link": link
                 }
             )
 
         if candidates:
-
-            return [
-                candidates[0]
-            ]
+            return [candidates[0]]
 
     except Exception as e:
 
@@ -549,59 +450,38 @@ def get_news(query):
     return []
 
 
-# ==============================
+# =========================================================
 # 日本株
-# ==============================
+# =========================================================
 
 def build_stock(stock):
 
     symbol = stock["ticker"]
-
     qty = stock["qty"]
-
     cost = stock["cost"]
 
-
-    intraday_rows, intraday_meta = (
-        safe_chart(
-            symbol,
-            "1d",
-            "5m"
-        )
+    intraday_rows, intraday_meta = safe_chart(
+        symbol,
+        "1d",
+        "5m"
     )
 
-
-    daily_rows, daily_meta = (
-        safe_chart(
-            symbol,
-            "1mo",
-            "1d"
-        )
+    daily_rows, daily_meta = safe_chart(
+        symbol,
+        "1mo",
+        "1d"
     )
-
 
     price = None
-
     previous_close = None
-
-    value = None
-
-    delta_yen = None
-
-    change = None
-
 
     if intraday_rows:
 
-        price = (
-            intraday_rows[-1][1]
-        )
+        price = intraday_rows[-1][1]
 
     elif daily_rows:
 
-        price = (
-            daily_rows[-1][1]
-        )
+        price = daily_rows[-1][1]
 
 
     if (
@@ -617,20 +497,18 @@ def build_stock(stock):
             ]
         )
 
-    elif (
-        len(daily_rows) >= 2
-    ):
+    elif len(daily_rows) >= 2:
 
-        previous_close = (
-            daily_rows[-2][1]
-        )
+        previous_close = daily_rows[-2][1]
 
+
+    value = None
+    delta_yen = None
+    change = None
 
     if price is not None:
 
-        value = (
-            price * qty
-        )
+        value = price * qty
 
 
     if (
@@ -640,37 +518,28 @@ def build_stock(stock):
     ):
 
         delta_yen = (
-            price
-            - previous_close
+            price - previous_close
         ) * qty
 
         change = (
-            price
-            / previous_close
+            price / previous_close
             - 1
         ) * 100
 
 
-    purchase_value = (
-        cost * qty
-    )
+    purchase_value = cost * qty
 
 
     unrealized_yen = None
-
     unrealized_percent = None
-
 
     if value is not None:
 
         unrealized_yen = (
-            value
-            - purchase_value
+            value - purchase_value
         )
 
-        if (
-            purchase_value != 0
-        ):
+        if purchase_value:
 
             unrealized_percent = (
                 unrealized_yen
@@ -679,9 +548,7 @@ def build_stock(stock):
             )
 
 
-    week_rows = (
-        daily_rows[-5:]
-    )
+    week_rows = daily_rows[-5:]
 
 
     week_change = None
@@ -713,23 +580,19 @@ def build_stock(stock):
 
 
     return {
-        "name":
-            stock["name"],
 
-        "ticker":
-            symbol,
+        "name": stock["name"],
 
-        "type":
-            "stock",
+        "ticker": symbol,
 
-        "qty":
-            qty,
+        "type": "stock",
+
+        "qty": qty,
 
         "qtyLabel":
             str(qty) + "株",
 
-        "cost":
-            cost,
+        "cost": cost,
 
         "purchaseValue":
             round(
@@ -738,45 +601,29 @@ def build_stock(stock):
             ),
 
         "price":
-            round(
-                price,
-                2
-            )
+            round(price, 2)
             if price is not None
             else None,
 
         "previousClose":
-            round(
-                previous_close,
-                2
-            )
+            round(previous_close, 2)
             if previous_close is not None
             else None,
 
         "value":
-            round(
-                value,
-                2
-            )
+            round(value, 2)
             if value is not None
             else None,
 
         "deltaYen":
-            round(
-                delta_yen,
-                2
-            )
+            round(delta_yen, 2)
             if delta_yen is not None
             else None,
 
-        "change":
-            change,
+        "change": change,
 
         "unrealizedYen":
-            round(
-                unrealized_yen,
-                2
-            )
+            round(unrealized_yen, 2)
             if unrealized_yen is not None
             else None,
 
@@ -809,161 +656,488 @@ def build_stock(stock):
 
         "news":
             get_news(
-                stock[
-                    "newsQuery"
-                ]
+                stock["newsQuery"]
             )
     }
 
 
-# ==============================
-# eMAXIS
-# ==============================
+# =========================================================
+# eMAXIS Yahoo時系列
+# =========================================================
 
-def get_emaxis():
-
-    code = EMAXIS["code"]
-
-    qty = EMAXIS["qty"]
-
-    cost = EMAXIS["cost"]
+def get_emaxis_history():
 
     url = (
         "https://finance.yahoo.co.jp/"
-        "quote/"
-        + code
+        "quote/03311187/history"
     )
 
-    price = None
+    raw = request_bytes(url)
 
-    previous_close = None
+    page = raw.decode(
+        "utf-8",
+        errors="ignore"
+    )
 
-    delta_per_10000 = None
 
-    change = None
+    # HTMLを文字列化
+    text = re.sub(
+        r"<script.*?</script>",
+        " ",
+        page,
+        flags=re.DOTALL | re.IGNORECASE
+    )
 
+    text = re.sub(
+        r"<style.*?</style>",
+        " ",
+        text,
+        flags=re.DOTALL | re.IGNORECASE
+    )
+
+    text = re.sub(
+        r"<[^>]+>",
+        "\n",
+        text
+    )
+
+    text = html.unescape(text)
+
+    text = text.replace(
+        "\xa0",
+        " "
+    )
+
+    lines = [
+        re.sub(
+            r"\s+",
+            " ",
+            line
+        ).strip()
+
+        for line in text.splitlines()
+    ]
+
+    lines = [
+        line
+        for line in lines
+        if line
+    ]
+
+
+    rows = []
+
+
+    # Yahoo時系列ページは
+    #
+    # 2026/10/6
+    # 45,232
+    # +348
+    # 13,164,971
+    #
+    # のような順序になるため、
+    # 日付を起点に値を読む
+
+    date_pattern = re.compile(
+        r"^\d{4}/\d{1,2}/\d{1,2}$"
+    )
+
+    price_pattern = re.compile(
+        r"^[0-9]{1,3}(?:,[0-9]{3})+$"
+    )
+
+    delta_pattern = re.compile(
+        r"^[+\-−]?[0-9,]+$"
+    )
+
+
+    for i, line in enumerate(lines):
+
+        if not date_pattern.match(line):
+            continue
+
+
+        try:
+
+            dt = datetime.datetime.strptime(
+                line,
+                "%Y/%m/%d"
+            ).replace(
+                tzinfo=JST
+            )
+
+        except Exception:
+            continue
+
+
+        following = lines[
+            i + 1:
+            i + 8
+        ]
+
+
+        price = None
+        delta = None
+
+
+        for value in following:
+
+            if (
+                price is None
+                and price_pattern.match(value)
+            ):
+
+                price = float(
+                    value.replace(
+                        ",",
+                        ""
+                    )
+                )
+
+                continue
+
+
+            if (
+                price is not None
+                and delta is None
+                and delta_pattern.match(value)
+            ):
+
+                try:
+
+                    delta = float(
+                        value
+                        .replace(",", "")
+                        .replace("−", "-")
+                    )
+
+                    break
+
+                except Exception:
+                    pass
+
+
+        if price is None:
+            continue
+
+
+        rows.append(
+            {
+                "date": dt,
+                "price": price,
+                "delta": delta
+            }
+        )
+
+
+    # 重複除去
+    unique = {}
+
+    for row in rows:
+
+        key = row["date"].strftime(
+            "%Y-%m-%d"
+        )
+
+        unique[key] = row
+
+
+    rows = list(
+        unique.values()
+    )
+
+
+    # 古い → 新しい
+    rows.sort(
+        key=lambda x: x["date"]
+    )
+
+
+    if len(rows) < 2:
+
+        raise ValueError(
+            "Yahoo eMAXIS history rows not found"
+        )
+
+
+    print(
+        "eMAXIS history rows:",
+        len(rows)
+    )
+
+    print(
+        "eMAXIS latest date:",
+        rows[-1]["date"].strftime(
+            "%Y/%m/%d"
+        )
+    )
+
+    print(
+        "eMAXIS latest price:",
+        rows[-1]["price"]
+    )
+
+    print(
+        "eMAXIS latest delta:",
+        rows[-1]["delta"]
+    )
+
+
+    return rows
+
+
+# =========================================================
+# eMAXIS資産データ
+# =========================================================
+
+def build_emaxis():
+
+    qty = EMAXIS["qty"]
+    cost = EMAXIS["cost"]
 
     try:
 
-        raw = request_bytes(url)
+        rows = get_emaxis_history()
 
-        page = raw.decode(
-            "utf-8",
-            errors="ignore"
-        )
+        latest = rows[-1]
 
-
-        # HTMLタグ除去
-        text = re.sub(
-            r"<[^>]+>",
-            " ",
-            page
-        )
-
-        text = html.unescape(
-            text
-        )
-
-        text = re.sub(
-            r"\s+",
-            " ",
-            text
-        )
+        price = latest["price"]
 
 
-        # 基準価額
-        #
-        # ページ内の
-        # 「03311187 ... 45,232 前日比 +348(+0.78%)」
-        # のような部分を取得する
+        # Yahooの前日差を優先
+        if latest["delta"] is not None:
 
-        pattern = re.compile(
-            re.escape(code)
-            + r".{0,1500}?"
-            + r"([0-9]{1,3}(?:,[0-9]{3})+)"
-            + r".{0,100}?"
-            + r"前日比"
-            + r".{0,100}?"
-            + r"([+\-−]?[0-9,]+)"
-            + r"\s*\("
-            + r"([+\-−]?[0-9.]+)%"
-            + r"\)",
-            re.DOTALL
-        )
-
-        match = pattern.search(
-            text
-        )
-
-
-        if not match:
-
-            # もう少し広い検索
-            pattern2 = re.compile(
-                r"eMAXIS Slim米国株式"
-                r".{0,3000}?"
-                r"([0-9]{1,3}(?:,[0-9]{3})+)"
-                r".{0,200}?"
-                r"前日比"
-                r".{0,200}?"
-                r"([+\-−]?[0-9,]+)"
-                r"\s*\("
-                r"([+\-−]?[0-9.]+)%"
-                r"\)",
-                re.DOTALL
+            previous_close = (
+                price
+                - latest["delta"]
             )
 
-            match = pattern2.search(
-                text
+        else:
+
+            previous_close = (
+                rows[-2]["price"]
             )
 
 
-        if not match:
-
-            raise ValueError(
-                "Yahoo eMAXIS data not found"
-            )
-
-
-        price = float(
-            match.group(1)
-            .replace(",", "")
-        )
+        change = (
+            price / previous_close
+            - 1
+        ) * 100
 
 
-        delta_per_10000 = float(
-            match.group(2)
-            .replace(",", "")
-            .replace("−", "-")
-        )
-
-
-        change = float(
-            match.group(3)
-            .replace("−", "-")
-        )
-
-
-        previous_close = (
+        value = (
             price
-            - delta_per_10000
+            * qty
+            / 10000
         )
 
 
-        print(
-            "eMAXIS price:",
-            price
-        )
-
-        print(
-            "eMAXIS previous:",
+        previous_value = (
             previous_close
+            * qty
+            / 10000
+        )
+
+
+        delta_yen = (
+            value
+            - previous_value
+        )
+
+
+        purchase_value = (
+            cost
+            * qty
+            / 10000
+        )
+
+
+        unrealized_yen = (
+            value
+            - purchase_value
+        )
+
+
+        unrealized_percent = (
+            unrealized_yen
+            / purchase_value
+            * 100
+        )
+
+
+        # -------------------------
+        # 1週間
+        # -------------------------
+
+        week_rows = rows[-5:]
+
+
+        week_change = None
+
+        if len(week_rows) >= 2:
+
+            week_change = (
+                week_rows[-1]["price"]
+                / week_rows[0]["price"]
+                - 1
+            ) * 100
+
+
+        # -------------------------
+        # 1か月
+        # -------------------------
+
+        month_rows = rows[-20:]
+
+
+        month_change = None
+
+        if len(month_rows) >= 2:
+
+            month_change = (
+                month_rows[-1]["price"]
+                / month_rows[0]["price"]
+                - 1
+            ) * 100
+
+
+        week_data = [
+
+            {
+                "label":
+                    row["date"].strftime(
+                        "%m/%d"
+                    ),
+
+                "value":
+                    round(
+                        row["price"],
+                        2
+                    )
+            }
+
+            for row in week_rows
+        ]
+
+
+        month_data = [
+
+            {
+                "label":
+                    row["date"].strftime(
+                        "%m/%d"
+                    ),
+
+                "value":
+                    round(
+                        row["price"],
+                        2
+                    )
+            }
+
+            for row in month_rows
+        ]
+
+
+        print(
+            "eMAXIS value:",
+            round(value)
         )
 
         print(
             "eMAXIS change:",
-            change
+            round(change, 3)
         )
+
+
+        return {
+
+            "name":
+                EMAXIS["name"],
+
+            "ticker":
+                "eMAXIS",
+
+            "type":
+                "fund",
+
+            "fundCode":
+                EMAXIS["code"],
+
+            "qty":
+                qty,
+
+            "qtyLabel":
+                f"{qty:,}口",
+
+            "cost":
+                cost,
+
+            "purchaseValue":
+                round(
+                    purchase_value,
+                    2
+                ),
+
+            "price":
+                round(
+                    price,
+                    2
+                ),
+
+            "previousClose":
+                round(
+                    previous_close,
+                    2
+                ),
+
+            "value":
+                round(
+                    value,
+                    2
+                ),
+
+            "deltaYen":
+                round(
+                    delta_yen,
+                    2
+                ),
+
+            "change":
+                change,
+
+            "unrealizedYen":
+                round(
+                    unrealized_yen,
+                    2
+                ),
+
+            "unrealizedPercent":
+                unrealized_percent,
+
+            "weekChange":
+                week_change,
+
+            "monthChange":
+                month_change,
+
+            # 投信には日中チャートなし
+            "intraday":
+                [],
+
+            "week":
+                week_data,
+
+            "month":
+                month_data,
+
+            "news":
+                get_news(
+                    EMAXIS[
+                        "newsQuery"
+                    ]
+                )
+        }
 
 
     except Exception as e:
@@ -974,206 +1148,113 @@ def get_emaxis():
         )
 
 
-    # --------------------------
-    # 評価額
-    # 基準価額は10,000口あたり
-    # --------------------------
-
-    value = None
-
-    previous_value = None
-
-    delta_yen = None
-
-
-    if price is not None:
-
-        value = (
-            price
+        purchase_value = (
+            cost
             * qty
             / 10000
         )
 
 
-    if (
-        previous_close
-        is not None
-    ):
+        return {
 
-        previous_value = (
-            previous_close
-            * qty
-            / 10000
-        )
+            "name":
+                EMAXIS["name"],
 
+            "ticker":
+                "eMAXIS",
 
-    if (
-        value is not None
-        and previous_value
-        is not None
-    ):
+            "type":
+                "fund",
 
-        delta_yen = (
-            value
-            - previous_value
-        )
+            "fundCode":
+                EMAXIS["code"],
 
+            "qty":
+                qty,
 
-    # --------------------------
-    # 取得総額
-    # --------------------------
+            "qtyLabel":
+                f"{qty:,}口",
 
-    purchase_value = (
-        cost
-        * qty
-        / 10000
-    )
+            "cost":
+                cost,
 
+            "purchaseValue":
+                round(
+                    purchase_value,
+                    2
+                ),
 
-    unrealized_yen = None
+            "price":
+                None,
 
-    unrealized_percent = None
+            "previousClose":
+                None,
 
+            "value":
+                None,
 
-    if value is not None:
+            "deltaYen":
+                None,
 
-        unrealized_yen = (
-            value
-            - purchase_value
-        )
+            "change":
+                None,
 
-        if purchase_value:
+            "unrealizedYen":
+                None,
 
-            unrealized_percent = (
-                unrealized_yen
-                / purchase_value
-                * 100
-            )
+            "unrealizedPercent":
+                None,
 
+            "weekChange":
+                None,
 
-    return {
-        "name":
-            EMAXIS["name"],
+            "monthChange":
+                None,
 
-        "ticker":
-            "eMAXIS",
+            "intraday":
+                [],
 
-        "type":
-            "fund",
+            "week":
+                [],
 
-        "fundCode":
-            code,
+            "month":
+                [],
 
-        "qty":
-            qty,
-
-        "qtyLabel":
-            f"{qty:,}口",
-
-        # 10,000口あたり
-        "cost":
-            cost,
-
-        "purchaseValue":
-            round(
-                purchase_value,
-                2
-            ),
-
-        # 基準価額
-        "price":
-            round(
-                price,
-                2
-            )
-            if price is not None
-            else None,
-
-        "previousClose":
-            round(
-                previous_close,
-                2
-            )
-            if previous_close is not None
-            else None,
-
-        "value":
-            round(
-                value,
-                2
-            )
-            if value is not None
-            else None,
-
-        "deltaYen":
-            round(
-                delta_yen,
-                2
-            )
-            if delta_yen is not None
-            else None,
-
-        "change":
-            change,
-
-        "unrealizedYen":
-            round(
-                unrealized_yen,
-                2
-            )
-            if unrealized_yen is not None
-            else None,
-
-        "unrealizedPercent":
-            unrealized_percent,
-
-        # 過去基準価額は次段階で追加
-        "weekChange":
-            None,
-
-        "monthChange":
-            None,
-
-        "intraday":
-            [],
-
-        "week":
-            [],
-
-        "month":
-            [],
-
-        "news":
-            get_news(
-                EMAXIS[
-                    "newsQuery"
-                ]
-            )
-    }
+            "news":
+                get_news(
+                    EMAXIS[
+                        "newsQuery"
+                    ]
+                )
+        }
 
 
-# ==============================
+# =========================================================
 # MAIN
-# ==============================
+# =========================================================
 
 def main():
 
-    now = (
-        datetime.datetime.now(
-            JST
-        )
-    )
+    now = datetime.datetime.now(JST)
 
 
+    # -------------------------
     # 日本株
+    # -------------------------
+
     stock_assets = [
+
         build_stock(stock)
+
         for stock in STOCKS
     ]
 
 
+    # -------------------------
     # 投資信託
-    emaxis = get_emaxis()
+    # -------------------------
+
+    emaxis = build_emaxis()
 
 
     assets = (
@@ -1182,20 +1263,26 @@ def main():
     )
 
 
-    # ==========================
-    # 日本株合計
-    # ==========================
+    # =====================================================
+    # 日本株集計
+    # =====================================================
 
     stock_complete = all(
+
         a["value"] is not None
-        and a["deltaYen"] is not None
+        and
+        a["deltaYen"] is not None
+
         for a in stock_assets
     )
 
 
     stock_purchase_total = sum(
+
         a["purchaseValue"]
+
         for a in stock_assets
+
         if a["purchaseValue"]
         is not None
     )
@@ -1204,56 +1291,67 @@ def main():
     if stock_complete:
 
         stock_total = sum(
+
             a["value"]
+
             for a in stock_assets
         )
+
 
         stock_delta = sum(
+
             a["deltaYen"]
+
             for a in stock_assets
         )
 
-        stock_previous_total = (
+
+        previous_stock_total = (
             stock_total
             - stock_delta
         )
 
+
         stock_delta_percent = (
+
             stock_delta
-            / stock_previous_total
+            / previous_stock_total
             * 100
-            if stock_previous_total
+
+            if previous_stock_total
             else None
         )
 
     else:
 
         stock_total = None
-
         stock_delta = None
-
         stock_delta_percent = None
 
 
-    # ==========================
-    # 全資産合計
-    # 日本株 + eMAXIS
-    # ==========================
+    # =====================================================
+    # 全資産
+    # =====================================================
 
-    all_complete = (
-        stock_complete
-        and emaxis["value"]
-        is not None
-        and emaxis["deltaYen"]
-        is not None
+    total_purchase = (
+
+        stock_purchase_total
+        +
+        emaxis["purchaseValue"]
     )
 
 
-    total_purchase = (
-        stock_purchase_total
-        + emaxis[
-            "purchaseValue"
-        ]
+    all_complete = (
+
+        stock_complete
+
+        and
+        emaxis["value"]
+        is not None
+
+        and
+        emaxis["deltaYen"]
+        is not None
     )
 
 
@@ -1261,30 +1359,31 @@ def main():
 
         total_assets = (
             stock_total
-            + emaxis[
-                "value"
-            ]
+            +
+            emaxis["value"]
         )
 
 
         total_delta = (
             stock_delta
-            + emaxis[
-                "deltaYen"
-            ]
+            +
+            emaxis["deltaYen"]
         )
 
 
         previous_total = (
             total_assets
-            - total_delta
+            -
+            total_delta
         )
 
 
         total_delta_percent = (
+
             total_delta
             / previous_total
             * 100
+
             if previous_total
             else None
         )
@@ -1292,14 +1391,17 @@ def main():
 
         total_unrealized = (
             total_assets
-            - total_purchase
+            -
+            total_purchase
         )
 
 
         total_unrealized_percent = (
+
             total_unrealized
             / total_purchase
             * 100
+
             if total_purchase
             else None
         )
@@ -1307,15 +1409,15 @@ def main():
     else:
 
         total_assets = None
-
         total_delta = None
-
         total_delta_percent = None
-
         total_unrealized = None
-
         total_unrealized_percent = None
 
+
+    # =====================================================
+    # JSON
+    # =====================================================
 
     data = {
 
@@ -1329,7 +1431,7 @@ def main():
             get_weather(),
 
 
-        # 既存画面との互換性維持
+        # 既存日本株画面
         "summary": {
 
             "label":
@@ -1352,7 +1454,7 @@ def main():
         },
 
 
-        # 今後の総資産画面用
+        # 総資産
         "totalSummary": {
 
             "label":
