@@ -250,6 +250,39 @@ footer{
 }
 
 .dot.active{background:#fff}
+
+
+  /* ニュース文字をゆっくり表示 */
+.news-fade{
+  opacity:0;
+  transform:translateY(12px);
+}
+
+.page.active .news-title-fade{
+  animation:newsFade 1.5s ease .3s forwards;
+}
+
+.page.active .news-body-fade{
+  animation:newsFade 1.8s ease 1.1s forwards;
+}
+
+.page.active .news-source-fade{
+  animation:newsFade 1.5s ease 2.0s forwards;
+}
+
+@keyframes newsFade{
+  from{
+    opacity:0;
+    transform:translateY(12px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+  
 </style>
 </head>
 
