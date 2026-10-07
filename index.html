@@ -1,2235 +1,1322 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#000000">
-
-<meta
+  <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
->
+  >
 
-<title>Daily Board</title>
+  <title>Daily Board</title>
 
-<style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
-}
-
-body {
-    color: #f5f7fa;
-
-    font-family:
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      color: #f4f7fb;
+      font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         "Hiragino Sans",
         "Yu Gothic",
+        Meiryo,
         sans-serif;
+    }
 
-    overflow: hidden;
-}
+    #app {
+      position: absolute;
+      inset: 0;
 
-#app {
-    position: absolute;
-    inset: 0;
+      padding-top: env(safe-area-inset-top);
+      padding-right: env(safe-area-inset-right);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
 
-    padding-top: env(safe-area-inset-top);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
+      background: #000;
+    }
 
-    background: #000000;
-}
+    #board {
+      width: 100%;
+      height: 100%;
 
-#board {
-    width: 100%;
-    height: 100%;
+      display: flex;
+      flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
+      background:
+        radial-gradient(circle at top, #172333, #070c13 65%);
+    }
 
-    background:
-        radial-gradient(
-            circle at top,
-            #172333,
-            #070c13 65%
+    header {
+      height: 72px;
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 34px;
+
+      background: rgba(5, 10, 17, 0.72);
+      border: none;
+    }
+
+    .header-title {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .header-time {
+      font-size: 17px;
+      color: #aeb8c7;
+    }
+
+    main {
+      flex: 1;
+      min-height: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px 42px 38px;
+    }
+
+    #page {
+      width: 100%;
+      height: 100%;
+
+      opacity: 1;
+      transition: opacity 2s ease;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #page.fade {
+      opacity: 0;
+    }
+
+    .screen {
+      width: 100%;
+      max-width: 1180px;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      color: #7f92aa;
+    }
+
+    .title {
+      margin: 0 0 24px;
+
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.15;
+      font-weight: 750;
+    }
+
+    .subtitle {
+      margin-top: -10px;
+      margin-bottom: 24px;
+
+      font-size: 18px;
+      color: #95a3b6;
+    }
+
+    .big-value {
+      font-size: clamp(58px, 8vw, 102px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .medium-value {
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .positive {
+      color: #3ee786;
+    }
+
+    .negative {
+      color: #ff5f68;
+    }
+
+    .neutral {
+      color: #d9e0ea;
+    }
+
+    .muted {
+      color: #8f9cad;
+    }
+
+    .change-main {
+      margin-top: 20px;
+
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 800;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      min-width: 0;
+
+      padding: 24px 26px;
+
+      border: 1px solid rgba(127, 155, 188, 0.28);
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(23, 39, 57, 0.88),
+          rgba(10, 18, 28, 0.86)
         );
-}
 
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.22);
+    }
 
-/* =========================
-   HEADER
-========================= */
+    .card-label {
+      margin-bottom: 10px;
 
-header {
-    height: 72px;
-    min-height: 72px;
+      font-size: 17px;
+      color: #8e9caf;
+    }
 
-    padding: 0 34px;
+    .card-value {
+      font-size: clamp(27px, 3vw, 42px);
+      font-weight: 750;
+      line-height: 1.15;
+    }
+
+    .card-sub {
+      margin-top: 8px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+      font-size: 16px;
+      color: #8e9caf;
+    }
 
-    background:
-        rgba(5,10,17,0.72);
+    .summary-box {
+      margin-top: 32px;
 
-    border: none;
-}
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 18px 0;
+
+      border-bottom: 1px solid rgba(142, 162, 187, 0.2);
+
+      font-size: 21px;
+    }
+
+    .summary-row:last-child {
+      border-bottom: none;
+    }
+
+    .summary-label {
+      color: #a6b1bf;
+    }
 
-.brand {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-}
+    .summary-value {
+      font-weight: 700;
+      text-align: right;
+    }
 
-.header-right {
-    display: flex;
-    gap: 26px;
-    align-items: center;
+    .stock-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
 
-    color: #aab6c7;
+    .stock-card {
+      padding: 24px;
 
-    font-size: 15px;
-}
+      border-radius: 20px;
+      border: 1px solid rgba(127, 155, 188, 0.28);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(23, 39, 57, 0.88),
+          rgba(10, 18, 28, 0.86)
+        );
+    }
 
+    .stock-name {
+      margin-bottom: 15px;
 
-/* =========================
-   PAGE
-========================= */
+      font-size: 21px;
+      font-weight: 700;
+    }
 
-#screen {
-    position: relative;
-    flex: 1;
-    min-height: 0;
-}
+    .stock-price {
+      font-size: 36px;
+      font-weight: 800;
+    }
 
-.page {
-    position: absolute;
-    inset: 0;
+    .stock-change {
+      margin-top: 8px;
 
-    padding: 30px 46px;
+      font-size: 22px;
+      font-weight: 700;
+    }
 
-    opacity: 0;
+    .stock-value {
+      margin-top: 15px;
 
-    transition:
-        opacity 2s ease;
-
-    pointer-events: none;
-}
-
-.page.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.eyebrow {
-    color: #8392a7;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    letter-spacing: 0.18em;
-
-    margin-bottom: 11px;
-}
-
-.page-title {
-    margin: 0;
-
-    font-size: 46px;
-    line-height: 1.08;
-}
-
-
-/* =========================
-   WEATHER
-========================= */
-
-.weather-wrap {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.weather-main {
-    display: flex;
-    align-items: flex-end;
-
-    gap: 35px;
-
-    margin-top: 20px;
-}
-
-.weather-text {
-    font-size: 72px;
-    font-weight: 800;
-}
-
-.weather-temp {
-    font-size: 32px;
-
-    color: #c6d0dd;
-
-    padding-bottom: 10px;
-}
-
-.weather-rain {
-    margin-top: 24px;
-
-    font-size: 22px;
-
-    color: #9caabd;
-}
-
-
-/* =========================
-   COLORS
-========================= */
-
-.positive {
-    color: #38d996;
-}
-
-.negative {
-    color: #ff6873;
-}
-
-.neutral {
-    color: #9ba7b7;
-}
-
-
-/* =========================
-   TOTAL ASSETS
-========================= */
-
-.total-page {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.total-label {
-    color: #a4afbd;
-
-    font-size: 18px;
-    font-weight: 650;
-}
-
-.total-value {
-    margin-top: 5px;
-
-    font-size: 62px;
-    font-weight: 850;
-
-    letter-spacing: -0.04em;
-}
-
-.total-change {
-    margin-top: 10px;
-
-    font-size: 26px;
-    font-weight: 800;
-}
-
-.total-cost {
-    margin-top: 9px;
-
-    color: #8997aa;
-
-    font-size: 16px;
-}
-
-.total-profit {
-    margin-top: 4px;
-
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.total-breakdown {
-    margin-top: 34px;
-
-    display: grid;
-
-    grid-template-columns:
-        1fr
-        1fr;
-
-    gap: 18px;
-}
-
-.total-card {
-    padding: 22px 25px;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.09);
-
-    border-radius: 18px;
-
-    background:
-        rgba(9,16,26,0.72);
-}
-
-.total-card-label {
-    color: #8997aa;
-
-    font-size: 14px;
-    font-weight: 650;
-}
-
-.total-card-value {
-    margin-top: 7px;
-
-    font-size: 28px;
-    font-weight: 800;
-}
-
-
-/* =========================
-   ASSET TABLE
-========================= */
-
-.asset-page {
-    padding-top: 22px;
-}
-
-.asset-top {
-    display: flex;
-
-    align-items: flex-end;
-    justify-content: space-between;
-
-    gap: 30px;
-
-    margin-bottom: 20px;
-}
-
-.asset-total-label {
-    color: #a4afbd;
-
-    font-size: 16px;
-
-    margin-bottom: 5px;
-}
-
-.asset-total {
-    font-size: 45px;
-    font-weight: 800;
-
-    letter-spacing: -0.03em;
-}
-
-.asset-purchase-total {
-    margin-top: 4px;
-
-    color: #8794a6;
-
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.asset-total-change {
-    text-align: right;
-
-    font-size: 24px;
-    font-weight: 800;
-
-    padding-bottom: 5px;
-}
-
-.asset-table {
-    width: 100%;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.09);
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    background:
-        rgba(10,17,27,0.72);
-
-    box-shadow:
-        0 18px 60px
-        rgba(0,0,0,0.25);
-}
-
-.asset-head,
-.asset-row {
-    display: grid;
-
-    grid-template-columns:
-        2fr
-        1.2fr
-        1.15fr
-        1.5fr;
-
-    align-items: center;
-}
-
-.asset-head {
-    min-height: 48px;
-
-    padding: 0 25px;
-
-    background:
-        rgba(255,255,255,0.045);
-
-    color: #8f9db0;
-
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.asset-row {
-    min-height: 84px;
-
-    padding: 9px 25px;
-
-    border-top:
-        1px solid
-        rgba(255,255,255,0.07);
-}
-
-.asset-name {
-    font-size: 20px;
-    font-weight: 750;
-}
-
-.asset-qty {
-    margin-top: 5px;
-
-    color: #8794a6;
-
-    font-size: 14px;
-}
-
-.asset-price {
-    font-size: 21px;
-    font-weight: 750;
-}
-
-.asset-cost {
-    margin-top: 5px;
-
-    color: #8390a2;
-
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.asset-day-change {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.asset-value {
-    font-size: 22px;
-    font-weight: 800;
-}
-
-.asset-delta {
-    margin-top: 5px;
-
-    color: #8794a6;
-
-    font-size: 13px;
-    font-weight: 650;
-}
-
-
-/* =========================
-   FUND
-========================= */
-
-.fund-page {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.fund-main-card {
-    margin-top: 18px;
-
-    padding: 25px 28px;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.09);
-
-    border-radius: 20px;
-
-    background:
-        rgba(9,16,26,0.76);
-}
-
-.fund-name {
-    font-size: 31px;
-    font-weight: 800;
-}
-
-.fund-qty {
-    margin-top: 6px;
-
-    color: #8997aa;
-
-    font-size: 15px;
-}
-
-.fund-grid {
-    margin-top: 24px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 14px;
-}
-
-.fund-item {
-    padding: 16px 18px;
-
-    border-radius: 14px;
-
-    background:
-        rgba(255,255,255,0.04);
-}
-
-.fund-item-label {
-    color: #8997aa;
-
-    font-size: 13px;
-}
-
-.fund-item-value {
-    margin-top: 7px;
-
-    font-size: 23px;
-    font-weight: 800;
-}
-
-.fund-item-sub {
-    margin-top: 5px;
-
-    color: #7f8da0;
-
-    font-size: 12px;
-}
-
-
-/* =========================
-   MARKET
-========================= */
-
-.market-page {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.market-top {
-    display: flex;
-
-    justify-content: space-between;
-    align-items: flex-end;
-
-    gap: 20px;
-}
-
-.market-name {
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.market-price {
-    margin-top: 7px;
-
-    font-size: 24px;
-
-    color: #c8d1dd;
-}
-
-.market-change {
-    font-size: 27px;
-    font-weight: 800;
-}
-
-.chart-card {
-    flex: 1;
-    min-height: 0;
-
-    margin-top: 20px;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.08);
-
-    border-radius: 20px;
-
-    background:
-        rgba(9,15,24,0.75);
-
-    padding: 20px;
-}
-
-.chart-card svg {
-    width: 100%;
-    height: 100%;
-
-    overflow: visible;
-}
-
-
-/* =========================
-   NEWS
-========================= */
-
-.news-page {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.news-card {
-    width: 100%;
-
-    max-width: 1100px;
-
-    padding: 38px 42px;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.09);
-
-    border-radius: 22px;
-
-    background:
-        rgba(9,16,26,0.78);
-}
-
-.news-date {
-    color: #8493a6;
-
-    font-size: 14px;
-
-    margin-bottom: 15px;
-}
-
-.news-title {
-    font-size: 34px;
-
-    line-height: 1.3;
-
-    font-weight: 800;
-}
-
-.news-description {
-    margin-top: 22px;
-
-    color: #c0cad7;
-
-    font-size: 19px;
-
-    line-height: 1.7;
-}
-
-.news-source {
-    margin-top: 24px;
-
-    color: #7f8da0;
-
-    font-size: 14px;
-}
-
-.news-link {
-    color: inherit;
-    text-decoration: none;
-}
-
-</style>
-
+      font-size: 16px;
+      color: #9aa7b8;
+    }
+
+    .fund-hero {
+      padding: 32px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(76, 141, 215, 0.38);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(19, 39, 60, 0.94),
+          rgba(8, 17, 27, 0.92)
+        );
+    }
+
+    .fund-name {
+      margin-bottom: 18px;
+
+      font-size: 24px;
+      font-weight: 700;
+      color: #dfe8f3;
+    }
+
+    .fund-value {
+      font-size: clamp(55px, 7vw, 92px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .fund-daily {
+      margin-top: 20px;
+      margin-bottom: 26px;
+
+      font-size: clamp(28px, 4vw, 47px);
+      font-weight: 800;
+    }
+
+    .fund-info {
+      border-top: 1px solid rgba(144, 164, 188, 0.25);
+    }
+
+    .fund-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 15px 2px;
+
+      border-bottom: 1px solid rgba(144, 164, 188, 0.18);
+
+      font-size: 20px;
+    }
+
+    .fund-row:last-child {
+      border-bottom: none;
+    }
+
+    .fund-row-label {
+      color: #a8b4c4;
+    }
+
+    .fund-row-value {
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .chart-wrap {
+      width: 100%;
+      height: 66vh;
+      min-height: 360px;
+
+      padding: 20px 16px 8px;
+
+      border-radius: 22px;
+      border: 1px solid rgba(127, 155, 188, 0.24);
+
+      background: rgba(7, 14, 22, 0.58);
+    }
+
+    .chart-wrap svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .news-card {
+      max-width: 980px;
+
+      padding: 38px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(127, 155, 188, 0.28);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(23, 39, 57, 0.9),
+          rgba(10, 18, 28, 0.9)
+        );
+    }
+
+    .news-source {
+      margin-bottom: 14px;
+
+      font-size: 18px;
+      font-weight: 700;
+      color: #65a9ff;
+    }
+
+    .news-title {
+      margin-bottom: 22px;
+
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.3;
+      font-weight: 750;
+    }
+
+    .news-description {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #bdc7d4;
+    }
+
+    .error {
+      font-size: 24px;
+      color: #ff7279;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        padding: 0 20px;
+      }
+
+      main {
+        padding: 22px 20px 28px;
+      }
+
+      .grid-4,
+      .stock-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 
-
 <body>
+  <div id="app">
+    <div id="board">
 
-<div id="app">
+      <header>
+        <div class="header-title">DAILY BOARD</div>
+        <div id="updated" class="header-time">Loading...</div>
+      </header>
 
-<div id="board">
+      <main>
+        <div id="page"></div>
+      </main>
 
-<header>
+    </div>
+  </div>
 
-<div class="brand">
-    DAILY BOARD
-</div>
+  <script>
+    const PAGE_INTERVAL = 20000;
+    const FADE_TIME = 2000;
 
-<div class="header-right">
+    let pages = [];
+    let pageIndex = 0;
+    let rotationTimer = null;
 
-<div id="updated">
-    —
-</div>
-
-<div id="clock">
-    —
-</div>
-
-</div>
-
-</header>
-
-<div id="screen"></div>
-
-</div>
-
-</div>
+    const page = document.getElementById("page");
+    const updated = document.getElementById("updated");
 
 
-<script>
-
-const screen =
-    document.getElementById("screen");
-
-let pages = [];
-
-let pageIndex = 0;
-
-let pageTimer = null;
-
-
-/* =========================
-   FORMAT
-========================= */
-
-function yen(value) {
-
-    if (
-        value === null ||
-        value === undefined ||
-        Number.isNaN(Number(value))
-    ) {
+    function yen(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) {
         return "—";
+      }
+
+      return Math.round(Number(value)).toLocaleString("ja-JP") + "円";
     }
 
-    return "¥" +
-        Math.round(
-            Number(value)
-        ).toLocaleString(
-            "ja-JP"
-        );
-}
 
-
-function priceYen(value) {
-
-    if (
-        value === null ||
-        value === undefined
-    ) {
+    function priceYen(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) {
         return "—";
+      }
+
+      return Number(value).toLocaleString("ja-JP", {
+        maximumFractionDigits: 2
+      }) + "円";
     }
 
-    const n =
-        Number(value);
 
-    const decimals =
-        Number.isInteger(n)
-        ? 0
-        : 1;
-
-    return "¥" +
-        n.toLocaleString(
-            "ja-JP",
-            {
-                minimumFractionDigits:
-                    decimals,
-
-                maximumFractionDigits:
-                    2
-            }
-        );
-}
-
-
-function signedYen(value) {
-
-    if (
-        value === null ||
-        value === undefined
-    ) {
+    function signedYen(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) {
         return "—";
+      }
+
+      const n = Math.round(Number(value));
+
+      if (n > 0) {
+        return "+" + n.toLocaleString("ja-JP") + "円";
+      }
+
+      if (n < 0) {
+        return n.toLocaleString("ja-JP") + "円";
+      }
+
+      return "±0円";
     }
 
-    const n =
-        Math.round(
-            Number(value)
-        );
 
-    if (n > 0) {
-
-        return "+¥" +
-            n.toLocaleString(
-                "ja-JP"
-            );
-    }
-
-    if (n < 0) {
-
-        return "−¥" +
-            Math.abs(n)
-            .toLocaleString(
-                "ja-JP"
-            );
-    }
-
-    return "±¥0";
-}
-
-
-function percent(value) {
-
-    if (
-        value === null ||
-        value === undefined
-    ) {
+    function percent(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) {
         return "—";
+      }
+
+      const n = Number(value);
+      const sign = n > 0 ? "+" : "";
+
+      return sign + n.toFixed(2) + "%";
     }
 
-    const n =
-        Number(value);
 
-    if (n > 0) {
+    function directionClass(value) {
+      const n = Number(value);
 
-        return "+" +
-            n.toFixed(2) +
-            "%";
+      if (n > 0) return "positive";
+      if (n < 0) return "negative";
+
+      return "neutral";
     }
 
-    if (n < 0) {
 
-        return "−" +
-            Math.abs(n)
-            .toFixed(2) +
-            "%";
+    function arrow(value) {
+      const n = Number(value);
+
+      if (n > 0) return "▲";
+      if (n < 0) return "▼";
+
+      return "―";
     }
 
-    return "0.00%";
-}
 
+    function weatherPage(data) {
+      const w = data.weather || {};
 
-function directionClass(value) {
+      return `
+        <div class="screen">
 
-    if (
-        value === null ||
-        value === undefined
-    ) {
-        return "neutral";
-    }
+          <div class="eyebrow">SAPPORO</div>
 
-    if (Number(value) > 0) {
-        return "positive";
-    }
+          <h1 class="title">札幌の天気</h1>
 
-    if (Number(value) < 0) {
-        return "negative";
-    }
+          <div class="grid grid-2">
 
-    return "neutral";
-}
+            <div class="card">
+              <div class="card-label">現在</div>
 
+              <div class="big-value">
+                ${w.temperature !== undefined ? Math.round(w.temperature) + "°C" : "—"}
+              </div>
 
-function arrow(value) {
-
-    if (
-        value === null ||
-        value === undefined
-    ) {
-        return "";
-    }
-
-    if (Number(value) > 0) {
-        return "▲";
-    }
-
-    if (Number(value) < 0) {
-        return "▼";
-    }
-
-    return "•";
-}
-
-
-/* =========================
-   PAGE
-========================= */
-
-function addPage(content) {
-
-    const div =
-        document.createElement(
-            "section"
-        );
-
-    div.className =
-        "page";
-
-    div.innerHTML =
-        content;
-
-    screen.appendChild(
-        div
-    );
-
-    pages.push(
-        div
-    );
-}
-
-
-/* =========================
-   WEATHER
-========================= */
-
-function weatherPage(data) {
-
-    const w =
-        data.weather || {};
-
-    addPage(`
-
-        <div class="weather-wrap">
-
-            <div class="eyebrow">
-                SAPPORO WEATHER
+              <div class="card-sub">
+                ${w.weather || w.description || ""}
+              </div>
             </div>
 
-            <h1 class="page-title">
-                今日の札幌
-            </h1>
+            <div class="card">
+              <div class="card-label">今日</div>
 
-            <div class="weather-main">
+              <div class="card-value">
+                ${w.min !== undefined ? Math.round(w.min) + "°" : "—"}
+                /
+                ${w.max !== undefined ? Math.round(w.max) + "°" : "—"}
+              </div>
 
-                <div class="weather-text">
-                    ${w.text ?? "—"}
-                </div>
-
-                <div class="weather-temp">
-
-                    最高
-                    ${w.max ?? "—"}℃
-
-                    &nbsp;&nbsp;
-
-                    最低
-                    ${w.min ?? "—"}℃
-
-                </div>
-
-            </div>
-
-            <div class="weather-rain">
-
+              <div class="card-sub">
                 降水確率
-                ${w.rain ?? "—"}%
-
+                ${w.precipitation !== undefined ? Math.round(w.precipitation) + "%" : "—"}
+              </div>
             </div>
+
+          </div>
 
         </div>
-    `);
-}
-
-
-/* =========================
-   TOTAL ASSETS
-========================= */
-
-function totalSummaryPage(data) {
-
-    const s =
-        data.totalSummary || {};
-
-    const stocks =
-        (data.assets || [])
-        .filter(
-            a =>
-            a.type === "stock"
-        );
-
-    const fund =
-        (data.assets || [])
-        .find(
-            a =>
-            a.type === "fund"
-        );
-
-
-    const stockValue =
-        stocks.reduce(
-            (sum, a) =>
-                sum +
-                (
-                    Number(a.value)
-                    || 0
-                ),
-            0
-        );
-
-
-    const fundValue =
-        fund &&
-        fund.value !== null
-        ?
-        Number(fund.value)
-        :
-        null;
-
-
-    const deltaClass =
-        directionClass(
-            s.deltaYen
-        );
-
-
-    const profitClass =
-        directionClass(
-            s.unrealizedYen
-        );
-
-
-    addPage(`
-
-        <div class="total-page">
-
-            <div class="eyebrow">
-                TOTAL ASSETS
-            </div>
-
-            <div class="total-label">
-                総資産評価額
-            </div>
-
-            <div class="total-value">
-                ${yen(s.total)}
-            </div>
-
-            <div
-                class="
-                    total-change
-                    ${deltaClass}
-                "
-            >
-
-                ${arrow(s.deltaYen)}
-
-                ${signedYen(
-                    s.deltaYen
-                )}
-
-                &nbsp;
-
-                ${percent(
-                    s.deltaPercent
-                )}
-
-            </div>
-
-            <div class="total-cost">
-
-                総取得額
-                ${yen(
-                    s.purchaseTotal
-                )}
-
-            </div>
-
-            <div
-                class="
-                    total-profit
-                    ${profitClass}
-                "
-            >
-
-                評価損益
-
-                ${signedYen(
-                    s.unrealizedYen
-                )}
-
-                &nbsp;
-
-                ${percent(
-                    s.unrealizedPercent
-                )}
-
-            </div>
-
-
-            <div class="total-breakdown">
-
-                <div class="total-card">
-
-                    <div class="total-card-label">
-                        日本株
-                    </div>
-
-                    <div class="total-card-value">
-                        ${yen(stockValue)}
-                    </div>
-
-                </div>
-
-
-                <div class="total-card">
-
-                    <div class="total-card-label">
-                        投資信託
-                    </div>
-
-                    <div class="total-card-value">
-                        ${yen(fundValue)}
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    `);
-}
-
-
-/* =========================
-   STOCK SUMMARY
-========================= */
-
-function stockSummaryPage(data) {
-
-    const summary =
-        data.summary || {};
-
-    const assets =
-        (data.assets || [])
-        .filter(
-            a =>
-            a.type === "stock"
-        );
-
-
-    const totalClass =
-        directionClass(
-            summary.deltaYen
-        );
-
-
-    const rows =
-        assets.map(
-            a => {
-
-                const cls =
-                    directionClass(
-                        a.change
-                    );
-
-
-                return `
-
-                    <div class="asset-row">
-
-                        <div>
-
-                            <div class="asset-name">
-                                ${a.name}
-                            </div>
-
-                            <div class="asset-qty">
-                                ${a.qtyLabel}
-                            </div>
-
-                        </div>
-
-
-                        <div>
-
-                            <div class="asset-price">
-                                ${priceYen(a.price)}
-                            </div>
-
-                            <div class="asset-cost">
-
-                                取得
-                                ${priceYen(a.cost)}
-
-                            </div>
-
-                        </div>
-
-
-                        <div
-                            class="
-                                asset-day-change
-                                ${cls}
-                            "
-                        >
-
-                            ${arrow(a.change)}
-
-                            ${percent(a.change)}
-
-                        </div>
-
-
-                        <div>
-
-                            <div class="asset-value">
-                                ${yen(a.value)}
-                            </div>
-
-                            <div class="asset-delta">
-
-                                Δ
-                                ${signedYen(
-                                    a.deltaYen
-                                )}
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                `;
-            }
-        )
-        .join("");
-
-
-    addPage(`
-
-        <div class="asset-page">
-
-            <div class="eyebrow">
-                JAPANESE STOCKS
-            </div>
-
-
-            <div class="asset-top">
-
-                <div>
-
-                    <div class="asset-total-label">
-                        日本株評価額
-                    </div>
-
-                    <div class="asset-total">
-                        ${yen(summary.total)}
-                    </div>
-
-                    <div class="asset-purchase-total">
-
-                        総取得額
-                        ${yen(
-                            summary.purchaseTotal
-                        )}
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    class="
-                        asset-total-change
-                        ${totalClass}
-                    "
-                >
-
-                    ${arrow(
-                        summary.deltaYen
-                    )}
-
-                    ${signedYen(
-                        summary.deltaYen
-                    )}
-
-                    &nbsp;
-
-                    ${percent(
-                        summary.deltaPercent
-                    )}
-
-                </div>
-
-            </div>
-
-
-            <div class="asset-table">
-
-                <div class="asset-head">
-
-                    <div>銘柄</div>
-
-                    <div>株単価</div>
-
-                    <div>前日比</div>
-
-                    <div>評価額</div>
-
-                </div>
-
-                ${rows}
-
-            </div>
-
-        </div>
-    `);
-}
-
-
-/* =========================
-   FUND SUMMARY
-========================= */
-
-function fundSummaryPage(data) {
-
-    const fund =
-        (data.assets || [])
-        .find(
-            a =>
-            a.type === "fund"
-        );
-
-
-    if (!fund) {
-        return;
+      `;
     }
 
 
-    const changeClass =
-        directionClass(
-            fund.change
-        );
+    function totalPage(data) {
+      const t = data.totalSummary || {};
+      const stock = data.summary || {};
 
+      const fund = (data.assets || []).find(
+        x => x.type === "fund" || x.code === "03311187"
+      );
 
-    const profitClass =
-        directionClass(
-            fund.unrealizedYen
-        );
+      const purchase = Number(t.purchase || 0);
+      const total = Number(t.total || 0);
 
+      const unrealized =
+        t.unrealized !== undefined && t.unrealized !== null
+          ? Number(t.unrealized)
+          : total - purchase;
 
-    addPage(`
+      const unrealizedPct =
+        purchase > 0
+          ? (unrealized / purchase) * 100
+          : null;
 
-        <div class="fund-page">
+      return `
+        <div class="screen">
 
-            <div class="eyebrow">
-                INVESTMENT FUND
+          <div class="eyebrow">TOTAL ASSETS</div>
+
+          <h1 class="title">総資産評価額</h1>
+
+          <div class="big-value">
+            ${yen(t.total)}
+          </div>
+
+          <div class="change-main ${directionClass(t.deltaYen)}">
+            ${arrow(t.deltaYen)}
+            ${signedYen(t.deltaYen)}
+            （${percent(t.change)}）
+          </div>
+
+          <div class="summary-box">
+
+            <div class="card">
+              <div class="card-label">総取得額</div>
+
+              <div class="card-value">
+                ${yen(t.purchase)}
+              </div>
             </div>
 
+            <div class="card">
+              <div class="card-label">評価損益</div>
 
-            <div class="fund-main-card">
+              <div class="card-value ${directionClass(unrealized)}">
+                ${signedYen(unrealized)}
+              </div>
 
-                <div class="fund-name">
-                    ${fund.name}
-                </div>
-
-                <div class="fund-qty">
-                    ${fund.qtyLabel}
-                </div>
-
-
-                <div class="fund-grid">
-
-
-                    <div class="fund-item">
-
-                        <div class="fund-item-label">
-                            基準価額
-                        </div>
-
-                        <div class="fund-item-value">
-                            ${priceYen(
-                                fund.price
-                            )}
-                        </div>
-
-                        <div class="fund-item-sub">
-
-                            取得
-                            ${priceYen(
-                                fund.cost
-                            )}
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="fund-item">
-
-                        <div class="fund-item-label">
-                            前日比
-                        </div>
-
-                        <div
-                            class="
-                                fund-item-value
-                                ${changeClass}
-                            "
-                        >
-
-                            ${arrow(
-                                fund.change
-                            )}
-
-                            ${percent(
-                                fund.change
-                            )}
-
-                        </div>
-
-                        <div class="fund-item-sub">
-
-                            基準価額差
-                            ${signedYen(
-                                fund.price !== null &&
-                                fund.previousClose !== null
-                                ?
-                                fund.price -
-                                fund.previousClose
-                                :
-                                null
-                            )}
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="fund-item">
-
-                        <div class="fund-item-label">
-                            評価額
-                        </div>
-
-                        <div class="fund-item-value">
-                            ${yen(
-                                fund.value
-                            )}
-                        </div>
-
-                        <div class="fund-item-sub">
-
-                            前日差
-                            ${signedYen(
-                                fund.deltaYen
-                            )}
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="fund-item">
-
-                        <div class="fund-item-label">
-                            評価損益
-                        </div>
-
-                        <div
-                            class="
-                                fund-item-value
-                                ${profitClass}
-                            "
-                        >
-
-                            ${signedYen(
-                                fund.unrealizedYen
-                            )}
-
-                        </div>
-
-                        <div class="fund-item-sub">
-
-                            ${percent(
-                                fund.unrealizedPercent
-                            )}
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
+              <div class="card-sub">
+                ${percent(unrealizedPct)}
+              </div>
             </div>
+
+            <div class="card">
+              <div class="card-label">日本株</div>
+
+              <div class="card-value">
+                ${yen(stock.total)}
+              </div>
+
+              <div class="card-sub ${directionClass(stock.deltaYen)}">
+                前日比 ${signedYen(stock.deltaYen)}
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-label">投資信託</div>
+
+              <div class="card-value">
+                ${fund ? yen(fund.value) : "—"}
+              </div>
+
+              <div class="card-sub ${fund ? directionClass(fund.deltaYen) : "neutral"}">
+                前日比 ${fund ? signedYen(fund.deltaYen) : "—"}
+              </div>
+            </div>
+
+          </div>
 
         </div>
-    `);
-}
-
-
-/* =========================
-   CHART
-========================= */
-
-function chartHTML(points) {
-
-    if (
-        !points ||
-        points.length < 2
-    ) {
-
-        return `
-
-            <div
-                style="
-                    height:100%;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    color:#7e8a99;
-                "
-            >
-                データ取得待ち
-            </div>
-        `;
+      `;
     }
 
 
-    const width = 1000;
+    function stockSummaryPage(data) {
+      const stocks = (data.assets || []).filter(
+        x => x.type !== "fund" && x.code !== "03311187"
+      );
 
-    const height = 430;
+      return `
+        <div class="screen">
 
-    const left = 82;
+          <div class="eyebrow">JAPANESE STOCKS</div>
 
-    const right = 28;
+          <h1 class="title">日本株</h1>
 
-    const top = 22;
+          <div class="stock-grid">
 
-    const bottom = 48;
+            ${stocks.map(stock => `
+              <div class="stock-card">
+
+                <div class="stock-name">
+                  ${stock.name || stock.code}
+                </div>
+
+                <div class="stock-price">
+                  ${priceYen(stock.price)}
+                </div>
+
+                <div class="stock-change ${directionClass(stock.change)}">
+                  ${arrow(stock.change)}
+                  ${signedYen(stock.delta)}
+                  （${percent(stock.change)}）
+                </div>
+
+                <div class="stock-value">
+                  ${stock.qty ? stock.qty.toLocaleString("ja-JP") + "株" : ""}
+                  ${stock.value !== undefined ? "　評価額 " + yen(stock.value) : ""}
+                </div>
+
+              </div>
+            `).join("")}
+
+          </div>
+
+        </div>
+      `;
+    }
 
 
-    const values =
-        points.map(
-            p =>
-            Number(p.value)
-        );
+    /*
+      投資信託ページ
+
+      ★今回の変更箇所
+
+      メインの緑/赤表示を
+      「購入時からの評価損益」ではなく
+      「前日からの評価額増減」に変更。
+
+      評価損益は下部に白文字で残す。
+    */
+    function fundSummaryPage(fund) {
+      const purchase = Number(fund.purchase || 0);
+      const value = Number(fund.value || 0);
+
+      const unrealized =
+        fund.unrealized !== undefined && fund.unrealized !== null
+          ? Number(fund.unrealized)
+          : value - purchase;
+
+      const unrealizedPct =
+        purchase > 0
+          ? (unrealized / purchase) * 100
+          : null;
+
+      return `
+        <div class="screen">
+
+          <div class="eyebrow">INVESTMENT FUND</div>
+
+          <div class="fund-hero">
+
+            <div class="fund-name">
+              ${fund.name || "eMAXIS Slim 米国株式（S&P500）"}
+            </div>
+
+            <div class="fund-value">
+              ${yen(fund.value)}
+            </div>
 
 
-    let min =
-        Math.min(
-            ...values
-        );
+            <!--
+              ここを前日からの増減額に統一
+            -->
+            <div class="fund-daily ${directionClass(fund.deltaYen)}">
+              ${arrow(fund.deltaYen)}
+              前日から
+              ${signedYen(fund.deltaYen)}
+              （${percent(fund.change)}）
+            </div>
 
 
-    let max =
-        Math.max(
-            ...values
-        );
+            <div class="fund-info">
+
+              <div class="fund-row">
+                <div class="fund-row-label">
+                  基準価額
+                </div>
+
+                <div class="fund-row-value">
+                  ${priceYen(fund.price)}
+                </div>
+              </div>
 
 
-    if (min === max) {
+              <div class="fund-row">
+                <div class="fund-row-label">
+                  前日比
+                </div>
 
-        min -= 1;
+                <div class="fund-row-value ${directionClass(fund.change)}">
+                  ${percent(fund.change)}
+                </div>
+              </div>
+
+
+              <div class="fund-row">
+                <div class="fund-row-label">
+                  保有口数
+                </div>
+
+                <div class="fund-row-value">
+                  ${fund.qty !== undefined
+                    ? Number(fund.qty).toLocaleString("ja-JP") + "口"
+                    : "—"}
+                </div>
+              </div>
+
+
+              <div class="fund-row">
+                <div class="fund-row-label">
+                  取得単価
+                </div>
+
+                <div class="fund-row-value">
+                  ${priceYen(fund.cost)}
+                </div>
+              </div>
+
+
+              <!--
+                購入時からの損益は補助情報。
+                緑/赤にはしない。
+              -->
+              <div class="fund-row">
+                <div class="fund-row-label">
+                  評価損益
+                </div>
+
+                <div class="fund-row-value neutral">
+                  ${signedYen(unrealized)}
+                  （${percent(unrealizedPct)}）
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      `;
+    }
+
+
+    function chartPage(asset, points, periodTitle) {
+      if (!points || points.length < 2) {
+        return "";
+      }
+
+      const values = points
+        .map(p => Number(p.price ?? p.value ?? p.close))
+        .filter(v => Number.isFinite(v));
+
+      if (values.length < 2) {
+        return "";
+      }
+
+      const width = 1000;
+      const height = 500;
+
+      const padLeft = 105;
+      const padRight = 35;
+      const padTop = 35;
+      const padBottom = 70;
+
+      let min = Math.min(...values);
+      let max = Math.max(...values);
+
+      if (max === min) {
         max += 1;
-    }
+        min -= 1;
+      }
 
+      const range = max - min;
 
-    const range =
-        max - min;
+      min -= range * 0.08;
+      max += range * 0.08;
 
+      const plotWidth = width - padLeft - padRight;
+      const plotHeight = height - padTop - padBottom;
 
-    min -=
-        range * 0.08;
+      const x = i =>
+        padLeft +
+        (i / Math.max(values.length - 1, 1)) * plotWidth;
 
+      const y = v =>
+        padTop +
+        ((max - v) / (max - min)) * plotHeight;
 
-    max +=
-        range * 0.08;
-
-
-    const plotWidth =
-        width -
-        left -
-        right;
-
-
-    const plotHeight =
-        height -
-        top -
-        bottom;
-
-
-    const x = i =>
-
-        left +
-
-        (
-            i /
-            (
-                points.length - 1
-            )
-        )
-
-        * plotWidth;
-
-
-    const y = value =>
-
-        top +
-
-        (
-            (
-                max - value
-            )
-            /
-            (
-                max - min
-            )
-        )
-
-        * plotHeight;
-
-
-    const polyline =
-        points.map(
-            (p, i) =>
-                `${x(i)},${y(p.value)}`
-        )
+      const polyline = values
+        .map((v, i) => `${x(i)},${y(v)}`)
         .join(" ");
 
+      const yTicks = 5;
 
-    let grid = "";
+      let yGrid = "";
 
+      for (let i = 0; i < yTicks; i++) {
+        const ratio = i / (yTicks - 1);
+        const val = max - ratio * (max - min);
+        const yy = padTop + ratio * plotHeight;
 
-    for (
-        let i = 0;
-        i < 5;
-        i++
-    ) {
+        yGrid += `
+          <line
+            x1="${padLeft}"
+            y1="${yy}"
+            x2="${width - padRight}"
+            y2="${yy}"
+            stroke="rgba(151,170,194,.16)"
+            stroke-width="1"
+          />
 
-        const ratio =
-            i / 4;
+          <text
+            x="${padLeft - 16}"
+            y="${yy + 6}"
+            text-anchor="end"
+            fill="#8291a4"
+            font-size="17"
+          >
+            ${Math.round(val).toLocaleString("ja-JP")}
+          </text>
+        `;
+      }
 
+      const labelIndexes = [
+        0,
+        Math.floor((points.length - 1) / 2),
+        points.length - 1
+      ];
 
-        const gy =
-            top +
-            ratio *
-            plotHeight;
+      let xLabels = "";
 
+      [...new Set(labelIndexes)].forEach(i => {
+        const p = points[i];
 
-        const value =
-            max -
-            ratio *
-            (
-                max - min
-            );
+        const label =
+          p.label ||
+          p.time ||
+          p.date ||
+          "";
 
+        xLabels += `
+          <text
+            x="${x(i)}"
+            y="${height - 24}"
+            text-anchor="middle"
+            fill="#8291a4"
+            font-size="16"
+          >
+            ${label}
+          </text>
+        `;
+      });
 
-        grid += `
+      const first = values[0];
+      const last = values[values.length - 1];
 
-            <line
-                x1="${left}"
-                y1="${gy}"
-                x2="${width-right}"
-                y2="${gy}"
-                stroke="rgba(255,255,255,0.08)"
-                stroke-width="1"
-            />
+      const delta = last - first;
+      const deltaPct = first !== 0 ? (delta / first) * 100 : 0;
 
+      return `
+        <div class="screen">
 
-            <text
-                x="${left-12}"
-                y="${gy+5}"
-                text-anchor="end"
-                fill="#748195"
-                font-size="13"
+          <div class="eyebrow">${periodTitle}</div>
+
+          <h1 class="title">
+            ${asset.name || asset.code}
+          </h1>
+
+          <div class="subtitle ${directionClass(delta)}">
+            ${arrow(delta)}
+            ${delta > 0 ? "+" : ""}
+            ${delta.toLocaleString("ja-JP", {
+              maximumFractionDigits: 2
+            })}
+            円
+            （${percent(deltaPct)}）
+          </div>
+
+          <div class="chart-wrap">
+
+            <svg
+              viewBox="0 0 ${width} ${height}"
+              preserveAspectRatio="none"
             >
 
-                ¥${Math.round(value)
-                    .toLocaleString(
-                        "ja-JP"
-                    )}
+              ${yGrid}
 
-            </text>
-        `;
-    }
-
-
-    const labelIndexes =
-        [
-            0,
-
-            Math.floor(
-                (
-                    points.length - 1
-                ) / 2
-            ),
-
-            points.length - 1
-        ];
-
-
-    let xLabels = "";
-
-
-    labelIndexes.forEach(
-        i => {
-
-            const p =
-                points[i];
-
-
-            xLabels += `
-
-                <text
-                    x="${x(i)}"
-                    y="${height-13}"
-                    text-anchor="middle"
-                    fill="#748195"
-                    font-size="13"
-                >
-
-                    ${p.label}
-
-                </text>
-            `;
-        }
-    );
-
-
-    return `
-
-        <svg
-            viewBox="0 0 ${width} ${height}"
-            preserveAspectRatio="none"
-        >
-
-            ${grid}
-
-
-            <polyline
+              <polyline
                 points="${polyline}"
                 fill="none"
-                stroke="#d8e1ec"
-                stroke-width="4"
+                stroke="#64a9ff"
+                stroke-width="5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-            />
+              />
 
+              ${values.map((v, i) => `
+                <circle
+                  cx="${x(i)}"
+                  cy="${y(v)}"
+                  r="${i === values.length - 1 ? 7 : 3}"
+                  fill="${i === values.length - 1 ? "#f4f7fb" : "#64a9ff"}"
+                />
+              `).join("")}
 
-            ${xLabels}
+              ${xLabels}
 
-        </svg>
-    `;
-}
+            </svg>
 
+          </div>
 
-/* =========================
-   MARKET PAGE
-========================= */
-
-function marketPage(
-    asset,
-    periodLabel,
-    points,
-    change
-) {
-
-    if (
-        !points ||
-        points.length < 2
-    ) {
-        return;
+        </div>
+      `;
     }
 
 
-    const cls =
-        directionClass(
-            change
-        );
+    function newsPage(asset) {
+      const news = asset.news;
 
+      if (!news) {
+        return "";
+      }
 
-    const priceLabel =
-        asset.type === "fund"
-        ?
-        "基準価額"
-        :
-        "株価";
-
-
-    addPage(`
-
-        <div class="market-page">
-
-            <div class="eyebrow">
-                ${periodLabel}
-            </div>
-
-
-            <div class="market-top">
-
-                <div>
-
-                    <div class="market-name">
-                        ${asset.name}
-                    </div>
-
-                    <div class="market-price">
-
-                        ${priceLabel}
-
-                        ${priceYen(
-                            asset.price
-                        )}
-
-                        ・
-
-                        ${asset.qtyLabel}
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    class="
-                        market-change
-                        ${cls}
-                    "
-                >
-
-                    ${arrow(change)}
-
-                    ${percent(change)}
-
-                </div>
-
-            </div>
-
-
-            <div class="chart-card">
-
-                ${chartHTML(
-                    points
-                )}
-
-            </div>
-
-        </div>
-    `);
-}
-
-
-/* =========================
-   NEWS
-========================= */
-
-function newsPage(asset) {
-
-    if (
-        !asset.news ||
-        asset.news.length === 0
-    ) {
-        return;
-    }
-
-
-    const n =
-        asset.news[0];
-
-
-    addPage(`
-
-        <div class="news-page">
-
-            <div class="eyebrow">
-                ${asset.name} NEWS
-            </div>
-
-
-            <div class="news-card">
-
-                <div class="news-date">
-                    ${n.date || ""}
-                </div>
-
-                <div class="news-title">
-                    ${n.title || ""}
-                </div>
-
-                <div class="news-description">
-                    ${n.description || ""}
-                </div>
-
-                <div class="news-source">
-
-                    ${
-                        n.link
-                        ?
-                        `
-                        <a
-                            class="news-link"
-                            href="${n.link}"
-                            target="_blank"
-                        >
-                            ${
-                                n.source ||
-                                "記事を開く"
-                            }
-                        </a>
-                        `
-                        :
-                        (
-                            n.source ||
-                            ""
-                        )
-                    }
-
-                </div>
-
-            </div>
-
-        </div>
-    `);
-}
-
-
-/* =========================
-   BUILD PAGES
-========================= */
-
-function buildPages(data) {
-
-    screen.innerHTML =
+      const title =
+        news.title ||
+        news.headline ||
         "";
 
+      const description =
+        news.description ||
+        news.summary ||
+        "";
 
-    pages =
-        [];
+      const source =
+        news.source ||
+        news.publisher ||
+        "NEWS";
 
+      if (!title && !description) {
+        return "";
+      }
 
-    /*
-      1. 天気
-    */
+      return `
+        <div class="screen">
 
-    weatherPage(
-        data
-    );
+          <div class="eyebrow">
+            ${asset.name || asset.code} / NEWS
+          </div>
 
+          <div class="news-card">
 
-    /*
-      2. 総資産
-    */
+            <div class="news-source">
+              ${source}
+            </div>
 
-    totalSummaryPage(
-        data
-    );
+            <div class="news-title">
+              ${title}
+            </div>
 
+            <div class="news-description">
+              ${description}
+            </div>
 
-    /*
-      3. 日本株一覧
-    */
+          </div>
 
-    stockSummaryPage(
-        data
-    );
-
-
-    /*
-      4. 投資信託一覧
-    */
-
-    fundSummaryPage(
-        data
-    );
-
-
-    /*
-      5. 個別資産
-    */
-
-    (
-        data.assets ||
-        []
-    )
-    .forEach(
-        asset => {
+        </div>
+      `;
+    }
 
 
-            /*
-              日本株だけ1 DAY
-            */
+    function buildPages(data) {
+      const result = [];
 
-            if (
-                asset.type === "stock"
-                &&
-                asset.intraday
-                &&
-                asset.intraday.length >= 2
-            ) {
-
-                marketPage(
-                    asset,
-                    "1 DAY",
-                    asset.intraday,
-                    asset.change
-                );
-            }
+      /*
+        1. 天気
+      */
+      result.push(
+        weatherPage(data)
+      );
 
 
-            /*
-              1 WEEK
-            */
-
-            if (
-                asset.week
-                &&
-                asset.week.length >= 2
-            ) {
-
-                marketPage(
-                    asset,
-                    "1 WEEK",
-                    asset.week,
-                    asset.weekChange
-                );
-            }
+      /*
+        2. 総資産
+        ここは今回変更なし
+      */
+      result.push(
+        totalPage(data)
+      );
 
 
-            /*
-              1 MONTH
-            */
-
-            if (
-                asset.month
-                &&
-                asset.month.length >= 2
-            ) {
-
-                marketPage(
-                    asset,
-                    "1 MONTH",
-                    asset.month,
-                    asset.monthChange
-                );
-            }
+      /*
+        3. 日本株一覧
+      */
+      result.push(
+        stockSummaryPage(data)
+      );
 
 
-            /*
-              NEWS
-            */
+      const assets = data.assets || [];
 
-            newsPage(
-                asset
-            );
+      const fund = assets.find(
+        x => x.type === "fund" || x.code === "03311187"
+      );
 
+
+      /*
+        4. 投資信託一覧
+      */
+      if (fund) {
+        result.push(
+          fundSummaryPage(fund)
+        );
+      }
+
+
+      /*
+        個別資産ページ
+      */
+      assets.forEach(asset => {
+
+        const isFund =
+          asset.type === "fund" ||
+          asset.code === "03311187";
+
+
+        /*
+          日本株のみ1日チャート
+        */
+        if (
+          !isFund &&
+          asset.intraday &&
+          asset.intraday.length >= 2
+        ) {
+          const p = chartPage(
+            asset,
+            asset.intraday,
+            "1 DAY"
+          );
+
+          if (p) result.push(p);
         }
-    );
 
 
-    if (
-        pages.length
-    ) {
+        /*
+          1週間
+        */
+        if (
+          asset.week &&
+          asset.week.length >= 2
+        ) {
+          const p = chartPage(
+            asset,
+            asset.week,
+            "1 WEEK"
+          );
 
-        pages[0]
-        .classList.add(
-            "active"
-        );
+          if (p) result.push(p);
+        }
+
+
+        /*
+          1か月
+        */
+        if (
+          asset.month &&
+          asset.month.length >= 2
+        ) {
+          const p = chartPage(
+            asset,
+            asset.month,
+            "1 MONTH"
+          );
+
+          if (p) result.push(p);
+        }
+
+
+        /*
+          ニュース
+        */
+        const n = newsPage(asset);
+
+        if (n) {
+          result.push(n);
+        }
+
+      });
+
+
+      pages = result.filter(Boolean);
+      pageIndex = 0;
     }
 
 
-    pageIndex =
-        0;
+    function renderPage(index) {
+      if (!pages.length) {
+        page.innerHTML = `
+          <div class="error">
+            表示できるデータがありません
+          </div>
+        `;
 
-
-    if (
-        pageTimer
-    ) {
-
-        clearInterval(
-            pageTimer
-        );
-    }
-
-
-    /*
-      20秒ごとに切替
-    */
-
-    pageTimer =
-        setInterval(
-            nextPage,
-            20000
-        );
-}
-
-
-/* =========================
-   PAGE ROTATION
-========================= */
-
-function nextPage() {
-
-    if (
-        pages.length <= 1
-    ) {
         return;
+      }
+
+      page.innerHTML =
+        pages[index % pages.length];
     }
 
 
-    pages[
-        pageIndex
-    ]
-    .classList.remove(
-        "active"
-    );
+    function startRotation() {
+      if (rotationTimer) {
+        clearInterval(rotationTimer);
+      }
+
+      renderPage(pageIndex);
+
+      rotationTimer = setInterval(() => {
+
+        page.classList.add("fade");
+
+        setTimeout(() => {
+
+          pageIndex =
+            (pageIndex + 1) % pages.length;
+
+          renderPage(pageIndex);
+
+          requestAnimationFrame(() => {
+            page.classList.remove("fade");
+          });
+
+        }, FADE_TIME);
+
+      }, PAGE_INTERVAL);
+    }
 
 
-    pageIndex =
-        (
-            pageIndex + 1
-        )
-        %
-        pages.length;
+    async function loadData() {
+      try {
+        const response = await fetch(
+          `data.json?t=${Date.now()}`,
+          {
+            cache: "no-store"
+          }
+        );
 
-
-    pages[
-        pageIndex
-    ]
-    .classList.add(
-        "active"
-    );
-}
-
-
-/* =========================
-   DATA LOAD
-========================= */
-
-async function loadData() {
-
-    try {
-
-        const response =
-            await fetch(
-                "data.json?t="
-                +
-                Date.now()
-            );
-
+        if (!response.ok) {
+          throw new Error(
+            "HTTP " + response.status
+          );
+        }
 
         const data =
-            await response.json();
+          await response.json();
 
+        updated.textContent =
+          data.updated
+            ? "更新 " + data.updated
+            : "更新済み";
 
-        document
-        .getElementById(
-            "updated"
-        )
-        .textContent =
-            "更新 "
-            +
-            data.updated_at;
+        buildPages(data);
+        startRotation();
 
+      } catch (error) {
 
-        buildPages(
-            data
-        );
+        console.error(error);
 
+        updated.textContent =
+          "データ取得エラー";
+
+        page.innerHTML = `
+          <div class="error">
+            data.json を読み込めませんでした
+          </div>
+        `;
+      }
     }
 
-    catch (error) {
 
-        console.error(
-            "data.json load error:",
-            error
-        );
-    }
-}
+    /*
+      初回読み込み
+    */
+    loadData();
 
 
-/* =========================
-   CLOCK
-========================= */
+    /*
+      data.jsonは15分ごとに再取得
+    */
+    setInterval(
+      loadData,
+      15 * 60 * 1000
+    );
 
-function updateClock() {
-
-    const now =
-        new Date();
-
-
-    const text =
-        now.toLocaleString(
-            "ja-JP",
-            {
-                month:
-                    "2-digit",
-
-                day:
-                    "2-digit",
-
-                hour:
-                    "2-digit",
-
-                minute:
-                    "2-digit"
-            }
-        );
-
-
-    document
-    .getElementById(
-        "clock"
-    )
-    .textContent =
-        text;
-}
-
-
-updateClock();
-
-setInterval(
-    updateClock,
-    1000
-);
-
-
-loadData();
-
-setInterval(
-    loadData,
-    15 * 60 * 1000
-);
-
-</script>
-
+  </script>
 </body>
-
 </html>
