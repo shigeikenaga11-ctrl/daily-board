@@ -1391,17 +1391,25 @@
             </div>
 
 
-            <div class="fund-item">
+<div class="fund-item">
 
-              <div class="fund-label">
-                評価総額
-              </div>
+  <div class="fund-label">
+    総取得額
+  </div>
 
-              <div class="fund-value">
-                ${yen(fund.value)}
-              </div>
+  <div class="fund-value">
+    ${
+      yen(
+        fund.purchase !== undefined
+          ? fund.purchase
+          : Number(fund.cost || 0) *
+            Number(fund.qty || 0) /
+            10000
+      )
+    }
+  </div>
 
-            </div>
+</div>
 
 
             <div class="fund-item">
