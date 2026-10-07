@@ -37,12 +37,12 @@ function render(d){
  document.getElementById("assetRows").innerHTML=d.assets.map(a=>`<tr><td>${a.name}</td><td>${a.qtyLabel}</td><td>${yen(a.price)}</td><td>${yen(a.value)}</td><td>${a.change==null?"—":(a.change>=0?"+":"")+a.change.toFixed(2)+"%"}</td></tr>`).join("");
  let stage=document.getElementById("stage");
  d.assets.forEach(a=>{let s=document.createElement("section");s.className="page";s.innerHTML=`<div class="card"><div class="eyebrow">7-DAY MARKET</div><div class="assethead"><div class="name">${a.name}</div><div class="qty">保有 ${a.qtyLabel}</div></div><div class="metrics"><div class="price">${yen(a.price)}</div><div class="change">${a.change==null?"":(a.change>=0?"+":"")+a.change.toFixed(2)+"%"}</div></div>${chartHTML(a)}<div class="sub">評価額 ${yen(a.value)}</div></div>`;stage.appendChild(s)});
- setupDots(); document.getElementById("status").textContent=`データ更新 ${d.updated_at} ｜ 画面切替 6秒`;
+ setupDots(); document.getElementById("status").textContent=`データ更新 ${d.updated_at} ｜ 画面切替 10秒`;
 }
 function setupDots(){let pages=[...document.querySelectorAll(".page")],box=document.getElementById("dots");box.innerHTML="";pages.forEach((_,i)=>{let x=document.createElement("span");x.className="dot"+(i===0?" active":"");box.appendChild(x)})}
 function flip(){let p=[...document.querySelectorAll(".page")],ds=[...document.querySelectorAll(".dot")];if(!p.length)return;p[idx].classList.remove("active");ds[idx]?.classList.remove("active");idx=(idx+1)%p.length;p[idx].classList.add("active");ds[idx]?.classList.add("active")}
 function clock(){let d=new Date(),days=["日","月","火","水","木","金","土"];date.textContent=`${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;clockEl.textContent=d.toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"})}
 const clockEl=document.getElementById("clock"); setInterval(clock,1000);clock();setInterval(flip,6000);
 async function load(){try{let r=await fetch("data.json?t="+Date.now());render(await r.json())}catch(e){status.textContent="data.jsonを読み込めません"}}
-load(); setInterval(load,15*60*1000);
+load(); setInterval(load,15*100*1000);
 </script></body></html>
