@@ -1,43 +1,159 @@
 {
-  "updated_at": "初回更新前",
+  "updated_at": "2026/10/07 14:43",
   "weather": {
-    "text": "更新待ち",
-    "max": "—",
-    "min": "—",
-    "rain": "—"
+    "text": "晴れ",
+    "max": 18.2,
+    "min": 7.9,
+    "rain": 0
   },
   "assets": [
     {
       "name": "第一三共",
       "qtyLabel": "20株",
-      "price": null,
-      "value": null,
-      "change": null,
-      "history": []
+      "price": 2718.5,
+      "value": 54370.0,
+      "change": -1.2172965116279078,
+      "history": [
+        {
+          "label": "09/29",
+          "value": 2784.5
+        },
+        {
+          "label": "09/30",
+          "value": 2800.0
+        },
+        {
+          "label": "10/01",
+          "value": 2740.5
+        },
+        {
+          "label": "10/02",
+          "value": 2709.0
+        },
+        {
+          "label": "10/05",
+          "value": 2716.0
+        },
+        {
+          "label": "10/06",
+          "value": 2752.0
+        },
+        {
+          "label": "10/07",
+          "value": 2718.5
+        }
+      ]
     },
     {
       "name": "任天堂",
       "qtyLabel": "10株",
-      "price": null,
-      "value": null,
-      "change": null,
-      "history": []
+      "price": 7764.0,
+      "value": 77640.0,
+      "change": -0.652591170825334,
+      "history": [
+        {
+          "label": "09/29",
+          "value": 7896.0
+        },
+        {
+          "label": "09/30",
+          "value": 7944.0
+        },
+        {
+          "label": "10/01",
+          "value": 7940.0
+        },
+        {
+          "label": "10/02",
+          "value": 7849.0
+        },
+        {
+          "label": "10/05",
+          "value": 7742.0
+        },
+        {
+          "label": "10/06",
+          "value": 7815.0
+        },
+        {
+          "label": "10/07",
+          "value": 7764.0
+        }
+      ]
     },
     {
       "name": "東京海上HD",
       "qtyLabel": "200株",
-      "price": null,
-      "value": null,
-      "change": null,
-      "history": []
+      "price": 520.0,
+      "value": 104000.0,
+      "change": -0.44035761951433106,
+      "history": [
+        {
+          "label": "09/29",
+          "value": 523.2
+        },
+        {
+          "label": "09/30",
+          "value": 537.5
+        },
+        {
+          "label": "10/01",
+          "value": 521.0
+        },
+        {
+          "label": "10/02",
+          "value": 507.4
+        },
+        {
+          "label": "10/05",
+          "value": 509.5
+        },
+        {
+          "label": "10/06",
+          "value": 522.3
+        },
+        {
+          "label": "10/07",
+          "value": 520.0
+        }
+      ]
     },
     {
       "name": "北洋銀行",
       "qtyLabel": "50株",
-      "price": null,
-      "value": null,
-      "change": null,
-      "history": []
+      "price": 1362.0,
+      "value": 68100.0,
+      "change": -2.5751072961373356,
+      "history": [
+        {
+          "label": "09/29",
+          "value": 1348.0
+        },
+        {
+          "label": "09/30",
+          "value": 1391.0
+        },
+        {
+          "label": "10/01",
+          "value": 1365.0
+        },
+        {
+          "label": "10/02",
+          "value": 1361.0
+        },
+        {
+          "label": "10/05",
+          "value": 1351.0
+        },
+        {
+          "label": "10/06",
+          "value": 1398.0
+        },
+        {
+          "label": "10/07",
+          "value": 1362.0
+        }
+      ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
