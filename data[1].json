@@ -1,0 +1,51 @@
+{
+  "updated_at": "初回更新前",
+  "weather": {
+    "text": "更新待ち",
+    "max": "—",
+    "min": "—",
+    "rain": "—"
+  },
+  "assets": [
+    {
+      "name": "第一三共",
+      "qtyLabel": "20株",
+      "price": null,
+      "value": null,
+      "change": null,
+      "history": []
+    },
+    {
+      "name": "任天堂",
+      "qtyLabel": "10株",
+      "price": null,
+      "value": null,
+      "change": null,
+      "history": []
+    },
+    {
+      "name": "東京海上HD",
+      "qtyLabel": "200株",
+      "price": null,
+      "value": null,
+      "change": null,
+      "history": []
+    },
+    {
+      "name": "北洋銀行",
+      "qtyLabel": "50株",
+      "price": null,
+      "value": null,
+      "change": null,
+      "history": []
+    },
+    {
+      "name": "eMAXIS Slim 米国株式（S&P500）",
+      "qtyLabel": "134,615口",
+      "price": null,
+      "value": null,
+      "change": null,
+      "history": []
+    }
+  ]
+}

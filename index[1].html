@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><title>Daily Board</title>
+<style>
+:root{--bg:#090c11;--panel:#141922;--text:#f6f8fb;--muted:#9aa6b2;--line:#2a313c}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Noto Sans JP",sans-serif}
+body{padding:18px 22px}.board{height:100%;max-width:1180px;margin:auto;display:grid;grid-template-rows:auto 1fr auto;gap:14px}
+header{display:flex;justify-content:space-between;align-items:end}.date{font-size:clamp(22px,3vw,40px);font-weight:760}.clock{font-size:clamp(38px,6vw,74px);font-weight:850}
+.stage{position:relative;min-height:0}.page{position:absolute;inset:0;opacity:0;transform:scale(.987);transition:.7s ease;pointer-events:none}.page.active{opacity:1;transform:scale(1)}
+.card{height:100%;background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3.7vw,46px);display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.eyebrow{font-size:clamp(16px,1.8vw,24px);color:#dce6f2;font-weight:750;margin-bottom:18px}.big{font-size:clamp(45px,7.3vw,92px);font-weight:850}.temp{font-size:clamp(28px,4.5vw,55px);font-weight:760;margin-top:20px}.sub{font-size:clamp(14px,1.8vw,23px);color:var(--muted);margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:clamp(14px,1.7vw,23px)}th{color:var(--muted);font-size:.76em}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}td:first-child{font-weight:750}
+.assethead{display:flex;justify-content:space-between;align-items:end}.name{font-size:clamp(31px,5vw,61px);font-weight:850}.qty{color:var(--muted);font-size:clamp(15px,2vw,24px)}
+.metrics{display:flex;gap:28px;align-items:baseline;margin:10px 0}.price{font-size:clamp(28px,4.3vw,52px);font-weight:800}.change{font-size:clamp(18px,2.5vw,30px);font-weight:700}
+.chartwrap{flex:1;min-height:170px}.chart{width:100%;height:100%}.grid{stroke:#29313c;stroke-width:1}.line{fill:none;stroke:#edf2f7;stroke-width:4;stroke-linejoin:round}.point{fill:#edf2f7}.axis{fill:#8f9aa7;font-size:14px}
+footer{display:grid;grid-template-columns:1fr auto;align-items:center}.status{color:var(--muted);font-size:clamp(11px,1.2vw,16px)}.dots{display:flex;gap:6px}.dot{width:7px;height:7px;border-radius:50%;background:#3d4652}.dot.active{background:#fff}
+</style></head><body><div class="board">
+<header><div class="date" id="date"></div><div class="clock" id="clock"></div></header>
+<main class="stage" id="stage"><section class="page active"><div class="card" id="weather">読み込み中…</div></section>
+<section class="page"><div class="card"><div class="eyebrow">📈 MY ASSETS</div><table><thead><tr><th>資産</th><th>数量</th><th>現在値</th><th>評価額</th><th>前日比</th></tr></thead><tbody id="assetRows"></tbody></table></div></section></main>
+<footer><div class="status" id="status">データ読み込み中</div><div class="dots" id="dots"></div></footer></div>
+<script>
+let DATA=null, idx=0;
+const yen=n=>n==null?"—":Math.round(n).toLocaleString("ja-JP")+"円";
+function chartHTML(a){
+ let v=a.history||[]; if(v.length<2)return '<div class="sub">チャートデータなし</div>';
+ let W=900,H=320,P=45, vals=v.map(x=>x.value),mn=Math.min(...vals),mx=Math.max(...vals),r=mx-mn||1;
+ let pts=v.map((x,i)=>[P+i*(W-2*P)/(v.length-1),H-P-(x.value-mn)/r*(H-2*P)]);
+ let grid=[0,1,2,3].map(i=>{let y=P+i*(H-2*P)/3;return `<line class="grid" x1="${P}" y1="${y}" x2="${W-P}" y2="${y}"/>`}).join("");
+ let poly=pts.map(p=>p.join(",")).join(" "), circles=pts.map(p=>`<circle class="point" cx="${p[0]}" cy="${p[1]}" r="5"/>`).join("");
+ let labs=pts.map((p,i)=>`<text class="axis" x="${p[0]}" y="${H-12}" text-anchor="middle">${v[i].label}</text>`).join("");
+ return `<div class="chartwrap"><svg class="chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${grid}<polyline class="line" points="${poly}"/>${circles}${labs}</svg></div>`;
+}
+function render(d){
+ DATA=d; let w=d.weather;
+ document.getElementById("weather").innerHTML=`<div class="eyebrow">☀ TODAY'S WEATHER</div><div class="big">札幌　${w.text}</div><div class="temp">最高 ${w.max}℃　/　最低 ${w.min}℃</div><div class="sub">降水確率 ${w.rain}%</div>`;
+ document.getElementById("assetRows").innerHTML=d.assets.map(a=>`<tr><td>${a.name}</td><td>${a.qtyLabel}</td><td>${yen(a.price)}</td><td>${yen(a.value)}</td><td>${a.change==null?"—":(a.change>=0?"+":"")+a.change.toFixed(2)+"%"}</td></tr>`).join("");
+ let stage=document.getElementById("stage");
+ d.assets.forEach(a=>{let s=document.createElement("section");s.className="page";s.innerHTML=`<div class="card"><div class="eyebrow">7-DAY MARKET</div><div class="assethead"><div class="name">${a.name}</div><div class="qty">保有 ${a.qtyLabel}</div></div><div class="metrics"><div class="price">${yen(a.price)}</div><div class="change">${a.change==null?"":(a.change>=0?"+":"")+a.change.toFixed(2)+"%"}</div></div>${chartHTML(a)}<div class="sub">評価額 ${yen(a.value)}</div></div>`;stage.appendChild(s)});
+ setupDots(); document.getElementById("status").textContent=`データ更新 ${d.updated_at} ｜ 画面切替 6秒`;
+}
+function setupDots(){let pages=[...document.querySelectorAll(".page")],box=document.getElementById("dots");box.innerHTML="";pages.forEach((_,i)=>{let x=document.createElement("span");x.className="dot"+(i===0?" active":"");box.appendChild(x)})}
+function flip(){let p=[...document.querySelectorAll(".page")],ds=[...document.querySelectorAll(".dot")];if(!p.length)return;p[idx].classList.remove("active");ds[idx]?.classList.remove("active");idx=(idx+1)%p.length;p[idx].classList.add("active");ds[idx]?.classList.add("active")}
+function clock(){let d=new Date(),days=["日","月","火","水","木","金","土"];date.textContent=`${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;clockEl.textContent=d.toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"})}
+const clockEl=document.getElementById("clock"); setInterval(clock,1000);clock();setInterval(flip,6000);
+async function load(){try{let r=await fetch("data.json?t="+Date.now());render(await r.json())}catch(e){status.textContent="data.jsonを読み込めません"}}
+load(); setInterval(load,15*60*1000);
+</script></body></html>
