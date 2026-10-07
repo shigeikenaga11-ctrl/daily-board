@@ -373,57 +373,104 @@ function chartHTML(history){
 
   const W=900;
   const H=320;
-  const P=48;
+
+  /* 左側を広くして縦軸価格を表示 */
+  const LEFT=90;
+  const RIGHT=25;
+  const TOP=25;
+  const BOTTOM=48;
 
   let vals=v.map(x=>x.value);
 
-  let mn=Math.min(...vals);
-  let mx=Math.max(...vals);
+  let dataMin=Math.min(...vals);
+  let dataMax=Math.max(...vals);
+
+  let dataRange=dataMax-dataMin;
+
+  if(dataRange===0){
+    dataRange=Math.max(dataMax*0.01,1);
+  }
+
+  /* 上下に10%余白 */
+  let mn=dataMin-dataRange*0.10;
+  let mx=dataMax+dataRange*0.10;
 
   let range=mx-mn;
 
-  if(range===0){
-    range=1;
-  }
-
-  /* 上下に少し余白 */
-  mn-=range*0.08;
-  mx+=range*0.08;
-  range=mx-mn;
-
   let pts=v.map((x,i)=>[
-    P+i*(W-2*P)/(v.length-1),
-    H-P-(x.value-mn)/range*(H-2*P)
+
+    LEFT+
+    i*(W-LEFT-RIGHT)/
+    (v.length-1),
+
+    H-BOTTOM-
+    (x.value-mn)/range*
+    (H-TOP-BOTTOM)
+
   ]);
 
-  let grid=[0,1,2,3].map(i=>{
 
-    let y=P+i*(H-2*P)/3;
+  /* -------------------------
+     縦軸＋水平グリッド
+  ------------------------- */
 
-    return `
+  let grid="";
+
+  const levels=4;
+
+  for(let i=0;i<levels;i++){
+
+    let ratio=i/(levels-1);
+
+    let y=
+      TOP+
+      ratio*
+      (H-TOP-BOTTOM);
+
+    let price=
+      mx-
+      ratio*range;
+
+    grid+=`
+
       <line
         class="grid"
-        x1="${P}"
+        x1="${LEFT}"
         y1="${y}"
-        x2="${W-P}"
+        x2="${W-RIGHT}"
         y2="${y}"
       />
+
+      <text
+        class="axis"
+        x="${LEFT-12}"
+        y="${y+5}"
+        text-anchor="end"
+      >
+        ${Math.round(price).toLocaleString("ja-JP")}円
+      </text>
+
     `;
 
-  }).join("");
+  }
+
+
+  /* -------------------------
+     株価ライン
+  ------------------------- */
 
   let poly=
     pts.map(p=>p.join(",")).join(" ");
 
-  /*
-    データ数が多い1日・1か月チャートでは
-    全ラベルを表示すると重なるため間引く
-  */
+
+  /* -------------------------
+     横軸
+  ------------------------- */
 
   let step=
     Math.max(
       1,
-      Math.ceil(v.length/7)
+      Math.ceil(v.length/6)
     );
 
   let labels=
@@ -437,19 +484,31 @@ function chartHTML(history){
       }
 
       return `
+
         <text
           class="axis"
           x="${p[0]}"
-          y="${H-12}"
+          y="${H-14}"
           text-anchor="middle"
         >
           ${v[i].label}
         </text>
+
       `;
 
     }).join("");
 
+
+  /* -------------------------
+     最新値の点
+  ------------------------- */
+
+  let last=
+    pts[pts.length-1];
+
+
   return `
+
     <div class="chartwrap">
 
       <svg
@@ -465,11 +524,19 @@ function chartHTML(history){
           points="${poly}"
         />
 
+        <circle
+          class="point"
+          cx="${last[0]}"
+          cy="${last[1]}"
+          r="6"
+        />
+
         ${labels}
 
       </svg>
 
     </div>
+
   `;
 }
 
