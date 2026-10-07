@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-
 <title>Daily Board</title>
 
 <style>
-
 :root{
   --bg:#090c11;
   --panel:#141922;
@@ -17,9 +15,7 @@
   --line:#2a313c;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 html,body{
   margin:0;
@@ -32,22 +28,16 @@ html,body{
   "Helvetica Neue","Noto Sans JP",sans-serif;
 }
 
-body{
-  padding:18px 22px;
-}
+body{padding:18px 22px}
 
 .board{
   height:100%;
   max-width:1180px;
   margin:auto;
-
   display:grid;
   grid-template-rows:auto 1fr auto;
-
   gap:14px;
 }
-
-/* HEADER */
 
 header{
   display:flex;
@@ -65,8 +55,7 @@ header{
   font-weight:850;
 }
 
-
-/* PAGE */
+/* ---------- PAGE ---------- */
 
 .stage{
   position:relative;
@@ -76,15 +65,11 @@ header{
 .page{
   position:absolute;
   inset:0;
-
   opacity:0;
-
   transform:scale(.975);
-
   transition:
     opacity 2s ease,
     transform 2s ease;
-
   pointer-events:none;
 }
 
@@ -93,33 +78,25 @@ header{
   transform:scale(1);
 }
 
-
-/* CARD */
+/* ---------- CARD ---------- */
 
 .card{
   height:100%;
-
   background:var(--panel);
-
   border:1px solid var(--line);
-
   border-radius:28px;
-
   padding:clamp(22px,3.7vw,46px);
-
   display:flex;
   flex-direction:column;
-
   justify-content:center;
-
   overflow:hidden;
 }
 
 .eyebrow{
-  font-size:clamp(16px,1.8vw,24px);
+  font-size:clamp(15px,1.7vw,23px);
   color:#dce6f2;
   font-weight:750;
-  margin-bottom:18px;
+  margin-bottom:15px;
 }
 
 .big{
@@ -139,8 +116,7 @@ header{
   margin-top:12px;
 }
 
-
-/* ASSET TABLE */
+/* ---------- ASSET TABLE ---------- */
 
 table{
   width:100%;
@@ -168,30 +144,32 @@ td:first-child{
   font-weight:750;
 }
 
-
-/* ASSET DETAIL */
+/* ---------- MARKET ---------- */
 
 .assethead{
   display:flex;
   justify-content:space-between;
   align-items:end;
+  gap:20px;
 }
 
 .name{
-  font-size:clamp(31px,5vw,61px);
+  font-size:clamp(27px,4.4vw,55px);
   font-weight:850;
+  line-height:1.15;
 }
 
 .qty{
   color:var(--muted);
-  font-size:clamp(15px,2vw,24px);
+  font-size:clamp(14px,1.8vw,23px);
+  white-space:nowrap;
 }
 
 .metrics{
   display:flex;
   gap:28px;
   align-items:baseline;
-  margin:10px 0;
+  margin:8px 0;
 }
 
 .price{
@@ -201,11 +179,10 @@ td:first-child{
 
 .change{
   font-size:clamp(18px,2.5vw,30px);
-  font-weight:700;
+  font-weight:750;
 }
 
-
-/* CHART */
+/* ---------- CHART ---------- */
 
 .chartwrap{
   flex:1;
@@ -227,6 +204,7 @@ td:first-child{
   stroke:#edf2f7;
   stroke-width:4;
   stroke-linejoin:round;
+  stroke-linecap:round;
 }
 
 .point{
@@ -235,27 +213,46 @@ td:first-child{
 
 .axis{
   fill:#8f9aa7;
-  font-size:14px;
+  font-size:13px;
 }
 
+/* ---------- NEWS ---------- */
 
-/* NEWS */
+.news-list{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
 
-.news-title-detail{
-  font-size:clamp(27px,4vw,48px);
-  font-weight:850;
-  line-height:1.25;
-  margin-bottom:28px;
+.news-item{
+  padding:15px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.news-item:last-child{
+  border-bottom:none;
+}
+
+.news-title{
+  font-size:clamp(18px,2.3vw,29px);
+  line-height:1.35;
+  font-weight:800;
 }
 
 .news-description{
-  font-size:clamp(17px,2.2vw,28px);
-  line-height:1.65;
-  color:#dce3eb;
+  margin-top:7px;
+  font-size:clamp(14px,1.6vw,20px);
+  line-height:1.5;
+  color:#cbd4de;
 }
 
+.news-source{
+  margin-top:5px;
+  font-size:clamp(12px,1.3vw,17px);
+  color:var(--muted);
+}
 
-/* FOOTER */
+/* ---------- FOOTER ---------- */
 
 footer{
   display:grid;
@@ -270,270 +267,189 @@ footer{
 
 .dots{
   display:flex;
-  gap:6px;
+  gap:5px;
+  max-width:55vw;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
 .dot{
-  width:7px;
-  height:7px;
-
+  width:6px;
+  height:6px;
   border-radius:50%;
-
   background:#3d4652;
 }
 
 .dot.active{
   background:#fff;
 }
-
 </style>
 </head>
-
 
 <body>
 
 <div class="board">
 
-
 <header>
-
-  <div
-    class="date"
-    id="date">
-  </div>
-
-  <div
-    class="clock"
-    id="clock">
-  </div>
-
+  <div class="date" id="date"></div>
+  <div class="clock" id="clock"></div>
 </header>
 
+<main class="stage" id="stage">
 
-<main
-  class="stage"
-  id="stage">
-
-
-<!-- WEATHER -->
-
-<section class="page active">
-
-  <div
-    class="card"
-    id="weather">
-
-    読み込み中…
-
-  </div>
-
-</section>
-
-
-<!-- ASSET SUMMARY -->
-
-<section class="page">
-
-  <div class="card">
-
-    <div class="eyebrow">
-      📈 MY ASSETS
+  <!-- 天気 -->
+  <section class="page active">
+    <div class="card" id="weather">
+      読み込み中…
     </div>
+  </section>
 
-    <table>
+  <!-- 資産一覧 -->
+  <section class="page">
+    <div class="card">
 
-      <thead>
+      <div class="eyebrow">
+        📈 MY ASSETS
+      </div>
 
-        <tr>
+      <table>
+        <thead>
+          <tr>
+            <th>資産</th>
+            <th>数量</th>
+            <th>現在値</th>
+            <th>評価額</th>
+            <th>前日比</th>
+          </tr>
+        </thead>
 
-          <th>資産</th>
+        <tbody id="assetRows"></tbody>
+      </table>
 
-          <th>数量</th>
-
-          <th>現在値</th>
-
-          <th>評価額</th>
-
-          <th>前日比</th>
-
-        </tr>
-
-      </thead>
-
-
-      <tbody
-        id="assetRows">
-      </tbody>
-
-
-    </table>
-
-  </div>
-
-</section>
-
+    </div>
+  </section>
 
 </main>
 
-
 <footer>
-
-  <div
-    class="status"
-    id="status">
-
+  <div class="status" id="status">
     データ読み込み中
-
   </div>
 
-
-  <div
-    class="dots"
-    id="dots">
-  </div>
-
+  <div class="dots" id="dots"></div>
 </footer>
-
 
 </div>
 
-
 <script>
-
-
-let DATA=null;
 
 let idx=0;
 
-
-/* 円表示 */
-
 const yen=n=>
-
   n==null
-
   ?"—"
+  :Math.round(n).toLocaleString("ja-JP")+"円";
 
-  :Math.round(n)
-    .toLocaleString("ja-JP")+"円";
+const percent=n=>{
+  if(n==null)return "—";
+  return (n>=0?"+":"")+n.toFixed(2)+"%";
+};
 
+/* ========================================
+   グラフ
+======================================== */
 
+function chartHTML(history){
 
-/* -------------------------
-   CHART
-------------------------- */
-
-function chartHTML(a){
-
-  let v=a.history||[];
+  let v=history||[];
 
   if(v.length<2){
-
     return `
       <div class="sub">
         チャートデータなし
       </div>
     `;
-
   }
 
+  const W=900;
+  const H=320;
+  const P=48;
 
-  let W=900;
-
-  let H=320;
-
-  let P=45;
-
-
-  let vals=v.map(
-    x=>x.value
-  );
-
+  let vals=v.map(x=>x.value);
 
   let mn=Math.min(...vals);
-
   let mx=Math.max(...vals);
 
-  let r=mx-mn||1;
+  let range=mx-mn;
 
+  if(range===0){
+    range=1;
+  }
 
-  let pts=v.map(
-    (x,i)=>[
+  /* 上下に少し余白 */
+  mn-=range*0.08;
+  mx+=range*0.08;
+  range=mx-mn;
 
-      P+i*(W-2*P)/(v.length-1),
+  let pts=v.map((x,i)=>[
+    P+i*(W-2*P)/(v.length-1),
+    H-P-(x.value-mn)/range*(H-2*P)
+  ]);
 
-      H-P-(x.value-mn)/r*(H-2*P)
+  let grid=[0,1,2,3].map(i=>{
 
-    ]
-  );
+    let y=P+i*(H-2*P)/3;
 
+    return `
+      <line
+        class="grid"
+        x1="${P}"
+        y1="${y}"
+        x2="${W-P}"
+        y2="${y}"
+      />
+    `;
 
-  let grid=[0,1,2,3]
-    .map(i=>{
-
-      let y=
-        P+i*(H-2*P)/3;
-
-      return `
-
-        <line
-          class="grid"
-          x1="${P}"
-          y1="${y}"
-          x2="${W-P}"
-          y2="${y}"
-        />
-
-      `;
-
-    })
-    .join("");
-
+  }).join("");
 
   let poly=
-    pts
-    .map(p=>p.join(","))
-    .join(" ");
+    pts.map(p=>p.join(",")).join(" ");
 
+  /*
+    データ数が多い1日・1か月チャートでは
+    全ラベルを表示すると重なるため間引く
+  */
 
-  let circles=
-    pts
-    .map(p=>
+  let step=
+    Math.max(
+      1,
+      Math.ceil(v.length/7)
+    );
 
-      `
-      <circle
-        class="point"
-        cx="${p[0]}"
-        cy="${p[1]}"
-        r="5"
-      />
-      `
+  let labels=
+    pts.map((p,i)=>{
 
-    )
-    .join("");
+      if(
+        i%step!==0 &&
+        i!==v.length-1
+      ){
+        return "";
+      }
 
+      return `
+        <text
+          class="axis"
+          x="${p[0]}"
+          y="${H-12}"
+          text-anchor="middle"
+        >
+          ${v[i].label}
+        </text>
+      `;
 
-  let labs=
-    pts
-    .map((p,i)=>
-
-      `
-      <text
-        class="axis"
-        x="${p[0]}"
-        y="${H-12}"
-        text-anchor="middle"
-      >
-        ${v[i].label}
-      </text>
-      `
-
-    )
-    .join("");
-
+    }).join("");
 
   return `
-
     <div class="chartwrap">
 
       <svg
@@ -549,33 +465,193 @@ function chartHTML(a){
           points="${poly}"
         />
 
-        ${circles}
-
-        ${labs}
+        ${labels}
 
       </svg>
 
     </div>
-
   `;
-
 }
 
 
+/* ========================================
+   市場ページ
+======================================== */
 
-/* -------------------------
-   RENDER
-------------------------- */
+function marketPage(asset,type){
+
+  let history=[];
+  let label="";
+  let change=null;
+
+  if(type==="day"){
+
+    history=asset.intraday||[];
+    label="TODAY";
+    change=asset.change;
+
+  }
+
+  if(type==="week"){
+
+    history=asset.week||[];
+    label="1 WEEK";
+    change=asset.weekChange;
+
+  }
+
+  if(type==="month"){
+
+    history=asset.month||[];
+    label="1 MONTH";
+    change=asset.monthChange;
+
+  }
+
+  let section=
+    document.createElement("section");
+
+  section.className=
+    "page dynamic";
+
+  section.innerHTML=`
+
+    <div class="card">
+
+      <div class="eyebrow">
+        📈 ${label}
+      </div>
+
+      <div class="assethead">
+
+        <div class="name">
+          ${asset.name}
+        </div>
+
+        <div class="qty">
+          保有 ${asset.qtyLabel}
+        </div>
+
+      </div>
+
+      <div class="metrics">
+
+        <div class="price">
+          ${yen(asset.price)}
+        </div>
+
+        <div class="change">
+          ${percent(change)}
+        </div>
+
+      </div>
+
+      ${chartHTML(history)}
+
+      <div class="sub">
+        評価額 ${yen(asset.value)}
+      </div>
+
+    </div>
+  `;
+
+  return section;
+}
+
+
+/* ========================================
+   NEWSページ
+======================================== */
+
+function newsPage(asset){
+
+  let section=
+    document.createElement("section");
+
+  section.className=
+    "page dynamic";
+
+  let news=(asset.news||[]).slice(0,3);
+
+  let contents="";
+
+  if(news.length){
+
+    contents=news.map((n,i)=>`
+
+      <div class="news-item">
+
+        <div class="news-title">
+          ${i+1}. ${n.title}
+        </div>
+
+        ${
+          n.description
+          ?`
+            <div class="news-description">
+              ${n.description}
+            </div>
+          `
+          :""
+        }
+
+        ${
+          n.source
+          ?`
+            <div class="news-source">
+              ${n.source}
+            </div>
+          `
+          :""
+        }
+
+      </div>
+
+    `).join("");
+
+  }else{
+
+    contents=`
+      <div class="sub">
+        関連ニュースを取得できませんでした
+      </div>
+    `;
+
+  }
+
+  section.innerHTML=`
+
+    <div class="card">
+
+      <div class="eyebrow">
+        📰 COMPANY NEWS
+      </div>
+
+      <div class="name"
+           style="margin-bottom:15px">
+        ${asset.name}
+      </div>
+
+      <div class="news-list">
+        ${contents}
+      </div>
+
+    </div>
+  `;
+
+  return section;
+}
+
+
+/* ========================================
+   全画面生成
+======================================== */
 
 function render(d){
 
-  DATA=d;
-
-
-  /* WEATHER */
+  /* ---------- WEATHER ---------- */
 
   let w=d.weather;
-
 
   document
     .getElementById("weather")
@@ -586,75 +662,44 @@ function render(d){
       </div>
 
       <div class="big">
-
         札幌　${w.text}
-
       </div>
 
       <div class="temp">
-
         最高 ${w.max}℃
         　/　
         最低 ${w.min}℃
-
       </div>
 
       <div class="sub">
-
         降水確率 ${w.rain}%
-
       </div>
-
     `;
 
 
-
-  /* ASSET TABLE */
+  /* ---------- 資産一覧 ---------- */
 
   document
     .getElementById("assetRows")
     .innerHTML=
 
-      d.assets
-      .map(a=>`
+    d.assets.map(a=>`
 
-        <tr>
+      <tr>
 
-          <td>
-            ${a.name}
-          </td>
+        <td>${a.name}</td>
 
-          <td>
-            ${a.qtyLabel}
-          </td>
+        <td>${a.qtyLabel}</td>
 
-          <td>
-            ${yen(a.price)}
-          </td>
+        <td>${yen(a.price)}</td>
 
-          <td>
-            ${yen(a.value)}
-          </td>
+        <td>${yen(a.value)}</td>
 
-          <td>
+        <td>${percent(a.change)}</td>
 
-            ${
-              a.change==null
+      </tr>
 
-              ?"—"
-
-              :(a.change>=0?"+":"")
-                +a.change.toFixed(2)
-                +"%"
-            }
-
-          </td>
-
-        </tr>
-
-      `)
-      .join("");
-
+    `).join("");
 
 
   let stage=
@@ -662,8 +707,8 @@ function render(d){
 
 
   /*
-   data.json再読込時に
-   古いチャート・ニュースページを削除
+    data.jsonを再読み込みした時に
+    古いページを削除
   */
 
   stage
@@ -671,212 +716,85 @@ function render(d){
     .forEach(x=>x.remove());
 
 
+  /* ========================================
+     各資産
 
-  /* -------------------------
-     ASSET DETAIL
-  ------------------------- */
+     1日
+       ↓
+     1週間
+       ↓
+     1か月
+       ↓
+     ニュース
+  ======================================== */
 
-  d.assets.forEach(a=>{
+  d.assets.forEach(asset=>{
 
+    /*
+      eMAXISには日中値動きがないので
+      1日ページは作らない
+    */
 
-    let s=
-      document.createElement("section");
+    if(
+      asset.intraday &&
+      asset.intraday.length>1
+    ){
 
+      stage.appendChild(
+        marketPage(
+          asset,
+          "day"
+        )
+      );
 
-    s.className=
-      "page dynamic";
-
-
-    s.innerHTML=`
-
-      <div class="card">
-
-        <div class="eyebrow">
-
-          7-DAY MARKET
-
-        </div>
-
-
-        <div class="assethead">
-
-
-          <div class="name">
-
-            ${a.name}
-
-          </div>
+    }
 
 
-          <div class="qty">
+    /* 1週間 */
 
-            保有 ${a.qtyLabel}
-
-          </div>
-
-
-        </div>
-
-
-        <div class="metrics">
+    stage.appendChild(
+      marketPage(
+        asset,
+        "week"
+      )
+    );
 
 
-          <div class="price">
+    /* 1か月 */
 
-            ${yen(a.price)}
-
-          </div>
-
-
-          <div class="change">
-
-            ${
-              a.change==null
-
-              ?""
-
-              :(a.change>=0?"+":"")
-                +a.change.toFixed(2)
-                +"%"
-            }
-
-          </div>
+    stage.appendChild(
+      marketPage(
+        asset,
+        "month"
+      )
+    );
 
 
-        </div>
+    /* NEWS */
 
-
-        ${chartHTML(a)}
-
-
-        <div class="sub">
-
-          評価額 ${yen(a.value)}
-
-        </div>
-
-
-      </div>
-
-    `;
-
-
-    stage.appendChild(s);
+    stage.appendChild(
+      newsPage(asset)
+    );
 
   });
 
 
-
-  /* -------------------------
-     NEWS
-     1 NEWS = 1 PAGE
-  ------------------------- */
-
-
-  let news=d.news||[];
-
-
-  news
-    .slice(0,5)
-    .forEach((n,i)=>{
-
-
-      let newsPage=
-        document.createElement("section");
-
-
-      newsPage.className=
-        "page dynamic";
-
-
-      newsPage.innerHTML=`
-
-        <div class="card">
-
-
-          <div class="eyebrow">
-
-            📰 NEWS ${i+1} / ${Math.min(news.length,5)}
-
-          </div>
-
-
-          <div class="news-title-detail">
-
-            ${n.title}
-
-          </div>
-
-
-          ${
-            n.description
-
-            ?`
-
-            <div class="news-description">
-
-              ${n.description}
-
-            </div>
-
-            `
-
-            :""
-          }
-
-
-          ${
-            n.source
-
-            ?`
-
-            <div
-              class="sub"
-              style="margin-top:28px"
-            >
-
-              出典：${n.source}
-
-            </div>
-
-            `
-
-            :""
-          }
-
-
-        </div>
-
-      `;
-
-
-      stage.appendChild(
-        newsPage
-      );
-
-    });
-
-
-
-  /* -------------------------
-     RESET PAGE
-  ------------------------- */
-
+  /* ---------- RESET ---------- */
 
   idx=0;
 
+  let pages=[
+    ...document
+      .querySelectorAll(".page")
+  ];
 
-  document
-    .querySelectorAll(".page")
-    .forEach(
-      (p,i)=>
-
-        p.classList.toggle(
-          "active",
-          i===0
-        )
-
-    );
+  pages.forEach(
+    (p,i)=>
+      p.classList.toggle(
+        "active",
+        i===0
+      )
+  );
 
 
   setupDots();
@@ -886,159 +804,120 @@ function render(d){
     .getElementById("status")
     .textContent=
 
-      `データ更新 ${d.updated_at} ｜ 画面切替 10秒`;
+    `データ更新 ${d.updated_at} ｜ 画面切替 10秒`;
 
 }
 
 
-
-/* -------------------------
-   DOTS
-------------------------- */
+/* ========================================
+   DOT
+======================================== */
 
 function setupDots(){
-
 
   let pages=[
     ...document
       .querySelectorAll(".page")
   ];
 
-
   let box=
-    document
-      .getElementById("dots");
-
+    document.getElementById("dots");
 
   box.innerHTML="";
 
+  pages.forEach((_,i)=>{
 
-  pages.forEach(
-    (_,i)=>{
+    let dot=
+      document.createElement("span");
 
+    dot.className=
+      "dot"+(i===0?" active":"");
 
-      let x=
-        document
-          .createElement("span");
+    box.appendChild(dot);
 
-
-      x.className=
-
-        "dot"
-        +(i===0
-          ?" active"
-          :"");
-
-
-      box.appendChild(x);
-
-    }
-  );
+  });
 
 }
 
 
-
-/* -------------------------
-   PAGE SWITCH
-------------------------- */
+/* ========================================
+   画面切替
+======================================== */
 
 function flip(){
 
-
-  let p=[
+  let pages=[
     ...document
       .querySelectorAll(".page")
   ];
 
-
-  let ds=[
+  let dots=[
     ...document
       .querySelectorAll(".dot")
   ];
 
-
-  if(!p.length)
-    return;
+  if(!pages.length)return;
 
 
-  p[idx]
+  pages[idx]
     .classList
     .remove("active");
 
-
-  ds[idx]
+  dots[idx]
     ?.classList
     .remove("active");
 
 
   idx=
-    (idx+1)%p.length;
+    (idx+1)%pages.length;
 
 
-  p[idx]
+  pages[idx]
     .classList
     .add("active");
 
-
-  ds[idx]
+  dots[idx]
     ?.classList
     .add("active");
 
 }
 
 
-
-/* -------------------------
-   CLOCK
-------------------------- */
+/* ========================================
+   時計
+======================================== */
 
 function clock(){
 
-
-  let d=
-    new Date();
-
+  let d=new Date();
 
   let days=[
-    "日",
-    "月",
-    "火",
-    "水",
-    "木",
-    "金",
-    "土"
+    "日","月","火",
+    "水","木","金","土"
   ];
-
 
   document
     .getElementById("date")
     .textContent=
 
-      `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
+    `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
 
 
-  clockEl
+  document
+    .getElementById("clock")
     .textContent=
 
-      d.toLocaleTimeString(
-
-        "ja-JP",
-
-        {
-          hour:"2-digit",
-          minute:"2-digit"
-        }
-
-      );
+    d.toLocaleTimeString(
+      "ja-JP",
+      {
+        hour:"2-digit",
+        minute:"2-digit"
+      }
+    );
 
 }
 
-
-const clockEl=
-  document
-    .getElementById("clock");
-
+clock();
 
 setInterval(
   clock,
@@ -1046,13 +925,9 @@ setInterval(
 );
 
 
-clock();
-
-
-
-/* -------------------------
+/* ========================================
    10秒ごとに画面切替
-------------------------- */
+======================================== */
 
 setInterval(
   flip,
@@ -1060,61 +935,57 @@ setInterval(
 );
 
 
-
-/* -------------------------
-   DATA LOAD
-------------------------- */
+/* ========================================
+   data.json取得
+======================================== */
 
 async function load(){
 
-
   try{
 
-
-    let r=
+    let response=
       await fetch(
-
         "data.json?t="
         +Date.now()
-
       );
 
+    if(!response.ok){
+      throw new Error(
+        "HTTP "+response.status
+      );
+    }
 
-    render(
-      await r.json()
-    );
+    let data=
+      await response.json();
 
+    render(data);
 
   }catch(e){
-
 
     document
       .getElementById("status")
       .textContent=
 
-        "data.jsonを読み込めません";
-
+      "data.jsonを読み込めません";
 
   }
 
 }
 
 
-
 load();
 
 
-
-/* -------------------------
-   15分ごとに
-   data.jsonを確認
-------------------------- */
+/*
+  GitHub Actionsは3時間ごと。
+  iPad側は15分ごとに
+  新しいdata.jsonがないか確認。
+*/
 
 setInterval(
   load,
   15*60*1000
 );
-
 
 </script>
 
