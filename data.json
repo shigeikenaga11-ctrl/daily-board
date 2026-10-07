@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/07 15:29",
+  "updated_at": "2026/10/07 15:39",
   "weather": {
     "text": "晴れ",
     "max": 18.2,
@@ -10,9 +10,9 @@
     {
       "name": "第一三共",
       "qtyLabel": "20株",
-      "price": 2718.0,
-      "value": 54360.0,
-      "change": -1.2354651162790664,
+      "price": 2715.5,
+      "value": 54310.0,
+      "change": -1.326308139534882,
       "history": [
         {
           "label": "09/29",
@@ -40,16 +40,16 @@
         },
         {
           "label": "10/07",
-          "value": 2718.0
+          "value": 2715.5
         }
       ]
     },
     {
       "name": "任天堂",
       "qtyLabel": "10株",
-      "price": 7777.0,
-      "value": 77770.0,
-      "change": -0.4862444017914247,
+      "price": 7772.0,
+      "value": 77720.0,
+      "change": -0.55022392834293,
       "history": [
         {
           "label": "09/29",
@@ -77,16 +77,16 @@
         },
         {
           "label": "10/07",
-          "value": 7777.0
+          "value": 7772.0
         }
       ]
     },
     {
       "name": "東京海上HD",
       "qtyLabel": "200株",
-      "price": 520.7000122070312,
-      "value": 104140.00244140625,
-      "change": -0.30633268683354364,
+      "price": 519.0999755859375,
+      "value": 103819.9951171875,
+      "change": -0.6126770595100361,
       "history": [
         {
           "label": "09/29",
@@ -114,16 +114,16 @@
         },
         {
           "label": "10/07",
-          "value": 520.7
+          "value": 519.1
         }
       ]
     },
     {
       "name": "北洋銀行",
       "qtyLabel": "50株",
-      "price": 1361.0,
-      "value": 68050.0,
-      "change": -2.6466380543633816,
+      "price": 1358.0,
+      "value": 67900.0,
+      "change": -2.8612303290414864,
       "history": [
         {
           "label": "09/29",
@@ -151,7 +151,7 @@
         },
         {
           "label": "10/07",
-          "value": 1361.0
+          "value": 1358.0
         }
       ]
     },
@@ -166,29 +166,34 @@
   ],
   "news": [
     {
-      "title": "道路予算「大幅カット」発言の簗農相、続投意向…国交省との面会は「明確に覚えていない」「記録がない」",
-      "source": "読売新聞",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9IWjRkbW5vY3FSVG5HUFkwOXlPbkxxUkFzM3FGd1pkQW5XNU1iZTNPdmd0N2pwYU9HakdweEtOVzVBdXhRWHI2MTBCVVMwZTNaMWUwZ2h3Zl95Q2lqVm5GN09OajQ4dw?oc=5"
-    },
-    {
-      "title": "修学旅行先の北海道について「クマが出たら終わり」と発言の徳島県知事、県議会が問責決議案を可決",
-      "source": "読売新聞",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51UjhBbjA0MUtfbXNFak9rb1JWb01nSlJUbUhEYjlKbFJiVFp1QWZXQjRXTUxLUHZ6Q1lKTkFubVVSSW92eVBHbkh1c3o1NjNncjZ3Vk9VdEFtSnNrRXNveFJ2MEFZUQ?oc=5"
+      "title": "簗農水相は議員辞職を 維新・前原氏が主張：時事ドットコム",
+      "description": "簗農水相は議員辞職を 維新・前原氏が主張：時事ドットコム 時事ドットコム簗農相「法令に従い適切に処理」シャトルバス報道受け NHKニュース簗農水大臣、釈明も…予算削減の自治体“困惑” 市内の工事現場では、すでに影響が（テレビ朝日系（ANN）） Yahoo!ニュース【速報】農相発言、首相に任命責任あると国民代表 47NEWS道路予算「大幅カット」発言の簗農相、続投意向…国交省との面会は「明確に覚えていない」「記録がない」 読売新聞",
+      "source": "時事ドットコム",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9hLWt6eGltY2w2aE54U3pyQ0N6WnVIWGVIcDZBX1ZPdEdzaWdTNy1ZbXBTWUVvX1h3TGlnQ05rcTBHWmhmenByRFZZdlIzSXNXNXIzV1NVSElNbXlkblcwTFBYbw?oc=5"
     },
     {
       "title": "イスラエル兵、祖国守る任務は誇りだったが…「無差別攻撃で軍服が恥に」「国民はガザで何が起きたか知らない」",
+      "description": "イスラエル兵、祖国守る任務は誇りだったが…「無差別攻撃で軍服が恥に」「国民はガザで何が起きたか知らない」 読売新聞ガザ戦闘から3年 死者は7万4000人 Yahoo!ニュース7歳少女が直面…足の切断 描く未来は 苦境の子どもたちと医療現場 ガザ戦闘から3年 テレ朝NEWSガザ空爆で2人死亡、ハマス襲撃3年の節目に ノバ跡地では追悼 写真4枚 国際ニュース AFPBB News安全保障、世論は不安 戦線拡大のイスラエル：時事ドットコム 時事ドットコム",
       "source": "読売新聞",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xNGdMenhJTnRYbnhwQVh2bW9nOFFib0ZPelhibzRlT0RlWFFGQ3NWdGstU3RYTVNuT1dDaU02dEpQS3RubmhLX0JGOWZQYU94d2Z2dGJBTzljV09JaGNFOHl3?oc=5"
     },
     {
       "title": "真相・ニュースの現場から：なぜ飛び降りた？ 娘を巻き添えにした男性に、父がぶつけた怒り",
+      "description": "真相・ニュースの現場から：なぜ飛び降りた？ 娘を巻き添えにした男性に、父がぶつけた怒り 毎日新聞",
       "source": "毎日新聞",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zZDg1R084X0hGZ2NwekExLVJubGMtVjlrNzRHNnd0SUtfRVNXTVppb21rVmRNRjRaR0tWWHBKMmRlenVLdHpmalFHcEFnMFNsNEpCOWY4RGtlamktWm9hTmh0OF9PUF80?oc=5"
     },
     {
       "title": "ロシアのペスト研究所の職員が死亡、アメリカは事態を「注視」していると",
+      "description": "ロシアのペスト研究所の職員が死亡、アメリカは事態を「注視」していると BBCニューヨークのJFK国際空港に着陸するアメリカン航空機のアーカイブ写真/Charly Triballeau/AFP/Getty Images/File CNN.jpトランプ大統領とプーチン大統領が電話会談へ ペスト対策研究所の職員死亡についても協議か Yahoo!ニュースロシア、国際的な保健上の報告義務に違反 米国務省が警告 ペスト疑い死亡例で 米紙報道 産経ニュース米、ペスト研究所職員の死亡巡りロシアに圧力 | The Wall Street Journal発 ダイヤモンド・オンライン",
       "source": "BBC",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15Q2F1Zm04bWRYbGd5XzBOdUQ0UDhtNV9DZXljUVFEbUoyNUg3b0FzaXZ2dExHZHBwWjMxc25nMG54aUd2cXN6RXFodDl1RWlwbnpmaDI2TmN3aG9FRlBHetIBZkFVX3lxTE9aS1UwRmNCbnRDMzFJcGpyLXA1eGJWN0xoa1lBQ2NBbjJmTGVFV2R4N2RBM2dpbmRNN2lheXhMWkJ6eFFPZWlmX3liTHZjT1NjbkZSbks0MEI3NXVtREkwdk1FeWl1dw?oc=5"
+    },
+    {
+      "title": "執行失敗の米死刑囚 意識戻り発話",
+      "description": "執行失敗の米死刑囚 意識戻り発話 Yahoo!ニュース薬物が血管に入らず死刑執行失敗 米テネシー州、終身刑へ減刑訴え 信濃毎日新聞デジタル死刑執行を生き延びた米死刑囚、意識回復し会話 弁護団が発表 BBC死刑執行を生き延びたクリスタ・パイク死刑囚、意識戻り発話も 弁護団が明かす 米 CNN.jp死刑執行も死に至らず重体…死刑囚の女の意識回復、会話もできる状態に 弁護団が発表 アメリカ・テネシー州 日テレNEWS NNN",
+      "source": "Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LVTJic3dBTDYzYzVQd3ZZNXZGMjRVVXQ1aVl0cUxmUGc1MU9lLUs3dlBqb1BkeG5Oa3lRTk9BZF9RTlFaaEJNaVFOSXU4T091?oc=5"
     }
   ]
 }
