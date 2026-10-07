@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/07 17:00",
+  "updated_at": "2026/10/07 17:16",
   "weather": {
     "text": "晴れ",
     "max": 18.3,
@@ -7,7 +7,7 @@
     "rain": 0
   },
   "summary": {
-    "label": "株式評価額（日本株4銘柄）",
+    "label": "株式評価額",
     "total": 302750.0,
     "deltaYen": -4800.0,
     "deltaPercent": -1.5607218338481548,
@@ -397,20 +397,11 @@
       ],
       "news": [
         {
-          "title": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/07",
-          "description": "第一三共(株)【4568】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zLVI2U0Z5bnhzaGQ3cUtWbHVocDh6RVl6VzBvSUV0YkgxZWZRSUhiWDJ3aS1HQUNiWmQzdmtIUkZQdFFiTG5aNmF5OGxray1kR1Fya1lEWDNDNWhiRGJ3?oc=5",
-          "type": "企業・投資ニュース"
-        },
-        {
-          "title": "決算:第一三共、1160億円の社債発行 運転資金に充当 - 日本経済新聞",
-          "source": "日本経済新聞",
-          "date": "2026/10/02",
-          "description": "決算:第一三共、1160億円の社債発行 運転資金に充当 日本経済新聞",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zZ1Z2YzhhLVU5M3o4SDhkXzJ1c0RXZ1Q1WVQ1c3lYcktIN201M0RoSmhGNjU1QlhNUlpRVUd4MW9hNEJWRG90MzNBaFJkWlhUNEZmR2VKYmFnMURzRTZqYlVVeVV0MFQyNFVjdw?oc=5",
-          "type": "企業・投資ニュース"
+          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
+          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
+          "source": "ミクスOnline",
+          "date": "2026/05/12",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
         }
       ]
     },
@@ -801,20 +792,11 @@
       ],
       "news": [
         {
-          "title": "任天堂(株)【7974】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/07",
-          "description": "任天堂(株)【7974】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NTjdJRmVQS1hjZGdYanpFX0NTMEg1d3Ryakt0WFVXUk1QenF4UF9LRWlzcmdqUEtlWWJRZlFXNFdSOElfYUVDeUw1cnRkMEthelVjeGJKRGxPaWlJWXdv?oc=5",
-          "type": "企業・投資ニュース"
-        },
-        {
           "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
           "source": "ダイヤモンド・オンライン",
           "date": "2026/10/02",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ ダイヤモンド・オンライン",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5",
-          "type": "企業・投資ニュース"
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
@@ -823,10 +805,10 @@
       "ticker": "8766.T",
       "qtyLabel": "200株",
       "price": 516.0,
-      "previousClose": 522.2999877929688,
+      "previousClose": 522.3,
       "value": 103200.0,
       "deltaYen": -1260.0,
-      "change": -1.2062010224411446,
+      "change": -1.2062033314187204,
       "weekChange": -0.9596928982725572,
       "monthChange": -2.3097334201214292,
       "intraday": [
@@ -1201,20 +1183,11 @@
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/07",
-          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wbDU4ajF2MlF2V3RVeDF5Z1lvYVowMHhLTXF4blNKaVRHbXJyQ1BUbm1WLUN6aTh3ZHEzeVJ6UXdDRVZwa2huRWZnNlhCZHhLbjdGNnNoejdacGRUZGVj?oc=5",
-          "type": "企業・投資ニュース"
-        },
-        {
-          "title": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/06",
-          "description": "東京海上ホールディングス(株)【8766】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtRVk4N1FnZFl4Z05fMmJJVGg5Zy1Bd3psV2xUaEoybWNYaUd4YmJiUHNSbFBGc0FpSHZ2Snd4ZGlrNERCWUZIRlM5cFdaU2RVWDBmS2p1MWxlYmZ3NUUw?oc=5",
-          "type": "企業・投資ニュース"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1601,20 +1574,11 @@
       ],
       "news": [
         {
-          "title": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/07",
-          "description": "(株)北洋銀行【8524】：今の株価の理由は？値動きの背景をAIが解説 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Qekxjcll0cVlMZk9Wc1otN1F4T29WNzhaMjhoQ3NUR2ZZWFpjVmdBY2tDazl0N0xpelFReGNZTzd6dkYtWjdKSXJRTDgyM3FVYWNLRkxJcVpfVUtITVhv?oc=5",
-          "type": "企業・投資ニュース"
-        },
-        {
-          "title": "(株)北洋銀行【8524】：決算情報 - Yahoo!ファイナンス",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/08/05",
-          "description": "(株)北洋銀行【8524】：決算情報 Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0cUhYVVV4TlRzOVhZcWdLOUowamhOcWFjTDJVZ1BLZm5VcGl3NnV4VWZVRTJVZW92WDNOZkFDQmdDUmpXRjZTNnBMOVlCSk0wTFBHODB3SjVmRjU0bVRhZQ?oc=5",
-          "type": "企業・投資ニュース"
+          "title": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/07/30",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5tSU1ER2RKZ1dDV0NoWjZaN1hoNy01UDdmNE4ydFEzSlZZal9sLVE5dzFsR3BaWUEzZ1hTdjU0LTZ2QWNiMjVDX0RNSUNKWXVvVUxsd0tObnR1VUJQTzh1M0Vfa3c1LWdoM3c?oc=5"
         }
       ]
     },
@@ -1634,20 +1598,11 @@
       "month": [],
       "news": [
         {
-          "title": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で - Reuters",
-          "source": "Reuters",
-          "date": "2026/10/07",
-          "description": "米国株式市場＝Ｓ＆Ｐ５００とナスダックが最高値更新、原油価格の安定で Reuters",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQclhCX3pNZlNnd0tRZUM5UWh0TUZLQU1yREFURGVXVmdDdVBtYUd2eEhJYU9OeHl3OXh6TUJOY0ItVUduLXAxSzF0dzYyQWJaVXRTMFc1NmFxMHZlekhsZi16ZUQyR1ZPM21md0RaY25yTHViMnFSZF9nMTk4dzBKLXRxTDJUZw?oc=5",
-          "type": "企業・投資ニュース"
-        },
-        {
           "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
+          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
           "source": "Yahoo!ファイナンス",
           "date": "2026/10/07",
-          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5",
-          "type": "企業・投資ニュース"
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
         }
       ]
     }
