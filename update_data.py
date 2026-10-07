@@ -131,22 +131,33 @@ assets.append({
 # ニュース 5件
 # -------------------------
 
+import html
+import re
+
 news = []
 
-try:
+def clean_html(text):
+    if not text:
+        return ""
+    text = html.unescape(text)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
+try:
     rss_url = "https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja"
 
     xml_data = get_text(rss_url)
-
     root = ET.fromstring(xml_data)
 
     for item in root.findall(".//item")[:5]:
 
         title = item.findtext("title", "").strip()
         link = item.findtext("link", "").strip()
+        description = clean_html(
+            item.findtext("description", "")
+        )
 
-        # 「ニュースタイトル - 媒体名」から媒体名を分離
         source = ""
 
         if " - " in title:
@@ -156,14 +167,16 @@ try:
 
         news.append({
             "title": title,
+            "description": description,
             "source": source,
             "link": link
         })
 
-except Exception as e:
+except Exception:
 
     news = [{
         "title": "ニュースを取得できませんでした",
+        "description": "",
         "source": "",
         "link": ""
     }]
