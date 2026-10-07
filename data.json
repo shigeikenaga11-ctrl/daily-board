@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/07 19:24",
+  "updated_at": "2026/10/07 19:36",
   "weather": {
     "text": "晴れ",
     "max": 18.3,
@@ -16,13 +16,13 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": null,
+    "total": 911640.57,
     "purchaseTotal": 907645.98,
-    "deltaYen": null,
-    "deltaPercent": null,
-    "unrealizedYen": null,
-    "unrealizedPercent": null,
-    "complete": false
+    "deltaYen": -115.39999999999964,
+    "deltaPercent": -0.012656895462938359,
+    "unrealizedYen": 3994.5899999999674,
+    "unrealizedPercent": 0.44010441163414477,
+    "complete": true
   },
   "assets": [
     {
@@ -1626,18 +1626,120 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": null,
-      "previousClose": null,
-      "value": null,
-      "deltaYen": null,
-      "change": null,
-      "unrealizedYen": null,
-      "unrealizedPercent": null,
-      "weekChange": null,
-      "monthChange": null,
+      "price": 45232.0,
+      "previousClose": 44884.0,
+      "value": 608890.57,
+      "deltaYen": 4684.6,
+      "change": 0.7753319668478698,
+      "unrealizedYen": 8884.59,
+      "unrealizedPercent": 1.4807502467917022,
+      "weekChange": 1.7592800899887573,
+      "monthChange": 1.8922328347450001,
       "intraday": [],
-      "week": [],
-      "month": [],
+      "week": [
+        {
+          "label": "09/30",
+          "value": 44450.0
+        },
+        {
+          "label": "10/01",
+          "value": 44514.0
+        },
+        {
+          "label": "10/02",
+          "value": 44658.0
+        },
+        {
+          "label": "10/05",
+          "value": 44884.0
+        },
+        {
+          "label": "10/06",
+          "value": 45232.0
+        }
+      ],
+      "month": [
+        {
+          "label": "09/04",
+          "value": 44392.0
+        },
+        {
+          "label": "09/07",
+          "value": 44308.0
+        },
+        {
+          "label": "09/08",
+          "value": 43680.0
+        },
+        {
+          "label": "09/09",
+          "value": 43426.0
+        },
+        {
+          "label": "09/10",
+          "value": 43215.0
+        },
+        {
+          "label": "09/11",
+          "value": 43223.0
+        },
+        {
+          "label": "09/14",
+          "value": 43314.0
+        },
+        {
+          "label": "09/15",
+          "value": 43398.0
+        },
+        {
+          "label": "09/16",
+          "value": 43410.0
+        },
+        {
+          "label": "09/17",
+          "value": 43454.0
+        },
+        {
+          "label": "09/18",
+          "value": 43966.0
+        },
+        {
+          "label": "09/24",
+          "value": 44842.0
+        },
+        {
+          "label": "09/25",
+          "value": 45049.0
+        },
+        {
+          "label": "09/28",
+          "value": 44991.0
+        },
+        {
+          "label": "09/29",
+          "value": 44556.0
+        },
+        {
+          "label": "09/30",
+          "value": 44450.0
+        },
+        {
+          "label": "10/01",
+          "value": 44514.0
+        },
+        {
+          "label": "10/02",
+          "value": 44658.0
+        },
+        {
+          "label": "10/05",
+          "value": 44884.0
+        },
+        {
+          "label": "10/06",
+          "value": 45232.0
+        }
+      ],
       "news": [
         {
           "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
