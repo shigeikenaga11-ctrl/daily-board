@@ -499,60 +499,66 @@ function render(d){
   });
 
 
-  /* NEWSページ */
+/* NEWS 5件をそれぞれ独立したページにする */
+let news=d.news||[];
+
+news.slice(0,5).forEach((n,i)=>{
+
   let newsPage=document.createElement("section");
 
   newsPage.className="page dynamic";
-
-  let news=d.news||[];
 
   newsPage.innerHTML=`
 
     <div class="card">
 
       <div class="eyebrow">
-        📰 TODAY'S NEWS
+        📰 NEWS ${i+1} / ${Math.min(news.length,5)}
       </div>
 
-      <div class="news-list">
-
-        ${
-          news.length
-          ?news.slice(0,5).map((n,i)=>`
-
-            <div class="news-item">
-
-              <div class="news-title">
-                <span class="news-number">
-                  ${i+1}.
-                </span>
-                ${n.title}
-              </div>
-
-              ${
-                n.source
-                ?`<div class="news-source">${n.source}</div>`
-                :""
-              }
-
-            </div>
-
-          `).join("")
-          :`
-            <div class="sub">
-              ニュースを取得できませんでした
-            </div>
-          `
-        }
-
+      <div style="
+        font-size:clamp(27px,4vw,48px);
+        font-weight:850;
+        line-height:1.25;
+        margin-bottom:28px;
+      ">
+        ${n.title}
       </div>
+
+      ${
+        n.description
+        ?`
+          <div style="
+            font-size:clamp(17px,2.2vw,28px);
+            line-height:1.65;
+            color:#dce3eb;
+          ">
+            ${n.description}
+          </div>
+        `
+        :""
+      }
+
+      ${
+        n.source
+        ?`
+          <div class="sub"
+               style="margin-top:28px">
+            出典：${n.source}
+          </div>
+        `
+        :""
+      }
 
     </div>
+
   `;
 
   stage.appendChild(newsPage);
 
+});
 
+  
   /* ページ数が変わっても安全に戻す */
   idx=0;
 
