@@ -4,18 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
+
 <title>Daily Board</title>
 
 <style>
+
 :root{
   --bg:#090c11;
   --panel:#141922;
   --text:#f6f8fb;
   --muted:#9aa6b2;
-  --line:#2a313c
+  --line:#2a313c;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 html,body{
   margin:0;
@@ -24,709 +28,1093 @@ html,body{
   overflow:hidden;
   background:var(--bg);
   color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Noto Sans JP",sans-serif
+  font-family:-apple-system,BlinkMacSystemFont,
+  "Helvetica Neue","Noto Sans JP",sans-serif;
 }
 
-body{padding:18px 22px}
+body{
+  padding:18px 22px;
+}
 
 .board{
   height:100%;
   max-width:1180px;
   margin:auto;
+
   display:grid;
   grid-template-rows:auto 1fr auto;
-  gap:14px
+
+  gap:14px;
 }
+
+/* HEADER */
 
 header{
   display:flex;
   justify-content:space-between;
-  align-items:end
+  align-items:end;
 }
 
 .date{
   font-size:clamp(22px,3vw,40px);
-  font-weight:760
+  font-weight:760;
 }
 
 .clock{
   font-size:clamp(38px,6vw,74px);
-  font-weight:850
+  font-weight:850;
 }
+
+
+/* PAGE */
 
 .stage{
   position:relative;
-  min-height:0
+  min-height:0;
 }
 
 .page{
   position:absolute;
   inset:0;
+
   opacity:0;
-  transform:scale(.987);
-  transition:.7s ease;
-  pointer-events:none
+
+  transform:scale(.975);
+
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
+
+  pointer-events:none;
 }
 
 .page.active{
   opacity:1;
-  transform:scale(1)
+  transform:scale(1);
 }
+
+
+/* CARD */
 
 .card{
   height:100%;
+
   background:var(--panel);
+
   border:1px solid var(--line);
+
   border-radius:28px;
+
   padding:clamp(22px,3.7vw,46px);
+
   display:flex;
   flex-direction:column;
+
   justify-content:center;
-  overflow:hidden
+
+  overflow:hidden;
 }
 
 .eyebrow{
   font-size:clamp(16px,1.8vw,24px);
   color:#dce6f2;
   font-weight:750;
-  margin-bottom:18px
+  margin-bottom:18px;
 }
 
 .big{
   font-size:clamp(45px,7.3vw,92px);
-  font-weight:850
+  font-weight:850;
 }
 
 .temp{
   font-size:clamp(28px,4.5vw,55px);
   font-weight:760;
-  margin-top:20px
+  margin-top:20px;
 }
 
 .sub{
   font-size:clamp(14px,1.8vw,23px);
   color:var(--muted);
-  margin-top:12px
+  margin-top:12px;
 }
+
+
+/* ASSET TABLE */
 
 table{
   width:100%;
   border-collapse:collapse;
-  font-size:clamp(14px,1.7vw,23px)
+  font-size:clamp(14px,1.7vw,23px);
 }
 
 th{
   color:var(--muted);
-  font-size:.76em
+  font-size:.76em;
 }
 
 th,td{
   padding:10px 8px;
   border-bottom:1px solid var(--line);
-  text-align:right
+  text-align:right;
 }
 
-th:first-child,td:first-child{text-align:left}
-td:first-child{font-weight:750}
+th:first-child,
+td:first-child{
+  text-align:left;
+}
+
+td:first-child{
+  font-weight:750;
+}
+
+
+/* ASSET DETAIL */
 
 .assethead{
   display:flex;
   justify-content:space-between;
-  align-items:end
+  align-items:end;
 }
 
 .name{
   font-size:clamp(31px,5vw,61px);
-  font-weight:850
+  font-weight:850;
 }
 
 .qty{
   color:var(--muted);
-  font-size:clamp(15px,2vw,24px)
+  font-size:clamp(15px,2vw,24px);
 }
 
 .metrics{
   display:flex;
   gap:28px;
   align-items:baseline;
-  margin:10px 0
+  margin:10px 0;
 }
 
 .price{
   font-size:clamp(28px,4.3vw,52px);
-  font-weight:800
+  font-weight:800;
 }
 
 .change{
   font-size:clamp(18px,2.5vw,30px);
-  font-weight:700
+  font-weight:700;
 }
+
+
+/* CHART */
 
 .chartwrap{
   flex:1;
-  min-height:170px
+  min-height:170px;
 }
 
 .chart{
   width:100%;
-  height:100%
+  height:100%;
 }
 
 .grid{
   stroke:#29313c;
-  stroke-width:1
+  stroke-width:1;
 }
 
 .line{
   fill:none;
   stroke:#edf2f7;
   stroke-width:4;
-  stroke-linejoin:round
+  stroke-linejoin:round;
 }
 
-.point{fill:#edf2f7}
+.point{
+  fill:#edf2f7;
+}
 
 .axis{
   fill:#8f9aa7;
-  font-size:14px
+  font-size:14px;
 }
+
 
 /* NEWS */
-.news-list{
-  display:flex;
-  flex-direction:column;
-  gap:0
+
+.news-title-detail{
+  font-size:clamp(27px,4vw,48px);
+  font-weight:850;
+  line-height:1.25;
+  margin-bottom:28px;
 }
 
-.news-item{
-  padding:15px 4px;
-  border-bottom:1px solid var(--line)
+.news-description{
+  font-size:clamp(17px,2.2vw,28px);
+  line-height:1.65;
+  color:#dce3eb;
 }
 
-.news-item:last-child{
-  border-bottom:none
-}
 
-.news-number{
-  color:var(--muted);
-  font-size:clamp(13px,1.3vw,17px);
-  margin-right:10px
-}
-
-.news-title{
-  font-size:clamp(17px,2.1vw,27px);
-  font-weight:720;
-  line-height:1.35
-}
-
-.news-source{
-  color:var(--muted);
-  font-size:clamp(12px,1.3vw,17px);
-  margin-top:4px;
-  padding-left:30px
-}
+/* FOOTER */
 
 footer{
   display:grid;
   grid-template-columns:1fr auto;
-  align-items:center
+  align-items:center;
 }
 
 .status{
   color:var(--muted);
-  font-size:clamp(11px,1.2vw,16px)
+  font-size:clamp(11px,1.2vw,16px);
 }
 
 .dots{
   display:flex;
-  gap:6px
+  gap:6px;
 }
 
 .dot{
   width:7px;
   height:7px;
+
   border-radius:50%;
-  background:#3d4652
+
+  background:#3d4652;
 }
 
-.dot.active{background:#fff}
-
-
-  /* ニュース文字をゆっくり表示 */
-.news-fade{
-  opacity:0;
-  transform:translateY(12px);
+.dot.active{
+  background:#fff;
 }
 
-.page.active .news-title-fade{
-  animation:newsFade 1.5s ease .3s forwards;
-}
-
-.page.active .news-body-fade{
-  animation:newsFade 1.8s ease 1.1s forwards;
-}
-
-.page.active .news-source-fade{
-  animation:newsFade 1.5s ease 2.0s forwards;
-}
-
-@keyframes newsFade{
-  from{
-    opacity:0;
-    transform:translateY(12px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-
-  
 </style>
 </head>
+
 
 <body>
 
 <div class="board">
 
+
 <header>
-  <div class="date" id="date"></div>
-  <div class="clock" id="clock"></div>
+
+  <div
+    class="date"
+    id="date">
+  </div>
+
+  <div
+    class="clock"
+    id="clock">
+  </div>
+
 </header>
 
-<main class="stage" id="stage">
+
+<main
+  class="stage"
+  id="stage">
+
+
+<!-- WEATHER -->
 
 <section class="page active">
-  <div class="card" id="weather">
+
+  <div
+    class="card"
+    id="weather">
+
     読み込み中…
+
   </div>
+
 </section>
+
+
+<!-- ASSET SUMMARY -->
 
 <section class="page">
+
   <div class="card">
-    <div class="eyebrow">📈 MY ASSETS</div>
+
+    <div class="eyebrow">
+      📈 MY ASSETS
+    </div>
 
     <table>
+
       <thead>
+
         <tr>
+
           <th>資産</th>
+
           <th>数量</th>
+
           <th>現在値</th>
+
           <th>評価額</th>
+
           <th>前日比</th>
+
         </tr>
+
       </thead>
 
-      <tbody id="assetRows"></tbody>
+
+      <tbody
+        id="assetRows">
+      </tbody>
+
+
     </table>
+
   </div>
+
 </section>
+
 
 </main>
 
+
 <footer>
-  <div class="status" id="status">
+
+  <div
+    class="status"
+    id="status">
+
     データ読み込み中
+
   </div>
 
-  <div class="dots" id="dots"></div>
+
+  <div
+    class="dots"
+    id="dots">
+  </div>
+
 </footer>
+
 
 </div>
 
+
 <script>
 
+
 let DATA=null;
+
 let idx=0;
 
-const yen=n=>
-  n==null
-  ?"—"
-  :Math.round(n).toLocaleString("ja-JP")+"円";
 
+/* 円表示 */
+
+const yen=n=>
+
+  n==null
+
+  ?"—"
+
+  :Math.round(n)
+    .toLocaleString("ja-JP")+"円";
+
+
+
+/* -------------------------
+   CHART
+------------------------- */
 
 function chartHTML(a){
 
   let v=a.history||[];
 
-  if(v.length<2)
-    return '<div class="sub">チャートデータなし</div>';
-
-  let W=900,H=320,P=45;
-
-  let vals=v.map(x=>x.value);
-
-  let mn=Math.min(...vals);
-  let mx=Math.max(...vals);
-  let r=mx-mn||1;
-
-  let pts=v.map((x,i)=>[
-    P+i*(W-2*P)/(v.length-1),
-    H-P-(x.value-mn)/r*(H-2*P)
-  ]);
-
-  let grid=[0,1,2,3].map(i=>{
-    let y=P+i*(H-2*P)/3;
+  if(v.length<2){
 
     return `
-      <line class="grid"
-      x1="${P}"
-      y1="${y}"
-      x2="${W-P}"
-      y2="${y}"/>
+      <div class="sub">
+        チャートデータなし
+      </div>
     `;
-  }).join("");
 
-  let poly=pts.map(p=>p.join(",")).join(" ");
+  }
 
-  let circles=pts.map(p=>
-    `<circle class="point"
-      cx="${p[0]}"
-      cy="${p[1]}"
-      r="5"/>`
-  ).join("");
 
-  let labs=pts.map((p,i)=>
-    `<text class="axis"
-      x="${p[0]}"
-      y="${H-12}"
-      text-anchor="middle">
-      ${v[i].label}
-    </text>`
-  ).join("");
+  let W=900;
+
+  let H=320;
+
+  let P=45;
+
+
+  let vals=v.map(
+    x=>x.value
+  );
+
+
+  let mn=Math.min(...vals);
+
+  let mx=Math.max(...vals);
+
+  let r=mx-mn||1;
+
+
+  let pts=v.map(
+    (x,i)=>[
+
+      P+i*(W-2*P)/(v.length-1),
+
+      H-P-(x.value-mn)/r*(H-2*P)
+
+    ]
+  );
+
+
+  let grid=[0,1,2,3]
+    .map(i=>{
+
+      let y=
+        P+i*(H-2*P)/3;
+
+      return `
+
+        <line
+          class="grid"
+          x1="${P}"
+          y1="${y}"
+          x2="${W-P}"
+          y2="${y}"
+        />
+
+      `;
+
+    })
+    .join("");
+
+
+  let poly=
+    pts
+    .map(p=>p.join(","))
+    .join(" ");
+
+
+  let circles=
+    pts
+    .map(p=>
+
+      `
+      <circle
+        class="point"
+        cx="${p[0]}"
+        cy="${p[1]}"
+        r="5"
+      />
+      `
+
+    )
+    .join("");
+
+
+  let labs=
+    pts
+    .map((p,i)=>
+
+      `
+      <text
+        class="axis"
+        x="${p[0]}"
+        y="${H-12}"
+        text-anchor="middle"
+      >
+        ${v[i].label}
+      </text>
+      `
+
+    )
+    .join("");
+
 
   return `
+
     <div class="chartwrap">
-      <svg class="chart"
+
+      <svg
+        class="chart"
         viewBox="0 0 ${W} ${H}"
-        preserveAspectRatio="none">
+        preserveAspectRatio="none"
+      >
 
         ${grid}
 
         <polyline
           class="line"
-          points="${poly}"/>
+          points="${poly}"
+        />
 
         ${circles}
 
         ${labs}
 
       </svg>
+
     </div>
+
   `;
+
 }
 
+
+
+/* -------------------------
+   RENDER
+------------------------- */
 
 function render(d){
 
   DATA=d;
 
+
+  /* WEATHER */
+
   let w=d.weather;
 
-  document.getElementById("weather").innerHTML=`
-    <div class="eyebrow">
-      ☀ TODAY'S WEATHER
-    </div>
 
-    <div class="big">
-      札幌　${w.text}
-    </div>
+  document
+    .getElementById("weather")
+    .innerHTML=`
 
-    <div class="temp">
-      最高 ${w.max}℃
-      　/　
-      最低 ${w.min}℃
-    </div>
+      <div class="eyebrow">
+        ☀ TODAY'S WEATHER
+      </div>
 
-    <div class="sub">
-      降水確率 ${w.rain}%
-    </div>
-  `;
+      <div class="big">
 
+        札幌　${w.text}
 
-  document.getElementById("assetRows").innerHTML=
-    d.assets.map(a=>`
+      </div>
 
-      <tr>
-        <td>${a.name}</td>
-        <td>${a.qtyLabel}</td>
-        <td>${yen(a.price)}</td>
-        <td>${yen(a.value)}</td>
+      <div class="temp">
 
-        <td>
-          ${
-            a.change==null
-            ?"—"
-            :(a.change>=0?"+":"")
-              +a.change.toFixed(2)+"%"
-          }
-        </td>
+        最高 ${w.max}℃
+        　/　
+        最低 ${w.min}℃
 
-      </tr>
+      </div>
 
-    `).join("");
+      <div class="sub">
+
+        降水確率 ${w.rain}%
+
+      </div>
+
+    `;
 
 
-  let stage=document.getElementById("stage");
 
-  /* 再読み込み時に古い動的ページを削除 */
-  stage.querySelectorAll(".dynamic").forEach(x=>x.remove());
+  /* ASSET TABLE */
+
+  document
+    .getElementById("assetRows")
+    .innerHTML=
+
+      d.assets
+      .map(a=>`
+
+        <tr>
+
+          <td>
+            ${a.name}
+          </td>
+
+          <td>
+            ${a.qtyLabel}
+          </td>
+
+          <td>
+            ${yen(a.price)}
+          </td>
+
+          <td>
+            ${yen(a.value)}
+          </td>
+
+          <td>
+
+            ${
+              a.change==null
+
+              ?"—"
+
+              :(a.change>=0?"+":"")
+                +a.change.toFixed(2)
+                +"%"
+            }
+
+          </td>
+
+        </tr>
+
+      `)
+      .join("");
 
 
-  /* 各資産チャート */
+
+  let stage=
+    document.getElementById("stage");
+
+
+  /*
+   data.json再読込時に
+   古いチャート・ニュースページを削除
+  */
+
+  stage
+    .querySelectorAll(".dynamic")
+    .forEach(x=>x.remove());
+
+
+
+  /* -------------------------
+     ASSET DETAIL
+  ------------------------- */
+
   d.assets.forEach(a=>{
 
-    let s=document.createElement("section");
 
-    s.className="page dynamic";
+    let s=
+      document.createElement("section");
+
+
+    s.className=
+      "page dynamic";
+
 
     s.innerHTML=`
 
       <div class="card">
 
         <div class="eyebrow">
+
           7-DAY MARKET
+
         </div>
+
 
         <div class="assethead">
 
+
           <div class="name">
+
             ${a.name}
+
           </div>
+
 
           <div class="qty">
+
             保有 ${a.qtyLabel}
+
           </div>
 
+
         </div>
+
 
         <div class="metrics">
 
+
           <div class="price">
+
             ${yen(a.price)}
+
           </div>
+
 
           <div class="change">
+
             ${
               a.change==null
+
               ?""
+
               :(a.change>=0?"+":"")
-                +a.change.toFixed(2)+"%"
+                +a.change.toFixed(2)
+                +"%"
             }
+
           </div>
 
+
         </div>
+
 
         ${chartHTML(a)}
 
+
         <div class="sub">
+
           評価額 ${yen(a.value)}
+
         </div>
 
+
       </div>
+
     `;
+
 
     stage.appendChild(s);
 
   });
 
 
-/* NEWS 5件をそれぞれ独立したページにする */
-let news=d.news||[];
 
-news.slice(0,5).forEach((n,i)=>{
+  /* -------------------------
+     NEWS
+     1 NEWS = 1 PAGE
+  ------------------------- */
 
-  let newsPage=document.createElement("section");
 
-  newsPage.className="page dynamic";
+  let news=d.news||[];
 
-  newsPage.innerHTML=`
 
-    <div class="card">
+  news
+    .slice(0,5)
+    .forEach((n,i)=>{
 
-      <div class="eyebrow">
-        📰 NEWS ${i+1} / ${Math.min(news.length,5)}
-      </div>
 
-      <div style="
-        font-size:clamp(27px,4vw,48px);
-        font-weight:850;
-        line-height:1.25;
-        margin-bottom:28px;
-      ">
-        ${n.title}
-      </div>
+      let newsPage=
+        document.createElement("section");
 
-      ${
-        n.description
-        ?`
-          <div style="
-            font-size:clamp(17px,2.2vw,28px);
-            line-height:1.65;
-            color:#dce3eb;
-          ">
-            ${n.description}
+
+      newsPage.className=
+        "page dynamic";
+
+
+      newsPage.innerHTML=`
+
+        <div class="card">
+
+
+          <div class="eyebrow">
+
+            📰 NEWS ${i+1} / ${Math.min(news.length,5)}
+
           </div>
-        `
-        :""
-      }
 
-      ${
-        n.source
-        ?`
-          <div class="sub"
-               style="margin-top:28px">
-            出典：${n.source}
+
+          <div class="news-title-detail">
+
+            ${n.title}
+
           </div>
-        `
-        :""
-      }
 
-    </div>
 
-  `;
+          ${
+            n.description
 
-  stage.appendChild(newsPage);
+            ?`
 
-});
+            <div class="news-description">
 
-  
-  /* ページ数が変わっても安全に戻す */
+              ${n.description}
+
+            </div>
+
+            `
+
+            :""
+          }
+
+
+          ${
+            n.source
+
+            ?`
+
+            <div
+              class="sub"
+              style="margin-top:28px"
+            >
+
+              出典：${n.source}
+
+            </div>
+
+            `
+
+            :""
+          }
+
+
+        </div>
+
+      `;
+
+
+      stage.appendChild(
+        newsPage
+      );
+
+    });
+
+
+
+  /* -------------------------
+     RESET PAGE
+  ------------------------- */
+
+
   idx=0;
+
 
   document
     .querySelectorAll(".page")
-    .forEach((p,i)=>
-      p.classList.toggle("active",i===0)
+    .forEach(
+      (p,i)=>
+
+        p.classList.toggle(
+          "active",
+          i===0
+        )
+
     );
 
 
   setupDots();
 
 
-  document.getElementById("status").textContent=
-    `データ更新 ${d.updated_at} ｜ 画面切替 10秒`;
+  document
+    .getElementById("status")
+    .textContent=
+
+      `データ更新 ${d.updated_at} ｜ 画面切替 10秒`;
 
 }
 
+
+
+/* -------------------------
+   DOTS
+------------------------- */
 
 function setupDots(){
 
+
   let pages=[
-    ...document.querySelectorAll(".page")
+    ...document
+      .querySelectorAll(".page")
   ];
 
+
   let box=
-    document.getElementById("dots");
+    document
+      .getElementById("dots");
+
 
   box.innerHTML="";
 
-  pages.forEach((_,i)=>{
 
-    let x=
-      document.createElement("span");
+  pages.forEach(
+    (_,i)=>{
 
-    x.className=
-      "dot"+(i===0?" active":"");
 
-    box.appendChild(x);
+      let x=
+        document
+          .createElement("span");
 
-  });
+
+      x.className=
+
+        "dot"
+        +(i===0
+          ?" active"
+          :"");
+
+
+      box.appendChild(x);
+
+    }
+  );
 
 }
 
+
+
+/* -------------------------
+   PAGE SWITCH
+------------------------- */
 
 function flip(){
 
+
   let p=[
-    ...document.querySelectorAll(".page")
+    ...document
+      .querySelectorAll(".page")
   ];
+
 
   let ds=[
-    ...document.querySelectorAll(".dot")
+    ...document
+      .querySelectorAll(".dot")
   ];
 
-  if(!p.length)return;
 
-  p[idx].classList.remove("active");
+  if(!p.length)
+    return;
 
-  ds[idx]?.classList.remove("active");
 
-  idx=(idx+1)%p.length;
+  p[idx]
+    .classList
+    .remove("active");
 
-  p[idx].classList.add("active");
 
-  ds[idx]?.classList.add("active");
+  ds[idx]
+    ?.classList
+    .remove("active");
+
+
+  idx=
+    (idx+1)%p.length;
+
+
+  p[idx]
+    .classList
+    .add("active");
+
+
+  ds[idx]
+    ?.classList
+    .add("active");
 
 }
 
 
+
+/* -------------------------
+   CLOCK
+------------------------- */
+
 function clock(){
 
-  let d=new Date();
+
+  let d=
+    new Date();
+
 
   let days=[
-    "日","月","火",
-    "水","木","金","土"
+    "日",
+    "月",
+    "火",
+    "水",
+    "木",
+    "金",
+    "土"
   ];
 
-  document.getElementById("date").textContent=
-    `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
 
-  clockEl.textContent=
-    d.toLocaleTimeString(
-      "ja-JP",
-      {
-        hour:"2-digit",
-        minute:"2-digit"
-      }
-    );
+  document
+    .getElementById("date")
+    .textContent=
+
+      `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
+
+
+  clockEl
+    .textContent=
+
+      d.toLocaleTimeString(
+
+        "ja-JP",
+
+        {
+          hour:"2-digit",
+          minute:"2-digit"
+        }
+
+      );
 
 }
 
 
 const clockEl=
-  document.getElementById("clock");
+  document
+    .getElementById("clock");
 
-setInterval(clock,1000);
+
+setInterval(
+  clock,
+  1000
+);
+
 
 clock();
 
-/* 10秒ごとに画面切替 */
-setInterval(flip,10000);
 
+
+/* -------------------------
+   10秒ごとに画面切替
+------------------------- */
+
+setInterval(
+  flip,
+  10000
+);
+
+
+
+/* -------------------------
+   DATA LOAD
+------------------------- */
 
 async function load(){
 
+
   try{
 
-    let r=await fetch(
-      "data.json?t="+Date.now()
-    );
+
+    let r=
+      await fetch(
+
+        "data.json?t="
+        +Date.now()
+
+      );
+
 
     render(
       await r.json()
     );
 
+
   }catch(e){
 
-    document.getElementById("status")
+
+    document
+      .getElementById("status")
       .textContent=
-      "data.jsonを読み込めません";
+
+        "data.jsonを読み込めません";
+
 
   }
 
 }
 
 
+
 load();
 
-/* 15分ごとにdata.jsonを再読込 */
+
+
+/* -------------------------
+   15分ごとに
+   data.jsonを確認
+------------------------- */
+
 setInterval(
   load,
   15*60*1000
 );
+
 
 </script>
 
