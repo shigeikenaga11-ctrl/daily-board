@@ -22,7 +22,8 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -31,12 +32,8 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
     color: #f5f7fa;
+
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -44,19 +41,13 @@ body {
         "Hiragino Sans",
         "Yu Gothic",
         sans-serif;
+
     overflow: hidden;
 }
 
-/*
- iPadホーム画面起動時、
- ステータスバー領域まで黒背景を伸ばす
-*/
 #app {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
 
     padding-top: env(safe-area-inset-top);
     padding-right: env(safe-area-inset-right);
@@ -81,6 +72,11 @@ body {
         );
 }
 
+
+/* =========================
+   HEADER
+========================= */
+
 header {
     height: 72px;
     min-height: 72px;
@@ -92,11 +88,8 @@ header {
     justify-content: space-between;
 
     background:
-        rgba(5,10,17,0.70);
+        rgba(5,10,17,0.72);
 
-    /*
-      上部の余計な白線を作らない
-    */
     border: none;
 }
 
@@ -112,8 +105,14 @@ header {
     align-items: center;
 
     color: #aab6c7;
+
     font-size: 15px;
 }
+
+
+/* =========================
+   PAGE
+========================= */
 
 #screen {
     position: relative;
@@ -125,7 +124,7 @@ header {
     position: absolute;
     inset: 0;
 
-    padding: 34px 46px;
+    padding: 30px 46px;
 
     opacity: 0;
 
@@ -148,7 +147,7 @@ header {
 
     letter-spacing: 0.18em;
 
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .page-title {
@@ -156,10 +155,6 @@ header {
 
     font-size: 46px;
     line-height: 1.08;
-}
-
-.subtle {
-    color: #8997aa;
 }
 
 
@@ -191,6 +186,7 @@ header {
 
 .weather-temp {
     font-size: 32px;
+
     color: #c6d0dd;
 
     padding-bottom: 10px;
@@ -200,16 +196,124 @@ header {
     margin-top: 24px;
 
     font-size: 22px;
+
     color: #9caabd;
 }
 
 
 /* =========================
-   ASSET SUMMARY
+   COLORS
+========================= */
+
+.positive {
+    color: #38d996;
+}
+
+.negative {
+    color: #ff6873;
+}
+
+.neutral {
+    color: #9ba7b7;
+}
+
+
+/* =========================
+   TOTAL ASSETS
+========================= */
+
+.total-page {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-label {
+    color: #a4afbd;
+
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.total-value {
+    margin-top: 5px;
+
+    font-size: 62px;
+    font-weight: 850;
+
+    letter-spacing: -0.04em;
+}
+
+.total-change {
+    margin-top: 10px;
+
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.total-cost {
+    margin-top: 9px;
+
+    color: #8997aa;
+
+    font-size: 16px;
+}
+
+.total-profit {
+    margin-top: 4px;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.total-breakdown {
+    margin-top: 34px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 18px;
+}
+
+.total-card {
+    padding: 22px 25px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.09);
+
+    border-radius: 18px;
+
+    background:
+        rgba(9,16,26,0.72);
+}
+
+.total-card-label {
+    color: #8997aa;
+
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.total-card-value {
+    margin-top: 7px;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   ASSET TABLE
 ========================= */
 
 .asset-page {
-    padding-top: 25px;
+    padding-top: 22px;
 }
 
 .asset-top {
@@ -220,7 +324,7 @@ header {
 
     gap: 30px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .asset-total-label {
@@ -228,32 +332,32 @@ header {
 
     font-size: 16px;
 
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 .asset-total {
-    font-size: 49px;
+    font-size: 45px;
     font-weight: 800;
 
     letter-spacing: -0.03em;
 }
 
 .asset-purchase-total {
-    margin-top: 5px;
+    margin-top: 4px;
 
     color: #8794a6;
 
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .asset-total-change {
     text-align: right;
 
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 800;
 
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 
 .asset-table {
@@ -281,7 +385,7 @@ header {
 
     grid-template-columns:
         2fr
-        1.15fr
+        1.2fr
         1.15fr
         1.5fr;
 
@@ -289,7 +393,7 @@ header {
 }
 
 .asset-head {
-    min-height: 52px;
+    min-height: 48px;
 
     padding: 0 25px;
 
@@ -303,9 +407,9 @@ header {
 }
 
 .asset-row {
-    min-height: 88px;
+    min-height: 84px;
 
-    padding: 10px 25px;
+    padding: 9px 25px;
 
     border-top:
         1px solid
@@ -313,7 +417,7 @@ header {
 }
 
 .asset-name {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 750;
 }
 
@@ -323,17 +427,13 @@ header {
     color: #8794a6;
 
     font-size: 14px;
-    font-weight: 500;
 }
 
 .asset-price {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 750;
 }
 
-/*
- 取得単価は株単価の真下
-*/
 .asset-cost {
     margin-top: 5px;
 
@@ -344,18 +444,15 @@ header {
 }
 
 .asset-day-change {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 800;
 }
 
 .asset-value {
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 800;
 }
 
-/*
- Δは評価額の真下
-*/
 .asset-delta {
     margin-top: 5px;
 
@@ -365,24 +462,95 @@ header {
     font-weight: 650;
 }
 
-.positive {
-    color: #38d996;
+
+/* =========================
+   FUND
+========================= */
+
+.fund-page {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.negative {
-    color: #ff6873;
+.fund-main-card {
+    margin-top: 18px;
+
+    padding: 25px 28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.09);
+
+    border-radius: 20px;
+
+    background:
+        rgba(9,16,26,0.76);
 }
 
-.neutral {
-    color: #9ba7b7;
+.fund-name {
+    font-size: 31px;
+    font-weight: 800;
+}
+
+.fund-qty {
+    margin-top: 6px;
+
+    color: #8997aa;
+
+    font-size: 15px;
+}
+
+.fund-grid {
+    margin-top: 24px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+.fund-item {
+    padding: 16px 18px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,0.04);
+}
+
+.fund-item-label {
+    color: #8997aa;
+
+    font-size: 13px;
+}
+
+.fund-item-value {
+    margin-top: 7px;
+
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.fund-item-sub {
+    margin-top: 5px;
+
+    color: #7f8da0;
+
+    font-size: 12px;
 }
 
 
 /* =========================
-   MARKET PAGES
+   MARKET
 ========================= */
 
 .market-page {
+    height: 100%;
+
     display: flex;
     flex-direction: column;
 }
@@ -397,20 +565,20 @@ header {
 }
 
 .market-name {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 800;
 }
 
 .market-price {
-    margin-top: 8px;
+    margin-top: 7px;
 
-    font-size: 25px;
+    font-size: 24px;
 
     color: #c8d1dd;
 }
 
 .market-change {
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 800;
 }
 
@@ -418,7 +586,7 @@ header {
     flex: 1;
     min-height: 0;
 
-    margin-top: 24px;
+    margin-top: 20px;
 
     border:
         1px solid
@@ -445,6 +613,8 @@ header {
 ========================= */
 
 .news-page {
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,7 +646,7 @@ header {
 }
 
 .news-title {
-    font-size: 36px;
+    font-size: 34px;
 
     line-height: 1.3;
 
@@ -488,9 +658,9 @@ header {
 
     color: #c0cad7;
 
-    font-size: 20px;
+    font-size: 19px;
 
-    line-height: 1.75;
+    line-height: 1.7;
 }
 
 .news-source {
@@ -504,25 +674,6 @@ header {
 .news-link {
     color: inherit;
     text-decoration: none;
-}
-
-
-/* =========================
-   iPad調整
-========================= */
-
-@supports (
-    padding-top:
-    env(safe-area-inset-top)
-) {
-
-    #app {
-        padding-top:
-            env(safe-area-inset-top);
-
-        background:
-            #000000;
-    }
 }
 
 </style>
@@ -556,7 +707,6 @@ header {
 
 </header>
 
-
 <div id="screen"></div>
 
 </div>
@@ -570,9 +720,15 @@ const screen =
     document.getElementById("screen");
 
 let pages = [];
+
 let pageIndex = 0;
+
 let pageTimer = null;
 
+
+/* =========================
+   FORMAT
+========================= */
 
 function yen(value) {
 
@@ -699,15 +855,11 @@ function directionClass(value) {
         return "neutral";
     }
 
-    if (
-        Number(value) > 0
-    ) {
+    if (Number(value) > 0) {
         return "positive";
     }
 
-    if (
-        Number(value) < 0
-    ) {
+    if (Number(value) < 0) {
         return "negative";
     }
 
@@ -724,15 +876,11 @@ function arrow(value) {
         return "";
     }
 
-    if (
-        Number(value) > 0
-    ) {
+    if (Number(value) > 0) {
         return "▲";
     }
 
-    if (
-        Number(value) < 0
-    ) {
+    if (Number(value) < 0) {
         return "▼";
     }
 
@@ -740,7 +888,11 @@ function arrow(value) {
 }
 
 
-function addPage(html) {
+/* =========================
+   PAGE
+========================= */
+
+function addPage(content) {
 
     const div =
         document.createElement(
@@ -751,7 +903,7 @@ function addPage(html) {
         "page";
 
     div.innerHTML =
-        html;
+        content;
 
     screen.appendChild(
         div
@@ -773,6 +925,7 @@ function weatherPage(data) {
         data.weather || {};
 
     addPage(`
+
         <div class="weather-wrap">
 
             <div class="eyebrow">
@@ -816,10 +969,169 @@ function weatherPage(data) {
 
 
 /* =========================
-   ASSET SUMMARY
+   TOTAL ASSETS
 ========================= */
 
-function assetSummaryPage(data) {
+function totalSummaryPage(data) {
+
+    const s =
+        data.totalSummary || {};
+
+    const stocks =
+        (data.assets || [])
+        .filter(
+            a =>
+            a.type === "stock"
+        );
+
+    const fund =
+        (data.assets || [])
+        .find(
+            a =>
+            a.type === "fund"
+        );
+
+
+    const stockValue =
+        stocks.reduce(
+            (sum, a) =>
+                sum +
+                (
+                    Number(a.value)
+                    || 0
+                ),
+            0
+        );
+
+
+    const fundValue =
+        fund &&
+        fund.value !== null
+        ?
+        Number(fund.value)
+        :
+        null;
+
+
+    const deltaClass =
+        directionClass(
+            s.deltaYen
+        );
+
+
+    const profitClass =
+        directionClass(
+            s.unrealizedYen
+        );
+
+
+    addPage(`
+
+        <div class="total-page">
+
+            <div class="eyebrow">
+                TOTAL ASSETS
+            </div>
+
+            <div class="total-label">
+                総資産評価額
+            </div>
+
+            <div class="total-value">
+                ${yen(s.total)}
+            </div>
+
+            <div
+                class="
+                    total-change
+                    ${deltaClass}
+                "
+            >
+
+                ${arrow(s.deltaYen)}
+
+                ${signedYen(
+                    s.deltaYen
+                )}
+
+                &nbsp;
+
+                ${percent(
+                    s.deltaPercent
+                )}
+
+            </div>
+
+            <div class="total-cost">
+
+                総取得額
+                ${yen(
+                    s.purchaseTotal
+                )}
+
+            </div>
+
+            <div
+                class="
+                    total-profit
+                    ${profitClass}
+                "
+            >
+
+                評価損益
+
+                ${signedYen(
+                    s.unrealizedYen
+                )}
+
+                &nbsp;
+
+                ${percent(
+                    s.unrealizedPercent
+                )}
+
+            </div>
+
+
+            <div class="total-breakdown">
+
+                <div class="total-card">
+
+                    <div class="total-card-label">
+                        日本株
+                    </div>
+
+                    <div class="total-card-value">
+                        ${yen(stockValue)}
+                    </div>
+
+                </div>
+
+
+                <div class="total-card">
+
+                    <div class="total-card-label">
+                        投資信託
+                    </div>
+
+                    <div class="total-card-value">
+                        ${yen(fundValue)}
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    `);
+}
+
+
+/* =========================
+   STOCK SUMMARY
+========================= */
+
+function stockSummaryPage(data) {
 
     const summary =
         data.summary || {};
@@ -828,90 +1140,94 @@ function assetSummaryPage(data) {
         (data.assets || [])
         .filter(
             a =>
-            a.ticker !== "eMAXIS"
+            a.type === "stock"
         );
+
 
     const totalClass =
         directionClass(
             summary.deltaYen
         );
 
+
     const rows =
-        assets.map(a => {
+        assets.map(
+            a => {
 
-            const cls =
-                directionClass(
-                    a.change
-                );
+                const cls =
+                    directionClass(
+                        a.change
+                    );
 
-            return `
 
-                <div class="asset-row">
+                return `
 
-                    <div>
+                    <div class="asset-row">
 
-                        <div class="asset-name">
-                            ${a.name}
+                        <div>
+
+                            <div class="asset-name">
+                                ${a.name}
+                            </div>
+
+                            <div class="asset-qty">
+                                ${a.qtyLabel}
+                            </div>
+
                         </div>
 
-                        <div class="asset-qty">
-                            ${a.qtyLabel}
+
+                        <div>
+
+                            <div class="asset-price">
+                                ${priceYen(a.price)}
+                            </div>
+
+                            <div class="asset-cost">
+
+                                取得
+                                ${priceYen(a.cost)}
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="
+                                asset-day-change
+                                ${cls}
+                            "
+                        >
+
+                            ${arrow(a.change)}
+
+                            ${percent(a.change)}
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="asset-value">
+                                ${yen(a.value)}
+                            </div>
+
+                            <div class="asset-delta">
+
+                                Δ
+                                ${signedYen(
+                                    a.deltaYen
+                                )}
+
+                            </div>
+
                         </div>
 
                     </div>
-
-
-                    <div>
-
-                        <div class="asset-price">
-                            ${priceYen(a.price)}
-                        </div>
-
-                        <div class="asset-cost">
-
-                            取得
-                            ${priceYen(a.cost)}
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        class="
-                            asset-day-change
-                            ${cls}
-                        "
-                    >
-
-                        ${arrow(a.change)}
-                        ${percent(a.change)}
-
-                    </div>
-
-
-                    <div>
-
-                        <div class="asset-value">
-
-                            ${yen(a.value)}
-
-                        </div>
-
-                        <div class="asset-delta">
-
-                            Δ
-                            ${signedYen(
-                                a.deltaYen
-                            )}
-
-                        </div>
-
-                    </div>
-
-                </div>
-            `;
-        })
+                `;
+            }
+        )
         .join("");
 
 
@@ -920,7 +1236,7 @@ function assetSummaryPage(data) {
         <div class="asset-page">
 
             <div class="eyebrow">
-                MY ASSETS
+                JAPANESE STOCKS
             </div>
 
 
@@ -928,25 +1244,15 @@ function assetSummaryPage(data) {
 
                 <div>
 
-                    <div
-                        class="asset-total-label"
-                    >
+                    <div class="asset-total-label">
                         日本株評価額
                     </div>
 
-
                     <div class="asset-total">
-
-                        ${yen(
-                            summary.total
-                        )}
-
+                        ${yen(summary.total)}
                     </div>
 
-
-                    <div
-                        class="asset-purchase-total"
-                    >
+                    <div class="asset-purchase-total">
 
                         総取得額
                         ${yen(
@@ -988,25 +1294,199 @@ function assetSummaryPage(data) {
 
                 <div class="asset-head">
 
-                    <div>
-                        銘柄
-                    </div>
+                    <div>銘柄</div>
 
-                    <div>
-                        株単価
-                    </div>
+                    <div>株単価</div>
 
-                    <div>
-                        前日比
-                    </div>
+                    <div>前日比</div>
 
-                    <div>
-                        評価額
-                    </div>
+                    <div>評価額</div>
 
                 </div>
 
                 ${rows}
+
+            </div>
+
+        </div>
+    `);
+}
+
+
+/* =========================
+   FUND SUMMARY
+========================= */
+
+function fundSummaryPage(data) {
+
+    const fund =
+        (data.assets || [])
+        .find(
+            a =>
+            a.type === "fund"
+        );
+
+
+    if (!fund) {
+        return;
+    }
+
+
+    const changeClass =
+        directionClass(
+            fund.change
+        );
+
+
+    const profitClass =
+        directionClass(
+            fund.unrealizedYen
+        );
+
+
+    addPage(`
+
+        <div class="fund-page">
+
+            <div class="eyebrow">
+                INVESTMENT FUND
+            </div>
+
+
+            <div class="fund-main-card">
+
+                <div class="fund-name">
+                    ${fund.name}
+                </div>
+
+                <div class="fund-qty">
+                    ${fund.qtyLabel}
+                </div>
+
+
+                <div class="fund-grid">
+
+
+                    <div class="fund-item">
+
+                        <div class="fund-item-label">
+                            基準価額
+                        </div>
+
+                        <div class="fund-item-value">
+                            ${priceYen(
+                                fund.price
+                            )}
+                        </div>
+
+                        <div class="fund-item-sub">
+
+                            取得
+                            ${priceYen(
+                                fund.cost
+                            )}
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fund-item">
+
+                        <div class="fund-item-label">
+                            前日比
+                        </div>
+
+                        <div
+                            class="
+                                fund-item-value
+                                ${changeClass}
+                            "
+                        >
+
+                            ${arrow(
+                                fund.change
+                            )}
+
+                            ${percent(
+                                fund.change
+                            )}
+
+                        </div>
+
+                        <div class="fund-item-sub">
+
+                            基準価額差
+                            ${signedYen(
+                                fund.price !== null &&
+                                fund.previousClose !== null
+                                ?
+                                fund.price -
+                                fund.previousClose
+                                :
+                                null
+                            )}
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fund-item">
+
+                        <div class="fund-item-label">
+                            評価額
+                        </div>
+
+                        <div class="fund-item-value">
+                            ${yen(
+                                fund.value
+                            )}
+                        </div>
+
+                        <div class="fund-item-sub">
+
+                            前日差
+                            ${signedYen(
+                                fund.deltaYen
+                            )}
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fund-item">
+
+                        <div class="fund-item-label">
+                            評価損益
+                        </div>
+
+                        <div
+                            class="
+                                fund-item-value
+                                ${profitClass}
+                            "
+                        >
+
+                            ${signedYen(
+                                fund.unrealizedYen
+                            )}
+
+                        </div>
+
+                        <div class="fund-item-sub">
+
+                            ${percent(
+                                fund.unrealizedPercent
+                            )}
+
+                        </div>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
@@ -1044,11 +1524,15 @@ function chartHTML(points) {
 
 
     const width = 1000;
+
     const height = 430;
 
     const left = 82;
+
     const right = 28;
+
     const top = 22;
+
     const bottom = 48;
 
 
@@ -1064,15 +1548,14 @@ function chartHTML(points) {
             ...values
         );
 
+
     let max =
         Math.max(
             ...values
         );
 
 
-    if (
-        min === max
-    ) {
+    if (min === max) {
 
         min -= 1;
         max += 1;
@@ -1085,6 +1568,7 @@ function chartHTML(points) {
 
     min -=
         range * 0.08;
+
 
     max +=
         range * 0.08;
@@ -1103,34 +1587,42 @@ function chartHTML(points) {
 
 
     const x = i =>
+
         left +
+
         (
             i /
             (
                 points.length - 1
             )
-        ) *
-        plotWidth;
+        )
+
+        * plotWidth;
 
 
     const y = value =>
+
         top +
+
         (
             (
                 max - value
-            ) /
+            )
+            /
             (
                 max - min
             )
-        ) *
-        plotHeight;
+        )
+
+        * plotHeight;
 
 
     const polyline =
         points.map(
             (p, i) =>
                 `${x(i)},${y(p.value)}`
-        ).join(" ");
+        )
+        .join(" ");
 
 
     let grid = "";
@@ -1163,47 +1655,27 @@ function chartHTML(points) {
         grid += `
 
             <line
-
                 x1="${left}"
-
                 y1="${gy}"
-
                 x2="${width-right}"
-
                 y2="${gy}"
-
-                stroke="
-                    rgba(
-                        255,
-                        255,
-                        255,
-                        0.08
-                    )
-                "
-
+                stroke="rgba(255,255,255,0.08)"
                 stroke-width="1"
-
             />
 
 
             <text
-
                 x="${left-12}"
-
                 y="${gy+5}"
-
                 text-anchor="end"
-
                 fill="#748195"
-
                 font-size="13"
-
             >
 
                 ¥${Math.round(value)
-                .toLocaleString(
-                    "ja-JP"
-                )}
+                    .toLocaleString(
+                        "ja-JP"
+                    )}
 
             </text>
         `;
@@ -1237,17 +1709,11 @@ function chartHTML(points) {
             xLabels += `
 
                 <text
-
                     x="${x(i)}"
-
                     y="${height-13}"
-
                     text-anchor="middle"
-
                     fill="#748195"
-
                     font-size="13"
-
                 >
 
                     ${p.label}
@@ -1261,34 +1727,20 @@ function chartHTML(points) {
     return `
 
         <svg
-
-            viewBox="
-                0 0
-                ${width}
-                ${height}
-            "
-
+            viewBox="0 0 ${width} ${height}"
             preserveAspectRatio="none"
-
         >
 
             ${grid}
 
 
             <polyline
-
                 points="${polyline}"
-
                 fill="none"
-
                 stroke="#d8e1ec"
-
                 stroke-width="4"
-
                 stroke-linecap="round"
-
                 stroke-linejoin="round"
-
             />
 
 
@@ -1300,7 +1752,7 @@ function chartHTML(points) {
 
 
 /* =========================
-   MARKET
+   MARKET PAGE
 ========================= */
 
 function marketPage(
@@ -1324,31 +1776,34 @@ function marketPage(
         );
 
 
+    const priceLabel =
+        asset.type === "fund"
+        ?
+        "基準価額"
+        :
+        "株価";
+
+
     addPage(`
 
         <div class="market-page">
 
-
             <div class="eyebrow">
-
                 ${periodLabel}
-
             </div>
 
 
             <div class="market-top">
 
-
                 <div>
 
                     <div class="market-name">
-
                         ${asset.name}
-
                     </div>
 
-
                     <div class="market-price">
+
+                        ${priceLabel}
 
                         ${priceYen(
                             asset.price
@@ -1415,44 +1870,29 @@ function newsPage(asset) {
         <div class="news-page">
 
             <div class="eyebrow">
-
-                ${asset.name}
-                NEWS
-
+                ${asset.name} NEWS
             </div>
 
 
             <div class="news-card">
 
-
                 <div class="news-date">
-
                     ${n.date || ""}
-
                 </div>
-
 
                 <div class="news-title">
-
                     ${n.title || ""}
-
                 </div>
-
 
                 <div class="news-description">
-
                     ${n.description || ""}
-
                 </div>
-
 
                 <div class="news-source">
 
                     ${
                         n.link
-
                         ?
-
                         `
                         <a
                             class="news-link"
@@ -1465,9 +1905,7 @@ function newsPage(asset) {
                             }
                         </a>
                         `
-
                         :
-
                         (
                             n.source ||
                             ""
@@ -1484,7 +1922,7 @@ function newsPage(asset) {
 
 
 /* =========================
-   BUILD
+   BUILD PAGES
 ========================= */
 
 function buildPages(data) {
@@ -1492,19 +1930,50 @@ function buildPages(data) {
     screen.innerHTML =
         "";
 
+
     pages =
         [];
 
+
+    /*
+      1. 天気
+    */
 
     weatherPage(
         data
     );
 
 
-    assetSummaryPage(
+    /*
+      2. 総資産
+    */
+
+    totalSummaryPage(
         data
     );
 
+
+    /*
+      3. 日本株一覧
+    */
+
+    stockSummaryPage(
+        data
+    );
+
+
+    /*
+      4. 投資信託一覧
+    */
+
+    fundSummaryPage(
+        data
+    );
+
+
+    /*
+      5. 個別資産
+    */
 
     (
         data.assets ||
@@ -1514,59 +1983,68 @@ function buildPages(data) {
         asset => {
 
 
+            /*
+              日本株だけ1 DAY
+            */
+
             if (
-                asset.intraday &&
+                asset.type === "stock"
+                &&
+                asset.intraday
+                &&
                 asset.intraday.length >= 2
             ) {
 
                 marketPage(
-
                     asset,
-
                     "1 DAY",
-
                     asset.intraday,
-
                     asset.change
                 );
             }
 
 
+            /*
+              1 WEEK
+            */
+
             if (
-                asset.week &&
+                asset.week
+                &&
                 asset.week.length >= 2
             ) {
 
                 marketPage(
-
                     asset,
-
                     "1 WEEK",
-
                     asset.week,
-
                     asset.weekChange
                 );
             }
 
 
+            /*
+              1 MONTH
+            */
+
             if (
-                asset.month &&
+                asset.month
+                &&
                 asset.month.length >= 2
             ) {
 
                 marketPage(
-
                     asset,
-
                     "1 MONTH",
-
                     asset.month,
-
                     asset.monthChange
                 );
             }
 
+
+            /*
+              NEWS
+            */
 
             newsPage(
                 asset
@@ -1600,6 +2078,10 @@ function buildPages(data) {
         );
     }
 
+
+    /*
+      20秒ごとに切替
+    */
 
     pageTimer =
         setInterval(
@@ -1648,7 +2130,7 @@ function nextPage() {
 
 
 /* =========================
-   DATA
+   DATA LOAD
 ========================= */
 
 async function loadData() {
@@ -1657,10 +2139,9 @@ async function loadData() {
 
         const response =
             await fetch(
-
-                "data.json?t=" +
+                "data.json?t="
+                +
                 Date.now()
-
             );
 
 
@@ -1673,7 +2154,8 @@ async function loadData() {
             "updated"
         )
         .textContent =
-            "更新 " +
+            "更新 "
+            +
             data.updated_at;
 
 
@@ -1683,16 +2165,11 @@ async function loadData() {
 
     }
 
-    catch (
-        error
-    ) {
+    catch (error) {
 
         console.error(
-
             "data.json load error:",
-
             error
-
         );
     }
 }
@@ -1710,11 +2187,8 @@ function updateClock() {
 
     const text =
         now.toLocaleString(
-
             "ja-JP",
-
             {
-
                 month:
                     "2-digit",
 
@@ -1726,9 +2200,7 @@ function updateClock() {
 
                 minute:
                     "2-digit"
-
             }
-
         );
 
 
@@ -1743,7 +2215,6 @@ function updateClock() {
 
 updateClock();
 
-
 setInterval(
     updateClock,
     1000
@@ -1751,7 +2222,6 @@ setInterval(
 
 
 loadData();
-
 
 setInterval(
     loadData,
