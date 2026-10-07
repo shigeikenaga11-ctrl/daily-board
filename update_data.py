@@ -1,7 +1,6 @@
 import json
 import urllib.request
 import urllib.parse
-import urllib.error
 import datetime
 import html
 import re
@@ -13,320 +12,919 @@ from pathlib import Path
 OUT = Path("data.json")
 JST = datetime.timezone(datetime.timedelta(hours=9))
 
+
+# =========================================================
+# 保有銘柄
+# =========================================================
+
 STOCKS = [
-    {"name": "第一三共", "ticker": "4568.T", "qty": 20,
-     "newsQuery": "第一三共"},
-    {"name": "任天堂", "ticker": "7974.T", "qty": 10,
-     "newsQuery": "任天堂"},
-    {"name": "東京海上HD", "ticker": "8766.T", "qty": 200,
-     "newsQuery": "東京海上ホールディングス"},
-    {"name": "北洋銀行", "ticker": "8524.T", "qty": 50,
-     "newsQuery": "北洋銀行"},
+    {
+        "name": "第一三共",
+        "ticker": "4568.T",
+        "qty": 20,
+        "newsQuery": "第一三共"
+    },
+    {
+        "name": "任天堂",
+        "ticker": "7974.T",
+        "qty": 10,
+        "newsQuery": "任天堂"
+    },
+    {
+        "name": "東京海上HD",
+        "ticker": "8766.T",
+        "qty": 200,
+        "newsQuery": "東京海上ホールディングス"
+    },
+    {
+        "name": "北洋銀行",
+        "ticker": "8524.T",
+        "qty": 50,
+        "newsQuery": "北洋銀行"
+    }
 ]
 
 
+# =========================================================
+# 通信
+# =========================================================
+
 def request_bytes(url):
+
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/125.0",
-        "Accept": "application/json,application/xml,text/xml,*/*"
+        "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 Chrome/125 Safari/537.36"
     }
+
     last_error = None
+
     for attempt in range(3):
+
         try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=25) as response:
+
+            req = urllib.request.Request(
+                url,
+                headers=headers
+            )
+
+            with urllib.request.urlopen(
+                req,
+                timeout=25
+            ) as response:
+
                 return response.read()
+
         except Exception as e:
+
             last_error = e
             time.sleep(attempt + 1)
+
     raise last_error
 
 
 def get_json(url):
-    return json.loads(request_bytes(url).decode("utf-8"))
+
+    return json.loads(
+        request_bytes(url).decode("utf-8")
+    )
 
 
 def clean_html(value):
-    value = html.unescape(value or "")
-    value = re.sub(r"<[^>]+>", " ", value)
-    return re.sub(r"\s+", " ", value).strip()
 
+    value = html.unescape(
+        value or ""
+    )
+
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    )
+
+    return value.strip()
+
+
+# =========================================================
+# 天気
+# =========================================================
 
 def weather_label(code):
+
     if code == 0:
         return "快晴"
+
     if code in (1, 2):
         return "晴れ"
+
     if code == 3:
         return "くもり"
+
     if code in (45, 48):
         return "霧"
-    if code in (51, 53, 55, 56, 57, 61, 63, 65,
-                66, 67, 80, 81, 82):
+
+    if code in (
+        51, 53, 55, 56, 57,
+        61, 63, 65, 66, 67,
+        80, 81, 82
+    ):
         return "雨"
-    if code in (71, 73, 75, 77, 85, 86):
+
+    if code in (
+        71, 73, 75, 77,
+        85, 86
+    ):
         return "雪"
-    if code in (95, 96, 99):
+
+    if code in (
+        95, 96, 99
+    ):
         return "雷雨"
+
     return "情報取得中"
 
 
 def get_weather():
+
     url = (
         "https://api.open-meteo.com/v1/forecast"
-        "?latitude=43.0618&longitude=141.3545"
-        "&daily=weather_code,temperature_2m_max,"
-        "temperature_2m_min,precipitation_probability_max"
-        "&timezone=Asia%2FTokyo&forecast_days=1"
+        "?latitude=43.0618"
+        "&longitude=141.3545"
+        "&daily=weather_code,"
+        "temperature_2m_max,"
+        "temperature_2m_min,"
+        "precipitation_probability_max"
+        "&timezone=Asia%2FTokyo"
+        "&forecast_days=1"
     )
+
     try:
+
         w = get_json(url)["daily"]
+
         return {
-            "text": weather_label(w["weather_code"][0]),
-            "max": w["temperature_2m_max"][0],
-            "min": w["temperature_2m_min"][0],
-            "rain": w["precipitation_probability_max"][0]
+            "text":
+                weather_label(
+                    w["weather_code"][0]
+                ),
+
+            "max":
+                w["temperature_2m_max"][0],
+
+            "min":
+                w["temperature_2m_min"][0],
+
+            "rain":
+                w[
+                    "precipitation_probability_max"
+                ][0]
         }
+
     except Exception as e:
-        print("Weather error:", e)
+
+        print(
+            "Weather error:",
+            e
+        )
+
         return {
             "text": "取得できません",
-            "max": None, "min": None, "rain": None
+            "max": None,
+            "min": None,
+            "rain": None
         }
 
 
-def yahoo_chart(symbol, period, interval):
+# =========================================================
+# Yahoo Finance
+# =========================================================
+
+def yahoo_chart(
+    symbol,
+    period,
+    interval
+):
+
     url = (
-        "https://query1.finance.yahoo.com/v8/finance/chart/"
+        "https://query1.finance.yahoo.com/"
+        "v8/finance/chart/"
         + urllib.parse.quote(symbol)
-        + "?range=" + period
-        + "&interval=" + interval
+        + "?range="
+        + period
+        + "&interval="
+        + interval
     )
-    result = get_json(url)["chart"]["result"][0]
-    timestamps = result.get("timestamp") or []
-    quote = result["indicators"]["quote"][0]
-    closes = quote.get("close") or []
+
+    data = get_json(url)
+
+    result = (
+        data["chart"]["result"][0]
+    )
+
+    timestamps = (
+        result.get("timestamp")
+        or []
+    )
+
+    closes = (
+        result
+        ["indicators"]
+        ["quote"][0]
+        .get("close")
+        or []
+    )
 
     rows = []
-    for timestamp, close in zip(timestamps, closes):
+
+    for timestamp, close in zip(
+        timestamps,
+        closes
+    ):
+
         if close is None:
             continue
-        dt = datetime.datetime.fromtimestamp(timestamp, JST)
-        rows.append((dt, float(close)))
 
-    return rows, result.get("meta", {})
+        dt = datetime.datetime.fromtimestamp(
+            timestamp,
+            JST
+        )
+
+        rows.append(
+            (
+                dt,
+                float(close)
+            )
+        )
+
+    return (
+        rows,
+        result.get("meta", {})
+    )
 
 
-def get_chart(symbol, period, interval):
+def safe_chart(
+    symbol,
+    period,
+    interval
+):
+
     try:
-        return yahoo_chart(symbol, period, interval)
+
+        return yahoo_chart(
+            symbol,
+            period,
+            interval
+        )
+
     except Exception as e:
-        print("Chart error:", symbol, period, e)
+
+        print(
+            "Chart error:",
+            symbol,
+            e
+        )
+
         return [], {}
 
 
-def history_data(rows, fmt):
+def history_data(
+    rows,
+    fmt
+):
+
     return [
-        {"label": dt.strftime(fmt), "value": round(value, 2)}
+        {
+            "label":
+                dt.strftime(fmt),
+
+            "value":
+                round(value, 2)
+        }
+
         for dt, value in rows
     ]
 
 
-def get_news(query, limit=2):
-    results = []
+# =========================================================
+# ニュース
+#
+# 1件のみ。
+#
+# タイトルだけの記事ではなく、
+# Google News RSS内に説明文がある記事を優先。
+#
+# =========================================================
+
+def get_news(
+    query
+):
+
     try:
-        terms = query + " (IR OR 決算 OR 業績 OR 株価 OR 新製品)"
-        q = urllib.parse.quote(terms)
-        url = (
-            "https://news.google.com/rss/search?q=" + q
-            + "&hl=ja&gl=JP&ceid=JP:ja"
+
+        search_query = (
+            query
+            + " 株 OR 決算 OR 業績 OR 製品 OR 経営"
         )
-        root = ET.fromstring(request_bytes(url))
 
-        for item in root.findall(".//item"):
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            source = (item.findtext("source") or "").strip()
-            description = clean_html(item.findtext("description"))
-            raw_date = item.findtext("pubDate") or ""
-            date_text = ""
+        q = urllib.parse.quote(
+            search_query
+        )
 
-            if not source and " - " in title:
-                title, source = title.rsplit(" - ", 1)
+        url = (
+            "https://news.google.com/rss/search"
+            "?q="
+            + q
+            + "&hl=ja"
+            + "&gl=JP"
+            + "&ceid=JP:ja"
+        )
+
+        root = ET.fromstring(
+            request_bytes(url)
+        )
+
+        candidates = []
+
+        for item in root.findall(
+            ".//item"
+        ):
+
+            raw_title = (
+                item.findtext(
+                    "title"
+                )
+                or ""
+            ).strip()
+
+            raw_description = (
+                item.findtext(
+                    "description"
+                )
+                or ""
+            )
+
+            description = clean_html(
+                raw_description
+            )
+
+            link = (
+                item.findtext(
+                    "link"
+                )
+                or ""
+            ).strip()
+
+            source = (
+                item.findtext(
+                    "source"
+                )
+                or ""
+            ).strip()
+
+            raw_date = (
+                item.findtext(
+                    "pubDate"
+                )
+                or ""
+            )
+
+            title = raw_title
+
+            if (
+                not source
+                and " - " in title
+            ):
+
+                parts = title.rsplit(
+                    " - ",
+                    1
+                )
+
+                title = (
+                    parts[0]
+                    .strip()
+                )
+
+                source = (
+                    parts[1]
+                    .strip()
+                )
+
+            # -----------------------------
+            # RSSのHTMLからタイトル等を除去
+            # -----------------------------
+
+            description = re.sub(
+                re.escape(title),
+                "",
+                description,
+                flags=re.IGNORECASE
+            )
+
+            if source:
+
+                description = re.sub(
+                    re.escape(source),
+                    "",
+                    description,
+                    flags=re.IGNORECASE
+                )
+
+            description = re.sub(
+                r"\s+",
+                " ",
+                description
+            ).strip()
+
+            # -----------------------------
+            # 短すぎる説明文は採用しない
+            # -----------------------------
+
+            if len(description) < 45:
+                continue
+
+            # -----------------------------
+            # 長すぎる場合
+            # -----------------------------
+
+            if len(description) > 280:
+
+                description = (
+                    description[:280]
+                    .rstrip()
+                    + "…"
+                )
+
+            # -----------------------------
+            # 日付
+            # -----------------------------
 
             try:
-                date_text = parsedate_to_datetime(
-                    raw_date
-                ).astimezone(JST).strftime("%Y/%m/%d")
+
+                dt = (
+                    parsedate_to_datetime(
+                        raw_date
+                    )
+                    .astimezone(JST)
+                )
+
+                date_text = (
+                    dt.strftime(
+                        "%Y/%m/%d"
+                    )
+                )
+
             except Exception:
+
                 date_text = raw_date
 
-            # Google News RSSの説明は関連見出しの羅列である
-            # 場合があるため、記事本文とは扱わない。
-            if title and title in description:
-                description = ""
+            candidates.append({
 
-            results.append({
-                "title": title,
-                "source": source,
-                "date": date_text,
-                "description": description[:260],
-                "link": link,
-                "type": "企業・投資ニュース"
+                "title":
+                    title,
+
+                "description":
+                    description,
+
+                "source":
+                    source,
+
+                "date":
+                    date_text,
+
+                "link":
+                    link
             })
-            if len(results) >= limit:
-                break
+
+        # 説明文のある最新記事1件
+        if candidates:
+
+            return [
+                candidates[0]
+            ]
+
     except Exception as e:
-        print("News error:", query, e)
 
-    return results
+        print(
+            "News error:",
+            query,
+            e
+        )
 
+    return []
+
+
+# =========================================================
+# 株式
+# =========================================================
 
 def build_stock(stock):
+
     symbol = stock["ticker"]
     qty = stock["qty"]
 
-    intraday_rows, intraday_meta = get_chart(
-        symbol, "1d", "5m"
-    )
-    daily_rows, daily_meta = get_chart(
-        symbol, "1mo", "1d"
+    intraday_rows, intraday_meta = (
+        safe_chart(
+            symbol,
+            "1d",
+            "5m"
+        )
     )
 
-    # 現在値と比較する前営業日終値を揃える。
-    # 日中は当日の日足を除外して前営業日を参照。
-    # 引け後は当日の日足とその1本前を比較。
+    daily_rows, daily_meta = (
+        safe_chart(
+            symbol,
+            "1mo",
+            "1d"
+        )
+    )
+
     price = None
-    prev_close = None
-    change = None
-    delta_yen = None
+    previous_close = None
+
     value = None
 
-    if daily_rows:
-        last_dt, last_close = daily_rows[-1]
-        price = last_close
+    delta_yen = None
+    change = None
 
-        if intraday_rows:
-            intraday_dt, intraday_close = intraday_rows[-1]
-            if intraday_dt.date() == last_dt.date():
-                price = intraday_close
+    # =====================================================
+    # 現在値
+    # =====================================================
 
-        if len(daily_rows) >= 2:
-            prev_close = daily_rows[-2][1]
+    if intraday_rows:
 
-        if prev_close is not None and prev_close > 0:
-            change = (price / prev_close - 1) * 100
-            delta_yen = (price - prev_close) * qty
+        price = (
+            intraday_rows[-1][1]
+        )
 
-        value = price * qty
+    elif daily_rows:
 
-    # 日足の終値が未取得の場合、メタデータを補助利用。
-    elif intraday_rows:
-        price = intraday_rows[-1][1]
-        prev_close = intraday_meta.get("chartPreviousClose")
-        if prev_close is not None and float(prev_close) > 0:
-            prev_close = float(prev_close)
-            change = (price / prev_close - 1) * 100
-            delta_yen = (price - prev_close) * qty
-        value = price * qty
+        price = (
+            daily_rows[-1][1]
+        )
 
-    week_rows = daily_rows[-5:]
-    month_rows = daily_rows
+    # =====================================================
+    # 前営業日終値
+    # =====================================================
 
-    def period_change(rows):
-        if len(rows) < 2 or not rows[0][1]:
-            return None
-        return (rows[-1][1] / rows[0][1] - 1) * 100
+    if intraday_meta.get(
+        "chartPreviousClose"
+    ) is not None:
+
+        previous_close = float(
+            intraday_meta[
+                "chartPreviousClose"
+            ]
+        )
+
+    elif len(daily_rows) >= 2:
+
+        previous_close = (
+            daily_rows[-2][1]
+        )
+
+    # =====================================================
+    # 評価額
+    # =====================================================
+
+    if price is not None:
+
+        value = (
+            price
+            * qty
+        )
+
+    # =====================================================
+    # 前日比
+    # =====================================================
+
+    if (
+        price is not None
+        and previous_close is not None
+        and previous_close != 0
+    ):
+
+        delta_yen = (
+            price
+            - previous_close
+        ) * qty
+
+        change = (
+            price
+            / previous_close
+            - 1
+        ) * 100
+
+    # =====================================================
+    # 1週間
+    # =====================================================
+
+    week_rows = (
+        daily_rows[-5:]
+    )
+
+    week_change = None
+
+    if (
+        len(week_rows) >= 2
+        and week_rows[0][1]
+    ):
+
+        week_change = (
+            week_rows[-1][1]
+            /
+            week_rows[0][1]
+            - 1
+        ) * 100
+
+    # =====================================================
+    # 1か月
+    # =====================================================
+
+    month_change = None
+
+    if (
+        len(daily_rows) >= 2
+        and daily_rows[0][1]
+    ):
+
+        month_change = (
+            daily_rows[-1][1]
+            /
+            daily_rows[0][1]
+            - 1
+        ) * 100
 
     return {
-        "name": stock["name"],
-        "ticker": symbol,
-        "qtyLabel": str(qty) + "株",
-        "price": round(price, 2) if price is not None else None,
-        "previousClose": prev_close,
-        "value": round(value, 2) if value is not None else None,
-        "deltaYen": round(delta_yen, 2) if delta_yen is not None else None,
-        "change": change,
-        "weekChange": period_change(week_rows),
-        "monthChange": period_change(month_rows),
-        "intraday": history_data(intraday_rows, "%H:%M"),
-        "week": history_data(week_rows, "%m/%d"),
-        "month": history_data(month_rows, "%m/%d"),
-        "news": get_news(stock["newsQuery"])
+
+        "name":
+            stock["name"],
+
+        "ticker":
+            symbol,
+
+        "qtyLabel":
+            str(qty) + "株",
+
+        "price":
+            round(
+                price,
+                2
+            )
+            if price is not None
+            else None,
+
+        "previousClose":
+            round(
+                previous_close,
+                2
+            )
+            if previous_close is not None
+            else None,
+
+        "value":
+            round(
+                value,
+                2
+            )
+            if value is not None
+            else None,
+
+        "deltaYen":
+            round(
+                delta_yen,
+                2
+            )
+            if delta_yen is not None
+            else None,
+
+        "change":
+            change,
+
+        "weekChange":
+            week_change,
+
+        "monthChange":
+            month_change,
+
+        "intraday":
+            history_data(
+                intraday_rows,
+                "%H:%M"
+            ),
+
+        "week":
+            history_data(
+                week_rows,
+                "%m/%d"
+            ),
+
+        "month":
+            history_data(
+                daily_rows,
+                "%m/%d"
+            ),
+
+        "news":
+            get_news(
+                stock[
+                    "newsQuery"
+                ]
+            )
     }
 
+
+# =========================================================
+# eMAXIS
+# =========================================================
 
 def build_emaxis():
+
     return {
-        "name": "eMAXIS Slim 米国株式（S&P500）",
-        "ticker": "eMAXIS",
-        "qtyLabel": "134,615口",
-        "price": None,
-        "previousClose": None,
-        "value": None,
-        "deltaYen": None,
-        "change": None,
-        "weekChange": None,
-        "monthChange": None,
-        "intraday": [],
-        "week": [],
-        "month": [],
-        "news": get_news("S&P500 米国株")
+
+        "name":
+            "eMAXIS Slim 米国株式（S&P500）",
+
+        "ticker":
+            "eMAXIS",
+
+        "qtyLabel":
+            "134,615口",
+
+        "price":
+            None,
+
+        "previousClose":
+            None,
+
+        "value":
+            None,
+
+        "deltaYen":
+            None,
+
+        "change":
+            None,
+
+        "weekChange":
+            None,
+
+        "monthChange":
+            None,
+
+        "intraday":
+            [],
+
+        "week":
+            [],
+
+        "month":
+            [],
+
+        "news":
+            get_news(
+                "S&P500 米国株"
+            )
     }
 
 
+# =========================================================
+# MAIN
+# =========================================================
+
 def main():
-    now = datetime.datetime.now(JST)
-    weather = get_weather()
+
+    now = datetime.datetime.now(
+        JST
+    )
 
     assets = []
+
     for stock in STOCKS:
-        assets.append(build_stock(stock))
 
-    assets.append(build_emaxis())
+        assets.append(
+            build_stock(
+                stock
+            )
+        )
 
-    stock_assets = [a for a in assets if a["ticker"] != "eMAXIS"]
+    assets.append(
+        build_emaxis()
+    )
+
+    # =====================================================
+    # 日本株4銘柄の総額
+    # =====================================================
+
+    stock_assets = [
+
+        a for a in assets
+
+        if a["ticker"]
+        != "eMAXIS"
+
+    ]
 
     complete = all(
-        a["value"] is not None and a["deltaYen"] is not None
+
+        a["value"] is not None
+        and
+        a["deltaYen"] is not None
+
         for a in stock_assets
     )
 
-    # 4銘柄すべて取得できた場合のみ、合計を表示。
     if complete:
-        total = sum(a["value"] for a in stock_assets)
-        delta = sum(a["deltaYen"] for a in stock_assets)
-        previous_total = total - delta
-        total_pct = (
-            delta / previous_total * 100
-            if previous_total > 0 else None
+
+        total = sum(
+            a["value"]
+            for a in stock_assets
         )
+
+        delta = sum(
+            a["deltaYen"]
+            for a in stock_assets
+        )
+
+        previous_total = (
+            total
+            - delta
+        )
+
+        if previous_total:
+
+            delta_percent = (
+                delta
+                /
+                previous_total
+                * 100
+            )
+
+        else:
+
+            delta_percent = None
+
     else:
+
         total = None
         delta = None
-        total_pct = None
+        delta_percent = None
 
     data = {
-        "updated_at": now.strftime("%Y/%m/%d %H:%M"),
-        "weather": weather,
+
+        "updated_at":
+            now.strftime(
+                "%Y/%m/%d %H:%M"
+            ),
+
+        "weather":
+            get_weather(),
+
         "summary": {
-            "label": "株式評価額（日本株4銘柄）",
-            "total": total,
-            "deltaYen": delta,
-            "deltaPercent": total_pct,
-            "complete": complete
+
+            "label":
+                "株式評価額",
+
+            "total":
+                total,
+
+            "deltaYen":
+                delta,
+
+            "deltaPercent":
+                delta_percent,
+
+            "complete":
+                complete
         },
-        "assets": assets
+
+        "assets":
+            assets
     }
 
     OUT.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
+
+        json.dumps(
+            data,
+            ensure_ascii=False,
+            indent=2
+        ),
+
         encoding="utf-8"
     )
-    print("Updated:", data["updated_at"])
-    print("Stock total:", total)
-    print("Daily change:", delta)
+
+    print(
+        "Updated:",
+        data["updated_at"]
+    )
 
 
 if __name__ == "__main__":
+
     main()
