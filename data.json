@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/07 14:43",
+  "updated_at": "2026/10/07 15:29",
   "weather": {
     "text": "晴れ",
     "max": 18.2,
@@ -10,9 +10,9 @@
     {
       "name": "第一三共",
       "qtyLabel": "20株",
-      "price": 2718.5,
-      "value": 54370.0,
-      "change": -1.2172965116279078,
+      "price": 2718.0,
+      "value": 54360.0,
+      "change": -1.2354651162790664,
       "history": [
         {
           "label": "09/29",
@@ -40,16 +40,16 @@
         },
         {
           "label": "10/07",
-          "value": 2718.5
+          "value": 2718.0
         }
       ]
     },
     {
       "name": "任天堂",
       "qtyLabel": "10株",
-      "price": 7764.0,
-      "value": 77640.0,
-      "change": -0.652591170825334,
+      "price": 7777.0,
+      "value": 77770.0,
+      "change": -0.4862444017914247,
       "history": [
         {
           "label": "09/29",
@@ -77,16 +77,16 @@
         },
         {
           "label": "10/07",
-          "value": 7764.0
+          "value": 7777.0
         }
       ]
     },
     {
       "name": "東京海上HD",
       "qtyLabel": "200株",
-      "price": 520.0,
-      "value": 104000.0,
-      "change": -0.44035761951433106,
+      "price": 520.7000122070312,
+      "value": 104140.00244140625,
+      "change": -0.30633268683354364,
       "history": [
         {
           "label": "09/29",
@@ -114,16 +114,16 @@
         },
         {
           "label": "10/07",
-          "value": 520.0
+          "value": 520.7
         }
       ]
     },
     {
       "name": "北洋銀行",
       "qtyLabel": "50株",
-      "price": 1362.0,
-      "value": 68100.0,
-      "change": -2.5751072961373356,
+      "price": 1361.0,
+      "value": 68050.0,
+      "change": -2.6466380543633816,
       "history": [
         {
           "label": "09/29",
@@ -151,7 +151,7 @@
         },
         {
           "label": "10/07",
-          "value": 1362.0
+          "value": 1361.0
         }
       ]
     },
@@ -162,6 +162,33 @@
       "value": null,
       "change": null,
       "history": []
+    }
+  ],
+  "news": [
+    {
+      "title": "道路予算「大幅カット」発言の簗農相、続投意向…国交省との面会は「明確に覚えていない」「記録がない」",
+      "source": "読売新聞",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9IWjRkbW5vY3FSVG5HUFkwOXlPbkxxUkFzM3FGd1pkQW5XNU1iZTNPdmd0N2pwYU9HakdweEtOVzVBdXhRWHI2MTBCVVMwZTNaMWUwZ2h3Zl95Q2lqVm5GN09OajQ4dw?oc=5"
+    },
+    {
+      "title": "修学旅行先の北海道について「クマが出たら終わり」と発言の徳島県知事、県議会が問責決議案を可決",
+      "source": "読売新聞",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51UjhBbjA0MUtfbXNFak9rb1JWb01nSlJUbUhEYjlKbFJiVFp1QWZXQjRXTUxLUHZ6Q1lKTkFubVVSSW92eVBHbkh1c3o1NjNncjZ3Vk9VdEFtSnNrRXNveFJ2MEFZUQ?oc=5"
+    },
+    {
+      "title": "イスラエル兵、祖国守る任務は誇りだったが…「無差別攻撃で軍服が恥に」「国民はガザで何が起きたか知らない」",
+      "source": "読売新聞",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xNGdMenhJTnRYbnhwQVh2bW9nOFFib0ZPelhibzRlT0RlWFFGQ3NWdGstU3RYTVNuT1dDaU02dEpQS3RubmhLX0JGOWZQYU94d2Z2dGJBTzljV09JaGNFOHl3?oc=5"
+    },
+    {
+      "title": "真相・ニュースの現場から：なぜ飛び降りた？ 娘を巻き添えにした男性に、父がぶつけた怒り",
+      "source": "毎日新聞",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zZDg1R084X0hGZ2NwekExLVJubGMtVjlrNzRHNnd0SUtfRVNXTVppb21rVmRNRjRaR0tWWHBKMmRlenVLdHpmalFHcEFnMFNsNEpCOWY4RGtlamktWm9hTmh0OF9PUF80?oc=5"
+    },
+    {
+      "title": "ロシアのペスト研究所の職員が死亡、アメリカは事態を「注視」していると",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15Q2F1Zm04bWRYbGd5XzBOdUQ0UDhtNV9DZXljUVFEbUoyNUg3b0FzaXZ2dExHZHBwWjMxc25nMG54aUd2cXN6RXFodDl1RWlwbnpmaDI2TmN3aG9FRlBHetIBZkFVX3lxTE9aS1UwRmNCbnRDMzFJcGpyLXA1eGJWN0xoa1lBQ2NBbjJmTGVFV2R4N2RBM2dpbmRNN2lheXhMWkJ6eFFPZWlmX3liTHZjT1NjbkZSbks0MEI3NXVtREkwdk1FeWl1dw?oc=5"
     }
   ]
 }
