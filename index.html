@@ -5,1056 +5,501 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Daily Board</title>
-
 <style>
-:root{
+:root {
   --bg:#090c11;
   --panel:#141922;
   --text:#f6f8fb;
   --muted:#9aa6b2;
   --line:#2a313c;
+  --up:#62dba4;
+  --down:#ff8585;
 }
-
-*{box-sizing:border-box}
-
-html,body{
-  margin:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  background:var(--bg);
-  color:var(--text);
+* {box-sizing:border-box}
+html,body {
+  margin:0;width:100%;height:100%;overflow:hidden;
+  background:var(--bg);color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,
   "Helvetica Neue","Noto Sans JP",sans-serif;
 }
-
-body{padding:18px 22px}
-
-.board{
-  height:100%;
-  max-width:1180px;
-  margin:auto;
-  display:grid;
-  grid-template-rows:auto 1fr auto;
-  gap:14px;
+body {padding:16px 20px}
+.board {
+  height:100%;max-width:1180px;margin:auto;
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  gap:12px;
 }
-
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
+header {
+  display:flex;justify-content:space-between;
+  align-items:end;gap:12px;
 }
-
-.date{
-  font-size:clamp(22px,3vw,40px);
-  font-weight:760;
-}
-
-.clock{
-  font-size:clamp(38px,6vw,74px);
-  font-weight:850;
-}
-
-/* ---------- PAGE ---------- */
-
-.stage{
-  position:relative;
-  min-height:0;
-}
-
-.page{
-  position:absolute;
-  inset:0;
-  opacity:0;
+.date {font-size:clamp(21px,3vw,38px);font-weight:750}
+.clock {font-size:clamp(36px,6vw,72px);font-weight:850}
+.stage {position:relative;min-height:0}
+.page {
+  position:absolute;inset:0;opacity:0;
   transform:scale(.975);
-  transition:
-    opacity 2s ease,
-    transform 2s ease;
+  transition:opacity 2s ease,transform 2s ease;
   pointer-events:none;
 }
-
-.page.active{
-  opacity:1;
-  transform:scale(1);
-}
-
-/* ---------- CARD ---------- */
-
-.card{
-  height:100%;
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:28px;
-  padding:clamp(22px,3.7vw,46px);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+.page.active {opacity:1;transform:scale(1);pointer-events:auto}
+.card {
+  height:100%;background:var(--panel);
+  border:1px solid var(--line);border-radius:25px;
+  padding:clamp(17px,3vw,38px);
+  display:flex;flex-direction:column;justify-content:center;
   overflow:hidden;
 }
-
-.eyebrow{
-  font-size:clamp(15px,1.7vw,23px);
-  color:#dce6f2;
-  font-weight:750;
-  margin-bottom:15px;
+.eyebrow {
+  font-size:clamp(13px,1.6vw,21px);
+  color:#dce6f2;font-weight:750;margin-bottom:13px;
 }
-
-.big{
-  font-size:clamp(45px,7.3vw,92px);
-  font-weight:850;
+.big {font-size:clamp(40px,7vw,85px);font-weight:850}
+.temp {font-size:clamp(25px,4vw,50px);font-weight:750;margin-top:18px}
+.sub {
+  font-size:clamp(13px,1.65vw,20px);
+  color:var(--muted);margin-top:10px;
 }
-
-.temp{
-  font-size:clamp(28px,4.5vw,55px);
-  font-weight:760;
-  margin-top:20px;
+.name {
+  font-size:clamp(25px,4vw,50px);
+  font-weight:850;line-height:1.18;
 }
-
-.sub{
-  font-size:clamp(14px,1.8vw,23px);
-  color:var(--muted);
-  margin-top:12px;
+.qty {font-size:clamp(13px,1.6vw,21px);color:var(--muted)}
+.assethead {
+  display:flex;align-items:end;
+  justify-content:space-between;gap:14px;
 }
-
-/* ---------- ASSET TABLE ---------- */
-
-table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:clamp(14px,1.7vw,23px);
+.metrics {
+  display:flex;align-items:baseline;
+  flex-wrap:wrap;gap:12px 24px;margin:10px 0;
 }
+.price {font-size:clamp(27px,4vw,51px);font-weight:800}
+.change {font-size:clamp(18px,2.4vw,29px);font-weight:750}
+.up {color:var(--up)}
+.down {color:var(--down)}
+.flat {color:var(--muted)}
 
-th{
-  color:var(--muted);
-  font-size:.76em;
-}
-
-th,td{
-  padding:10px 8px;
+/* 資産一覧 */
+.summary-top {
   border-bottom:1px solid var(--line);
-  text-align:right;
+  padding-bottom:14px;margin-bottom:10px;
 }
-
-th:first-child,
-td:first-child{
-  text-align:left;
-}
-
-td:first-child{
-  font-weight:750;
-}
-
-/* ---------- MARKET ---------- */
-
-.assethead{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  gap:20px;
-}
-
-.name{
-  font-size:clamp(27px,4.4vw,55px);
-  font-weight:850;
-  line-height:1.15;
-}
-
-.qty{
+.summary-label {
+  font-size:clamp(13px,1.6vw,20px);
   color:var(--muted);
-  font-size:clamp(14px,1.8vw,23px);
-  white-space:nowrap;
 }
-
-.metrics{
-  display:flex;
-  gap:28px;
-  align-items:baseline;
-  margin:8px 0;
+.summary-total {
+  font-size:clamp(33px,5.2vw,66px);
+  font-weight:850;line-height:1.25;
+  font-variant-numeric:tabular-nums;
 }
-
-.price{
-  font-size:clamp(28px,4.3vw,52px);
-  font-weight:800;
+.summary-delta {
+  font-size:clamp(17px,2.3vw,29px);
+  font-weight:750;margin-top:3px;
 }
-
-.change{
-  font-size:clamp(18px,2.5vw,30px);
-  font-weight:750;
-}
-
-/* ---------- CHART ---------- */
-
-.chartwrap{
-  flex:1;
-  min-height:170px;
-}
-
-.chart{
-  width:100%;
-  height:100%;
-}
-
-.grid{
-  stroke:#29313c;
-  stroke-width:1;
-}
-
-.line{
-  fill:none;
-  stroke:#edf2f7;
-  stroke-width:4;
-  stroke-linejoin:round;
-  stroke-linecap:round;
-}
-
-.point{
-  fill:#edf2f7;
-}
-
-.axis{
-  fill:#8f9aa7;
-  font-size:13px;
-}
-
-/* ---------- NEWS ---------- */
-
-.news-list{
-  display:flex;
-  flex-direction:column;
-  gap:0;
-}
-
-.news-item{
-  padding:15px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.news-item:last-child{
-  border-bottom:none;
-}
-
-.news-title{
-  font-size:clamp(18px,2.3vw,29px);
-  line-height:1.35;
-  font-weight:800;
-}
-
-.news-description{
-  margin-top:7px;
-  font-size:clamp(14px,1.6vw,20px);
-  line-height:1.5;
-  color:#cbd4de;
-}
-
-.news-source{
+.summary-note {
+  color:var(--muted);font-size:clamp(10px,1.1vw,14px);
   margin-top:5px;
-  font-size:clamp(12px,1.3vw,17px);
-  color:var(--muted);
 }
-
-/* ---------- FOOTER ---------- */
-
-footer{
+.asset-list {overflow:auto;min-height:0}
+.asset-row {
   display:grid;
-  grid-template-columns:1fr auto;
-  align-items:center;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:12px;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--line);
+}
+.asset-row:last-child {border-bottom:0}
+.asset-name {
+  font-size:clamp(15px,1.9vw,23px);font-weight:750;
+}
+.asset-qty {
+  font-size:clamp(11px,1.3vw,16px);
+  color:var(--muted);margin-top:3px;
+}
+.asset-amount {text-align:right}
+.asset-value {
+  font-size:clamp(18px,2.2vw,29px);
+  font-weight:800;font-variant-numeric:tabular-nums;
+}
+.asset-delta {
+  font-size:clamp(12px,1.45vw,18px);
+  font-weight:700;margin-top:2px;
+  font-variant-numeric:tabular-nums;
 }
 
-.status{
-  color:var(--muted);
-  font-size:clamp(11px,1.2vw,16px);
+/* チャート */
+.chartwrap {flex:1;min-height:140px}
+.chart {width:100%;height:100%}
+.gridline {stroke:#29313c;stroke-width:1}
+.chartline {
+  fill:none;stroke:#edf2f7;stroke-width:3;
+  stroke-linecap:round;stroke-linejoin:round;
 }
+.chartpoint {fill:#edf2f7}
+.axis {fill:#a9b4c1;font-size:15px}
 
-.dots{
-  display:flex;
-  gap:5px;
-  max-width:55vw;
-  flex-wrap:wrap;
-  justify-content:flex-end;
+/* ニュース */
+.news-list {min-height:0;overflow:auto}
+.news-item {
+  padding:13px 0;border-bottom:1px solid var(--line);
 }
-
-.dot{
-  width:6px;
-  height:6px;
-  border-radius:50%;
-  background:#3d4652;
+.news-item:last-child {border-bottom:0}
+.news-source {
+  font-size:clamp(12px,1.3vw,17px);color:var(--muted);
 }
+.news-title {
+  font-size:clamp(18px,2.3vw,29px);
+  font-weight:800;line-height:1.4;margin-top:6px;
+}
+.news-description {
+  font-size:clamp(13px,1.65vw,20px);
+  line-height:1.55;color:#cbd4de;margin-top:8px;
+}
+.news-link {
+  display:inline-block;margin-top:8px;
+  color:#9acbff;font-size:clamp(12px,1.3vw,16px);
+  text-decoration:none;
+}
+footer {
+  display:flex;justify-content:space-between;
+  align-items:center;gap:12px;
+}
+.status {
+  color:var(--muted);font-size:clamp(10px,1.1vw,15px);
+}
+.dots {
+  display:flex;gap:5px;flex-wrap:wrap;
+  justify-content:flex-end;max-width:45vw;
+}
+.dot {width:6px;height:6px;border-radius:50%;background:#3d4652}
+.dot.active {background:#fff}
 
-.dot.active{
-  background:#fff;
+@media(max-height:650px) {
+  .card {padding:15px 25px}
+  .asset-row {padding:5px 0}
+  .summary-top {padding-bottom:8px;margin-bottom:6px}
 }
 </style>
 </head>
-
 <body>
-
 <div class="board">
+  <header>
+    <div class="date" id="date"></div>
+    <div class="clock" id="clock"></div>
+  </header>
 
-<header>
-  <div class="date" id="date"></div>
-  <div class="clock" id="clock"></div>
-</header>
+  <main class="stage" id="stage">
+    <section class="page active">
+      <div class="card" id="weather">読み込み中…</div>
+    </section>
 
-<main class="stage" id="stage">
-
-  <!-- 天気 -->
-  <section class="page active">
-    <div class="card" id="weather">
-      読み込み中…
-    </div>
-  </section>
-
-  <!-- 資産一覧 -->
-  <section class="page">
-    <div class="card">
-
-      <div class="eyebrow">
-        📈 MY ASSETS
+    <section class="page">
+      <div class="card">
+        <div class="eyebrow">📈 MY ASSETS</div>
+        <div class="summary-top" id="summaryTop">
+          データ読み込み中…
+        </div>
+        <div class="asset-list" id="assetRows"></div>
       </div>
+    </section>
+  </main>
 
-      <table>
-        <thead>
-          <tr>
-            <th>資産</th>
-            <th>数量</th>
-            <th>現在値</th>
-            <th>評価額</th>
-            <th>前日比</th>
-          </tr>
-        </thead>
-
-        <tbody id="assetRows"></tbody>
-      </table>
-
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="status" id="status">
-    データ読み込み中
-  </div>
-
-  <div class="dots" id="dots"></div>
-</footer>
-
+  <footer>
+    <div class="status" id="status">読み込み中…</div>
+    <div class="dots" id="dots"></div>
+  </footer>
 </div>
 
 <script>
+let idx = 0;
+let lastSignature = "";
 
-let idx=0;
+const yen = n => n == null
+  ? "—"
+  : Math.round(n).toLocaleString("ja-JP") + "円";
 
-const yen=n=>
-  n==null
-  ?"—"
-  :Math.round(n).toLocaleString("ja-JP")+"円";
+const signedYen = n => n == null
+  ? "—"
+  : (n > 0 ? "+" : n < 0 ? "−" : "±")
+    + Math.abs(Math.round(n)).toLocaleString("ja-JP") + "円";
 
-const percent=n=>{
-  if(n==null)return "—";
-  return (n>=0?"+":"")+n.toFixed(2)+"%";
-};
+const percent = n => n == null
+  ? "—"
+  : (n > 0 ? "+" : n < 0 ? "−" : "±")
+    + Math.abs(n).toFixed(2) + "%";
 
-/* ========================================
-   グラフ
-======================================== */
+const tone = n => n == null ? "flat" :
+  n > 0 ? "up" : n < 0 ? "down" : "flat";
 
-function chartHTML(history){
+const arrow = n => n == null ? "" :
+  n > 0 ? "▲ " : n < 0 ? "▼ " : "";
 
-  let v=history||[];
-
-  if(v.length<2){
-    return `
-      <div class="sub">
-        チャートデータなし
-      </div>
-    `;
-  }
-
-  const W=900;
-  const H=320;
-
-  /* 左側を広くして縦軸価格を表示 */
-  const LEFT=90;
-  const RIGHT=25;
-  const TOP=25;
-  const BOTTOM=48;
-
-  let vals=v.map(x=>x.value);
-
-  let dataMin=Math.min(...vals);
-  let dataMax=Math.max(...vals);
-
-  let dataRange=dataMax-dataMin;
-
-  if(dataRange===0){
-    dataRange=Math.max(dataMax*0.01,1);
-  }
-
-  /* 上下に10%余白 */
-  let mn=dataMin-dataRange*0.10;
-  let mx=dataMax+dataRange*0.10;
-
-  let range=mx-mn;
-
-  let pts=v.map((x,i)=>[
-
-    LEFT+
-    i*(W-LEFT-RIGHT)/
-    (v.length-1),
-
-    H-BOTTOM-
-    (x.value-mn)/range*
-    (H-TOP-BOTTOM)
-
-  ]);
-
-
-  /* -------------------------
-     縦軸＋水平グリッド
-  ------------------------- */
-
-  let grid="";
-
-  const levels=4;
-
-  for(let i=0;i<levels;i++){
-
-    let ratio=i/(levels-1);
-
-    let y=
-      TOP+
-      ratio*
-      (H-TOP-BOTTOM);
-
-    let price=
-      mx-
-      ratio*range;
-
-    grid+=`
-
-      <line
-        class="grid"
-        x1="${LEFT}"
-        y1="${y}"
-        x2="${W-RIGHT}"
-        y2="${y}"
-      />
-
-      <text
-        class="axis"
-        x="${LEFT-12}"
-        y="${y+5}"
-        text-anchor="end"
-      >
-        ${Math.round(price).toLocaleString("ja-JP")}円
-      </text>
-
-    `;
-
-  }
-
-
-  /* -------------------------
-     株価ライン
-  ------------------------- */
-
-  let poly=
-    pts.map(p=>p.join(",")).join(" ");
-
-
-  /* -------------------------
-     横軸
-  ------------------------- */
-
-  let step=
-    Math.max(
-      1,
-      Math.ceil(v.length/6)
-    );
-
-  let labels=
-    pts.map((p,i)=>{
-
-      if(
-        i%step!==0 &&
-        i!==v.length-1
-      ){
-        return "";
-      }
-
-      return `
-
-        <text
-          class="axis"
-          x="${p[0]}"
-          y="${H-14}"
-          text-anchor="middle"
-        >
-          ${v[i].label}
-        </text>
-
-      `;
-
-    }).join("");
-
-
-  /* -------------------------
-     最新値の点
-  ------------------------- */
-
-  let last=
-    pts[pts.length-1];
-
-
-  return `
-
-    <div class="chartwrap">
-
-      <svg
-        class="chart"
-        viewBox="0 0 ${W} ${H}"
-        preserveAspectRatio="none"
-      >
-
-        ${grid}
-
-        <polyline
-          class="line"
-          points="${poly}"
-        />
-
-        <circle
-          class="point"
-          cx="${last[0]}"
-          cy="${last[1]}"
-          r="6"
-        />
-
-        ${labels}
-
-      </svg>
-
-    </div>
-
-  `;
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",
+    '"':"&quot;","'":"&#39;"
+  }[c]));
 }
 
-
-/* ========================================
-   市場ページ
-======================================== */
-
-function marketPage(asset,type){
-
-  let history=[];
-  let label="";
-  let change=null;
-
-  if(type==="day"){
-
-    history=asset.intraday||[];
-    label="TODAY";
-    change=asset.change;
-
-  }
-
-  if(type==="week"){
-
-    history=asset.week||[];
-    label="1 WEEK";
-    change=asset.weekChange;
-
-  }
-
-  if(type==="month"){
-
-    history=asset.month||[];
-    label="1 MONTH";
-    change=asset.monthChange;
-
-  }
-
-  let section=
-    document.createElement("section");
-
-  section.className=
-    "page dynamic";
-
-  section.innerHTML=`
-
-    <div class="card">
-
-      <div class="eyebrow">
-        📈 ${label}
-      </div>
-
-      <div class="assethead">
-
-        <div class="name">
-          ${asset.name}
-        </div>
-
-        <div class="qty">
-          保有 ${asset.qtyLabel}
-        </div>
-
-      </div>
-
-      <div class="metrics">
-
-        <div class="price">
-          ${yen(asset.price)}
-        </div>
-
-        <div class="change">
-          ${percent(change)}
-        </div>
-
-      </div>
-
-      ${chartHTML(history)}
-
-      <div class="sub">
-        評価額 ${yen(asset.value)}
-      </div>
-
-    </div>
-  `;
-
-  return section;
-}
-
-
-/* ========================================
-   NEWSページ
-======================================== */
-
-function newsPage(asset){
-
-  let section=
-    document.createElement("section");
-
-  section.className=
-    "page dynamic";
-
-  let news=(asset.news||[]).slice(0,3);
-
-  let contents="";
-
-  if(news.length){
-
-    contents=news.map((n,i)=>`
-
-      <div class="news-item">
-
-        <div class="news-title">
-          ${i+1}. ${n.title}
-        </div>
-
-        ${
-          n.description
-          ?`
-            <div class="news-description">
-              ${n.description}
-            </div>
-          `
-          :""
-        }
-
-        ${
-          n.source
-          ?`
-            <div class="news-source">
-              ${n.source}
-            </div>
-          `
-          :""
-        }
-
-      </div>
-
-    `).join("");
-
-  }else{
-
-    contents=`
-      <div class="sub">
-        関連ニュースを取得できませんでした
-      </div>
-    `;
-
-  }
-
-  section.innerHTML=`
-
-    <div class="card">
-
-      <div class="eyebrow">
-        📰 COMPANY NEWS
-      </div>
-
-      <div class="name"
-           style="margin-bottom:15px">
-        ${asset.name}
-      </div>
-
-      <div class="news-list">
-        ${contents}
-      </div>
-
-    </div>
-  `;
-
-  return section;
-}
-
-
-/* ========================================
-   全画面生成
-======================================== */
-
-function render(d){
-
-  /* ---------- WEATHER ---------- */
-
-  let w=d.weather;
-
-  document
-    .getElementById("weather")
-    .innerHTML=`
-
-      <div class="eyebrow">
-        ☀ TODAY'S WEATHER
-      </div>
-
-      <div class="big">
-        札幌　${w.text}
-      </div>
-
-      <div class="temp">
-        最高 ${w.max}℃
-        　/　
-        最低 ${w.min}℃
-      </div>
-
-      <div class="sub">
-        降水確率 ${w.rain}%
-      </div>
-    `;
-
-
-  /* ---------- 資産一覧 ---------- */
-
-  document
-    .getElementById("assetRows")
-    .innerHTML=
-
-    d.assets.map(a=>`
-
-      <tr>
-
-        <td>${a.name}</td>
-
-        <td>${a.qtyLabel}</td>
-
-        <td>${yen(a.price)}</td>
-
-        <td>${yen(a.value)}</td>
-
-        <td>${percent(a.change)}</td>
-
-      </tr>
-
-    `).join("");
-
-
-  let stage=
-    document.getElementById("stage");
-
-
-  /*
-    data.jsonを再読み込みした時に
-    古いページを削除
-  */
-
-  stage
-    .querySelectorAll(".dynamic")
-    .forEach(x=>x.remove());
-
-
-  /* ========================================
-     各資産
-
-     1日
-       ↓
-     1週間
-       ↓
-     1か月
-       ↓
-     ニュース
-  ======================================== */
-
-  d.assets.forEach(asset=>{
-
-    /*
-      eMAXISには日中値動きがないので
-      1日ページは作らない
-    */
-
-    if(
-      asset.intraday &&
-      asset.intraday.length>1
-    ){
-
-      stage.appendChild(
-        marketPage(
-          asset,
-          "day"
-        )
-      );
-
-    }
-
-
-    /* 1週間 */
-
-    stage.appendChild(
-      marketPage(
-        asset,
-        "week"
-      )
-    );
-
-
-    /* 1か月 */
-
-    stage.appendChild(
-      marketPage(
-        asset,
-        "month"
-      )
-    );
-
-
-    /* NEWS */
-
-    stage.appendChild(
-      newsPage(asset)
-    );
-
-  });
-
-
-  /* ---------- RESET ---------- */
-
-  idx=0;
-
-  let pages=[
-    ...document
-      .querySelectorAll(".page")
-  ];
-
-  pages.forEach(
-    (p,i)=>
-      p.classList.toggle(
-        "active",
-        i===0
-      )
+function chartHTML(history) {
+  const v = (history || []).filter(
+    x => Number.isFinite(x.value)
   );
 
+  if (v.length < 2) {
+    return '<div class="sub">チャートデータなし</div>';
+  }
 
-  setupDots();
+  const W = 900, H = 320;
+  const L = 100, R = 28, T = 25, B = 50;
 
+  const values = v.map(x => x.value);
+  let min = Math.min(...values);
+  let max = Math.max(...values);
+  let spread = max - min;
 
-  document
-    .getElementById("status")
-    .textContent=
+  if (spread === 0) spread = Math.max(Math.abs(max)*0.01,1);
 
-    `データ更新 ${d.updated_at} ｜ 画面切替 20秒`;
+  min -= spread * 0.12;
+  max += spread * 0.12;
 
+  const points = v.map((x,i) => ({
+    x: L + i * (W-L-R) / (v.length-1),
+    y: H-B - (x.value-min)/(max-min)*(H-T-B)
+  }));
+
+  let grid = "";
+  for (let i=0;i<5;i++) {
+    const ratio = i/4;
+    const y = T + ratio*(H-T-B);
+    const p = max - ratio*(max-min);
+    grid += `
+      <line class="gridline" x1="${L}" y1="${y}"
+        x2="${W-R}" y2="${y}"/>
+      <text class="axis" x="${L-12}" y="${y+5}"
+        text-anchor="end">${Math.round(p).toLocaleString("ja-JP")}円</text>
+    `;
+  }
+
+  const line = points.map(p=>`${p.x},${p.y}`).join(" ");
+  const step = Math.max(1,Math.ceil(v.length/6));
+
+  const labels = points.map((p,i)=>{
+    if (i%step!==0 && i!==v.length-1) return "";
+    return `<text class="axis" x="${p.x}" y="${H-14}"
+      text-anchor="middle">${escapeHTML(v[i].label)}</text>`;
+  }).join("");
+
+  const last = points[points.length-1];
+
+  return `
+    <div class="chartwrap">
+      <svg class="chart" viewBox="0 0 ${W} ${H}"
+        preserveAspectRatio="none">
+        ${grid}
+        <polyline class="chartline" points="${line}"/>
+        <circle class="chartpoint" cx="${last.x}"
+          cy="${last.y}" r="5"/>
+        ${labels}
+      </svg>
+    </div>`;
 }
 
+function marketPage(asset,type) {
+  const config = {
+    day: ["1 DAY / TODAY","intraday","change"],
+    week:["1 WEEK","week","weekChange"],
+    month:["1 MONTH","month","monthChange"]
+  }[type];
 
-/* ========================================
-   DOT
-======================================== */
+  const [label,historyKey,changeKey] = config;
+  const section = document.createElement("section");
+  section.className = "page dynamic";
 
-function setupDots(){
+  section.innerHTML = `
+    <div class="card">
+      <div class="eyebrow">📈 ${label}</div>
+      <div class="assethead">
+        <div class="name">${escapeHTML(asset.name)}</div>
+        <div class="qty">保有 ${escapeHTML(asset.qtyLabel)}</div>
+      </div>
+      <div class="metrics">
+        <div class="price">${yen(asset.price)}</div>
+        <div class="change ${tone(asset[changeKey])}">
+          ${percent(asset[changeKey])}
+        </div>
+      </div>
+      ${chartHTML(asset[historyKey])}
+      <div class="sub">
+        評価額 ${yen(asset.value)}
+        ${asset.deltaYen == null ? "" :
+          ` ｜ 前日比 <span class="${tone(asset.deltaYen)}">
+            Δ ${signedYen(asset.deltaYen)}</span>`}
+      </div>
+    </div>`;
+  return section;
+}
 
-  let pages=[
-    ...document
-      .querySelectorAll(".page")
-  ];
+function newsPage(asset) {
+  const section = document.createElement("section");
+  section.className = "page dynamic";
+  const news = (asset.news || []).slice(0,2);
 
-  let box=
-    document.getElementById("dots");
+  const contents = news.length
+    ? news.map((n,i) => `
+      <div class="news-item">
+        <div class="news-source">
+          ${escapeHTML(n.date)}
+          ${n.source ? " ｜ " + escapeHTML(n.source) : ""}
+        </div>
+        <div class="news-title">
+          ${i+1}. ${escapeHTML(n.title)}
+        </div>
+        ${n.description ? `
+          <div class="news-description">
+            ${escapeHTML(n.description)}
+          </div>` : ""}
+        ${/^https:\/\//.test(n.link || "") ? `
+          <a class="news-link" href="${escapeHTML(n.link)}"
+             target="_blank" rel="noopener noreferrer">
+            元記事を読む ↗
+          </a>` : ""}
+      </div>`).join("")
+    : '<div class="sub">関連ニュースを取得できませんでした</div>';
 
-  box.innerHTML="";
+  section.innerHTML = `
+    <div class="card">
+      <div class="eyebrow">📰 COMPANY / INVESTMENT NEWS</div>
+      <div class="name" style="margin-bottom:12px">
+        ${escapeHTML(asset.name)}
+      </div>
+      <div class="news-list">${contents}</div>
+    </div>`;
+  return section;
+}
 
-  pages.forEach((_,i)=>{
+function render(data) {
+  const w = data.weather || {};
 
-    let dot=
-      document.createElement("span");
+  document.getElementById("weather").innerHTML = `
+    <div class="eyebrow">☀ TODAY'S WEATHER</div>
+    <div class="big">札幌 ${escapeHTML(w.text || "—")}</div>
+    <div class="temp">
+      最高 ${w.max ?? "—"}℃
+     　/　最低 ${w.min ?? "—"}℃
+    </div>
+    <div class="sub">降水確率 ${w.rain ?? "—"}%</div>`;
 
-    dot.className=
-      "dot"+(i===0?" active":"");
+  const s = data.summary || {};
+  const totalText = s.complete ? yen(s.total) : "取得待ち";
 
-    box.appendChild(dot);
+  document.getElementById("summaryTop").innerHTML = `
+    <div class="summary-label">
+      ${escapeHTML(s.label || "株式評価額")}
+    </div>
+    <div class="summary-total">${totalText}</div>
+    <div class="summary-delta ${tone(s.deltaYen)}">
+      ${arrow(s.deltaYen)}${signedYen(s.deltaYen)}
+      <span style="font-size:.75em">
+        （${percent(s.deltaPercent)}）
+      </span>
+    </div>
+    <div class="summary-note">
+      前営業日終値比 ｜ eMAXIS・預金は合計対象外
+    </div>`;
 
+  document.getElementById("assetRows").innerHTML =
+    (data.assets || []).map(a => `
+      <div class="asset-row">
+        <div>
+          <div class="asset-name">${escapeHTML(a.name)}</div>
+          <div class="asset-qty">${escapeHTML(a.qtyLabel)}</div>
+        </div>
+        <div class="asset-amount">
+          <div class="asset-value">
+            ${a.value == null ? "取得待ち" : yen(a.value)}
+          </div>
+          <div class="asset-delta ${tone(a.deltaYen)}">
+            Δ ${signedYen(a.deltaYen)}
+          </div>
+        </div>
+      </div>`).join("");
+
+  const stage = document.getElementById("stage");
+  stage.querySelectorAll(".dynamic").forEach(el=>el.remove());
+
+  (data.assets || []).forEach(asset=>{
+    if ((asset.intraday || []).length >= 2) {
+      stage.appendChild(marketPage(asset,"day"));
+    }
+    stage.appendChild(marketPage(asset,"week"));
+    stage.appendChild(marketPage(asset,"month"));
+    stage.appendChild(newsPage(asset));
   });
 
+  idx = 0;
+  const pages = [...document.querySelectorAll(".page")];
+  pages.forEach((p,i)=>p.classList.toggle("active",i===0));
+  setupDots();
+
+  document.getElementById("status").textContent =
+    `更新 ${data.updated_at || "—"} ｜ 画面切替20秒`;
 }
 
-
-/* ========================================
-   画面切替
-======================================== */
-
-function flip(){
-
-  let pages=[
-    ...document
-      .querySelectorAll(".page")
-  ];
-
-  let dots=[
-    ...document
-      .querySelectorAll(".dot")
-  ];
-
-  if(!pages.length)return;
-
-
-  pages[idx]
-    .classList
-    .remove("active");
-
-  dots[idx]
-    ?.classList
-    .remove("active");
-
-
-  idx=
-    (idx+1)%pages.length;
-
-
-  pages[idx]
-    .classList
-    .add("active");
-
-  dots[idx]
-    ?.classList
-    .add("active");
-
+function setupDots() {
+  const pages = [...document.querySelectorAll(".page")];
+  document.getElementById("dots").innerHTML =
+    pages.map((_,i)=>`<span class="dot ${i===0?"active":""}"></span>`).join("");
 }
 
+function flip() {
+  const pages = [...document.querySelectorAll(".page")];
+  const dots = [...document.querySelectorAll(".dot")];
+  if (!pages.length) return;
 
-/* ========================================
-   時計
-======================================== */
+  pages[idx].classList.remove("active");
+  if (dots[idx]) dots[idx].classList.remove("active");
 
-function clock(){
+  idx = (idx+1)%pages.length;
 
-  let d=new Date();
+  pages[idx].classList.add("active");
+  if (dots[idx]) dots[idx].classList.add("active");
+}
 
-  let days=[
-    "日","月","火",
-    "水","木","金","土"
-  ];
-
-  document
-    .getElementById("date")
-    .textContent=
-
+function clock() {
+  const d = new Date();
+  const days = ["日","月","火","水","木","金","土"];
+  document.getElementById("date").textContent =
     `${d.getMonth()+1}月${d.getDate()}日（${days[d.getDay()]}）`;
+  document.getElementById("clock").textContent =
+    d.toLocaleTimeString("ja-JP",{
+      hour:"2-digit",minute:"2-digit"
+    });
+}
 
+async function load() {
+  try {
+    const response = await fetch("data.json?t="+Date.now());
+    if (!response.ok) throw new Error("HTTP "+response.status);
 
-  document
-    .getElementById("clock")
-    .textContent=
+    const data = await response.json();
+    const signature = JSON.stringify(data);
 
-    d.toLocaleTimeString(
-      "ja-JP",
-      {
-        hour:"2-digit",
-        minute:"2-digit"
-      }
-    );
-
+    // 同じデータなら画面を最初に戻さない
+    if (signature !== lastSignature) {
+      lastSignature = signature;
+      render(data);
+    }
+  } catch(e) {
+    document.getElementById("status").textContent =
+      "データ読み込み失敗：" + e.message;
+  }
 }
 
 clock();
-
-setInterval(
-  clock,
-  1000
-);
-
-
-/* ========================================
-   20秒ごとに画面切替
-======================================== */
-
-setInterval(
-  flip,
-  20000
-);
-
-
-/* ========================================
-   data.json取得
-======================================== */
-
-async function load(){
-
-  try{
-
-    let response=
-      await fetch(
-        "data.json?t="
-        +Date.now()
-      );
-
-    if(!response.ok){
-      throw new Error(
-        "HTTP "+response.status
-      );
-    }
-
-    let data=
-      await response.json();
-
-    render(data);
-
-  }catch(e){
-
-    document
-      .getElementById("status")
-      .textContent=
-
-      "data.jsonを読み込めません";
-
-  }
-
-}
-
-
+setInterval(clock,1000);
+setInterval(flip,20000);
 load();
-
-
-/*
-  GitHub Actionsは3時間ごと。
-  iPad側は15分ごとに
-  新しいdata.jsonがないか確認。
-*/
-
-setInterval(
-  load,
-  15*60*1000
-);
-
+setInterval(load,15*60*1000);
 </script>
-
 </body>
 </html>
