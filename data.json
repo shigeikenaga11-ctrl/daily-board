@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/08 19:19",
+  "updated_at": "2026/10/09 03:44",
   "weather": {
     "text": "雨",
-    "max": 20.7,
-    "min": 7.5,
-    "rain": 0
+    "max": 21.0,
+    "min": 8.2,
+    "rain": 8
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 914705.94,
+    "total": 911421.33,
     "purchaseTotal": 907645.98,
-    "deltaYen": 3065.37,
-    "deltaPercent": 0.33624765075999197,
-    "unrealizedYen": 7059.959999999963,
-    "unrealizedPercent": 0.7778319031391472,
+    "deltaYen": -5684.610000000001,
+    "deltaPercent": -0.6198422398180085,
+    "unrealizedYen": 3775.3499999999767,
+    "unrealizedPercent": 0.41594961947608433,
     "complete": true
   },
   "assets": [
@@ -1626,21 +1626,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45638.0,
-      "previousClose": 45232.0,
-      "value": 614355.94,
-      "deltaYen": 5465.37,
-      "change": 0.897594623275566,
-      "unrealizedYen": 14349.96,
-      "unrealizedPercent": 2.391636004666612,
-      "weekChange": 2.5250482994114254,
-      "monthChange": 3.0017152658662116,
+      "price": 45394.0,
+      "previousClose": 45638.0,
+      "value": 611071.33,
+      "deltaYen": -3284.61,
+      "change": -0.5346421841447957,
+      "unrealizedYen": 11065.35,
+      "unrealizedPercent": 1.8442071255496728,
+      "weekChange": 1.6480809709346511,
+      "monthChange": 3.9239926739926823,
       "intraday": [],
       "week": [
-        {
-          "label": "10/01",
-          "value": 44514.0
-        },
         {
           "label": "10/02",
           "value": 44658.0
@@ -1656,13 +1652,13 @@
         {
           "label": "10/07",
           "value": 45638.0
+        },
+        {
+          "label": "10/08",
+          "value": 45394.0
         }
       ],
       "month": [
-        {
-          "label": "09/07",
-          "value": 44308.0
-        },
         {
           "label": "09/08",
           "value": 43680.0
@@ -1738,15 +1734,19 @@
         {
           "label": "10/07",
           "value": 45638.0
+        },
+        {
+          "label": "10/08",
+          "value": 45394.0
         }
       ],
       "news": [
         {
-          "title": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
+          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
+          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
+          "source": "Yahoo!ファイナンス",
           "date": "2026/10/08",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcFVycFEwY3ZLVVNyUjZUX3pFZDVMNm9hUkgyeDB6bDhla3N0M2RNaUdESWlWYXlqTWpQenhnaHlYOWpRd1lVNTF0Yng5TEpIR1dmZ2VEUWhINmRGd1lORXQ4ODg2WWF4TnE4NFZnX3BSMVM4M2VSX19iVXpnLW15UTlWUk80WWVxWTJSTHdtWm9WSDV6a3Q4SUJSRmJYeEhXam10YWFJeHNULTBaaVRVMUctdHFIczgtS2RPUVRiN1FHclB4T1FUVzBsbjg?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
         }
       ]
     }
