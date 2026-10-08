@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026/10/08 09:53",
+  "updated_at": "2026/10/08 19:19",
   "weather": {
-    "text": "晴れ",
-    "max": 20.3,
+    "text": "雨",
+    "max": 20.7,
     "min": 7.5,
     "rain": 0
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 300770.0,
+    "total": 300350.0,
     "purchaseTotal": 307640,
-    "deltaYen": -1980.0,
-    "deltaPercent": -0.6540049545829892,
+    "deltaYen": -2400.0,
+    "deltaPercent": -0.7927332782824111,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 915125.94,
+    "total": 914705.94,
     "purchaseTotal": 907645.98,
-    "deltaYen": 3485.37,
-    "deltaPercent": 0.3823184393823105,
-    "unrealizedYen": 7479.959999999963,
-    "unrealizedPercent": 0.8241054513346672,
+    "deltaYen": 3065.37,
+    "deltaPercent": 0.33624765075999197,
+    "unrealizedYen": 7059.959999999963,
+    "unrealizedPercent": 0.7778319031391472,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2663.5,
+      "price": 2653.5,
       "previousClose": 2702.5,
-      "value": 53270.0,
-      "deltaYen": -780.0,
-      "change": -1.443108233117485,
-      "unrealizedYen": -3410.0,
-      "unrealizedPercent": -6.016231474947071,
-      "weekChange": -1.6795865633074891,
-      "monthChange": -3.180661577608146,
+      "value": 53070.0,
+      "deltaYen": -980.0,
+      "change": -1.8131359851988882,
+      "unrealizedYen": -3610.0,
+      "unrealizedPercent": -6.369089625970361,
+      "weekChange": -2.048726467331119,
+      "monthChange": -3.5441657579062147,
       "intraday": [
         {
           "label": "09:05",
@@ -69,11 +69,243 @@
         },
         {
           "label": "09:35",
-          "value": 2664.5
+          "value": 2665.5
         },
         {
-          "label": "09:38",
+          "label": "09:40",
           "value": 2663.5
+        },
+        {
+          "label": "09:45",
+          "value": 2651.5
+        },
+        {
+          "label": "09:50",
+          "value": 2650.5
+        },
+        {
+          "label": "09:55",
+          "value": 2649.0
+        },
+        {
+          "label": "10:00",
+          "value": 2639.0
+        },
+        {
+          "label": "10:05",
+          "value": 2638.0
+        },
+        {
+          "label": "10:10",
+          "value": 2634.0
+        },
+        {
+          "label": "10:15",
+          "value": 2638.0
+        },
+        {
+          "label": "10:20",
+          "value": 2639.5
+        },
+        {
+          "label": "10:25",
+          "value": 2643.5
+        },
+        {
+          "label": "10:30",
+          "value": 2641.0
+        },
+        {
+          "label": "10:35",
+          "value": 2636.0
+        },
+        {
+          "label": "10:40",
+          "value": 2637.0
+        },
+        {
+          "label": "10:45",
+          "value": 2636.0
+        },
+        {
+          "label": "10:50",
+          "value": 2630.5
+        },
+        {
+          "label": "10:55",
+          "value": 2628.5
+        },
+        {
+          "label": "11:00",
+          "value": 2627.0
+        },
+        {
+          "label": "11:05",
+          "value": 2627.5
+        },
+        {
+          "label": "11:10",
+          "value": 2626.0
+        },
+        {
+          "label": "11:15",
+          "value": 2626.5
+        },
+        {
+          "label": "11:20",
+          "value": 2627.5
+        },
+        {
+          "label": "11:25",
+          "value": 2625.5
+        },
+        {
+          "label": "11:30",
+          "value": 2625.0
+        },
+        {
+          "label": "12:30",
+          "value": 2630.0
+        },
+        {
+          "label": "12:35",
+          "value": 2630.5
+        },
+        {
+          "label": "12:40",
+          "value": 2634.0
+        },
+        {
+          "label": "12:45",
+          "value": 2641.5
+        },
+        {
+          "label": "12:50",
+          "value": 2638.5
+        },
+        {
+          "label": "12:55",
+          "value": 2638.5
+        },
+        {
+          "label": "13:00",
+          "value": 2653.5
+        },
+        {
+          "label": "13:05",
+          "value": 2646.0
+        },
+        {
+          "label": "13:10",
+          "value": 2647.5
+        },
+        {
+          "label": "13:15",
+          "value": 2649.0
+        },
+        {
+          "label": "13:20",
+          "value": 2654.0
+        },
+        {
+          "label": "13:25",
+          "value": 2652.5
+        },
+        {
+          "label": "13:30",
+          "value": 2651.5
+        },
+        {
+          "label": "13:35",
+          "value": 2650.5
+        },
+        {
+          "label": "13:40",
+          "value": 2650.5
+        },
+        {
+          "label": "13:45",
+          "value": 2650.0
+        },
+        {
+          "label": "13:50",
+          "value": 2649.0
+        },
+        {
+          "label": "13:55",
+          "value": 2648.5
+        },
+        {
+          "label": "14:00",
+          "value": 2648.0
+        },
+        {
+          "label": "14:05",
+          "value": 2650.5
+        },
+        {
+          "label": "14:10",
+          "value": 2644.5
+        },
+        {
+          "label": "14:15",
+          "value": 2646.5
+        },
+        {
+          "label": "14:20",
+          "value": 2648.0
+        },
+        {
+          "label": "14:25",
+          "value": 2648.0
+        },
+        {
+          "label": "14:30",
+          "value": 2648.5
+        },
+        {
+          "label": "14:35",
+          "value": 2653.0
+        },
+        {
+          "label": "14:40",
+          "value": 2655.5
+        },
+        {
+          "label": "14:45",
+          "value": 2658.5
+        },
+        {
+          "label": "14:50",
+          "value": 2656.0
+        },
+        {
+          "label": "14:55",
+          "value": 2655.0
+        },
+        {
+          "label": "15:00",
+          "value": 2661.0
+        },
+        {
+          "label": "15:05",
+          "value": 2666.5
+        },
+        {
+          "label": "15:10",
+          "value": 2670.0
+        },
+        {
+          "label": "15:15",
+          "value": 2667.0
+        },
+        {
+          "label": "15:20",
+          "value": 2664.0
+        },
+        {
+          "label": "15:30",
+          "value": 2653.5
         }
       ],
       "week": [
@@ -95,7 +327,7 @@
         },
         {
           "label": "10/08",
-          "value": 2663.5
+          "value": 2653.5
         }
       ],
       "month": [
@@ -177,7 +409,7 @@
         },
         {
           "label": "10/08",
-          "value": 2663.5
+          "value": 2653.5
         }
       ],
       "news": [
@@ -198,15 +430,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 7843.0,
+      "price": 7851.0,
       "previousClose": 7775.0,
-      "value": 78430.0,
-      "deltaYen": 680.0,
-      "change": 0.8745980707395518,
-      "unrealizedYen": -1080.0,
-      "unrealizedPercent": -1.3583197082128033,
-      "weekChange": -0.0764428589629218,
-      "monthChange": -10.36571428571429,
+      "value": 78510.0,
+      "deltaYen": 760.0,
+      "change": 0.9774919614147892,
+      "unrealizedYen": -1000.0,
+      "unrealizedPercent": -1.2577034335303736,
+      "weekChange": 0.0254809529876443,
+      "monthChange": -10.274285714285714,
       "intraday": [
         {
           "label": "09:05",
@@ -234,11 +466,243 @@
         },
         {
           "label": "09:35",
-          "value": 7835.0
+          "value": 7842.0
         },
         {
-          "label": "09:38",
+          "label": "09:40",
+          "value": 7806.0
+        },
+        {
+          "label": "09:45",
+          "value": 7796.0
+        },
+        {
+          "label": "09:50",
+          "value": 7809.0
+        },
+        {
+          "label": "09:55",
+          "value": 7799.0
+        },
+        {
+          "label": "10:00",
+          "value": 7804.0
+        },
+        {
+          "label": "10:05",
+          "value": 7809.0
+        },
+        {
+          "label": "10:10",
+          "value": 7814.0
+        },
+        {
+          "label": "10:15",
+          "value": 7806.0
+        },
+        {
+          "label": "10:20",
+          "value": 7814.0
+        },
+        {
+          "label": "10:25",
+          "value": 7818.0
+        },
+        {
+          "label": "10:30",
+          "value": 7796.0
+        },
+        {
+          "label": "10:35",
+          "value": 7782.0
+        },
+        {
+          "label": "10:40",
+          "value": 7783.0
+        },
+        {
+          "label": "10:45",
+          "value": 7798.0
+        },
+        {
+          "label": "10:50",
+          "value": 7805.0
+        },
+        {
+          "label": "10:55",
+          "value": 7797.0
+        },
+        {
+          "label": "11:00",
+          "value": 7804.0
+        },
+        {
+          "label": "11:05",
+          "value": 7787.0
+        },
+        {
+          "label": "11:10",
+          "value": 7792.0
+        },
+        {
+          "label": "11:15",
+          "value": 7794.0
+        },
+        {
+          "label": "11:20",
+          "value": 7790.0
+        },
+        {
+          "label": "11:25",
+          "value": 7786.0
+        },
+        {
+          "label": "11:30",
+          "value": 7789.0
+        },
+        {
+          "label": "12:30",
+          "value": 7817.0
+        },
+        {
+          "label": "12:35",
+          "value": 7814.0
+        },
+        {
+          "label": "12:40",
+          "value": 7812.0
+        },
+        {
+          "label": "12:45",
+          "value": 7824.0
+        },
+        {
+          "label": "12:50",
+          "value": 7825.0
+        },
+        {
+          "label": "12:55",
+          "value": 7827.0
+        },
+        {
+          "label": "13:00",
+          "value": 7839.0
+        },
+        {
+          "label": "13:05",
+          "value": 7824.0
+        },
+        {
+          "label": "13:10",
+          "value": 7825.0
+        },
+        {
+          "label": "13:15",
+          "value": 7825.0
+        },
+        {
+          "label": "13:20",
+          "value": 7812.0
+        },
+        {
+          "label": "13:25",
+          "value": 7811.0
+        },
+        {
+          "label": "13:30",
+          "value": 7805.0
+        },
+        {
+          "label": "13:35",
+          "value": 7801.0
+        },
+        {
+          "label": "13:40",
+          "value": 7807.0
+        },
+        {
+          "label": "13:45",
+          "value": 7808.0
+        },
+        {
+          "label": "13:50",
+          "value": 7811.0
+        },
+        {
+          "label": "13:55",
+          "value": 7815.0
+        },
+        {
+          "label": "14:00",
+          "value": 7803.0
+        },
+        {
+          "label": "14:05",
+          "value": 7813.0
+        },
+        {
+          "label": "14:10",
+          "value": 7818.0
+        },
+        {
+          "label": "14:15",
+          "value": 7815.0
+        },
+        {
+          "label": "14:20",
+          "value": 7824.0
+        },
+        {
+          "label": "14:25",
+          "value": 7827.0
+        },
+        {
+          "label": "14:30",
+          "value": 7838.0
+        },
+        {
+          "label": "14:35",
+          "value": 7846.0
+        },
+        {
+          "label": "14:40",
+          "value": 7850.0
+        },
+        {
+          "label": "14:45",
+          "value": 7845.0
+        },
+        {
+          "label": "14:50",
           "value": 7843.0
+        },
+        {
+          "label": "14:55",
+          "value": 7842.0
+        },
+        {
+          "label": "15:00",
+          "value": 7840.0
+        },
+        {
+          "label": "15:05",
+          "value": 7840.0
+        },
+        {
+          "label": "15:10",
+          "value": 7852.0
+        },
+        {
+          "label": "15:15",
+          "value": 7859.0
+        },
+        {
+          "label": "15:20",
+          "value": 7856.0
+        },
+        {
+          "label": "15:30",
+          "value": 7851.0
         }
       ],
       "week": [
@@ -260,7 +724,7 @@
         },
         {
           "label": "10/08",
-          "value": 7843.0
+          "value": 7851.0
         }
       ],
       "month": [
@@ -342,7 +806,7 @@
         },
         {
           "label": "10/08",
-          "value": 7843.0
+          "value": 7851.0
         }
       ],
       "news": [
@@ -363,15 +827,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 512.6,
+      "price": 518.1,
       "previousClose": 516.0,
-      "value": 102520.0,
-      "deltaYen": -680.0,
-      "change": -0.6589194600896353,
-      "unrealizedYen": -80.0,
-      "unrealizedPercent": -0.07797746862816765,
-      "weekChange": 1.0248288829333374,
-      "monthChange": -2.312291015560708,
+      "value": 103620.0,
+      "deltaYen": 420.0,
+      "change": 0.40697201277859474,
+      "unrealizedYen": 1020.0,
+      "unrealizedPercent": 0.994147287707115,
+      "weekChange": 2.1087863260077278,
+      "monthChange": -1.264139581686241,
       "intraday": [
         {
           "label": "09:00",
@@ -403,11 +867,243 @@
         },
         {
           "label": "09:35",
+          "value": 511.9
+        },
+        {
+          "label": "09:40",
+          "value": 510.4
+        },
+        {
+          "label": "09:45",
+          "value": 512.3
+        },
+        {
+          "label": "09:50",
+          "value": 513.8
+        },
+        {
+          "label": "09:55",
+          "value": 513.2
+        },
+        {
+          "label": "10:00",
+          "value": 513.4
+        },
+        {
+          "label": "10:05",
+          "value": 513.7
+        },
+        {
+          "label": "10:10",
+          "value": 512.5
+        },
+        {
+          "label": "10:15",
+          "value": 513.0
+        },
+        {
+          "label": "10:20",
+          "value": 514.3
+        },
+        {
+          "label": "10:25",
+          "value": 515.4
+        },
+        {
+          "label": "10:30",
+          "value": 514.2
+        },
+        {
+          "label": "10:35",
+          "value": 513.9
+        },
+        {
+          "label": "10:40",
+          "value": 513.5
+        },
+        {
+          "label": "10:45",
+          "value": 514.1
+        },
+        {
+          "label": "10:50",
+          "value": 514.3
+        },
+        {
+          "label": "10:55",
+          "value": 513.5
+        },
+        {
+          "label": "11:00",
+          "value": 513.5
+        },
+        {
+          "label": "11:05",
+          "value": 512.9
+        },
+        {
+          "label": "11:10",
+          "value": 512.8
+        },
+        {
+          "label": "11:15",
+          "value": 512.3
+        },
+        {
+          "label": "11:20",
+          "value": 512.5
+        },
+        {
+          "label": "11:25",
+          "value": 511.9
+        },
+        {
+          "label": "11:30",
           "value": 512.2
         },
         {
-          "label": "09:38",
-          "value": 512.6
+          "label": "12:30",
+          "value": 515.1
+        },
+        {
+          "label": "12:35",
+          "value": 515.6
+        },
+        {
+          "label": "12:40",
+          "value": 515.9
+        },
+        {
+          "label": "12:45",
+          "value": 515.8
+        },
+        {
+          "label": "12:50",
+          "value": 514.9
+        },
+        {
+          "label": "12:55",
+          "value": 515.2
+        },
+        {
+          "label": "13:00",
+          "value": 517.1
+        },
+        {
+          "label": "13:05",
+          "value": 517.7
+        },
+        {
+          "label": "13:10",
+          "value": 518.0
+        },
+        {
+          "label": "13:15",
+          "value": 516.6
+        },
+        {
+          "label": "13:20",
+          "value": 517.9
+        },
+        {
+          "label": "13:25",
+          "value": 517.9
+        },
+        {
+          "label": "13:30",
+          "value": 518.6
+        },
+        {
+          "label": "13:35",
+          "value": 518.1
+        },
+        {
+          "label": "13:40",
+          "value": 518.3
+        },
+        {
+          "label": "13:45",
+          "value": 518.4
+        },
+        {
+          "label": "13:50",
+          "value": 518.6
+        },
+        {
+          "label": "13:55",
+          "value": 518.5
+        },
+        {
+          "label": "14:00",
+          "value": 519.5
+        },
+        {
+          "label": "14:05",
+          "value": 519.9
+        },
+        {
+          "label": "14:10",
+          "value": 520.0
+        },
+        {
+          "label": "14:15",
+          "value": 520.3
+        },
+        {
+          "label": "14:20",
+          "value": 520.2
+        },
+        {
+          "label": "14:25",
+          "value": 520.0
+        },
+        {
+          "label": "14:30",
+          "value": 519.5
+        },
+        {
+          "label": "14:35",
+          "value": 519.4
+        },
+        {
+          "label": "14:40",
+          "value": 519.6
+        },
+        {
+          "label": "14:45",
+          "value": 519.4
+        },
+        {
+          "label": "14:50",
+          "value": 518.9
+        },
+        {
+          "label": "14:55",
+          "value": 519.3
+        },
+        {
+          "label": "15:00",
+          "value": 519.2
+        },
+        {
+          "label": "15:05",
+          "value": 518.6
+        },
+        {
+          "label": "15:10",
+          "value": 519.5
+        },
+        {
+          "label": "15:15",
+          "value": 518.7
+        },
+        {
+          "label": "15:20",
+          "value": 517.5
+        },
+        {
+          "label": "15:30",
+          "value": 518.1
         }
       ],
       "week": [
@@ -429,7 +1125,7 @@
         },
         {
           "label": "10/08",
-          "value": 512.6
+          "value": 518.1
         }
       ],
       "month": [
@@ -511,16 +1207,16 @@
         },
         {
           "label": "10/08",
-          "value": 512.6
+          "value": 518.1
         }
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "東京海上HDが大胆な株式分割へ…15分割で狙う個人マネーと株主構成を変える仕掛け（ニューズウィーク日本版） - Yahoo!ニュース",
+          "description": "東京海上HDが大胆な株式分割へ…15分割で狙う個人マネーと株主構成を変える仕掛け（ニューズウィーク日本版）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/09/21",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBnNkZXUHFWMzBuMWNkTlBncXJpdmt2eGtCemt0M1FzQ3hZODZEMnRQZlAySGJHcWR5aXA1Y0FNdWlKaFVDS2l4SHl3QjI5c0RZU1hDNWtTM1ZwcG9HWm5Hdm5keHpaaDdIamlYSmRGLUpFNWxMRnEyN25GQnNCT2c?oc=5"
         }
       ]
     },
@@ -532,15 +1228,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1331.0,
+      "price": 1303.0,
       "previousClose": 1355.0,
-      "value": 66550.0,
-      "deltaYen": -1200.0,
-      "change": -1.77121771217712,
-      "unrealizedYen": -2300.0,
-      "unrealizedPercent": -3.340595497458242,
-      "weekChange": -2.204261572373256,
-      "monthChange": 2.859350850077269,
+      "value": 65150.0,
+      "deltaYen": -2600.0,
+      "change": -3.8376383763837674,
+      "unrealizedYen": -3700.0,
+      "unrealizedPercent": -5.374001452432825,
+      "weekChange": -4.261572373254962,
+      "monthChange": 0.6955177743431129,
       "intraday": [
         {
           "label": "09:05",
@@ -568,11 +1264,243 @@
         },
         {
           "label": "09:35",
+          "value": 1329.0
+        },
+        {
+          "label": "09:40",
           "value": 1330.0
         },
         {
-          "label": "09:38",
-          "value": 1331.0
+          "label": "09:45",
+          "value": 1329.0
+        },
+        {
+          "label": "09:50",
+          "value": 1334.0
+        },
+        {
+          "label": "09:55",
+          "value": 1332.0
+        },
+        {
+          "label": "10:00",
+          "value": 1329.0
+        },
+        {
+          "label": "10:05",
+          "value": 1326.0
+        },
+        {
+          "label": "10:10",
+          "value": 1326.0
+        },
+        {
+          "label": "10:15",
+          "value": 1325.0
+        },
+        {
+          "label": "10:20",
+          "value": 1326.0
+        },
+        {
+          "label": "10:25",
+          "value": 1325.0
+        },
+        {
+          "label": "10:30",
+          "value": 1320.0
+        },
+        {
+          "label": "10:35",
+          "value": 1315.0
+        },
+        {
+          "label": "10:40",
+          "value": 1313.0
+        },
+        {
+          "label": "10:45",
+          "value": 1314.0
+        },
+        {
+          "label": "10:50",
+          "value": 1317.0
+        },
+        {
+          "label": "10:55",
+          "value": 1316.0
+        },
+        {
+          "label": "11:00",
+          "value": 1308.0
+        },
+        {
+          "label": "11:05",
+          "value": 1305.0
+        },
+        {
+          "label": "11:10",
+          "value": 1306.0
+        },
+        {
+          "label": "11:15",
+          "value": 1304.0
+        },
+        {
+          "label": "11:20",
+          "value": 1305.0
+        },
+        {
+          "label": "11:25",
+          "value": 1308.0
+        },
+        {
+          "label": "11:30",
+          "value": 1308.0
+        },
+        {
+          "label": "12:30",
+          "value": 1315.0
+        },
+        {
+          "label": "12:35",
+          "value": 1313.0
+        },
+        {
+          "label": "12:40",
+          "value": 1313.0
+        },
+        {
+          "label": "12:45",
+          "value": 1314.0
+        },
+        {
+          "label": "12:50",
+          "value": 1313.0
+        },
+        {
+          "label": "12:55",
+          "value": 1309.0
+        },
+        {
+          "label": "13:00",
+          "value": 1308.0
+        },
+        {
+          "label": "13:05",
+          "value": 1310.0
+        },
+        {
+          "label": "13:10",
+          "value": 1310.0
+        },
+        {
+          "label": "13:15",
+          "value": 1310.0
+        },
+        {
+          "label": "13:20",
+          "value": 1312.0
+        },
+        {
+          "label": "13:25",
+          "value": 1312.0
+        },
+        {
+          "label": "13:30",
+          "value": 1316.0
+        },
+        {
+          "label": "13:35",
+          "value": 1313.0
+        },
+        {
+          "label": "13:40",
+          "value": 1313.0
+        },
+        {
+          "label": "13:45",
+          "value": 1317.0
+        },
+        {
+          "label": "13:50",
+          "value": 1318.0
+        },
+        {
+          "label": "13:55",
+          "value": 1320.0
+        },
+        {
+          "label": "14:00",
+          "value": 1318.0
+        },
+        {
+          "label": "14:05",
+          "value": 1319.0
+        },
+        {
+          "label": "14:10",
+          "value": 1319.0
+        },
+        {
+          "label": "14:15",
+          "value": 1321.0
+        },
+        {
+          "label": "14:20",
+          "value": 1320.0
+        },
+        {
+          "label": "14:25",
+          "value": 1320.0
+        },
+        {
+          "label": "14:30",
+          "value": 1322.0
+        },
+        {
+          "label": "14:35",
+          "value": 1319.0
+        },
+        {
+          "label": "14:40",
+          "value": 1319.0
+        },
+        {
+          "label": "14:45",
+          "value": 1318.0
+        },
+        {
+          "label": "14:50",
+          "value": 1313.0
+        },
+        {
+          "label": "14:55",
+          "value": 1312.0
+        },
+        {
+          "label": "15:00",
+          "value": 1311.0
+        },
+        {
+          "label": "15:05",
+          "value": 1311.0
+        },
+        {
+          "label": "15:10",
+          "value": 1315.0
+        },
+        {
+          "label": "15:15",
+          "value": 1310.0
+        },
+        {
+          "label": "15:20",
+          "value": 1307.0
+        },
+        {
+          "label": "15:30",
+          "value": 1303.0
         }
       ],
       "week": [
@@ -594,7 +1522,7 @@
         },
         {
           "label": "10/08",
-          "value": 1331.0
+          "value": 1303.0
         }
       ],
       "month": [
@@ -676,7 +1604,7 @@
         },
         {
           "label": "10/08",
-          "value": 1331.0
+          "value": 1303.0
         }
       ],
       "news": [
@@ -814,11 +1742,11 @@
       ],
       "news": [
         {
-          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
-          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
-          "source": "Yahoo!ファイナンス",
+          "title": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
           "date": "2026/10/08",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcFVycFEwY3ZLVVNyUjZUX3pFZDVMNm9hUkgyeDB6bDhla3N0M2RNaUdESWlWYXlqTWpQenhnaHlYOWpRd1lVNTF0Yng5TEpIR1dmZ2VEUWhINmRGd1lORXQ4ODg2WWF4TnE4NFZnX3BSMVM4M2VSX19iVXpnLW15UTlWUk80WWVxWTJSTHdtWm9WSDV6a3Q4SUJSRmJYeEhXam10YWFJeHNULTBaaVRVMUctdHFIczgtS2RPUVRiN1FHclB4T1FUVzBsbjg?oc=5"
         }
       ]
     }
