@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/09 19:20",
+  "updated_at": "2026/10/10 03:15",
   "weather": {
-    "text": "雨",
-    "max": 22.3,
-    "min": 8.0,
-    "rain": 0
+    "text": "くもり",
+    "max": 21.6,
+    "min": 9.9,
+    "rain": 29
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 913631.33,
+    "total": 911639.03,
     "purchaseTotal": 907645.98,
-    "deltaYen": -1074.6100000000001,
-    "deltaPercent": -0.11748147169570147,
-    "unrealizedYen": 5985.349999999977,
-    "unrealizedPercent": 0.6594366230763207,
+    "deltaYen": 217.70000000000005,
+    "deltaPercent": 0.023885769713113916,
+    "unrealizedYen": 3993.0500000000466,
+    "unrealizedPercent": 0.43993474195743665,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": -1.1494252873563204,
       "unrealizedYen": -4220.0,
       "unrealizedPercent": -7.44530698659139,
-      "weekChange": -3.4241531664212066,
-      "monthChange": -3.2281866814240945,
+      "weekChange": -2.048726467331119,
+      "monthChange": -2.10293303818484,
       "intraday": [
         {
           "label": "09:00",
@@ -314,6 +314,10 @@
       ],
       "week": [
         {
+          "label": "10/02",
+          "value": 2709.0
+        },
+        {
           "label": "10/05",
           "value": 2716.0
         },
@@ -328,10 +332,6 @@
         {
           "label": "10/08",
           "value": 2653.5
-        },
-        {
-          "label": "10/09",
-          "value": 2623.0
         }
       ],
       "month": [
@@ -410,19 +410,15 @@
         {
           "label": "10/08",
           "value": 2653.5
-        },
-        {
-          "label": "10/09",
-          "value": 2623.0
         }
       ],
       "news": [
         {
-          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
-          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
-          "source": "ミクスOnline",
-          "date": "2026/05/12",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+          "title": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
+          "description": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報)",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/09",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYVB6U1VEUmRha1o1eE1FWWRSVzFmbl93amxXTlZhZ043TUh5cV9sRFM1SzVXYnRkeWoyNEtxeDlmRzFxT0RGbExQOG1uSTNnTDZleDVwODVHTDMyalBaQ1dVZ2RyNmZVMXA0ZEJjN2pXOGhjek41alhyZVZwalpBRWk5b3pHS1E?oc=5"
         }
       ]
     },
@@ -441,8 +437,8 @@
       "change": 3.7574831231690142,
       "unrealizedYen": 1950.0,
       "unrealizedPercent": 2.4525216953842284,
-      "weekChange": 5.218289847584612,
-      "monthChange": -3.0353529341745067,
+      "weekChange": 0.0254809529876443,
+      "monthChange": -6.546839661945003,
       "intraday": [
         {
           "label": "09:05",
@@ -715,6 +711,10 @@
       ],
       "week": [
         {
+          "label": "10/02",
+          "value": 7849.0
+        },
+        {
           "label": "10/05",
           "value": 7742.0
         },
@@ -729,10 +729,6 @@
         {
           "label": "10/08",
           "value": 7851.0
-        },
-        {
-          "label": "10/09",
-          "value": 8146.0
         }
       ],
       "month": [
@@ -811,10 +807,6 @@
         {
           "label": "10/08",
           "value": 7851.0
-        },
-        {
-          "label": "10/09",
-          "value": 8146.0
         }
       ],
       "news": [
@@ -842,8 +834,8 @@
       "change": 1.4669006382997951,
       "unrealizedYen": 2540.0,
       "unrealizedPercent": 2.4756359078033627,
-      "weekChange": 3.179590227091511,
-      "monthChange": 2.395790262574793,
+      "weekChange": 2.1087863260077278,
+      "monthChange": 0.9154559696873843,
       "intraday": [
         {
           "label": "09:05",
@@ -1112,6 +1104,10 @@
       ],
       "week": [
         {
+          "label": "10/02",
+          "value": 507.4
+        },
+        {
           "label": "10/05",
           "value": 509.5
         },
@@ -1126,10 +1122,6 @@
         {
           "label": "10/08",
           "value": 518.1
-        },
-        {
-          "label": "10/09",
-          "value": 525.7
         }
       ],
       "month": [
@@ -1208,10 +1200,6 @@
         {
           "label": "10/08",
           "value": 518.1
-        },
-        {
-          "label": "10/09",
-          "value": 525.7
         }
       ],
       "news": [
@@ -1239,8 +1227,8 @@
       "change": -2.5326170376055224,
       "unrealizedYen": -5350.0,
       "unrealizedPercent": -7.770515613652869,
-      "weekChange": -5.995558845299776,
-      "monthChange": 0.5542359461599311,
+      "weekChange": -4.261572373254962,
+      "monthChange": 3.1670625494853555,
       "intraday": [
         {
           "label": "09:05",
@@ -1509,6 +1497,10 @@
       ],
       "week": [
         {
+          "label": "10/02",
+          "value": 1361.0
+        },
+        {
           "label": "10/05",
           "value": 1351.0
         },
@@ -1523,10 +1515,6 @@
         {
           "label": "10/08",
           "value": 1303.0
-        },
-        {
-          "label": "10/09",
-          "value": 1270.0
         }
       ],
       "month": [
@@ -1605,10 +1593,6 @@
         {
           "label": "10/08",
           "value": 1303.0
-        },
-        {
-          "label": "10/09",
-          "value": 1270.0
         }
       ],
       "news": [
@@ -1630,21 +1614,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45394.0,
-      "previousClose": 45638.0,
-      "value": 611071.33,
-      "deltaYen": -3284.61,
-      "change": -0.5346421841447957,
-      "unrealizedYen": 11065.35,
-      "unrealizedPercent": 1.8442071255496728,
-      "weekChange": 1.6480809709346511,
-      "monthChange": 3.9239926739926823,
+      "price": 45246.0,
+      "previousClose": 45394.0,
+      "value": 609079.03,
+      "deltaYen": -1992.3,
+      "change": -0.32603427765783843,
+      "unrealizedYen": 9073.05,
+      "unrealizedPercent": 1.5121601005115282,
+      "weekChange": 0.806523482755539,
+      "monthChange": 4.191037627227923,
       "intraday": [],
       "week": [
-        {
-          "label": "10/02",
-          "value": 44658.0
-        },
         {
           "label": "10/05",
           "value": 44884.0
@@ -1660,13 +1640,13 @@
         {
           "label": "10/08",
           "value": 45394.0
+        },
+        {
+          "label": "10/09",
+          "value": 45246.0
         }
       ],
       "month": [
-        {
-          "label": "09/08",
-          "value": 43680.0
-        },
         {
           "label": "09/09",
           "value": 43426.0
@@ -1742,6 +1722,10 @@
         {
           "label": "10/08",
           "value": 45394.0
+        },
+        {
+          "label": "10/09",
+          "value": 45246.0
         }
       ],
       "news": [
