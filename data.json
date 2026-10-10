@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/10 03:15",
+  "updated_at": "2026/10/10 09:40",
   "weather": {
     "text": "くもり",
     "max": 21.6,
-    "min": 9.9,
-    "rain": 29
+    "min": 9.8,
+    "rain": 24
   },
   "summary": {
     "label": "日本株評価額",
@@ -40,8 +40,8 @@
       "change": -1.1494252873563204,
       "unrealizedYen": -4220.0,
       "unrealizedPercent": -7.44530698659139,
-      "weekChange": -2.048726467331119,
-      "monthChange": -2.10293303818484,
+      "weekChange": -3.4241531664212066,
+      "monthChange": -3.2281866814240945,
       "intraday": [
         {
           "label": "09:00",
@@ -314,10 +314,6 @@
       ],
       "week": [
         {
-          "label": "10/02",
-          "value": 2709.0
-        },
-        {
           "label": "10/05",
           "value": 2716.0
         },
@@ -332,6 +328,10 @@
         {
           "label": "10/08",
           "value": 2653.5
+        },
+        {
+          "label": "10/09",
+          "value": 2623.0
         }
       ],
       "month": [
@@ -410,17 +410,13 @@
         {
           "label": "10/08",
           "value": 2653.5
+        },
+        {
+          "label": "10/09",
+          "value": 2623.0
         }
       ],
-      "news": [
-        {
-          "title": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
-          "description": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報)",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/09",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYVB6U1VEUmRha1o1eE1FWWRSVzFmbl93amxXTlZhZ043TUh5cV9sRFM1SzVXYnRkeWoyNEtxeDlmRzFxT0RGbExQOG1uSTNnTDZleDVwODVHTDMyalBaQ1dVZ2RyNmZVMXA0ZEJjN2pXOGhjek41alhyZVZwalpBRWk5b3pHS1E?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "任天堂",
@@ -437,8 +433,8 @@
       "change": 3.7574831231690142,
       "unrealizedYen": 1950.0,
       "unrealizedPercent": 2.4525216953842284,
-      "weekChange": 0.0254809529876443,
-      "monthChange": -6.546839661945003,
+      "weekChange": 5.218289847584612,
+      "monthChange": -3.0353529341745067,
       "intraday": [
         {
           "label": "09:05",
@@ -711,10 +707,6 @@
       ],
       "week": [
         {
-          "label": "10/02",
-          "value": 7849.0
-        },
-        {
           "label": "10/05",
           "value": 7742.0
         },
@@ -729,6 +721,10 @@
         {
           "label": "10/08",
           "value": 7851.0
+        },
+        {
+          "label": "10/09",
+          "value": 8146.0
         }
       ],
       "month": [
@@ -807,17 +803,13 @@
         {
           "label": "10/08",
           "value": 7851.0
+        },
+        {
+          "label": "10/09",
+          "value": 8146.0
         }
       ],
-      "news": [
-        {
-          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/10/02",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "東京海上HD",
@@ -834,8 +826,8 @@
       "change": 1.4669006382997951,
       "unrealizedYen": 2540.0,
       "unrealizedPercent": 2.4756359078033627,
-      "weekChange": 2.1087863260077278,
-      "monthChange": 0.9154559696873843,
+      "weekChange": 3.179590227091511,
+      "monthChange": 2.395790262574793,
       "intraday": [
         {
           "label": "09:05",
@@ -1023,7 +1015,7 @@
         },
         {
           "label": "13:50",
-          "value": 525.1
+          "value": 525.2
         },
         {
           "label": "13:55",
@@ -1104,10 +1096,6 @@
       ],
       "week": [
         {
-          "label": "10/02",
-          "value": 507.4
-        },
-        {
           "label": "10/05",
           "value": 509.5
         },
@@ -1122,6 +1110,10 @@
         {
           "label": "10/08",
           "value": 518.1
+        },
+        {
+          "label": "10/09",
+          "value": 525.7
         }
       ],
       "month": [
@@ -1200,17 +1192,13 @@
         {
           "label": "10/08",
           "value": 518.1
+        },
+        {
+          "label": "10/09",
+          "value": 525.7
         }
       ],
-      "news": [
-        {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "北洋銀行",
@@ -1227,8 +1215,8 @@
       "change": -2.5326170376055224,
       "unrealizedYen": -5350.0,
       "unrealizedPercent": -7.770515613652869,
-      "weekChange": -4.261572373254962,
-      "monthChange": 3.1670625494853555,
+      "weekChange": -5.995558845299776,
+      "monthChange": 0.5542359461599311,
       "intraday": [
         {
           "label": "09:05",
@@ -1497,10 +1485,6 @@
       ],
       "week": [
         {
-          "label": "10/02",
-          "value": 1361.0
-        },
-        {
           "label": "10/05",
           "value": 1351.0
         },
@@ -1515,6 +1499,10 @@
         {
           "label": "10/08",
           "value": 1303.0
+        },
+        {
+          "label": "10/09",
+          "value": 1270.0
         }
       ],
       "month": [
@@ -1593,17 +1581,13 @@
         {
           "label": "10/08",
           "value": 1303.0
+        },
+        {
+          "label": "10/09",
+          "value": 1270.0
         }
       ],
-      "news": [
-        {
-          "title": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/07/30",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5tSU1ER2RKZ1dDV0NoWjZaN1hoNy01UDdmNE4ydFEzSlZZal9sLVE5dzFsR3BaWUEzZ1hTdjU0LTZ2QWNiMjVDX0RNSUNKWXVvVUxsd0tObnR1VUJQTzh1M0Vfa3c1LWdoM3c?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -1728,15 +1712,7 @@
           "value": 45246.0
         }
       ],
-      "news": [
-        {
-          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
-          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/09",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
-        }
-      ]
+      "news": []
     }
   ]
 }
