@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/10 18:40",
+  "updated_at": "2026/10/11 02:14",
   "weather": {
     "text": "くもり",
-    "max": 21.3,
-    "min": 9.8,
-    "rain": 47
+    "max": 19.9,
+    "min": 12.2,
+    "rain": 41
   },
   "summary": {
     "label": "日本株評価額",
@@ -1031,7 +1031,7 @@
         },
         {
           "label": "13:50",
-          "value": 525.2
+          "value": 525.1
         },
         {
           "label": "13:55",
@@ -1746,11 +1746,11 @@
       ],
       "news": [
         {
-          "title": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL",
+          "title": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ[1655]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ[1655]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
           "date": "2026/10/08",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcFVycFEwY3ZLVVNyUjZUX3pFZDVMNm9hUkgyeDB6bDhla3N0M2RNaUdESWlWYXlqTWpQenhnaHlYOWpRd1lVNTF0Yng5TEpIR1dmZ2VEUWhINmRGd1lORXQ4ODg2WWF4TnE4NFZnX3BSMVM4M2VSX19iVXpnLW15UTlWUk80WWVxWTJSTHdtWm9WSDV6a3Q4SUJSRmJYeEhXam10YWFJeHNULTBaaVRVMUctdHFIczgtS2RPUVRiN1FHclB4T1FUVzBsbjg?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMDNQVk0ydTd2Z0JQNFctUnlpaHF2OThNUnJ0UE9HX1U4cnJ3dHV5bkVqNU1EWExKRVlJcC1qanYxYjVCUEkwVGFwbHdlSjNRYUxHZmtGYWptdjUyMTEtSlRVNG1nWHpUNzBzU1Jjc1BqdUp4QVk1ZWNtSUQwMkt1TTZaMklWWUI1MU5MMlhRVFUyMkJPTjhlOElVT1VTQ1hOV05OMmNqdUJzRUxoSW5VbVVUZ1lqRjN0SkFSN2N5SndtSXZUUlkzT0RVcFI?oc=5"
         }
       ]
     }
