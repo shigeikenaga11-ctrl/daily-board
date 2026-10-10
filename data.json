@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/11 02:14",
+  "updated_at": "2026/10/11 06:28",
   "weather": {
     "text": "くもり",
-    "max": 19.9,
-    "min": 12.2,
+    "max": 20.3,
+    "min": 12.6,
     "rain": 41
   },
   "summary": {
@@ -418,11 +418,11 @@
       ],
       "news": [
         {
-          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
-          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
-          "source": "ミクスOnline",
-          "date": "2026/05/12",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+          "title": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
+          "description": "【アナリスト評価】第一三共、レーティング強気を継続、目標株価3,800円に引下げ（日系大手証券）(アイフィス株予報)",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/09",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYVB6U1VEUmRha1o1eE1FWWRSVzFmbl93amxXTlZhZ043TUh5cV9sRFM1SzVXYnRkeWoyNEtxeDlmRzFxT0RGbExQOG1uSTNnTDZleDVwODVHTDMyalBaQ1dVZ2RyNmZVMXA0ZEJjN2pXOGhjek41alhyZVZwalpBRWk5b3pHS1E?oc=5"
         }
       ]
     },
@@ -1031,7 +1031,7 @@
         },
         {
           "label": "13:50",
-          "value": 525.1
+          "value": 525.2
         },
         {
           "label": "13:55",
