@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/10 09:40",
+  "updated_at": "2026/10/10 18:40",
   "weather": {
     "text": "くもり",
-    "max": 21.6,
+    "max": 21.3,
     "min": 9.8,
-    "rain": 24
+    "rain": 47
   },
   "summary": {
     "label": "日本株評価額",
@@ -416,7 +416,15 @@
           "value": 2623.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
+          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
+          "source": "ミクスOnline",
+          "date": "2026/05/12",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+        }
+      ]
     },
     {
       "name": "任天堂",
@@ -809,7 +817,15 @@
           "value": 8146.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
+        }
+      ]
     },
     {
       "name": "東京海上HD",
@@ -1198,7 +1214,15 @@
           "value": 525.7
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+        }
+      ]
     },
     {
       "name": "北洋銀行",
@@ -1587,7 +1611,15 @@
           "value": 1270.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：業績連動型株式報酬制度の継続に関するお知らせ 2026年7月30日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/07/30",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5tSU1ER2RKZ1dDV0NoWjZaN1hoNy01UDdmNE4ydFEzSlZZal9sLVE5dzFsR3BaWUEzZ1hTdjU0LTZ2QWNiMjVDX0RNSUNKWXVvVUxsd0tObnR1VUJQTzh1M0Vfa3c1LWdoM3c?oc=5"
+        }
+      ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -1712,7 +1744,15 @@
           "value": 45246.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ｉシェアーズ Ｓ＆Ｐ ５００ 米国株 ＥＴＦ（為替ヘッジあり）[2563]：金銭設定型ETF の解約に係る清算制度への対応に伴う投資信託約款の変更に関するお知らせ 2026年10月8日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/10/08",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcFVycFEwY3ZLVVNyUjZUX3pFZDVMNm9hUkgyeDB6bDhla3N0M2RNaUdESWlWYXlqTWpQenhnaHlYOWpRd1lVNTF0Yng5TEpIR1dmZ2VEUWhINmRGd1lORXQ4ODg2WWF4TnE4NFZnX3BSMVM4M2VSX19iVXpnLW15UTlWUk80WWVxWTJSTHdtWm9WSDV6a3Q4SUJSRmJYeEhXam10YWFJeHNULTBaaVRVMUctdHFIczgtS2RPUVRiN1FHclB4T1FUVzBsbjg?oc=5"
+        }
+      ]
     }
   ]
 }
