@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026/10/13 15:30",
+  "updated_at": "2026/10/14 01:51",
   "weather": {
     "text": "雨",
-    "max": 19.1,
-    "min": 13.4,
-    "rain": 33
+    "max": 21.5,
+    "min": 9.2,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 304870.0,
+    "total": 305210.0,
     "purchaseTotal": 307640,
-    "deltaYen": 2310.0,
-    "deltaPercent": 0.7634849286092015,
+    "deltaYen": 2650.0,
+    "deltaPercent": 0.8758593336858805,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 913949.03,
+    "total": 919014.02,
     "purchaseTotal": 907645.98,
-    "deltaYen": 317.70000000000005,
-    "deltaPercent": 0.0347733259103538,
-    "unrealizedYen": 6303.050000000047,
-    "unrealizedPercent": 0.6944392570327967,
+    "deltaYen": 7374.99,
+    "deltaPercent": 0.8089813793953073,
+    "unrealizedYen": 11368.040000000037,
+    "unrealizedPercent": 1.2524751114966692,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2648.5,
+      "price": 2636.0,
       "previousClose": 2623.0,
-      "value": 52970.0,
-      "deltaYen": 510.0,
-      "change": 0.972169271826151,
-      "unrealizedYen": -3710.0,
-      "unrealizedPercent": -6.545518701482004,
-      "weekChange": -3.8154069767441845,
-      "monthChange": -6.975926902126162,
+      "value": 52720.0,
+      "deltaYen": 260.0,
+      "change": 0.49561570720548787,
+      "unrealizedYen": -3960.0,
+      "unrealizedPercent": -6.986591390261116,
+      "weekChange": -3.4241531664212066,
+      "monthChange": -7.819363907924792,
       "intraday": [
         {
           "label": "09:00",
@@ -265,7 +265,7 @@
         },
         {
           "label": "14:30",
-          "value": 2651.0
+          "value": 2651.5
         },
         {
           "label": "14:35",
@@ -298,9 +298,25 @@
         {
           "label": "15:10",
           "value": 2648.5
+        },
+        {
+          "label": "15:15",
+          "value": 2646.0
+        },
+        {
+          "label": "15:20",
+          "value": 2645.0
+        },
+        {
+          "label": "15:30",
+          "value": 2636.0
         }
       ],
       "week": [
+        {
+          "label": "10/05",
+          "value": 2716.0
+        },
         {
           "label": "10/06",
           "value": 2752.0
@@ -316,10 +332,6 @@
         {
           "label": "10/09",
           "value": 2623.0
-        },
-        {
-          "label": "10/13",
-          "value": 2647.0
         }
       ],
       "month": [
@@ -390,10 +402,6 @@
         {
           "label": "10/09",
           "value": 2623.0
-        },
-        {
-          "label": "10/13",
-          "value": 2647.0
         }
       ],
       "news": [
@@ -414,15 +422,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8143.0,
+      "price": 8172.0,
       "previousClose": 8146.0,
-      "value": 81430.0,
-      "deltaYen": -30.0,
-      "change": -0.03682789098944372,
-      "unrealizedYen": 1920.0,
-      "unrealizedPercent": 2.414790592378317,
-      "weekChange": 4.197056941778632,
-      "monthChange": -1.5118529269472658,
+      "value": 81720.0,
+      "deltaYen": 260.0,
+      "change": 0.3191750552418382,
+      "unrealizedYen": 2210.0,
+      "unrealizedPercent": 2.7795245881021255,
+      "weekChange": 5.218289847584612,
+      "monthChange": -1.4755684567005267,
       "intraday": [
         {
           "label": "09:00",
@@ -679,9 +687,25 @@
         {
           "label": "15:10",
           "value": 8143.0
+        },
+        {
+          "label": "15:15",
+          "value": 8148.0
+        },
+        {
+          "label": "15:20",
+          "value": 8159.0
+        },
+        {
+          "label": "15:30",
+          "value": 8172.0
         }
       ],
       "week": [
+        {
+          "label": "10/05",
+          "value": 7742.0
+        },
         {
           "label": "10/06",
           "value": 7815.0
@@ -697,10 +721,6 @@
         {
           "label": "10/09",
           "value": 8146.0
-        },
-        {
-          "label": "10/13",
-          "value": 8143.0
         }
       ],
       "month": [
@@ -771,10 +791,6 @@
         {
           "label": "10/09",
           "value": 8146.0
-        },
-        {
-          "label": "10/13",
-          "value": 8143.0
         }
       ],
       "news": [
@@ -802,8 +818,8 @@
       "change": 1.5027535830202554,
       "unrealizedYen": 4120.0,
       "unrealizedPercent": 4.01558978283382,
-      "weekChange": 2.1443638653636743,
-      "monthChange": -2.4442226404577827,
+      "weekChange": 3.179590227091511,
+      "monthChange": -3.870527931063228,
       "intraday": [
         {
           "label": "09:00",
@@ -1031,7 +1047,7 @@
         },
         {
           "label": "14:35",
-          "value": 532.3
+          "value": 532.2
         },
         {
           "label": "14:40",
@@ -1060,9 +1076,25 @@
         {
           "label": "15:10",
           "value": 533.6
+        },
+        {
+          "label": "15:15",
+          "value": 533.5
+        },
+        {
+          "label": "15:20",
+          "value": 533.5
+        },
+        {
+          "label": "15:30",
+          "value": 533.6
         }
       ],
       "week": [
+        {
+          "label": "10/05",
+          "value": 509.5
+        },
         {
           "label": "10/06",
           "value": 522.3
@@ -1078,10 +1110,6 @@
         {
           "label": "10/09",
           "value": 525.7
-        },
-        {
-          "label": "10/13",
-          "value": 533.5
         }
       ],
       "month": [
@@ -1152,19 +1180,15 @@
         {
           "label": "10/09",
           "value": 525.7
-        },
-        {
-          "label": "10/13",
-          "value": 533.5
         }
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "東京海上ホールディングス[8766]：自己株式の取得状況に関するお知らせ 2026年10月7日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/10/07",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FanduN011eWR1S1pDUmV3WGowYW9FelNDQTVnakRfeHBYRC1UdFhabmlCdmxpNlRpNmE1NlZfSnlqdDlrSEV3ZjRGcjAwbktDdkJtam9SdUNRSW5pU08ybXI2clhGUkUtUVE?oc=5"
+          "title": "バフェット銘柄の特性を踏まえた日本株のスクリーニング（2026年4月） 野村證券ストラテジストが解説 - 野村證券",
+          "description": "バフェット銘柄の特性を踏まえた日本株のスクリーニング（2026年4月） ストラテジストが解説",
+          "source": "野村證券",
+          "date": "2026/10/09",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhSTRPS0dieTlLOGZocGo3UU1jRXlTZWJvc294TDBteFN1TkpPTnBveG1Ec3Z5ZEQzcXhXREVYOThKOWk1eENaVTNyR09yM1V6S0Uyd3M3RjZKNzBVRzdB?oc=5"
         }
       ]
     },
@@ -1176,15 +1200,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1275.0,
+      "price": 1281.0,
       "previousClose": 1270.0,
-      "value": 63750.0,
-      "deltaYen": 250.0,
-      "change": 0.3937007874015741,
-      "unrealizedYen": -5100.0,
-      "unrealizedPercent": -7.4074074074074066,
-      "weekChange": -8.72675250357654,
-      "monthChange": -3.5525321239606944,
+      "value": 64050.0,
+      "deltaYen": 550.0,
+      "change": 0.8661417322834541,
+      "unrealizedYen": -4800.0,
+      "unrealizedPercent": -6.971677559912854,
+      "weekChange": -5.995558845299776,
+      "monthChange": -4.006046863189717,
       "intraday": [
         {
           "label": "09:00",
@@ -1441,9 +1465,25 @@
         {
           "label": "15:10",
           "value": 1275.0
+        },
+        {
+          "label": "15:15",
+          "value": 1276.0
+        },
+        {
+          "label": "15:20",
+          "value": 1277.0
+        },
+        {
+          "label": "15:30",
+          "value": 1281.0
         }
       ],
       "week": [
+        {
+          "label": "10/05",
+          "value": 1351.0
+        },
         {
           "label": "10/06",
           "value": 1398.0
@@ -1459,10 +1499,6 @@
         {
           "label": "10/09",
           "value": 1270.0
-        },
-        {
-          "label": "10/13",
-          "value": 1276.0
         }
       ],
       "month": [
@@ -1533,10 +1569,6 @@
         {
           "label": "10/09",
           "value": 1270.0
-        },
-        {
-          "label": "10/13",
-          "value": 1276.0
         }
       ],
       "news": [
@@ -1558,21 +1590,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45246.0,
-      "previousClose": 45394.0,
-      "value": 609079.03,
-      "deltaYen": -1992.3,
-      "change": -0.32603427765783843,
-      "unrealizedYen": 9073.05,
-      "unrealizedPercent": 1.5121601005115282,
-      "weekChange": 0.806523482755539,
-      "monthChange": 4.191037627227923,
+      "price": 45597.0,
+      "previousClose": 45246.0,
+      "value": 613804.02,
+      "deltaYen": 4724.99,
+      "change": 0.7757591831322186,
+      "unrealizedYen": 13798.04,
+      "unrealizedPercent": 2.299650004487118,
+      "weekChange": 0.8069508312698925,
+      "monthChange": 5.51197500867755,
       "intraday": [],
       "week": [
-        {
-          "label": "10/05",
-          "value": 44884.0
-        },
         {
           "label": "10/06",
           "value": 45232.0
@@ -1588,13 +1616,13 @@
         {
           "label": "10/09",
           "value": 45246.0
+        },
+        {
+          "label": "10/13",
+          "value": 45597.0
         }
       ],
       "month": [
-        {
-          "label": "09/09",
-          "value": 43426.0
-        },
         {
           "label": "09/10",
           "value": 43215.0
@@ -1670,15 +1698,19 @@
         {
           "label": "10/09",
           "value": 45246.0
+        },
+        {
+          "label": "10/13",
+          "value": 45597.0
         }
       ],
       "news": [
         {
-          "title": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え 野村證券ストラテジストが解説 - 野村證券",
-          "description": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え ストラテジストが解説",
-          "source": "野村證券",
-          "date": "2026/10/09",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YSTd4czJrMExHQ2J0RE1xdXFFYmhsbnllUkN5S2NELVdHNnhLZV9MYUphclNmLTVtdDhZRFAzLVFMeUpMVXJ5Q0s2TzlMUGpFaWJOWThWRS1LMmJlT1Bv?oc=5"
+          "title": "AI関連銘柄は不調だが…S&P500やナスダックの「最高値更新」が期待されるワケ【米国株の注目セクター】 - トウシル",
+          "description": "AI関連銘柄は不調だが…S&P500やナスダックの「最高値更新」が期待されるワケ【米国株の注目セクター】",
+          "source": "トウシル",
+          "date": "2026/10/13",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5b1h2Q2NEN19Ib2V6NFhLY0c3NFJWdllHU29NZVJlQmFCUHp0NDN4NjFxaGYyTUxOZE5lbHRWSHpJM2ZLMXZtcC1ndW9jeThQWXdLYjI4VU0xUQ?oc=5"
         }
       ]
     }
