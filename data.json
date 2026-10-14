@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/15 01:58",
+  "updated_at": "2026/10/15 06:30",
   "weather": {
     "text": "雨",
-    "max": 14.4,
-    "min": 7.9,
-    "rain": 100
+    "max": 14.8,
+    "min": 7.6,
+    "rain": 96
   },
   "summary": {
     "label": "日本株評価額",
@@ -40,8 +40,8 @@
       "change": -1.3277693474962105,
       "unrealizedYen": -4660.0,
       "unrealizedPercent": -8.221594918842626,
-      "weekChange": -4.215116279069764,
-      "monthChange": -7.362502196450538,
+      "weekChange": -3.755781683626269,
+      "monthChange": -8.592514496573534,
       "intraday": [
         {
           "label": "09:05",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/06",
-          "value": 2752.0
-        },
-        {
           "label": "10/07",
           "value": 2702.5
         },
@@ -328,6 +324,10 @@
         {
           "label": "10/13",
           "value": 2636.0
+        },
+        {
+          "label": "10/14",
+          "value": 2601.0
         }
       ],
       "month": [
@@ -402,15 +402,19 @@
         {
           "label": "10/13",
           "value": 2636.0
+        },
+        {
+          "label": "10/14",
+          "value": 2601.0
         }
       ],
       "news": [
         {
-          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
-          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
-          "source": "ミクスOnline",
-          "date": "2026/05/12",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+          "title": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\" - 東洋経済オンライン",
+          "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
+          "source": "東洋経済オンライン",
+          "date": "2026/10/15",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5fN3FacHlPdFZBQWFvMTFUSXFTSFIyQl9LRFg2NHN5WlljLUpfUDJDSjJQQTROaGVtMEx6UksySENHcUl6MzdPTERTZWZZRTV0VUhCMkdNZDJJQmNKWjA4?oc=5"
         }
       ]
     },
@@ -429,8 +433,8 @@
       "change": 1.2971120900636235,
       "unrealizedYen": 3270.0,
       "unrealizedPercent": 4.112690227644322,
-      "weekChange": 4.568138195777349,
-      "monthChange": -1.1611030478954953,
+      "weekChange": 6.4694533762057915,
+      "monthChange": 0.12094823415578215,
       "intraday": [
         {
           "label": "09:05",
@@ -699,10 +703,6 @@
       ],
       "week": [
         {
-          "label": "10/06",
-          "value": 7815.0
-        },
-        {
           "label": "10/07",
           "value": 7775.0
         },
@@ -717,6 +717,10 @@
         {
           "label": "10/13",
           "value": 8172.0
+        },
+        {
+          "label": "10/14",
+          "value": 8278.0
         }
       ],
       "month": [
@@ -791,6 +795,10 @@
         {
           "label": "10/13",
           "value": 8172.0
+        },
+        {
+          "label": "10/14",
+          "value": 8278.0
         }
       ],
       "news": [
@@ -818,8 +826,8 @@
       "change": -0.8620689655172487,
       "unrealizedYen": 3200.0,
       "unrealizedPercent": 3.1189083820662766,
-      "weekChange": 2.163505276099653,
-      "monthChange": -2.42594111092993,
+      "weekChange": 2.519379844961245,
+      "monthChange": -3.2670923651399564,
       "intraday": [
         {
           "label": "09:05",
@@ -1088,10 +1096,6 @@
       ],
       "week": [
         {
-          "label": "10/06",
-          "value": 522.3
-        },
-        {
           "label": "10/07",
           "value": 516.0
         },
@@ -1106,6 +1110,10 @@
         {
           "label": "10/13",
           "value": 533.6
+        },
+        {
+          "label": "10/14",
+          "value": 529.0
         }
       ],
       "month": [
@@ -1180,6 +1188,10 @@
         {
           "label": "10/13",
           "value": 533.6
+        },
+        {
+          "label": "10/14",
+          "value": 529.0
         }
       ],
       "news": [
@@ -1207,8 +1219,8 @@
       "change": -4.839968774395009,
       "unrealizedYen": -7900.0,
       "unrealizedPercent": -11.474219317356573,
-      "weekChange": -8.369098712446355,
-      "monthChange": -3.1746031746031744,
+      "weekChange": -10.036900369003687,
+      "monthChange": -7.860922146636429,
       "intraday": [
         {
           "label": "09:00",
@@ -1481,10 +1493,6 @@
       ],
       "week": [
         {
-          "label": "10/06",
-          "value": 1398.0
-        },
-        {
           "label": "10/07",
           "value": 1355.0
         },
@@ -1499,6 +1507,10 @@
         {
           "label": "10/13",
           "value": 1281.0
+        },
+        {
+          "label": "10/14",
+          "value": 1219.0
         }
       ],
       "month": [
@@ -1573,6 +1585,10 @@
         {
           "label": "10/13",
           "value": 1281.0
+        },
+        {
+          "label": "10/14",
+          "value": 1219.0
         }
       ],
       "news": [
