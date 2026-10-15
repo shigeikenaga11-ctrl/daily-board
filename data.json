@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/16 01:45",
+  "updated_at": "2026/10/16 06:12",
   "weather": {
     "text": "雨",
-    "max": 14.4,
-    "min": 8.1,
+    "max": 15.2,
+    "min": 8.2,
     "rain": 78
   },
   "summary": {
@@ -40,8 +40,8 @@
       "change": 1.922337562475973,
       "unrealizedYen": -3660.0,
       "unrealizedPercent": -6.4573041637261825,
-      "weekChange": -3.755781683626269,
-      "monthChange": -8.302485457429931,
+      "weekChange": -0.09421518748822244,
+      "monthChange": -6.539749691521246,
       "intraday": [
         {
           "label": "09:05",
@@ -302,10 +302,6 @@
       ],
       "week": [
         {
-          "label": "10/07",
-          "value": 2702.5
-        },
-        {
           "label": "10/08",
           "value": 2653.5
         },
@@ -320,6 +316,10 @@
         {
           "label": "10/14",
           "value": 2601.0
+        },
+        {
+          "label": "10/15",
+          "value": 2651.0
         }
       ],
       "month": [
@@ -394,6 +394,10 @@
         {
           "label": "10/14",
           "value": 2601.0
+        },
+        {
+          "label": "10/15",
+          "value": 2651.0
         }
       ],
       "news": [
@@ -421,8 +425,8 @@
       "change": -0.6040106305870929,
       "unrealizedYen": 2770.0,
       "unrealizedPercent": 3.483838510879135,
-      "weekChange": 6.4694533762057915,
-      "monthChange": 1.9709288001970915,
+      "weekChange": 4.801936059100753,
+      "monthChange": 1.3550135501354976,
       "intraday": [
         {
           "label": "09:05",
@@ -683,10 +687,6 @@
       ],
       "week": [
         {
-          "label": "10/07",
-          "value": 7775.0
-        },
-        {
           "label": "10/08",
           "value": 7851.0
         },
@@ -701,6 +701,10 @@
         {
           "label": "10/14",
           "value": 8278.0
+        },
+        {
+          "label": "10/15",
+          "value": 8228.0
         }
       ],
       "month": [
@@ -775,6 +779,10 @@
         {
           "label": "10/14",
           "value": 8278.0
+        },
+        {
+          "label": "10/15",
+          "value": 8228.0
         }
       ],
       "news": [
@@ -802,8 +810,8 @@
       "change": 2.5708838536743883,
       "unrealizedYen": 5920.0,
       "unrealizedPercent": 5.769975747746101,
-      "weekChange": 2.519379844961245,
-      "monthChange": -1.7823943596532388,
+      "weekChange": 4.728817053560386,
+      "monthChange": 0.7426662052200106,
       "intraday": [
         {
           "label": "09:05",
@@ -1064,10 +1072,6 @@
       ],
       "week": [
         {
-          "label": "10/07",
-          "value": 516.0
-        },
-        {
           "label": "10/08",
           "value": 518.1
         },
@@ -1082,6 +1086,10 @@
         {
           "label": "10/14",
           "value": 529.0
+        },
+        {
+          "label": "10/15",
+          "value": 542.6
         }
       ],
       "month": [
@@ -1156,15 +1164,19 @@
         {
           "label": "10/14",
           "value": 529.0
+        },
+        {
+          "label": "10/15",
+          "value": 542.6
         }
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み - 現代ビジネス",
+          "description": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み",
+          "source": "現代ビジネス",
+          "date": "2026/09/28",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GRXJlR2ZoNzNBSk56YkVvUFNxZU85blFNaDNVVEt5MV82aURZazJIYnJCSTNJaGtQMnVlVGVvVFotRVoyNGF1M0J5cDVoS1E?oc=5"
         }
       ]
     },
@@ -1183,8 +1195,8 @@
       "change": -3.3634126333059844,
       "unrealizedYen": -9950.0,
       "unrealizedPercent": -14.451706608569353,
-      "weekChange": -10.036900369003687,
-      "monthChange": -6.302843966179861,
+      "weekChange": -9.593246354566388,
+      "monthChange": -9.454265949269791,
       "intraday": [
         {
           "label": "09:05",
@@ -1445,10 +1457,6 @@
       ],
       "week": [
         {
-          "label": "10/07",
-          "value": 1355.0
-        },
-        {
           "label": "10/08",
           "value": 1303.0
         },
@@ -1463,6 +1471,10 @@
         {
           "label": "10/14",
           "value": 1219.0
+        },
+        {
+          "label": "10/15",
+          "value": 1178.0
         }
       ],
       "month": [
@@ -1537,6 +1549,10 @@
         {
           "label": "10/14",
           "value": 1219.0
+        },
+        {
+          "label": "10/15",
+          "value": 1178.0
         }
       ],
       "news": [
