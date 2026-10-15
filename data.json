@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/15 20:14",
+  "updated_at": "2026/10/16 01:45",
   "weather": {
     "text": "雨",
-    "max": 14.9,
-    "min": 7.7,
-    "rain": 100
+    "max": 14.4,
+    "min": 8.1,
+    "rain": 78
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 916120.17,
+    "total": 907531.73,
     "purchaseTotal": 907645.98,
-    "deltaYen": 766.1600000000001,
-    "deltaPercent": 0.0837009497560403,
-    "unrealizedYen": 8474.19000000006,
-    "unrealizedPercent": 0.9336448556738014,
+    "deltaYen": -7418.4400000000005,
+    "deltaPercent": -0.810802625458827,
+    "unrealizedYen": -114.25,
+    "unrealizedPercent": -0.01258750686032896,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": 1.922337562475973,
       "unrealizedYen": -3660.0,
       "unrealizedPercent": -6.4573041637261825,
-      "weekChange": -0.09421518748822244,
-      "monthChange": -6.539749691521246,
+      "weekChange": -3.755781683626269,
+      "monthChange": -8.302485457429931,
       "intraday": [
         {
           "label": "09:05",
@@ -302,6 +302,10 @@
       ],
       "week": [
         {
+          "label": "10/07",
+          "value": 2702.5
+        },
+        {
           "label": "10/08",
           "value": 2653.5
         },
@@ -316,10 +320,6 @@
         {
           "label": "10/14",
           "value": 2601.0
-        },
-        {
-          "label": "10/15",
-          "value": 2651.0
         }
       ],
       "month": [
@@ -394,10 +394,6 @@
         {
           "label": "10/14",
           "value": 2601.0
-        },
-        {
-          "label": "10/15",
-          "value": 2651.0
         }
       ],
       "news": [
@@ -406,7 +402,7 @@
           "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
           "source": "東洋経済オンライン",
           "date": "2026/10/15",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwYXFFT19DMW4tX19rSTI2WTFSRFQ1QUI1d05vSEdRTE9pU1pSbUp5X0pPNEtIQy0xYUNDb2VyNVdzOXlsSkxyX1BxcjNnVDc1WnhreWthNXJaZW8?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5fN3FacHlPdFZBQWFvMTFUSXFTSFIyQl9LRFg2NHN5WlljLUpfUDJDSjJQQTROaGVtMEx6UksySENHcUl6MzdPTERTZWZZRTV0VUhCMkdNZDJJQmNKWjA4?oc=5"
         }
       ]
     },
@@ -425,8 +421,8 @@
       "change": -0.6040106305870929,
       "unrealizedYen": 2770.0,
       "unrealizedPercent": 3.483838510879135,
-      "weekChange": 4.801936059100753,
-      "monthChange": 1.3550135501354976,
+      "weekChange": 6.4694533762057915,
+      "monthChange": 1.9709288001970915,
       "intraday": [
         {
           "label": "09:05",
@@ -687,6 +683,10 @@
       ],
       "week": [
         {
+          "label": "10/07",
+          "value": 7775.0
+        },
+        {
           "label": "10/08",
           "value": 7851.0
         },
@@ -701,10 +701,6 @@
         {
           "label": "10/14",
           "value": 8278.0
-        },
-        {
-          "label": "10/15",
-          "value": 8228.0
         }
       ],
       "month": [
@@ -779,10 +775,6 @@
         {
           "label": "10/14",
           "value": 8278.0
-        },
-        {
-          "label": "10/15",
-          "value": 8228.0
         }
       ],
       "news": [
@@ -810,8 +802,8 @@
       "change": 2.5708838536743883,
       "unrealizedYen": 5920.0,
       "unrealizedPercent": 5.769975747746101,
-      "weekChange": 4.728817053560386,
-      "monthChange": 0.7426662052200106,
+      "weekChange": 2.519379844961245,
+      "monthChange": -1.7823943596532388,
       "intraday": [
         {
           "label": "09:05",
@@ -1072,6 +1064,10 @@
       ],
       "week": [
         {
+          "label": "10/07",
+          "value": 516.0
+        },
+        {
           "label": "10/08",
           "value": 518.1
         },
@@ -1086,10 +1082,6 @@
         {
           "label": "10/14",
           "value": 529.0
-        },
-        {
-          "label": "10/15",
-          "value": 542.6
         }
       ],
       "month": [
@@ -1164,19 +1156,15 @@
         {
           "label": "10/14",
           "value": 529.0
-        },
-        {
-          "label": "10/15",
-          "value": 542.6
         }
       ],
       "news": [
         {
-          "title": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み - 現代ビジネス",
-          "description": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み",
-          "source": "現代ビジネス",
-          "date": "2026/09/28",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GRXJlR2ZoNzNBSk56YkVvUFNxZU85blFNaDNVVEt5MV82aURZazJIYnJCSTNJaGtQMnVlVGVvVFotRVoyNGF1M0J5cDVoS1E?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1195,8 +1183,8 @@
       "change": -3.3634126333059844,
       "unrealizedYen": -9950.0,
       "unrealizedPercent": -14.451706608569353,
-      "weekChange": -9.593246354566388,
-      "monthChange": -9.454265949269791,
+      "weekChange": -10.036900369003687,
+      "monthChange": -6.302843966179861,
       "intraday": [
         {
           "label": "09:05",
@@ -1457,6 +1445,10 @@
       ],
       "week": [
         {
+          "label": "10/07",
+          "value": 1355.0
+        },
+        {
           "label": "10/08",
           "value": 1303.0
         },
@@ -1471,10 +1463,6 @@
         {
           "label": "10/14",
           "value": 1219.0
-        },
-        {
-          "label": "10/15",
-          "value": 1178.0
         }
       ],
       "month": [
@@ -1549,10 +1537,6 @@
         {
           "label": "10/14",
           "value": 1219.0
-        },
-        {
-          "label": "10/15",
-          "value": 1178.0
         }
       ],
       "news": [
@@ -1574,21 +1558,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45567.0,
-      "previousClose": 45597.0,
-      "value": 613400.17,
-      "deltaYen": -403.84,
-      "change": -0.06579380222383469,
-      "unrealizedYen": 13394.19,
-      "unrealizedPercent": 2.2323431750874994,
-      "weekChange": -0.1555721109601671,
-      "monthChange": 5.42303865997269,
+      "price": 44929.0,
+      "previousClose": 45567.0,
+      "value": 604811.73,
+      "deltaYen": -8588.44,
+      "change": -1.4001360633791982,
+      "unrealizedYen": 4805.76,
+      "unrealizedPercent": 0.8009512698555097,
+      "weekChange": -1.024364453451998,
+      "monthChange": 3.728586600175454,
       "intraday": [],
       "week": [
-        {
-          "label": "10/07",
-          "value": 45638.0
-        },
         {
           "label": "10/08",
           "value": 45394.0
@@ -1604,13 +1584,13 @@
         {
           "label": "10/14",
           "value": 45567.0
+        },
+        {
+          "label": "10/15",
+          "value": 44929.0
         }
       ],
       "month": [
-        {
-          "label": "09/11",
-          "value": 43223.0
-        },
         {
           "label": "09/14",
           "value": 43314.0
@@ -1686,15 +1666,19 @@
         {
           "label": "10/14",
           "value": 45567.0
+        },
+        {
+          "label": "10/15",
+          "value": 44929.0
         }
       ],
       "news": [
         {
-          "title": "AI関連銘柄は不調だが…S&P500やナスダックの「最高値更新」が期待されるワケ【米国株の注目セクター】 - トウシル",
-          "description": "AI関連銘柄は不調だが…S&P500やナスダックの「最高値更新」が期待されるワケ【米国株の注目セクター】",
-          "source": "トウシル",
-          "date": "2026/10/13",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5b1h2Q2NEN19Ib2V6NFhLY0c3NFJWdllHU29NZVJlQmFCUHp0NDN4NjFxaGYyTUxOZE5lbHRWSHpJM2ZLMXZtcC1ndW9jeThQWXdLYjI4VU0xUQ?oc=5"
+          "title": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
+          "description": "iシェアーズ S&P500プレミアムインカム【452A】：株価・株式情報（夜間PTS含む）",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/15",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IaUlXYUt6WWFlTGtOelkwMUwwb01mUzJzRjBXYXd4cjBYeVhLMVA2NG1sQTVGdFh4eTZOMmFENVp3c3pfNldsSnAxMTVuUlZ0TkE?oc=5"
         }
       ]
     }
