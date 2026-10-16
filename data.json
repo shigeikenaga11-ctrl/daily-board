@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/17 01:28",
+  "updated_at": "2026/10/17 05:50",
   "weather": {
-    "text": "晴れ",
-    "max": 12.9,
-    "min": 9.8,
-    "rain": 6
+    "text": "雨",
+    "max": 13.3,
+    "min": 9.7,
+    "rain": 35
   },
   "summary": {
     "label": "日本株評価額",
@@ -40,8 +40,8 @@
       "change": 3.3760844964164427,
       "unrealizedYen": -1870.0,
       "unrealizedPercent": -3.299223712067749,
-      "weekChange": -0.09421518748822244,
-      "monthChange": -6.622050017611835,
+      "weekChange": 4.479603507434238,
+      "monthChange": -3.4695315251849213,
       "intraday": [
         {
           "label": "09:05",
@@ -69,7 +69,7 @@
         },
         {
           "label": "09:35",
-          "value": 2729.5
+          "value": 2730.0
         },
         {
           "label": "09:40",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/08",
-          "value": 2653.5
-        },
-        {
           "label": "10/09",
           "value": 2623.0
         },
@@ -328,6 +324,10 @@
         {
           "label": "10/15",
           "value": 2651.0
+        },
+        {
+          "label": "10/16",
+          "value": 2740.5
         }
       ],
       "month": [
@@ -402,6 +402,10 @@
         {
           "label": "10/15",
           "value": 2651.0
+        },
+        {
+          "label": "10/16",
+          "value": 2740.5
         }
       ],
       "news": [
@@ -429,8 +433,8 @@
       "change": 3.0505590666018545,
       "unrealizedYen": 5280.0,
       "unrealizedPercent": 6.640674129040372,
-      "weekChange": 4.801936059100753,
-      "monthChange": 1.2552301255230214,
+      "weekChange": 4.087895899828142,
+      "monthChange": 4.344080728525723,
       "intraday": [
         {
           "label": "09:00",
@@ -703,10 +707,6 @@
       ],
       "week": [
         {
-          "label": "10/08",
-          "value": 7851.0
-        },
-        {
           "label": "10/09",
           "value": 8146.0
         },
@@ -721,6 +721,10 @@
         {
           "label": "10/15",
           "value": 8228.0
+        },
+        {
+          "label": "10/16",
+          "value": 8479.0
         }
       ],
       "month": [
@@ -795,6 +799,10 @@
         {
           "label": "10/15",
           "value": 8228.0
+        },
+        {
+          "label": "10/16",
+          "value": 8479.0
         }
       ],
       "news": [
@@ -822,8 +830,8 @@
       "change": 2.893473607255581,
       "unrealizedYen": 9060.0,
       "unrealizedPercent": 8.830406977186891,
-      "weekChange": 4.728817053560386,
-      "monthChange": 0.4814769603588065,
+      "weekChange": 6.2012506807968215,
+      "monthChange": 3.3888866283275476,
       "intraday": [
         {
           "label": "09:05",
@@ -1092,10 +1100,6 @@
       ],
       "week": [
         {
-          "label": "10/08",
-          "value": 518.1
-        },
-        {
           "label": "10/09",
           "value": 525.7
         },
@@ -1110,6 +1114,10 @@
         {
           "label": "10/15",
           "value": 542.6
+        },
+        {
+          "label": "10/16",
+          "value": 558.3
         }
       ],
       "month": [
@@ -1184,6 +1192,10 @@
         {
           "label": "10/15",
           "value": 542.6
+        },
+        {
+          "label": "10/16",
+          "value": 558.3
         }
       ],
       "news": [
@@ -1211,8 +1223,8 @@
       "change": 1.7826825127334356,
       "unrealizedYen": -8900.0,
       "unrealizedPercent": -12.926652142338416,
-      "weekChange": -9.593246354566388,
-      "monthChange": -11.760299625468162,
+      "weekChange": -5.590551181102366,
+      "monthChange": -10.187265917602994,
       "intraday": [
         {
           "label": "09:05",
@@ -1481,10 +1493,6 @@
       ],
       "week": [
         {
-          "label": "10/08",
-          "value": 1303.0
-        },
-        {
           "label": "10/09",
           "value": 1270.0
         },
@@ -1499,6 +1507,10 @@
         {
           "label": "10/15",
           "value": 1178.0
+        },
+        {
+          "label": "10/16",
+          "value": 1199.0
         }
       ],
       "month": [
@@ -1573,6 +1585,10 @@
         {
           "label": "10/15",
           "value": 1178.0
+        },
+        {
+          "label": "10/16",
+          "value": 1199.0
         }
       ],
       "news": [
@@ -1710,11 +1726,11 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日 - 外為どっとコム",
-          "description": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日",
-          "source": "外為どっとコム",
-          "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QQ21vaVdmRFVHMG40aXJydUVmQXNoWGg3VUZwbHV0VDNJUUxVTmJ5bU92Wkc5T2xOeWZlbTV0ZEVrcXZaZVp4dGtvWWZWeDQtZkVIQzl3RXI4NTNVcm1CR2ZKdw?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/17",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
