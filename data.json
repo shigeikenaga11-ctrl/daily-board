@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/16 20:09",
+  "updated_at": "2026/10/17 01:28",
   "weather": {
-    "text": "雨",
-    "max": 15.4,
-    "min": 8.1,
-    "rain": 78
+    "text": "晴れ",
+    "max": 12.9,
+    "min": 9.8,
+    "rain": 6
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 916021.73,
+    "total": 918794.8,
     "purchaseTotal": 907645.98,
-    "deltaYen": -98.44000000000051,
-    "deltaPercent": -0.010745315213396132,
-    "unrealizedYen": 8375.75,
-    "unrealizedPercent": 0.9227992173776829,
+    "deltaYen": 11263.07,
+    "deltaPercent": 1.2410662490004618,
+    "unrealizedYen": 11148.820000000065,
+    "unrealizedPercent": 1.228322522840906,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": 3.3760844964164427,
       "unrealizedYen": -1870.0,
       "unrealizedPercent": -3.299223712067749,
-      "weekChange": 4.479603507434238,
-      "monthChange": -3.4695315251849213,
+      "weekChange": -0.09421518748822244,
+      "monthChange": -6.622050017611835,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/08",
+          "value": 2653.5
+        },
+        {
           "label": "10/09",
           "value": 2623.0
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/15",
           "value": 2651.0
-        },
-        {
-          "label": "10/16",
-          "value": 2740.5
         }
       ],
       "month": [
@@ -402,10 +402,6 @@
         {
           "label": "10/15",
           "value": 2651.0
-        },
-        {
-          "label": "10/16",
-          "value": 2740.5
         }
       ],
       "news": [
@@ -433,8 +429,8 @@
       "change": 3.0505590666018545,
       "unrealizedYen": 5280.0,
       "unrealizedPercent": 6.640674129040372,
-      "weekChange": 4.087895899828142,
-      "monthChange": 4.344080728525723,
+      "weekChange": 4.801936059100753,
+      "monthChange": 1.2552301255230214,
       "intraday": [
         {
           "label": "09:00",
@@ -707,6 +703,10 @@
       ],
       "week": [
         {
+          "label": "10/08",
+          "value": 7851.0
+        },
+        {
           "label": "10/09",
           "value": 8146.0
         },
@@ -721,10 +721,6 @@
         {
           "label": "10/15",
           "value": 8228.0
-        },
-        {
-          "label": "10/16",
-          "value": 8479.0
         }
       ],
       "month": [
@@ -799,10 +795,6 @@
         {
           "label": "10/15",
           "value": 8228.0
-        },
-        {
-          "label": "10/16",
-          "value": 8479.0
         }
       ],
       "news": [
@@ -830,8 +822,8 @@
       "change": 2.893473607255581,
       "unrealizedYen": 9060.0,
       "unrealizedPercent": 8.830406977186891,
-      "weekChange": 6.2012506807968215,
-      "monthChange": 3.3888866283275476,
+      "weekChange": 4.728817053560386,
+      "monthChange": 0.4814769603588065,
       "intraday": [
         {
           "label": "09:05",
@@ -1100,6 +1092,10 @@
       ],
       "week": [
         {
+          "label": "10/08",
+          "value": 518.1
+        },
+        {
           "label": "10/09",
           "value": 525.7
         },
@@ -1114,10 +1110,6 @@
         {
           "label": "10/15",
           "value": 542.6
-        },
-        {
-          "label": "10/16",
-          "value": 558.3
         }
       ],
       "month": [
@@ -1192,10 +1184,6 @@
         {
           "label": "10/15",
           "value": 542.6
-        },
-        {
-          "label": "10/16",
-          "value": 558.3
         }
       ],
       "news": [
@@ -1223,8 +1211,8 @@
       "change": 1.7826825127334356,
       "unrealizedYen": -8900.0,
       "unrealizedPercent": -12.926652142338416,
-      "weekChange": -5.590551181102366,
-      "monthChange": -10.187265917602994,
+      "weekChange": -9.593246354566388,
+      "monthChange": -11.760299625468162,
       "intraday": [
         {
           "label": "09:05",
@@ -1493,6 +1481,10 @@
       ],
       "week": [
         {
+          "label": "10/08",
+          "value": 1303.0
+        },
+        {
           "label": "10/09",
           "value": 1270.0
         },
@@ -1507,10 +1499,6 @@
         {
           "label": "10/15",
           "value": 1178.0
-        },
-        {
-          "label": "10/16",
-          "value": 1199.0
         }
       ],
       "month": [
@@ -1585,10 +1573,6 @@
         {
           "label": "10/15",
           "value": 1178.0
-        },
-        {
-          "label": "10/16",
-          "value": 1199.0
         }
       ],
       "news": [
@@ -1610,21 +1594,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44929.0,
-      "previousClose": 45567.0,
-      "value": 604811.73,
-      "deltaYen": -8588.44,
-      "change": -1.4001360633791982,
-      "unrealizedYen": 4805.76,
-      "unrealizedPercent": 0.8009512698555097,
-      "weekChange": -1.024364453451998,
-      "monthChange": 3.728586600175454,
+      "price": 45135.0,
+      "previousClose": 44929.0,
+      "value": 607584.8,
+      "deltaYen": 2773.07,
+      "change": 0.45850119076764617,
+      "unrealizedYen": 7578.82,
+      "unrealizedPercent": 1.2631248317329244,
+      "weekChange": -0.24532555364009667,
+      "monthChange": 4.002488593944431,
       "intraday": [],
       "week": [
-        {
-          "label": "10/08",
-          "value": 45394.0
-        },
         {
           "label": "10/09",
           "value": 45246.0
@@ -1640,13 +1620,13 @@
         {
           "label": "10/15",
           "value": 44929.0
+        },
+        {
+          "label": "10/16",
+          "value": 45135.0
         }
       ],
       "month": [
-        {
-          "label": "09/14",
-          "value": 43314.0
-        },
         {
           "label": "09/15",
           "value": 43398.0
@@ -1722,15 +1702,19 @@
         {
           "label": "10/15",
           "value": 44929.0
+        },
+        {
+          "label": "10/16",
+          "value": 45135.0
         }
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
+          "title": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日 - 外為どっとコム",
+          "description": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日",
+          "source": "外為どっとコム",
           "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QQ21vaVdmRFVHMG40aXJydUVmQXNoWGg3VUZwbHV0VDNJUUxVTmJ5bU92Wkc5T2xOeWZlbTV0ZEVrcXZaZVp4dGtvWWZWeDQtZkVIQzl3RXI4NTNVcm1CR2ZKdw?oc=5"
         }
       ]
     }
