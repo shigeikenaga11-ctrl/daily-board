@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/17 05:50",
+  "updated_at": "2026/10/17 08:24",
   "weather": {
     "text": "雨",
-    "max": 13.3,
+    "max": 13.2,
     "min": 9.7,
-    "rain": 35
+    "rain": 6
   },
   "summary": {
     "label": "日本株評価額",
@@ -1726,11 +1726,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/17",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日 - 外為どっとコム",
+          "description": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日",
+          "source": "外為どっとコム",
+          "date": "2026/10/16",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QQ21vaVdmRFVHMG40aXJydUVmQXNoWGg3VUZwbHV0VDNJUUxVTmJ5bU92Wkc5T2xOeWZlbTV0ZEVrcXZaZVp4dGtvWWZWeDQtZkVIQzl3RXI4NTNVcm1CR2ZKdw?oc=5"
         }
       ]
     }
