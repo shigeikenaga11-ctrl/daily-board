@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026/10/17 12:59",
+  "updated_at": "2026/10/17 19:28",
   "weather": {
     "text": "雨",
-    "max": 13.0,
+    "max": 13.7,
     "min": 9.7,
     "rain": 8
   },
@@ -807,11 +807,11 @@
       ],
       "news": [
         {
-          "title": "任天堂、「スイッチ2」の本体修理費を値上げ CPU基板は9900円増、11月16日到着分から - CNET Japan",
-          "description": "任天堂、「スイッチ2」の本体修理費を値上げ CPU基板は9900円増、11月16日到着分から",
-          "source": "CNET Japan",
-          "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JbHIyYkM1cnFJVG93alJnbDA2UVprbHcydnVySnFOMEtzSy05RmttOXVDY3VkTXVrOHY1OXZSVkhtQU54LXE0SWJMNjdOWm1OZWc?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
