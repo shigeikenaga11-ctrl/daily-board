@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/18 07:59",
+  "updated_at": "2026/10/18 13:07",
   "weather": {
     "text": "くもり",
-    "max": 14.6,
-    "min": 3.9,
-    "rain": 20
+    "max": 14.5,
+    "min": 3.3,
+    "rain": 11
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,13 +16,13 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 918794.8,
+    "total": null,
     "purchaseTotal": 907645.98,
-    "deltaYen": 11263.07,
-    "deltaPercent": 1.2410662490004618,
-    "unrealizedYen": 11148.820000000065,
-    "unrealizedPercent": 1.228322522840906,
-    "complete": true
+    "deltaYen": null,
+    "deltaPercent": null,
+    "unrealizedYen": null,
+    "unrealizedPercent": null,
+    "complete": false
   },
   "assets": [
     {
@@ -1610,120 +1610,18 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45135.0,
-      "previousClose": 44929.0,
-      "value": 607584.8,
-      "deltaYen": 2773.07,
-      "change": 0.45850119076764617,
-      "unrealizedYen": 7578.82,
-      "unrealizedPercent": 1.2631248317329244,
-      "weekChange": -0.24532555364009667,
-      "monthChange": 4.002488593944431,
+      "price": null,
+      "previousClose": null,
+      "value": null,
+      "deltaYen": null,
+      "change": null,
+      "unrealizedYen": null,
+      "unrealizedPercent": null,
+      "weekChange": null,
+      "monthChange": null,
       "intraday": [],
-      "week": [
-        {
-          "label": "10/09",
-          "value": 45246.0
-        },
-        {
-          "label": "10/13",
-          "value": 45597.0
-        },
-        {
-          "label": "10/14",
-          "value": 45567.0
-        },
-        {
-          "label": "10/15",
-          "value": 44929.0
-        },
-        {
-          "label": "10/16",
-          "value": 45135.0
-        }
-      ],
-      "month": [
-        {
-          "label": "09/15",
-          "value": 43398.0
-        },
-        {
-          "label": "09/16",
-          "value": 43410.0
-        },
-        {
-          "label": "09/17",
-          "value": 43454.0
-        },
-        {
-          "label": "09/18",
-          "value": 43966.0
-        },
-        {
-          "label": "09/24",
-          "value": 44842.0
-        },
-        {
-          "label": "09/25",
-          "value": 45049.0
-        },
-        {
-          "label": "09/28",
-          "value": 44991.0
-        },
-        {
-          "label": "09/29",
-          "value": 44556.0
-        },
-        {
-          "label": "09/30",
-          "value": 44450.0
-        },
-        {
-          "label": "10/01",
-          "value": 44514.0
-        },
-        {
-          "label": "10/02",
-          "value": 44658.0
-        },
-        {
-          "label": "10/05",
-          "value": 44884.0
-        },
-        {
-          "label": "10/06",
-          "value": 45232.0
-        },
-        {
-          "label": "10/07",
-          "value": 45638.0
-        },
-        {
-          "label": "10/08",
-          "value": 45394.0
-        },
-        {
-          "label": "10/09",
-          "value": 45246.0
-        },
-        {
-          "label": "10/13",
-          "value": 45597.0
-        },
-        {
-          "label": "10/14",
-          "value": 45567.0
-        },
-        {
-          "label": "10/15",
-          "value": 44929.0
-        },
-        {
-          "label": "10/16",
-          "value": 45135.0
-        }
-      ],
+      "week": [],
+      "month": [],
       "news": [
         {
           "title": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日 - 外為どっとコム",
