@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/19 00:43",
+  "updated_at": "2026/10/19 05:26",
   "weather": {
     "text": "雨",
-    "max": 20.6,
-    "min": 10.5,
+    "max": 20.8,
+    "min": 10.4,
     "rain": 100
   },
   "summary": {
@@ -414,7 +414,7 @@
           "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
           "source": "東洋経済オンライン",
           "date": "2026/10/15",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fMEUtcC1Tb3cxZXlpMjh3QXg2UGliZ0dPdkJtYzhYRlBSRG5VS3VjRk10SXptWFFhQnV0Um1mMzZhc25kZHQzcDVaVUJiY2JZbWl5RFA4UF83eW8?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwYXFFT19DMW4tX19rSTI2WTFSRFQ1QUI1d05vSEdRTE9pU1pSbUp5X0pPNEtIQy0xYUNDb2VyNVdzOXlsSkxyX1BxcjNnVDc1WnhreWthNXJaZW8?oc=5"
         }
       ]
     },
@@ -1726,11 +1726,11 @@
       ],
       "news": [
         {
-          "title": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 野村證券ストラテジストが解説 - 野村證券",
-          "description": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 ストラテジストが解説",
+          "title": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 野村證券ストラテジストが解説 - 野村證券",
+          "description": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 ストラテジストが解説",
           "source": "野村證券",
           "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iSjRicC1qbngyQnFtWDU4cVdDU2xQLUFOcVRvempLbVFTN1BNYXlqQUduSVM5dWY1Zy0xLW0zZ3JPdlhxTmJqNmtwYjNvb1ROVVA0VDZ3MUZCelNCY21J?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FRmhhWEEwcFpETzRRY3lfTkI5UlVmQ2ZucE9JR0xJVXZIaGFjNFNhbVBPNUcyYXc4UXg0V3FzM09nZmtuSTQ5dlVsbmtybnBQYnBqQS1rQjFDNXFtdzA0?oc=5"
         }
       ]
     }
