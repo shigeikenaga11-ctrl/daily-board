@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/19 21:49",
+  "updated_at": "2026/10/20 05:30",
   "weather": {
-    "text": "雷雨",
-    "max": 19.6,
-    "min": 10.8,
-    "rain": 100
+    "text": "雨",
+    "max": 16.2,
+    "min": 8.2,
+    "rain": 0
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 919014.8,
+    "total": 911462.9,
     "purchaseTotal": 907645.98,
-    "deltaYen": 2993.07,
-    "deltaPercent": 0.32674661549786593,
-    "unrealizedYen": 11368.820000000065,
-    "unrealizedPercent": 1.2525610480861784,
+    "deltaYen": -7331.9,
+    "deltaPercent": -0.797991020410651,
+    "unrealizedYen": 3816.920000000042,
+    "unrealizedPercent": 0.4205295989963005,
     "complete": true
   },
   "assets": [
@@ -795,11 +795,11 @@
       ],
       "news": [
         {
-          "title": "【アナリスト評価】任天堂、レーティング強気を継続、目標株価9,800円に引下げ（米系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
-          "description": "【アナリスト評価】任天堂、レーティング強気を継続、目標株価9,800円に引下げ（米系大手証券）(アイフィス株予報)",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/19",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWhWZHVWSmJwRTdmaGQ5NHB6V2hQTDZPTlRYZzdvT3lXdmhFQTd6MjlHVXFOWE1IYVZneEN2UnlYQjVIbVYwb3pNWElvTjhDQ3J2OGRHaU45Q0ZLTk4wTlBHbmhrVC1PdHhfdEpUVVdJVDd5bkhYbkdoTGV2ZDZpSFBlT0c3T1k?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
@@ -1184,11 +1184,11 @@
       ],
       "news": [
         {
-          "title": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み - 現代ビジネス",
-          "description": "株式15分割で5万円台の東京海上…数ある日本企業からバークシャーが選んだ\"バフェット好み\"の稼ぐ仕組み",
-          "source": "現代ビジネス",
-          "date": "2026/09/28",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GRXJlR2ZoNzNBSk56YkVvUFNxZU85blFNaDNVVEt5MV82aURZazJIYnJCSTNJaGtQMnVlVGVvVFotRVoyNGF1M0J5cDVoS1E?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1590,21 +1590,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45135.0,
-      "previousClose": 44929.0,
-      "value": 607584.8,
-      "deltaYen": 2773.07,
-      "change": 0.45850119076764617,
-      "unrealizedYen": 7578.82,
-      "unrealizedPercent": 1.2631248317329244,
-      "weekChange": -0.24532555364009667,
-      "monthChange": 4.002488593944431,
+      "price": 44574.0,
+      "previousClose": 45135.0,
+      "value": 600032.9,
+      "deltaYen": -7551.9,
+      "change": -1.2429378531073398,
+      "unrealizedYen": 26.92,
+      "unrealizedPercent": 0.004487121959966801,
+      "weekChange": -2.2435686558326173,
+      "monthChange": 2.681409813407054,
       "intraday": [],
       "week": [
-        {
-          "label": "10/09",
-          "value": 45246.0
-        },
         {
           "label": "10/13",
           "value": 45597.0
@@ -1620,13 +1616,13 @@
         {
           "label": "10/16",
           "value": 45135.0
+        },
+        {
+          "label": "10/19",
+          "value": 44574.0
         }
       ],
       "month": [
-        {
-          "label": "09/15",
-          "value": 43398.0
-        },
         {
           "label": "09/16",
           "value": 43410.0
@@ -1702,15 +1698,19 @@
         {
           "label": "10/16",
           "value": 45135.0
+        },
+        {
+          "label": "10/19",
+          "value": 44574.0
         }
       ],
       "news": [
         {
-          "title": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 野村證券ストラテジストが解説 - 野村證券",
-          "description": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 ストラテジストが解説",
-          "source": "野村證券",
-          "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FRmhhWEEwcFpETzRRY3lfTkI5UlVmQ2ZucE9JR0xJVXZIaGFjNFNhbVBPNUcyYXc4UXg0V3FzM09nZmtuSTQ5dlVsbmtybnBQYnBqQS1rQjFDNXFtdzA0?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/20",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
