@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/20 23:14",
+  "updated_at": "2026/10/21 04:06",
   "weather": {
-    "text": "くもり",
-    "max": 16.6,
-    "min": 7.2,
-    "rain": 0
+    "text": "雨",
+    "max": 18.3,
+    "min": 10.0,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -406,11 +406,11 @@
       ],
       "news": [
         {
-          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
-          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
-          "source": "ミクスOnline",
-          "date": "2026/05/12",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+          "title": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\" - 東洋経済オンライン",
+          "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
+          "source": "東洋経済オンライン",
+          "date": "2026/10/15",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwYXFFT19DMW4tX19rSTI2WTFSRFQ1QUI1d05vSEdRTE9pU1pSbUp5X0pPNEtIQy0xYUNDb2VyNVdzOXlsSkxyX1BxcjNnVDc1WnhreWthNXJaZW8?oc=5"
         }
       ]
     },
