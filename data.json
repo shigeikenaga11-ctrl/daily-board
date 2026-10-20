@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026/10/20 17:22",
+  "updated_at": "2026/10/20 23:14",
   "weather": {
-    "text": "霧",
-    "max": 16.8,
+    "text": "くもり",
+    "max": 16.6,
     "min": 7.2,
     "rain": 0
   },
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 908592.9,
+    "total": 913560.19,
     "purchaseTotal": 907645.98,
-    "deltaYen": -10421.9,
-    "deltaPercent": -1.1340296151922689,
-    "unrealizedYen": 946.9200000000419,
-    "unrealizedPercent": 0.10432701966024704,
+    "deltaYen": 2097.29,
+    "deltaPercent": 0.23010152141134874,
+    "unrealizedYen": 5914.209999999963,
+    "unrealizedPercent": 0.6515987654129161,
     "complete": true
   },
   "assets": [
@@ -45,7 +45,7 @@
       "intraday": [
         {
           "label": "09:05",
-          "value": 2758.5
+          "value": 2758.0
         },
         {
           "label": "09:10",
@@ -406,11 +406,11 @@
       ],
       "news": [
         {
-          "title": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\" - 東洋経済オンライン",
-          "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
-          "source": "東洋経済オンライン",
-          "date": "2026/10/15",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwYXFFT19DMW4tX19rSTI2WTFSRFQ1QUI1d05vSEdRTE9pU1pSbUp5X0pPNEtIQy0xYUNDb2VyNVdzOXlsSkxyX1BxcjNnVDc1WnhreWthNXJaZW8?oc=5"
+          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
+          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
+          "source": "ミクスOnline",
+          "date": "2026/05/12",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
         }
       ]
     },
@@ -618,7 +618,7 @@
         },
         {
           "label": "13:45",
-          "value": 8638.0
+          "value": 8637.0
         },
         {
           "label": "13:50",
@@ -1594,21 +1594,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44574.0,
-      "previousClose": 45135.0,
-      "value": 600032.9,
-      "deltaYen": -7551.9,
-      "change": -1.2429378531073398,
-      "unrealizedYen": 26.92,
-      "unrealizedPercent": 0.004487121959966801,
-      "weekChange": -2.2435686558326173,
-      "monthChange": 2.681409813407054,
+      "price": 44943.0,
+      "previousClose": 44574.0,
+      "value": 605000.19,
+      "deltaYen": 4967.29,
+      "change": 0.827836855566022,
+      "unrealizedYen": 4994.22,
+      "unrealizedPercent": 0.8323611235753356,
+      "weekChange": -1.3694120745276206,
+      "monthChange": 3.4266120495236363,
       "intraday": [],
       "week": [
-        {
-          "label": "10/13",
-          "value": 45597.0
-        },
         {
           "label": "10/14",
           "value": 45567.0
@@ -1624,13 +1620,13 @@
         {
           "label": "10/19",
           "value": 44574.0
+        },
+        {
+          "label": "10/20",
+          "value": 44943.0
         }
       ],
       "month": [
-        {
-          "label": "09/16",
-          "value": 43410.0
-        },
         {
           "label": "09/17",
           "value": 43454.0
@@ -1706,6 +1702,10 @@
         {
           "label": "10/19",
           "value": 44574.0
+        },
+        {
+          "label": "10/20",
+          "value": 44943.0
         }
       ],
       "news": [
