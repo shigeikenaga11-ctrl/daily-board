@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/21 20:34",
+  "updated_at": "2026/10/22 02:00",
   "weather": {
     "text": "雨",
-    "max": 18.5,
-    "min": 9.8,
+    "max": 9.5,
+    "min": 5.5,
     "rain": 100
   },
   "summary": {
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 918640.19,
+    "total": 919609.42,
     "purchaseTotal": 907645.98,
-    "deltaYen": 10047.29,
-    "deltaPercent": 1.105807672501073,
-    "unrealizedYen": 10994.209999999963,
-    "unrealizedPercent": 1.2112883483492058,
+    "deltaYen": 6049.23,
+    "deltaPercent": 0.6621599831314889,
+    "unrealizedYen": 11963.44000000006,
+    "unrealizedPercent": 1.318073374819559,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": 0.7446808510638281,
       "unrealizedYen": 140.0,
       "unrealizedPercent": 0.24700070571630206,
-      "weekChange": 7.1671067521689835,
-      "monthChange": -1.3541666666666674,
+      "weekChange": 8.419838523644763,
+      "monthChange": -2.083333333333337,
       "intraday": [
         {
           "label": "09:05",
@@ -105,7 +105,7 @@
         },
         {
           "label": "10:20",
-          "value": 2843.5
+          "value": 2844.0
         },
         {
           "label": "10:25",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/14",
+          "value": 2601.0
+        },
+        {
           "label": "10/15",
           "value": 2651.0
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/20",
           "value": 2820.0
-        },
-        {
-          "label": "10/21",
-          "value": 2841.0
         }
       ],
       "month": [
@@ -402,10 +402,6 @@
         {
           "label": "10/20",
           "value": 2820.0
-        },
-        {
-          "label": "10/21",
-          "value": 2841.0
         }
       ],
       "news": [
@@ -433,8 +429,8 @@
       "change": 0.40322580645162365,
       "unrealizedYen": 7640.0,
       "unrealizedPercent": 9.608854232172053,
-      "weekChange": 5.918813806514334,
-      "monthChange": 6.33235724743777,
+      "weekChange": 4.856245469920273,
+      "monthChange": 5.905319668130793,
       "intraday": [
         {
           "label": "09:05",
@@ -707,6 +703,10 @@
       ],
       "week": [
         {
+          "label": "10/14",
+          "value": 8278.0
+        },
+        {
           "label": "10/15",
           "value": 8228.0
         },
@@ -721,10 +721,6 @@
         {
           "label": "10/20",
           "value": 8680.0
-        },
-        {
-          "label": "10/21",
-          "value": 8715.0
         }
       ],
       "month": [
@@ -799,10 +795,6 @@
         {
           "label": "10/20",
           "value": 8680.0
-        },
-        {
-          "label": "10/21",
-          "value": 8715.0
         }
       ],
       "news": [
@@ -830,8 +822,8 @@
       "change": 2.627223146415125,
       "unrealizedYen": 9120.0,
       "unrealizedPercent": 8.888884129812379,
-      "weekChange": 2.9487653372490596,
-      "monthChange": 5.635398729365293,
+      "weekChange": 2.8922472198428695,
+      "monthChange": 2.931164969328326,
       "intraday": [
         {
           "label": "09:05",
@@ -1100,6 +1092,10 @@
       ],
       "week": [
         {
+          "label": "10/14",
+          "value": 529.0
+        },
+        {
           "label": "10/15",
           "value": 542.6
         },
@@ -1114,10 +1110,6 @@
         {
           "label": "10/20",
           "value": 544.3
-        },
-        {
-          "label": "10/21",
-          "value": 558.6
         }
       ],
       "month": [
@@ -1192,19 +1184,15 @@
         {
           "label": "10/20",
           "value": 544.3
-        },
-        {
-          "label": "10/21",
-          "value": 558.6
         }
       ],
       "news": [
         {
-          "title": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（ITmedia ビジネスオンライン） - Yahoo!ニュース",
-          "description": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（ITmedia ビジネスオンライン）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/10/21",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5OdWdRWjlib0VmNmc2dUJNVHVrUzZpUlJ1RnVKbGZ3blp5eUpfb29oVWhJVTdYVVkyWHRMVVRSaUtQZzNYUEZVdTJDRzdnSXl3RmZXWFNwb1BneVpKMENwRmQ2aE1ua1pvdUFFM0RUQmx3TVZobF9OYmpUa0tNTEk?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1223,8 +1211,8 @@
       "change": 2.5663716814159354,
       "unrealizedYen": -10900.0,
       "unrealizedPercent": -15.831517792302105,
-      "weekChange": -1.6129032258064502,
-      "monthChange": -12.063732928679816,
+      "weekChange": -7.301066447908122,
+      "monthChange": -14.264036418816383,
       "intraday": [
         {
           "label": "09:05",
@@ -1493,6 +1481,10 @@
       ],
       "week": [
         {
+          "label": "10/14",
+          "value": 1219.0
+        },
+        {
           "label": "10/15",
           "value": 1178.0
         },
@@ -1507,10 +1499,6 @@
         {
           "label": "10/20",
           "value": 1130.0
-        },
-        {
-          "label": "10/21",
-          "value": 1159.0
         }
       ],
       "month": [
@@ -1585,10 +1573,6 @@
         {
           "label": "10/20",
           "value": 1130.0
-        },
-        {
-          "label": "10/21",
-          "value": 1159.0
         }
       ],
       "news": [
@@ -1610,21 +1594,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44943.0,
-      "previousClose": 44574.0,
-      "value": 605000.19,
-      "deltaYen": 4967.29,
-      "change": 0.827836855566022,
-      "unrealizedYen": 4994.22,
-      "unrealizedPercent": 0.8323611235753356,
-      "weekChange": -1.3694120745276206,
-      "monthChange": 3.4266120495236363,
+      "price": 45015.0,
+      "previousClose": 44943.0,
+      "value": 605969.42,
+      "deltaYen": 969.23,
+      "change": 0.16020292370335643,
+      "unrealizedYen": 5963.44,
+      "unrealizedPercent": 0.9938975141344314,
+      "weekChange": 0.19141311847581388,
+      "monthChange": 2.3859345858163072,
       "intraday": [],
       "week": [
-        {
-          "label": "10/14",
-          "value": 45567.0
-        },
         {
           "label": "10/15",
           "value": 44929.0
@@ -1640,13 +1620,13 @@
         {
           "label": "10/20",
           "value": 44943.0
+        },
+        {
+          "label": "10/21",
+          "value": 45015.0
         }
       ],
       "month": [
-        {
-          "label": "09/17",
-          "value": 43454.0
-        },
         {
           "label": "09/18",
           "value": 43966.0
@@ -1722,6 +1702,10 @@
         {
           "label": "10/20",
           "value": 44943.0
+        },
+        {
+          "label": "10/21",
+          "value": 45015.0
         }
       ],
       "news": [
