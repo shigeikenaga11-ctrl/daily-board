@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/22 02:00",
+  "updated_at": "2026/10/22 06:30",
   "weather": {
     "text": "雨",
-    "max": 9.5,
-    "min": 5.5,
+    "max": 8.9,
+    "min": 5.4,
     "rain": 100
   },
   "summary": {
@@ -40,8 +40,8 @@
       "change": 0.7446808510638281,
       "unrealizedYen": 140.0,
       "unrealizedPercent": 0.24700070571630206,
-      "weekChange": 8.419838523644763,
-      "monthChange": -2.083333333333337,
+      "weekChange": 7.1671067521689835,
+      "monthChange": -1.3541666666666674,
       "intraday": [
         {
           "label": "09:05",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/14",
-          "value": 2601.0
-        },
-        {
           "label": "10/15",
           "value": 2651.0
         },
@@ -328,6 +324,10 @@
         {
           "label": "10/20",
           "value": 2820.0
+        },
+        {
+          "label": "10/21",
+          "value": 2841.0
         }
       ],
       "month": [
@@ -402,15 +402,19 @@
         {
           "label": "10/20",
           "value": 2820.0
+        },
+        {
+          "label": "10/21",
+          "value": 2841.0
         }
       ],
       "news": [
         {
-          "title": "第一三共のグローバル人事戦略、約2万人の全社員と対話へ | Human Capital Online（ヒューマンキャピタル・オンライン） - 日経BP",
-          "description": "第一三共のグローバル人事戦略、約2万人の全社員と対話へ | Human Capital Online（ヒューマンキャピタル・オンライン）",
-          "source": "日経BP",
-          "date": "2026/08/24",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UOTFscDMxMVVYWm5vOHkxZ0dTZzVORXVFOG1GQk5QUkxuTzVfei04NTVDUDJ0WFA2TER5VlFtVVJYS0RIZGhMTmxGdzc4M3JabEFOejdEd2Uwa1dFMUctczNxQmd3VTlaYkFUWUVReFNIekFQTXpGR0NxYnE?oc=5"
+          "title": "第一三共｢女性＆開発出身で初｣の新代取の素顔 結婚後に現場を離れるが復帰を志願…｢患者の近くで働いた経験生かす｣ - 東洋経済オンライン",
+          "description": "第一三共｢女性＆開発出身で初｣の新代取の素顔 結婚後に現場を離れるが復帰を志願…｢患者の近くで働いた経験生かす｣",
+          "source": "東洋経済オンライン",
+          "date": "2026/10/22",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBJNS1pekpUMmVCQm1RU2hzY0ZXUDdFRS1VQlNyb3dQX1JIMkpReVZXNHVhc2hIS1hlZFFNemRkTEtvV0pTZXVlNjBDMVFvVFV1NUFMQ29idGJuZ0dxX2tB?oc=5"
         }
       ]
     },
@@ -429,8 +433,8 @@
       "change": 0.40322580645162365,
       "unrealizedYen": 7640.0,
       "unrealizedPercent": 9.608854232172053,
-      "weekChange": 4.856245469920273,
-      "monthChange": 5.905319668130793,
+      "weekChange": 5.918813806514334,
+      "monthChange": 6.33235724743777,
       "intraday": [
         {
           "label": "09:05",
@@ -703,10 +707,6 @@
       ],
       "week": [
         {
-          "label": "10/14",
-          "value": 8278.0
-        },
-        {
           "label": "10/15",
           "value": 8228.0
         },
@@ -721,6 +721,10 @@
         {
           "label": "10/20",
           "value": 8680.0
+        },
+        {
+          "label": "10/21",
+          "value": 8715.0
         }
       ],
       "month": [
@@ -795,6 +799,10 @@
         {
           "label": "10/20",
           "value": 8680.0
+        },
+        {
+          "label": "10/21",
+          "value": 8715.0
         }
       ],
       "news": [
@@ -822,8 +830,8 @@
       "change": 2.627223146415125,
       "unrealizedYen": 9120.0,
       "unrealizedPercent": 8.888884129812379,
-      "weekChange": 2.8922472198428695,
-      "monthChange": 2.931164969328326,
+      "weekChange": 2.9487653372490596,
+      "monthChange": 5.635398729365293,
       "intraday": [
         {
           "label": "09:05",
@@ -1092,10 +1100,6 @@
       ],
       "week": [
         {
-          "label": "10/14",
-          "value": 529.0
-        },
-        {
           "label": "10/15",
           "value": 542.6
         },
@@ -1110,6 +1114,10 @@
         {
           "label": "10/20",
           "value": 544.3
+        },
+        {
+          "label": "10/21",
+          "value": 558.6
         }
       ],
       "month": [
@@ -1184,6 +1192,10 @@
         {
           "label": "10/20",
           "value": 544.3
+        },
+        {
+          "label": "10/21",
+          "value": 558.6
         }
       ],
       "news": [
@@ -1211,8 +1223,8 @@
       "change": 2.5663716814159354,
       "unrealizedYen": -10900.0,
       "unrealizedPercent": -15.831517792302105,
-      "weekChange": -7.301066447908122,
-      "monthChange": -14.264036418816383,
+      "weekChange": -1.6129032258064502,
+      "monthChange": -12.063732928679816,
       "intraday": [
         {
           "label": "09:05",
@@ -1481,10 +1493,6 @@
       ],
       "week": [
         {
-          "label": "10/14",
-          "value": 1219.0
-        },
-        {
           "label": "10/15",
           "value": 1178.0
         },
@@ -1499,6 +1507,10 @@
         {
           "label": "10/20",
           "value": 1130.0
+        },
+        {
+          "label": "10/21",
+          "value": 1159.0
         }
       ],
       "month": [
@@ -1573,6 +1585,10 @@
         {
           "label": "10/20",
           "value": 1130.0
+        },
+        {
+          "label": "10/21",
+          "value": 1159.0
         }
       ],
       "news": [
@@ -1710,11 +1726,11 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日 - 外為どっとコム",
-          "description": "S&P500見通し（10/16〜10/23）｜需要は強いのにAI株が足かせ、Meta決算で流れは変わるか 2026年10月16日",
-          "source": "外為どっとコム",
-          "date": "2026/10/16",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QQ21vaVdmRFVHMG40aXJydUVmQXNoWGg3VUZwbHV0VDNJUUxVTmJ5bU92Wkc5T2xOeWZlbTV0ZEVrcXZaZVp4dGtvWWZWeDQtZkVIQzl3RXI4NTNVcm1CR2ZKdw?oc=5"
+          "title": "「S&P500」一択の米国株投資に変化の兆し。“マーケットの主役”をいち早くキャッチするモメンタム投資とは？ - ｄメニューニュース",
+          "description": "「S&P500」一択の米国株投資に変化の兆し。“マーケットの主役”をいち早くキャッチするモメンタム投資とは？",
+          "source": "ｄメニューニュース",
+          "date": "2026/10/22",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1FeUh6MzBCV0dITDhLenJnSktZdWpfdTFjMW1ZMnVwZ1EyQmpHcXJsSFhRNjhkMWkwN2VlWGdtQ0t5WmZJemcwbEtRTEllaU9vVC1IX21lc1N2a3FMWDE3bnZ3emJjSVNfcXd2ZXlnT2d6Y0g2alNuQW1n0gF_QVVfeXFMTWtMV3h4WnRJMVZURnF2SnpuTHd6TkIxRFFBU0FuSndNdFVSYUZCSDBPd3Bwa2toX1BfZzViRWxjVXZkME96enkydGIyVm54bjBuTzctQm9YMU1YNjYxYzh0M2x5SEluRmczZ1p2UG5pVTIyRE5IVWE1NXA1TTBzRQ?oc=5"
         }
       ]
     }
