@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/23 01:59",
+  "updated_at": "2026/10/23 06:25",
   "weather": {
     "text": "くもり",
     "max": 14.0,
-    "min": 2.5,
+    "min": 3.8,
     "rain": 0
   },
   "summary": {
@@ -40,8 +40,8 @@
       "change": -0.15839493136219351,
       "unrealizedYen": 50.0,
       "unrealizedPercent": 0.08821453775582216,
-      "weekChange": 7.1671067521689835,
-      "monthChange": -1.3541666666666674,
+      "weekChange": 3.5030103995621342,
+      "monthChange": -1.5104166666666696,
       "intraday": [
         {
           "label": "09:05",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/15",
-          "value": 2651.0
-        },
-        {
           "label": "10/16",
           "value": 2740.5
         },
@@ -328,6 +324,10 @@
         {
           "label": "10/21",
           "value": 2841.0
+        },
+        {
+          "label": "10/22",
+          "value": 2836.5
         }
       ],
       "month": [
@@ -406,6 +406,10 @@
         {
           "label": "10/21",
           "value": 2841.0
+        },
+        {
+          "label": "10/22",
+          "value": 2836.5
         }
       ],
       "news": [
@@ -433,8 +437,8 @@
       "change": -0.18359150889271092,
       "unrealizedYen": 7480.0,
       "unrealizedPercent": 9.407621682807193,
-      "weekChange": 5.918813806514334,
-      "monthChange": 6.33235724743777,
+      "weekChange": 2.5946455949994007,
+      "monthChange": 6.137140068326019,
       "intraday": [
         {
           "label": "09:05",
@@ -703,10 +707,6 @@
       ],
       "week": [
         {
-          "label": "10/15",
-          "value": 8228.0
-        },
-        {
           "label": "10/16",
           "value": 8479.0
         },
@@ -721,6 +721,10 @@
         {
           "label": "10/21",
           "value": 8715.0
+        },
+        {
+          "label": "10/22",
+          "value": 8699.0
         }
       ],
       "month": [
@@ -799,6 +803,10 @@
         {
           "label": "10/21",
           "value": 8715.0
+        },
+        {
+          "label": "10/22",
+          "value": 8699.0
         }
       ],
       "news": [
@@ -826,8 +834,8 @@
       "change": 2.237732829562744,
       "unrealizedYen": 11620.0,
       "unrealizedPercent": 11.325531303301657,
-      "weekChange": 2.9487653372490596,
-      "monthChange": 5.635398729365293,
+      "weekChange": 2.29267205316781,
+      "monthChange": 7.999241446565564,
       "intraday": [
         {
           "label": "09:00",
@@ -1100,10 +1108,6 @@
       ],
       "week": [
         {
-          "label": "10/15",
-          "value": 542.6
-        },
-        {
           "label": "10/16",
           "value": 558.3
         },
@@ -1118,6 +1122,10 @@
         {
           "label": "10/21",
           "value": 558.6
+        },
+        {
+          "label": "10/22",
+          "value": 571.1
         }
       ],
       "month": [
@@ -1196,6 +1204,10 @@
         {
           "label": "10/21",
           "value": 558.6
+        },
+        {
+          "label": "10/22",
+          "value": 571.1
         }
       ],
       "news": [
@@ -1223,8 +1235,8 @@
       "change": -2.761000862812768,
       "unrealizedYen": -12500.0,
       "unrealizedPercent": -18.155410312273055,
-      "weekChange": -1.6129032258064502,
-      "monthChange": -12.063732928679816,
+      "weekChange": -6.005004170141781,
+      "monthChange": -14.491654021244305,
       "intraday": [
         {
           "label": "09:05",
@@ -1493,10 +1505,6 @@
       ],
       "week": [
         {
-          "label": "10/15",
-          "value": 1178.0
-        },
-        {
           "label": "10/16",
           "value": 1199.0
         },
@@ -1511,6 +1519,10 @@
         {
           "label": "10/21",
           "value": 1159.0
+        },
+        {
+          "label": "10/22",
+          "value": 1127.0
         }
       ],
       "month": [
@@ -1589,6 +1601,10 @@
         {
           "label": "10/21",
           "value": 1159.0
+        },
+        {
+          "label": "10/22",
+          "value": 1127.0
         }
       ],
       "news": [
@@ -1726,11 +1742,11 @@
       ],
       "news": [
         {
-          "title": "「S&P500」一択の米国株投資に変化の兆し。“マーケットの主役”をいち早くキャッチするモメンタム投資とは？ - ｄメニューニュース",
-          "description": "「S&P500」一択の米国株投資に変化の兆し。“マーケットの主役”をいち早くキャッチするモメンタム投資とは？",
-          "source": "ｄメニューニュース",
-          "date": "2026/10/22",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rTFd4eFp0STFWVEZxdkp6bkx3ek5CMURRQVNBbkp3TXRVUmFGQkgwT3dwcGtraF9QX2c1YkVsY1V2ZDBPenp5MnRiMlZueG4wbk83LUJvWDFNWDY2MWM4dDNseUhJbkZnM2dadlBuaVUyMkROSFVhNTVwNU0wc0XSAX9BVV95cUxNa0xXeHhadEkxVlRGcXZKem5Md3pOQjFEUUFTQW5Kd010VVJhRkJIME93cHBra2hfUF9nNWJFbGNVdmQwT3p6eTJ0YjJWbnhuMG5PNy1Cb1gxTVg2NjFjOHQzbHlISW5GZzNnWnZQbmlVMjJETkhVYTU1cDVNMHNF?oc=5"
+          "title": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え 野村證券ストラテジストが解説 - 野村證券",
+          "description": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え ストラテジストが解説",
+          "source": "野村證券",
+          "date": "2026/09/30",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YSTd4czJrMExHQ2J0RE1xdXFFYmhsbnllUkN5S2NELVdHNnhLZV9MYUphclNmLTVtdDhZRFAzLVFMeUpMVXJ5Q0s2TzlMUGpFaWJOWThWRS1LMmJlT1Bv?oc=5"
         }
       ]
     }
