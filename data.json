@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/22 20:34",
+  "updated_at": "2026/10/23 01:59",
   "weather": {
-    "text": "雨",
-    "max": 8.9,
-    "min": 5.2,
-    "rain": 100
+    "text": "くもり",
+    "max": 14.0,
+    "min": 2.5,
+    "rain": 0
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 920259.42,
+    "total": 923099.8,
     "purchaseTotal": 907645.98,
-    "deltaYen": 1619.23,
-    "deltaPercent": 0.1762637883282681,
-    "unrealizedYen": 12613.44000000006,
-    "unrealizedPercent": 1.389687199407864,
+    "deltaYen": 3490.38,
+    "deltaPercent": 0.37955026602489567,
+    "unrealizedYen": 15453.820000000065,
+    "unrealizedPercent": 1.7026263918449862,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": -0.15839493136219351,
       "unrealizedYen": 50.0,
       "unrealizedPercent": 0.08821453775582216,
-      "weekChange": 3.5030103995621342,
-      "monthChange": -1.5104166666666696,
+      "weekChange": 7.1671067521689835,
+      "monthChange": -1.3541666666666674,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/15",
+          "value": 2651.0
+        },
+        {
           "label": "10/16",
           "value": 2740.5
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/21",
           "value": 2841.0
-        },
-        {
-          "label": "10/22",
-          "value": 2836.5
         }
       ],
       "month": [
@@ -406,10 +406,6 @@
         {
           "label": "10/21",
           "value": 2841.0
-        },
-        {
-          "label": "10/22",
-          "value": 2836.5
         }
       ],
       "news": [
@@ -437,8 +433,8 @@
       "change": -0.18359150889271092,
       "unrealizedYen": 7480.0,
       "unrealizedPercent": 9.407621682807193,
-      "weekChange": 2.5946455949994007,
-      "monthChange": 6.137140068326019,
+      "weekChange": 5.918813806514334,
+      "monthChange": 6.33235724743777,
       "intraday": [
         {
           "label": "09:05",
@@ -707,6 +703,10 @@
       ],
       "week": [
         {
+          "label": "10/15",
+          "value": 8228.0
+        },
+        {
           "label": "10/16",
           "value": 8479.0
         },
@@ -721,10 +721,6 @@
         {
           "label": "10/21",
           "value": 8715.0
-        },
-        {
-          "label": "10/22",
-          "value": 8699.0
         }
       ],
       "month": [
@@ -803,19 +799,15 @@
         {
           "label": "10/21",
           "value": 8715.0
-        },
-        {
-          "label": "10/22",
-          "value": 8699.0
         }
       ],
       "news": [
         {
-          "title": "『モンスターハンターワイルズ』の序盤が遊べる体験版がNintendo Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。 - Nintendo",
-          "description": "『モンスターハンターワイルズ』の序盤が遊べる体験版が Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。",
-          "source": "Nintendo",
-          "date": "2026/10/20",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSF9WaGZRd1pFRllVcjZWOENCWWRmZEJBSmYtejFvQUhVMFR3UDkybWVaTVBXVktxdjJoWUc2UTk0RkNORzNCQ3ZQWHhuN0JpNWdXQjdYcHIxRzBkZ3htblhHLTRhWExhZUE5aFY4NHNhZWJnVGxxellWb05zNnJQMTdrOGlYdw?oc=5"
+          "title": "AI株安で浮上する「逆相関銘柄」、任天堂やSHIFTに再評価の波 ヴェリタスEYE（10月22日） - 日本経済新聞",
+          "description": "AI株安で浮上する「逆相関銘柄」、任天堂やSHIFTに再評価の波 ヴェリタスEYE（10月22日）",
+          "source": "日本経済新聞",
+          "date": "2026/10/22",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WdnV3cTZxQXdqM3hJOGdFdGNpU0hPTnBMazlWVFBJeVdkX1phY0t5OTNiM3VsN1JQaDFVTi1ocVVYaHZNSzdEQ05STm9JSmZjcnJ5emhpaW9NR1VFMy01X19jbERzZVpJM08zUm1IYWNWNHdhLTJlb21VSHl2Zw?oc=5"
         }
       ]
     },
@@ -834,8 +826,8 @@
       "change": 2.237732829562744,
       "unrealizedYen": 11620.0,
       "unrealizedPercent": 11.325531303301657,
-      "weekChange": 2.29267205316781,
-      "monthChange": 7.999241446565564,
+      "weekChange": 2.9487653372490596,
+      "monthChange": 5.635398729365293,
       "intraday": [
         {
           "label": "09:00",
@@ -931,7 +923,7 @@
         },
         {
           "label": "10:55",
-          "value": 575.3
+          "value": 575.4
         },
         {
           "label": "11:00",
@@ -1108,6 +1100,10 @@
       ],
       "week": [
         {
+          "label": "10/15",
+          "value": 542.6
+        },
+        {
           "label": "10/16",
           "value": 558.3
         },
@@ -1122,10 +1118,6 @@
         {
           "label": "10/21",
           "value": 558.6
-        },
-        {
-          "label": "10/22",
-          "value": 571.1
         }
       ],
       "month": [
@@ -1204,19 +1196,15 @@
         {
           "label": "10/21",
           "value": 558.6
-        },
-        {
-          "label": "10/22",
-          "value": 571.1
         }
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（1/2 ページ） - ITmedia",
+          "description": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（1/2 ページ）",
+          "source": "ITmedia",
+          "date": "2026/10/21",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xamt4Nm1fUjdhTTFja0RLd2NqblZKa2FtMndITGYxcER3b2tGWUp3cWdCS2pIdDhEdVVwLWhLcGNPeWhZaXFqLVJSY0VUYlNuV29yam5pZm5PQzAyMzd0TFhRZno3aXVOcjA4VkVCLVEzUQ?oc=5"
         }
       ]
     },
@@ -1235,8 +1223,8 @@
       "change": -2.761000862812768,
       "unrealizedYen": -12500.0,
       "unrealizedPercent": -18.155410312273055,
-      "weekChange": -6.005004170141781,
-      "monthChange": -14.491654021244305,
+      "weekChange": -1.6129032258064502,
+      "monthChange": -12.063732928679816,
       "intraday": [
         {
           "label": "09:05",
@@ -1505,6 +1493,10 @@
       ],
       "week": [
         {
+          "label": "10/15",
+          "value": 1178.0
+        },
+        {
           "label": "10/16",
           "value": 1199.0
         },
@@ -1519,10 +1511,6 @@
         {
           "label": "10/21",
           "value": 1159.0
-        },
-        {
-          "label": "10/22",
-          "value": 1127.0
         }
       ],
       "month": [
@@ -1601,10 +1589,6 @@
         {
           "label": "10/21",
           "value": 1159.0
-        },
-        {
-          "label": "10/22",
-          "value": 1127.0
         }
       ],
       "news": [
@@ -1626,21 +1610,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45015.0,
-      "previousClose": 44943.0,
-      "value": 605969.42,
-      "deltaYen": 969.23,
-      "change": 0.16020292370335643,
-      "unrealizedYen": 5963.44,
-      "unrealizedPercent": 0.9938975141344314,
-      "weekChange": 0.19141311847581388,
-      "monthChange": 2.3859345858163072,
+      "price": 45226.0,
+      "previousClose": 45015.0,
+      "value": 608809.8,
+      "deltaYen": 2840.38,
+      "change": 0.468732644673997,
+      "unrealizedYen": 8803.82,
+      "unrealizedPercent": 1.4672888809117826,
+      "weekChange": 0.20161737011188396,
+      "monthChange": 0.8563400383569064,
       "intraday": [],
       "week": [
-        {
-          "label": "10/15",
-          "value": 44929.0
-        },
         {
           "label": "10/16",
           "value": 45135.0
@@ -1656,13 +1636,13 @@
         {
           "label": "10/21",
           "value": 45015.0
+        },
+        {
+          "label": "10/22",
+          "value": 45226.0
         }
       ],
       "month": [
-        {
-          "label": "09/18",
-          "value": 43966.0
-        },
         {
           "label": "09/24",
           "value": 44842.0
@@ -1738,6 +1718,10 @@
         {
           "label": "10/21",
           "value": 45015.0
+        },
+        {
+          "label": "10/22",
+          "value": 45226.0
         }
       ],
       "news": [
