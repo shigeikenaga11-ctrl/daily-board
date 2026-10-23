@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/23 20:23",
+  "updated_at": "2026/10/24 01:52",
   "weather": {
     "text": "くもり",
-    "max": 14.4,
-    "min": 4.0,
-    "rain": 0
+    "max": 15.8,
+    "min": 3.5,
+    "rain": 8
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 920189.8,
+    "total": 906270.61,
     "purchaseTotal": 907645.98,
-    "deltaYen": -69.61999999999989,
-    "deltaPercent": -0.007565258066035324,
-    "unrealizedYen": 12543.820000000065,
-    "unrealizedPercent": 1.3820168079188833,
+    "deltaYen": -16829.190000000002,
+    "deltaPercent": -1.823117067082021,
+    "unrealizedYen": -1375.3699999999953,
+    "unrealizedPercent": -0.1515315475754099,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": -0.669839591045307,
       "unrealizedYen": -330.0,
       "unrealizedPercent": -0.5822159491884262,
-      "weekChange": 2.101830041674213,
-      "monthChange": -2.170138888888884,
+      "weekChange": 3.5030103995621342,
+      "monthChange": -1.5104166666666696,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/16",
+          "value": 2740.5
+        },
+        {
           "label": "10/19",
           "value": 2759.5
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/22",
           "value": 2836.5
-        },
-        {
-          "label": "10/23",
-          "value": 2817.5
         }
       ],
       "month": [
@@ -410,10 +410,6 @@
         {
           "label": "10/22",
           "value": 2836.5
-        },
-        {
-          "label": "10/23",
-          "value": 2817.5
         }
       ],
       "news": [
@@ -441,8 +437,8 @@
       "change": -1.8392918726290342,
       "unrealizedYen": 5880.0,
       "unrealizedPercent": 7.395296189158597,
-      "weekChange": -0.02341646177262957,
-      "monthChange": 4.184968277208401,
+      "weekChange": 2.5946455949994007,
+      "monthChange": 6.137140068326019,
       "intraday": [
         {
           "label": "09:05",
@@ -711,6 +707,10 @@
       ],
       "week": [
         {
+          "label": "10/16",
+          "value": 8479.0
+        },
+        {
           "label": "10/19",
           "value": 8541.0
         },
@@ -725,10 +725,6 @@
         {
           "label": "10/22",
           "value": 8699.0
-        },
-        {
-          "label": "10/23",
-          "value": 8539.0
         }
       ],
       "month": [
@@ -811,10 +807,6 @@
         {
           "label": "10/22",
           "value": 8699.0
-        },
-        {
-          "label": "10/23",
-          "value": 8539.0
         }
       ],
       "news": [
@@ -842,8 +834,8 @@
       "change": 0.19261288864143022,
       "unrealizedYen": 11840.0,
       "unrealizedPercent": 11.539963393183479,
-      "weekChange": 3.117676524025459,
-      "monthChange": 8.207266530999636,
+      "weekChange": 2.29267205316781,
+      "monthChange": 7.999241446565564,
       "intraday": [
         {
           "label": "09:00",
@@ -1116,6 +1108,10 @@
       ],
       "week": [
         {
+          "label": "10/16",
+          "value": 558.3
+        },
+        {
           "label": "10/19",
           "value": 554.9
         },
@@ -1130,10 +1126,6 @@
         {
           "label": "10/22",
           "value": 571.1
-        },
-        {
-          "label": "10/23",
-          "value": 572.2
         }
       ],
       "month": [
@@ -1216,10 +1208,6 @@
         {
           "label": "10/22",
           "value": 571.1
-        },
-        {
-          "label": "10/23",
-          "value": 572.2
         }
       ],
       "news": [
@@ -1247,8 +1235,8 @@
       "change": -2.0408163265306145,
       "unrealizedYen": -13650.0,
       "unrealizedPercent": -19.825708061002178,
-      "weekChange": -7.769423558897248,
-      "monthChange": -16.236722306525042,
+      "weekChange": -6.005004170141781,
+      "monthChange": -14.491654021244305,
       "intraday": [
         {
           "label": "09:05",
@@ -1517,6 +1505,10 @@
       ],
       "week": [
         {
+          "label": "10/16",
+          "value": 1199.0
+        },
+        {
           "label": "10/19",
           "value": 1197.0
         },
@@ -1531,10 +1523,6 @@
         {
           "label": "10/22",
           "value": 1127.0
-        },
-        {
-          "label": "10/23",
-          "value": 1104.0
         }
       ],
       "month": [
@@ -1617,10 +1605,6 @@
         {
           "label": "10/22",
           "value": 1127.0
-        },
-        {
-          "label": "10/23",
-          "value": 1104.0
         }
       ],
       "news": [
@@ -1642,21 +1626,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45226.0,
-      "previousClose": 45015.0,
-      "value": 608809.8,
-      "deltaYen": 2840.38,
-      "change": 0.468732644673997,
-      "unrealizedYen": 8803.82,
-      "unrealizedPercent": 1.4672888809117826,
-      "weekChange": 0.20161737011188396,
-      "monthChange": 0.8563400383569064,
+      "price": 44192.0,
+      "previousClose": 45226.0,
+      "value": 594890.61,
+      "deltaYen": -13919.19,
+      "change": -2.2862954937425406,
+      "unrealizedYen": -5115.37,
+      "unrealizedPercent": -0.852553172395225,
+      "weekChange": -0.8570018396374612,
+      "monthChange": -1.902372971653088,
       "intraday": [],
       "week": [
-        {
-          "label": "10/16",
-          "value": 45135.0
-        },
         {
           "label": "10/19",
           "value": 44574.0
@@ -1672,13 +1652,13 @@
         {
           "label": "10/22",
           "value": 45226.0
+        },
+        {
+          "label": "10/23",
+          "value": 44192.0
         }
       ],
       "month": [
-        {
-          "label": "09/24",
-          "value": 44842.0
-        },
         {
           "label": "09/25",
           "value": 45049.0
@@ -1754,6 +1734,10 @@
         {
           "label": "10/22",
           "value": 45226.0
+        },
+        {
+          "label": "10/23",
+          "value": 44192.0
         }
       ],
       "news": [
