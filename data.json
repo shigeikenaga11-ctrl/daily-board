@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/24 19:42",
+  "updated_at": "2026/10/25 00:45",
   "weather": {
-    "text": "霧",
-    "max": 15.7,
-    "min": 3.0,
-    "rain": 24
+    "text": "雨",
+    "max": 14.6,
+    "min": 8.0,
+    "rain": 33
   },
   "summary": {
     "label": "日本株評価額",
@@ -1224,11 +1224,11 @@
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（1/2 ページ） - ITmedia",
+          "description": "なぜ東京海上は株式を「15分割」したのか 株式分割や株主優待を導入する企業が増えているワケ（1/2 ページ）",
+          "source": "ITmedia",
+          "date": "2026/10/21",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xamt4Nm1fUjdhTTFja0RLd2NqblZKa2FtMndITGYxcER3b2tGWUp3cWdCS2pIdDhEdVVwLWhLcGNPeWhZaXFqLVJSY0VUYlNuV29yam5pZm5PQzAyMzd0TFhRZno3aXVOcjA4VkVCLVEzUQ?oc=5"
         }
       ]
     },
