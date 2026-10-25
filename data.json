@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/26 00:56",
+  "updated_at": "2026/10/26 05:41",
   "weather": {
     "text": "くもり",
-    "max": 11.6,
-    "min": 7.1,
+    "max": 11.4,
+    "min": 6.7,
     "rain": 16
   },
   "summary": {
@@ -1758,11 +1758,11 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（10/23〜10/30）｜収益化は進むのにAI株は売られる、投資回収を問う大型決算が続く 2026年10月23日 - 外為どっとコム",
-          "description": "S&P500見通し（10/23〜10/30）｜収益化は進むのにAI株は売られる、投資回収を問う大型決算が続く 2026年10月23日",
-          "source": "外為どっとコム",
+          "title": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 野村證券ストラテジストが解説 - 野村證券",
+          "description": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 ストラテジストが解説",
+          "source": "野村證券",
           "date": "2026/10/23",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vdVNvM0JfVE5rZWV1NXNyUDBhbXdkNTdXN3AzVlljdG03QzhBWGdoOVlDeXJtUUZlcElyTzhGSWtSc3ZvZ2psUm1xS2pmWGpqVjBpWlZ5VV8tNE1aTEo2TVBwYw?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FRmhhWEEwcFpETzRRY3lfTkI5UlVmQ2ZucE9JR0xJVXZIaGFjNFNhbVBPNUcyYXc4UXg0V3FzM09nZmtuSTQ5dlVsbmtybnBQYnBqQS1rQjFDNXFtdzA0?oc=5"
         }
       ]
     }
