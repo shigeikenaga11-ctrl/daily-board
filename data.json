@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/25 20:08",
+  "updated_at": "2026/10/26 00:56",
   "weather": {
-    "text": "雨",
-    "max": 15.0,
-    "min": 7.2,
-    "rain": 14
+    "text": "くもり",
+    "max": 11.6,
+    "min": 7.1,
+    "rain": 16
   },
   "summary": {
     "label": "日本株評価額",
