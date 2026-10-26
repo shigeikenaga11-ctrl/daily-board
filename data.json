@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/26 21:41",
+  "updated_at": "2026/10/27 05:23",
   "weather": {
-    "text": "くもり",
-    "max": 11.2,
-    "min": 6.3,
-    "rain": 6
+    "text": "雨",
+    "max": 12.9,
+    "min": 5.7,
+    "rain": 99
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 909460.61,
+    "total": 909150.99,
     "purchaseTotal": 907645.98,
-    "deltaYen": -10729.19,
-    "deltaPercent": -1.1659757584793922,
-    "unrealizedYen": 1814.6300000000047,
-    "unrealizedPercent": 0.19992706848103978,
+    "deltaYen": 2880.39,
+    "deltaPercent": 0.31782891335104546,
+    "unrealizedYen": 1505.0100000000093,
+    "unrealizedPercent": 0.16581464945176194,
     "complete": true
   },
   "assets": [
@@ -237,7 +237,7 @@
         },
         {
           "label": "13:55",
-          "value": 2819.0
+          "value": 2818.5
         },
         {
           "label": "14:00",
@@ -1220,11 +1220,11 @@
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/22",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rYUJraUNROU1WVzZQTVdGWGZUU252Sk85N01GQW1XeVRINTAyd0VBck9BRTJjcUE3aGd3Ylc1ZzRUbm1XbEJKcWFiM2tfQWp2QTBPSUhsVWYwblJ3UUpnbUVzV0JrRnVmWHBsYmwzbnVIRkJnTlE?oc=5"
         }
       ]
     },
@@ -1621,11 +1621,11 @@
       ],
       "news": [
         {
-          "title": "【アナリスト評価】北洋銀行、レーティング強気、目標株価1,400円（日系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
-          "description": "【アナリスト評価】北洋銀行、レーティング強気、目標株価1,400円（日系大手証券）(アイフィス株予報)",
+          "title": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
+          "description": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報)",
           "source": "Yahoo!ファイナンス",
           "date": "2026/10/26",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSDRZdWFpdTZYZnVzcHdXUkRZd29DajYzZzYwU1NuMi1udDc2TFg3aldyMnVSWXJhVmdRb1BaeUZHd2U2QzVFQnJLMWN3SWN3ZlBMdW9NY2N6ai0tUTV1SjdBOVdIMkthUlk1bFBuZEJTd2ItSkdNR3VwaktSNjRYUTN5MkVNbzA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbmFUaldmUjJ0cGxOZ3RLX0lUbm5sZkNCZjl6OVg1ZWs2Z3plblRwM1NRNmtDX1o2dkppZGZEclo3SG56Uy11UDR4Tl92bnV4Q0ZoUzRHNWd5Zko5MF9uVUV1N014aFVPUTEtTnZ3TWxVamRuOV80bHVqNzlyRGcwNzFIeU05NGM?oc=5"
         }
       ]
     },
@@ -1638,21 +1638,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44192.0,
-      "previousClose": 45226.0,
-      "value": 594890.61,
-      "deltaYen": -13919.19,
-      "change": -2.2862954937425406,
-      "unrealizedYen": -5115.37,
-      "unrealizedPercent": -0.852553172395225,
-      "weekChange": -0.8570018396374612,
-      "monthChange": -1.902372971653088,
+      "price": 44169.0,
+      "previousClose": 44192.0,
+      "value": 594580.99,
+      "deltaYen": -309.61,
+      "change": -0.05204561911658079,
+      "unrealizedYen": -5424.98,
+      "unrealizedPercent": -0.9041550749349401,
+      "weekChange": -1.7221814298110982,
+      "monthChange": -1.8270320730812806,
       "intraday": [],
       "week": [
-        {
-          "label": "10/19",
-          "value": 44574.0
-        },
         {
           "label": "10/20",
           "value": 44943.0
@@ -1668,13 +1664,13 @@
         {
           "label": "10/23",
           "value": 44192.0
+        },
+        {
+          "label": "10/26",
+          "value": 44169.0
         }
       ],
       "month": [
-        {
-          "label": "09/25",
-          "value": 45049.0
-        },
         {
           "label": "09/28",
           "value": 44991.0
@@ -1750,6 +1746,10 @@
         {
           "label": "10/23",
           "value": 44192.0
+        },
+        {
+          "label": "10/26",
+          "value": 44169.0
         }
       ],
       "news": [
