@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/28 00:15",
+  "updated_at": "2026/10/28 07:02",
   "weather": {
     "text": "雪",
-    "max": 5.7,
-    "min": 0.9,
+    "max": 5.5,
+    "min": 1.3,
     "rain": 100
   },
   "summary": {
@@ -40,8 +40,8 @@
       "change": -8.159292035398224,
       "unrealizedYen": -4790.0,
       "unrealizedPercent": -8.450952717007763,
-      "weekChange": 0.17730496453900457,
-      "monthChange": -0.17667844522968323,
+      "weekChange": -8.676522351284754,
+      "monthChange": -8.321554770318018,
       "intraday": [
         {
           "label": "09:05",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/20",
-          "value": 2820.0
-        },
-        {
           "label": "10/21",
           "value": 2841.0
         },
@@ -328,6 +324,10 @@
         {
           "label": "10/26",
           "value": 2825.0
+        },
+        {
+          "label": "10/27",
+          "value": 2594.5
         }
       ],
       "month": [
@@ -410,15 +410,19 @@
         {
           "label": "10/26",
           "value": 2825.0
+        },
+        {
+          "label": "10/27",
+          "value": 2594.5
         }
       ],
       "news": [
         {
-          "title": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\" - 東洋経済オンライン",
-          "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
-          "source": "東洋経済オンライン",
-          "date": "2026/10/15",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fMEUtcC1Tb3cxZXlpMjh3QXg2UGliZ0dPdkJtYzhYRlBSRG5VS3VjRk10SXptWFFhQnV0Um1mMzZhc25kZHQzcDVaVUJiY2JZbWl5RFA4UF83eW8?oc=5"
+          "title": "「英語が話せればいいわけじゃない」 第一三共が「未来の経営層」を育てるために“少数精鋭”の大学で教えていること - ITmedia",
+          "description": "「英語が話せればいいわけじゃない」 第一三共が「未来の経営層」を育てるために“少数精鋭”の大学で教えていること",
+          "source": "ITmedia",
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OOVVZSHZweFBxdTB4Nk1nWVMzTGJSRlVFcXhCclRET2RSNjFvREw5SGFScWtDTFgzT0dvRlVVblkxQXRNVjVGTEd2VmlKUnZWNmtncXRQMWx5NXJnYXM4VHlnSFlrR25XUTYtUWUyRjJKUQ?oc=5"
         }
       ]
     },
@@ -437,8 +441,8 @@
       "change": -1.4342350746268662,
       "unrealizedYen": 5020.0,
       "unrealizedPercent": 6.313671236322476,
-      "weekChange": -1.1981566820276512,
-      "monthChange": 7.213401675209408,
+      "weekChange": -3.0063109581181857,
+      "monthChange": 5.675709463682965,
       "intraday": [
         {
           "label": "09:05",
@@ -707,10 +711,6 @@
       ],
       "week": [
         {
-          "label": "10/20",
-          "value": 8680.0
-        },
-        {
           "label": "10/21",
           "value": 8715.0
         },
@@ -725,6 +725,10 @@
         {
           "label": "10/26",
           "value": 8576.0
+        },
+        {
+          "label": "10/27",
+          "value": 8453.0
         }
       ],
       "month": [
@@ -807,6 +811,10 @@
         {
           "label": "10/26",
           "value": 8576.0
+        },
+        {
+          "label": "10/27",
+          "value": 8453.0
         }
       ],
       "news": [
@@ -834,8 +842,8 @@
       "change": -1.0601956932391299,
       "unrealizedYen": 13120.0,
       "unrealizedPercent": 12.787519607395224,
-      "weekChange": 7.440749753498932,
-      "monthChange": 8.63158078528552,
+      "weekChange": 3.5803796767125196,
+      "monthChange": 7.479875687821824,
       "intraday": [
         {
           "label": "09:05",
@@ -1104,10 +1112,6 @@
       ],
       "week": [
         {
-          "label": "10/20",
-          "value": 544.3
-        },
-        {
           "label": "10/21",
           "value": 558.6
         },
@@ -1122,6 +1126,10 @@
         {
           "label": "10/26",
           "value": 584.8
+        },
+        {
+          "label": "10/27",
+          "value": 578.6
         }
       ],
       "month": [
@@ -1204,6 +1212,10 @@
         {
           "label": "10/26",
           "value": 584.8
+        },
+        {
+          "label": "10/27",
+          "value": 578.6
         }
       ],
       "news": [
@@ -1231,8 +1243,8 @@
       "change": 6.233062330623307,
       "unrealizedYen": -10050.0,
       "unrealizedPercent": -14.596949891067537,
-      "weekChange": -2.035398230088492,
-      "monthChange": -19.6078431372549,
+      "weekChange": 1.4667817083692913,
+      "monthChange": -14.596949891067535,
       "intraday": [
         {
           "label": "09:00",
@@ -1505,10 +1517,6 @@
       ],
       "week": [
         {
-          "label": "10/20",
-          "value": 1130.0
-        },
-        {
           "label": "10/21",
           "value": 1159.0
         },
@@ -1523,6 +1531,10 @@
         {
           "label": "10/26",
           "value": 1107.0
+        },
+        {
+          "label": "10/27",
+          "value": 1176.0
         }
       ],
       "month": [
@@ -1605,6 +1617,10 @@
         {
           "label": "10/26",
           "value": 1107.0
+        },
+        {
+          "label": "10/27",
+          "value": 1176.0
         }
       ],
       "news": [
@@ -1742,11 +1758,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/27",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "S&P500見通し（10/23〜10/30）｜収益化は進むのにAI株は売られる、投資回収を問う大型決算が続く 2026年10月23日 - 外為どっとコム",
+          "description": "S&P500見通し（10/23〜10/30）｜収益化は進むのにAI株は売られる、投資回収を問う大型決算が続く 2026年10月23日",
+          "source": "外為どっとコム",
+          "date": "2026/10/23",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vdVNvM0JfVE5rZWV1NXNyUDBhbXdkNTdXN3AzVlljdG03QzhBWGdoOVlDeXJtUUZlcElyTzhGSWtSc3ZvZ2psUm1xS2pmWGpqVjBpWlZ5VV8tNE1aTEo2TVBwYw?oc=5"
         }
       ]
     }
