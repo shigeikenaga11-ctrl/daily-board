@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/27 17:50",
+  "updated_at": "2026/10/28 00:15",
   "weather": {
-    "text": "雨",
-    "max": 12.0,
-    "min": 5.4,
+    "text": "雪",
+    "max": 5.7,
+    "min": 0.9,
     "rain": 100
   },
   "summary": {
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 905520.99,
+    "total": 911188.29,
     "purchaseTotal": 907645.98,
-    "deltaYen": -3939.61,
-    "deltaPercent": -0.43318094263786694,
-    "unrealizedYen": -2124.9899999999907,
-    "unrealizedPercent": -0.2341210170952325,
+    "deltaYen": 2037.29,
+    "deltaPercent": 0.22408708784349354,
+    "unrealizedYen": 3542.310000000056,
+    "unrealizedPercent": 0.39027441073446456,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": -8.159292035398224,
       "unrealizedYen": -4790.0,
       "unrealizedPercent": -8.450952717007763,
-      "weekChange": -8.676522351284754,
-      "monthChange": -8.321554770318018,
+      "weekChange": 0.17730496453900457,
+      "monthChange": -0.17667844522968323,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/20",
+          "value": 2820.0
+        },
+        {
           "label": "10/21",
           "value": 2841.0
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/26",
           "value": 2825.0
-        },
-        {
-          "label": "10/27",
-          "value": 2594.5
         }
       ],
       "month": [
@@ -410,19 +410,15 @@
         {
           "label": "10/26",
           "value": 2825.0
-        },
-        {
-          "label": "10/27",
-          "value": 2594.5
         }
       ],
       "news": [
         {
-          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
-          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/27",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
+          "title": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\" - 東洋経済オンライン",
+          "description": "〈反転はいつ？〉第一三共｢2年で株価6割下落｣の正念場…焦点は次のエンハーツ､トップアナリストが斬る\"復活の条件\"",
+          "source": "東洋経済オンライン",
+          "date": "2026/10/15",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fMEUtcC1Tb3cxZXlpMjh3QXg2UGliZ0dPdkJtYzhYRlBSRG5VS3VjRk10SXptWFFhQnV0Um1mMzZhc25kZHQzcDVaVUJiY2JZbWl5RFA4UF83eW8?oc=5"
         }
       ]
     },
@@ -441,8 +437,8 @@
       "change": -1.4342350746268662,
       "unrealizedYen": 5020.0,
       "unrealizedPercent": 6.313671236322476,
-      "weekChange": -3.0063109581181857,
-      "monthChange": 5.675709463682965,
+      "weekChange": -1.1981566820276512,
+      "monthChange": 7.213401675209408,
       "intraday": [
         {
           "label": "09:05",
@@ -711,6 +707,10 @@
       ],
       "week": [
         {
+          "label": "10/20",
+          "value": 8680.0
+        },
+        {
           "label": "10/21",
           "value": 8715.0
         },
@@ -725,10 +725,6 @@
         {
           "label": "10/26",
           "value": 8576.0
-        },
-        {
-          "label": "10/27",
-          "value": 8453.0
         }
       ],
       "month": [
@@ -811,10 +807,6 @@
         {
           "label": "10/26",
           "value": 8576.0
-        },
-        {
-          "label": "10/27",
-          "value": 8453.0
         }
       ],
       "news": [
@@ -842,8 +834,8 @@
       "change": -1.0601956932391299,
       "unrealizedYen": 13120.0,
       "unrealizedPercent": 12.787519607395224,
-      "weekChange": 3.5803796767125196,
-      "monthChange": 7.479875687821824,
+      "weekChange": 7.440749753498932,
+      "monthChange": 8.63158078528552,
       "intraday": [
         {
           "label": "09:05",
@@ -1112,6 +1104,10 @@
       ],
       "week": [
         {
+          "label": "10/20",
+          "value": 544.3
+        },
+        {
           "label": "10/21",
           "value": 558.6
         },
@@ -1126,10 +1122,6 @@
         {
           "label": "10/26",
           "value": 584.8
-        },
-        {
-          "label": "10/27",
-          "value": 578.6
         }
       ],
       "month": [
@@ -1212,19 +1204,15 @@
         {
           "label": "10/26",
           "value": 584.8
-        },
-        {
-          "label": "10/27",
-          "value": 578.6
         }
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/22",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rYUJraUNROU1WVzZQTVdGWGZUU252Sk85N01GQW1XeVRINTAyd0VBck9BRTJjcUE3aGd3Ylc1ZzRUbm1XbEJKcWFiM2tfQWp2QTBPSUhsVWYwblJ3UUpnbUVzV0JrRnVmWHBsYmwzbnVIRkJnTlE?oc=5"
         }
       ]
     },
@@ -1243,8 +1231,8 @@
       "change": 6.233062330623307,
       "unrealizedYen": -10050.0,
       "unrealizedPercent": -14.596949891067537,
-      "weekChange": 1.4667817083692913,
-      "monthChange": -14.596949891067535,
+      "weekChange": -2.035398230088492,
+      "monthChange": -19.6078431372549,
       "intraday": [
         {
           "label": "09:00",
@@ -1517,6 +1505,10 @@
       ],
       "week": [
         {
+          "label": "10/20",
+          "value": 1130.0
+        },
+        {
           "label": "10/21",
           "value": 1159.0
         },
@@ -1531,10 +1523,6 @@
         {
           "label": "10/26",
           "value": 1107.0
-        },
-        {
-          "label": "10/27",
-          "value": 1176.0
         }
       ],
       "month": [
@@ -1617,19 +1605,15 @@
         {
           "label": "10/26",
           "value": 1107.0
-        },
-        {
-          "label": "10/27",
-          "value": 1176.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行－野村が目標株価を引き上げ 着実な資金利益増加など業績動向を反映〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
-          "description": "北洋銀行－野村が目標株価を引き上げ 着実な資金利益増加など業績動向を反映〔DZH 個別株情報〕(時事通信)",
+          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
+          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
           "source": "Yahoo!ファイナンス",
           "date": "2026/10/27",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWElUMFdWTGdzRFYwR0FYM2dvZjJXQmRVaFk5QXpFNk95V3FZZmxlSS1lMWZmVGdaVzhMZEVUeEVJNWd4MHRNd0lFWmU1RkxqRExfWXYyekpDNllWZ3pFTVJwZ1pBbjJmdHpRQVdWWk5SeEU5VW9xRzBnM09rMUtRRDNtemJZS28?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
         }
       ]
     },
@@ -1642,21 +1626,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44169.0,
-      "previousClose": 44192.0,
-      "value": 594580.99,
-      "deltaYen": -309.61,
-      "change": -0.05204561911658079,
-      "unrealizedYen": -5424.98,
-      "unrealizedPercent": -0.9041550749349401,
-      "weekChange": -1.7221814298110982,
-      "monthChange": -1.8270320730812806,
+      "price": 44590.0,
+      "previousClose": 44169.0,
+      "value": 600248.29,
+      "deltaYen": 5667.29,
+      "change": 0.9531571916955306,
+      "unrealizedYen": 242.31,
+      "unrealizedPercent": 0.04038409763977882,
+      "weekChange": -0.944129734532928,
+      "monthChange": 0.07630846575097383,
       "intraday": [],
       "week": [
-        {
-          "label": "10/20",
-          "value": 44943.0
-        },
         {
           "label": "10/21",
           "value": 45015.0
@@ -1672,13 +1652,13 @@
         {
           "label": "10/26",
           "value": 44169.0
+        },
+        {
+          "label": "10/27",
+          "value": 44590.0
         }
       ],
       "month": [
-        {
-          "label": "09/28",
-          "value": 44991.0
-        },
         {
           "label": "09/29",
           "value": 44556.0
@@ -1754,15 +1734,19 @@
         {
           "label": "10/26",
           "value": 44169.0
+        },
+        {
+          "label": "10/27",
+          "value": 44590.0
         }
       ],
       "news": [
         {
-          "title": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え 野村證券ストラテジストが解説 - 野村證券",
-          "description": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え ストラテジストが解説",
-          "source": "野村證券",
-          "date": "2026/10/23",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YSTd4czJrMExHQ2J0RE1xdXFFYmhsbnllUkN5S2NELVdHNnhLZV9MYUphclNmLTVtdDhZRFAzLVFMeUpMVXJ5Q0s2TzlMUGpFaWJOWThWRS1LMmJlT1Bv?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/27",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
