@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/10/28 21:34",
+  "updated_at": "2026/10/29 05:10",
   "weather": {
-    "text": "雪",
-    "max": 5.5,
-    "min": 1.4,
+    "text": "雨",
+    "max": 11.0,
+    "min": -0.0,
     "rain": 100
   },
   "summary": {
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 905108.29,
+    "total": 909415.96,
     "purchaseTotal": 907645.98,
-    "deltaYen": -412.71000000000004,
-    "deltaPercent": -0.04557707662218767,
-    "unrealizedYen": -2537.689999999944,
-    "unrealizedPercent": -0.27959028695306337,
+    "deltaYen": -1772.3199999999997,
+    "deltaPercent": -0.19450645260713845,
+    "unrealizedYen": 1769.9799999999814,
+    "unrealizedPercent": 0.19500774960739445,
     "complete": true
   },
   "assets": [
@@ -466,7 +466,7 @@
         },
         {
           "label": "09:25",
-          "value": 8421.0
+          "value": 8420.0
         },
         {
           "label": "09:30",
@@ -626,7 +626,7 @@
         },
         {
           "label": "13:40",
-          "value": 8319.0
+          "value": 8320.0
         },
         {
           "label": "13:45",
@@ -1637,11 +1637,11 @@
       ],
       "news": [
         {
-          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
-          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
+          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
+          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
+          "date": "2026/10/27",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
         }
       ]
     },
@@ -1654,21 +1654,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44590.0,
-      "previousClose": 44169.0,
-      "value": 600248.29,
-      "deltaYen": 5667.29,
-      "change": 0.9531571916955306,
-      "unrealizedYen": 242.31,
-      "unrealizedPercent": 0.04038409763977882,
-      "weekChange": -0.944129734532928,
-      "monthChange": 0.07630846575097383,
+      "price": 44910.0,
+      "previousClose": 44590.0,
+      "value": 604555.96,
+      "deltaYen": 4307.68,
+      "change": 0.7176496972415292,
+      "unrealizedYen": 4549.99,
+      "unrealizedPercent": 0.7583236112357475,
+      "weekChange": -0.6987131296157023,
+      "monthChange": 1.0348706411698494,
       "intraday": [],
       "week": [
-        {
-          "label": "10/21",
-          "value": 45015.0
-        },
         {
           "label": "10/22",
           "value": 45226.0
@@ -1684,13 +1680,13 @@
         {
           "label": "10/27",
           "value": 44590.0
+        },
+        {
+          "label": "10/28",
+          "value": 44910.0
         }
       ],
       "month": [
-        {
-          "label": "09/29",
-          "value": 44556.0
-        },
         {
           "label": "09/30",
           "value": 44450.0
@@ -1766,6 +1762,10 @@
         {
           "label": "10/27",
           "value": 44590.0
+        },
+        {
+          "label": "10/28",
+          "value": 44910.0
         }
       ],
       "news": [
