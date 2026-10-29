@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/29 18:43",
+  "updated_at": "2026/10/30 03:20",
   "weather": {
     "text": "雨",
-    "max": 11.4,
-    "min": 0.1,
-    "rain": 100
+    "max": 16.8,
+    "min": 7.1,
+    "rain": 98
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 970848.46,
+    "total": 973311.92,
     "purchaseTotal": 965783.48,
-    "deltaYen": 6127.68,
-    "deltaPercent": 0.6351765326336187,
-    "unrealizedYen": 5064.979999999981,
-    "unrealizedPercent": 0.5244426007369666,
+    "deltaYen": 4283.45,
+    "deltaPercent": 0.4420355162526855,
+    "unrealizedYen": 7528.4400000000605,
+    "unrealizedPercent": 0.7795163363117436,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": 1.4534883720930258,
       "unrealizedYen": -4330.0,
       "unrealizedPercent": -7.639378969654199,
-      "weekChange": -7.098491570541265,
-      "monthChange": -5.997486083677506,
+      "weekChange": -9.042834479111583,
+      "monthChange": -7.344226970730827,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/22",
+          "value": 2836.5
+        },
+        {
           "label": "10/23",
           "value": 2817.5
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/28",
           "value": 2580.0
-        },
-        {
-          "label": "10/29",
-          "value": 2617.5
         }
       ],
       "month": [
@@ -414,10 +414,6 @@
         {
           "label": "10/28",
           "value": 2580.0
-        },
-        {
-          "label": "10/29",
-          "value": 2617.5
         }
       ],
       "news": [
@@ -445,8 +441,8 @@
       "change": -1.8409337023222228,
       "unrealizedYen": 2070.0,
       "unrealizedPercent": 2.603446107407873,
-      "weekChange": -4.461880782293004,
-      "monthChange": 3.3181357649442855,
+      "weekChange": -4.4602827911254135,
+      "monthChange": 5.255825734549147,
       "intraday": [
         {
           "label": "09:05",
@@ -715,6 +711,10 @@
       ],
       "week": [
         {
+          "label": "10/22",
+          "value": 8699.0
+        },
+        {
           "label": "10/23",
           "value": 8539.0
         },
@@ -729,10 +729,6 @@
         {
           "label": "10/28",
           "value": 8311.0
-        },
-        {
-          "label": "10/29",
-          "value": 8158.0
         }
       ],
       "month": [
@@ -819,10 +815,6 @@
         {
           "label": "10/28",
           "value": 8311.0
-        },
-        {
-          "label": "10/29",
-          "value": 8158.0
         }
       ],
       "news": [
@@ -850,8 +842,8 @@
       "change": 2.1621621621621623,
       "unrealizedYen": 10800.0,
       "unrealizedPercent": 10.526315789473683,
-      "weekChange": -0.9087752702021668,
-      "monthChange": 8.371557104558525,
+      "weekChange": -2.8191168401678235,
+      "monthChange": 6.077979176419701,
       "intraday": [
         {
           "label": "09:05",
@@ -1120,6 +1112,10 @@
       ],
       "week": [
         {
+          "label": "10/22",
+          "value": 571.1
+        },
+        {
           "label": "10/23",
           "value": 572.2
         },
@@ -1134,10 +1130,6 @@
         {
           "label": "10/28",
           "value": 555.0
-        },
-        {
-          "label": "10/29",
-          "value": 567.0
         }
       ],
       "month": [
@@ -1224,10 +1216,6 @@
         {
           "label": "10/28",
           "value": 555.0
-        },
-        {
-          "label": "10/29",
-          "value": 567.0
         }
       ],
       "news": [
@@ -1255,8 +1243,8 @@
       "change": 2.3668639053254337,
       "unrealizedYen": -8300.0,
       "unrealizedPercent": -12.05519244734931,
-      "weekChange": 9.69202898550725,
-      "monthChange": -10.16320474777448,
+      "weekChange": 4.968944099378891,
+      "monthChange": -12.240356083086057,
       "intraday": [
         {
           "label": "09:05",
@@ -1525,6 +1513,10 @@
       ],
       "week": [
         {
+          "label": "10/22",
+          "value": 1127.0
+        },
+        {
           "label": "10/23",
           "value": 1104.0
         },
@@ -1539,10 +1531,6 @@
         {
           "label": "10/28",
           "value": 1183.0
-        },
-        {
-          "label": "10/29",
-          "value": 1211.0
         }
       ],
       "month": [
@@ -1629,19 +1617,15 @@
         {
           "label": "10/28",
           "value": 1183.0
-        },
-        {
-          "label": "10/29",
-          "value": 1211.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
-          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
+          "title": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
+          "description": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
+          "date": "2026/10/26",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbmFUaldmUjJ0cGxOZ3RLX0lUbm5sZkNCZjl6OVg1ZWs2Z3plblRwM1NRNmtDX1o2dkppZGZEclo3SG56Uy11UDR4Tl92bnV4Q0ZoUzRHNWd5Zko5MF9uVUV1N014aFVPUTEtTnZ3TWxVamRuOV80bHVqNzlyRGcwNzFIeU05NGM?oc=5"
         }
       ]
     },
@@ -1660,8 +1644,8 @@
       "change": -2.0130006290627,
       "unrealizedYen": 275.0,
       "unrealizedPercent": 0.4730165555794453,
-      "weekChange": -4.63265306122449,
-      "monthChange": -12.621540762902017,
+      "weekChange": -2.733020599632874,
+      "monthChange": -10.82647718773373,
       "intraday": [
         {
           "label": "09:05",
@@ -1930,6 +1914,10 @@
       ],
       "week": [
         {
+          "label": "10/22",
+          "value": 2451.5
+        },
+        {
           "label": "10/23",
           "value": 2450.0
         },
@@ -1944,10 +1932,6 @@
         {
           "label": "10/28",
           "value": 2384.5
-        },
-        {
-          "label": "10/29",
-          "value": 2336.5
         }
       ],
       "month": [
@@ -2034,13 +2018,17 @@
         {
           "label": "10/28",
           "value": 2384.5
-        },
-        {
-          "label": "10/29",
-          "value": 2336.5
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO） - Yahoo!ニュース",
+          "description": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/09/11",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmdfZXJxSzdaQ3NIeHdKT2RKVzY5UndWYzZYZmVFUi1iQUpqeWFwc21OdFcyYk1Gek8zVlVkbldBdVFKdVM5SmpOQUVORmhvU2RiTjM2SXRTSERMcmFvZjQwREhmVnd4NUhqOV9TUjBTb0M5dFFJOFBaMWpmR0E?oc=5"
+        }
+      ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -2051,21 +2039,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44910.0,
-      "previousClose": 44590.0,
-      "value": 604555.96,
-      "deltaYen": 4307.68,
-      "change": 0.7176496972415292,
-      "unrealizedYen": 4549.99,
-      "unrealizedPercent": 0.7583236112357475,
-      "weekChange": -0.6987131296157023,
-      "monthChange": 1.0348706411698494,
+      "price": 45093.0,
+      "previousClose": 44910.0,
+      "value": 607019.42,
+      "deltaYen": 2463.45,
+      "change": 0.4074816299265205,
+      "unrealizedYen": 7013.44,
+      "unrealizedPercent": 1.168895270573447,
+      "weekChange": 2.038830557566973,
+      "monthChange": 1.300714381992174,
       "intraday": [],
       "week": [
-        {
-          "label": "10/22",
-          "value": 45226.0
-        },
         {
           "label": "10/23",
           "value": 44192.0
@@ -2081,13 +2065,13 @@
         {
           "label": "10/28",
           "value": 44910.0
+        },
+        {
+          "label": "10/29",
+          "value": 45093.0
         }
       ],
       "month": [
-        {
-          "label": "09/30",
-          "value": 44450.0
-        },
         {
           "label": "10/01",
           "value": 44514.0
@@ -2163,6 +2147,10 @@
         {
           "label": "10/28",
           "value": 44910.0
+        },
+        {
+          "label": "10/29",
+          "value": 45093.0
         }
       ],
       "news": [
@@ -2170,7 +2158,7 @@
           "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
           "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/29",
+          "date": "2026/10/30",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
