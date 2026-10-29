@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026/10/29 09:43",
+  "updated_at": "2026/10/29 11:05",
   "weather": {
     "text": "雨",
-    "max": 11.0,
-    "min": -0.0,
+    "max": 11.4,
+    "min": 0.1,
     "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 304940.0,
-    "purchaseTotal": 307640,
-    "deltaYen": 80.0,
-    "deltaPercent": 0.0262415534999672,
+    "total": 365307.5,
+    "purchaseTotal": 365777.5,
+    "deltaYen": 835.0,
+    "deltaPercent": 0.22909821728662655,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 909495.96,
-    "purchaseTotal": 907645.98,
-    "deltaYen": 4387.68,
-    "deltaPercent": 0.48476851852465663,
-    "unrealizedYen": 1849.9799999999814,
-    "unrealizedPercent": 0.2038217587874935,
+    "total": 969863.46,
+    "purchaseTotal": 965783.48,
+    "deltaYen": 5142.68,
+    "deltaPercent": 0.5330744508271088,
+    "unrealizedYen": 4079.9799999999814,
+    "unrealizedPercent": 0.4224528669717959,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2572.0,
+      "price": 2590.5,
       "previousClose": 2580.0,
-      "value": 51440.0,
-      "deltaYen": -160.0,
-      "change": -0.31007751937984773,
-      "unrealizedYen": -5240.0,
-      "unrealizedPercent": -9.244883556810162,
-      "weekChange": -8.7133984028394,
-      "monthChange": -7.6315316933022075,
+      "value": 51810.0,
+      "deltaYen": 210.0,
+      "change": 0.40697674418603835,
+      "unrealizedYen": -4870.0,
+      "unrealizedPercent": -8.59209597741708,
+      "weekChange": -8.056787932564335,
+      "monthChange": -6.967139522355903,
       "intraday": [
         {
           "label": "09:05",
@@ -61,11 +61,75 @@
         },
         {
           "label": "09:25",
-          "value": 2570.5
+          "value": 2574.0
         },
         {
-          "label": "09:28",
-          "value": 2572.0
+          "label": "09:30",
+          "value": 2574.5
+        },
+        {
+          "label": "09:35",
+          "value": 2576.0
+        },
+        {
+          "label": "09:40",
+          "value": 2579.0
+        },
+        {
+          "label": "09:45",
+          "value": 2569.5
+        },
+        {
+          "label": "09:50",
+          "value": 2566.5
+        },
+        {
+          "label": "09:55",
+          "value": 2574.0
+        },
+        {
+          "label": "10:00",
+          "value": 2577.0
+        },
+        {
+          "label": "10:05",
+          "value": 2578.5
+        },
+        {
+          "label": "10:10",
+          "value": 2577.5
+        },
+        {
+          "label": "10:15",
+          "value": 2575.5
+        },
+        {
+          "label": "10:20",
+          "value": 2581.0
+        },
+        {
+          "label": "10:25",
+          "value": 2576.5
+        },
+        {
+          "label": "10:30",
+          "value": 2582.0
+        },
+        {
+          "label": "10:35",
+          "value": 2582.5
+        },
+        {
+          "label": "10:40",
+          "value": 2594.0
+        },
+        {
+          "label": "10:45",
+          "value": 2589.0
+        },
+        {
+          "label": "10:50",
+          "value": 2590.5
         }
       ],
       "week": [
@@ -87,7 +151,7 @@
         },
         {
           "label": "10/29",
-          "value": 2572.0
+          "value": 2590.5
         }
       ],
       "month": [
@@ -177,7 +241,7 @@
         },
         {
           "label": "10/29",
-          "value": 2572.0
+          "value": 2590.5
         }
       ],
       "news": [
@@ -198,15 +262,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8121.0,
+      "price": 8249.0,
       "previousClose": 8311.0,
-      "value": 81210.0,
-      "deltaYen": -1900.0,
-      "change": -2.2861268198772766,
-      "unrealizedYen": 1700.0,
-      "unrealizedPercent": 2.138095837001635,
-      "weekChange": -4.8951867900222545,
-      "monthChange": 2.849544072948329,
+      "value": 82490.0,
+      "deltaYen": -620.0,
+      "change": -0.7459992780652125,
+      "unrealizedYen": 2980.0,
+      "unrealizedPercent": 3.747956231920513,
+      "weekChange": -3.396182222742705,
+      "monthChange": 4.470618034447815,
       "intraday": [
         {
           "label": "09:05",
@@ -226,11 +290,75 @@
         },
         {
           "label": "09:25",
-          "value": 8115.0
+          "value": 8137.0
         },
         {
-          "label": "09:28",
-          "value": 8121.0
+          "label": "09:30",
+          "value": 8173.0
+        },
+        {
+          "label": "09:35",
+          "value": 8168.0
+        },
+        {
+          "label": "09:40",
+          "value": 8171.0
+        },
+        {
+          "label": "09:45",
+          "value": 8157.0
+        },
+        {
+          "label": "09:50",
+          "value": 8169.0
+        },
+        {
+          "label": "09:55",
+          "value": 8183.0
+        },
+        {
+          "label": "10:00",
+          "value": 8210.0
+        },
+        {
+          "label": "10:05",
+          "value": 8227.0
+        },
+        {
+          "label": "10:10",
+          "value": 8235.0
+        },
+        {
+          "label": "10:15",
+          "value": 8218.0
+        },
+        {
+          "label": "10:20",
+          "value": 8225.0
+        },
+        {
+          "label": "10:25",
+          "value": 8208.0
+        },
+        {
+          "label": "10:30",
+          "value": 8225.0
+        },
+        {
+          "label": "10:35",
+          "value": 8222.0
+        },
+        {
+          "label": "10:40",
+          "value": 8246.0
+        },
+        {
+          "label": "10:45",
+          "value": 8252.0
+        },
+        {
+          "label": "10:50",
+          "value": 8249.0
         }
       ],
       "week": [
@@ -252,7 +380,7 @@
         },
         {
           "label": "10/29",
-          "value": 8121.0
+          "value": 8249.0
         }
       ],
       "month": [
@@ -342,7 +470,7 @@
         },
         {
           "label": "10/29",
-          "value": 8121.0
+          "value": 8249.0
         }
       ],
       "news": [
@@ -363,15 +491,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 558.2,
+      "price": 564.1,
       "previousClose": 555.0,
-      "value": 111640.0,
-      "deltaYen": 640.0,
-      "change": 0.5765787760416696,
-      "unrealizedYen": 9040.0,
-      "unrealizedPercent": 8.810918558875487,
-      "weekChange": -2.4466969069085853,
-      "monthChange": 6.68960229040485,
+      "value": 112820.0,
+      "deltaYen": 1820.0,
+      "change": 1.6396352407094694,
+      "unrealizedYen": 10220.0,
+      "unrealizedPercent": 9.961008886147662,
+      "weekChange": -1.4155953247625974,
+      "monthChange": 7.817271105628731,
       "intraday": [
         {
           "label": "09:05",
@@ -391,11 +519,75 @@
         },
         {
           "label": "09:25",
-          "value": 557.7
+          "value": 558.2
         },
         {
-          "label": "09:28",
-          "value": 558.2
+          "label": "09:30",
+          "value": 561.2
+        },
+        {
+          "label": "09:35",
+          "value": 561.5
+        },
+        {
+          "label": "09:40",
+          "value": 561.0
+        },
+        {
+          "label": "09:45",
+          "value": 561.2
+        },
+        {
+          "label": "09:50",
+          "value": 562.4
+        },
+        {
+          "label": "09:55",
+          "value": 562.7
+        },
+        {
+          "label": "10:00",
+          "value": 564.5
+        },
+        {
+          "label": "10:05",
+          "value": 564.6
+        },
+        {
+          "label": "10:10",
+          "value": 564.9
+        },
+        {
+          "label": "10:15",
+          "value": 564.3
+        },
+        {
+          "label": "10:20",
+          "value": 564.3
+        },
+        {
+          "label": "10:25",
+          "value": 563.5
+        },
+        {
+          "label": "10:30",
+          "value": 564.1
+        },
+        {
+          "label": "10:35",
+          "value": 562.5
+        },
+        {
+          "label": "10:40",
+          "value": 563.8
+        },
+        {
+          "label": "10:45",
+          "value": 564.0
+        },
+        {
+          "label": "10:50",
+          "value": 564.1
         }
       ],
       "week": [
@@ -417,7 +609,7 @@
         },
         {
           "label": "10/29",
-          "value": 558.2
+          "value": 564.1
         }
       ],
       "month": [
@@ -507,16 +699,16 @@
         },
         {
           "label": "10/29",
-          "value": 558.2
+          "value": 564.1
         }
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/22",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rYUJraUNROU1WVzZQTVdGWGZUU252Sk85N01GQW1XeVRINTAyd0VBck9BRTJjcUE3aGd3Ylc1ZzRUbm1XbEJKcWFiM2tfQWp2QTBPSUhsVWYwblJ3UUpnbUVzV0JrRnVmWHBsYmwzbnVIRkJnTlE?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -528,15 +720,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1213.0,
+      "price": 1201.0,
       "previousClose": 1183.0,
-      "value": 60650.0,
-      "deltaYen": 1500.0,
-      "change": 2.5359256128486996,
-      "unrealizedYen": -8200.0,
-      "unrealizedPercent": -11.909949164851126,
-      "weekChange": 9.873188405797094,
-      "monthChange": -10.014836795252224,
+      "value": 60050.0,
+      "deltaYen": 900.0,
+      "change": 1.5215553677092153,
+      "unrealizedYen": -8800.0,
+      "unrealizedPercent": -12.781408859840232,
+      "weekChange": 8.78623188405796,
+      "monthChange": -10.905044510385753,
       "intraday": [
         {
           "label": "09:05",
@@ -556,11 +748,75 @@
         },
         {
           "label": "09:25",
-          "value": 1216.0
+          "value": 1211.0
         },
         {
-          "label": "09:28",
+          "label": "09:30",
+          "value": 1203.0
+        },
+        {
+          "label": "09:35",
+          "value": 1206.0
+        },
+        {
+          "label": "09:40",
+          "value": 1207.0
+        },
+        {
+          "label": "09:45",
+          "value": 1208.0
+        },
+        {
+          "label": "09:50",
           "value": 1213.0
+        },
+        {
+          "label": "09:55",
+          "value": 1214.0
+        },
+        {
+          "label": "10:00",
+          "value": 1213.0
+        },
+        {
+          "label": "10:05",
+          "value": 1220.0
+        },
+        {
+          "label": "10:10",
+          "value": 1219.0
+        },
+        {
+          "label": "10:15",
+          "value": 1217.0
+        },
+        {
+          "label": "10:20",
+          "value": 1214.0
+        },
+        {
+          "label": "10:25",
+          "value": 1214.0
+        },
+        {
+          "label": "10:30",
+          "value": 1208.0
+        },
+        {
+          "label": "10:35",
+          "value": 1207.0
+        },
+        {
+          "label": "10:40",
+          "value": 1202.0
+        },
+        {
+          "label": "10:45",
+          "value": 1201.0
+        },
+        {
+          "label": "10:50",
+          "value": 1201.0
         }
       ],
       "week": [
@@ -582,7 +838,7 @@
         },
         {
           "label": "10/29",
-          "value": 1213.0
+          "value": 1201.0
         }
       ],
       "month": [
@@ -672,7 +928,7 @@
         },
         {
           "label": "10/29",
-          "value": 1213.0
+          "value": 1201.0
         }
       ],
       "news": [
@@ -682,6 +938,235 @@
           "source": "Yahoo!ファイナンス",
           "date": "2026/10/27",
           "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "IHI",
+      "ticker": "7013.T",
+      "type": "stock",
+      "qty": 25,
+      "qtyLabel": "25株",
+      "cost": 2325.5,
+      "purchaseValue": 58137.5,
+      "price": 2325.5,
+      "previousClose": 2384.5,
+      "value": 58137.5,
+      "deltaYen": -1475.0,
+      "change": -2.4743132732228945,
+      "unrealizedYen": 0.0,
+      "unrealizedPercent": 0.0,
+      "weekChange": -5.08163265306123,
+      "monthChange": -13.032909498878087,
+      "intraday": [
+        {
+          "label": "09:05",
+          "value": 2363.5
+        },
+        {
+          "label": "09:10",
+          "value": 2354.5
+        },
+        {
+          "label": "09:15",
+          "value": 2355.5
+        },
+        {
+          "label": "09:20",
+          "value": 2356.5
+        },
+        {
+          "label": "09:25",
+          "value": 2350.5
+        },
+        {
+          "label": "09:30",
+          "value": 2350.0
+        },
+        {
+          "label": "09:35",
+          "value": 2346.0
+        },
+        {
+          "label": "09:40",
+          "value": 2352.5
+        },
+        {
+          "label": "09:45",
+          "value": 2351.0
+        },
+        {
+          "label": "09:50",
+          "value": 2353.5
+        },
+        {
+          "label": "09:55",
+          "value": 2352.0
+        },
+        {
+          "label": "10:00",
+          "value": 2355.0
+        },
+        {
+          "label": "10:05",
+          "value": 2354.5
+        },
+        {
+          "label": "10:10",
+          "value": 2350.5
+        },
+        {
+          "label": "10:15",
+          "value": 2350.5
+        },
+        {
+          "label": "10:20",
+          "value": 2350.5
+        },
+        {
+          "label": "10:25",
+          "value": 2340.5
+        },
+        {
+          "label": "10:30",
+          "value": 2335.0
+        },
+        {
+          "label": "10:35",
+          "value": 2335.0
+        },
+        {
+          "label": "10:40",
+          "value": 2329.0
+        },
+        {
+          "label": "10:45",
+          "value": 2325.5
+        },
+        {
+          "label": "10:50",
+          "value": 2325.5
+        }
+      ],
+      "week": [
+        {
+          "label": "10/23",
+          "value": 2450.0
+        },
+        {
+          "label": "10/26",
+          "value": 2392.5
+        },
+        {
+          "label": "10/27",
+          "value": 2401.5
+        },
+        {
+          "label": "10/28",
+          "value": 2384.5
+        },
+        {
+          "label": "10/29",
+          "value": 2325.5
+        }
+      ],
+      "month": [
+        {
+          "label": "09/29",
+          "value": 2674.0
+        },
+        {
+          "label": "09/30",
+          "value": 2692.5
+        },
+        {
+          "label": "10/01",
+          "value": 2711.5
+        },
+        {
+          "label": "10/02",
+          "value": 2707.5
+        },
+        {
+          "label": "10/05",
+          "value": 2720.0
+        },
+        {
+          "label": "10/06",
+          "value": 2715.0
+        },
+        {
+          "label": "10/07",
+          "value": 2691.0
+        },
+        {
+          "label": "10/08",
+          "value": 2590.0
+        },
+        {
+          "label": "10/09",
+          "value": 2625.5
+        },
+        {
+          "label": "10/13",
+          "value": 2571.5
+        },
+        {
+          "label": "10/14",
+          "value": 2537.0
+        },
+        {
+          "label": "10/15",
+          "value": 2406.0
+        },
+        {
+          "label": "10/16",
+          "value": 2526.5
+        },
+        {
+          "label": "10/19",
+          "value": 2578.5
+        },
+        {
+          "label": "10/20",
+          "value": 2472.5
+        },
+        {
+          "label": "10/21",
+          "value": 2505.0
+        },
+        {
+          "label": "10/22",
+          "value": 2451.5
+        },
+        {
+          "label": "10/23",
+          "value": 2450.0
+        },
+        {
+          "label": "10/26",
+          "value": 2392.5
+        },
+        {
+          "label": "10/27",
+          "value": 2401.5
+        },
+        {
+          "label": "10/28",
+          "value": 2384.5
+        },
+        {
+          "label": "10/29",
+          "value": 2325.5
+        }
+      ],
+      "news": [
+        {
+          "title": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/08/05",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16YVpHM1IyckN5LWYyeU00ZjdGSUY0T2xabGdMNHZCZDNFaHRPWHhxNEltNS1yX25kalFRM1hrMmRZcFZLNm5xZ3loUkloTlB4VWlKcVRzcjZsbnR4TERHZFFWbXZCZkdOYXc?oc=5"
         }
       ]
     },
