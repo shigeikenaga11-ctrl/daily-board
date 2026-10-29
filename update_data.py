@@ -46,6 +46,7 @@ STOCKS = [
         "cost": 1377,
         "newsQuery": "北洋銀行"
     }
+        {'name':'IHI','ticker':'7013.T','qty':25,'cost':2325.5,'newsQuery':'IHI'},
 ]
 
 
