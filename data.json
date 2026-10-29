@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/29 11:50",
+  "updated_at": "2026/10/29 12:23",
   "weather": {
     "text": "雨",
     "max": 11.4,
@@ -406,7 +406,7 @@
         },
         {
           "label": "11:10",
-          "value": 8252.0
+          "value": 8251.0
         },
         {
           "label": "11:15",
@@ -800,11 +800,11 @@
       ],
       "news": [
         {
-          "title": "日経平均は続落、半導体関連株への売りが重荷となる一方、商社株は堅調(東京海上) 2026年10月26日[フィスコ] - みんかぶ",
-          "description": "日経平均は続落、半導体関連株への売りが重荷となる一方、商社株は堅調(東京海上) 2026年10月26日[フィスコ]",
-          "source": "みんかぶ",
-          "date": "2026/10/26",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBIbjd3Wmp4UXlHRmZaZGV6ZlBVRHc0cXVMS2wyNXUwSERfb2xyMUtwbkJ5Q2JqZ2F2eVU4X3o0VDJCRDM0M3F0OHUwMEhTeUZtMWJDbw?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
