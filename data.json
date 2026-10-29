@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/29 12:31",
+  "updated_at": "2026/10/29 12:45",
   "weather": {
     "text": "雨",
     "max": 11.4,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 365560.0,
+    "total": 364537.5,
     "purchaseTotal": 365777.5,
-    "deltaYen": 1087.5,
-    "deltaPercent": 0.29837642071761244,
+    "deltaYen": 65.0,
+    "deltaPercent": 0.01783399296243201,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 970115.96,
+    "total": 969093.46,
     "purchaseTotal": 965783.48,
-    "deltaYen": 5395.18,
-    "deltaPercent": 0.5592478271277624,
-    "unrealizedYen": 4332.479999999981,
-    "unrealizedPercent": 0.44859744339383206,
+    "deltaYen": 4372.68,
+    "deltaPercent": 0.45325861022709607,
+    "unrealizedYen": 3309.9799999999814,
+    "unrealizedPercent": 0.34272485174420064,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2605.0,
+      "price": 2596.0,
       "previousClose": 2580.0,
-      "value": 52100.0,
-      "deltaYen": 500.0,
-      "change": 0.9689922480620172,
-      "unrealizedYen": -4580.0,
-      "unrealizedPercent": -8.08045165843331,
-      "weekChange": -7.5421472937000855,
-      "monthChange": -6.446399712695272,
+      "value": 51920.0,
+      "deltaYen": 320.0,
+      "change": 0.6201550387596955,
+      "unrealizedYen": -4760.0,
+      "unrealizedPercent": -8.39802399435427,
+      "weekChange": -7.861579414374442,
+      "monthChange": -6.769617525588078,
       "intraday": [
         {
           "label": "09:05",
@@ -162,6 +162,10 @@
         {
           "label": "11:30",
           "value": 2605.0
+        },
+        {
+          "label": "12:30",
+          "value": 2596.0
         }
       ],
       "week": [
@@ -183,7 +187,7 @@
         },
         {
           "label": "10/29",
-          "value": 2605.0
+          "value": 2596.0
         }
       ],
       "month": [
@@ -273,7 +277,7 @@
         },
         {
           "label": "10/29",
-          "value": 2605.0
+          "value": 2596.0
         }
       ],
       "news": [
@@ -294,15 +298,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8259.0,
+      "price": 8205.0,
       "previousClose": 8311.0,
-      "value": 82590.0,
-      "deltaYen": -520.0,
-      "change": -0.6256768138611424,
-      "unrealizedYen": 3080.0,
-      "unrealizedPercent": 3.8737265752735506,
-      "weekChange": -3.2790724909239954,
-      "monthChange": 4.597264437689974,
+      "value": 82050.0,
+      "deltaYen": -1060.0,
+      "change": -1.2754181205631099,
+      "unrealizedYen": 2540.0,
+      "unrealizedPercent": 3.194566721167149,
+      "weekChange": -3.911465042745055,
+      "monthChange": 3.9133738601823786,
       "intraday": [
         {
           "label": "09:05",
@@ -406,7 +410,7 @@
         },
         {
           "label": "11:10",
-          "value": 8252.0
+          "value": 8251.0
         },
         {
           "label": "11:15",
@@ -423,6 +427,10 @@
         {
           "label": "11:30",
           "value": 8259.0
+        },
+        {
+          "label": "12:30",
+          "value": 8205.0
         }
       ],
       "week": [
@@ -444,7 +452,7 @@
         },
         {
           "label": "10/29",
-          "value": 8259.0
+          "value": 8205.0
         }
       ],
       "month": [
@@ -534,7 +542,7 @@
         },
         {
           "label": "10/29",
-          "value": 8259.0
+          "value": 8205.0
         }
       ],
       "news": [
@@ -555,15 +563,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 564.1,
+      "price": 563.4,
       "previousClose": 555.0,
-      "value": 112820.0,
-      "deltaYen": 1820.0,
-      "change": 1.6396352407094694,
-      "unrealizedYen": 10220.0,
-      "unrealizedPercent": 9.961008886147662,
-      "weekChange": -1.4155953247625974,
-      "monthChange": 7.817271105628731,
+      "value": 112680.0,
+      "deltaYen": 1680.0,
+      "change": 1.513517912443696,
+      "unrealizedYen": 10080.0,
+      "unrealizedPercent": 9.824566162585283,
+      "weekChange": -1.5379216367064297,
+      "monthChange": 7.683488392413107,
       "intraday": [
         {
           "label": "09:05",
@@ -684,6 +692,10 @@
         {
           "label": "11:30",
           "value": 564.1
+        },
+        {
+          "label": "12:30",
+          "value": 563.4
         }
       ],
       "week": [
@@ -705,7 +717,7 @@
         },
         {
           "label": "10/29",
-          "value": 564.1
+          "value": 563.4
         }
       ],
       "month": [
@@ -795,7 +807,7 @@
         },
         {
           "label": "10/29",
-          "value": 564.1
+          "value": 563.4
         }
       ],
       "news": [
@@ -816,15 +828,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1200.0,
+      "price": 1199.0,
       "previousClose": 1183.0,
-      "value": 60000.0,
-      "deltaYen": 850.0,
-      "change": 1.4370245139475823,
-      "unrealizedYen": -8850.0,
-      "unrealizedPercent": -12.854030501089325,
-      "weekChange": 8.695652173913038,
-      "monthChange": -10.979228486646885,
+      "value": 59950.0,
+      "deltaYen": 800.0,
+      "change": 1.3524936601859716,
+      "unrealizedYen": -8900.0,
+      "unrealizedPercent": -12.926652142338416,
+      "weekChange": 8.605072463768115,
+      "monthChange": -11.053412462908007,
       "intraday": [
         {
           "label": "09:05",
@@ -945,6 +957,10 @@
         {
           "label": "11:30",
           "value": 1200.0
+        },
+        {
+          "label": "12:30",
+          "value": 1199.0
         }
       ],
       "week": [
@@ -966,7 +982,7 @@
         },
         {
           "label": "10/29",
-          "value": 1200.0
+          "value": 1199.0
         }
       ],
       "month": [
@@ -1056,7 +1072,7 @@
         },
         {
           "label": "10/29",
-          "value": 1200.0
+          "value": 1199.0
         }
       ],
       "news": [
@@ -1077,15 +1093,15 @@
       "qtyLabel": "25株",
       "cost": 2325.5,
       "purchaseValue": 58137.5,
-      "price": 2322.0,
+      "price": 2317.5,
       "previousClose": 2384.5,
-      "value": 58050.0,
-      "deltaYen": -1562.5,
-      "change": -2.621094569092053,
-      "unrealizedYen": -87.5,
-      "unrealizedPercent": -0.15050526768436895,
-      "weekChange": -5.224489795918363,
-      "monthChange": -13.163799551234101,
+      "value": 57937.5,
+      "deltaYen": -1675.0,
+      "change": -2.8098133780666834,
+      "unrealizedYen": -200.0,
+      "unrealizedPercent": -0.34401204042141476,
+      "weekChange": -5.40816326530612,
+      "monthChange": -13.332086761406137,
       "intraday": [
         {
           "label": "09:05",
@@ -1206,6 +1222,10 @@
         {
           "label": "11:30",
           "value": 2322.0
+        },
+        {
+          "label": "12:30",
+          "value": 2317.5
         }
       ],
       "week": [
@@ -1227,7 +1247,7 @@
         },
         {
           "label": "10/29",
-          "value": 2322.0
+          "value": 2317.5
         }
       ],
       "month": [
@@ -1317,16 +1337,16 @@
         },
         {
           "label": "10/29",
-          "value": 2322.0
+          "value": 2317.5
         }
       ],
       "news": [
         {
-          "title": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/08/05",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16YVpHM1IyckN5LWYyeU00ZjdGSUY0T2xabGdMNHZCZDNFaHRPWHhxNEltNS1yX25kalFRM1hrMmRZcFZLNm5xZ3loUkloTlB4VWlKcVRzcjZsbnR4TERHZFFWbXZCZkdOYXc?oc=5"
+          "title": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO） - Yahoo!ニュース",
+          "description": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/09/11",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmdfZXJxSzdaQ3NIeHdKT2RKVzY5UndWYzZYZmVFUi1iQUpqeWFwc21OdFcyYk1Gek8zVlVkbldBdVFKdVM5SmpOQUVORmhvU2RiTjM2SXRTSERMcmFvZjQwREhmVnd4NUhqOV9TUjBTb0M5dFFJOFBaMWpmR0E?oc=5"
         }
       ]
     },
