@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/29 12:45",
+  "updated_at": "2026/10/29 12:54",
   "weather": {
     "text": "雨",
     "max": 11.4,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 364537.5,
+    "total": 365800.0,
     "purchaseTotal": 365777.5,
-    "deltaYen": 65.0,
-    "deltaPercent": 0.01783399296243201,
+    "deltaYen": 1327.5,
+    "deltaPercent": 0.36422501011736136,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 969093.46,
+    "total": 970355.96,
     "purchaseTotal": 965783.48,
-    "deltaYen": 4372.68,
-    "deltaPercent": 0.45325861022709607,
-    "unrealizedYen": 3309.9799999999814,
-    "unrealizedPercent": 0.34272485174420064,
+    "deltaYen": 5635.18,
+    "deltaPercent": 0.5841254917303638,
+    "unrealizedYen": 4572.479999999981,
+    "unrealizedPercent": 0.47344773385438127,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2596.0,
+      "price": 2605.0,
       "previousClose": 2580.0,
-      "value": 51920.0,
-      "deltaYen": 320.0,
-      "change": 0.6201550387596955,
-      "unrealizedYen": -4760.0,
-      "unrealizedPercent": -8.39802399435427,
-      "weekChange": -7.861579414374442,
-      "monthChange": -6.769617525588078,
+      "value": 52100.0,
+      "deltaYen": 500.0,
+      "change": 0.9689922480620172,
+      "unrealizedYen": -4580.0,
+      "unrealizedPercent": -8.08045165843331,
+      "weekChange": -7.5421472937000855,
+      "monthChange": -6.446399712695272,
       "intraday": [
         {
           "label": "09:05",
@@ -165,7 +165,15 @@
         },
         {
           "label": "12:30",
-          "value": 2596.0
+          "value": 2602.5
+        },
+        {
+          "label": "12:35",
+          "value": 2605.0
+        },
+        {
+          "label": "12:39",
+          "value": 2605.0
         }
       ],
       "week": [
@@ -187,7 +195,7 @@
         },
         {
           "label": "10/29",
-          "value": 2596.0
+          "value": 2605.0
         }
       ],
       "month": [
@@ -277,7 +285,7 @@
         },
         {
           "label": "10/29",
-          "value": 2596.0
+          "value": 2605.0
         }
       ],
       "news": [
@@ -298,15 +306,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8205.0,
+      "price": 8211.0,
       "previousClose": 8311.0,
-      "value": 82050.0,
-      "deltaYen": -1060.0,
-      "change": -1.2754181205631099,
-      "unrealizedYen": 2540.0,
-      "unrealizedPercent": 3.194566721167149,
-      "weekChange": -3.911465042745055,
-      "monthChange": 3.9133738601823786,
+      "value": 82110.0,
+      "deltaYen": -1000.0,
+      "change": -1.2032246420406678,
+      "unrealizedYen": 2600.0,
+      "unrealizedPercent": 3.270028927178971,
+      "weekChange": -3.8411992036538223,
+      "monthChange": 3.9893617021276695,
       "intraday": [
         {
           "label": "09:05",
@@ -430,7 +438,15 @@
         },
         {
           "label": "12:30",
+          "value": 8201.0
+        },
+        {
+          "label": "12:35",
           "value": 8205.0
+        },
+        {
+          "label": "12:39",
+          "value": 8211.0
         }
       ],
       "week": [
@@ -452,7 +468,7 @@
         },
         {
           "label": "10/29",
-          "value": 8205.0
+          "value": 8211.0
         }
       ],
       "month": [
@@ -542,7 +558,7 @@
         },
         {
           "label": "10/29",
-          "value": 8205.0
+          "value": 8211.0
         }
       ],
       "news": [
@@ -563,15 +579,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 563.4,
+      "price": 565.2,
       "previousClose": 555.0,
-      "value": 112680.0,
-      "deltaYen": 1680.0,
-      "change": 1.513517912443696,
-      "unrealizedYen": 10080.0,
-      "unrealizedPercent": 9.824566162585283,
-      "weekChange": -1.5379216367064297,
-      "monthChange": 7.683488392413107,
+      "value": 113040.0,
+      "deltaYen": 2040.0,
+      "change": 1.837840037302918,
+      "unrealizedYen": 10440.0,
+      "unrealizedPercent": 10.175440976029483,
+      "weekChange": -1.2233484534542982,
+      "monthChange": 8.027522748485815,
       "intraday": [
         {
           "label": "09:05",
@@ -695,7 +711,15 @@
         },
         {
           "label": "12:30",
-          "value": 563.4
+          "value": 565.3
+        },
+        {
+          "label": "12:35",
+          "value": 565.6
+        },
+        {
+          "label": "12:39",
+          "value": 565.2
         }
       ],
       "week": [
@@ -717,7 +741,7 @@
         },
         {
           "label": "10/29",
-          "value": 563.4
+          "value": 565.2
         }
       ],
       "month": [
@@ -807,7 +831,7 @@
         },
         {
           "label": "10/29",
-          "value": 563.4
+          "value": 565.2
         }
       ],
       "news": [
@@ -828,15 +852,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1199.0,
+      "price": 1207.0,
       "previousClose": 1183.0,
-      "value": 59950.0,
-      "deltaYen": 800.0,
-      "change": 1.3524936601859716,
-      "unrealizedYen": -8900.0,
-      "unrealizedPercent": -12.926652142338416,
-      "weekChange": 8.605072463768115,
-      "monthChange": -11.053412462908007,
+      "value": 60350.0,
+      "deltaYen": 1200.0,
+      "change": 2.0287404902789463,
+      "unrealizedYen": -8500.0,
+      "unrealizedPercent": -12.345679012345679,
+      "weekChange": 9.329710144927539,
+      "monthChange": -10.45994065281899,
       "intraday": [
         {
           "label": "09:05",
@@ -960,7 +984,15 @@
         },
         {
           "label": "12:30",
-          "value": 1199.0
+          "value": 1201.0
+        },
+        {
+          "label": "12:35",
+          "value": 1208.0
+        },
+        {
+          "label": "12:39",
+          "value": 1207.0
         }
       ],
       "week": [
@@ -982,7 +1014,7 @@
         },
         {
           "label": "10/29",
-          "value": 1199.0
+          "value": 1207.0
         }
       ],
       "month": [
@@ -1072,7 +1104,7 @@
         },
         {
           "label": "10/29",
-          "value": 1199.0
+          "value": 1207.0
         }
       ],
       "news": [
@@ -1093,15 +1125,15 @@
       "qtyLabel": "25株",
       "cost": 2325.5,
       "purchaseValue": 58137.5,
-      "price": 2317.5,
+      "price": 2328.0,
       "previousClose": 2384.5,
-      "value": 57937.5,
-      "deltaYen": -1675.0,
-      "change": -2.8098133780666834,
-      "unrealizedYen": -200.0,
-      "unrealizedPercent": -0.34401204042141476,
-      "weekChange": -5.40816326530612,
-      "monthChange": -13.332086761406137,
+      "value": 58200.0,
+      "deltaYen": -1412.5,
+      "change": -2.3694694904592195,
+      "unrealizedYen": 62.5,
+      "unrealizedPercent": 0.10750376263169212,
+      "weekChange": -4.9795918367346985,
+      "monthChange": -12.939416604338073,
       "intraday": [
         {
           "label": "09:05",
@@ -1225,7 +1257,15 @@
         },
         {
           "label": "12:30",
-          "value": 2317.5
+          "value": 2328.0
+        },
+        {
+          "label": "12:35",
+          "value": 2327.0
+        },
+        {
+          "label": "12:39",
+          "value": 2328.0
         }
       ],
       "week": [
@@ -1247,7 +1287,7 @@
         },
         {
           "label": "10/29",
-          "value": 2317.5
+          "value": 2328.0
         }
       ],
       "month": [
@@ -1337,7 +1377,7 @@
         },
         {
           "label": "10/29",
-          "value": 2317.5
+          "value": 2328.0
         }
       ],
       "news": [
@@ -1475,11 +1515,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/29",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース） - Yahoo!ニュース",
+          "description": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56QlQyRlNVVlJPc0xqYkZySkE4X1hEa3g4OGc5SmlJeDYtb20xNlhSTDBmRl9YYzNhUHJqYS1hc0lKM0V1eHhHQ2hHQzNGMWpYdFJYNW9EX2dLb2lSMVRGb183ckFCLXViclYyTDdTYzNXQXYwdmlqeFNFWEY0aG8?oc=5"
         }
       ]
     }
