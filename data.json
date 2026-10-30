@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/30 11:49",
+  "updated_at": "2026/10/30 12:09",
   "weather": {
     "text": "雨",
     "max": 17.1,
@@ -1061,11 +1061,11 @@
       ],
       "news": [
         {
-          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
-          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
+          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
+          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
+          "date": "2026/10/27",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
         }
       ]
     },
@@ -1455,11 +1455,11 @@
       ],
       "news": [
         {
-          "title": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース） - Yahoo!ニュース",
-          "description": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56QlQyRlNVVlJPc0xqYkZySkE4X1hEa3g4OGc5SmlJeDYtb20xNlhSTDBmRl9YYzNhUHJqYS1hc0lKM0V1eHhHQ2hHQzNGMWpYdFJYNW9EX2dLb2lSMVRGb183ckFCLXViclYyTDdTYzNXQXYwdmlqeFNFWEY0aG8?oc=5"
+          "title": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBCbC10TVdGVDhYZ0FBZEdYaVd5aVJNZmRkbE0yU1FFRVZFSmdDaVZMTzVvTUJrMkFjd2xvRmtfUk5ubTlKMHk4N2FZa0Q3RkVVdEV3OQ?oc=5"
         }
       ]
     }
@@ -1471,9 +1471,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": null,
-      "value_jpy": null,
-      "gain_jpy": null
+      "rate": 158.01,
+      "value_jpy": 94806.0,
+      "gain_jpy": -12.0
     },
     {
       "name": "ユーロ",
@@ -1481,9 +1481,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": null,
-      "value_jpy": null,
-      "gain_jpy": null
+      "rate": 176.35,
+      "value_jpy": 35270.0,
+      "gain_jpy": -274.0
     }
   ]
 }
