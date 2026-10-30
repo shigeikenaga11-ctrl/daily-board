@@ -1275,22 +1275,41 @@ def get_foreign_cash():
     for item in FOREIGN_CASH:
         currency = item["currency"]
 
-        # Yahoo FinanceではなくFrankfurterから取得
         url = (
             "https://api.frankfurter.dev/v2/rate/"
             + currency
             + "/JPY"
         )
 
+        rate = None
+
         try:
-            data = json.loads(fetch(url))
+            request = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": "Mozilla/5.0",
+                    "Accept": "application/json"
+                }
+            )
+
+            with urllib.request.urlopen(
+                request, timeout=20
+            ) as response:
+                data = json.loads(
+                    response.read().decode("utf-8")
+                )
+
+            print("FX response:", currency, data)
+
             rate = float(data["rate"])
 
-            print(currency, "rate:", rate)
-
         except Exception as e:
-            print("FX error:", currency, e)
-            rate = None
+            print(
+                "FX ERROR:",
+                currency,
+                type(e).__name__,
+                str(e)
+            )
 
         amount = item["amount"]
         purchase = item["purchase_jpy"]
