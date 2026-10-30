@@ -1253,38 +1253,64 @@ def build_emaxis():
 # MAIN
 # =========================================================
 
+# ===== 外貨預金 =====
+
+FOREIGN_CASH = [
+    {
+        "name": "米ドル",
+        "currency": "USD",
+        "amount": 600,
+        "purchase_jpy": 94818
+    },
+    {
+        "name": "ユーロ",
+        "currency": "EUR",
+        "amount": 200,
+        "purchase_jpy": 35544
+    }
+]
+
 def get_foreign_cash():
     result = []
-    rates = {}
-
-    for currency, ticker in [
-        ("USD", "JPY=X"),
-        ("EUR", "EURJPY=X"),
-    ]:
-        try:
-            prices = yahoo(ticker, "5d", "1d")
-            rates[currency] = prices[-1][1] if prices else None
-        except Exception as e:
-            print("FX unavailable:", currency, str(e))
-            rates[currency] = None
 
     for item in FOREIGN_CASH:
         currency = item["currency"]
-        rate = rates[currency]
+
+        ticker = (
+            "JPY=X"
+            if currency == "USD"
+            else "EURJPY=X"
+        )
+
+        try:
+            prices = yahoo(ticker, "5d", "1d")
+            rate = prices[-1][1] if prices else None
+        except Exception as e:
+            print("FX error:", currency, e)
+            rate = None
+
         amount = item["amount"]
         purchase = item["purchase_jpy"]
 
-        value = amount * rate if rate is not None else None
+        value = (
+            amount * rate
+            if rate is not None
+            else None
+        )
 
         result.append({
             "name": item["name"],
             "currency": currency,
             "amount": amount,
-            "rate": rate,
             "purchase_jpy": purchase,
             "purchase_rate": purchase / amount,
+            "rate": rate,
             "value_jpy": value,
-            "gain_jpy": value - purchase if value is not None else None,
+            "gain_jpy": (
+                value - purchase
+                if value is not None
+                else None
+            )
         })
 
     return result
@@ -1543,7 +1569,7 @@ def main():
         "assets":
             assets
     }
-
+    data["foreign_cash"] = get_foreign_cash()
 
     OUT.write_text(
 
