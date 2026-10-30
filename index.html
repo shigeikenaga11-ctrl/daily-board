@@ -2593,6 +2593,130 @@ function japaneseStocksChartPage(data) {
    5ページ
    ========================= */
 
+// ===== 外貨預金専用ページ =====
+
+function foreignCashPage(data) {
+
+  const assets = data.foreign_cash || [];
+
+  const valid = assets.filter(
+    a => a.value_jpy != null
+  );
+
+  const current = valid.reduce(
+    (sum, a) => sum + a.value_jpy,
+    0
+  );
+
+  const purchase = valid.reduce(
+    (sum, a) => sum + a.purchase_jpy,
+    0
+  );
+
+  const gain = current - purchase;
+
+  return `
+
+    <div class="screen">
+
+      <div class="eyebrow">
+        FOREIGN CURRENCY
+      </div>
+
+      <h1 class="title">
+        外貨預金
+      </h1>
+
+      <div class="category-summary">
+
+        <div>
+          <div class="category-total-label">
+            外貨評価額
+          </div>
+
+          <div class="category-total-value">
+            ${valid.length ? yen(current) : "取得待ち"}
+          </div>
+        </div>
+
+        <div>
+          <div class="category-daily-label">
+            評価損益
+          </div>
+
+          <div class="${directionClass(gain)}">
+            ${valid.length ? signedYen(gain) : "—"}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="stock-grid">
+
+        ${assets.map(a => `
+
+          <div class="stock-card">
+
+            <div class="stock-name">
+              ${a.name}
+            </div>
+
+            <div class="info-row">
+              <span>保有数量</span>
+              <strong>
+                ${a.amount} ${a.currency}
+              </strong>
+            </div>
+
+            <div class="info-row">
+              <span>取得時レート</span>
+              <strong>
+                ${a.purchase_rate.toFixed(2)}円
+              </strong>
+            </div>
+
+            <div class="info-row">
+              <span>現在レート</span>
+              <strong>
+                ${a.rate == null ? "取得待ち" : a.rate.toFixed(3) + "円"}
+              </strong>
+            </div>
+
+            <div class="info-row">
+              <span>取得総額</span>
+              <strong>
+                ${yen(a.purchase_jpy)}
+              </strong>
+            </div>
+
+            <div class="info-row">
+              <span>現在評価額</span>
+              <strong>
+                ${yen(a.value_jpy)}
+              </strong>
+            </div>
+
+            <div class="info-row">
+              <span>評価損益</span>
+              <strong class="${directionClass(a.gain_jpy)}">
+                ${signedYen(a.gain_jpy)}
+              </strong>
+            </div>
+
+          </div>
+
+        `).join("")}
+
+      </div>
+
+    </div>
+
+  `;
+}
+
+
+  
+
 function buildPages(data) {
 
   pages = [
@@ -2605,7 +2729,9 @@ function buildPages(data) {
 
     japaneseStocksPage(data),
 
-    japaneseStocksChartPage(data)
+    japaneseStocksChartPage(data),
+
+    foreignCashPage(data)
 
   ];
 
