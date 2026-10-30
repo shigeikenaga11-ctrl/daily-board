@@ -1269,22 +1269,25 @@ FOREIGN_CASH = [
         "purchase_jpy": 35544
     }
 ]
-
 def get_foreign_cash():
     result = []
 
     for item in FOREIGN_CASH:
         currency = item["currency"]
 
-        ticker = (
-            "JPY=X"
-            if currency == "USD"
-            else "EURJPY=X"
+        # Yahoo FinanceではなくFrankfurterから取得
+        url = (
+            "https://api.frankfurter.dev/v2/rate/"
+            + currency
+            + "/JPY"
         )
 
         try:
-            prices = yahoo(ticker, "5d", "1d")
-            rate = prices[-1][1] if prices else None
+            data = json.loads(fetch(url))
+            rate = float(data["rate"])
+
+            print(currency, "rate:", rate)
+
         except Exception as e:
             print("FX error:", currency, e)
             rate = None
@@ -1314,7 +1317,6 @@ def get_foreign_cash():
         })
 
     return result
-
 
 def main():
 
