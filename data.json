@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/30 18:50",
+  "updated_at": "2026/10/31 02:55",
   "weather": {
     "text": "雨",
-    "max": 16.8,
-    "min": 7.7,
-    "rain": 100
+    "max": 13.6,
+    "min": 4.8,
+    "rain": 94
   },
   "summary": {
     "label": "日本株評価額",
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 979831.92,
+    "total": 976103.08,
     "purchaseTotal": 966070.98,
-    "deltaYen": 8983.45,
-    "deltaPercent": 0.9253194785381904,
-    "unrealizedYen": 13760.94000000006,
-    "unrealizedPercent": 1.4244232861647559,
+    "deltaYen": 2791.16,
+    "deltaPercent": 0.28676932262372784,
+    "unrealizedYen": 10032.099999999977,
+    "unrealizedPercent": 1.0384433657245327,
     "complete": true
   },
   "assets": [
@@ -40,8 +40,8 @@
       "change": 5.214899713467047,
       "unrealizedYen": -1600.0,
       "unrealizedPercent": -2.8228652081863093,
-      "weekChange": -2.513274336283189,
-      "monthChange": -1.642857142857146,
+      "weekChange": -7.098491570541265,
+      "monthChange": -6.517857142857142,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/23",
+          "value": 2817.5
+        },
+        {
           "label": "10/26",
           "value": 2825.0
         },
@@ -324,10 +328,6 @@
         {
           "label": "10/29",
           "value": 2617.5
-        },
-        {
-          "label": "10/30",
-          "value": 2754.0
         }
       ],
       "month": [
@@ -414,19 +414,15 @@
         {
           "label": "10/29",
           "value": 2617.5
-        },
-        {
-          "label": "10/30",
-          "value": 2754.0
         }
       ],
       "news": [
         {
-          "title": "第一三共[4568]：決算補足資料（2026年度 第2四半期決算） 2026年10月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "第一三共[4568]：決算補足資料（2026年度 第2四半期決算） 2026年10月30日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
+          "title": "第一三共、上期最終が16％増益で着地・7-9月期も83％増益 投稿日時： 2026/10/30 13:00[株探] - みんかぶ",
+          "description": "第一三共、上期最終が16％増益で着地・7-9月期も83％増益 投稿日時： 2026/10/30 13:00[株探]",
+          "source": "みんかぶ",
           "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZZktXbWJXTUpoSkZaSFAzYUJzeU1yOVlSbTBsSk1DUmtudWQ3SEwzbWI1bjNmOWxaNHJ6RHJxRUUxWTNsNkZKZlgzbmRvd2NHVWZDRGZOZlJ1UHMzWmJGWWhxU3h3aEFCSmc?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE93Z29BXzFyRnZYdXRFcjhNLWdHbHJfSUZxRjhMN25MNXhJQUhQeDhDeU13SzJGZ2t1c0VRajhGV0hRTzBlM3NIaw?oc=5"
         }
       ]
     },
@@ -445,8 +441,8 @@
       "change": 1.605785731797016,
       "unrealizedYen": 3380.0,
       "unrealizedPercent": 4.251037605332662,
-      "weekChange": -3.3465485074626877,
-      "monthChange": 4.342900302114794,
+      "weekChange": -4.461880782293004,
+      "monthChange": 2.6938569989929606,
       "intraday": [
         {
           "label": "09:05",
@@ -715,6 +711,10 @@
       ],
       "week": [
         {
+          "label": "10/23",
+          "value": 8539.0
+        },
+        {
           "label": "10/26",
           "value": 8576.0
         },
@@ -729,10 +729,6 @@
         {
           "label": "10/29",
           "value": 8158.0
-        },
-        {
-          "label": "10/30",
-          "value": 8289.0
         }
       ],
       "month": [
@@ -819,19 +815,15 @@
         {
           "label": "10/29",
           "value": 8158.0
-        },
-        {
-          "label": "10/30",
-          "value": 8289.0
         }
       ],
       "news": [
         {
-          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/10/02",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
+          "title": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目 - Moomoo",
+          "description": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目",
+          "source": "Moomoo",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMl9aQnFJVG9LX1dUbVdtWmtXTkZNdV9peHNjd3QwYUZia2owVXY1by1HbjRkcGFRTFprT2N5VEJQSEZpTUMyRDV2LU9SLVl1X0h2bmJJMEhjQmU3YlFxNWtrOHROaWxTZ0M0QUpkQ2RvZnA1VHpRSkY4eVJCOFNIbVpoOUk5eXpiSVZETjljbmpjS0NKOUtacjdnaTFxOUc2di14Z1J2aC1Hb1dGR1lkc3E3N1BwTUFPbTRR?oc=5"
         }
       ]
     },
@@ -850,8 +842,8 @@
       "change": 2.1869531594466585,
       "unrealizedYen": 13280.0,
       "unrealizedPercent": 12.94347454465156,
-      "weekChange": -0.9233863699767975,
-      "monthChange": 7.795353379360459,
+      "weekChange": -0.9087752702021668,
+      "monthChange": 5.488372093023264,
       "intraday": [
         {
           "label": "09:05",
@@ -1120,6 +1112,10 @@
       ],
       "week": [
         {
+          "label": "10/23",
+          "value": 572.2
+        },
+        {
           "label": "10/26",
           "value": 584.8
         },
@@ -1134,10 +1130,6 @@
         {
           "label": "10/29",
           "value": 567.0
-        },
-        {
-          "label": "10/30",
-          "value": 579.4
         }
       ],
       "month": [
@@ -1224,10 +1216,6 @@
         {
           "label": "10/29",
           "value": 567.0
-        },
-        {
-          "label": "10/30",
-          "value": 579.4
         }
       ],
       "news": [
@@ -1255,8 +1243,8 @@
       "change": 0.24772914946324942,
       "unrealizedYen": -8150.0,
       "unrealizedPercent": -11.837327523602033,
-      "weekChange": 9.665763324299913,
-      "monthChange": -12.724658519051047,
+      "weekChange": 9.69202898550725,
+      "monthChange": -12.940330697340041,
       "intraday": [
         {
           "label": "09:05",
@@ -1525,6 +1513,10 @@
       ],
       "week": [
         {
+          "label": "10/23",
+          "value": 1104.0
+        },
+        {
           "label": "10/26",
           "value": 1107.0
         },
@@ -1539,10 +1531,6 @@
         {
           "label": "10/29",
           "value": 1211.0
-        },
-        {
-          "label": "10/30",
-          "value": 1214.0
         }
       ],
       "month": [
@@ -1629,10 +1617,6 @@
         {
           "label": "10/29",
           "value": 1211.0
-        },
-        {
-          "label": "10/30",
-          "value": 1214.0
         }
       ],
       "news": [
@@ -1660,8 +1644,8 @@
       "change": -0.256794350524292,
       "unrealizedYen": -162.5,
       "unrealizedPercent": -0.2781343602909713,
-      "weekChange": -2.591431556948798,
-      "monthChange": -13.444753946146704,
+      "weekChange": -4.63265306122449,
+      "monthChange": -13.221912720519969,
       "intraday": [
         {
           "label": "09:05",
@@ -1930,6 +1914,10 @@
       ],
       "week": [
         {
+          "label": "10/23",
+          "value": 2450.0
+        },
+        {
           "label": "10/26",
           "value": 2392.5
         },
@@ -1944,10 +1932,6 @@
         {
           "label": "10/29",
           "value": 2336.5
-        },
-        {
-          "label": "10/30",
-          "value": 2330.5
         }
       ],
       "month": [
@@ -2034,10 +2018,6 @@
         {
           "label": "10/29",
           "value": 2336.5
-        },
-        {
-          "label": "10/30",
-          "value": 2330.5
         }
       ],
       "news": [
@@ -2059,21 +2039,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 45093.0,
-      "previousClose": 44910.0,
-      "value": 607019.42,
-      "deltaYen": 2463.45,
-      "change": 0.4074816299265205,
-      "unrealizedYen": 7013.44,
-      "unrealizedPercent": 1.168895270573447,
-      "weekChange": 2.038830557566973,
-      "monthChange": 1.300714381992174,
+      "price": 44816.0,
+      "previousClose": 45093.0,
+      "value": 603290.58,
+      "deltaYen": -3728.84,
+      "change": -0.6142860310913045,
+      "unrealizedYen": 3284.61,
+      "unrealizedPercent": 0.5474288791169392,
+      "weekChange": 1.4648282732232953,
+      "monthChange": 0.3537999910430356,
       "intraday": [],
       "week": [
-        {
-          "label": "10/23",
-          "value": 44192.0
-        },
         {
           "label": "10/26",
           "value": 44169.0
@@ -2089,13 +2065,13 @@
         {
           "label": "10/29",
           "value": 45093.0
+        },
+        {
+          "label": "10/30",
+          "value": 44816.0
         }
       ],
       "month": [
-        {
-          "label": "10/01",
-          "value": 44514.0
-        },
         {
           "label": "10/02",
           "value": 44658.0
@@ -2171,15 +2147,19 @@
         {
           "label": "10/29",
           "value": 45093.0
+        },
+        {
+          "label": "10/30",
+          "value": 44816.0
         }
       ],
       "news": [
         {
-          "title": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース） - Yahoo!ニュース",
-          "description": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56QlQyRlNVVlJPc0xqYkZySkE4X1hEa3g4OGc5SmlJeDYtb20xNlhSTDBmRl9YYzNhUHJqYS1hc0lKM0V1eHhHQ2hHQzNGMWpYdFJYNW9EX2dLb2lSMVRGb183ckFCLXViclYyTDdTYzNXQXYwdmlqeFNFWEY0aG8?oc=5"
+          "title": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日 - 外為どっとコム",
+          "description": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日",
+          "source": "外為どっとコム",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVQ2syUDF0OUtQbG9kWU9ZQVkteWZaaXE3V2JRTFNoRFp5amlVdTFkUG9OOG5ONGF3UVZOMFB0cmVQcWltRnVVVTljR3d0RHk4TlJzdDBFZ1h1TXJVOHFQTURtcw?oc=5"
         }
       ]
     }
@@ -2191,9 +2171,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 157.98,
-      "value_jpy": 94788.0,
-      "gain_jpy": -30.0
+      "rate": 157.78,
+      "value_jpy": 94668.0,
+      "gain_jpy": -150.0
     },
     {
       "name": "ユーロ",
@@ -2201,9 +2181,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.39,
-      "value_jpy": 35278.0,
-      "gain_jpy": -266.0
+      "rate": 176.42,
+      "value_jpy": 35284.0,
+      "gain_jpy": -260.0
     }
   ]
 }
