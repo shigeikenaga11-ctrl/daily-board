@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/30 11:19",
+  "updated_at": "2026/10/30 11:36",
   "weather": {
     "text": "雨",
     "max": 17.1,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 370927.5,
+    "total": 369902.5,
     "purchaseTotal": 366065,
-    "deltaYen": 4635.0,
-    "deltaPercent": 1.2653821740821884,
+    "deltaYen": 3610.0,
+    "deltaPercent": 0.9855511647112621,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 977946.92,
+    "total": 976921.92,
     "purchaseTotal": 966070.98,
-    "deltaYen": 7098.45,
-    "deltaPercent": 0.7311594156398062,
-    "unrealizedYen": 11875.94000000006,
-    "unrealizedPercent": 1.229303047691181,
+    "deltaYen": 6073.45,
+    "deltaPercent": 0.6255816626048759,
+    "unrealizedYen": 10850.94000000006,
+    "unrealizedPercent": 1.1232031832692109,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2624.5,
+      "price": 2619.5,
       "previousClose": 2617.5,
-      "value": 52490.0,
-      "deltaYen": 140.0,
-      "change": 0.26743075453676823,
-      "unrealizedYen": -4190.0,
-      "unrealizedPercent": -7.392378263937897,
-      "weekChange": -7.09734513274336,
-      "monthChange": -6.267857142857148,
+      "value": 52390.0,
+      "deltaYen": 40.0,
+      "change": 0.0764087870104957,
+      "unrealizedYen": -4290.0,
+      "unrealizedPercent": -7.568807339449542,
+      "weekChange": -7.2743362831858445,
+      "monthChange": -6.446428571428575,
       "intraday": [
         {
           "label": "09:05",
@@ -61,7 +61,7 @@
         },
         {
           "label": "09:25",
-          "value": 2653.5
+          "value": 2654.0
         },
         {
           "label": "09:30",
@@ -73,7 +73,7 @@
         },
         {
           "label": "09:40",
-          "value": 2647.5
+          "value": 2648.0
         },
         {
           "label": "09:45",
@@ -137,11 +137,27 @@
         },
         {
           "label": "11:00",
-          "value": 2626.5
+          "value": 2625.0
         },
         {
-          "label": "11:04",
-          "value": 2624.5
+          "label": "11:05",
+          "value": 2623.5
+        },
+        {
+          "label": "11:10",
+          "value": 2626.0
+        },
+        {
+          "label": "11:15",
+          "value": 2622.5
+        },
+        {
+          "label": "11:20",
+          "value": 2619.5
+        },
+        {
+          "label": "11:21",
+          "value": 2619.5
         }
       ],
       "week": [
@@ -163,7 +179,7 @@
         },
         {
           "label": "10/30",
-          "value": 2624.5
+          "value": 2619.5
         }
       ],
       "month": [
@@ -253,7 +269,7 @@
         },
         {
           "label": "10/30",
-          "value": 2624.5
+          "value": 2619.5
         }
       ],
       "news": [
@@ -274,15 +290,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8300.0,
+      "price": 8277.0,
       "previousClose": 8158.0,
-      "value": 83000.0,
-      "deltaYen": 1420.0,
-      "change": 1.740622701642569,
-      "unrealizedYen": 3490.0,
-      "unrealizedPercent": 4.389384983021004,
-      "weekChange": -3.218283582089554,
-      "monthChange": 4.4813695871097625,
+      "value": 82770.0,
+      "deltaYen": 1190.0,
+      "change": 1.458690855601863,
+      "unrealizedYen": 3260.0,
+      "unrealizedPercent": 4.100113193309018,
+      "weekChange": -3.4864738805970186,
+      "monthChange": 4.191842900302123,
       "intraday": [
         {
           "label": "09:05",
@@ -298,7 +314,7 @@
         },
         {
           "label": "09:20",
-          "value": 8440.0
+          "value": 8442.0
         },
         {
           "label": "09:25",
@@ -378,11 +394,27 @@
         },
         {
           "label": "11:00",
-          "value": 8303.0
+          "value": 8300.0
         },
         {
-          "label": "11:04",
-          "value": 8300.0
+          "label": "11:05",
+          "value": 8280.0
+        },
+        {
+          "label": "11:10",
+          "value": 8279.0
+        },
+        {
+          "label": "11:15",
+          "value": 8284.0
+        },
+        {
+          "label": "11:20",
+          "value": 8282.0
+        },
+        {
+          "label": "11:21",
+          "value": 8277.0
         }
       ],
       "week": [
@@ -404,7 +436,7 @@
         },
         {
           "label": "10/30",
-          "value": 8300.0
+          "value": 8277.0
         }
       ],
       "month": [
@@ -494,16 +526,16 @@
         },
         {
           "label": "10/30",
-          "value": 8300.0
+          "value": 8277.0
         }
       ],
       "news": [
         {
-          "title": "『モンスターハンターワイルズ』の序盤が遊べる体験版がNintendo Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。 - Nintendo",
-          "description": "『モンスターハンターワイルズ』の序盤が遊べる体験版が Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。",
-          "source": "Nintendo",
-          "date": "2026/10/20",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSF9WaGZRd1pFRllVcjZWOENCWWRmZEJBSmYtejFvQUhVMFR3UDkybWVaTVBXVktxdjJoWUc2UTk0RkNORzNCQ3ZQWHhuN0JpNWdXQjdYcHIxRzBkZ3htblhHLTRhWExhZUE5aFY4NHNhZWJnVGxxellWb05zNnJQMTdrOGlYdw?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
@@ -515,15 +547,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 581.0,
+      "price": 579.4,
       "previousClose": 567.0,
-      "value": 116200.0,
-      "deltaYen": 2800.0,
-      "change": 2.4691358024691468,
-      "unrealizedYen": 13600.0,
-      "unrealizedPercent": 13.255360623781677,
-      "weekChange": -0.6497927278196203,
-      "monthChange": 8.093023255813957,
+      "value": 115880.0,
+      "deltaYen": 2480.0,
+      "change": 2.1869531594466585,
+      "unrealizedYen": 13280.0,
+      "unrealizedPercent": 12.94347454465156,
+      "weekChange": -0.9233863699767975,
+      "monthChange": 7.795353379360459,
       "intraday": [
         {
           "label": "09:05",
@@ -619,11 +651,27 @@
         },
         {
           "label": "11:00",
-          "value": 581.2
+          "value": 581.1
         },
         {
-          "label": "11:04",
+          "label": "11:05",
           "value": 581.0
+        },
+        {
+          "label": "11:10",
+          "value": 579.2
+        },
+        {
+          "label": "11:15",
+          "value": 579.5
+        },
+        {
+          "label": "11:20",
+          "value": 579.5
+        },
+        {
+          "label": "11:21",
+          "value": 579.4
         }
       ],
       "week": [
@@ -645,7 +693,7 @@
         },
         {
           "label": "10/30",
-          "value": 581.0
+          "value": 579.4
         }
       ],
       "month": [
@@ -735,7 +783,7 @@
         },
         {
           "label": "10/30",
-          "value": 581.0
+          "value": 579.4
         }
       ],
       "news": [
@@ -756,15 +804,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1217.0,
+      "price": 1212.0,
       "previousClose": 1211.0,
-      "value": 60850.0,
-      "deltaYen": 300.0,
-      "change": 0.49545829892649884,
-      "unrealizedYen": -8000.0,
-      "unrealizedPercent": -11.619462599854756,
-      "weekChange": 9.936766034327004,
-      "monthChange": -12.508986340762041,
+      "value": 60600.0,
+      "deltaYen": 50.0,
+      "change": 0.08257638315440907,
+      "unrealizedYen": -8250.0,
+      "unrealizedPercent": -11.982570806100219,
+      "weekChange": 9.485094850948506,
+      "monthChange": -12.868439971243706,
       "intraday": [
         {
           "label": "09:05",
@@ -860,11 +908,27 @@
         },
         {
           "label": "11:00",
-          "value": 1219.0
+          "value": 1218.0
         },
         {
-          "label": "11:04",
-          "value": 1217.0
+          "label": "11:05",
+          "value": 1213.0
+        },
+        {
+          "label": "11:10",
+          "value": 1215.0
+        },
+        {
+          "label": "11:15",
+          "value": 1213.0
+        },
+        {
+          "label": "11:20",
+          "value": 1213.0
+        },
+        {
+          "label": "11:21",
+          "value": 1212.0
         }
       ],
       "week": [
@@ -886,7 +950,7 @@
         },
         {
           "label": "10/30",
-          "value": 1217.0
+          "value": 1212.0
         }
       ],
       "month": [
@@ -976,16 +1040,16 @@
         },
         {
           "label": "10/30",
-          "value": 1217.0
+          "value": 1212.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
-          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
+          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
+          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
+          "date": "2026/10/27",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
         }
       ]
     },
@@ -997,15 +1061,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2335.5,
+      "price": 2330.5,
       "previousClose": 2336.5,
-      "value": 58387.5,
-      "deltaYen": -25.0,
-      "change": -0.042799058420717184,
-      "unrealizedYen": -37.5,
-      "unrealizedPercent": -0.06418485237483953,
-      "weekChange": -2.3824451410658254,
-      "monthChange": -13.259052924791082,
+      "value": 58262.5,
+      "deltaYen": -150.0,
+      "change": -0.256794350524292,
+      "unrealizedYen": -162.5,
+      "unrealizedPercent": -0.2781343602909713,
+      "weekChange": -2.591431556948798,
+      "monthChange": -13.444753946146704,
       "intraday": [
         {
           "label": "09:05",
@@ -1101,11 +1165,27 @@
         },
         {
           "label": "11:00",
-          "value": 2340.5
+          "value": 2336.5
         },
         {
-          "label": "11:04",
-          "value": 2335.5
+          "label": "11:05",
+          "value": 2333.5
+        },
+        {
+          "label": "11:10",
+          "value": 2330.5
+        },
+        {
+          "label": "11:15",
+          "value": 2332.0
+        },
+        {
+          "label": "11:20",
+          "value": 2330.5
+        },
+        {
+          "label": "11:21",
+          "value": 2330.5
         }
       ],
       "week": [
@@ -1127,7 +1207,7 @@
         },
         {
           "label": "10/30",
-          "value": 2335.5
+          "value": 2330.5
         }
       ],
       "month": [
@@ -1217,7 +1297,7 @@
         },
         {
           "label": "10/30",
-          "value": 2335.5
+          "value": 2330.5
         }
       ],
       "news": [
@@ -1362,6 +1442,28 @@
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
+    }
+  ],
+  "foreign_cash": [
+    {
+      "name": "米ドル",
+      "currency": "USD",
+      "amount": 600,
+      "purchase_jpy": 94818,
+      "purchase_rate": 158.03,
+      "rate": null,
+      "value_jpy": null,
+      "gain_jpy": null
+    },
+    {
+      "name": "ユーロ",
+      "currency": "EUR",
+      "amount": 200,
+      "purchase_jpy": 35544,
+      "purchase_rate": 177.72,
+      "rate": null,
+      "value_jpy": null,
+      "gain_jpy": null
     }
   ]
 }
