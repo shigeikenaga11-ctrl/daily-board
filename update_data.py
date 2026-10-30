@@ -49,6 +49,22 @@ STOCKS = [
         {'name':'IHI','ticker':'7013.T','qty':25,'cost':2337,'newsQuery':'IHI'},
 ]
 
+# 外貨預金（取得総額は日本円）
+FOREIGN_CASH = [
+    {
+        "name": "米ドル",
+        "currency": "USD",
+        "amount": 600,
+        "purchase_jpy": 94818,
+    },
+    {
+        "name": "ユーロ",
+        "currency": "EUR",
+        "amount": 200,
+        "purchase_jpy": 35544,
+    },
+]
+
 
 EMAXIS = {
     "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -109,6 +125,9 @@ def request_bytes(url):
 
     raise last_error
 
+
+
+    data["foreign_cash"] = get_foreign_cash()
 
 def get_json(url):
 
@@ -1233,6 +1252,43 @@ def build_emaxis():
 # =========================================================
 # MAIN
 # =========================================================
+
+def get_foreign_cash():
+    result = []
+    rates = {}
+
+    for currency, ticker in [
+        ("USD", "JPY=X"),
+        ("EUR", "EURJPY=X"),
+    ]:
+        try:
+            prices = yahoo(ticker, "5d", "1d")
+            rates[currency] = prices[-1][1] if prices else None
+        except Exception as e:
+            print("FX unavailable:", currency, str(e))
+            rates[currency] = None
+
+    for item in FOREIGN_CASH:
+        currency = item["currency"]
+        rate = rates[currency]
+        amount = item["amount"]
+        purchase = item["purchase_jpy"]
+
+        value = amount * rate if rate is not None else None
+
+        result.append({
+            "name": item["name"],
+            "currency": currency,
+            "amount": amount,
+            "rate": rate,
+            "purchase_jpy": purchase,
+            "purchase_rate": purchase / amount,
+            "value_jpy": value,
+            "gain_jpy": value - purchase if value is not None else None,
+        })
+
+    return result
+
 
 def main():
 
