@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/30 11:42",
+  "updated_at": "2026/10/30 11:49",
   "weather": {
     "text": "雨",
     "max": 17.1,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 369867.5,
+    "total": 369945.0,
     "purchaseTotal": 366065,
-    "deltaYen": 3575.0,
-    "deltaPercent": 0.9759959595132305,
+    "deltaYen": 3652.5,
+    "deltaPercent": 0.9971539138803005,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 976886.92,
+    "total": 976964.42,
     "purchaseTotal": 966070.98,
-    "deltaYen": 6038.45,
-    "deltaPercent": 0.621976568598805,
-    "unrealizedYen": 10815.94000000006,
-    "unrealizedPercent": 1.1195802610694363,
+    "deltaYen": 6115.95,
+    "deltaPercent": 0.6299592767551047,
+    "unrealizedYen": 10893.44000000006,
+    "unrealizedPercent": 1.1276024459403657,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2615.5,
+      "price": 2612.0,
       "previousClose": 2617.5,
-      "value": 52310.0,
-      "deltaYen": -40.0,
-      "change": -0.0764087870105068,
-      "unrealizedYen": -4370.0,
-      "unrealizedPercent": -7.709950599858857,
-      "weekChange": -7.415929203539829,
-      "monthChange": -6.58928571428572,
+      "value": 52240.0,
+      "deltaYen": -110.0,
+      "change": -0.2101241642788909,
+      "unrealizedYen": -4440.0,
+      "unrealizedPercent": -7.833450952717008,
+      "weekChange": -7.539823008849556,
+      "monthChange": -6.714285714285717,
       "intraday": [
         {
           "label": "09:05",
@@ -157,11 +157,11 @@
         },
         {
           "label": "11:25",
-          "value": 2616.0
+          "value": 2614.5
         },
         {
-          "label": "11:27",
-          "value": 2615.5
+          "label": "11:30",
+          "value": 2612.0
         }
       ],
       "week": [
@@ -183,7 +183,7 @@
         },
         {
           "label": "10/30",
-          "value": 2615.5
+          "value": 2612.0
         }
       ],
       "month": [
@@ -273,7 +273,7 @@
         },
         {
           "label": "10/30",
-          "value": 2615.5
+          "value": 2612.0
         }
       ],
       "news": [
@@ -294,15 +294,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8259.0,
+      "price": 8262.0,
       "previousClose": 8158.0,
-      "value": 82590.0,
-      "deltaYen": 1010.0,
-      "change": 1.2380485413091336,
-      "unrealizedYen": 3080.0,
-      "unrealizedPercent": 3.8737265752735506,
-      "weekChange": -3.6963619402985093,
-      "monthChange": 3.9652567975830832,
+      "value": 82620.0,
+      "deltaYen": 1040.0,
+      "change": 1.274822260357933,
+      "unrealizedYen": 3110.0,
+      "unrealizedPercent": 3.911457678279462,
+      "weekChange": -3.6613805970149294,
+      "monthChange": 4.0030211480362565,
       "intraday": [
         {
           "label": "09:05",
@@ -418,11 +418,11 @@
         },
         {
           "label": "11:25",
-          "value": 8265.0
+          "value": 8263.0
         },
         {
-          "label": "11:27",
-          "value": 8259.0
+          "label": "11:30",
+          "value": 8262.0
         }
       ],
       "week": [
@@ -444,7 +444,7 @@
         },
         {
           "label": "10/30",
-          "value": 8259.0
+          "value": 8262.0
         }
       ],
       "month": [
@@ -534,16 +534,16 @@
         },
         {
           "label": "10/30",
-          "value": 8259.0
+          "value": 8262.0
         }
       ],
       "news": [
         {
-          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/10/02",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
+          "title": "『モンスターハンターワイルズ』の序盤が遊べる体験版がNintendo Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。 - Nintendo",
+          "description": "『モンスターハンターワイルズ』の序盤が遊べる体験版が Switch 2 で本日より配信開始。製品版へのセーブデータ引き継ぎも可能。",
+          "source": "Nintendo",
+          "date": "2026/10/20",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSF9WaGZRd1pFRllVcjZWOENCWWRmZEJBSmYtejFvQUhVMFR3UDkybWVaTVBXVktxdjJoWUc2UTk0RkNORzNCQ3ZQWHhuN0JpNWdXQjdYcHIxRzBkZ3htblhHLTRhWExhZUE5aFY4NHNhZWJnVGxxellWb05zNnJQMTdrOGlYdw?oc=5"
         }
       ]
     },
@@ -555,15 +555,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 578.9,
+      "price": 579.8,
       "previousClose": 567.0,
-      "value": 115780.0,
-      "deltaYen": 2380.0,
-      "change": 2.098769737929884,
-      "unrealizedYen": 13180.0,
-      "unrealizedPercent": 12.846008657711987,
-      "weekChange": -1.0088856877669694,
-      "monthChange": 7.702330123546508,
+      "value": 115960.0,
+      "deltaYen": 2560.0,
+      "change": 2.2574934379133493,
+      "unrealizedYen": 13360.0,
+      "unrealizedPercent": 13.021440115588451,
+      "weekChange": -0.8549931779017195,
+      "monthChange": 7.8697651707848815,
       "intraday": [
         {
           "label": "09:05",
@@ -679,11 +679,11 @@
         },
         {
           "label": "11:25",
-          "value": 579.2
+          "value": 580.0
         },
         {
-          "label": "11:27",
-          "value": 578.9
+          "label": "11:30",
+          "value": 579.8
         }
       ],
       "week": [
@@ -705,7 +705,7 @@
         },
         {
           "label": "10/30",
-          "value": 578.9
+          "value": 579.8
         }
       ],
       "month": [
@@ -795,7 +795,7 @@
         },
         {
           "label": "10/30",
-          "value": 578.9
+          "value": 579.8
         }
       ],
       "news": [
@@ -816,15 +816,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1215.0,
+      "price": 1216.0,
       "previousClose": 1211.0,
-      "value": 60750.0,
-      "deltaYen": 200.0,
-      "change": 0.3303055326176807,
-      "unrealizedYen": -8100.0,
-      "unrealizedPercent": -11.76470588235294,
-      "weekChange": 9.756097560975618,
-      "monthChange": -12.65276779295471,
+      "value": 60800.0,
+      "deltaYen": 250.0,
+      "change": 0.41288191577208977,
+      "unrealizedYen": -8050.0,
+      "unrealizedPercent": -11.69208424110385,
+      "weekChange": 9.8464317976513,
+      "monthChange": -12.580877066858376,
       "intraday": [
         {
           "label": "09:05",
@@ -940,11 +940,11 @@
         },
         {
           "label": "11:25",
-          "value": 1214.0
+          "value": 1215.0
         },
         {
-          "label": "11:27",
-          "value": 1215.0
+          "label": "11:30",
+          "value": 1216.0
         }
       ],
       "week": [
@@ -966,7 +966,7 @@
         },
         {
           "label": "10/30",
-          "value": 1215.0
+          "value": 1216.0
         }
       ],
       "month": [
@@ -1056,16 +1056,16 @@
         },
         {
           "label": "10/30",
-          "value": 1215.0
+          "value": 1216.0
         }
       ],
       "news": [
         {
-          "title": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
-          "description": "前場コメント No.7 住友ファーマ、プラスアルファ、北洋銀行、第一三共、ラキール、アンリツ(トレーダーズ・ウェブ)",
+          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
+          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/27",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW92OVp0MHFHLWJrVml6SEM4UkN6aTJGVnNSc01aaWh5OEFSREZyR1FDeXFNTklyeTlWdUJyMVpCTl9ZNVgtVldXRXM5bmI1T0drZjczWWY0RHk4ajZ1bzNOMWE0TEhOLWhobzFDQnlseXdabXg3Z0RMRTRmRkhqbktvbWRJNjQ?oc=5"
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
         }
       ]
     },
@@ -1077,15 +1077,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2337.5,
+      "price": 2333.0,
       "previousClose": 2336.5,
-      "value": 58437.5,
-      "deltaYen": 25.0,
-      "change": 0.04279905842070608,
-      "unrealizedYen": 12.5,
-      "unrealizedPercent": 0.02139495079161318,
-      "weekChange": -2.298850574712641,
-      "monthChange": -13.184772516248843,
+      "value": 58325.0,
+      "deltaYen": -87.5,
+      "change": -0.1497967044725046,
+      "unrealizedYen": -100.0,
+      "unrealizedPercent": -0.17115960633290545,
+      "weekChange": -2.486938349007317,
+      "monthChange": -13.351903435468893,
       "intraday": [
         {
           "label": "09:05",
@@ -1201,11 +1201,11 @@
         },
         {
           "label": "11:25",
-          "value": 2335.5
+          "value": 2335.0
         },
         {
-          "label": "11:27",
-          "value": 2337.5
+          "label": "11:30",
+          "value": 2333.0
         }
       ],
       "week": [
@@ -1227,7 +1227,7 @@
         },
         {
           "label": "10/30",
-          "value": 2337.5
+          "value": 2333.0
         }
       ],
       "month": [
@@ -1317,7 +1317,7 @@
         },
         {
           "label": "10/30",
-          "value": 2337.5
+          "value": 2333.0
         }
       ],
       "news": [
@@ -1455,11 +1455,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース） - Yahoo!ニュース",
+          "description": "S&P500より高リターン!? 米国株だけじゃない、注目の欧州株ファンド4選（マイナビニュース）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56QlQyRlNVVlJPc0xqYkZySkE4X1hEa3g4OGc5SmlJeDYtb20xNlhSTDBmRl9YYzNhUHJqYS1hc0lKM0V1eHhHQ2hHQzNGMWpYdFJYNW9EX2dLb2lSMVRGb183ckFCLXViclYyTDdTYzNXQXYwdmlqeFNFWEY0aG8?oc=5"
         }
       ]
     }
