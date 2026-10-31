@@ -1473,161 +1473,135 @@ function stockPurchaseValue(stock) {
    総資産
    ========================= */
 
+/* =========================
+   1. 総資産
+   ========================= */
+
 function totalAssetsPage(data) {
 
-  const assets =
-    data.assets || [];
+  const assets = data.assets || [];
 
+  // 日本株式
+  const stocks = assets.filter(
+    a =>
+      a.type !== "fund" &&
+      a.code !== "03311187" &&
+      a.fundCode !== "03311187"
+  );
 
-  const stocks =
-    assets.filter(
-      a =>
-        a.type !== "fund" &&
-        a.code !== "03311187" &&
-        a.fundCode !== "03311187"
-    );
+  // 投資信託
+  const fund = assets.find(
+    a =>
+      a.type === "fund" ||
+      a.code === "03311187" ||
+      a.fundCode === "03311187"
+  );
 
-
-  const fund =
-    assets.find(
-      a =>
-        a.type === "fund" ||
-        a.code === "03311187" ||
-        a.fundCode === "03311187"
-    );
-
-
-  const stockValue =
-    stocks.reduce(
-      (sum, a) =>
-        sum +
-        Number(a.value || 0),
-      0
-    );
-
-
-  const stockPurchase =
-    stocks.reduce(
-      (sum, a) =>
-        sum +
-        stockPurchaseValue(a),
-      0
-    );
-
-
-  const stockDailyDelta =
-    stocks.reduce(
-      (sum, a) =>
-        sum +
-        stockDeltaYen(a),
-      0
-    );
-
-
-  const fundValue =
-    fund
-      ? Number(fund.value || 0)
-      : 0;
-
-
-  const fundPurchase =
-    fundPurchaseValue(fund);
-
-
-  const fundDailyDelta =
-    fund
-      ? Number(fund.deltaYen || 0)
-      : 0;
-
-
-  const totalValue =
-    stockValue +
-    fundValue + 
-    foreignValue;
-
-
-  const foreignPurchase = foreignCash.reduce(
-  (sum, a) => sum + Number(a.purchase_jpy || 0),
-  0
-);
-
-const totalPurchase =
-    stockPurchase +
-    fundPurchase +
-    foreignPurchase;
-
-
-  const totalGain =
-    totalValue -
-    totalPurchase;
-
-
-  const totalGainPct =
-    totalPurchase > 0
-      ? totalGain /
-        totalPurchase *
-        100
-      : 0;
-
-
-  const totalDailyDelta =
-    stockDailyDelta +
-    fundDailyDelta;
-
-
-  const totalPreviousValue =
-    totalValue -
-    totalDailyDelta;
-
-
-  const totalDailyPct =
-    totalPreviousValue > 0
-      ? totalDailyDelta /
-        totalPreviousValue *
-        100
-      : 0;
-
-
-  const stockPct =
-    totalValue > 0
-      ? stockValue /
-        totalValue *
-        100
-      : 0;
-
-
-  const fundPct =
-    totalValue > 0
-      ? fundValue /
-        totalValue *
-        100
-      : 0;
-
-  // 外貨預金の評価額
-  const foreignCash = data.foreign_cash || [];
-
-  const foreignValue = foreignCash.reduce(
-    (sum, a) => sum + Number(a.value_jpy || 0),
+  // 日本株式の評価額
+  const stockValue = stocks.reduce(
+    (sum, a) => sum + Number(a.value || 0),
     0
   );
 
-  // 円グラフ専用の合計
-  const pieTotal =
+  // 日本株式の取得額
+  const stockPurchase = stocks.reduce(
+    (sum, a) => sum + stockPurchaseValue(a),
+    0
+  );
+
+  // 日本株式の前日比
+  const stockDailyDelta = stocks.reduce(
+    (sum, a) => sum + stockDeltaYen(a),
+    0
+  );
+
+  // 投資信託の評価額
+  const fundValue = fund
+    ? Number(fund.value || 0)
+    : 0;
+
+  // 投資信託の取得額
+  const fundPurchase = fundPurchaseValue(fund);
+
+  // 投資信託の前日比
+  const fundDailyDelta = fund
+    ? Number(fund.deltaYen || 0)
+    : 0;
+
+  // =========================
+  // 外貨預金
+  // =========================
+
+  const foreignCash = data.foreign_cash || [];
+
+  // 外貨の現在評価額
+  const foreignValue = foreignCash.reduce(
+    (sum, a) =>
+      sum + Number(a.value_jpy || 0),
+    0
+  );
+
+  // 外貨の取得総額
+  const foreignPurchase = foreignCash.reduce(
+    (sum, a) =>
+      sum + Number(a.purchase_jpy || 0),
+    0
+  );
+
+  // =========================
+  // 総資産
+  // =========================
+
+  const totalValue =
     stockValue +
     fundValue +
     foreignValue;
 
-  const stockPiePct = pieTotal > 0
-    ? stockValue / pieTotal * 100
-    : 0;
+  const totalPurchase =
+    stockPurchase +
+    fundPurchase +
+    foreignPurchase;
 
-  const fundPiePct = pieTotal > 0
-    ? fundValue / pieTotal * 100
-    : 0;
+  const totalGain =
+    totalValue - totalPurchase;
 
-  const foreignPiePct = pieTotal > 0
-    ? foreignValue / pieTotal * 100
-    : 0;
+  const totalGainPct =
+    totalPurchase > 0
+      ? totalGain / totalPurchase * 100
+      : 0;
+
+  // 外貨の前日比は未取得のため、
+  // 現時点では株式・投資信託のみ
+  const totalDailyDelta =
+    stockDailyDelta +
+    fundDailyDelta;
+
+  const totalPreviousValue =
+    totalValue - totalDailyDelta;
+
+  const totalDailyPct =
+    totalPreviousValue > 0
+      ? totalDailyDelta / totalPreviousValue * 100
+      : 0;
+
+  // =========================
+  // 円グラフ
+  // =========================
+
+  const stockPiePct =
+    totalValue > 0
+      ? stockValue / totalValue * 100
+      : 0;
+
+  const fundPiePct =
+    totalValue > 0
+      ? fundValue / totalValue * 100
+      : 0;
+
+  const foreignPiePct =
+    totalValue > 0
+      ? foreignValue / totalValue * 100
+      : 0;
 
   const pieBackground = `
     conic-gradient(
@@ -1636,233 +1610,210 @@ const totalPurchase =
       #ff9800 ${stockPiePct + fundPiePct}% 100%
     )
   `;
-  
 
+  // =========================
+  // 画面表示
+  // =========================
 
   return `
 
-  <div class="screen">
+    <div class="screen">
 
-    <div class="eyebrow">
-      TOTAL ASSETS
-    </div>
+      <div class="eyebrow">
+        TOTAL ASSETS
+      </div>
 
+      <div class="asset-main">
 
-    <div class="asset-main">
+        <div>
 
+          <h1 class="title">
+            総資産額
+          </h1>
 
-      <div>
+          <div class="big-value">
+            ${yen(totalValue)}
+          </div>
 
-        <h1 class="title">
-          総資産額
-        </h1>
+          <div class="asset-change ${directionClass(totalGain)}">
 
+            取得総額から
 
-        <div class="big-value">
-          ${yen(totalValue)}
-        </div>
+            ${arrow(totalGain)}
 
+            ${signedYen(totalGain)}
 
-        <div
-          class="
-            asset-change
-            ${directionClass(totalGain)}
-          "
-        >
+            （${percent(totalGainPct)}）
 
-          取得総額から
+          </div>
 
-          ${arrow(totalGain)}
+          <div class="daily-change-small ${directionClass(totalDailyDelta)}">
 
-          ${signedYen(totalGain)}
+            <span class="daily-label">
+              昨日から
+            </span>
 
-          （${percent(totalGainPct)}）
+            ${arrow(totalDailyDelta)}
 
-        </div>
+            ${signedYen(totalDailyDelta)}
 
+            （${percent(totalDailyPct)}）
 
-        <div
-          class="
-            daily-change-small
-            ${directionClass(totalDailyDelta)}
-          "
-        >
+          </div>
 
-          <span class="daily-label">
-            昨日から
-          </span>
+          <div class="asset-detail-grid">
 
-          ${arrow(totalDailyDelta)}
+            <!-- 投資信託 -->
 
-          ${signedYen(totalDailyDelta)}
+            <div class="card">
 
-          （${percent(totalDailyPct)}）
+              <div class="card-label">
+                投資信託
+              </div>
 
-        </div>
+              <div class="card-value">
+                ${yen(fundValue)}
+              </div>
 
+              <div class="card-sub">
+                取得額 ${yen(fundPurchase)}
+              </div>
 
-        <div class="asset-detail-grid">
-
-
-          <div class="card">
-
-            <div class="card-label">
-              投資信託
             </div>
 
-            <div class="card-value">
-              ${yen(fundValue)}
+            <!-- 日本株式 -->
+
+            <div class="card">
+
+              <div class="card-label">
+                日本株式
+              </div>
+
+              <div class="card-value">
+                ${yen(stockValue)}
+              </div>
+
+              <div class="card-sub">
+                取得額 ${yen(stockPurchase)}
+              </div>
+
             </div>
 
-            <div class="card-sub">
-              取得額
-              ${yen(fundPurchase)}
+            <!-- 外貨預金 -->
+
+            <div class="card">
+
+              <div class="card-label">
+                外貨預金
+              </div>
+
+              <div class="card-value">
+                ${yen(foreignValue)}
+              </div>
+
+              <div class="card-sub">
+                取得額 ${yen(foreignPurchase)}
+              </div>
+
             </div>
 
           </div>
 
+          <!-- 取得総額 -->
 
-          <div class="card">
+          <div class="purchase-total">
 
-            <div class="card-label">
-              日本株式
-            </div>
+            <span class="muted">
+              取得総額
+            </span>
 
-            <div class="card-value">
-              ${yen(stockValue)}
-            </div>
-
-            <div class="card-sub">
-              取得額
-              ${yen(stockPurchase)}
-            </div>
+            <strong>
+              ${yen(totalPurchase)}
+            </strong>
 
           </div>
 
-
         </div>
 
+        <!-- 円グラフ -->
 
-        <div class="purchase-total">
+        <div class="pie-area">
 
-          <span class="muted">
-            取得総額
-          </span>
+          <div
+            class="pie"
+            style="background:${pieBackground};"
+          ></div>
 
-          <strong>
-            ${yen(totalPurchase)}
-          </strong>
+          <div class="pie-legend">
+
+            <!-- 日本株式 -->
+
+            <div class="legend-row">
+
+              <div class="legend-left">
+
+                <span class="legend-dot dot-stock"></span>
+
+                日本株式
+
+              </div>
+
+              <strong>
+                ${stockPiePct.toFixed(1)}%
+              </strong>
+
+            </div>
+
+            <!-- 投資信託 -->
+
+            <div class="legend-row">
+
+              <div class="legend-left">
+
+                <span class="legend-dot dot-fund"></span>
+
+                投資信託
+
+              </div>
+
+              <strong>
+                ${fundPiePct.toFixed(1)}%
+              </strong>
+
+            </div>
+
+            <!-- 外貨預金 -->
+
+            <div class="legend-row">
+
+              <div class="legend-left">
+
+                <span
+                  class="legend-dot"
+                  style="background:#ff9800"
+                ></span>
+
+                外貨預金
+
+              </div>
+
+              <strong>
+                ${foreignPiePct.toFixed(1)}%
+              </strong>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
 
-
-      <div class="pie-area">
-
-        <div
-          class="pie"
-          style="
-            background:
-              ${pieBackground};
-          "
-        ></div>
-
-
-        <div class="pie-legend">
-
-
-
-
-
-        
-
-          <div class="legend-row">
-
-            <div class="legend-left">
-
-              <span
-                class="
-                  legend-dot
-                  dot-stock
-                "
-              ></span>
-
-              日本株式
-
-            </div>
-
-            <strong>
-              ${stockPct.toFixed(1)}%
-            </strong>
-
-          </div>
-
-
-
-
-          
-
-
-          <div class="legend-row">
-
-            <div class="legend-left">
-
-              <span
-                class="
-                  legend-dot
-                  dot-fund
-                "
-              ></span>
-
-              投資信託
-
-            </div>
-
-            <strong>
-              ${fundPct.toFixed(1)}%
-            </strong>
-
-          </div>
-
-
-
-<div class="legend-row">
-
-  <div class="legend-left">
-
-    <span
-      class="legend-dot"
-      style="background:#ff9800"
-    ></span>
-
-    外貨預金
-
-  </div>
-
-  <strong>
-    ${foreignPiePct.toFixed(1)}%
-  </strong>
-
-</div>
-
-
-
-          
-
-        </div>
-
-
-      </div>
-
-
     </div>
-
-  </div>
 
   `;
 }
-
+  
 
 /* =========================
    2
