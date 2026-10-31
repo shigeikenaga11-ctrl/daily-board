@@ -1596,12 +1596,40 @@ function totalAssetsPage(data) {
         100
       : 0;
 
+  // 外貨預金の評価額
+  const foreignCash = data.foreign_cash || [];
 
-  const pieBackground =
-    `conic-gradient(
-      #5ca7ff 0% ${stockPct}%,
-      #3ee786 ${stockPct}% 100%
-    )`;
+  const foreignValue = foreignCash.reduce(
+    (sum, a) => sum + Number(a.value_jpy || 0),
+    0
+  );
+
+  // 円グラフ専用の合計
+  const pieTotal =
+    stockValue +
+    fundValue +
+    foreignValue;
+
+  const stockPiePct = pieTotal > 0
+    ? stockValue / pieTotal * 100
+    : 0;
+
+  const fundPiePct = pieTotal > 0
+    ? fundValue / pieTotal * 100
+    : 0;
+
+  const foreignPiePct = pieTotal > 0
+    ? foreignValue / pieTotal * 100
+    : 0;
+
+  const pieBackground = `
+    conic-gradient(
+      #5ca7ff 0% ${stockPiePct}%,
+      #3ee786 ${stockPiePct}% ${stockPiePct + fundPiePct}%,
+      #ff9800 ${stockPiePct + fundPiePct}% 100%
+    )
+  `;
+  
 
 
   return `
