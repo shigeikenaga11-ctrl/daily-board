@@ -1542,12 +1542,19 @@ function totalAssetsPage(data) {
 
   const totalValue =
     stockValue +
-    fundValue;
+    fundValue + 
+    foreignValue;
 
 
-  const totalPurchase =
+  const foreignPurchase = foreignCash.reduce(
+  (sum, a) => sum + Number(a.purchase_jpy || 0),
+  0
+);
+
+const totalPurchase =
     stockPurchase +
-    fundPurchase;
+    fundPurchase +
+    foreignPurchase;
 
 
   const totalGain =
