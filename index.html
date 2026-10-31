@@ -988,7 +988,194 @@ main {
     font-size: 12px;
   }
 }
+/* =========================
+   外貨預金ページ専用デザイン
+   ========================= */
 
+.foreign-screen {
+  min-height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* ページタイトル */
+
+.foreign-screen .eyebrow {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #8fa5bd;
+}
+
+.foreign-screen .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 外貨合計 */
+
+.foreign-screen .category-summary {
+  width: 100%;
+  max-width: 850px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 80px;
+  margin: 0 auto 30px;
+  padding: 22px 35px;
+
+  text-align: center;
+}
+
+/* ドル・ユーロの配置 */
+
+.foreign-screen .stock-grid {
+  width: 100%;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+  margin: 0 auto;
+
+  align-items: stretch;
+}
+
+/* 通貨カード */
+
+.foreign-screen .stock-card {
+  padding: 30px 28px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    145deg,
+    #192a3d,
+    #101923
+  );
+
+  border: 1px solid #34485e;
+
+  text-align: center;
+}
+
+/* 通貨名を強調 */
+
+.foreign-screen .stock-name {
+  font-size: 34px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 24px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #34485e;
+}
+
+/* 米ドル */
+
+.foreign-screen .stock-card:nth-child(1)
+.stock-name {
+  color: #5ca7ff;
+}
+
+/* ユーロ */
+
+.foreign-screen .stock-card:nth-child(2)
+.stock-name {
+  color: #f5c76a;
+}
+
+/* 各項目 */
+
+.foreign-screen .info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  padding: 12px 0;
+
+  text-align: left;
+  font-size: 17px;
+
+  border-bottom: 1px solid
+    rgba(255,255,255,0.07);
+}
+
+.foreign-screen .info-row strong {
+  font-size: 19px;
+  font-weight: 700;
+
+  text-align: right;
+}
+
+/* 評価額を強調 */
+
+.foreign-screen .info-row:nth-last-child(2)
+strong {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* 損益 */
+
+.foreign-screen .positive {
+  color: #3ee786;
+}
+
+.foreign-screen .negative {
+  color: #ff7279;
+}
+
+/* 小さな画面への対応 */
+
+@media (max-width: 700px) {
+
+  .foreign-screen {
+    padding: 15px;
+  }
+
+  .foreign-screen .stock-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .foreign-screen .category-summary {
+    gap: 25px;
+    padding: 15px;
+  }
+
+  .foreign-screen .stock-card {
+    padding: 18px;
+  }
+
+  .foreign-screen .stock-name {
+    font-size: 27px;
+  }
+
+  .foreign-screen .info-row {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .foreign-screen .info-row strong {
+    font-size: 16px;
+  }
+}
 </style>
 
 </head>
@@ -2617,7 +2804,7 @@ function foreignCashPage(data) {
 
   return `
 
-    <div class="screen">
+    <div class="screen foreign-screen">
 
       <div class="eyebrow">
         FOREIGN CURRENCY
