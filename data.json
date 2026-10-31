@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/10/31 10:56",
+  "updated_at": "2026/10/31 14:08",
   "weather": {
     "text": "雨",
     "max": 14.3,
     "min": 4.8,
-    "rain": 99
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -1637,11 +1637,11 @@
       ],
       "news": [
         {
-          "title": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/05/13",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zSjM2WEdxUDMwUlozSFQ1d3FQVEh1ZkwwemRIbDJLa09LV1JCaVM1cFVpc0tqTk1VOWx1MGVnSjBlRkxCOHFpcm5DTldLWVJUMWMwakctSkVzYVRTc3c1OWM5Rk1wTkpUeUE?oc=5"
+          "title": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
+          "description": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報)",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/26",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbmFUaldmUjJ0cGxOZ3RLX0lUbm5sZkNCZjl6OVg1ZWs2Z3plblRwM1NRNmtDX1o2dkppZGZEclo3SG56Uy11UDR4Tl92bnV4Q0ZoUzRHNWd5Zko5MF9uVUV1N014aFVPUTEtTnZ3TWxVamRuOV80bHVqNzlyRGcwNzFIeU05NGM?oc=5"
         }
       ]
     },
@@ -2042,11 +2042,11 @@
       ],
       "news": [
         {
-          "title": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO） - Yahoo!ニュース",
-          "description": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/09/11",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmdfZXJxSzdaQ3NIeHdKT2RKVzY5UndWYzZYZmVFUi1iQUpqeWFwc21OdFcyYk1Gek8zVlVkbldBdVFKdVM5SmpOQUVORmhvU2RiTjM2SXRTSERMcmFvZjQwREhmVnd4NUhqOV9TUjBTb0M5dFFJOFBaMWpmR0E?oc=5"
+          "title": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/08/05",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16YVpHM1IyckN5LWYyeU00ZjdGSUY0T2xabGdMNHZCZDNFaHRPWHhxNEltNS1yX25kalFRM1hrMmRZcFZLNm5xZ3loUkloTlB4VWlKcVRzcjZsbnR4TERHZFFWbXZCZkdOYXc?oc=5"
         }
       ]
     },
@@ -2191,9 +2191,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 157.7,
-      "value_jpy": 94620.0,
-      "gain_jpy": -198.0
+      "rate": 157.69,
+      "value_jpy": 94614.0,
+      "gain_jpy": -204.0
     },
     {
       "name": "ユーロ",
@@ -2201,9 +2201,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.2,
-      "value_jpy": 35240.0,
-      "gain_jpy": -304.0
+      "rate": 176.19,
+      "value_jpy": 35238.0,
+      "gain_jpy": -306.0
     }
   ]
 }
