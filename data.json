@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/11/01 02:11",
+  "updated_at": "2026/11/01 06:19",
   "weather": {
     "text": "くもり",
-    "max": 6.8,
-    "min": 1.5,
+    "max": 6.6,
+    "min": 2.0,
     "rain": 37
   },
   "summary": {
@@ -827,11 +827,11 @@
       ],
       "news": [
         {
-          "title": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目 - Moomoo",
-          "description": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目",
-          "source": "Moomoo",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQnJLLTkyaEk2cVZCMUl1UFBFMnVuTDVzX0dWdTY0OFZIa2thZm9Bam90Qmp1QkxFZl9SNUFiQnhoYUtNYlVtWF9OVEp2M3U3aFRpeFRGR0VCUHlzRmpmQzZkdFVBQzJMWnZhTXc4NzI5LXptVkd6QUEwbktDUlVKeGZDT1EtVGFQSlhURnNmZFlkaTgzUjRqejMtUzk4Z2RmU1BuQ3VCRERsZmpDc09sNWg4R2dWQzlzMEE?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
