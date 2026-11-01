@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/11/01 06:19",
+  "updated_at": "2026/11/01 14:38",
   "weather": {
     "text": "くもり",
-    "max": 6.6,
-    "min": 2.0,
-    "rain": 37
+    "max": 6.7,
+    "min": 3.0,
+    "rain": 59
   },
   "summary": {
     "label": "日本株評価額",
@@ -1637,11 +1637,11 @@
       ],
       "news": [
         {
-          "title": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
-          "description": "【アナリスト予想】北洋銀行、27年3月期経常予想。対前週8.9%上昇。(アイフィス株予報)",
+          "title": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
+          "description": "北洋銀行－後場上げ幅拡大 通期純利益を上方修正 増配も発表〔DZH 個別株情報〕(時事通信)",
           "source": "Yahoo!ファイナンス",
-          "date": "2026/10/26",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbmFUaldmUjJ0cGxOZ3RLX0lUbm5sZkNCZjl6OVg1ZWs2Z3plblRwM1NRNmtDX1o2dkppZGZEclo3SG56Uy11UDR4Tl92bnV4Q0ZoUzRHNWd5Zko5MF9uVUV1N014aFVPUTEtTnZ3TWxVamRuOV80bHVqNzlyRGcwNzFIeU05NGM?oc=5"
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNejhQQVhaREtlU3NhOWtVYWZGelFZbkVQSW5rR1BDZVphdU9DalBnX0JhZVRFNGRvQ2gzMHNzdjk0TWhkdlpHQlFZZGVvZjB5d01EOVRueURvOTlYNlV1M1JobTFCZUswajFqUlNlNS0zVGxqSy1PY2hpT0xjdGxCWGRiMXJFdlU?oc=5"
         }
       ]
     },
@@ -2175,11 +2175,11 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日 - 外為どっとコム",
-          "description": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日",
-          "source": "外為どっとコム",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVQ2syUDF0OUtQbG9kWU9ZQVkteWZaaXE3V2JRTFNoRFp5amlVdTFkUG9OOG5ONGF3UVZOMFB0cmVQcWltRnVVVTljR3d0RHk4TlJzdDBFZ1h1TXJVOHFQTURtcw?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/01",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
@@ -2201,9 +2201,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.19,
-      "value_jpy": 35238.0,
-      "gain_jpy": -306.0
+      "rate": 176.21,
+      "value_jpy": 35242.0,
+      "gain_jpy": -302.0
     }
   ]
 }
