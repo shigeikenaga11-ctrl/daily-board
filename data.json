@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/11/03 15:17",
+  "updated_at": "2026/11/04 01:56",
   "weather": {
     "text": "雪",
-    "max": 8.0,
-    "min": 2.1,
-    "rain": 65
+    "max": 8.6,
+    "min": 0.3,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -45,7 +45,7 @@
       "intraday": [
         {
           "label": "09:00",
-          "value": 2853.0
+          "value": 2852.5
         },
         {
           "label": "09:05",
@@ -81,7 +81,7 @@
         },
         {
           "label": "09:45",
-          "value": 2833.5
+          "value": 2833.0
         },
         {
           "label": "09:50",
@@ -301,7 +301,7 @@
         },
         {
           "label": "15:15",
-          "value": 2875.0
+          "value": 2876.0
         },
         {
           "label": "15:20",
@@ -827,11 +827,11 @@
       ],
       "news": [
         {
-          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/10/02",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
+          "title": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目 - Moomoo",
+          "description": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目",
+          "source": "Moomoo",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQnJLLTkyaEk2cVZCMUl1UFBFMnVuTDVzX0dWdTY0OFZIa2thZm9Bam90Qmp1QkxFZl9SNUFiQnhoYUtNYlVtWF9OVEp2M3U3aFRpeFRGR0VCUHlzRmpmQzZkdFVBQzJMWnZhTXc4NzI5LXptVkd6QUEwbktDUlVKeGZDT1EtVGFQSlhURnNmZFlkaTgzUjRqejMtUzk4Z2RmU1BuQ3VCRERsZmpDc09sNWg4R2dWQzlzMEE?oc=5"
         }
       ]
     },
@@ -2042,11 +2042,11 @@
       ],
       "news": [
         {
-          "title": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/08/05",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16YVpHM1IyckN5LWYyeU00ZjdGSUY0T2xabGdMNHZCZDNFaHRPWHhxNEltNS1yX25kalFRM1hrMmRZcFZLNm5xZ3loUkloTlB4VWlKcVRzcjZsbnR4TERHZFFWbXZCZkdOYXc?oc=5"
+          "title": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO） - Yahoo!ニュース",
+          "description": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO）",
+          "source": "Yahoo!ニュース",
+          "date": "2026/09/11",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmdfZXJxSzdaQ3NIeHdKT2RKVzY5UndWYzZYZmVFUi1iQUpqeWFwc21OdFcyYk1Gek8zVlVkbldBdVFKdVM5SmpOQUVORmhvU2RiTjM2SXRTSERMcmFvZjQwREhmVnd4NUhqOV9TUjBTb0M5dFFJOFBaMWpmR0E?oc=5"
         }
       ]
     },
@@ -2175,11 +2175,11 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日 - 外為どっとコム",
-          "description": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日",
-          "source": "外為どっとコム",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVQ2syUDF0OUtQbG9kWU9ZQVkteWZaaXE3V2JRTFNoRFp5amlVdTFkUG9OOG5ONGF3UVZOMFB0cmVQcWltRnVVVTljR3d0RHk4TlJzdDBFZ1h1TXJVOHFQTURtcw?oc=5"
+          "title": "AI株売り圧力下でもS&P500の市場ブレッドスは逆勢改善、JPモルガンは年末8,000ポイントを予想 - BigGo ファイナンス",
+          "description": "AI株売り圧力下でもS&P500の市場ブレッドスは逆勢改善、JPモルガンは年末8,000ポイントを予想",
+          "source": "BigGo ファイナンス",
+          "date": "2026/11/03",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXaURiLU5TeHd0OHNuajl3bVhxVTl4ZmNzMUZ4NE5CMVBPZjg0YU0tN3RXY2xKdmhDR3JQZnhUUEF3M2pEUzBCNE1LUXVPdXFYY0JscjZBUU9pZGxRcjBNcFNmdEg2dGg0Q25OY3Q0SjN1N3Vm?oc=5"
         }
       ]
     }
@@ -2191,9 +2191,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 157.75,
-      "value_jpy": 94650.0,
-      "gain_jpy": -168.0
+      "rate": 157.92,
+      "value_jpy": 94751.99999999999,
+      "gain_jpy": -66.00000000001455
     },
     {
       "name": "ユーロ",
@@ -2201,9 +2201,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.57,
-      "value_jpy": 35314.0,
-      "gain_jpy": -230.0
+      "rate": 176.82,
+      "value_jpy": 35364.0,
+      "gain_jpy": -180.0
     }
   ]
 }
