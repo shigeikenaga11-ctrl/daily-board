@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/11/03 06:38",
+  "updated_at": "2026/11/03 15:17",
   "weather": {
     "text": "雪",
     "max": 8.0,
-    "min": 2.4,
-    "rain": 60
+    "min": 2.1,
+    "rain": 65
   },
   "summary": {
     "label": "日本株評価額",
@@ -40,12 +40,12 @@
       "change": 5.029048656499646,
       "unrealizedYen": 1170.0,
       "unrealizedPercent": 2.064220183486239,
-      "weekChange": -2.513274336283189,
-      "monthChange": 1.661129568106312,
+      "weekChange": 11.485835421083056,
+      "monthChange": 6.77371723883351,
       "intraday": [
         {
           "label": "09:00",
-          "value": 2852.5
+          "value": 2853.0
         },
         {
           "label": "09:05",
@@ -81,7 +81,7 @@
         },
         {
           "label": "09:45",
-          "value": 2833.0
+          "value": 2833.5
         },
         {
           "label": "09:50",
@@ -301,7 +301,7 @@
         },
         {
           "label": "15:15",
-          "value": 2876.0
+          "value": 2875.0
         },
         {
           "label": "15:20",
@@ -313,10 +313,6 @@
         }
       ],
       "week": [
-        {
-          "label": "10/26",
-          "value": 2825.0
-        },
         {
           "label": "10/27",
           "value": 2594.5
@@ -332,6 +328,10 @@
         {
           "label": "10/30",
           "value": 2754.0
+        },
+        {
+          "label": "11/02",
+          "value": 2892.5
         }
       ],
       "month": [
@@ -414,6 +414,10 @@
         {
           "label": "10/30",
           "value": 2754.0
+        },
+        {
+          "label": "11/02",
+          "value": 2892.5
         }
       ],
       "news": [
@@ -441,8 +445,8 @@
       "change": -1.6889854023404482,
       "unrealizedYen": 1980.0,
       "unrealizedPercent": 2.4902527983901397,
-      "weekChange": -3.3465485074626877,
-      "monthChange": 5.605809657281191,
+      "weekChange": -3.596356323198868,
+      "monthChange": 3.8221429481462676,
       "intraday": [
         {
           "label": "09:00",
@@ -715,10 +719,6 @@
       ],
       "week": [
         {
-          "label": "10/26",
-          "value": 8576.0
-        },
-        {
           "label": "10/27",
           "value": 8453.0
         },
@@ -733,6 +733,10 @@
         {
           "label": "10/30",
           "value": 8289.0
+        },
+        {
+          "label": "11/02",
+          "value": 8149.0
         }
       ],
       "month": [
@@ -815,6 +819,10 @@
         {
           "label": "10/30",
           "value": 8289.0
+        },
+        {
+          "label": "11/02",
+          "value": 8149.0
         }
       ],
       "news": [
@@ -842,8 +850,8 @@
       "change": -0.6558550939010144,
       "unrealizedYen": 12520.0,
       "unrealizedPercent": 12.202724285757798,
-      "weekChange": -0.9233863699767975,
-      "monthChange": 14.189994360202341,
+      "weekChange": -0.5184929358080126,
+      "monthChange": 13.44106868542192,
       "intraday": [
         {
           "label": "09:00",
@@ -1116,10 +1124,6 @@
       ],
       "week": [
         {
-          "label": "10/26",
-          "value": 584.8
-        },
-        {
           "label": "10/27",
           "value": 578.6
         },
@@ -1134,6 +1138,10 @@
         {
           "label": "10/30",
           "value": 579.4
+        },
+        {
+          "label": "11/02",
+          "value": 575.6
         }
       ],
       "month": [
@@ -1216,6 +1224,10 @@
         {
           "label": "10/30",
           "value": 579.4
+        },
+        {
+          "label": "11/02",
+          "value": 575.6
         }
       ],
       "news": [
@@ -1243,8 +1255,8 @@
       "change": -2.5535420098846795,
       "unrealizedYen": -9700.0,
       "unrealizedPercent": -14.088598402323893,
-      "weekChange": 9.665763324299913,
-      "monthChange": -10.800881704628951,
+      "weekChange": 0.5952380952380931,
+      "monthChange": -13.078618662747976,
       "intraday": [
         {
           "label": "09:00",
@@ -1517,10 +1529,6 @@
       ],
       "week": [
         {
-          "label": "10/26",
-          "value": 1107.0
-        },
-        {
           "label": "10/27",
           "value": 1176.0
         },
@@ -1535,6 +1543,10 @@
         {
           "label": "10/30",
           "value": 1214.0
+        },
+        {
+          "label": "11/02",
+          "value": 1183.0
         }
       ],
       "month": [
@@ -1617,15 +1629,19 @@
         {
           "label": "10/30",
           "value": 1214.0
+        },
+        {
+          "label": "11/02",
+          "value": 1183.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL",
+          "title": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFT0dUMnhDbnZsZ05mQnI0dk9qUTdpQmFfS3dObGdyd2ZQbUE2TDhyQXljak5PckJuVGxQU21wM2ViQjJuSFJ3aHkxaHNMa1d4Z09pVEhWRHZvYmIydUp1c29uXzRLX0tpZEE?oc=5"
+          "date": "2026/05/13",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zSjM2WEdxUDMwUlozSFQ1d3FQVEh1ZkwwemRIbDJLa09LV1JCaVM1cFVpc0tqTk1VOWx1MGVnSjBlRkxCOHFpcm5DTldLWVJUMWMwakctSkVzYVRTc3c1OWM5Rk1wTkpUeUE?oc=5"
         }
       ]
     },
@@ -1644,8 +1660,8 @@
       "change": -1.051276550096547,
       "unrealizedYen": -775.0,
       "unrealizedPercent": -1.326486949080017,
-      "weekChange": -2.591431556948798,
-      "monthChange": -13.924284395198526,
+      "weekChange": -3.976681240891111,
+      "monthChange": -14.829178208679593,
       "intraday": [
         {
           "label": "09:00",
@@ -1918,10 +1934,6 @@
       ],
       "week": [
         {
-          "label": "10/26",
-          "value": 2392.5
-        },
-        {
           "label": "10/27",
           "value": 2401.5
         },
@@ -1936,6 +1948,10 @@
         {
           "label": "10/30",
           "value": 2330.5
+        },
+        {
+          "label": "11/02",
+          "value": 2306.0
         }
       ],
       "month": [
@@ -2018,15 +2034,19 @@
         {
           "label": "10/30",
           "value": 2330.5
+        },
+        {
+          "label": "11/02",
+          "value": 2306.0
         }
       ],
       "news": [
         {
-          "title": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO） - Yahoo!ニュース",
-          "description": "なぜ重工3社は儲かるのか？三菱・川崎・IHIの事業構造と知られざる強みを元機関投資家が分析（LIMO）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/09/11",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BTmdfZXJxSzdaQ3NIeHdKT2RKVzY5UndWYzZYZmVFUi1iQUpqeWFwc21OdFcyYk1Gek8zVlVkbldBdVFKdVM5SmpOQUVORmhvU2RiTjM2SXRTSERMcmFvZjQwREhmVnd4NUhqOV9TUjBTb0M5dFFJOFBaMWpmR0E?oc=5"
+          "title": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ＩＨＩ[7013]：2027年3月期 第1四半期決算短信〔IFRS〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/08/05",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16YVpHM1IyckN5LWYyeU00ZjdGSUY0T2xabGdMNHZCZDNFaHRPWHhxNEltNS1yX25kalFRM1hrMmRZcFZLNm5xZ3loUkloTlB4VWlKcVRzcjZsbnR4TERHZFFWbXZCZkdOYXc?oc=5"
         }
       ]
     },
@@ -2155,11 +2175,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/11/03",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日 - 外為どっとコム",
+          "description": "S&P500見通し（10/30〜11/6）｜大型AI決算で投資回収に厳しい目、金利高ならバブル懸念再燃か 2026年10月30日",
+          "source": "外為どっとコム",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVQ2syUDF0OUtQbG9kWU9ZQVkteWZaaXE3V2JRTFNoRFp5amlVdTFkUG9OOG5ONGF3UVZOMFB0cmVQcWltRnVVVTljR3d0RHk4TlJzdDBFZ1h1TXJVOHFQTURtcw?oc=5"
         }
       ]
     }
@@ -2171,9 +2191,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 157.69,
-      "value_jpy": 94614.0,
-      "gain_jpy": -204.0
+      "rate": 157.75,
+      "value_jpy": 94650.0,
+      "gain_jpy": -168.0
     },
     {
       "name": "ユーロ",
@@ -2181,9 +2201,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.41,
-      "value_jpy": 35282.0,
-      "gain_jpy": -262.0
+      "rate": 176.57,
+      "value_jpy": 35314.0,
+      "gain_jpy": -230.0
     }
   ]
 }
