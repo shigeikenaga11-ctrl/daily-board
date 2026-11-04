@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/11/04 23:13",
+  "updated_at": "2026/11/05 06:12",
   "weather": {
-    "text": "雪",
-    "max": 8.9,
-    "min": 0.2,
+    "text": "雨",
+    "max": 15.5,
+    "min": 1.5,
     "rain": 100
   },
   "summary": {
@@ -40,8 +40,8 @@
       "change": 0.5877268798617052,
       "unrealizedYen": 1510.0,
       "unrealizedPercent": 2.6640790402258294,
-      "weekChange": 12.771317829457374,
-      "monthChange": 7.124447717231219,
+      "weekChange": 11.485835421083056,
+      "monthChange": 6.4985272459499255,
       "intraday": [
         {
           "label": "09:05",
@@ -310,6 +310,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 2594.5
+        },
+        {
           "label": "10/28",
           "value": 2580.0
         },
@@ -324,10 +328,6 @@
         {
           "label": "11/02",
           "value": 2892.5
-        },
-        {
-          "label": "11/04",
-          "value": 2909.5
         }
       ],
       "month": [
@@ -410,10 +410,6 @@
         {
           "label": "11/02",
           "value": 2892.5
-        },
-        {
-          "label": "11/04",
-          "value": 2909.5
         }
       ],
       "news": [
@@ -441,8 +437,8 @@
       "change": 2.503374647195966,
       "unrealizedYen": 4020.0,
       "unrealizedPercent": 5.055967802792102,
-      "weekChange": 0.5053543496570834,
-      "monthChange": 7.892017566520271,
+      "weekChange": -3.596356323198868,
+      "monthChange": 5.257039524670626,
       "intraday": [
         {
           "label": "09:00",
@@ -486,7 +482,7 @@
         },
         {
           "label": "09:50",
-          "value": 8364.0
+          "value": 8363.0
         },
         {
           "label": "09:55",
@@ -715,6 +711,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 8453.0
+        },
+        {
           "label": "10/28",
           "value": 8311.0
         },
@@ -729,10 +729,6 @@
         {
           "label": "11/02",
           "value": 8149.0
-        },
-        {
-          "label": "11/04",
-          "value": 8353.0
         }
       ],
       "month": [
@@ -815,19 +811,15 @@
         {
           "label": "11/02",
           "value": 8149.0
-        },
-        {
-          "label": "11/04",
-          "value": 8353.0
         }
       ],
       "news": [
         {
-          "title": "【なぜ？】Switch 2で「売上98％増」の任天堂 それでも「利益率」が伸び悩む切実な理由（AERA DIGITAL） - Yahoo!ニュース",
-          "description": "【なぜ？】Switch 2で「売上98％増」の任天堂 それでも「利益率」が伸び悩む切実な理由（AERA DIGITAL）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/11/04",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CaFBCUy1LX0J3cDlsNWhyc01vSGVOd1k3Z0UxTFFiVU16NGE0VEtaQnlrY3Axd2VPQlNLc1dHakRJRkJRSWVPdTJVeFJHU2h6SWpXTFBHTjhJOG52NFcxQ3hCVV9PYjZiQ1h6Skd2YWk0WWdTdmUxeVhBQ3N3UU0?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC0?oc=5"
         }
       ]
     },
@@ -846,8 +838,8 @@
       "change": 0.538570571061725,
       "unrealizedYen": 13140.0,
       "unrealizedPercent": 12.807019923397906,
-      "weekChange": 4.27027246973537,
-      "monthChange": 13.581945477336843,
+      "weekChange": -0.5184929358080126,
+      "monthChange": 12.973498642971059,
       "intraday": [
         {
           "label": "09:05",
@@ -1116,6 +1108,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 578.6
+        },
+        {
           "label": "10/28",
           "value": 555.0
         },
@@ -1130,10 +1126,6 @@
         {
           "label": "11/02",
           "value": 575.6
-        },
-        {
-          "label": "11/04",
-          "value": 578.7
         }
       ],
       "month": [
@@ -1216,19 +1208,15 @@
         {
           "label": "11/02",
           "value": 575.6
-        },
-        {
-          "label": "11/04",
-          "value": 578.7
         }
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/29",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96NkVsSzJ2c0YtWDQwR3hNa0psQUtuNUF0UUdIWERnYWlQZzBoRVZYUE50TEZtcGNjMzVINFJOeXdZZWw3Y2NxbHBiUFZFWFJvQVp0OUdqb0lLTFVvd3FMR2VESUstM056ZE5NazFOVDFIdkhC?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1247,8 +1235,8 @@
       "change": -0.16906170752324368,
       "unrealizedYen": -9800.0,
       "unrealizedPercent": -14.233841684822076,
-      "weekChange": -0.16906170752324368,
-      "monthChange": -12.583271650629168,
+      "weekChange": 0.5952380952380931,
+      "monthChange": -12.435233160621761,
       "intraday": [
         {
           "label": "09:00",
@@ -1521,6 +1509,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 1176.0
+        },
+        {
           "label": "10/28",
           "value": 1183.0
         },
@@ -1535,10 +1527,6 @@
         {
           "label": "11/02",
           "value": 1183.0
-        },
-        {
-          "label": "11/04",
-          "value": 1181.0
         }
       ],
       "month": [
@@ -1621,19 +1609,15 @@
         {
           "label": "11/02",
           "value": 1183.0
-        },
-        {
-          "label": "11/04",
-          "value": 1181.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL",
+          "title": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
-          "date": "2026/10/28",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFT0dUMnhDbnZsZ05mQnI0dk9qUTdpQmFfS3dObGdyd2ZQbUE2TDhyQXljak5PckJuVGxQU21wM2ViQjJuSFJ3aHkxaHNMa1d4Z09pVEhWRHZvYmIydUp1c29uXzRLX0tpZEE?oc=5"
+          "date": "2026/05/13",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zSjM2WEdxUDMwUlozSFQ1d3FQVEh1ZkwwemRIbDJLa09LV1JCaVM1cFVpc0tqTk1VOWx1MGVnSjBlRkxCOHFpcm5DTldLWVJUMWMwakctSkVzYVRTc3c1OWM5Rk1wTkpUeUE?oc=5"
         }
       ]
     },
@@ -1652,8 +1636,8 @@
       "change": 3.816131830008662,
       "unrealizedYen": 1425.0,
       "unrealizedPercent": 2.4390243902439024,
-      "weekChange": 0.3984063745019917,
-      "monthChange": -11.985294117647062,
+      "weekChange": -3.976681240891111,
+      "monthChange": -15.22058823529412,
       "intraday": [
         {
           "label": "09:05",
@@ -1777,7 +1761,7 @@
         },
         {
           "label": "12:30",
-          "value": 2223.0
+          "value": 2223.5
         },
         {
           "label": "12:35",
@@ -1922,6 +1906,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 2401.5
+        },
+        {
           "label": "10/28",
           "value": 2384.5
         },
@@ -1936,10 +1924,6 @@
         {
           "label": "11/02",
           "value": 2306.0
-        },
-        {
-          "label": "11/04",
-          "value": 2394.0
         }
       ],
       "month": [
@@ -2022,10 +2006,6 @@
         {
           "label": "11/02",
           "value": 2306.0
-        },
-        {
-          "label": "11/04",
-          "value": 2394.0
         }
       ],
       "news": [
@@ -2053,8 +2033,8 @@
       "change": -0.2431118314424663,
       "unrealizedYen": -400.0,
       "unrealizedPercent": -0.32388663967611336,
-      "weekChange": 2.5833333333333375,
-      "monthChange": 3.4019319613607824,
+      "weekChange": 0.6525285481239873,
+      "monthChange": 3.653926921461581,
       "intraday": [
         {
           "label": "09:05",
@@ -2323,6 +2303,10 @@
       ],
       "week": [
         {
+          "label": "10/27",
+          "value": 1226.0
+        },
+        {
           "label": "10/28",
           "value": 1200.0
         },
@@ -2337,10 +2321,6 @@
         {
           "label": "11/02",
           "value": 1234.0
-        },
-        {
-          "label": "11/04",
-          "value": 1231.0
         }
       ],
       "month": [
@@ -2423,10 +2403,6 @@
         {
           "label": "11/02",
           "value": 1234.0
-        },
-        {
-          "label": "11/04",
-          "value": 1231.0
         }
       ],
       "news": [
@@ -2564,11 +2540,11 @@
       ],
       "news": [
         {
-          "title": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 野村證券ストラテジストが解説 - 野村證券",
-          "description": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 ストラテジストが解説",
-          "source": "野村證券",
+          "title": "S&P500・オルカン 最新情報。先週末は急落、インテル・アマゾン決算でAI投資への警戒強まる - Business Insider Japan",
+          "description": "S&P500・オルカン 最新情報。先週末は急落、インテル・アマゾン決算でAI投資への警戒強まる",
+          "source": "Business Insider Japan",
           "date": "2026/11/02",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iSjRicC1qbngyQnFtWDU4cVdDU2xQLUFOcVRvempLbVFTN1BNYXlqQUduSVM5dWY1Zy0xLW0zZ3JPdlhxTmJqNmtwYjNvb1ROVVA0VDZ3MUZCelNCY21J?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5X3JLZE9Ea09veGxxMmc2VUxuM19nYTdCYndRQzRGcTlEaWF4UERFbW45TlJRcDd6RVRnajRDSlhCckQ5MGVJcktMaWVHMmxkRkx5ZUFVdHNhVk9MMFFpcC1uNnk0X2l3NkNVUDZLNGNJUk5UZnlZNzBJNmpPS1k?oc=5"
         }
       ]
     }
@@ -2580,9 +2556,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.26,
-      "value_jpy": 94956.0,
-      "gain_jpy": 138.0
+      "rate": 158.27,
+      "value_jpy": 94962.0,
+      "gain_jpy": 144.0
     },
     {
       "name": "ユーロ",
@@ -2590,9 +2566,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.42,
-      "value_jpy": 35484.0,
-      "gain_jpy": -60.0
+      "rate": 177.64,
+      "value_jpy": 35528.0,
+      "gain_jpy": -16.0
     }
   ]
 }
