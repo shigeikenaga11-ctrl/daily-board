@@ -130,8 +130,6 @@ def request_bytes(url):
 
 
 
-    data["foreign_cash"] = get_foreign_cash()
-
 def get_json(url):
 
     return json.loads(
