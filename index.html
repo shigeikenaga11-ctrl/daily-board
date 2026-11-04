@@ -930,7 +930,10 @@ main {
 }
 
 
-@media (max-width: 850px) {
+/* 日本株の凡例：3列×2段 */
+.stock-legend {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
 
   header {
     padding: 0 20px;
