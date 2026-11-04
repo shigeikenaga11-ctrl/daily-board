@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 14:52",
+  "updated_at": "2026/11/04 15:00",
   "weather": {
     "text": "雪",
     "max": 8.3,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 498262.5,
+    "total": 498907.5,
     "purchaseTotal": 489565,
-    "deltaYen": 3602.5,
-    "deltaPercent": 0.7282780091375894,
+    "deltaYen": 4247.5,
+    "deltaPercent": 0.8586706020296769,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1091605.04,
+    "total": 1092250.04,
     "purchaseTotal": 1089570.98,
-    "deltaYen": -6345.549999999999,
-    "deltaPercent": -0.577944951056495,
-    "unrealizedYen": 2034.0600000000559,
-    "unrealizedPercent": 0.18668448750351774,
+    "deltaYen": -5700.549999999999,
+    "deltaPercent": -0.5191991380960047,
+    "unrealizedYen": 2679.060000000056,
+    "unrealizedPercent": 0.24588209939292396,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2899.5,
+      "price": 2896.0,
       "previousClose": 2892.5,
-      "value": 57990.0,
-      "deltaYen": 140.0,
-      "change": 0.2420051858254002,
-      "unrealizedYen": 1310.0,
-      "unrealizedPercent": 2.3112208892025405,
-      "weekChange": 12.383720930232567,
-      "monthChange": 6.756259204712811,
+      "value": 57920.0,
+      "deltaYen": 70.0,
+      "change": 0.1210025929127001,
+      "unrealizedYen": 1240.0,
+      "unrealizedPercent": 2.18772053634439,
+      "weekChange": 12.24806201550388,
+      "monthChange": 6.627393225331368,
       "intraday": [
         {
           "label": "09:05",
@@ -265,11 +265,15 @@
         },
         {
           "label": "14:35",
-          "value": 2899.0
+          "value": 2896.5
         },
         {
-          "label": "14:37",
-          "value": 2899.5
+          "label": "14:40",
+          "value": 2895.0
+        },
+        {
+          "label": "14:45",
+          "value": 2896.0
         }
       ],
       "week": [
@@ -291,7 +295,7 @@
         },
         {
           "label": "11/04",
-          "value": 2899.5
+          "value": 2896.0
         }
       ],
       "month": [
@@ -377,7 +381,7 @@
         },
         {
           "label": "11/04",
-          "value": 2899.5
+          "value": 2896.0
         }
       ],
       "news": [
@@ -398,15 +402,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8329.0,
+      "price": 8337.0,
       "previousClose": 8149.0,
-      "value": 83290.0,
-      "deltaYen": 1800.0,
-      "change": 2.2088599828199884,
-      "unrealizedYen": 3780.0,
-      "unrealizedPercent": 4.7541189787448115,
-      "weekChange": 0.2165804355673151,
-      "monthChange": 7.582020149832092,
+      "value": 83370.0,
+      "deltaYen": 1880.0,
+      "change": 2.307031537611981,
+      "unrealizedYen": 3860.0,
+      "unrealizedPercent": 4.854735253427242,
+      "weekChange": 0.3128384069305712,
+      "monthChange": 7.685352622061492,
       "intraday": [
         {
           "label": "09:00",
@@ -634,11 +638,15 @@
         },
         {
           "label": "14:35",
-          "value": 8330.0
+          "value": 8329.0
         },
         {
-          "label": "14:37",
-          "value": 8329.0
+          "label": "14:40",
+          "value": 8337.0
+        },
+        {
+          "label": "14:45",
+          "value": 8337.0
         }
       ],
       "week": [
@@ -660,7 +668,7 @@
         },
         {
           "label": "11/04",
-          "value": 8329.0
+          "value": 8337.0
         }
       ],
       "month": [
@@ -746,16 +754,16 @@
         },
         {
           "label": "11/04",
-          "value": 8329.0
+          "value": 8337.0
         }
       ],
       "news": [
         {
-          "title": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目 - Moomoo",
-          "description": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目",
-          "source": "Moomoo",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQnJLLTkyaEk2cVZCMUl1UFBFMnVuTDVzX0dWdTY0OFZIa2thZm9Bam90Qmp1QkxFZl9SNUFiQnhoYUtNYlVtWF9OVEp2M3U3aFRpeFRGR0VCUHlzRmpmQzZkdFVBQzJMWnZhTXc4NzI5LXptVkd6QUEwbktDUlVKeGZDT1EtVGFQSlhURnNmZFlkaTgzUjRqejMtUzk4Z2RmU1BuQ3VCRERsZmpDc09sNWg4R2dWQzlzMEE?oc=5"
+          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
+          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/10/02",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
         }
       ]
     },
@@ -767,15 +775,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 577.6,
+      "price": 576.9,
       "previousClose": 575.6,
-      "value": 115520.0,
-      "deltaYen": 400.0,
-      "change": 0.34745927483277317,
-      "unrealizedYen": 12920.0,
-      "unrealizedPercent": 12.592587833516081,
-      "weekChange": 4.072067673141899,
-      "monthChange": 13.366040350527486,
+      "value": 115380.0,
+      "deltaYen": 260.0,
+      "change": 0.22585552711300583,
+      "unrealizedYen": 12780.0,
+      "unrealizedPercent": 12.456145109953704,
+      "weekChange": 3.9459503448761257,
+      "monthChange": 13.228660336420518,
       "intraday": [
         {
           "label": "09:05",
@@ -999,11 +1007,15 @@
         },
         {
           "label": "14:35",
-          "value": 577.5
+          "value": 577.6
         },
         {
-          "label": "14:37",
-          "value": 577.6
+          "label": "14:40",
+          "value": 577.0
+        },
+        {
+          "label": "14:45",
+          "value": 576.9
         }
       ],
       "week": [
@@ -1025,7 +1037,7 @@
         },
         {
           "label": "11/04",
-          "value": 577.6
+          "value": 576.9
         }
       ],
       "month": [
@@ -1111,16 +1123,16 @@
         },
         {
           "label": "11/04",
-          "value": 577.6
+          "value": 576.9
         }
       ],
       "news": [
         {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/29",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96NkVsSzJ2c0YtWDQwR3hNa0psQUtuNUF0UUdIWERnYWlQZzBoRVZYUE50TEZtcGNjMzVINFJOeXdZZWw3Y2NxbHBiUFZFWFJvQVp0OUdqb0lLTFVvd3FMR2VESUstM056ZE5NazFOVDFIdkhC?oc=5"
         }
       ]
     },
@@ -1132,15 +1144,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1165.0,
+      "price": 1171.0,
       "previousClose": 1183.0,
-      "value": 58250.0,
-      "deltaYen": -900.0,
-      "change": -1.5215553677092153,
-      "unrealizedYen": -10600.0,
-      "unrealizedPercent": -15.395787944807552,
-      "weekChange": -1.5215553677092153,
-      "monthChange": -13.767579570688381,
+      "value": 58550.0,
+      "deltaYen": -600.0,
+      "change": -1.0143702451394732,
+      "unrealizedYen": -10300.0,
+      "unrealizedPercent": -14.960058097313,
+      "weekChange": -1.0143702451394732,
+      "monthChange": -13.323464100666172,
       "intraday": [
         {
           "label": "09:00",
@@ -1368,11 +1380,15 @@
         },
         {
           "label": "14:35",
-          "value": 1165.0
+          "value": 1168.0
         },
         {
-          "label": "14:37",
-          "value": 1165.0
+          "label": "14:40",
+          "value": 1170.0
+        },
+        {
+          "label": "14:45",
+          "value": 1171.0
         }
       ],
       "week": [
@@ -1394,7 +1410,7 @@
         },
         {
           "label": "11/04",
-          "value": 1165.0
+          "value": 1171.0
         }
       ],
       "month": [
@@ -1480,7 +1496,7 @@
         },
         {
           "label": "11/04",
-          "value": 1165.0
+          "value": 1171.0
         }
       ],
       "news": [
@@ -1501,15 +1517,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2374.5,
+      "price": 2387.5,
       "previousClose": 2306.0,
-      "value": 59362.5,
-      "deltaYen": 1712.5,
-      "change": 2.9705117085862875,
-      "unrealizedYen": 937.5,
-      "unrealizedPercent": 1.6046213093709885,
-      "weekChange": -0.41937513105473334,
-      "monthChange": -12.702205882352946,
+      "value": 59687.5,
+      "deltaYen": 2037.5,
+      "change": 3.5342584562012114,
+      "unrealizedYen": 1262.5,
+      "unrealizedPercent": 2.160890029952931,
+      "weekChange": 0.12581253931642777,
+      "monthChange": -12.224264705882348,
       "intraday": [
         {
           "label": "09:05",
@@ -1733,11 +1749,15 @@
         },
         {
           "label": "14:35",
-          "value": 2375.0
+          "value": 2385.5
         },
         {
-          "label": "14:37",
-          "value": 2374.5
+          "label": "14:40",
+          "value": 2387.5
+        },
+        {
+          "label": "14:45",
+          "value": 2387.5
         }
       ],
       "week": [
@@ -1759,7 +1779,7 @@
         },
         {
           "label": "11/04",
-          "value": 2374.5
+          "value": 2387.5
         }
       ],
       "month": [
@@ -1845,7 +1865,7 @@
         },
         {
           "label": "11/04",
-          "value": 2374.5
+          "value": 2387.5
         }
       ],
       "news": [
@@ -1866,15 +1886,15 @@
       "qtyLabel": "100株",
       "cost": 1235,
       "purchaseValue": 123500,
-      "price": 1238.5,
+      "price": 1240.0,
       "previousClose": 1234.0,
-      "value": 123850.0,
-      "deltaYen": 450.0,
-      "change": 0.364667747163705,
-      "unrealizedYen": 350.0,
-      "unrealizedPercent": 0.2834008097165992,
-      "weekChange": 3.208333333333324,
-      "monthChange": 4.031919361612757,
+      "value": 124000.0,
+      "deltaYen": 600.0,
+      "change": 0.4862236628849326,
+      "unrealizedYen": 500.0,
+      "unrealizedPercent": 0.4048582995951417,
+      "weekChange": 3.3333333333333437,
+      "monthChange": 4.157916841663156,
       "intraday": [
         {
           "label": "09:05",
@@ -2098,11 +2118,15 @@
         },
         {
           "label": "14:35",
-          "value": 1238.5
+          "value": 1239.0
         },
         {
-          "label": "14:36",
-          "value": 1238.5
+          "label": "14:40",
+          "value": 1240.0
+        },
+        {
+          "label": "14:45",
+          "value": 1240.0
         }
       ],
       "week": [
@@ -2124,7 +2148,7 @@
         },
         {
           "label": "11/04",
-          "value": 1238.5
+          "value": 1240.0
         }
       ],
       "month": [
@@ -2210,16 +2234,16 @@
         },
         {
           "label": "11/04",
-          "value": 1238.5
+          "value": 1240.0
         }
       ],
       "news": [
         {
-          "title": "東急不動産ホールディングス(株)【3289】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "description": "東急不動産ホールディングス(株)【3289】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/12",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rbjNwLTlEcDhHQUNTT0dIMVNDQXZld083MW80Vkg1X29XOFRzN1ZMZ0szLU42TUdLRnI2WjhLaV8wRU1iMERvRlMwVUVIdkJhNEhLZTQ4bUU1NndRMkJFSk45Zkt3aWdyekp6RVNiT3FST1p0Y1E?oc=5"
+          "title": "東急不動産HD、4～6月純利益17%減の255億円 株式売却益の反動で減益も本業は過去最高益 - BigGo ファイナンス",
+          "description": "東急不動産HD、4～6月純利益17%減の255億円 株式売却益の反動で減益も本業は過去最高益",
+          "source": "BigGo ファイナンス",
+          "date": "2026/08/06",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45MmtWTU5zZGxva1lsVTJQZUVPVGZpSThkQmxrSFVBbFF6VDItbmhJSGJWdWZuNzh3TWo5WU5HeHFhWHh3clU1WVFmc1JvQ0l2bld6MGh5LWRJVnZwYmViMkRjWldudTBhUTBTQkdKanpNX1NF?oc=5"
         }
       ]
     },
@@ -2348,11 +2372,11 @@
       ],
       "news": [
         {
-          "title": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 野村證券ストラテジストが解説 - 野村證券",
-          "description": "S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 ストラテジストが解説",
-          "source": "野村證券",
-          "date": "2026/11/02",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iSjRicC1qbngyQnFtWDU4cVdDU2xQLUFOcVRvempLbVFTN1BNYXlqQUduSVM5dWY1Zy0xLW0zZ3JPdlhxTmJqNmtwYjNvb1ROVVA0VDZ3MUZCelNCY21J?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/04",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
@@ -2374,9 +2398,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 176.98,
-      "value_jpy": 35396.0,
-      "gain_jpy": -148.0
+      "rate": 176.99,
+      "value_jpy": 35398.0,
+      "gain_jpy": -146.0
     }
   ]
 }
