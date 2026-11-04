@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 14:49",
+  "updated_at": "2026/11/04 14:52",
   "weather": {
     "text": "雪",
     "max": 8.3,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 498007.5,
+    "total": 498262.5,
     "purchaseTotal": 489565,
-    "deltaYen": 3347.5,
-    "deltaPercent": 0.6767274491569967,
+    "deltaYen": 3602.5,
+    "deltaPercent": 0.7282780091375894,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1091350.04,
+    "total": 1091605.04,
     "purchaseTotal": 1089570.98,
-    "deltaYen": -6600.549999999999,
-    "deltaPercent": -0.60117003990134,
-    "unrealizedYen": 1779.0600000000559,
-    "unrealizedPercent": 0.16328078047747344,
+    "deltaYen": -6345.549999999999,
+    "deltaPercent": -0.577944951056495,
+    "unrealizedYen": 2034.0600000000559,
+    "unrealizedPercent": 0.18668448750351774,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2896.5,
+      "price": 2899.5,
       "previousClose": 2892.5,
-      "value": 57930.0,
-      "deltaYen": 80.0,
-      "change": 0.13828867761451757,
-      "unrealizedYen": 1250.0,
-      "unrealizedPercent": 2.2053634438955543,
-      "weekChange": 12.267441860465112,
-      "monthChange": 6.645802650957289,
+      "value": 57990.0,
+      "deltaYen": 140.0,
+      "change": 0.2420051858254002,
+      "unrealizedYen": 1310.0,
+      "unrealizedPercent": 2.3112208892025405,
+      "weekChange": 12.383720930232567,
+      "monthChange": 6.756259204712811,
       "intraday": [
         {
           "label": "09:05",
@@ -261,11 +261,15 @@
         },
         {
           "label": "14:30",
-          "value": 2897.0
+          "value": 2897.5
         },
         {
-          "label": "14:34",
-          "value": 2896.5
+          "label": "14:35",
+          "value": 2899.0
+        },
+        {
+          "label": "14:37",
+          "value": 2899.5
         }
       ],
       "week": [
@@ -287,7 +291,7 @@
         },
         {
           "label": "11/04",
-          "value": 2896.5
+          "value": 2899.5
         }
       ],
       "month": [
@@ -373,7 +377,7 @@
         },
         {
           "label": "11/04",
-          "value": 2896.5
+          "value": 2899.5
         }
       ],
       "news": [
@@ -394,15 +398,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8333.0,
+      "price": 8329.0,
       "previousClose": 8149.0,
-      "value": 83330.0,
-      "deltaYen": 1840.0,
-      "change": 2.2579457602159847,
-      "unrealizedYen": 3820.0,
-      "unrealizedPercent": 4.804427116086027,
-      "weekChange": 0.26470942124894314,
-      "monthChange": 7.633686385946792,
+      "value": 83290.0,
+      "deltaYen": 1800.0,
+      "change": 2.2088599828199884,
+      "unrealizedYen": 3780.0,
+      "unrealizedPercent": 4.7541189787448115,
+      "weekChange": 0.2165804355673151,
+      "monthChange": 7.582020149832092,
       "intraday": [
         {
           "label": "09:00",
@@ -446,7 +450,7 @@
         },
         {
           "label": "09:50",
-          "value": 8363.0
+          "value": 8364.0
         },
         {
           "label": "09:55",
@@ -626,11 +630,15 @@
         },
         {
           "label": "14:30",
-          "value": 8345.0
+          "value": 8329.0
         },
         {
-          "label": "14:34",
-          "value": 8333.0
+          "label": "14:35",
+          "value": 8330.0
+        },
+        {
+          "label": "14:37",
+          "value": 8329.0
         }
       ],
       "week": [
@@ -652,7 +660,7 @@
         },
         {
           "label": "11/04",
-          "value": 8333.0
+          "value": 8329.0
         }
       ],
       "month": [
@@ -738,7 +746,7 @@
         },
         {
           "label": "11/04",
-          "value": 8333.0
+          "value": 8329.0
         }
       ],
       "news": [
@@ -759,15 +767,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 577.3,
+      "price": 577.6,
       "previousClose": 575.6,
-      "value": 115460.0,
-      "deltaYen": 340.0,
-      "change": 0.29534186813215957,
-      "unrealizedYen": 12860.0,
-      "unrealizedPercent": 12.534110680890596,
-      "weekChange": 4.0180158185529224,
-      "monthChange": 13.307161490278464,
+      "value": 115520.0,
+      "deltaYen": 400.0,
+      "change": 0.34745927483277317,
+      "unrealizedYen": 12920.0,
+      "unrealizedPercent": 12.592587833516081,
+      "weekChange": 4.072067673141899,
+      "monthChange": 13.366040350527486,
       "intraday": [
         {
           "label": "09:05",
@@ -987,11 +995,15 @@
         },
         {
           "label": "14:30",
-          "value": 577.7
+          "value": 577.5
         },
         {
-          "label": "14:34",
-          "value": 577.3
+          "label": "14:35",
+          "value": 577.5
+        },
+        {
+          "label": "14:37",
+          "value": 577.6
         }
       ],
       "week": [
@@ -1013,7 +1025,7 @@
         },
         {
           "label": "11/04",
-          "value": 577.3
+          "value": 577.6
         }
       ],
       "month": [
@@ -1099,16 +1111,16 @@
         },
         {
           "label": "11/04",
-          "value": 577.3
+          "value": 577.6
         }
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/29",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96NkVsSzJ2c0YtWDQwR3hNa0psQUtuNUF0UUdIWERnYWlQZzBoRVZYUE50TEZtcGNjMzVINFJOeXdZZWw3Y2NxbHBiUFZFWFJvQVp0OUdqb0lLTFVvd3FMR2VESUstM056ZE5NazFOVDFIdkhC?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1120,15 +1132,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1164.0,
+      "price": 1165.0,
       "previousClose": 1183.0,
-      "value": 58200.0,
-      "deltaYen": -950.0,
-      "change": -1.6060862214708371,
-      "unrealizedYen": -10650.0,
-      "unrealizedPercent": -15.468409586056644,
-      "weekChange": -1.6060862214708371,
-      "monthChange": -13.84159881569208,
+      "value": 58250.0,
+      "deltaYen": -900.0,
+      "change": -1.5215553677092153,
+      "unrealizedYen": -10600.0,
+      "unrealizedPercent": -15.395787944807552,
+      "weekChange": -1.5215553677092153,
+      "monthChange": -13.767579570688381,
       "intraday": [
         {
           "label": "09:00",
@@ -1355,8 +1367,12 @@
           "value": 1164.0
         },
         {
-          "label": "14:34",
-          "value": 1164.0
+          "label": "14:35",
+          "value": 1165.0
+        },
+        {
+          "label": "14:37",
+          "value": 1165.0
         }
       ],
       "week": [
@@ -1378,7 +1394,7 @@
         },
         {
           "label": "11/04",
-          "value": 1164.0
+          "value": 1165.0
         }
       ],
       "month": [
@@ -1464,7 +1480,7 @@
         },
         {
           "label": "11/04",
-          "value": 1164.0
+          "value": 1165.0
         }
       ],
       "news": [
@@ -1485,15 +1501,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2367.5,
+      "price": 2374.5,
       "previousClose": 2306.0,
-      "value": 59187.5,
-      "deltaYen": 1537.5,
-      "change": 2.666955767562884,
-      "unrealizedYen": 762.5,
-      "unrealizedPercent": 1.305091998288404,
-      "weekChange": -0.7129377227930389,
-      "monthChange": -12.959558823529417,
+      "value": 59362.5,
+      "deltaYen": 1712.5,
+      "change": 2.9705117085862875,
+      "unrealizedYen": 937.5,
+      "unrealizedPercent": 1.6046213093709885,
+      "weekChange": -0.41937513105473334,
+      "monthChange": -12.702205882352946,
       "intraday": [
         {
           "label": "09:05",
@@ -1617,7 +1633,7 @@
         },
         {
           "label": "12:30",
-          "value": 2223.5
+          "value": 2223.0
         },
         {
           "label": "12:35",
@@ -1713,11 +1729,15 @@
         },
         {
           "label": "14:30",
-          "value": 2365.0
+          "value": 2368.0
         },
         {
-          "label": "14:34",
-          "value": 2367.5
+          "label": "14:35",
+          "value": 2375.0
+        },
+        {
+          "label": "14:37",
+          "value": 2374.5
         }
       ],
       "week": [
@@ -1739,7 +1759,7 @@
         },
         {
           "label": "11/04",
-          "value": 2367.5
+          "value": 2374.5
         }
       ],
       "month": [
@@ -1825,7 +1845,7 @@
         },
         {
           "label": "11/04",
-          "value": 2367.5
+          "value": 2374.5
         }
       ],
       "news": [
@@ -1846,15 +1866,15 @@
       "qtyLabel": "100株",
       "cost": 1235,
       "purchaseValue": 123500,
-      "price": 1239.0,
+      "price": 1238.5,
       "previousClose": 1234.0,
-      "value": 123900.0,
-      "deltaYen": 500.0,
-      "change": 0.4051863857374327,
-      "unrealizedYen": 400.0,
-      "unrealizedPercent": 0.32388663967611336,
-      "weekChange": 3.2499999999999973,
-      "monthChange": 4.0739185216295715,
+      "value": 123850.0,
+      "deltaYen": 450.0,
+      "change": 0.364667747163705,
+      "unrealizedYen": 350.0,
+      "unrealizedPercent": 0.2834008097165992,
+      "weekChange": 3.208333333333324,
+      "monthChange": 4.031919361612757,
       "intraday": [
         {
           "label": "09:05",
@@ -2077,8 +2097,12 @@
           "value": 1238.5
         },
         {
-          "label": "14:34",
-          "value": 1239.0
+          "label": "14:35",
+          "value": 1238.5
+        },
+        {
+          "label": "14:36",
+          "value": 1238.5
         }
       ],
       "week": [
@@ -2100,7 +2124,7 @@
         },
         {
           "label": "11/04",
-          "value": 1239.0
+          "value": 1238.5
         }
       ],
       "month": [
@@ -2186,7 +2210,7 @@
         },
         {
           "label": "11/04",
-          "value": 1239.0
+          "value": 1238.5
         }
       ],
       "news": [
