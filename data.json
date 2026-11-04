@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 15:00",
+  "updated_at": "2026/11/04 15:12",
   "weather": {
     "text": "雪",
     "max": 8.3,
@@ -8,20 +8,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 498907.5,
+    "total": 499272.5,
     "purchaseTotal": 489565,
-    "deltaYen": 4247.5,
-    "deltaPercent": 0.8586706020296769,
+    "deltaYen": 4612.5,
+    "deltaPercent": 0.9324586584724861,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1092250.04,
+    "total": 1092615.04,
     "purchaseTotal": 1089570.98,
-    "deltaYen": -5700.549999999999,
-    "deltaPercent": -0.5191991380960047,
-    "unrealizedYen": 2679.060000000056,
-    "unrealizedPercent": 0.24588209939292396,
+    "deltaYen": -5335.549999999999,
+    "deltaPercent": -0.4859553834749521,
+    "unrealizedYen": 3044.060000000056,
+    "unrealizedPercent": 0.2793815231753012,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 2896.0,
+      "price": 2891.0,
       "previousClose": 2892.5,
-      "value": 57920.0,
-      "deltaYen": 70.0,
-      "change": 0.1210025929127001,
-      "unrealizedYen": 1240.0,
-      "unrealizedPercent": 2.18772053634439,
-      "weekChange": 12.24806201550388,
-      "monthChange": 6.627393225331368,
+      "value": 57820.0,
+      "deltaYen": -30.0,
+      "change": -0.051858254105441315,
+      "unrealizedYen": 1140.0,
+      "unrealizedPercent": 2.0112914608327452,
+      "weekChange": 12.054263565891477,
+      "monthChange": 6.443298969072164,
       "intraday": [
         {
           "label": "09:05",
@@ -273,7 +273,19 @@
         },
         {
           "label": "14:45",
-          "value": 2896.0
+          "value": 2893.0
+        },
+        {
+          "label": "14:50",
+          "value": 2888.5
+        },
+        {
+          "label": "14:55",
+          "value": 2891.0
+        },
+        {
+          "label": "14:57",
+          "value": 2891.0
         }
       ],
       "week": [
@@ -295,7 +307,7 @@
         },
         {
           "label": "11/04",
-          "value": 2896.0
+          "value": 2891.0
         }
       ],
       "month": [
@@ -381,7 +393,7 @@
         },
         {
           "label": "11/04",
-          "value": 2896.0
+          "value": 2891.0
         }
       ],
       "news": [
@@ -402,15 +414,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8337.0,
+      "price": 8357.0,
       "previousClose": 8149.0,
-      "value": 83370.0,
-      "deltaYen": 1880.0,
-      "change": 2.307031537611981,
-      "unrealizedYen": 3860.0,
-      "unrealizedPercent": 4.854735253427242,
-      "weekChange": 0.3128384069305712,
-      "monthChange": 7.685352622061492,
+      "value": 83570.0,
+      "deltaYen": 2080.0,
+      "change": 2.5524604245919846,
+      "unrealizedYen": 4060.0,
+      "unrealizedPercent": 5.106275940133317,
+      "weekChange": 0.5534833353387114,
+      "monthChange": 7.943683802634971,
       "intraday": [
         {
           "label": "09:00",
@@ -454,7 +466,7 @@
         },
         {
           "label": "09:50",
-          "value": 8364.0
+          "value": 8363.0
         },
         {
           "label": "09:55",
@@ -646,7 +658,19 @@
         },
         {
           "label": "14:45",
-          "value": 8337.0
+          "value": 8346.0
+        },
+        {
+          "label": "14:50",
+          "value": 8347.0
+        },
+        {
+          "label": "14:55",
+          "value": 8355.0
+        },
+        {
+          "label": "14:57",
+          "value": 8357.0
         }
       ],
       "week": [
@@ -668,7 +692,7 @@
         },
         {
           "label": "11/04",
-          "value": 8337.0
+          "value": 8357.0
         }
       ],
       "month": [
@@ -754,16 +778,16 @@
         },
         {
           "label": "11/04",
-          "value": 8337.0
+          "value": 8357.0
         }
       ],
       "news": [
         {
-          "title": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？ - ダイヤモンド・オンライン",
-          "description": "任天堂経営「3つの懸念点」、決算はいいのに株価はピークの半分に…Switch2ハード販売はどこまで伸ばせるか？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/10/02",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kZTFnT3RGZnY5b1RaVjB5TzBLb3phYlpvV3FjN3dOODNYRDNqdTA5OTc1akdyQzBUMk55YVdKQzAyLWVUTnZXYTU0RC3SAU9BVV95cUxPaGx4Ni16eEhKb1FsdFdKVnhMSFQ3STNVaC0tXzdKQklWZlZVaUVMNERRWXMzeV9lSnVVVHlhMTRfbjVxVXpxVThqMlNtSmJr?oc=5"
+          "title": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目 - Moomoo",
+          "description": "【任天堂決算プレビュー】スイッチ2「値上げ効果」は吉と出る？メモリ高に対抗、「採算と販売台数向上」の両立に注目",
+          "source": "Moomoo",
+          "date": "2026/10/30",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQnJLLTkyaEk2cVZCMUl1UFBFMnVuTDVzX0dWdTY0OFZIa2thZm9Bam90Qmp1QkxFZl9SNUFiQnhoYUtNYlVtWF9OVEp2M3U3aFRpeFRGR0VCUHlzRmpmQzZkdFVBQzJMWnZhTXc4NzI5LXptVkd6QUEwbktDUlVKeGZDT1EtVGFQSlhURnNmZFlkaTgzUjRqejMtUzk4Z2RmU1BuQ3VCRERsZmpDc09sNWg4R2dWQzlzMEE?oc=5"
         }
       ]
     },
@@ -775,15 +799,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 576.9,
+      "price": 578.1,
       "previousClose": 575.6,
-      "value": 115380.0,
-      "deltaYen": 260.0,
-      "change": 0.22585552711300583,
-      "unrealizedYen": 12780.0,
-      "unrealizedPercent": 12.456145109953704,
-      "weekChange": 3.9459503448761257,
-      "monthChange": 13.228660336420518,
+      "value": 115620.0,
+      "deltaYen": 500.0,
+      "change": 0.43432515391548243,
+      "unrealizedYen": 13020.0,
+      "unrealizedPercent": 12.690053720455651,
+      "weekChange": 4.162157763231988,
+      "monthChange": 13.464175777416587,
       "intraday": [
         {
           "label": "09:05",
@@ -1015,7 +1039,19 @@
         },
         {
           "label": "14:45",
-          "value": 576.9
+          "value": 578.1
+        },
+        {
+          "label": "14:50",
+          "value": 577.9
+        },
+        {
+          "label": "14:55",
+          "value": 577.9
+        },
+        {
+          "label": "14:57",
+          "value": 578.1
         }
       ],
       "week": [
@@ -1037,7 +1073,7 @@
         },
         {
           "label": "11/04",
-          "value": 576.9
+          "value": 578.1
         }
       ],
       "month": [
@@ -1123,16 +1159,16 @@
         },
         {
           "label": "11/04",
-          "value": 576.9
+          "value": 578.1
         }
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "description": "東京海上ホールディングス(株)【8766】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/10/29",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96NkVsSzJ2c0YtWDQwR3hNa0psQUtuNUF0UUdIWERnYWlQZzBoRVZYUE50TEZtcGNjMzVINFJOeXdZZWw3Y2NxbHBiUFZFWFJvQVp0OUdqb0lLTFVvd3FMR2VESUstM056ZE5NazFOVDFIdkhC?oc=5"
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
         }
       ]
     },
@@ -1144,15 +1180,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1171.0,
+      "price": 1175.0,
       "previousClose": 1183.0,
-      "value": 58550.0,
-      "deltaYen": -600.0,
-      "change": -1.0143702451394732,
-      "unrealizedYen": -10300.0,
-      "unrealizedPercent": -14.960058097313,
-      "weekChange": -1.0143702451394732,
-      "monthChange": -13.323464100666172,
+      "value": 58750.0,
+      "deltaYen": -400.0,
+      "change": -0.6762468300929858,
+      "unrealizedYen": -10100.0,
+      "unrealizedPercent": -14.669571532316631,
+      "weekChange": -0.6762468300929858,
+      "monthChange": -13.027387120651369,
       "intraday": [
         {
           "label": "09:00",
@@ -1388,7 +1424,19 @@
         },
         {
           "label": "14:45",
-          "value": 1171.0
+          "value": 1172.0
+        },
+        {
+          "label": "14:50",
+          "value": 1174.0
+        },
+        {
+          "label": "14:55",
+          "value": 1176.0
+        },
+        {
+          "label": "14:57",
+          "value": 1175.0
         }
       ],
       "week": [
@@ -1410,7 +1458,7 @@
         },
         {
           "label": "11/04",
-          "value": 1171.0
+          "value": 1175.0
         }
       ],
       "month": [
@@ -1496,16 +1544,16 @@
         },
         {
           "label": "11/04",
-          "value": 1171.0
+          "value": 1175.0
         }
       ],
       "news": [
         {
-          "title": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
+          "title": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：業績予想の修正及び配当予想の修正（増配）に関するお知らせ 2026年10月28日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
-          "date": "2026/05/13",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zSjM2WEdxUDMwUlozSFQ1d3FQVEh1ZkwwemRIbDJLa09LV1JCaVM1cFVpc0tqTk1VOWx1MGVnSjBlRkxCOHFpcm5DTldLWVJUMWMwakctSkVzYVRTc3c1OWM5Rk1wTkpUeUE?oc=5"
+          "date": "2026/10/28",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFT0dUMnhDbnZsZ05mQnI0dk9qUTdpQmFfS3dObGdyd2ZQbUE2TDhyQXljak5PckJuVGxQU21wM2ViQjJuSFJ3aHkxaHNMa1d4Z09pVEhWRHZvYmIydUp1c29uXzRLX0tpZEE?oc=5"
         }
       ]
     },
@@ -1517,15 +1565,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2387.5,
+      "price": 2378.5,
       "previousClose": 2306.0,
-      "value": 59687.5,
-      "deltaYen": 2037.5,
-      "change": 3.5342584562012114,
-      "unrealizedYen": 1262.5,
-      "unrealizedPercent": 2.160890029952931,
-      "weekChange": 0.12581253931642777,
-      "monthChange": -12.224264705882348,
+      "value": 59462.5,
+      "deltaYen": 1812.5,
+      "change": 3.143972246313953,
+      "unrealizedYen": 1037.5,
+      "unrealizedPercent": 1.775780915703894,
+      "weekChange": -0.25162507863283334,
+      "monthChange": -12.555147058823534,
       "intraday": [
         {
           "label": "09:05",
@@ -1649,7 +1697,7 @@
         },
         {
           "label": "12:30",
-          "value": 2223.0
+          "value": 2223.5
         },
         {
           "label": "12:35",
@@ -1757,7 +1805,19 @@
         },
         {
           "label": "14:45",
-          "value": 2387.5
+          "value": 2387.0
+        },
+        {
+          "label": "14:50",
+          "value": 2378.5
+        },
+        {
+          "label": "14:55",
+          "value": 2378.5
+        },
+        {
+          "label": "14:57",
+          "value": 2378.5
         }
       ],
       "week": [
@@ -1779,7 +1839,7 @@
         },
         {
           "label": "11/04",
-          "value": 2387.5
+          "value": 2378.5
         }
       ],
       "month": [
@@ -1865,7 +1925,7 @@
         },
         {
           "label": "11/04",
-          "value": 2387.5
+          "value": 2378.5
         }
       ],
       "news": [
@@ -1886,15 +1946,15 @@
       "qtyLabel": "100株",
       "cost": 1235,
       "purchaseValue": 123500,
-      "price": 1240.0,
+      "price": 1240.5,
       "previousClose": 1234.0,
-      "value": 124000.0,
-      "deltaYen": 600.0,
-      "change": 0.4862236628849326,
-      "unrealizedYen": 500.0,
-      "unrealizedPercent": 0.4048582995951417,
-      "weekChange": 3.3333333333333437,
-      "monthChange": 4.157916841663156,
+      "value": 124050.0,
+      "deltaYen": 650.0,
+      "change": 0.5267423014586603,
+      "unrealizedYen": 550.0,
+      "unrealizedPercent": 0.44534412955465585,
+      "weekChange": 3.3749999999999947,
+      "monthChange": 4.199916001679971,
       "intraday": [
         {
           "label": "09:05",
@@ -2127,6 +2187,18 @@
         {
           "label": "14:45",
           "value": 1240.0
+        },
+        {
+          "label": "14:50",
+          "value": 1240.0
+        },
+        {
+          "label": "14:55",
+          "value": 1240.0
+        },
+        {
+          "label": "14:57",
+          "value": 1240.5
         }
       ],
       "week": [
@@ -2148,7 +2220,7 @@
         },
         {
           "label": "11/04",
-          "value": 1240.0
+          "value": 1240.5
         }
       ],
       "month": [
@@ -2234,16 +2306,16 @@
         },
         {
           "label": "11/04",
-          "value": 1240.0
+          "value": 1240.5
         }
       ],
       "news": [
         {
-          "title": "東急不動産HD、4～6月純利益17%減の255億円 株式売却益の反動で減益も本業は過去最高益 - BigGo ファイナンス",
-          "description": "東急不動産HD、4～6月純利益17%減の255億円 株式売却益の反動で減益も本業は過去最高益",
-          "source": "BigGo ファイナンス",
-          "date": "2026/08/06",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45MmtWTU5zZGxva1lsVTJQZUVPVGZpSThkQmxrSFVBbFF6VDItbmhJSGJWdWZuNzh3TWo5WU5HeHFhWHh3clU1WVFmc1JvQ0l2bld6MGh5LWRJVnZwYmViMkRjWldudTBhUTBTQkdKanpNX1NF?oc=5"
+          "title": "【東急不動産HD】2026年3月期決算、5期連続増収増益で営業利益1,669億円の過去最高益 中期経営計画2030目標を前倒し達成へ - インベストーク",
+          "description": "【東急不動産HD】2026年3月期決算、5期連続増収増益で営業利益1,669億円の過去最高益 中期経営計画2030目標を前倒し達成へ",
+          "source": "インベストーク",
+          "date": "2026/07/28",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB2SWFBU3VadlFGbUZKMTdYWDRBOEt5NklfWDJHWlVyM2x1TU1nZGcwQVhUTUR6YnROd2loMW5venhzRk96UWlmSmZIQkFzYjJhSnZWelhoUlA0R1BZaEpWbF9NX2cycEVt?oc=5"
         }
       ]
     },
