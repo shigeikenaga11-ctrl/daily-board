@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026/11/05 15:13",
+  "updated_at": "2026/11/06 02:15",
   "weather": {
     "text": "雨",
-    "max": 14.5,
-    "min": 1.5,
+    "max": 15.9,
+    "min": 3.2,
     "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 521222.5,
+    "total": 524122.5,
     "purchaseTotal": 489565,
-    "deltaYen": 21762.5,
-    "deltaPercent": 4.357205782244825,
+    "deltaYen": 24662.5,
+    "deltaPercent": 4.937832859488248,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1116678.49,
+    "total": 1127561.1600000001,
     "purchaseTotal": 1089570.98,
-    "deltaYen": 23875.96,
-    "deltaPercent": 2.184837547914535,
-    "unrealizedYen": 27107.51000000001,
-    "unrealizedPercent": 2.487906753904184,
+    "deltaYen": 32645.17,
+    "deltaPercent": 2.9815228107135407,
+    "unrealizedYen": 37990.18000000017,
+    "unrealizedPercent": 3.486709970928206,
     "complete": true
   },
   "assets": [
@@ -33,15 +33,15 @@
       "qtyLabel": "20株",
       "cost": 2834,
       "purchaseValue": 56680,
-      "price": 3043.0,
+      "price": 3078.0,
       "previousClose": 2909.5,
-      "value": 60860.0,
-      "deltaYen": 2670.0,
-      "change": 4.5884172538236845,
-      "unrealizedYen": 4180.0,
-      "unrealizedPercent": 7.374735356386733,
-      "weekChange": 16.255969436485195,
-      "monthChange": 12.03976435935199,
+      "value": 61560.0,
+      "deltaYen": 3370.0,
+      "change": 5.791373088159468,
+      "unrealizedYen": 4880.0,
+      "unrealizedPercent": 8.609738884968243,
+      "weekChange": 12.771317829457374,
+      "monthChange": 7.124447717231219,
       "intraday": [
         {
           "label": "09:05",
@@ -281,14 +281,38 @@
         },
         {
           "label": "14:55",
-          "value": 3046.0
+          "value": 3045.0
         },
         {
-          "label": "14:58",
-          "value": 3043.0
+          "label": "15:00",
+          "value": 3061.0
+        },
+        {
+          "label": "15:05",
+          "value": 3062.0
+        },
+        {
+          "label": "15:10",
+          "value": 3061.0
+        },
+        {
+          "label": "15:15",
+          "value": 3061.0
+        },
+        {
+          "label": "15:20",
+          "value": 3061.0
+        },
+        {
+          "label": "15:30",
+          "value": 3078.0
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 2580.0
+        },
         {
           "label": "10/29",
           "value": 2617.5
@@ -304,10 +328,6 @@
         {
           "label": "11/04",
           "value": 2909.5
-        },
-        {
-          "label": "11/05",
-          "value": 3043.0
         }
       ],
       "month": [
@@ -394,10 +414,6 @@
         {
           "label": "11/04",
           "value": 2909.5
-        },
-        {
-          "label": "11/05",
-          "value": 3043.0
         }
       ],
       "news": [
@@ -418,15 +434,15 @@
       "qtyLabel": "10株",
       "cost": 7951,
       "purchaseValue": 79510,
-      "price": 8760.0,
+      "price": 8880.0,
       "previousClose": 8353.0,
-      "value": 87600.0,
-      "deltaYen": 4070.0,
-      "change": 4.872500897881005,
-      "unrealizedYen": 8090.0,
-      "unrealizedPercent": 10.174820777260722,
-      "weekChange": 7.391517528806091,
-      "monthChange": 13.161973650219583,
+      "value": 88800.0,
+      "deltaYen": 5270.0,
+      "change": 6.309110499221826,
+      "unrealizedYen": 9290.0,
+      "unrealizedPercent": 11.684064897497171,
+      "weekChange": 0.5053543496570834,
+      "monthChange": 7.892017566520271,
       "intraday": [
         {
           "label": "09:05",
@@ -630,7 +646,7 @@
         },
         {
           "label": "14:10",
-          "value": 8796.0
+          "value": 8795.0
         },
         {
           "label": "14:15",
@@ -666,14 +682,38 @@
         },
         {
           "label": "14:55",
-          "value": 8758.0
+          "value": 8768.0
         },
         {
-          "label": "14:58",
-          "value": 8760.0
+          "label": "15:00",
+          "value": 8786.0
+        },
+        {
+          "label": "15:05",
+          "value": 8797.0
+        },
+        {
+          "label": "15:10",
+          "value": 8821.0
+        },
+        {
+          "label": "15:15",
+          "value": 8824.0
+        },
+        {
+          "label": "15:20",
+          "value": 8837.0
+        },
+        {
+          "label": "15:30",
+          "value": 8880.0
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 8311.0
+        },
         {
           "label": "10/29",
           "value": 8158.0
@@ -689,10 +729,6 @@
         {
           "label": "11/04",
           "value": 8353.0
-        },
-        {
-          "label": "11/05",
-          "value": 8761.0
         }
       ],
       "month": [
@@ -779,19 +815,15 @@
         {
           "label": "11/04",
           "value": 8353.0
-        },
-        {
-          "label": "11/05",
-          "value": 8761.0
         }
       ],
       "news": [
         {
-          "title": "【なぜ？】Switch 2で「売上98％増」の任天堂 それでも「利益率」が伸び悩む切実な理由（AERA DIGITAL） - Yahoo!ニュース",
-          "description": "【なぜ？】Switch 2で「売上98％増」の任天堂 それでも「利益率」が伸び悩む切実な理由（AERA DIGITAL）",
-          "source": "Yahoo!ニュース",
-          "date": "2026/11/04",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CaFBCUy1LX0J3cDlsNWhyc01vSGVOd1k3Z0UxTFFiVU16NGE0VEtaQnlrY3Axd2VPQlNLc1dHakRJRkJRSWVPdTJVeFJHU2h6SWpXTFBHTjhJOG52NFcxQ3hCVV9PYjZiQ1h6Skd2YWk0WWdTdmUxeVhBQ3N3UU0?oc=5"
+          "title": "任天堂、2Q(4～9月)決算は利益率の高いソフトウェアの販売増で営業益49％増に 販売本数は『スプラトゥーン レイダース』242万本、『FE万紫千紅』134万本を記録 - gamebiz【ゲームビズ】",
+          "description": "任天堂、2Q(4～9月)決算は利益率の高いソフトウェアの販売増で営業益49％増に 販売本数は『スプラトゥーン レイダース』242万本、『FE万紫千紅』134万本を記録",
+          "source": "gamebiz【ゲームビズ】",
+          "date": "2026/11/05",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBab1d3ZFU4WEY3Z0g0RG1NdEhuNlNTdXZfY19mdTBDNktmQzVHOHVNWjlZS0tYSlduaE5xck1IMVRBQ1FB?oc=5"
         }
       ]
     },
@@ -803,15 +835,15 @@
       "qtyLabel": "200株",
       "cost": 513,
       "purchaseValue": 102600,
-      "price": 605.0,
+      "price": 606.0,
       "previousClose": 578.7,
-      "value": 121000.0,
-      "deltaYen": 5260.0,
-      "change": 4.544669085882136,
-      "unrealizedYen": 18400.0,
-      "unrealizedPercent": 17.93372319688109,
-      "weekChange": 6.701940035273379,
-      "monthChange": 18.743866535819432,
+      "value": 121200.0,
+      "deltaYen": 5460.0,
+      "change": 4.717470191809214,
+      "unrealizedYen": 18600.0,
+      "unrealizedPercent": 18.128654970760234,
+      "weekChange": 4.27027246973537,
+      "monthChange": 13.581945477336843,
       "intraday": [
         {
           "label": "09:05",
@@ -1051,14 +1083,42 @@
         },
         {
           "label": "14:55",
-          "value": 605.0
+          "value": 605.6
         },
         {
-          "label": "14:58",
-          "value": 605.0
+          "label": "15:00",
+          "value": 606.2
+        },
+        {
+          "label": "15:05",
+          "value": 606.4
+        },
+        {
+          "label": "15:10",
+          "value": 608.0
+        },
+        {
+          "label": "15:15",
+          "value": 607.8
+        },
+        {
+          "label": "15:20",
+          "value": 608.4
+        },
+        {
+          "label": "15:25",
+          "value": 608.1
+        },
+        {
+          "label": "15:30",
+          "value": 606.0
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 555.0
+        },
         {
           "label": "10/29",
           "value": 567.0
@@ -1074,10 +1134,6 @@
         {
           "label": "11/04",
           "value": 578.7
-        },
-        {
-          "label": "11/05",
-          "value": 605.0
         }
       ],
       "month": [
@@ -1164,10 +1220,6 @@
         {
           "label": "11/04",
           "value": 578.7
-        },
-        {
-          "label": "11/05",
-          "value": 605.0
         }
       ],
       "news": [
@@ -1188,15 +1240,15 @@
       "qtyLabel": "50株",
       "cost": 1377,
       "purchaseValue": 68850,
-      "price": 1170.0,
+      "price": 1175.0,
       "previousClose": 1181.0,
-      "value": 58500.0,
-      "deltaYen": -550.0,
-      "change": -0.9314140558848383,
-      "unrealizedYen": -10350.0,
-      "unrealizedPercent": -15.032679738562091,
-      "weekChange": -3.3856317093311272,
-      "monthChange": -13.397483345669869,
+      "value": 58750.0,
+      "deltaYen": -300.0,
+      "change": -0.5080440304826461,
+      "unrealizedYen": -10100.0,
+      "unrealizedPercent": -14.669571532316631,
+      "weekChange": -0.16906170752324368,
+      "monthChange": -12.583271650629168,
       "intraday": [
         {
           "label": "09:05",
@@ -1436,14 +1488,38 @@
         },
         {
           "label": "14:55",
+          "value": 1171.0
+        },
+        {
+          "label": "15:00",
+          "value": 1171.0
+        },
+        {
+          "label": "15:05",
           "value": 1170.0
         },
         {
-          "label": "14:58",
-          "value": 1170.0
+          "label": "15:10",
+          "value": 1171.0
+        },
+        {
+          "label": "15:15",
+          "value": 1172.0
+        },
+        {
+          "label": "15:20",
+          "value": 1175.0
+        },
+        {
+          "label": "15:30",
+          "value": 1175.0
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 1183.0
+        },
         {
           "label": "10/29",
           "value": 1211.0
@@ -1459,10 +1535,6 @@
         {
           "label": "11/04",
           "value": 1181.0
-        },
-        {
-          "label": "11/05",
-          "value": 1170.0
         }
       ],
       "month": [
@@ -1549,10 +1621,6 @@
         {
           "label": "11/04",
           "value": 1181.0
-        },
-        {
-          "label": "11/05",
-          "value": 1170.0
         }
       ],
       "news": [
@@ -1573,15 +1641,15 @@
       "qtyLabel": "25株",
       "cost": 2337,
       "purchaseValue": 58425,
-      "price": 2406.5,
+      "price": 2428.5,
       "previousClose": 2394.0,
-      "value": 60162.5,
-      "deltaYen": 312.5,
-      "change": 0.5221386800334127,
-      "unrealizedYen": 1737.5,
-      "unrealizedPercent": 2.973898160034232,
-      "weekChange": 2.9959340894500253,
-      "monthChange": -11.525735294117645,
+      "value": 60712.5,
+      "deltaYen": 862.5,
+      "change": 1.4411027568922208,
+      "unrealizedYen": 2287.5,
+      "unrealizedPercent": 3.915275994865212,
+      "weekChange": 0.3984063745019917,
+      "monthChange": -11.985294117647062,
       "intraday": [
         {
           "label": "09:05",
@@ -1821,14 +1889,38 @@
         },
         {
           "label": "14:55",
+          "value": 2406.5
+        },
+        {
+          "label": "15:00",
+          "value": 2410.0
+        },
+        {
+          "label": "15:05",
+          "value": 2409.0
+        },
+        {
+          "label": "15:10",
+          "value": 2405.5
+        },
+        {
+          "label": "15:15",
           "value": 2408.5
         },
         {
-          "label": "14:58",
-          "value": 2406.5
+          "label": "15:20",
+          "value": 2413.5
+        },
+        {
+          "label": "15:30",
+          "value": 2428.5
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 2384.5
+        },
         {
           "label": "10/29",
           "value": 2336.5
@@ -1844,10 +1936,6 @@
         {
           "label": "11/04",
           "value": 2394.0
-        },
-        {
-          "label": "11/05",
-          "value": 2406.5
         }
       ],
       "month": [
@@ -1934,19 +2022,15 @@
         {
           "label": "11/04",
           "value": 2394.0
-        },
-        {
-          "label": "11/05",
-          "value": 2406.5
         }
       ],
       "news": [
         {
-          "title": "【IHI FY2026 Q2 決算説明会】民間エンジンアフターマーケットが牽引、中間営業利益65.6%増の1,149億円で過去最高益—通期見通しを上方修正し配当も増額 - BigGo ファイナンス",
-          "description": "【IHI FY2026 Q2 決算説明会】民間エンジンアフターマーケットが牽引、中間営業利益65.6%増の1,149億円で過去最高益—通期見通しを上方修正し配当も増額",
-          "source": "BigGo ファイナンス",
+          "title": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分) - 株探",
+          "description": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分)",
+          "source": "株探",
           "date": "2026/11/05",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBwZFNDMXdGeFFMbV93M2Q1eVpDR2ttYlBDTXZQcGFzTGpXYXV2VDVuZHZDVlF3ZDdaQUpGLWpObXMtUkRKTjI2VmdsRjFmajQxZ09BSXl5SjdHS3ljUFMw?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VaFZOc3dwc2ltVmZrSW40ZnpCQmstZE5BZjNDVWtLd0N0a2FNaWZQU1pnanhuT1RCOGVFS2IyUHVndlBsZ3FNZ2ptUlN2cmJOSkE?oc=5"
         }
       ]
     },
@@ -1965,8 +2049,8 @@
       "change": 8.123476848090982,
       "unrealizedYen": 9600.0,
       "unrealizedPercent": 7.773279352226721,
-      "weekChange": 9.95456422965717,
-      "monthChange": 11.801763964720703,
+      "weekChange": 2.5833333333333375,
+      "monthChange": 3.4019319613607824,
       "intraday": [
         {
           "label": "09:05",
@@ -2209,11 +2293,35 @@
           "value": 1331.0
         },
         {
-          "label": "14:58",
+          "label": "15:00",
+          "value": 1331.5
+        },
+        {
+          "label": "15:05",
+          "value": 1332.5
+        },
+        {
+          "label": "15:10",
+          "value": 1334.5
+        },
+        {
+          "label": "15:15",
+          "value": 1334.5
+        },
+        {
+          "label": "15:20",
+          "value": 1335.5
+        },
+        {
+          "label": "15:30",
           "value": 1331.0
         }
       ],
       "week": [
+        {
+          "label": "10/28",
+          "value": 1200.0
+        },
         {
           "label": "10/29",
           "value": 1210.5
@@ -2229,10 +2337,6 @@
         {
           "label": "11/04",
           "value": 1231.0
-        },
-        {
-          "label": "11/05",
-          "value": 1331.0
         }
       ],
       "month": [
@@ -2319,10 +2423,6 @@
         {
           "label": "11/04",
           "value": 1231.0
-        },
-        {
-          "label": "11/05",
-          "value": 1331.0
         }
       ],
       "news": [
@@ -2331,7 +2431,7 @@
           "description": "学生情報センターのサステナビリティ推進 本社・全国営業拠点で使用する電力の100%実質再エネ化を開始",
           "source": "ニコニコニュース",
           "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZeGlxWUptaWpmZnkySnBIUlpsR1Nha096dzRkckRsYmc2RDJlM2hYaDFXOW5IOXlNM2F2eExBTWFPQUJicDJIQnBsM1o1NUYyVHBfLVpoNUVzcjJRV2tJbE1adGlzdEE3SG9IalZjYTRSSjI0ZGJ3MTlfQQ?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4weDdSUlJjZHB2YWlOdTA5d1NOQzRFMjg2Q0k3SWJ5dHprOFZNZXk5WUZKR2IyUUlfUFJTMXQ0MENlSV9XMTkwelBueVJTUzQ1cTNLeElhUFpvSkQ3V09QWjFQSWpubG9o?oc=5"
         }
       ]
     },
@@ -2344,21 +2444,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44234.0,
-      "previousClose": 44077.0,
-      "value": 595455.99,
-      "deltaYen": 2113.46,
-      "change": 0.35619484084670194,
-      "unrealizedYen": -4549.99,
-      "unrealizedPercent": -0.7583236112357475,
-      "weekChange": -1.5052326875974131,
-      "monthChange": -2.206402546869468,
+      "price": 44827.0,
+      "previousClose": 44234.0,
+      "value": 603438.66,
+      "deltaYen": 7982.67,
+      "change": 1.340597730252746,
+      "unrealizedYen": 3432.68,
+      "unrealizedPercent": 0.5721080498967954,
+      "weekChange": -0.5898920009757558,
+      "monthChange": -1.7770279153337176,
       "intraday": [],
       "week": [
-        {
-          "label": "10/28",
-          "value": 44910.0
-        },
         {
           "label": "10/29",
           "value": 45093.0
@@ -2374,13 +2470,13 @@
         {
           "label": "11/04",
           "value": 44234.0
+        },
+        {
+          "label": "11/05",
+          "value": 44827.0
         }
       ],
       "month": [
-        {
-          "label": "10/06",
-          "value": 45232.0
-        },
         {
           "label": "10/07",
           "value": 45638.0
@@ -2456,6 +2552,10 @@
         {
           "label": "11/04",
           "value": 44234.0
+        },
+        {
+          "label": "11/05",
+          "value": 44827.0
         }
       ],
       "news": [
@@ -2476,9 +2576,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.28,
-      "value_jpy": 94968.0,
-      "gain_jpy": 150.0
+      "rate": 158.31,
+      "value_jpy": 94986.0,
+      "gain_jpy": 168.0
     },
     {
       "name": "ユーロ",
@@ -2486,9 +2586,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.75,
-      "value_jpy": 35550.0,
-      "gain_jpy": 6.0
+      "rate": 177.98,
+      "value_jpy": 35596.0,
+      "gain_jpy": 52.0
     }
   ]
 }
