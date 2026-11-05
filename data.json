@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026/11/06 02:15",
+  "updated_at": "2026/11/06 08:30",
   "weather": {
     "text": "雨",
-    "max": 15.9,
+    "max": 16.1,
     "min": 3.2,
     "rain": 100
   },
@@ -40,8 +40,8 @@
       "change": 5.791373088159468,
       "unrealizedYen": 4880.0,
       "unrealizedPercent": 8.609738884968243,
-      "weekChange": 12.771317829457374,
-      "monthChange": 7.124447717231219,
+      "weekChange": 17.593123209169057,
+      "monthChange": 13.328424153166418,
       "intraday": [
         {
           "label": "09:05",
@@ -310,10 +310,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 2580.0
-        },
-        {
           "label": "10/29",
           "value": 2617.5
         },
@@ -328,6 +324,10 @@
         {
           "label": "11/04",
           "value": 2909.5
+        },
+        {
+          "label": "11/05",
+          "value": 3078.0
         }
       ],
       "month": [
@@ -414,6 +414,10 @@
         {
           "label": "11/04",
           "value": 2909.5
+        },
+        {
+          "label": "11/05",
+          "value": 3078.0
         }
       ],
       "news": [
@@ -441,8 +445,8 @@
       "change": 6.309110499221826,
       "unrealizedYen": 9290.0,
       "unrealizedPercent": 11.684064897497171,
-      "weekChange": 0.5053543496570834,
-      "monthChange": 7.892017566520271,
+      "weekChange": 8.850208384407953,
+      "monthChange": 14.699044174631881,
       "intraday": [
         {
           "label": "09:05",
@@ -646,7 +650,7 @@
         },
         {
           "label": "14:10",
-          "value": 8795.0
+          "value": 8796.0
         },
         {
           "label": "14:15",
@@ -711,10 +715,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 8311.0
-        },
-        {
           "label": "10/29",
           "value": 8158.0
         },
@@ -729,6 +729,10 @@
         {
           "label": "11/04",
           "value": 8353.0
+        },
+        {
+          "label": "11/05",
+          "value": 8880.0
         }
       ],
       "month": [
@@ -815,6 +819,10 @@
         {
           "label": "11/04",
           "value": 8353.0
+        },
+        {
+          "label": "11/05",
+          "value": 8880.0
         }
       ],
       "news": [
@@ -842,8 +850,8 @@
       "change": 4.717470191809214,
       "unrealizedYen": 18600.0,
       "unrealizedPercent": 18.128654970760234,
-      "weekChange": 4.27027246973537,
-      "monthChange": 13.581945477336843,
+      "weekChange": 6.8783068783068835,
+      "monthChange": 18.940137389597655,
       "intraday": [
         {
           "label": "09:05",
@@ -1116,10 +1124,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 555.0
-        },
-        {
           "label": "10/29",
           "value": 567.0
         },
@@ -1134,6 +1138,10 @@
         {
           "label": "11/04",
           "value": 578.7
+        },
+        {
+          "label": "11/05",
+          "value": 606.0
         }
       ],
       "month": [
@@ -1220,6 +1228,10 @@
         {
           "label": "11/04",
           "value": 578.7
+        },
+        {
+          "label": "11/05",
+          "value": 606.0
         }
       ],
       "news": [
@@ -1247,8 +1259,8 @@
       "change": -0.5080440304826461,
       "unrealizedYen": -10100.0,
       "unrealizedPercent": -14.669571532316631,
-      "weekChange": -0.16906170752324368,
-      "monthChange": -12.583271650629168,
+      "weekChange": -2.9727497935590375,
+      "monthChange": -13.027387120651369,
       "intraday": [
         {
           "label": "09:05",
@@ -1517,10 +1529,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 1183.0
-        },
-        {
           "label": "10/29",
           "value": 1211.0
         },
@@ -1535,6 +1543,10 @@
         {
           "label": "11/04",
           "value": 1181.0
+        },
+        {
+          "label": "11/05",
+          "value": 1175.0
         }
       ],
       "month": [
@@ -1621,6 +1633,10 @@
         {
           "label": "11/04",
           "value": 1181.0
+        },
+        {
+          "label": "11/05",
+          "value": 1175.0
         }
       ],
       "news": [
@@ -1648,8 +1664,8 @@
       "change": 1.4411027568922208,
       "unrealizedYen": 2287.5,
       "unrealizedPercent": 3.915275994865212,
-      "weekChange": 0.3984063745019917,
-      "monthChange": -11.985294117647062,
+      "weekChange": 3.937513374705759,
+      "monthChange": -10.716911764705884,
       "intraday": [
         {
           "label": "09:05",
@@ -1918,10 +1934,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 2384.5
-        },
-        {
           "label": "10/29",
           "value": 2336.5
         },
@@ -1936,6 +1948,10 @@
         {
           "label": "11/04",
           "value": 2394.0
+        },
+        {
+          "label": "11/05",
+          "value": 2428.5
         }
       ],
       "month": [
@@ -2022,15 +2038,19 @@
         {
           "label": "11/04",
           "value": 2394.0
+        },
+        {
+          "label": "11/05",
+          "value": 2428.5
         }
       ],
       "news": [
         {
-          "title": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分) - 株探",
-          "description": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分)",
-          "source": "株探",
-          "date": "2026/11/05",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VaFZOc3dwc2ltVmZrSW40ZnpCQmstZE5BZjNDVWtLd0N0a2FNaWZQU1pnanhuT1RCOGVFS2IyUHVndlBsZ3FNZ2ptUlN2cmJOSkE?oc=5"
+          "title": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/11/04",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GaEN5Y2JGaTVMMGpSTUl6WWRLRlBWV0RCVXZiSy1uNWFPeUlQMi1lSXZSQUVfNHI4Ui1ZOGdvYXgwS0k0dUJPTU9SZEVnQWl5TUZqTkU3M3VkcVVOUmtnSFgtempJZ3RZQXc?oc=5"
         }
       ]
     },
@@ -2049,8 +2069,8 @@
       "change": 8.123476848090982,
       "unrealizedYen": 9600.0,
       "unrealizedPercent": 7.773279352226721,
-      "weekChange": 2.5833333333333375,
-      "monthChange": 3.4019319613607824,
+      "weekChange": 9.95456422965717,
+      "monthChange": 11.801763964720703,
       "intraday": [
         {
           "label": "09:05",
@@ -2319,10 +2339,6 @@
       ],
       "week": [
         {
-          "label": "10/28",
-          "value": 1200.0
-        },
-        {
           "label": "10/29",
           "value": 1210.5
         },
@@ -2337,6 +2353,10 @@
         {
           "label": "11/04",
           "value": 1231.0
+        },
+        {
+          "label": "11/05",
+          "value": 1331.0
         }
       ],
       "month": [
@@ -2423,15 +2443,19 @@
         {
           "label": "11/04",
           "value": 1231.0
+        },
+        {
+          "label": "11/05",
+          "value": 1331.0
         }
       ],
       "news": [
         {
-          "title": "学生情報センターのサステナビリティ推進 本社・全国営業拠点で使用する電力の100%実質再エネ化を開始 - ニコニコニュース",
-          "description": "学生情報センターのサステナビリティ推進 本社・全国営業拠点で使用する電力の100%実質再エネ化を開始",
-          "source": "ニコニコニュース",
-          "date": "2026/10/30",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4weDdSUlJjZHB2YWlOdTA5d1NOQzRFMjg2Q0k3SWJ5dHprOFZNZXk5WUZKR2IyUUlfUFJTMXQ0MENlSV9XMTkwelBueVJTUzQ1cTNLeElhUFpvSkQ3V09QWjFQSWpubG9o?oc=5"
+          "title": "東急不動産ホールディングス(株)【3289】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "description": "東急不動産ホールディングス(株)【3289】：企業情報（決算時期・代表者名・大株主情報・IR動画など）",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/10/12",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rbjNwLTlEcDhHQUNTT0dIMVNDQXZld083MW80Vkg1X29XOFRzN1ZMZ0szLU42TUdLRnI2WjhLaV8wRU1iMERvRlMwVUVIdkJhNEhLZTQ4bUU1NndRMkJFSk45Zkt3aWdyekp6RVNiT3FST1p0Y1E?oc=5"
         }
       ]
     },
@@ -2586,9 +2610,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.98,
-      "value_jpy": 35596.0,
-      "gain_jpy": 52.0
+      "rate": 178.12,
+      "value_jpy": 35624.0,
+      "gain_jpy": 80.0
     }
   ]
 }
