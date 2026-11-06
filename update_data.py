@@ -1593,6 +1593,86 @@ def main():
     }
     data["foreign_cash"] = get_foreign_cash()
 
+        # 日本時間で日次履歴を保存
+    history_path = Path("history.json")
+    history = []
+
+    if history_path.exists():
+        try:
+            saved = json.loads(
+                history_path.read_text(encoding="utf-8")
+            )
+            if isinstance(saved, list):
+                history = saved
+            else:
+                history = None
+        except (OSError, ValueError, TypeError):
+            print("Warning: history.json unreadable")
+            history = None
+
+    stock_values = [
+        a.get("value") for a in stock_assets
+    ]
+
+    fund_value = emaxis.get("value")
+
+    foreign_values = [
+        a.get("value_jpy")
+        for a in data["foreign_cash"]
+    ]
+
+    all_values = (
+        stock_values + [fund_value] + foreign_values
+    )
+
+    if (
+        history is not None
+        and stock_values
+        and data["foreign_cash"]
+        and all(
+            isinstance(v, (int, float))
+            and not isinstance(v, bool)
+            for v in all_values
+        )
+    ):
+        stock_total = round(sum(stock_values))
+        fund_total = round(fund_value)
+        foreign_total = round(sum(foreign_values))
+
+        today = now.strftime("%Y-%m-%d")
+
+        # 同じ日付は最新値に上書き
+        history = [
+            row for row in history
+            if isinstance(row, dict)
+            and row.get("date") != today
+        ]
+
+        history.append({
+            "date": today,
+            "total": stock_total + fund_total + foreign_total,
+            "stocks": stock_total,
+            "funds": fund_total
+        })
+
+        history.sort(
+            key=lambda row: row.get("date", "")
+        )
+
+        history_path.write_text(
+            json.dumps(
+                history,
+                ensure_ascii=False,
+                indent=2
+            ) + "\n",
+            encoding="utf-8"
+        )
+
+        print("Daily asset history updated:", today)
+
+    else:
+        print("Daily asset history skipped")
+
     OUT.write_text(
 
         json.dumps(
