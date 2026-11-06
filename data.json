@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026/11/06 22:09",
+  "updated_at": "2026/11/06 23:30",
   "weather": {
     "text": "雨",
     "max": 15.6,
-    "min": 3.2,
+    "min": 2.7,
     "rain": 100
   },
   "summary": {
@@ -16,12 +16,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1090068.6600000001,
+    "total": 1062176.4300000002,
     "purchaseTotal": 1089570.98,
-    "deltaYen": -29509.83,
-    "deltaPercent": -2.6357982279563084,
-    "unrealizedYen": 497.68000000016764,
-    "unrealizedPercent": 0.04567669377539476,
+    "deltaYen": -65384.729999999996,
+    "deltaPercent": -5.798774587092019,
+    "unrealizedYen": -27394.549999999814,
+    "unrealizedPercent": -2.5142510678836008,
     "complete": true
   },
   "assets": [
@@ -45,7 +45,7 @@
       "intraday": [
         {
           "label": "09:05",
-          "value": 2930.0
+          "value": 2928.0
         },
         {
           "label": "09:10",
@@ -81,7 +81,7 @@
         },
         {
           "label": "09:50",
-          "value": 2885.0
+          "value": 2885.5
         },
         {
           "label": "09:55",
@@ -117,7 +117,7 @@
         },
         {
           "label": "10:35",
-          "value": 2826.5
+          "value": 2827.0
         },
         {
           "label": "10:40",
@@ -1805,7 +1805,7 @@
         },
         {
           "label": "13:05",
-          "value": 2256.0
+          "value": 2256.5
         },
         {
           "label": "13:10",
@@ -2456,21 +2456,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44827.0,
-      "previousClose": 44234.0,
-      "value": 603438.66,
-      "deltaYen": 7982.67,
-      "change": 1.340597730252746,
-      "unrealizedYen": 3432.68,
-      "unrealizedPercent": 0.5721080498967954,
-      "weekChange": -0.5898920009757558,
-      "monthChange": -1.7770279153337176,
+      "price": 42755.0,
+      "previousClose": 44827.0,
+      "value": 575546.43,
+      "deltaYen": -27892.23,
+      "change": -4.622214290494564,
+      "unrealizedYen": -24459.55,
+      "unrealizedPercent": -4.076550300637172,
+      "weekChange": -4.5988039985719436,
+      "monthChange": -5.813543640128649,
       "intraday": [],
       "week": [
-        {
-          "label": "10/29",
-          "value": 45093.0
-        },
         {
           "label": "10/30",
           "value": 44816.0
@@ -2486,13 +2482,13 @@
         {
           "label": "11/05",
           "value": 44827.0
+        },
+        {
+          "label": "11/06",
+          "value": 42755.0
         }
       ],
       "month": [
-        {
-          "label": "10/07",
-          "value": 45638.0
-        },
         {
           "label": "10/08",
           "value": 45394.0
@@ -2568,6 +2564,10 @@
         {
           "label": "11/05",
           "value": 44827.0
+        },
+        {
+          "label": "11/06",
+          "value": 42755.0
         }
       ],
       "news": [
@@ -2588,9 +2588,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.18,
-      "value_jpy": 94908.0,
-      "gain_jpy": 90.0
+      "rate": 158.17,
+      "value_jpy": 94901.99999999999,
+      "gain_jpy": 83.99999999998545
     },
     {
       "name": "ユーロ",
@@ -2598,9 +2598,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.73,
-      "value_jpy": 35546.0,
-      "gain_jpy": 2.0
+      "rate": 177.71,
+      "value_jpy": 35542.0,
+      "gain_jpy": -2.0
     }
   ]
 }
