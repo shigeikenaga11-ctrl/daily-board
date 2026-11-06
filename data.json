@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/06 20:21",
+  "updated_at": "2026/11/06 21:17",
   "weather": {
     "text": "雨",
     "max": 15.6,
@@ -2598,9 +2598,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.75,
-      "value_jpy": 35550.0,
-      "gain_jpy": 6.0
+      "rate": 177.73,
+      "value_jpy": 35546.0,
+      "gain_jpy": 2.0
     }
   ]
 }
