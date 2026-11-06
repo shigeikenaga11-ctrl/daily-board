@@ -1,10 +1,17 @@
 name: Update board data
 
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7 */3 * * *"
-
+    # 日本時間（JST = UTC+9）
+    - cron: "5 0 * * 1-5"    # 09:05
+    - cron: "0 1 * * 1-5"    # 10:00
+    - cron: "0 2 * * 1-5"    # 11:00
+    - cron: "35 3 * * 1-5"   # 12:35
+    - cron: "30 4 * * 1-5"   # 13:30
+    - cron: "30 5 * * 1-5"   # 14:30
+    - cron: "35 6 * * 1-5"   # 15:35
 permissions:
   contents: write
 
