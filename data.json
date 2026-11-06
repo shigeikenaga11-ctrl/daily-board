@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/06 17:44",
+  "updated_at": "2026/11/06 20:21",
   "weather": {
     "text": "雨",
     "max": 15.6,
@@ -2572,11 +2572,11 @@
       ],
       "news": [
         {
-          "title": "【中間選挙後の株価】米国株は反転へ？S＆P500は「年末までに8,000」「2027年末に9,000」と予想する根拠 - トウシル",
-          "description": "【中間選挙後の株価】米国株は反転へ？S＆P500は「年末までに8,000」「2027年末に9,000」と予想する根拠",
-          "source": "トウシル",
-          "date": "2026/11/05",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0NXZmTU1VQlBtcGcyc1FCdFppLU9NUm9tQTlNSGxCZXJ5N0hSVDNUQWxSOXBUZFo2SHRYSXlROHltZVFMME5HLUhkazVZdXVsMDk0OVZRZzJBZw?oc=5"
+          "title": "S&P500見通し（11/6〜11/13）｜CoreWeave決算と米CPIで7,300ポイントを守れるか、選挙後の上昇は1日で帳消し 2026年11月6日 - 外為どっとコム",
+          "description": "S&P500見通し（11/6〜11/13）｜CoreWeave決算と米CPIで7,300ポイントを守れるか、選挙後の上昇は1日で帳消し 2026年11月6日",
+          "source": "外為どっとコム",
+          "date": "2026/11/06",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5nSVEyUFJENFhCOGVoRkVxcEZzSllqUmIwVXZwRTl5VTFOU2ZfYnNDLW04U3Z5UDl5aXpXVFVCV2hfbUFQSC0zLTZ6b3Y2aS0xUDlCRFA3cmhYdnZ1cEhkMFpUSQ?oc=5"
         }
       ]
     }
@@ -2588,9 +2588,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.28,
-      "value_jpy": 94968.0,
-      "gain_jpy": 150.0
+      "rate": 158.18,
+      "value_jpy": 94908.0,
+      "gain_jpy": 90.0
     },
     {
       "name": "ユーロ",
@@ -2598,9 +2598,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 178.01,
-      "value_jpy": 35602.0,
-      "gain_jpy": 58.0
+      "rate": 177.75,
+      "value_jpy": 35550.0,
+      "gain_jpy": 6.0
     }
   ]
 }
