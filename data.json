@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/11/09 17:51",
+  "updated_at": "2026/11/09 20:57",
   "weather": {
     "text": "雪",
     "max": 3.7,
     "min": -2.6,
-    "rain": 51
+    "rain": 30
   },
   "summary": {
     "label": "日本株評価額",
@@ -819,11 +819,11 @@
       ],
       "news": [
         {
-          "title": "【ゲームエンタメ株概況(11/9)】国内証券が目標株価引き上げの任天堂が反発 2Q好決算を発表もサンリオは市場の期待値には届かなかったとの見方から続落に - gamebiz【ゲームビズ】",
-          "description": "【ゲームエンタメ株概況(11/9)】国内証券が目標株価引き上げの任天堂が反発 2Q好決算を発表もサンリオは市場の期待値には届かなかったとの見方から続落に",
-          "source": "gamebiz【ゲームビズ】",
+          "title": "【決算翌日に▲7.91%】任天堂、中間期は営業利益49.1%増も株価は8,178円に下落。減収でも利益が伸びた中身とは - LIMO | くらしとお金の経済メディア",
+          "description": "【決算翌日に▲7.91%】任天堂、中間期は営業利益49.1%増も株価は8,178円に下落。減収でも利益が伸びた中身とは",
+          "source": "LIMO | くらしとお金の経済メディア",
           "date": "2026/11/09",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1lY3N5YTRzX05ld2NibDdnbFliYVJ3VkdsMkYtcEVfcWpFcTRfM1p2ZlBEMFJONkQ4TTN5UWY4SlFCN2Fq?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE42eks0V0dsN3dHR3U3U2ExcFdydzRpd3hCUWFnbl9KdGNTcFdCS1Q1b0s4V1RsT2JGdlY1eERfTi11R2FJYlBGNjNfN28?oc=5"
         }
       ]
     },
@@ -2582,9 +2582,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.17,
-      "value_jpy": 35434.0,
-      "gain_jpy": -110.0
+      "rate": 177.08,
+      "value_jpy": 35416.0,
+      "gain_jpy": -128.0
     }
   ]
 }
