@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/09 20:57",
+  "updated_at": "2026/11/09 22:06",
   "weather": {
     "text": "雪",
     "max": 3.7,
@@ -2572,9 +2572,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.26,
-      "value_jpy": 94956.0,
-      "gain_jpy": 138.0
+      "rate": 158.28,
+      "value_jpy": 94968.0,
+      "gain_jpy": 150.0
     },
     {
       "name": "ユーロ",
@@ -2582,9 +2582,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.08,
-      "value_jpy": 35416.0,
-      "gain_jpy": -128.0
+      "rate": 176.94,
+      "value_jpy": 35388.0,
+      "gain_jpy": -156.0
     }
   ]
 }
