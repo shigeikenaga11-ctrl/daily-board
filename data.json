@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/09 16:40",
+  "updated_at": "2026/11/09 17:51",
   "weather": {
     "text": "雪",
     "max": 3.7,
@@ -416,7 +416,15 @@
           "value": 2847.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ - ミクスOnline",
+          "description": "第一三共「第６期中期経営計画」 30年度に売上高３兆円以上 35年にがん領域グローバルトップ５企業へ",
+          "source": "ミクスOnline",
+          "date": "2026/05/12",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uMGJuSF9kRmwzZkIxeDFxQXJtT0RRdnB3amduMVJEdDNkSHd3TzRhTU9NbThqd1lSLUhBZTBPVE5WR0hnSllraDd6TE5MUWJ0UjBtSXBBYjhtajY3OUE?oc=5"
+        }
+      ]
     },
     {
       "name": "任天堂",
@@ -438,7 +446,7 @@
       "intraday": [
         {
           "label": "09:00",
-          "value": 8297.0
+          "value": 8295.0
         },
         {
           "label": "09:05",
@@ -594,7 +602,7 @@
         },
         {
           "label": "13:10",
-          "value": 8601.0
+          "value": 8602.0
         },
         {
           "label": "13:15",
@@ -809,7 +817,15 @@
           "value": 8606.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "【ゲームエンタメ株概況(11/9)】国内証券が目標株価引き上げの任天堂が反発 2Q好決算を発表もサンリオは市場の期待値には届かなかったとの見方から続落に - gamebiz【ゲームビズ】",
+          "description": "【ゲームエンタメ株概況(11/9)】国内証券が目標株価引き上げの任天堂が反発 2Q好決算を発表もサンリオは市場の期待値には届かなかったとの見方から続落に",
+          "source": "gamebiz【ゲームビズ】",
+          "date": "2026/11/09",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1lY3N5YTRzX05ld2NibDdnbFliYVJ3VkdsMkYtcEVfcWpFcTRfM1p2ZlBEMFJONkQ4TTN5UWY4SlFCN2Fq?oc=5"
+        }
+      ]
     },
     {
       "name": "東京海上HD",
@@ -1202,7 +1218,15 @@
           "value": 584.1
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+        }
+      ]
     },
     {
       "name": "北洋銀行",
@@ -1480,7 +1504,7 @@
         },
         {
           "label": "15:15",
-          "value": 1125.0
+          "value": 1126.0
         },
         {
           "label": "15:20",
@@ -1595,7 +1619,15 @@
           "value": 1128.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "北洋銀行[8524]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/05/13",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zSjM2WEdxUDMwUlozSFQ1d3FQVEh1ZkwwemRIbDJLa09LV1JCaVM1cFVpc0tqTk1VOWx1MGVnSjBlRkxCOHFpcm5DTldLWVJUMWMwakctSkVzYVRTc3c1OWM5Rk1wTkpUeUE?oc=5"
+        }
+      ]
     },
     {
       "name": "IHI",
@@ -1988,7 +2020,15 @@
           "value": 2396.5
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/11/04",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GaEN5Y2JGaTVMMGpSTUl6WWRLRlBWV0RCVXZiSy1uNWFPeUlQMi1lSXZSQUVfNHI4Ui1ZOGdvYXgwS0k0dUJPTU9SZEVnQWl5TUZqTkU3M3VkcVVOUmtnSFgtempJZ3RZQXc?oc=5"
+        }
+      ]
     },
     {
       "name": "東急不動産HD",
@@ -2126,7 +2166,7 @@
         },
         {
           "label": "11:25",
-          "value": 1185.0
+          "value": 1184.0
         },
         {
           "label": "11:30",
@@ -2381,7 +2421,15 @@
           "value": 1191.5
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "東急不動産HD－売り気配 上期営業益14％減 分譲マンション計上が下期偏重〔DZH 個別株情報〕(時事通信) - Yahoo!ファイナンス",
+          "description": "東急不動産HD－売り気配 上期営業益14％減 分譲マンション計上が下期偏重〔DZH 個別株情報〕(時事通信)",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/09",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRndmOXhxeVEwbDNaNUJhR0R1aVp5cjA2WEZ2RVF2bFJUaDZVWGFsNHVESXkxNlZlZGJNNnJGZjVBYVJXOFdQcFI5NHFkLXZ6WnZlWGlVMHlIWlVwWnZlaUtmUjdsdmYwUnp1a0NfUVowc3ZUQUtSNVNycEhlWlg5M1ZCSnZaNUU?oc=5"
+        }
+      ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -2506,7 +2554,15 @@
           "value": 42755.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/09",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+        }
+      ]
     }
   ],
   "foreign_cash": [
@@ -2526,9 +2582,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.2,
-      "value_jpy": 35440.0,
-      "gain_jpy": -104.0
+      "rate": 177.17,
+      "value_jpy": 35434.0,
+      "gain_jpy": -110.0
     }
   ]
 }
