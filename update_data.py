@@ -1161,93 +1161,84 @@ def build_emaxis():
         }
 
 
+   
     except Exception as e:
+        print("eMAXIS price retrieval failed:", repr(e))
 
-        print(
-            "eMAXIS error:",
-            e
-        )
+        # 前回の正常な基準価額を保持する
+        try:
+            previous = json.loads(
+                OUT.read_text(encoding="utf-8")
+            )
 
+            old_fund = next(
+                a for a in previous.get("assets", [])
+                if a.get("type") == "fund"
+                or a.get("fundCode") == EMAXIS["code"]
+            )
 
-        purchase_value = (
-            cost
-            * qty
-            / 10000
-        )
+            old_price = old_fund.get("price")
 
+            if old_price is not None and float(old_price) > 0:
+                old_fund["name"] = EMAXIS["name"]
+                old_fund["ticker"] = "eMAXIS"
+                old_fund["type"] = "fund"
+                old_fund["fundCode"] = EMAXIS["code"]
+                old_fund["qty"] = qty
+                old_fund["qtyLabel"] = f"{qty:,}口"
+                old_fund["cost"] = cost
 
-        return {
-
-            "name":
-                EMAXIS["name"],
-
-            "ticker":
-                "eMAXIS",
-
-            "type":
-                "fund",
-
-            "fundCode":
-                EMAXIS["code"],
-
-            "qty":
-                qty,
-
-            "qtyLabel":
-                f"{qty:,}口",
-
-            "cost":
-                cost,
-
-            "purchaseValue":
-                round(
-                    purchase_value,
-                    2
-                ),
-
-            "price":
-                None,
-
-            "previousClose":
-                None,
-
-            "value":
-                None,
-
-            "deltaYen":
-                None,
-
-            "change":
-                None,
-
-            "unrealizedYen":
-                None,
-
-            "unrealizedPercent":
-                None,
-
-            "weekChange":
-                None,
-
-            "monthChange":
-                None,
-
-            "intraday":
-                [],
-
-            "week":
-                [],
-
-            "month":
-                [],
-
-            "news":
-                get_news(
-                    EMAXIS[
-                        "newsQuery"
-                    ]
+                old_fund["purchaseValue"] = round(
+                    cost * qty / 10000, 2
                 )
-        }
+
+                old_fund["value"] = round(
+                    float(old_price) * qty / 10000, 2
+                )
+
+                old_fund["unrealizedYen"] = round(
+                    old_fund["value"] - old_fund["purchaseValue"], 2
+                )
+
+                old_fund["unrealizedPercent"] = (
+                    old_fund["unrealizedYen"]
+                    / old_fund["purchaseValue"] * 100
+                    if old_fund["purchaseValue"]
+                    else None
+                )
+
+                old_fund["priceStale"] = True
+                old_fund["priceAsOf"] = (
+                    old_fund.get("priceAsOf")
+                    or previous.get("updated_at")
+                )
+
+                print(
+                    "eMAXIS: reused last valid price:",
+                    old_price
+                )
+
+                return old_fund
+
+        except (
+            OSError,
+            ValueError,
+            TypeError,
+            StopIteration,
+            KeyError
+        ) as fallback_error:
+            print(
+                "eMAXIS fallback unavailable:",
+                repr(fallback_error)
+            )
+
+        # 正常な過去データがない場合は更新を停止する
+        raise RuntimeError(
+            "eMAXIS NAV unavailable; "
+            "data.json not overwritten. "
+            "Check Yahoo parser and restore "
+            "the last valid data.json."
+        ) from e
 
 
 # =========================================================
