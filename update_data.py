@@ -39,13 +39,7 @@ STOCKS = [
         "cost": 513,
         "newsQuery": "東京海上ホールディングス"
     },
-    {
-        "name": "北洋銀行",
-        "ticker": "8524.T",
-        "qty": 50,
-        "cost": 1377,
-        "newsQuery": "北洋銀行"
-    },
+    
         {'name':'IHI','ticker':'7013.T','qty':25,'cost':2337,'newsQuery':'IHI'},
   {'name':'東急不動産HD','ticker':'3289.T','qty':100,'cost':1235,'newsQuery':'東急不動産HD'}
 
