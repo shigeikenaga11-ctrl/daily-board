@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026/11/10 17:57",
+  "updated_at": "2026/11/10 20:32",
   "weather": {
     "text": "雪",
     "max": 0.0,
     "min": -4.9,
-    "rain": 61
+    "rain": 78
   },
   "summary": {
     "label": "日本株評価額",
@@ -1613,11 +1613,11 @@
       ],
       "news": [
         {
-          "title": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "ＩＨＩ[7013]：2027年3月期 第2四半期（中間期）決算短信〔IFRS〕（連結） 2026年11月4日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/11/04",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GaEN5Y2JGaTVMMGpSTUl6WWRLRlBWV0RCVXZiSy1uNWFPeUlQMi1lSXZSQUVfNHI4Ui1ZOGdvYXgwS0k0dUJPTU9SZEVnQWl5TUZqTkU3M3VkcVVOUmtnSFgtempJZ3RZQXc?oc=5"
+          "title": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分) - 株探",
+          "description": "決算プラス・インパクト銘柄 【東証プライム】寄付 … ＩＨＩ、三菱商、伊藤忠 (11月4日発表分)",
+          "source": "株探",
+          "date": "2026/11/05",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VaFZOc3dwc2ltVmZrSW40ZnpCQmstZE5BZjNDVWtLd0N0a2FNaWZQU1pnanhuT1RCOGVFS2IyUHVndlBsZ3FNZ2ptUlN2cmJOSkE?oc=5"
         }
       ]
     },
@@ -2159,9 +2159,9 @@
       "amount": 600,
       "purchase_jpy": 94818,
       "purchase_rate": 158.03,
-      "rate": 158.16,
-      "value_jpy": 94896.0,
-      "gain_jpy": 78.0
+      "rate": 158.13,
+      "value_jpy": 94878.0,
+      "gain_jpy": 60.0
     },
     {
       "name": "ユーロ",
@@ -2169,9 +2169,9 @@
       "amount": 200,
       "purchase_jpy": 35544,
       "purchase_rate": 177.72,
-      "rate": 177.04,
-      "value_jpy": 35408.0,
-      "gain_jpy": -136.0
+      "rate": 177.09,
+      "value_jpy": 35418.0,
+      "gain_jpy": -126.0
     }
   ]
 }
