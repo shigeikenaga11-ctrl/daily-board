@@ -1,5 +1,6 @@
 {
-  "updated_at": "2026/11/11 13:51",
+  "poolCash": 166309,
+  "updated_at": "2026/11/11 14:41",
   "weather": {
     "text": "くもり",
     "max": 4.9,
@@ -8,20 +9,20 @@
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 517130.0,
-    "purchaseTotal": 517890.0,
-    "deltaYen": -3830.0,
-    "deltaPercent": -0.7351812039312039,
+    "total": 517540.0,
+    "purchaseTotal": 1583490.0,
+    "deltaYen": -3420.0,
+    "deltaPercent": -0.6564803439803439,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1109449.46,
-    "purchaseTotal": 1117895.98,
-    "deltaYen": 8998.81,
-    "deltaPercent": 0.8177386237174743,
-    "unrealizedYen": -8446.520000000019,
-    "unrealizedPercent": -0.7555729827385209,
+    "total": 1276168.46,
+    "purchaseTotal": 2183495.98,
+    "deltaYen": 9408.81,
+    "deltaPercent": 0.742746266033971,
+    "unrealizedYen": -1073636.52,
+    "unrealizedPercent": -49.17052881407183,
     "complete": true
   },
   "assets": [
@@ -33,15 +34,15 @@
       "qtyLabel": "100株",
       "cost": 1137.5,
       "purchaseValue": 113750.0,
-      "price": 1135.0,
+      "price": 1139.0,
       "previousClose": 1150.0,
-      "value": 113500.0,
-      "deltaYen": -1500.0,
-      "change": -1.30434782608696,
-      "unrealizedYen": -250.0,
-      "unrealizedPercent": -0.21978021978021978,
-      "weekChange": -4.581757040773438,
-      "monthChange": 2.9945553539020064,
+      "value": 113900.0,
+      "deltaYen": -1100.0,
+      "change": -0.9565217391304337,
+      "unrealizedYen": 150.0,
+      "unrealizedPercent": 0.13186813186813187,
+      "weekChange": -4.245481294661624,
+      "monthChange": 3.3575317604355615,
       "intraday": [
         {
           "label": "09:05",
@@ -217,11 +218,51 @@
         },
         {
           "label": "13:35",
-          "value": 1135.5
+          "value": 1138.0
         },
         {
-          "label": "13:36",
-          "value": 1135.0
+          "label": "13:40",
+          "value": 1137.0
+        },
+        {
+          "label": "13:45",
+          "value": 1137.0
+        },
+        {
+          "label": "13:50",
+          "value": 1133.5
+        },
+        {
+          "label": "13:55",
+          "value": 1134.5
+        },
+        {
+          "label": "14:00",
+          "value": 1136.0
+        },
+        {
+          "label": "14:05",
+          "value": 1137.0
+        },
+        {
+          "label": "14:10",
+          "value": 1137.5
+        },
+        {
+          "label": "14:15",
+          "value": 1137.5
+        },
+        {
+          "label": "14:20",
+          "value": 1137.5
+        },
+        {
+          "label": "14:25",
+          "value": 1138.0
+        },
+        {
+          "label": "14:26",
+          "value": 1139.0
         }
       ],
       "week": [
@@ -243,7 +284,7 @@
         },
         {
           "label": "11/11",
-          "value": 1135.0
+          "value": 1139.0
         }
       ],
       "month": [
@@ -329,7 +370,7 @@
         },
         {
           "label": "11/11",
-          "value": 1135.0
+          "value": 1139.0
         }
       ],
       "news": [
@@ -348,17 +389,17 @@
       "type": "stock",
       "qty": 200,
       "qtyLabel": "200株",
-      "cost": 592.0,
-      "purchaseValue": 118400.0,
-      "price": 589.7,
+      "cost": 5920.0,
+      "purchaseValue": 1184000.0,
+      "price": 589.5,
       "previousClose": 584.3,
-      "value": 117940.0,
-      "deltaYen": 1080.0,
-      "change": 0.9241848719889312,
-      "unrealizedYen": -460.0,
-      "unrealizedPercent": -0.38851145151499156,
-      "weekChange": -2.6897669625361,
-      "monthChange": 10.51350059742624,
+      "value": 117900.0,
+      "deltaYen": 1040.0,
+      "change": 0.8899537908608757,
+      "unrealizedYen": -1066100.0,
+      "unrealizedPercent": -90.04222972972973,
+      "weekChange": -2.722772277227725,
+      "monthChange": 10.476017048666385,
       "intraday": [
         {
           "label": "09:05",
@@ -534,11 +575,51 @@
         },
         {
           "label": "13:35",
+          "value": 590.0
+        },
+        {
+          "label": "13:40",
+          "value": 589.9
+        },
+        {
+          "label": "13:45",
+          "value": 590.4
+        },
+        {
+          "label": "13:50",
           "value": 589.8
         },
         {
-          "label": "13:36",
-          "value": 589.7
+          "label": "13:55",
+          "value": 589.8
+        },
+        {
+          "label": "14:00",
+          "value": 589.9
+        },
+        {
+          "label": "14:05",
+          "value": 590.8
+        },
+        {
+          "label": "14:10",
+          "value": 590.6
+        },
+        {
+          "label": "14:15",
+          "value": 589.9
+        },
+        {
+          "label": "14:20",
+          "value": 589.5
+        },
+        {
+          "label": "14:25",
+          "value": 589.6
+        },
+        {
+          "label": "14:26",
+          "value": 589.5
         }
       ],
       "week": [
@@ -560,7 +641,7 @@
         },
         {
           "label": "11/11",
-          "value": 589.7
+          "value": 589.5
         }
       ],
       "month": [
@@ -646,7 +727,7 @@
         },
         {
           "label": "11/11",
-          "value": 589.7
+          "value": 589.5
         }
       ],
       "news": [
@@ -667,15 +748,15 @@
       "qtyLabel": "500株",
       "cost": 277.0,
       "purchaseValue": 138500.0,
-      "price": 277.8,
+      "price": 278.8,
       "previousClose": 282.1,
-      "value": 138899.99,
-      "deltaYen": -2150.01,
-      "change": -1.52428649664349,
-      "unrealizedYen": 399.99,
-      "unrealizedPercent": 0.28880425738944043,
-      "weekChange": -5.090544514061546,
-      "monthChange": -2.079670130488731,
+      "value": 139399.99,
+      "deltaYen": -1650.01,
+      "change": -1.1698022711915224,
+      "unrealizedYen": 899.99,
+      "unrealizedPercent": 0.6498150877143503,
+      "weekChange": -4.748897791036233,
+      "monthChange": -1.7271851262687599,
       "intraday": [
         {
           "label": "09:05",
@@ -851,11 +932,51 @@
         },
         {
           "label": "13:35",
+          "value": 278.1
+        },
+        {
+          "label": "13:40",
           "value": 277.8
         },
         {
-          "label": "13:36",
-          "value": 277.8
+          "label": "13:45",
+          "value": 277.9
+        },
+        {
+          "label": "13:50",
+          "value": 277.3
+        },
+        {
+          "label": "13:55",
+          "value": 277.9
+        },
+        {
+          "label": "14:00",
+          "value": 278.1
+        },
+        {
+          "label": "14:05",
+          "value": 278.5
+        },
+        {
+          "label": "14:10",
+          "value": 278.7
+        },
+        {
+          "label": "14:15",
+          "value": 278.7
+        },
+        {
+          "label": "14:20",
+          "value": 278.8
+        },
+        {
+          "label": "14:25",
+          "value": 278.9
+        },
+        {
+          "label": "14:26",
+          "value": 278.8
         }
       ],
       "week": [
@@ -877,7 +998,7 @@
         },
         {
           "label": "11/11",
-          "value": 277.8
+          "value": 278.8
         }
       ],
       "month": [
@@ -963,7 +1084,7 @@
         },
         {
           "label": "11/11",
-          "value": 277.8
+          "value": 278.8
         }
       ],
       "news": [
@@ -984,15 +1105,15 @@
       "qtyLabel": "900株",
       "cost": 163.6,
       "purchaseValue": 147240.0,
-      "price": 163.1,
+      "price": 162.6,
       "previousClose": 164.5,
-      "value": 146790.01,
-      "deltaYen": -1259.99,
-      "change": -0.851060119443392,
-      "unrealizedYen": -449.99,
-      "unrealizedPercent": -0.30561974112736856,
-      "weekChange": -1.0915632865933778,
-      "monthChange": -5.885745394474029,
+      "value": 146340.01,
+      "deltaYen": -1709.99,
+      "change": -1.1550114872245443,
+      "unrealizedYen": -899.99,
+      "unrealizedPercent": -0.6112432130100092,
+      "weekChange": -1.3947773669491847,
+      "monthChange": -6.174262411897669,
       "intraday": [
         {
           "label": "09:05",
@@ -1168,11 +1289,51 @@
         },
         {
           "label": "13:35",
+          "value": 163.2
+        },
+        {
+          "label": "13:40",
           "value": 163.1
         },
         {
-          "label": "13:36",
+          "label": "13:45",
+          "value": 163.2
+        },
+        {
+          "label": "13:50",
+          "value": 163.2
+        },
+        {
+          "label": "13:55",
           "value": 163.1
+        },
+        {
+          "label": "14:00",
+          "value": 163.1
+        },
+        {
+          "label": "14:05",
+          "value": 163.2
+        },
+        {
+          "label": "14:10",
+          "value": 162.9
+        },
+        {
+          "label": "14:15",
+          "value": 163.0
+        },
+        {
+          "label": "14:20",
+          "value": 162.6
+        },
+        {
+          "label": "14:25",
+          "value": 162.6
+        },
+        {
+          "label": "14:26",
+          "value": 162.6
         }
       ],
       "week": [
@@ -1194,7 +1355,7 @@
         },
         {
           "label": "11/11",
-          "value": 163.1
+          "value": 162.6
         }
       ],
       "month": [
@@ -1280,7 +1441,7 @@
         },
         {
           "label": "11/11",
-          "value": 163.1
+          "value": 162.6
         }
       ],
       "news": [
@@ -1427,26 +1588,5 @@
       ]
     }
   ],
-  "foreign_cash": [
-    {
-      "name": "米ドル",
-      "currency": "USD",
-      "amount": 600,
-      "purchase_jpy": 94818,
-      "purchase_rate": 158.03,
-      "rate": 158.21,
-      "value_jpy": 94926.0,
-      "gain_jpy": 108.0
-    },
-    {
-      "name": "ユーロ",
-      "currency": "EUR",
-      "amount": 200,
-      "purchase_jpy": 35544,
-      "purchase_rate": 177.72,
-      "rate": 177.32,
-      "value_jpy": 35464.0,
-      "gain_jpy": -80.0
-    }
-  ]
+  "foreign_cash": []
 }
