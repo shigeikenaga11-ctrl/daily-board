@@ -18,33 +18,43 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 # =========================================================
 
 STOCKS = [
+   
+    
+# =========================================================
+# 保有日本株
+# =========================================================
+
+STOCKS = [
     {
-        "name": "第一三共",
-        "ticker": "4568.T",
-        "qty": 20,
-        "cost": 2834,
-        "newsQuery": "第一三共"
-    },
-    {
-        "name": "任天堂",
-        "ticker": "7974.T",
-        "qty": 10,
-        "cost": 7951,
-        "newsQuery": "任天堂"
+        "name": "マツダ",
+        "ticker": "7261.T",
+        "qty": 100,
+        "cost": 113750 / 100,
+        "newsQuery": "マツダ"
     },
     {
         "name": "東京海上HD",
         "ticker": "8766.T",
         "qty": 200,
-        "cost": 513,
+        "cost": 11840 / 200,
         "newsQuery": "東京海上ホールディングス"
     },
-    
-        {'name':'IHI','ticker':'7013.T','qty':25,'cost':2337,'newsQuery':'IHI'},
-  {'name':'東急不動産HD','ticker':'3289.T','qty':100,'cost':1235,'newsQuery':'東急不動産HD'}
-
-    
+    {
+        "name": "日産自動車",
+        "ticker": "7201.T",
+        "qty": 500,
+        "cost": 138500 / 500,
+        "newsQuery": "日産自動車"
+    },
+    {
+        "name": "NTT",
+        "ticker": "9432.T",
+        "qty": 900,
+        "cost": 147240 / 900,
+        "newsQuery": "NTT"
+    }
 ]
+
 
 # 外貨預金（取得総額は日本円）
 FOREIGN_CASH = [
