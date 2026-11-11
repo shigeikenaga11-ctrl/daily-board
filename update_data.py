@@ -33,7 +33,7 @@ STOCKS = [
         "name": "東京海上HD",
         "ticker": "8766.T",
         "qty": 200,
-        "cost": 118400 / 200,
+        "cost": 1184000 / 200,
         "newsQuery": "東京海上ホールディングス"
     },
     {
@@ -1454,11 +1454,11 @@ def main():
 
     if all_complete:
 
-total_assets = (
-    stock_total
-    + emaxis["value"]
-    + POOL_CASH
-)
+        total_assets = (
+            stock_total
+            + emaxis["value"]
+            + POOL_CASH
+        )
 
         total_delta = (
             stock_delta
@@ -1485,11 +1485,11 @@ total_assets = (
         )
 
 
- total_unrealized = (
-    total_assets
-    - POOL_CASH
-    - total_purchase
-)
+        total_unrealized = (
+            total_assets
+            - POOL_CASH
+            - total_purchase
+        )
 
         total_unrealized_percent = (
 
@@ -1514,7 +1514,7 @@ total_assets = (
     # JSON
     # =====================================================
 
-  data = {
+    data = {
 
         # プール額
         "poolCash": POOL_CASH,
@@ -1584,7 +1584,7 @@ total_assets = (
         "assets":
             assets
     }
-    data["foreign_cash"] = get_foreign_cash()
+    data["foreign_cash"] = []  # 外貨預金は保有なし
 
         # 日本時間で日次履歴を保存
     history_path = Path("history.json")
@@ -1609,19 +1609,11 @@ total_assets = (
 
     fund_value = emaxis.get("value")
 
-    foreign_values = [
-        a.get("value_jpy")
-        for a in data["foreign_cash"]
-    ]
-
-    all_values = (
-        stock_values + [fund_value] + foreign_values
-    )
+    all_values = stock_values + [fund_value]
 
     if (
         history is not None
         and stock_values
-        and data["foreign_cash"]
         and all(
             isinstance(v, (int, float))
             and not isinstance(v, bool)
@@ -1630,7 +1622,6 @@ total_assets = (
     ):
         stock_total = round(sum(stock_values))
         fund_total = round(fund_value)
-        foreign_total = round(sum(foreign_values))
 
         today = now.strftime("%Y-%m-%d")
 
@@ -1643,9 +1634,10 @@ total_assets = (
 
         history.append({
             "date": today,
-            "total": stock_total + fund_total + foreign_total,
+            "total": stock_total + fund_total + POOL_CASH,
             "stocks": stock_total,
-            "funds": fund_total
+            "funds": fund_total,
+            "pool": POOL_CASH
         })
 
         history.sort(
