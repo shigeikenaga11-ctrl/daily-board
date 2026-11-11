@@ -11,7 +11,8 @@ from pathlib import Path
 
 OUT = Path("data.json")
 JST = datetime.timezone(datetime.timedelta(hours=9))
-
+# プール額（日本円）
+POOL_CASH = 166309
 
 
    
@@ -1453,12 +1454,11 @@ def main():
 
     if all_complete:
 
-        total_assets = (
-            stock_total
-            +
-            emaxis["value"]
-        )
-
+total_assets = (
+    stock_total
+    + emaxis["value"]
+    + POOL_CASH
+)
 
         total_delta = (
             stock_delta
@@ -1485,12 +1485,11 @@ def main():
         )
 
 
-        total_unrealized = (
-            total_assets
-            -
-            total_purchase
-        )
-
+ total_unrealized = (
+    total_assets
+    - POOL_CASH
+    - total_purchase
+)
 
         total_unrealized_percent = (
 
@@ -1515,17 +1514,20 @@ def main():
     # JSON
     # =====================================================
 
-    data = {
+  data = {
 
+        # プール額
+        "poolCash": POOL_CASH,
+
+        # 更新日時
         "updated_at":
             now.strftime(
                 "%Y/%m/%d %H:%M"
             ),
 
-
+        # 天気
         "weather":
             get_weather(),
-
 
         # 既存日本株画面
         "summary": {
