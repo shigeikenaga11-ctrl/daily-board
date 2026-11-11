@@ -1531,25 +1531,6 @@ function totalAssetsPage(data) {
     ? Number(fund.deltaYen || 0)
     : 0;
 
-  // =========================
-  // 外貨預金
-  // =========================
-
-  const foreignCash = data.foreign_cash || [];
-
-  // 外貨の現在評価額
-  const foreignValue = foreignCash.reduce(
-    (sum, a) =>
-      sum + Number(a.value_jpy || 0),
-    0
-  );
-
-  // 外貨の取得総額
-  const foreignPurchase = foreignCash.reduce(
-    (sum, a) =>
-      sum + Number(a.purchase_jpy || 0),
-    0
-  );
 
   // =========================
   // 総資産
