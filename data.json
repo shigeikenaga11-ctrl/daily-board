@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/12 22:56",
+  "updated_at": "2026/11/13 00:30",
   "weather": {
-    "text": "くもり",
-    "max": 10.7,
+    "text": "霧",
+    "max": 14.0,
     "min": -0.1,
-    "rain": 7
+    "rain": 0
   },
   "summary": {
     "label": "日本株評価額",
@@ -41,8 +41,8 @@
       "change": -0.655881066899866,
       "unrealizedYen": -150.0,
       "unrealizedPercent": -0.13186813186813187,
-      "weekChange": 0.39770216526735513,
-      "monthChange": 3.085299455535395,
+      "weekChange": -3.867171080285836,
+      "monthChange": 3.765880217785833,
       "intraday": [
         {
           "label": "09:00",
@@ -315,6 +315,10 @@
       ],
       "week": [
         {
+          "label": "11/05",
+          "value": 1189.5
+        },
+        {
           "label": "11/06",
           "value": 1131.5
         },
@@ -329,10 +333,6 @@
         {
           "label": "11/11",
           "value": 1143.5
-        },
-        {
-          "label": "11/12",
-          "value": 1136.0
         }
       ],
       "month": [
@@ -419,19 +419,15 @@
         {
           "label": "11/11",
           "value": 1143.5
-        },
-        {
-          "label": "11/12",
-          "value": 1136.0
         }
       ],
       "news": [
         {
-          "title": "マツダ、2027年3月期上期決算は過去最高の売上高2兆6881億円、営業利益も黒字化して591億円 新型「CX-5」が販売を牽引 - Car Watch",
-          "description": "マツダ、2027年3月期上期決算は過去最高の売上高2兆6881億円、営業利益も黒字化して591億円 新型「CX-5」が販売を牽引",
-          "source": "Car Watch",
-          "date": "2026/11/09",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uTkpVeFdpVG5sY3g1el9GLWcyelNHdWd1S3BEWDZFUFZUdVN5NVUxd01aaGk0NTVXT0p4ZmZoUmN5cDJPSVJ0cUdoMFRldEdLLXFvVGZpMzFwbFdaSnZPVXF4OWs?oc=5"
+          "title": "トヨタ紡織 マツダ系2社と連携加速、シート事業の競争力向上へ【決算会見録 解体新書】：ニュース - 中日BIZナビ",
+          "description": "トヨタ紡織 マツダ系2社と連携加速、シート事業の競争力向上へ【決算会見録 解体新書】：ニュース",
+          "source": "中日BIZナビ",
+          "date": "2026/11/12",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NdWg4UmtXWS1yQ0xlQXBFX0lkU2RnWjhYZ0NmWmUwVGJ4LWJLSHVBcXlPUDloN3laNDZoT1M1ZXlRdzE3Y1Ytb2lBTGpQOW9QTVJrRlEwRzNZSV9TRzc4?oc=5"
         }
       ]
     },
@@ -450,8 +446,8 @@
       "change": 0.3209981066005785,
       "unrealizedYen": 360.0,
       "unrealizedPercent": 0.30405199205553207,
-      "weekChange": 4.2120043022394915,
-      "monthChange": 11.281861874323852,
+      "weekChange": -2.3267286445441404,
+      "monthChange": 10.925796757038198,
       "intraday": [
         {
           "label": "09:05",
@@ -720,6 +716,10 @@
       ],
       "week": [
         {
+          "label": "11/05",
+          "value": 606.0
+        },
+        {
           "label": "11/06",
           "value": 569.8
         },
@@ -734,10 +734,6 @@
         {
           "label": "11/11",
           "value": 591.9
-        },
-        {
-          "label": "11/12",
-          "value": 593.8
         }
       ],
       "month": [
@@ -824,10 +820,6 @@
         {
           "label": "11/11",
           "value": 591.9
-        },
-        {
-          "label": "11/12",
-          "value": 593.8
         }
       ],
       "news": [
@@ -855,8 +847,8 @@
       "change": -3.7797020183697794,
       "unrealizedYen": -4850.01,
       "unrealizedPercent": -3.5018094610221118,
-      "weekChange": -0.8898866538501138,
-      "monthChange": -5.780762674798378,
+      "weekChange": -5.090544514061546,
+      "monthChange": -2.079670130488731,
       "intraday": [
         {
           "label": "09:05",
@@ -940,7 +932,7 @@
         },
         {
           "label": "10:45",
-          "value": 263.7
+          "value": 263.6
         },
         {
           "label": "10:50",
@@ -952,7 +944,7 @@
         },
         {
           "label": "11:00",
-          "value": 263.3
+          "value": 263.2
         },
         {
           "label": "11:05",
@@ -1125,6 +1117,10 @@
       ],
       "week": [
         {
+          "label": "11/05",
+          "value": 292.7
+        },
+        {
           "label": "11/06",
           "value": 269.7
         },
@@ -1139,10 +1135,6 @@
         {
           "label": "11/11",
           "value": 277.8
-        },
-        {
-          "label": "11/12",
-          "value": 267.3
         }
       ],
       "month": [
@@ -1229,10 +1221,6 @@
         {
           "label": "11/11",
           "value": 277.8
-        },
-        {
-          "label": "11/12",
-          "value": 267.3
         }
       ],
       "news": [
@@ -1260,8 +1248,8 @@
       "change": 3.2675709001233066,
       "unrealizedYen": 3510.0,
       "unrealizedPercent": 2.3838630806845966,
-      "weekChange": 4.556805986779344,
-      "monthChange": -3.3467991630822924,
+      "weekChange": -1.637354183249462,
+      "monthChange": -6.405081308740945,
       "intraday": [
         {
           "label": "09:05",
@@ -1534,6 +1522,10 @@
       ],
       "week": [
         {
+          "label": "11/05",
+          "value": 164.9
+        },
+        {
           "label": "11/06",
           "value": 160.2
         },
@@ -1548,10 +1540,6 @@
         {
           "label": "11/11",
           "value": 162.2
-        },
-        {
-          "label": "11/12",
-          "value": 167.5
         }
       ],
       "month": [
@@ -1638,19 +1626,15 @@
         {
           "label": "11/11",
           "value": 162.2
-        },
-        {
-          "label": "11/12",
-          "value": 167.5
         }
       ],
       "news": [
         {
-          "title": "【配当利回りは3.2％台】NTTの年間配当金は今期5.4円の予想、11月の中間決算では通期の業績予想を上方修正(LIMO) - Yahoo!ファイナンス",
-          "description": "【配当利回りは3.2％台】NTTの年間配当金は今期5.4円の予想、11月の中間決算では通期の業績予想を上方修正(LIMO)",
-          "source": "Yahoo!ファイナンス",
+          "title": "【配当利回りは3.2％台】NTTの年間配当金は今期5.4円の予想、11月の中間決算では通期の業績予想を上方修正 - LIMO | くらしとお金の経済メディア",
+          "description": "【配当利回りは3.2％台】NTTの年間配当金は今期5.4円の予想、11月の中間決算では通期の業績予想を上方修正",
+          "source": "LIMO | くらしとお金の経済メディア",
           "date": "2026/11/12",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZzNuMm1BX3JiV0pQdzNfT0d4eDlOdVRfOG9JUmNkMk9EeTdGTElMM3NTMlNzZE1fdElaLS1haEVtMHhZUERYMTBXYzc3bGllWG1GdjlQT1gweDAyN3JNUTRHbm9rUDlqd1JrallBR2tRU0FXYlVJbjdwU19PYjhTbE9YVDZkb1k?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9adll5b2FhS0JsZktoTWZDLVlvYTNTVmMweGNPV0dVeW9Zdy1TdmIyVno3Q1dkSVptNlhncW5Td1RaNklZTVFiMndGSDk?oc=5"
         }
       ]
     },
