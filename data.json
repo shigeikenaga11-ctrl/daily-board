@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/12 20:39",
+  "updated_at": "2026/11/12 21:59",
   "weather": {
     "text": "くもり",
     "max": 10.7,
@@ -940,7 +940,7 @@
         },
         {
           "label": "10:45",
-          "value": 263.7
+          "value": 263.6
         },
         {
           "label": "10:50",
@@ -952,7 +952,7 @@
         },
         {
           "label": "11:00",
-          "value": 263.3
+          "value": 263.2
         },
         {
           "label": "11:05",
@@ -1779,11 +1779,11 @@
       ],
       "news": [
         {
-          "title": "S＆P500採用銘柄のうち420銘柄以上が上昇 - 海外マーケット解説＆米国株ピックアップ - 日経CNBC online",
-          "description": "S＆P500採用銘柄のうち420銘柄以上が上昇 - 海外マーケット解説＆米国株ピックアップ",
-          "source": "日経CNBC online",
-          "date": "2026/11/10",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wc0NoVkZnMEYtOFRMcE5wUXVjVGNrS3djVUY5SGZtRjBZZFdsbHAtc3pIWWo0ejF5YmFBbXRpbnA1NWdNbGZ2XzBLcER5MF9NZ0dNSQ?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/12",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
