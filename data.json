@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/13 17:53",
+  "updated_at": "2026/11/13 20:23",
   "weather": {
-    "text": "霧",
-    "max": 14.5,
-    "min": -0.0,
-    "rain": 0
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -1421,7 +1421,7 @@
         },
         {
           "label": "13:05",
-          "value": 168.8
+          "value": 168.7
         },
         {
           "label": "13:10",
@@ -1787,11 +1787,11 @@
       ],
       "news": [
         {
-          "title": "台湾の保護者が子どものために株式を積み立てる際の首选が判明！元大台湾50（0050）が首位固め、米国株はVOOが最も人気、1歳未満の口座開設は7.8% - BigGo ファイナンス",
-          "description": "台湾の保護者が子どものために株式を積み立てる際の首选が判明！元大台湾50（0050）が首位固め、米国株はVOOが最も人気、1歳未満の口座開設は7.8%",
-          "source": "BigGo ファイナンス",
+          "title": "S&P500見通し（11/13〜11/20）｜Nビディア → Aソロピックへ、AIの主役はインフラからアプリ？ 7,655ポイント超えがもう一段上昇の条件 2026年11月13日 - 外為どっとコム",
+          "description": "S&P500見通し（11/13〜11/20）｜Nビディア → Aソロピックへ、AIの主役はインフラからアプリ？ 7,655ポイント超えがもう一段上昇の条件 2026年11月13日",
+          "source": "外為どっとコム",
           "date": "2026/11/13",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YMTQ2NlkxSXdUbi1GU2hCOGwzQklNS0NUV3pBeEotcldJbW5yV1JvdXlZSkIyWllQLUowU2ozQTd6ODNCVzZSQlBIOHZXYmFnTjFGZGltUWhMTkR5N1ZaMzZsZVNOUVpHeWMyT1RPMnd4elQy?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJRlluNWR2Zy03NUpVRGxVT2xKdjltbG1sTU1KaUFncHdKbi1NczEzVk1FV3J6WnZCT1VZMktmQkNxdGoxTUh1dTljN1BmajlRdUlVMVloVVpFSldHMGR1d2htZw?oc=5"
         }
       ]
     }
