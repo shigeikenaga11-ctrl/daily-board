@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/13 22:21",
+  "updated_at": "2026/11/13 23:50",
   "weather": {
     "text": "霧",
     "max": 14.5,
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1286741.1,
+    "total": 1285704.5699999998,
     "purchaseTotal": 1117895.98,
-    "deltaYen": 10854.56,
-    "deltaPercent": 0.8507464934930655,
-    "unrealizedYen": 2536.1200000001118,
-    "unrealizedPercent": 0.2268654727607225,
+    "deltaYen": -816.56,
+    "deltaPercent": -0.0634703916600266,
+    "unrealizedYen": 1499.589999999851,
+    "unrealizedPercent": 0.13414396570241277,
     "complete": true
   },
   "assets": [
@@ -1421,7 +1421,7 @@
         },
         {
           "label": "13:05",
-          "value": 168.7
+          "value": 168.8
         },
         {
           "label": "13:10",
@@ -1671,21 +1671,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44828.0,
-      "previousClose": 44038.0,
-      "value": 603452.12,
-      "deltaYen": 10634.58,
-      "change": 1.793905263635942,
-      "unrealizedYen": 3446.14,
-      "unrealizedPercent": 0.5743516108767788,
-      "weekChange": 4.848555724476666,
-      "monthChange": -0.22479912751229847,
+      "price": 44751.0,
+      "previousClose": 44828.0,
+      "value": 602415.59,
+      "deltaYen": -1036.54,
+      "change": -0.17176764522173205,
+      "unrealizedYen": 2409.61,
+      "unrealizedPercent": 0.4015974154177465,
+      "weekChange": 3.956049061512723,
+      "monthChange": -0.8507809903622432,
       "intraday": [],
       "week": [
-        {
-          "label": "11/06",
-          "value": 42755.0
-        },
         {
           "label": "11/09",
           "value": 43048.0
@@ -1701,13 +1697,13 @@
         {
           "label": "11/12",
           "value": 44828.0
+        },
+        {
+          "label": "11/13",
+          "value": 44751.0
         }
       ],
       "month": [
-        {
-          "label": "10/15",
-          "value": 44929.0
-        },
         {
           "label": "10/16",
           "value": 45135.0
@@ -1783,6 +1779,10 @@
         {
           "label": "11/12",
           "value": 44828.0
+        },
+        {
+          "label": "11/13",
+          "value": 44751.0
         }
       ],
       "news": [
