@@ -1,10 +1,10 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/16 16:40",
+  "updated_at": "2026/11/16 17:45",
   "weather": {
     "text": "雪",
-    "max": 5.7,
-    "min": 1.5,
+    "max": 6.0,
+    "min": 2.0,
     "rain": 100
   },
   "summary": {
@@ -421,7 +421,15 @@
           "value": 1129.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換 - Car Watch",
+          "description": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換",
+          "source": "Car Watch",
+          "date": "2026/08/04",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GMjRtYVVycmV0VG90OW9HLXBNNlBCLTBXU0pRUnNkTllXSkg5b3JJd25waGRSTHpSMVVNb0hxbEdzOHlxUGZVazlLS2xTckRjY1pLZW5xaDB5aFE1eEprTTFYOXE?oc=5"
+        }
+      ]
     },
     {
       "name": "東京海上HD",
@@ -818,7 +826,15 @@
           "value": 597.4
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
+          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/08/26",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
+        }
+      ]
     },
     {
       "name": "日産自動車",
@@ -1048,7 +1064,7 @@
         },
         {
           "label": "14:15",
-          "value": 268.8
+          "value": 268.7
         },
         {
           "label": "14:20",
@@ -1215,7 +1231,15 @@
           "value": 269.8
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
+          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
+          "source": "Car Watch",
+          "date": "2026/11/11",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
+        }
+      ]
     },
     {
       "name": "NTT",
@@ -1612,7 +1636,15 @@
           "value": 168.6
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース - group.ntt",
+          "description": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース",
+          "source": "group.ntt",
+          "date": "2026/11/13",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9McDB6Nk9RMUlBUDJldnlMWjAtOHlMcVdxbVZ5X3BDTWljMm85dFIwOVBMRlJza09CZHFFOHo4N204SVdQSUhPS0dHWG9NSTUtb190OWhCcXp3UzI0ZDZWbFpKSk5GLVU?oc=5"
+        }
+      ]
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -1737,7 +1769,15 @@
           "value": 44751.0
         }
       ],
-      "news": []
+      "news": [
+        {
+          "title": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 野村證券ストラテジストが解説 - 野村證券",
+          "description": "S＆P500の見通しを変更 イラン情勢は遅かれ早かれ収束し、株高基調は継続すると予想 ストラテジストが解説",
+          "source": "野村證券",
+          "date": "2026/11/13",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FRmhhWEEwcFpETzRRY3lfTkI5UlVmQ2ZucE9JR0xJVXZIaGFjNFNhbVBPNUcyYXc4UXg0V3FzM09nZmtuSTQ5dlVsbmtybnBQYnBqQS1rQjFDNXFtdzA0?oc=5"
+        }
+      ]
     }
   ],
   "foreign_cash": []
