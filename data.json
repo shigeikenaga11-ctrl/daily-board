@@ -1,28 +1,28 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/16 15:11",
+  "updated_at": "2026/11/16 16:40",
   "weather": {
     "text": "雪",
     "max": 5.7,
     "min": 1.5,
-    "rain": 98
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
-    "total": 517169.99,
+    "total": 519020.0,
     "purchaseTotal": 517890.0,
-    "deltaYen": 189.99,
-    "deltaPercent": 0.03674997098533793,
+    "deltaYen": 2040.0,
+    "deltaPercent": 0.394599404232272,
     "complete": true
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1285894.58,
+    "total": 1287744.5899999999,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -846.55,
-    "deltaPercent": -0.065790233968817,
-    "unrealizedYen": 1689.6000000000931,
-    "unrealizedPercent": 0.1511410748610164,
+    "deltaYen": 1003.46,
+    "deltaPercent": 0.07798460596343883,
+    "unrealizedYen": 3539.6099999998696,
+    "unrealizedPercent": 0.31663142755016166,
     "complete": true
   },
   "assets": [
@@ -34,15 +34,15 @@
       "qtyLabel": "100株",
       "cost": 1137.5,
       "purchaseValue": 113750.0,
-      "price": 1123.5,
+      "price": 1129.0,
       "previousClose": 1131.0,
-      "value": 112350.0,
-      "deltaYen": -750.0,
-      "change": -0.6631299734747964,
-      "unrealizedYen": -1400.0,
-      "unrealizedPercent": -1.2307692307692308,
-      "weekChange": -2.304347826086961,
-      "monthChange": 0.31250000000000444,
+      "value": 112900.0,
+      "deltaYen": -200.0,
+      "change": -0.17683465959328348,
+      "unrealizedYen": -850.0,
+      "unrealizedPercent": -0.7472527472527473,
+      "weekChange": -1.8260869565217441,
+      "monthChange": 0.8035714285714368,
       "intraday": [
         {
           "label": "09:00",
@@ -289,8 +289,28 @@
           "value": 1124.0
         },
         {
-          "label": "14:56",
-          "value": 1123.5
+          "label": "15:00",
+          "value": 1126.0
+        },
+        {
+          "label": "15:05",
+          "value": 1126.0
+        },
+        {
+          "label": "15:10",
+          "value": 1127.5
+        },
+        {
+          "label": "15:15",
+          "value": 1127.5
+        },
+        {
+          "label": "15:20",
+          "value": 1126.5
+        },
+        {
+          "label": "15:30",
+          "value": 1129.0
         }
       ],
       "week": [
@@ -312,7 +332,7 @@
         },
         {
           "label": "11/16",
-          "value": 1123.5
+          "value": 1129.0
         }
       ],
       "month": [
@@ -398,18 +418,10 @@
         },
         {
           "label": "11/16",
-          "value": 1123.5
+          "value": 1129.0
         }
       ],
-      "news": [
-        {
-          "title": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換 - Car Watch",
-          "description": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換",
-          "source": "Car Watch",
-          "date": "2026/08/04",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GMjRtYVVycmV0VG90OW9HLXBNNlBCLTBXU0pRUnNkTllXSkg5b3JJd25waGRSTHpSMVVNb0hxbEdzOHlxUGZVazlLS2xTckRjY1pLZW5xaDB5aFE1eEprTTFYOXE?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "東京海上HD",
@@ -419,15 +431,15 @@
       "qtyLabel": "200株",
       "cost": 592.0,
       "purchaseValue": 118400.0,
-      "price": 596.3,
+      "price": 597.4,
       "previousClose": 597.1,
-      "value": 119260.0,
-      "deltaYen": -160.0,
-      "change": -0.13398295210705902,
-      "unrealizedYen": 860.0,
-      "unrealizedPercent": 0.7263492893528294,
-      "weekChange": 2.053739560277368,
-      "monthChange": 6.806376648908574,
+      "value": 119480.0,
+      "deltaYen": 60.0,
+      "change": 0.05024692916806295,
+      "unrealizedYen": 1080.0,
+      "unrealizedPercent": 0.912166286159206,
+      "weekChange": 2.2420052874851937,
+      "monthChange": 7.003409900770596,
       "intraday": [
         {
           "label": "09:00",
@@ -671,11 +683,31 @@
         },
         {
           "label": "14:55",
-          "value": 596.5
+          "value": 596.6
         },
         {
-          "label": "14:56",
-          "value": 596.3
+          "label": "15:00",
+          "value": 598.3
+        },
+        {
+          "label": "15:05",
+          "value": 598.3
+        },
+        {
+          "label": "15:10",
+          "value": 598.5
+        },
+        {
+          "label": "15:15",
+          "value": 598.3
+        },
+        {
+          "label": "15:20",
+          "value": 598.2
+        },
+        {
+          "label": "15:30",
+          "value": 597.4
         }
       ],
       "week": [
@@ -697,7 +729,7 @@
         },
         {
           "label": "11/16",
-          "value": 596.3
+          "value": 597.4
         }
       ],
       "month": [
@@ -783,18 +815,10 @@
         },
         {
           "label": "11/16",
-          "value": 596.3
+          "value": 597.4
         }
       ],
-      "news": [
-        {
-          "title": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！ - ダイヤモンド・オンライン",
-          "description": "東京海上HD、株主優待を新設！ 3月末に100株を3年以上保有で2027年3月は7500円分、2028年以降も継続保有すると2500円分の電子マネーなどがもらえる！",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/08/26",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XdWVoTklSclN0UjVGeGsxRU5Xb1JiLTZ2UThCdGplb25icGtxMTdHa1drSXZHaHVlVjFSMlBNeG40emJFc09HTWluOHZhaTFlVEpZ?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "日産自動車",
@@ -804,15 +828,15 @@
       "qtyLabel": "500株",
       "cost": 277.0,
       "purchaseValue": 138500.0,
-      "price": 268.0,
+      "price": 269.8,
       "previousClose": 265.8,
-      "value": 134000.0,
-      "deltaYen": 1100.0,
-      "change": 0.8276899924755332,
-      "unrealizedYen": -4500.0,
-      "unrealizedPercent": -3.2490974729241873,
-      "weekChange": -4.998229634331053,
-      "monthChange": -4.761902696207477,
+      "value": 134899.99,
+      "deltaYen": 1999.99,
+      "change": 1.50488630284753,
+      "unrealizedYen": -3600.01,
+      "unrealizedPercent": -2.5992823852098375,
+      "weekChange": -4.3601623695227465,
+      "monthChange": -4.1222481716836175,
       "intraday": [
         {
           "label": "09:00",
@@ -1056,11 +1080,31 @@
         },
         {
           "label": "14:55",
-          "value": 267.9
+          "value": 268.1
         },
         {
-          "label": "14:56",
+          "label": "15:00",
+          "value": 268.4
+        },
+        {
+          "label": "15:05",
+          "value": 268.3
+        },
+        {
+          "label": "15:10",
+          "value": 268.3
+        },
+        {
+          "label": "15:15",
           "value": 268.0
+        },
+        {
+          "label": "15:20",
+          "value": 268.0
+        },
+        {
+          "label": "15:30",
+          "value": 269.8
         }
       ],
       "week": [
@@ -1082,7 +1126,7 @@
         },
         {
           "label": "11/16",
-          "value": 268.0
+          "value": 269.8
         }
       ],
       "month": [
@@ -1168,18 +1212,10 @@
         },
         {
           "label": "11/16",
-          "value": 268.0
+          "value": 269.8
         }
       ],
-      "news": [
-        {
-          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
-          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
-          "source": "Car Watch",
-          "date": "2026/11/11",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "NTT",
@@ -1189,15 +1225,15 @@
       "qtyLabel": "900株",
       "cost": 163.6,
       "purchaseValue": 147240.0,
-      "price": 168.4,
+      "price": 168.6,
       "previousClose": 168.4,
-      "value": 151559.99,
-      "deltaYen": -0.01,
-      "change": -3.624415456648933e-06,
-      "unrealizedYen": 4319.99,
-      "unrealizedPercent": 2.9339815993180776,
-      "weekChange": 2.3708169583491534,
-      "monthChange": -3.495705503447355,
+      "value": 151740.01,
+      "deltaYen": 180.01,
+      "change": 0.11876847002114665,
+      "unrealizedYen": 4500.01,
+      "unrealizedPercent": 3.0562384495816777,
+      "weekChange": 2.4924049261493053,
+      "monthChange": -3.3810853274982122,
       "intraday": [
         {
           "label": "09:00",
@@ -1441,11 +1477,31 @@
         },
         {
           "label": "14:55",
-          "value": 168.4
+          "value": 168.5
         },
         {
-          "label": "14:56",
-          "value": 168.4
+          "label": "15:00",
+          "value": 168.7
+        },
+        {
+          "label": "15:05",
+          "value": 168.5
+        },
+        {
+          "label": "15:10",
+          "value": 168.6
+        },
+        {
+          "label": "15:15",
+          "value": 168.6
+        },
+        {
+          "label": "15:20",
+          "value": 168.6
+        },
+        {
+          "label": "15:30",
+          "value": 168.6
         }
       ],
       "week": [
@@ -1467,7 +1523,7 @@
         },
         {
           "label": "11/16",
-          "value": 168.4
+          "value": 168.6
         }
       ],
       "month": [
@@ -1553,18 +1609,10 @@
         },
         {
           "label": "11/16",
-          "value": 168.4
+          "value": 168.6
         }
       ],
-      "news": [
-        {
-          "title": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース - group.ntt",
-          "description": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース",
-          "source": "group.ntt",
-          "date": "2026/11/13",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9McDB6Nk9RMUlBUDJldnlMWjAtOHlMcVdxbVZ5X3BDTWljMm85dFIwOVBMRlJza09CZHFFOHo4N204SVdQSUhPS0dHWG9NSTUtb190OWhCcXp3UzI0ZDZWbFpKSk5GLVU?oc=5"
-        }
-      ]
+      "news": []
     },
     {
       "name": "eMAXIS Slim 米国株式（S&P500）",
@@ -1689,15 +1737,7 @@
           "value": 44751.0
         }
       ],
-      "news": [
-        {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/11/16",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
-        }
-      ]
+      "news": []
     }
   ],
   "foreign_cash": []
