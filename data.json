@@ -1,9 +1,9 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/17 16:45",
+  "updated_at": "2026/11/17 17:49",
   "weather": {
     "text": "雪",
-    "max": 4.2,
+    "max": 4.5,
     "min": -0.4,
     "rain": 86
   },
@@ -106,7 +106,7 @@
         },
         {
           "label": "10:20",
-          "value": 1122.5
+          "value": 1122.0
         },
         {
           "label": "10:25",
@@ -274,7 +274,7 @@
         },
         {
           "label": "14:45",
-          "value": 1127.5
+          "value": 1128.0
         },
         {
           "label": "14:50",
@@ -936,11 +936,11 @@
         },
         {
           "label": "10:55",
-          "value": 264.8
+          "value": 264.7
         },
         {
           "label": "11:00",
-          "value": 264.8
+          "value": 264.9
         },
         {
           "label": "11:05",
@@ -1221,11 +1221,11 @@
       ],
       "news": [
         {
-          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
-          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
-          "source": "Car Watch",
-          "date": "2026/11/11",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
+          "title": "ホンダ元副社長が自動車3社の中間決算を斬る！・NTTドコモ前田社長に聞く「通信品質低下」「巨額販促費」の打開策・共同通信の加盟費が“200億円割れ”でコロナ禍以下の収入に - ダイヤモンド・オンライン",
+          "description": "ホンダ元副社長が自動車3社の中間決算を斬る！・NTTドコモ前田社長に聞く「通信品質低下」「巨額販促費」の打開策・共同通信の加盟費が“200億円割れ”でコロナ禍以下の収入に",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/11/17",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5abXQ0eHh4Nmh1dmJpNTd1M0RHc0p0R20ya09vZVZJMlh0QmMzVDI4U01JbUlFNWQ3aXBsRnJudC1aVU9vbi12MEVEZ1E?oc=5"
         }
       ]
     },
@@ -1626,11 +1626,11 @@
       ],
       "news": [
         {
-          "title": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース - group.ntt",
-          "description": "プログラマブルな光回路で通信向けデジタル信号処理を低消費電力化 ～伝送途中の光信号処理で、1300km長距離光通信で信号歪みの要因を60％低減～ | ニュースリリース",
-          "source": "group.ntt",
-          "date": "2026/11/13",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9McDB6Nk9RMUlBUDJldnlMWjAtOHlMcVdxbVZ5X3BDTWljMm85dFIwOVBMRlJza09CZHFFOHo4N204SVdQSUhPS0dHWG9NSTUtb190OWhCcXp3UzI0ZDZWbFpKSk5GLVU?oc=5"
+          "title": "ホンダ元副社長が自動車3社の中間決算を斬る！・NTTドコモ前田社長に聞く「通信品質低下」「巨額販促費」の打開策・共同通信の加盟費が“200億円割れ”でコロナ禍以下の収入に - ダイヤモンド・オンライン",
+          "description": "ホンダ元副社長が自動車3社の中間決算を斬る！・NTTドコモ前田社長に聞く「通信品質低下」「巨額販促費」の打開策・共同通信の加盟費が“200億円割れ”でコロナ禍以下の収入に",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/11/17",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5abXQ0eHh4Nmh1dmJpNTd1M0RHc0p0R20ya09vZVZJMlh0QmMzVDI4U01JbUlFNWQ3aXBsRnJudC1aVU9vbi12MEVEZ1E?oc=5"
         }
       ]
     },
