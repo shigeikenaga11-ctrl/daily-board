@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/17 22:40",
+  "updated_at": "2026/11/17 23:48",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雪",
+    "max": 4.5,
+    "min": -0.4,
+    "rain": 86
   },
   "summary": {
     "label": "日本株評価額",
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1280083.43,
+    "total": 1267254.62,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -7661.16,
-    "deltaPercent": -0.5949285331495744,
-    "unrealizedYen": -4121.550000000047,
-    "unrealizedPercent": -0.36868814932137484,
+    "deltaYen": -17918.82,
+    "deltaPercent": -1.3942725115763361,
+    "unrealizedYen": -16950.35999999987,
+    "unrealizedPercent": -1.51627345506689,
     "complete": true
   },
   "assets": [
@@ -1643,21 +1643,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 44560.0,
-      "previousClose": 44751.0,
-      "value": 599844.44,
-      "deltaYen": -2571.15,
-      "change": -0.4268061048915084,
-      "unrealizedYen": -161.54,
-      "unrealizedPercent": -0.026922731759859007,
-      "weekChange": 1.2704256721438156,
-      "monthChange": -0.03140844438461743,
+      "price": 43607.0,
+      "previousClose": 44560.0,
+      "value": 587015.63,
+      "deltaYen": -12828.81,
+      "change": -2.138689407540395,
+      "unrealizedYen": -12990.35,
+      "unrealizedPercent": -2.165036345687881,
+      "weekChange": -0.9787002134520217,
+      "monthChange": -2.9726542509400766,
       "intraday": [],
       "week": [
-        {
-          "label": "11/10",
-          "value": 44001.0
-        },
         {
           "label": "11/11",
           "value": 44038.0
@@ -1673,13 +1669,13 @@
         {
           "label": "11/16",
           "value": 44560.0
+        },
+        {
+          "label": "11/17",
+          "value": 43607.0
         }
       ],
       "month": [
-        {
-          "label": "10/19",
-          "value": 44574.0
-        },
         {
           "label": "10/20",
           "value": 44943.0
@@ -1755,6 +1751,10 @@
         {
           "label": "11/16",
           "value": 44560.0
+        },
+        {
+          "label": "11/17",
+          "value": 43607.0
         }
       ],
       "news": [
