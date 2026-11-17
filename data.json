@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/17 21:18",
+  "updated_at": "2026/11/17 22:40",
   "weather": {
     "text": "取得できません",
     "max": null,
@@ -106,7 +106,7 @@
         },
         {
           "label": "10:20",
-          "value": 1122.0
+          "value": 1122.5
         },
         {
           "label": "10:25",
@@ -274,7 +274,7 @@
         },
         {
           "label": "14:45",
-          "value": 1128.0
+          "value": 1127.5
         },
         {
           "label": "14:50",
@@ -936,11 +936,11 @@
         },
         {
           "label": "10:55",
-          "value": 264.7
+          "value": 264.8
         },
         {
           "label": "11:00",
-          "value": 264.9
+          "value": 264.8
         },
         {
           "label": "11:05",
@@ -1759,11 +1759,11 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
-          "date": "2026/11/17",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "title": "モルガン・スタンレー、2027年の米国株に強気 S&P500目標を8,700ポイントへ引き上げ、15%の上昇余地を示唆 - BigGo ファイナンス",
+          "description": "モルガン・スタンレー、2027年の米国株に強気 S&P500目標を8,700ポイントへ引き上げ、15%の上昇余地を示唆",
+          "source": "BigGo ファイナンス",
+          "date": "2026/11/16",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oY2MtXy1BN2tXZ0d1VEVHNjItQ25UcG9FckRYTjBjRThxSWlaNmF3VUh6V3k1NTdIZjM5NUZ2QUx0UHQ5SUt1czl2S0lFbWxUVlhuckdJSkRsZzF2WEtBTThBczlROG52S3FGSW03MnZfU2NX?oc=5"
         }
       ]
     }
