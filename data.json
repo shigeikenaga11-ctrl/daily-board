@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/17 18:53",
+  "updated_at": "2026/11/17 21:18",
   "weather": {
-    "text": "雪",
-    "max": 4.5,
-    "min": -0.4,
-    "rain": 86
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
