@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/18 18:27",
+  "updated_at": "2026/11/18 21:04",
   "weather": {
     "text": "雨",
     "max": 9.2,
     "min": 1.7,
-    "rain": 88
+    "rain": 95
   },
   "summary": {
     "label": "日本株評価額",
@@ -1775,11 +1775,11 @@
       ],
       "news": [
         {
-          "title": "S&P500・オルカン 最新情報。18日も大幅安、エヌビディア中心にAI関連株への警戒が続く - Business Insider Japan",
-          "description": "S&P500・オルカン 最新情報。18日も大幅安、エヌビディア中心にAI関連株への警戒が続く",
-          "source": "Business Insider Japan",
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
           "date": "2026/11/18",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jTEExWFdaOTZDQjFDaE8tRkhlVUR5NldJeGJ2RlBvTG11bG1qa2dpLWt5dkFKOFdhdWZPUnZPSjlfT1ZfYWZQbTFmWWdyWWZQRXdBOC1sSXdkUWwyUjdzSUJQM2hUOTl6eW1JSnN5Q3VRVkRuT29Cb01CWE1TY28?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
