@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/18 22:14",
+  "updated_at": "2026/11/18 23:27",
   "weather": {
-    "text": "雨",
-    "max": 9.2,
-    "min": 1.7,
-    "rain": 95
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1269764.63,
+    "total": 1264285.8,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -10318.81,
-    "deltaPercent": -0.8061044833139939,
-    "unrealizedYen": -14440.350000000093,
-    "unrealizedPercent": -1.2917436200101635,
+    "deltaYen": -2968.83,
+    "deltaPercent": -0.234272570777666,
+    "unrealizedYen": -19919.179999999935,
+    "unrealizedPercent": -1.7818455702828393,
     "complete": true
   },
   "assets": [
@@ -920,7 +920,7 @@
         },
         {
           "label": "10:20",
-          "value": 262.9
+          "value": 263.0
         },
         {
           "label": "10:25",
@@ -1659,21 +1659,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 43607.0,
-      "previousClose": 44560.0,
-      "value": 587015.63,
-      "deltaYen": -12828.81,
-      "change": -2.138689407540395,
-      "unrealizedYen": -12990.35,
-      "unrealizedPercent": -2.165036345687881,
-      "weekChange": -0.9787002134520217,
-      "monthChange": -2.9726542509400766,
+      "price": 43200.0,
+      "previousClose": 43607.0,
+      "value": 581536.8,
+      "deltaYen": -5478.83,
+      "change": -0.9333363909464043,
+      "unrealizedYen": -18469.18,
+      "unrealizedPercent": -3.078165664542755,
+      "weekChange": -3.631658784688141,
+      "monthChange": -4.031989336887709,
       "intraday": [],
       "week": [
-        {
-          "label": "11/11",
-          "value": 44038.0
-        },
         {
           "label": "11/12",
           "value": 44828.0
@@ -1689,13 +1685,13 @@
         {
           "label": "11/17",
           "value": 43607.0
+        },
+        {
+          "label": "11/18",
+          "value": 43200.0
         }
       ],
       "month": [
-        {
-          "label": "10/20",
-          "value": 44943.0
-        },
         {
           "label": "10/21",
           "value": 45015.0
@@ -1771,6 +1767,10 @@
         {
           "label": "11/17",
           "value": 43607.0
+        },
+        {
+          "label": "11/18",
+          "value": 43200.0
         }
       ],
       "news": [
