@@ -1,10 +1,10 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/19 20:59",
+  "updated_at": "2026/11/19 22:35",
   "weather": {
     "text": "雨",
     "max": 7.9,
-    "min": -1.4,
+    "min": -1.9,
     "rain": 100
   },
   "summary": {
