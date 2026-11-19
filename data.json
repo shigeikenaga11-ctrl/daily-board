@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/19 22:35",
+  "updated_at": "2026/11/19 23:38",
   "weather": {
     "text": "雨",
     "max": 7.9,
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1255605.79,
+    "total": 1253761.56,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -14158.84,
-    "deltaPercent": -1.1150759491544506,
-    "unrealizedYen": -28599.189999999944,
-    "unrealizedPercent": -2.558305111715309,
+    "deltaYen": -10524.24,
+    "deltaPercent": -0.8324257062762233,
+    "unrealizedYen": -30443.419999999925,
+    "unrealizedPercent": -2.72327842166495,
     "complete": true
   },
   "assets": [
@@ -844,11 +844,11 @@
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結） 2026年11月19日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結） 2026年11月19日(適時開示) ：日経会社情報DIGITAL",
+          "title": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
           "date": "2026/11/19",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9EV1lDUFpCdGFubG91WmdkTF9KODJINjhJYmJsVEZUcVNfMzhlQ19CX21nd0Rvdi1FR19adGdPZTZOXzVxTkdQQjh0Z0d5eVh5cmlCWUVrRl9nNUFrUThvbXhRQkwtZGw2Nmc?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54SGZielR0VXdqTDJMMVBfVnJ1ajZZZlZJOTBLY252SjlVWFFDOFMtRm50TEs0Um1jR1NJVkpyamVocER0U3RvNm9NOHJreFpVMTFvTVNDeTNDNVoyZ1NUaFNJMlE3b25XWnc?oc=5"
         }
       ]
     },
@@ -1679,21 +1679,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 43200.0,
-      "previousClose": 43607.0,
-      "value": 581536.8,
-      "deltaYen": -5478.83,
-      "change": -0.9333363909464043,
-      "unrealizedYen": -18469.18,
-      "unrealizedPercent": -3.078165664542755,
-      "weekChange": -3.631658784688141,
-      "monthChange": -4.031989336887709,
+      "price": 43063.0,
+      "previousClose": 43200.0,
+      "value": 579692.57,
+      "deltaYen": -1844.23,
+      "change": -0.3171296296296311,
+      "unrealizedYen": -20313.4,
+      "unrealizedPercent": -3.3855335188010436,
+      "weekChange": -3.7719827489888447,
+      "monthChange": -4.782647149869545,
       "intraday": [],
       "week": [
-        {
-          "label": "11/12",
-          "value": 44828.0
-        },
         {
           "label": "11/13",
           "value": 44751.0
@@ -1709,13 +1705,13 @@
         {
           "label": "11/18",
           "value": 43200.0
+        },
+        {
+          "label": "11/19",
+          "value": 43063.0
         }
       ],
       "month": [
-        {
-          "label": "10/21",
-          "value": 45015.0
-        },
         {
           "label": "10/22",
           "value": 45226.0
@@ -1791,6 +1787,10 @@
         {
           "label": "11/18",
           "value": 43200.0
+        },
+        {
+          "label": "11/19",
+          "value": 43063.0
         }
       ],
       "news": [
