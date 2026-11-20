@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/20 22:17",
+  "updated_at": "2026/11/20 23:16",
   "weather": {
-    "text": "雪",
-    "max": 0.7,
-    "min": -4.1,
-    "rain": 100
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1251231.56,
+    "total": 1239708.52,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -4374.24,
-    "deltaPercent": -0.3483768552200061,
-    "unrealizedYen": -32973.419999999925,
-    "unrealizedPercent": -2.9495964374073447,
+    "deltaYen": -14053.050000000001,
+    "deltaPercent": -1.1208710121813672,
+    "unrealizedYen": -44496.45999999996,
+    "unrealizedPercent": -3.9803757054390663,
     "complete": true
   },
   "assets": [
@@ -431,11 +431,11 @@
       ],
       "news": [
         {
-          "title": "トヨタ紡織 マツダ系2社と連携加速、シート事業の競争力向上へ【決算会見録 解体新書】：ニュース - 中日BIZナビ",
-          "description": "トヨタ紡織 マツダ系2社と連携加速、シート事業の競争力向上へ【決算会見録 解体新書】：ニュース",
-          "source": "中日BIZナビ",
-          "date": "2026/11/19",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NdWg4UmtXWS1yQ0xlQXBFX0lkU2RnWjhYZ0NmWmUwVGJ4LWJLSHVBcXlPUDloN3laNDZoT1M1ZXlRdzE3Y1Ytb2lBTGpQOW9QTVJrRlEwRzNZSV9TRzc4?oc=5"
+          "title": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換 - Car Watch",
+          "description": "マツダ、2027年3月期 第1四半期決算は売上高で過去最高の1兆2857億円を記録 営業利益と当期純利益も黒字転換",
+          "source": "Car Watch",
+          "date": "2026/08/04",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GMjRtYVVycmV0VG90OW9HLXBNNlBCLTBXU0pRUnNkTllXSkg5b3JJd25waGRSTHpSMVVNb0hxbEdzOHlxUGZVazlLS2xTckRjY1pLZW5xaDB5aFE1eEprTTFYOXE?oc=5"
         }
       ]
     },
@@ -539,7 +539,7 @@
         },
         {
           "label": "10:45",
-          "value": 588.8
+          "value": 588.7
         },
         {
           "label": "10:50",
@@ -840,11 +840,11 @@
       ],
       "news": [
         {
-          "title": "【動いた日本株トップ】東京海上ホールディングスは2.03%上昇し、日経225の構成銘柄の中で値上がり率トップとなった。キオクシアホールディングスは売買代金で首位となった。 - Moomoo",
-          "description": "【動いた日本株トップ】東京海上ホールディングスは2.03%上昇し、日経225の構成銘柄の中で値上がり率トップとなった。キオクシアホールディングスは売買代金で首位となった。",
-          "source": "Moomoo",
-          "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVEMzVXpjbHlSTjVyak4wbllLWVZBZFYyOE1XTnZRa0w4RnVfLVdyUzFERkgzRWNtTjVUYmJNekFRRGpPU0RQMzdIdnEzd2dhSEYwYko1MUlMZw?oc=5"
+          "title": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL",
+          "source": "日本経済新聞",
+          "date": "2026/11/19",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54SGZielR0VXdqTDJMMVBfVnJ1ajZZZlZJOTBLY252SjlVWFFDOFMtRm50TEs0Um1jR1NJVkpyamVocER0U3RvNm9NOHJreFpVMTFvTVNDeTNDNVoyZ1NUaFNJMlE3b25XWnc?oc=5"
         }
       ]
     },
@@ -1675,21 +1675,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 43063.0,
-      "previousClose": 43200.0,
-      "value": 579692.57,
-      "deltaYen": -1844.23,
-      "change": -0.3171296296296311,
-      "unrealizedYen": -20313.4,
-      "unrealizedPercent": -3.3855335188010436,
-      "weekChange": -3.7719827489888447,
-      "monthChange": -4.782647149869545,
+      "price": 42207.0,
+      "previousClose": 43063.0,
+      "value": 568169.53,
+      "deltaYen": -11523.04,
+      "change": -1.98778533776095,
+      "unrealizedYen": -31836.45,
+      "unrealizedPercent": -5.306021717670288,
+      "weekChange": -5.280520646319564,
+      "monthChange": -4.4917632150615505,
       "intraday": [],
       "week": [
-        {
-          "label": "11/13",
-          "value": 44751.0
-        },
         {
           "label": "11/16",
           "value": 44560.0
@@ -1705,13 +1701,13 @@
         {
           "label": "11/19",
           "value": 43063.0
+        },
+        {
+          "label": "11/20",
+          "value": 42207.0
         }
       ],
       "month": [
-        {
-          "label": "10/22",
-          "value": 45226.0
-        },
         {
           "label": "10/23",
           "value": 44192.0
@@ -1787,15 +1783,19 @@
         {
           "label": "11/19",
           "value": 43063.0
+        },
+        {
+          "label": "11/20",
+          "value": 42207.0
         }
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
+          "title": "S&P500見通し（11/20〜11/27）｜AI株を巡り新たな疑心暗鬼、感謝祭週は反発か7,000ポイント割れか 2026年11月20日 - 外為どっとコム",
+          "description": "S&P500見通し（11/20〜11/27）｜AI株を巡り新たな疑心暗鬼、感謝祭週は反発か7,000ポイント割れか 2026年11月20日",
+          "source": "外為どっとコム",
           "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sR1dTNjdXMUhFUUtCNldLQmh2STJXY1RTWjM3LVpBWHVKb1RIaUc3OUJtWHp2aUQxU0Y2N2VyOXFLS0F4eGtvU2h5ejR1WHhHSXp6VjM1d1R6NUFLUEV0Rjhxcw?oc=5"
         }
       ]
     }
