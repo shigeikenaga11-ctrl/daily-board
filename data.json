@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/23 16:22",
+  "updated_at": "2026/11/23 17:36",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雨",
+    "max": 6.5,
+    "min": -1.2,
+    "rain": 45
   },
   "summary": {
     "label": "日本株評価額",
@@ -539,7 +539,7 @@
         },
         {
           "label": "10:45",
-          "value": 588.7
+          "value": 588.8
         },
         {
           "label": "10:50",
@@ -1249,11 +1249,11 @@
       ],
       "news": [
         {
-          "title": "ホンダ・青山元副社長が自動車3社の中間決算を斬る！ホンダの米新工場建設は「裏目」に!?トヨタ・日産の中国市場の「苦戦度合い」は？【動画】 - ダイヤモンド・オンライン",
-          "description": "ホンダ・青山元副社長が自動車3社の中間決算を斬る！ホンダの米新工場建設は「裏目」に!?トヨタ・日産の中国市場の「苦戦度合い」は？【動画】",
+          "title": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》 - ダイヤモンド・オンライン",
+          "description": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》",
           "source": "ダイヤモンド・オンライン",
-          "date": "2026/11/17",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5MV18tblFNMDBEdm51VEpIQ0Q4S1g0WGQtcEJCQTBhSmhxczBqNG9iQkhkc3VRa0pJcXFDQWhKVzlDZjdhSFVRQTFDVWM?oc=5"
+          "date": "2026/11/21",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE91RFA1MUhMNmt2eUFnVUpoXzlFbHRZbEZiYWRiOGxHUVl6b3ZMQ3lhckU3NnNSQkNwVl8wUUQxM2xMRFR3aGZoNHV2WGw?oc=5"
         }
       ]
     },
@@ -1681,7 +1681,7 @@
       "deltaYen": -11523.04,
       "change": -1.98778533776095,
       "unrealizedYen": -31836.45,
-      "unrealizedPercent": -5.306022116646238,
+      "unrealizedPercent": -5.306021717670288,
       "weekChange": -5.280520646319564,
       "monthChange": -4.4917632150615505,
       "intraday": [],
@@ -1791,15 +1791,13 @@
       ],
       "news": [
         {
-          "title": "S&P500見通し（11/20〜11/27）｜AI株を巡り新たな疑心暗鬼、感謝祭週は反発か7,000ポイント割れか 2026年11月20日 - 外為どっとコム",
-          "description": "S&P500見通し（11/20〜11/27）｜AI株を巡り新たな疑心暗鬼、感謝祭週は反発か7,000ポイント割れか 2026年11月20日",
-          "source": "外為どっとコム",
-          "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sR1dTNjdXMUhFUUtCNldLQmh2STJXY1RTWjM3LVpBWHVKb1RIaUc3OUJtWHp2aUQxU0Y2N2VyOXFLS0F4eGtvU2h5ejR1WHhHSXp6VjM1d1R6NUFLUEV0Rjhxcw?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/23",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
-      ],
-      "priceStale": true,
-      "priceAsOf": "2026/11/21 00:41"
+      ]
     }
   ],
   "foreign_cash": []
