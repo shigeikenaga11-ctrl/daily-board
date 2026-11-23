@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/23 22:29",
+  "updated_at": "2026/11/24 00:01",
   "weather": {
     "text": "雨",
-    "max": 6.5,
-    "min": -1.2,
-    "rain": 33
+    "max": 8.2,
+    "min": -1.1,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -1791,11 +1791,11 @@
       ],
       "news": [
         {
-          "title": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え 野村證券ストラテジストが解説 - 野村證券",
-          "description": "3つの逆風でも大崩れしない米国株 景気・業績改善とマネー・貸出拡大が支え ストラテジストが解説",
-          "source": "野村證券",
-          "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YSTd4czJrMExHQ2J0RE1xdXFFYmhsbnllUkN5S2NELVdHNnhLZV9MYUphclNmLTVtdDhZRFAzLVFMeUpMVXJ5Q0s2TzlMUGpFaWJOWThWRS1LMmJlT1Bv?oc=5"
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
+          "date": "2026/11/23",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
