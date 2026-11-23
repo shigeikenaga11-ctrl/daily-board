@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/21 00:41",
+  "updated_at": "2026/11/23 16:22",
   "weather": {
-    "text": "雪",
-    "max": 1.9,
-    "min": -9.9,
-    "rain": 100
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -41,8 +41,8 @@
       "change": -5.033707865168536,
       "unrealizedYen": -8100.0,
       "unrealizedPercent": -7.120879120879121,
-      "weekChange": -1.6357206012378445,
-      "monthChange": 1.2744651797906181,
+      "weekChange": -6.421612046058456,
+      "monthChange": -3.8233955393718655,
       "intraday": [
         {
           "label": "09:00",
@@ -315,10 +315,6 @@
       ],
       "week": [
         {
-          "label": "11/13",
-          "value": 1131.0
-        },
-        {
           "label": "11/16",
           "value": 1129.0
         },
@@ -333,6 +329,10 @@
         {
           "label": "11/19",
           "value": 1112.5
+        },
+        {
+          "label": "11/20",
+          "value": 1056.5
         }
       ],
       "month": [
@@ -423,6 +423,10 @@
         {
           "label": "11/19",
           "value": 1112.5
+        },
+        {
+          "label": "11/20",
+          "value": 1056.5
         }
       ],
       "news": [
@@ -450,8 +454,8 @@
       "change": 2.031802120141335,
       "unrealizedYen": -2900.0,
       "unrealizedPercent": -2.449324324324324,
-      "weekChange": -5.208503911831331,
-      "monthChange": 3.9867743328491745,
+      "weekChange": -3.3311053901580734,
+      "monthChange": 6.099579818410583,
       "intraday": [
         {
           "label": "09:05",
@@ -720,10 +724,6 @@
       ],
       "week": [
         {
-          "label": "11/13",
-          "value": 597.1
-        },
-        {
           "label": "11/16",
           "value": 597.4
         },
@@ -738,6 +738,10 @@
         {
           "label": "11/19",
           "value": 566.0
+        },
+        {
+          "label": "11/20",
+          "value": 577.5
         }
       ],
       "month": [
@@ -828,6 +832,10 @@
         {
           "label": "11/19",
           "value": 566.0
+        },
+        {
+          "label": "11/20",
+          "value": 577.5
         }
       ],
       "news": [
@@ -855,8 +863,8 @@
       "change": 1.4089824040246501,
       "unrealizedYen": -5350.01,
       "unrealizedPercent": -3.8628202913470218,
-      "weekChange": -1.203905882774381,
-      "monthChange": -6.080114316487584,
+      "weekChange": -1.2972572862700482,
+      "monthChange": -4.756801867029592,
       "intraday": [
         {
           "label": "09:05",
@@ -1125,10 +1133,6 @@
       ],
       "week": [
         {
-          "label": "11/13",
-          "value": 265.8
-        },
-        {
           "label": "11/16",
           "value": 269.8
         },
@@ -1143,6 +1147,10 @@
         {
           "label": "11/19",
           "value": 262.6
+        },
+        {
+          "label": "11/20",
+          "value": 266.3
         }
       ],
       "month": [
@@ -1233,6 +1241,10 @@
         {
           "label": "11/19",
           "value": 262.6
+        },
+        {
+          "label": "11/20",
+          "value": 266.3
         }
       ],
       "news": [
@@ -1260,8 +1272,8 @@
       "change": -0.7104813805552501,
       "unrealizedYen": 3690.0,
       "unrealizedPercent": 2.5061106040600167,
-      "weekChange": 0.2969121247755835,
-      "monthChange": -4.630159189400773,
+      "weekChange": -0.5338132400308782,
+      "monthChange": -5.30774072914435,
       "intraday": [
         {
           "label": "09:05",
@@ -1530,10 +1542,6 @@
       ],
       "week": [
         {
-          "label": "11/13",
-          "value": 168.4
-        },
-        {
           "label": "11/16",
           "value": 168.6
         },
@@ -1548,6 +1556,10 @@
         {
           "label": "11/19",
           "value": 168.9
+        },
+        {
+          "label": "11/20",
+          "value": 167.7
         }
       ],
       "month": [
@@ -1638,15 +1650,19 @@
         {
           "label": "11/19",
           "value": 168.9
+        },
+        {
+          "label": "11/20",
+          "value": 167.7
         }
       ],
       "news": [
         {
-          "title": "なぜNTTドコモは5Gで出遅れたのか？ KDDI、ソフトバンクとは異なる戦略と通信品質回復への一手 - JBpress",
-          "description": "なぜNTTドコモは5Gで出遅れたのか？ KDDI、ソフトバンクとは異なる戦略と通信品質回復への一手",
-          "source": "JBpress",
-          "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YZGxhYWpzSk5FUG0zdkJ0WGM3bW1JdGs0M2lXanVpUFFRcXRrcmR3OEZwbXdLSTk5QnQ4NnBVX2pIWDF6dHZZc1BhTXpDWGpkbmZRb0hn?oc=5"
+          "title": "キオクシアHD株、プライム売買高首位に 高頻度の約定で積み上げ、2位のNTTは4割が板寄せ - QUICK Money World",
+          "description": "キオクシアHD株、プライム売買高首位に 高頻度の約定で積み上げ、2位のNTTは4割が板寄せ",
+          "source": "QUICK Money World",
+          "date": "2026/11/19",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE45S0podHlqWnROeEtUc0ZKelpqWVdtXzh2UGw0Z1lORUo5eEZqMUdiQml1VXlWV1p0REhHVXhMbEVaNXRWYk9INE95VzhlUGd0SGZVVVJB?oc=5"
         }
       ]
     },
@@ -1665,7 +1681,7 @@
       "deltaYen": -11523.04,
       "change": -1.98778533776095,
       "unrealizedYen": -31836.45,
-      "unrealizedPercent": -5.306021717670288,
+      "unrealizedPercent": -5.306022116646238,
       "weekChange": -5.280520646319564,
       "monthChange": -4.4917632150615505,
       "intraday": [],
@@ -1781,7 +1797,9 @@
           "date": "2026/11/20",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sR1dTNjdXMUhFUUtCNldLQmh2STJXY1RTWjM3LVpBWHVKb1RIaUc3OUJtWHp2aUQxU0Y2N2VyOXFLS0F4eGtvU2h5ejR1WHhHSXp6VjM1d1R6NUFLUEV0Rjhxcw?oc=5"
         }
-      ]
+      ],
+      "priceStale": true,
+      "priceAsOf": "2026/11/21 00:41"
     }
   ],
   "foreign_cash": []
