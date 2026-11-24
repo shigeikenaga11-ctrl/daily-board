@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/25 01:11",
+  "updated_at": "2026/11/25 03:08",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雪",
+    "max": -0.5,
+    "min": -3.3,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -1606,11 +1606,11 @@
       ],
       "news": [
         {
-          "title": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報 - group.ntt",
-          "description": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報",
-          "source": "group.ntt",
-          "date": "2026/11/20",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45cENKWjNvaU9ObkVZU0FtR0RMalp0NGY5MWtYSFYweW52ejF5dFc4VUdRZFJDT2pGbklRNVgzYWhkOXhlejlKOVM2RnU1ejdma0VrWU45dWluLWhJbml3Ug?oc=5"
+          "title": "NTTデータ経営研、AIで業務高度化 組織知の共有基盤を支援 AIコンサルティングサービス「SPARK」第2弾 - 株式会社インプレス",
+          "description": "NTTデータ経営研、AIで業務高度化 組織知の共有基盤を支援 AIコンサルティングサービス「SPARK」第2弾",
+          "source": "株式会社インプレス",
+          "date": "2026/11/24",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Td1hIZkExLUJ1OW5HYTRaYkw2bl9GSkJxcVRXbDRScnZ1UDlhQmRuN2NKYnRzNjdhclJER1ZNV2lTU29Dd2lIcVI5bVBmTU90TC1xM2tGVFZtN18xR3BMNk5XTQ?oc=5"
         }
       ]
     },
@@ -1739,11 +1739,11 @@
       ],
       "news": [
         {
-          "title": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか - マネクリ",
-          "description": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか",
-          "source": "マネクリ",
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
           "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzONIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
