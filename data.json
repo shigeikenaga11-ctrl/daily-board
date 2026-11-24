@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/24 18:42",
+  "updated_at": "2026/11/24 19:41",
   "weather": {
-    "text": "雨",
-    "max": 8.1,
-    "min": -1.4,
-    "rain": 100
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -1221,11 +1221,11 @@
       ],
       "news": [
         {
-          "title": "日産自動車[7201]：2026年3月期決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "日産自動車[7201]：2026年3月期決算短信〔日本基準〕（連結） 2026年5月13日(適時開示) ：日経会社情報DIGITAL",
-          "source": "日本経済新聞",
-          "date": "2026/05/13",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84V3VURGFzcEVTQkl6S0VJOV83ek5selpRang1X3VmeWRaLVZZRXBBTHJSUkdGYVU1Y2hHRGwtaHM0RldKN2M3dXpENWl5QVdZT1pCQ3YwMzRGZEZxc0JNWVRaZUNkMXgyRkE?oc=5"
+          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
+          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
+          "source": "Car Watch",
+          "date": "2026/11/11",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
         }
       ]
     },
@@ -1759,7 +1759,7 @@
           "description": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか",
           "source": "マネクリ",
           "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aN0JWeDZ2dDAyaG5ldTI1YnBfZDMwS1FZQUxEX1lOTUV1amJWdDJEckVCRC0wTE1JY2ZkQ0tHWDZhY0ZFVjFJdV9lRGMyTWxham1XTtIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzONIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
         }
       ]
     }
