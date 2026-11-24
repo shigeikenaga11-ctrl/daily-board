@@ -1,10 +1,10 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/24 20:47",
+  "updated_at": "2026/11/24 23:07",
   "weather": {
     "text": "雨",
     "max": 8.1,
-    "min": -1.4,
+    "min": -1.1,
     "rain": 100
   },
   "summary": {
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1243178.53,
+    "total": 1246018.9100000001,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -8053.040000000001,
-    "deltaPercent": -0.6436090802919878,
-    "unrealizedYen": -41026.44999999995,
-    "unrealizedPercent": -3.669970259665837,
+    "deltaYen": 6310.38,
+    "deltaPercent": 0.5090212616347811,
+    "unrealizedYen": -38186.06999999983,
+    "unrealizedPercent": -3.4158875855336586,
     "complete": true
   },
   "assets": [
@@ -1622,11 +1622,11 @@
       ],
       "news": [
         {
-          "title": "NTTデータ経営研究所、社内情報をAIエージェントが活用可能な組織知へ変える「AI-era Knowledge Management」 - Yahoo!ニュース",
+          "title": "NTTデータ経営研究所、社内情報をAIエージェントが活用可能な組織知へ変える「AI-era Knowledge Management」 - 千葉テレビ放送株式会社",
           "description": "NTTデータ経営研究所、社内情報をAIエージェントが活用可能な組織知へ変える「AI-era Knowledge Management」",
-          "source": "Yahoo!ニュース",
+          "source": "千葉テレビ放送株式会社",
           "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mNzVvWXY5cXVrRVdEYl9hQlFIMXh3cE9ocDJmQXZtSUxCOFBFLWNZby1FbUQ0M3BzT2VUbnZJbUFSTEljOHdILVRBSVB1bTVhMkR4a1dmaEh1Q1Vfck9GLUdaTXZoYVdUSGpNekJBX3I3bExJTWRsLXJFdU5HLW8?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA5Unl4UE9Ub1RjSlBSSHVxbWZONEZEMTA3WU9VcENob1BMaFFTaXRicTZZdXdYdm5MQjVvbmp5T3Z2LW5DYXI4NUVkMUVualM2THRLeTM0ZW91SUFUV2o0?oc=5"
         }
       ]
     },
@@ -1639,21 +1639,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 42207.0,
-      "previousClose": 43063.0,
-      "value": 568169.53,
-      "deltaYen": -11523.04,
-      "change": -1.98778533776095,
-      "unrealizedYen": -31836.45,
-      "unrealizedPercent": -5.306021717670288,
-      "weekChange": -5.280520646319564,
-      "monthChange": -4.4917632150615505,
+      "price": 42418.0,
+      "previousClose": 42207.0,
+      "value": 571009.91,
+      "deltaYen": 2840.38,
+      "change": 0.49991707536665153,
+      "unrealizedYen": -28996.07,
+      "unrealizedPercent": -4.832630350892937,
+      "weekChange": -2.7266264590547373,
+      "monthChange": -3.964318866173111,
       "intraday": [],
       "week": [
-        {
-          "label": "11/16",
-          "value": 44560.0
-        },
         {
           "label": "11/17",
           "value": 43607.0
@@ -1669,13 +1665,13 @@
         {
           "label": "11/20",
           "value": 42207.0
+        },
+        {
+          "label": "11/24",
+          "value": 42418.0
         }
       ],
       "month": [
-        {
-          "label": "10/23",
-          "value": 44192.0
-        },
         {
           "label": "10/26",
           "value": 44169.0
@@ -1751,15 +1747,19 @@
         {
           "label": "11/20",
           "value": 42207.0
+        },
+        {
+          "label": "11/24",
+          "value": 42418.0
         }
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
+          "title": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか - マネクリ",
+          "description": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか",
+          "source": "マネクリ",
           "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzONIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
         }
       ]
     }
