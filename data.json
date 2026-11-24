@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/24 23:07",
+  "updated_at": "2026/11/25 00:01",
   "weather": {
-    "text": "雨",
-    "max": 8.1,
-    "min": -1.1,
-    "rain": 100
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -41,8 +41,8 @@
       "change": 1.6564126833885418,
       "unrealizedYen": -6350.0,
       "unrealizedPercent": -5.582417582417582,
-      "weekChange": -4.702750665483579,
-      "monthChange": -1.6483516483516536,
+      "weekChange": -6.421612046058456,
+      "monthChange": -3.2509157509157505,
       "intraday": [
         {
           "label": "09:00",
@@ -315,6 +315,10 @@
       ],
       "week": [
         {
+          "label": "11/16",
+          "value": 1129.0
+        },
+        {
           "label": "11/17",
           "value": 1127.0
         },
@@ -329,10 +333,6 @@
         {
           "label": "11/20",
           "value": 1056.5
-        },
-        {
-          "label": "11/24",
-          "value": 1074.0
         }
       ],
       "month": [
@@ -411,10 +411,6 @@
         {
           "label": "11/20",
           "value": 1056.5
-        },
-        {
-          "label": "11/24",
-          "value": 1074.0
         }
       ],
       "news": [
@@ -442,8 +438,8 @@
       "change": 1.3160130884740218,
       "unrealizedYen": -1380.0,
       "unrealizedPercent": -1.1655446645375844,
-      "weekChange": 0.1712035681899815,
-      "monthChange": 0.051297503288405544,
+      "weekChange": -3.3311053901580734,
+      "monthChange": -1.248287952350824,
       "intraday": [
         {
           "label": "09:00",
@@ -716,6 +712,10 @@
       ],
       "week": [
         {
+          "label": "11/16",
+          "value": 597.4
+        },
+        {
           "label": "11/17",
           "value": 584.1
         },
@@ -730,10 +730,6 @@
         {
           "label": "11/20",
           "value": 577.5
-        },
-        {
-          "label": "11/24",
-          "value": 585.1
         }
       ],
       "month": [
@@ -812,10 +808,6 @@
         {
           "label": "11/20",
           "value": 577.5
-        },
-        {
-          "label": "11/24",
-          "value": 585.1
         }
       ],
       "news": [
@@ -843,8 +835,8 @@
       "change": 1.164098346407938,
       "unrealizedYen": -3800.0,
       "unrealizedPercent": -2.743684513904558,
-      "weekChange": 2.4334577553172476,
-      "monthChange": 0.7856364382411218,
+      "weekChange": -1.2972572862700482,
+      "monthChange": -0.3741115023074837,
       "intraday": [
         {
           "label": "09:00",
@@ -1117,6 +1109,10 @@
       ],
       "week": [
         {
+          "label": "11/16",
+          "value": 269.8
+        },
+        {
           "label": "11/17",
           "value": 263.0
         },
@@ -1131,10 +1127,6 @@
         {
           "label": "11/20",
           "value": 266.3
-        },
-        {
-          "label": "11/24",
-          "value": 269.4
         }
       ],
       "month": [
@@ -1213,10 +1205,6 @@
         {
           "label": "11/20",
           "value": 266.3
-        },
-        {
-          "label": "11/24",
-          "value": 269.4
         }
       ],
       "news": [
@@ -1244,8 +1232,8 @@
       "change": -0.8944562025985703,
       "unrealizedYen": 2340.0,
       "unrealizedPercent": 1.589240188412095,
-      "weekChange": -2.1777499006247703,
-      "monthChange": -5.782311395219086,
+      "weekChange": -0.5338132400308782,
+      "monthChange": -4.931971229742526,
       "intraday": [
         {
           "label": "09:00",
@@ -1518,6 +1506,10 @@
       ],
       "week": [
         {
+          "label": "11/16",
+          "value": 168.6
+        },
+        {
           "label": "11/17",
           "value": 169.9
         },
@@ -1532,10 +1524,6 @@
         {
           "label": "11/20",
           "value": 167.7
-        },
-        {
-          "label": "11/24",
-          "value": 166.2
         }
       ],
       "month": [
@@ -1614,19 +1602,15 @@
         {
           "label": "11/20",
           "value": 167.7
-        },
-        {
-          "label": "11/24",
-          "value": 166.2
         }
       ],
       "news": [
         {
-          "title": "NTTデータ経営研究所、社内情報をAIエージェントが活用可能な組織知へ変える「AI-era Knowledge Management」 - 千葉テレビ放送株式会社",
-          "description": "NTTデータ経営研究所、社内情報をAIエージェントが活用可能な組織知へ変える「AI-era Knowledge Management」",
-          "source": "千葉テレビ放送株式会社",
-          "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA5Unl4UE9Ub1RjSlBSSHVxbWZONEZEMTA3WU9VcENob1BMaFFTaXRicTZZdXdYdm5MQjVvbmp5T3Z2LW5DYXI4NUVkMUVualM2THRLeTM0ZW91SUFUV2o0?oc=5"
+          "title": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報 - group.ntt",
+          "description": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報",
+          "source": "group.ntt",
+          "date": "2026/11/20",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45cENKWjNvaU9ObkVZU0FtR0RMalp0NGY5MWtYSFYweW52ejF5dFc4VUdRZFJDT2pGbklRNVgzYWhkOXhlejlKOVM2RnU1ejdma0VrWU45dWluLWhJbml3Ug?oc=5"
         }
       ]
     },
@@ -1755,11 +1739,11 @@
       ],
       "news": [
         {
-          "title": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか - マネクリ",
-          "description": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか",
-          "source": "マネクリ",
+          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
           "date": "2026/11/24",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzONIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
       ]
     }
