@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/25 19:41",
+  "updated_at": "2026/11/25 22:20",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雪",
+    "max": -1.1,
+    "min": -4.1,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -1225,11 +1225,11 @@
       ],
       "news": [
         {
-          "title": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》 - ダイヤモンド・オンライン",
-          "description": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/11/21",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE91RFA1MUhMNmt2eUFnVUpoXzlFbHRZbEZiYWRiOGxHUVl6b3ZMQ3lhckU3NnNSQkNwVl8wUUQxM2xMRFR3aGZoNHV2WGw?oc=5"
+          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
+          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
+          "source": "Car Watch",
+          "date": "2026/11/11",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
         }
       ]
     },
@@ -1626,11 +1626,11 @@
       ],
       "news": [
         {
-          "title": "【独自】NTTドコモに代理店100社削減構想が浮上、最大3400万円の“手切れ金”で経営譲渡の圧力も…内部資料で判明した「ドコモショップ大再編」の全貌とは？ - ダイヤモンド・オンライン",
-          "description": "【独自】NTTドコモに代理店100社削減構想が浮上、最大3400万円の“手切れ金”で経営譲渡の圧力も…内部資料で判明した「ドコモショップ大再編」の全貌とは？",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/11/25",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5YX3RHTk5UdDJfT1VCNkRxRHFSMzdZLVFOTU9PRElVZXpyV2NwX0tLTlhwaFJ5WWRoRXVfRkt5VEZ0UnZNcHpyRjgwT0Q?oc=5"
+          "title": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報 - group.ntt",
+          "description": "連結業績概況と業績予想/セグメント別の状況 | IR資料室 | 株主通信『NTTis』 | 株主・投資家情報",
+          "source": "group.ntt",
+          "date": "2026/11/20",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45cENKWjNvaU9ObkVZU0FtR0RMalp0NGY5MWtYSFYweW52ejF5dFc4VUdRZFJDT2pGbklRNVgzYWhkOXhlejlKOVM2RnU1ejdma0VrWU45dWluLWhJbml3Ug?oc=5"
         }
       ]
     },
@@ -1649,7 +1649,7 @@
       "deltaYen": 2840.38,
       "change": 0.49991707536665153,
       "unrealizedYen": -28996.07,
-      "unrealizedPercent": -4.832630168119325,
+      "unrealizedPercent": -4.832630350892937,
       "weekChange": -2.7266264590547373,
       "monthChange": -3.964318866173111,
       "intraday": [],
@@ -1759,15 +1759,13 @@
       ],
       "news": [
         {
-          "title": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "eMAXIS Slim米国株式(S&P500)【03311187】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
+          "title": "S&P500・オルカン 最新情報。25日は反転下落、新たな「関税」計画の報道が株式相場の重しに - Business Insider Japan",
+          "description": "S&P500・オルカン 最新情報。25日は反転下落、新たな「関税」計画の報道が株式相場の重しに",
+          "source": "Business Insider Japan",
           "date": "2026/11/25",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBubV9tMlVqUm9KRGUxZkN5cHFiVjJpUFZEbVBwcDBWOE9GRThnZThBYy1hYUIxNHkxdGo1blBNQkNnZmxWT19iSm91YkowSndLMU5kSFdHMHNuMkg0b2lub1ZKa1JGaWZhV2ZnTnJNSWRwNHB3REI3NE01ZGZMMFU?oc=5"
         }
-      ],
-      "priceStale": true,
-      "priceAsOf": "2026/11/25 18:35"
+      ]
     }
   ],
   "foreign_cash": []
