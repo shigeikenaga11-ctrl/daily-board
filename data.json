@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/25 18:35",
+  "updated_at": "2026/11/25 19:41",
   "weather": {
-    "text": "雪",
-    "max": -1.1,
-    "min": -3.7,
-    "rain": 92
+    "text": "取得できません",
+    "max": null,
+    "min": null,
+    "rain": null
   },
   "summary": {
     "label": "日本株評価額",
@@ -1649,7 +1649,7 @@
       "deltaYen": 2840.38,
       "change": 0.49991707536665153,
       "unrealizedYen": -28996.07,
-      "unrealizedPercent": -4.832630350892937,
+      "unrealizedPercent": -4.832630168119325,
       "weekChange": -2.7266264590547373,
       "monthChange": -3.964318866173111,
       "intraday": [],
@@ -1765,7 +1765,9 @@
           "date": "2026/11/25",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEMU9Tck5nc1F6c2FMaUVWSm52cXRNVUY1b0cwYXZHZlFpRHlQNlZtTHp2eGZBZFAzQTVhaW9LVlNhREtGT0dQNnl3X25HRlRaNUF4RA?oc=5"
         }
-      ]
+      ],
+      "priceStale": true,
+      "priceAsOf": "2026/11/25 18:35"
     }
   ],
   "foreign_cash": []
