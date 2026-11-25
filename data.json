@@ -1,10 +1,10 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/25 23:41",
+  "updated_at": "2026/11/26 00:55",
   "weather": {
     "text": "雪",
-    "max": -1.1,
-    "min": -4.1,
+    "max": 5.7,
+    "min": -3.6,
     "rain": 100
   },
   "summary": {
@@ -41,8 +41,8 @@
       "change": 0.8379888268156499,
       "unrealizedYen": -5450.0,
       "unrealizedPercent": -4.791208791208791,
-      "weekChange": -3.2603841000446665,
-      "monthChange": -0.8241758241758212,
+      "weekChange": -4.702750665483579,
+      "monthChange": -1.6483516483516536,
       "intraday": [
         {
           "label": "09:00",
@@ -315,6 +315,10 @@
       ],
       "week": [
         {
+          "label": "11/17",
+          "value": 1127.0
+        },
+        {
           "label": "11/18",
           "value": 1119.5
         },
@@ -329,10 +333,6 @@
         {
           "label": "11/24",
           "value": 1074.0
-        },
-        {
-          "label": "11/25",
-          "value": 1083.0
         }
       ],
       "month": [
@@ -415,10 +415,6 @@
         {
           "label": "11/24",
           "value": 1074.0
-        },
-        {
-          "label": "11/25",
-          "value": 1083.0
         }
       ],
       "news": [
@@ -446,8 +442,8 @@
       "change": 2.1363827697722604,
       "unrealizedYen": 1120.0,
       "unrealizedPercent": 0.945941821948902,
-      "weekChange": 2.804057824748152,
-      "monthChange": 2.1887804480427153,
+      "weekChange": 0.1712035681899815,
+      "monthChange": 0.051297503288405544,
       "intraday": [
         {
           "label": "09:05",
@@ -716,6 +712,10 @@
       ],
       "week": [
         {
+          "label": "11/17",
+          "value": 584.1
+        },
+        {
           "label": "11/18",
           "value": 581.3
         },
@@ -730,10 +730,6 @@
         {
           "label": "11/24",
           "value": 585.1
-        },
-        {
-          "label": "11/25",
-          "value": 597.6
         }
       ],
       "month": [
@@ -816,10 +812,6 @@
         {
           "label": "11/24",
           "value": 585.1
-        },
-        {
-          "label": "11/25",
-          "value": 597.6
         }
       ],
       "news": [
@@ -847,8 +839,8 @@
       "change": -4.974016332590936,
       "unrealizedYen": -10500.0,
       "unrealizedPercent": -7.581227436823104,
-      "weekChange": -5.220290923692838,
-      "monthChange": -4.227455409283786,
+      "weekChange": 2.4334577553172476,
+      "monthChange": 0.7856364382411218,
       "intraday": [
         {
           "label": "09:05",
@@ -1117,6 +1109,10 @@
       ],
       "week": [
         {
+          "label": "11/17",
+          "value": 263.0
+        },
+        {
           "label": "11/18",
           "value": 270.1
         },
@@ -1131,10 +1127,6 @@
         {
           "label": "11/24",
           "value": 269.4
-        },
-        {
-          "label": "11/25",
-          "value": 256.0
         }
       ],
       "month": [
@@ -1217,19 +1209,15 @@
         {
           "label": "11/24",
           "value": 269.4
-        },
-        {
-          "label": "11/25",
-          "value": 256.0
         }
       ],
       "news": [
         {
-          "title": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》 - ダイヤモンド・オンライン",
-          "description": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》",
-          "source": "ダイヤモンド・オンライン",
-          "date": "2026/11/21",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE91RFA1MUhMNmt2eUFnVUpoXzlFbHRZbEZiYWRiOGxHUVl6b3ZMQ3lhckU3NnNSQkNwVl8wUUQxM2xMRFR3aGZoNHV2WGw?oc=5"
+          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
+          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
+          "source": "Car Watch",
+          "date": "2026/11/11",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
         }
       ]
     },
@@ -1248,8 +1236,8 @@
       "change": 1.0830324909747446,
       "unrealizedYen": 3960.0,
       "unrealizedPercent": 2.689486552567237,
-      "weekChange": -1.292595174905442,
-      "monthChange": -4.761901466625718,
+      "weekChange": -2.1777499006247703,
+      "monthChange": -5.782311395219086,
       "intraday": [
         {
           "label": "09:05",
@@ -1518,6 +1506,10 @@
       ],
       "week": [
         {
+          "label": "11/17",
+          "value": 169.9
+        },
+        {
           "label": "11/18",
           "value": 170.2
         },
@@ -1532,10 +1524,6 @@
         {
           "label": "11/24",
           "value": 166.2
-        },
-        {
-          "label": "11/25",
-          "value": 168.0
         }
       ],
       "month": [
@@ -1618,10 +1606,6 @@
         {
           "label": "11/24",
           "value": 166.2
-        },
-        {
-          "label": "11/25",
-          "value": 168.0
         }
       ],
       "news": [
@@ -1759,11 +1743,11 @@
       ],
       "news": [
         {
-          "title": "S&P500・オルカン 最新情報。25日は反転下落、新たな「関税」計画の報道が株式相場の重しに - Business Insider Japan",
-          "description": "S&P500・オルカン 最新情報。25日は反転下落、新たな「関税」計画の報道が株式相場の重しに",
-          "source": "Business Insider Japan",
-          "date": "2026/11/25",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBubV9tMlVqUm9KRGUxZkN5cHFiVjJpUFZEbVBwcDBWOE9GRThnZThBYy1hYUIxNHkxdGo1blBNQkNnZmxWT19iSm91YkowSndLMU5kSFdHMHNuMkg0b2lub1ZKa1JGaWZhV2ZnTnJNSWRwNHB3REI3NE01ZGZMMFU?oc=5"
+          "title": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか - マネクリ",
+          "description": "フアン氏エヌビディアCEO復帰で米国株が急反発、S＆P500の2026年末8,000ポイントへの道は開けるか",
+          "source": "マネクリ",
+          "date": "2026/11/24",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzONIBV0FVX3lxTFA5NS1kZDlqV0JGS3ctYi1uellzTFRlTzdWMGFpd2VUYTFBN25jLUhCSnRjQ2s3Zk1lWW1nQVppc3lBdGF1LXFTaVQtM2JMa0RWVVNYczYzOA?oc=5"
         }
       ]
     }
