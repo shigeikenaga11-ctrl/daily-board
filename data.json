@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/25 22:20",
+  "updated_at": "2026/11/25 23:41",
   "weather": {
     "text": "雪",
     "max": -1.1,
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1244338.9100000001,
+    "total": 1242925.45,
     "purchaseTotal": 1117895.98,
-    "deltaYen": 1160.38,
-    "deltaPercent": 0.0933397715612093,
-    "unrealizedYen": -39866.06999999983,
-    "unrealizedPercent": -3.566169904287502,
+    "deltaYen": -3093.46,
+    "deltaPercent": -0.2482675002099286,
+    "unrealizedYen": -41279.53000000003,
+    "unrealizedPercent": -3.6926092175409764,
     "complete": true
   },
   "assets": [
@@ -1225,11 +1225,11 @@
       ],
       "news": [
         {
-          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
-          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
-          "source": "Car Watch",
-          "date": "2026/11/11",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
+          "title": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》 - ダイヤモンド・オンライン",
+          "description": "【破談後の再会】ホンダ・青山元副社長が日産エスピノーサ社長と対面！経営統合を交渉した2人は何を語った？古巣ホンダにも容赦なし、モビリティショーを辛口評価【前編・動画】《再配信》",
+          "source": "ダイヤモンド・オンライン",
+          "date": "2026/11/21",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE91RFA1MUhMNmt2eUFnVUpoXzlFbHRZbEZiYWRiOGxHUVl6b3ZMQ3lhckU3NnNSQkNwVl8wUUQxM2xMRFR3aGZoNHV2WGw?oc=5"
         }
       ]
     },
@@ -1643,21 +1643,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 42418.0,
-      "previousClose": 42207.0,
-      "value": 571009.91,
-      "deltaYen": 2840.38,
-      "change": 0.49991707536665153,
-      "unrealizedYen": -28996.07,
-      "unrealizedPercent": -4.832630350892937,
-      "weekChange": -2.7266264590547373,
-      "monthChange": -3.964318866173111,
+      "price": 42313.0,
+      "previousClose": 42418.0,
+      "value": 569596.45,
+      "deltaYen": -1413.46,
+      "change": -0.24753642321655445,
+      "unrealizedYen": -30409.53,
+      "unrealizedPercent": -5.068204253791621,
+      "weekChange": -2.053240740740736,
+      "monthChange": -5.106526126934286,
       "intraday": [],
       "week": [
-        {
-          "label": "11/17",
-          "value": 43607.0
-        },
         {
           "label": "11/18",
           "value": 43200.0
@@ -1673,13 +1669,13 @@
         {
           "label": "11/24",
           "value": 42418.0
+        },
+        {
+          "label": "11/25",
+          "value": 42313.0
         }
       ],
       "month": [
-        {
-          "label": "10/26",
-          "value": 44169.0
-        },
         {
           "label": "10/27",
           "value": 44590.0
@@ -1755,6 +1751,10 @@
         {
           "label": "11/24",
           "value": 42418.0
+        },
+        {
+          "label": "11/25",
+          "value": 42313.0
         }
       ],
       "news": [
