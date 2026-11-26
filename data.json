@@ -1,6 +1,6 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/26 21:59",
+  "updated_at": "2026/11/26 23:04",
   "weather": {
     "text": "雪",
     "max": 6.4,
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1241145.45,
+    "total": 1238668.53,
     "purchaseTotal": 1117895.98,
-    "deltaYen": -3193.46,
-    "deltaPercent": -0.2566390855687379,
-    "unrealizedYen": -43059.53000000003,
-    "unrealizedPercent": -3.8518369124111196,
+    "deltaYen": -4256.92,
+    "deltaPercent": -0.34249198131714176,
+    "unrealizedYen": -45536.44999999995,
+    "unrealizedPercent": -4.073406722510976,
     "complete": true
   },
   "assets": [
@@ -828,11 +828,11 @@
       ],
       "news": [
         {
-          "title": "東京海上ホールディングス[8766]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月20日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "description": "東京海上ホールディングス[8766]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月20日(適時開示) ：日経会社情報DIGITAL",
+          "title": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "description": "東京海上ホールディングス[8766]：2027年3月期 第2四半期（中間期）決算参考資料 2026年11月19日(適時開示) ：日経会社情報DIGITAL",
           "source": "日本経済新聞",
-          "date": "2026/05/20",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CUk1MZnU2VWVLMS1nMG5vcGk2bXJYN2dhenFsQ1ZKMFRHbnlwT01IVThiNXBWMXdkRVYza3RIT1F3ZzZ1Mm8tQWFFYzFXWEUyU0Z0dGdGSk96OTZVb1pFWDk5d1ZIVEtYLXc?oc=5"
+          "date": "2026/11/19",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54SGZielR0VXdqTDJMMVBfVnJ1ajZZZlZJOTBLY252SjlVWFFDOFMtRm50TEs0Um1jR1NJVkpyamVocER0U3RvNm9NOHJreFpVMTFvTVNDeTNDNVoyZ1NUaFNJMlE3b25XWnc?oc=5"
         }
       ]
     },
@@ -1655,21 +1655,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 42313.0,
-      "previousClose": 42418.0,
-      "value": 569596.45,
-      "deltaYen": -1413.46,
-      "change": -0.24753642321655445,
-      "unrealizedYen": -30409.53,
-      "unrealizedPercent": -5.068204253791621,
-      "weekChange": -2.053240740740736,
-      "monthChange": -5.106526126934286,
+      "price": 42129.0,
+      "previousClose": 42313.0,
+      "value": 567119.53,
+      "deltaYen": -2476.92,
+      "change": -0.43485453643088423,
+      "unrealizedYen": -32886.44,
+      "unrealizedPercent": -5.481019474109304,
+      "weekChange": -2.1689153101270287,
+      "monthChange": -6.192384769539084,
       "intraday": [],
       "week": [
-        {
-          "label": "11/18",
-          "value": 43200.0
-        },
         {
           "label": "11/19",
           "value": 43063.0
@@ -1685,13 +1681,13 @@
         {
           "label": "11/25",
           "value": 42313.0
+        },
+        {
+          "label": "11/26",
+          "value": 42129.0
         }
       ],
       "month": [
-        {
-          "label": "10/27",
-          "value": 44590.0
-        },
         {
           "label": "10/28",
           "value": 44910.0
@@ -1767,15 +1763,19 @@
         {
           "label": "11/25",
           "value": 42313.0
+        },
+        {
+          "label": "11/26",
+          "value": 42129.0
         }
       ],
       "news": [
         {
-          "title": "米国株100％＋金100％へ投資、Wの上昇と分散効果を狙う「Tracers S&P500ゴールドプラス」の強みと注意点は!?（Finasee） - Yahoo!ニュース",
-          "description": "米国株100％＋金100％へ投資、Wの上昇と分散効果を狙う「Tracers S&P500ゴールドプラス」の強みと注意点は!?（Finasee）",
-          "source": "Yahoo!ニュース",
+          "title": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報 - Yahoo!ファイナンス",
+          "description": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報",
+          "source": "Yahoo!ファイナンス",
           "date": "2026/11/26",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tS1I5c1N3SUwyRjBRUmFET0tUT3M1TUpVaHUxSHpPX1o4N014UWdVSWw0TEw2TE5OZEh4TlBFUUlNNnZFbE9nWWpEQWNUVXpkcnN1dDEySUdZbXBQak1hdTlOc3psZFpXalJEc21EZXVlSzQzOWlIZ3FYNlBfSnM?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBCbC10TVdGVDhYZ0FBZEdYaVd5aVJNZmRkbE0yU1FFRVZFSmdDaVZMTzVvTUJrMkFjd2xvRmtfUk5ubTlKMHk4N2FZa0Q3RkVVdEV3OQ?oc=5"
         }
       ]
     }
