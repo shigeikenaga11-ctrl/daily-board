@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/26 23:04",
+  "updated_at": "2026/11/27 00:38",
   "weather": {
-    "text": "雪",
-    "max": 6.4,
-    "min": -1.9,
-    "rain": 100
+    "text": "くもり",
+    "max": 9.5,
+    "min": -2.3,
+    "rain": 46
   },
   "summary": {
     "label": "日本株評価額",
@@ -41,8 +41,8 @@
       "change": -1.2003693444136654,
       "unrealizedYen": -6750.0,
       "unrealizedPercent": -5.934065934065933,
-      "weekChange": -3.8202247191011285,
-      "monthChange": -2.0146520146520186,
+      "weekChange": -3.2603841000446665,
+      "monthChange": -0.8241758241758212,
       "intraday": [
         {
           "label": "09:05",
@@ -311,6 +311,10 @@
       ],
       "week": [
         {
+          "label": "11/18",
+          "value": 1119.5
+        },
+        {
           "label": "11/19",
           "value": 1112.5
         },
@@ -325,10 +329,6 @@
         {
           "label": "11/25",
           "value": 1083.0
-        },
-        {
-          "label": "11/26",
-          "value": 1070.0
         }
       ],
       "month": [
@@ -415,10 +415,6 @@
         {
           "label": "11/25",
           "value": 1083.0
-        },
-        {
-          "label": "11/26",
-          "value": 1070.0
         }
       ],
       "news": [
@@ -446,8 +442,8 @@
       "change": -1.0876881549636064,
       "unrealizedYen": -180.0,
       "unrealizedPercent": -0.15203115102407094,
-      "weekChange": 4.434624661826403,
-      "monthChange": 1.0772893167704911,
+      "weekChange": 2.804057824748152,
+      "monthChange": 2.1887804480427153,
       "intraday": [
         {
           "label": "09:05",
@@ -716,6 +712,10 @@
       ],
       "week": [
         {
+          "label": "11/18",
+          "value": 581.3
+        },
+        {
           "label": "11/19",
           "value": 566.0
         },
@@ -730,10 +730,6 @@
         {
           "label": "11/25",
           "value": 597.6
-        },
-        {
-          "label": "11/26",
-          "value": 591.1
         }
       ],
       "month": [
@@ -820,10 +816,6 @@
         {
           "label": "11/25",
           "value": 597.6
-        },
-        {
-          "label": "11/26",
-          "value": 591.1
         }
       ],
       "news": [
@@ -851,8 +843,8 @@
       "change": -0.2734363079071045,
       "unrealizedYen": -10850.0,
       "unrealizedPercent": -7.833933916332919,
-      "weekChange": -2.7798944714723994,
-      "monthChange": -4.489332319201322,
+      "weekChange": -5.220290923692838,
+      "monthChange": -4.227455409283786,
       "intraday": [
         {
           "label": "09:05",
@@ -1121,6 +1113,10 @@
       ],
       "week": [
         {
+          "label": "11/18",
+          "value": 270.1
+        },
+        {
           "label": "11/19",
           "value": 262.6
         },
@@ -1135,10 +1131,6 @@
         {
           "label": "11/25",
           "value": 256.0
-        },
-        {
-          "label": "11/26",
-          "value": 255.3
         }
       ],
       "month": [
@@ -1225,10 +1217,6 @@
         {
           "label": "11/25",
           "value": 256.0
-        },
-        {
-          "label": "11/26",
-          "value": 255.3
         }
       ],
       "news": [
@@ -1256,8 +1244,8 @@
       "change": 0.7738113403320312,
       "unrealizedYen": 5130.0,
       "unrealizedPercent": 3.4841094448397385,
-      "weekChange": 0.23683195365808984,
-      "monthChange": -4.02493825985788,
+      "weekChange": -1.292595174905442,
+      "monthChange": -4.761901466625718,
       "intraday": [
         {
           "label": "09:05",
@@ -1526,6 +1514,10 @@
       ],
       "week": [
         {
+          "label": "11/18",
+          "value": 170.2
+        },
+        {
           "label": "11/19",
           "value": 168.9
         },
@@ -1540,10 +1532,6 @@
         {
           "label": "11/25",
           "value": 168.0
-        },
-        {
-          "label": "11/26",
-          "value": 169.3
         }
       ],
       "month": [
@@ -1630,10 +1618,6 @@
         {
           "label": "11/25",
           "value": 168.0
-        },
-        {
-          "label": "11/26",
-          "value": 169.3
         }
       ],
       "news": [
@@ -1771,11 +1755,11 @@
       ],
       "news": [
         {
-          "title": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報 - Yahoo!ファイナンス",
-          "description": "S&P500/ゴールド・プラス・Manトレンドフォロー戦略【12312267】：基準価格・投資信託情報",
-          "source": "Yahoo!ファイナンス",
+          "title": "米国株100％＋金100％へ投資、Wの上昇と分散効果を狙う「Tracers S&P500ゴールドプラス」の強みと注意点は!?（Finasee） - Yahoo!ニュース",
+          "description": "米国株100％＋金100％へ投資、Wの上昇と分散効果を狙う「Tracers S&P500ゴールドプラス」の強みと注意点は!?（Finasee）",
+          "source": "Yahoo!ニュース",
           "date": "2026/11/26",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBCbC10TVdGVDhYZ0FBZEdYaVd5aVJNZmRkbE0yU1FFRVZFSmdDaVZMTzVvTUJrMkFjd2xvRmtfUk5ubTlKMHk4N2FZa0Q3RkVVdEV3OQ?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tS1I5c1N3SUwyRjBRUmFET0tUT3M1TUpVaHUxSHpPX1o4N014UWdVSWw0TEw2TE5OZEh4TlBFUUlNNnZFbE9nWWpEQWNUVXpkcnN1dDEySUdZbXBQak1hdTlOc3psZFpXalJEc21EZXVlSzQzOWlIZ3FYNlBfSnM?oc=5"
         }
       ]
     }
