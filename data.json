@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/27 18:27",
+  "updated_at": "2026/11/27 19:17",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雨",
+    "max": 6.9,
+    "min": -2.1,
+    "rain": 36
   },
   "summary": {
     "label": "日本株評価額",
@@ -1237,11 +1237,11 @@
       ],
       "news": [
         {
-          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
-          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
-          "source": "Car Watch",
-          "date": "2026/11/11",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
+          "title": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！ - Yahoo!ニュース",
+          "description": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！",
+          "source": "Yahoo!ニュース",
+          "date": "2026/11/25",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9oazVucVpVSGdLMnNLQ3F5cXlramU0MjVucU5Zdm52U0V6RGljOWs1MDVEeXU4NW5HcWdhSUhCNlVrNXFKb1RGSzhRVzBOUkpwVXUwODZRYnZOQ2JhVzdkMEdPNzJBamxOQVVoY1EyczliclZKUnlsRmI5MHVYTzA?oc=5"
         }
       ]
     },
