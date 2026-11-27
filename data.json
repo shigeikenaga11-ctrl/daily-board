@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/27 21:57",
+  "updated_at": "2026/11/27 23:02",
   "weather": {
-    "text": "取得できません",
-    "max": null,
-    "min": null,
-    "rain": null
+    "text": "雨",
+    "max": 7.7,
+    "min": -2.1,
+    "rain": 88
   },
   "summary": {
     "label": "日本株評価額",
@@ -17,12 +17,12 @@
   },
   "totalSummary": {
     "label": "総資産評価額",
-    "total": 1242438.53,
+    "total": 1243650.0699999998,
     "purchaseTotal": 1117895.98,
-    "deltaYen": 1293.08,
-    "deltaPercent": 0.10418440481734031,
-    "unrealizedYen": -41766.44999999995,
-    "unrealizedPercent": -3.7361660429264587,
+    "deltaYen": 4981.54,
+    "deltaPercent": 0.40216893215168714,
+    "unrealizedYen": -40554.91000000015,
+    "unrealizedPercent": -3.6277892331270523,
     "complete": true
   },
   "assets": [
@@ -1237,11 +1237,11 @@
       ],
       "news": [
         {
-          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
-          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
-          "source": "Car Watch",
-          "date": "2026/11/11",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
+          "title": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！ - Yahoo!ニュース",
+          "description": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！",
+          "source": "Yahoo!ニュース",
+          "date": "2026/11/25",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9oazVucVpVSGdLMnNLQ3F5cXlramU0MjVucU5Zdm52U0V6RGljOWs1MDVEeXU4NW5HcWdhSUhCNlVrNXFKb1RGSzhRVzBOUkpwVXUwODZRYnZOQ2JhVzdkMEdPNzJBamxOQVVoY1EyczliclZKUnlsRmI5MHVYTzA?oc=5"
         }
       ]
     },
@@ -1663,21 +1663,17 @@
       "qtyLabel": "134,615口",
       "cost": 44572,
       "purchaseValue": 600005.98,
-      "price": 42129.0,
-      "previousClose": 42313.0,
-      "value": 567119.53,
-      "deltaYen": -2476.92,
-      "change": -0.43485453643088423,
-      "unrealizedYen": -32886.44,
-      "unrealizedPercent": -5.481019474109304,
-      "weekChange": -2.1689153101270287,
-      "monthChange": -6.192384769539084,
+      "price": 42219.0,
+      "previousClose": 42129.0,
+      "value": 568331.07,
+      "deltaYen": 1211.54,
+      "change": 0.21362956633197427,
+      "unrealizedYen": -31674.91,
+      "unrealizedPercent": -5.279098985910429,
+      "weekChange": 0.02843130286445117,
+      "monthChange": -6.37349477745992,
       "intraday": [],
       "week": [
-        {
-          "label": "11/19",
-          "value": 43063.0
-        },
         {
           "label": "11/20",
           "value": 42207.0
@@ -1693,13 +1689,13 @@
         {
           "label": "11/26",
           "value": 42129.0
+        },
+        {
+          "label": "11/27",
+          "value": 42219.0
         }
       ],
       "month": [
-        {
-          "label": "10/28",
-          "value": 44910.0
-        },
         {
           "label": "10/29",
           "value": 45093.0
@@ -1775,6 +1771,10 @@
         {
           "label": "11/26",
           "value": 42129.0
+        },
+        {
+          "label": "11/27",
+          "value": 42219.0
         }
       ],
       "news": [
