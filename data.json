@@ -1,11 +1,11 @@
 {
   "poolCash": 166309,
-  "updated_at": "2026/11/27 23:02",
+  "updated_at": "2026/11/28 00:28",
   "weather": {
     "text": "雨",
-    "max": 7.7,
-    "min": -2.1,
-    "rain": 88
+    "max": 13.4,
+    "min": 3.0,
+    "rain": 100
   },
   "summary": {
     "label": "日本株評価額",
@@ -41,8 +41,8 @@
       "change": 1.1682242990654235,
       "unrealizedYen": -5500.0,
       "unrealizedPercent": -4.835164835164836,
-      "weekChange": 2.460955986748692,
-      "monthChange": -0.09229349330872605,
+      "weekChange": -3.8202247191011285,
+      "monthChange": -1.2459621596677461,
       "intraday": [
         {
           "label": "09:05",
@@ -311,6 +311,10 @@
       ],
       "week": [
         {
+          "label": "11/19",
+          "value": 1112.5
+        },
+        {
           "label": "11/20",
           "value": 1056.5
         },
@@ -325,10 +329,6 @@
         {
           "label": "11/26",
           "value": 1070.0
-        },
-        {
-          "label": "11/27",
-          "value": 1082.5
         }
       ],
       "month": [
@@ -415,10 +415,6 @@
         {
           "label": "11/26",
           "value": 1070.0
-        },
-        {
-          "label": "11/27",
-          "value": 1082.5
         }
       ],
       "news": [
@@ -446,8 +442,8 @@
       "change": 0.5582853009748812,
       "unrealizedYen": 480.0,
       "unrealizedPercent": 0.4054095294024493,
-      "weekChange": 2.9264111539502258,
-      "monthChange": 2.7307379009348542,
+      "weekChange": 4.434624661826403,
+      "monthChange": 2.1603872325334006,
       "intraday": [
         {
           "label": "09:05",
@@ -716,6 +712,10 @@
       ],
       "week": [
         {
+          "label": "11/19",
+          "value": 566.0
+        },
+        {
           "label": "11/20",
           "value": 577.5
         },
@@ -730,10 +730,6 @@
         {
           "label": "11/26",
           "value": 591.1
-        },
-        {
-          "label": "11/27",
-          "value": 594.4
         }
       ],
       "month": [
@@ -820,10 +816,6 @@
         {
           "label": "11/26",
           "value": 591.1
-        },
-        {
-          "label": "11/27",
-          "value": 594.4
         }
       ],
       "news": [
@@ -851,8 +843,8 @@
       "change": 1.8801434012987173,
       "unrealizedYen": -8450.0,
       "unrealizedPercent": -6.10108082905573,
-      "weekChange": -2.3281945075691146,
-      "monthChange": -0.8387273320003219,
+      "weekChange": -2.7798944714723994,
+      "monthChange": -2.6686942687683124,
       "intraday": [
         {
           "label": "09:00",
@@ -1125,6 +1117,10 @@
       ],
       "week": [
         {
+          "label": "11/19",
+          "value": 262.6
+        },
+        {
           "label": "11/20",
           "value": 266.3
         },
@@ -1139,10 +1135,6 @@
         {
           "label": "11/26",
           "value": 255.3
-        },
-        {
-          "label": "11/27",
-          "value": 260.1
         }
       ],
       "month": [
@@ -1229,19 +1221,15 @@
         {
           "label": "11/26",
           "value": 255.3
-        },
-        {
-          "label": "11/27",
-          "value": 260.1
         }
       ],
       "news": [
         {
-          "title": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！ - Yahoo!ニュース",
-          "description": "日産はどうやって「最大の市場」で巻き返したのか？ 「売れても儲からない」から一転、19か月連続成長！",
-          "source": "Yahoo!ニュース",
-          "date": "2026/11/25",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9oazVucVpVSGdLMnNLQ3F5cXlramU0MjVucU5Zdm52U0V6RGljOWs1MDVEeXU4NW5HcWdhSUhCNlVrNXFKb1RGSzhRVzBOUkpwVXUwODZRYnZOQ2JhVzdkMEdPNzJBamxOQVVoY1EyczliclZKUnlsRmI5MHVYTzA?oc=5"
+          "title": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に - Car Watch",
+          "description": "日産、2026年度上期決算 販売台数は減少ながら売上高8.8％増の6兆720億円、営業利益も黒字化して800億円に",
+          "source": "Car Watch",
+          "date": "2026/11/11",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DSXRVbjRrTlctVEF0eE1iX2tXN05KeWNoMXpwSHpRNVZJZFNwZzY2SU13dENsM2VjQmI4VmtaWElsTlhva3c0X2x3RldOclFaRzFMYlFGVm5SeDUwRjZjbzdKeGo?oc=5"
         }
       ]
     },
@@ -1260,8 +1248,8 @@
       "change": -0.35440227510799005,
       "unrealizedYen": 4590.0,
       "unrealizedPercent": 3.117357547825298,
-      "weekChange": 0.5963029327356706,
-      "monthChange": -3.0459787653780546,
+      "weekChange": 0.23683195365808984,
+      "monthChange": -2.7011476714035587,
       "intraday": [
         {
           "label": "09:00",
@@ -1534,6 +1522,10 @@
       ],
       "week": [
         {
+          "label": "11/19",
+          "value": 168.9
+        },
+        {
           "label": "11/20",
           "value": 167.7
         },
@@ -1548,10 +1540,6 @@
         {
           "label": "11/26",
           "value": 169.3
-        },
-        {
-          "label": "11/27",
-          "value": 168.7
         }
       ],
       "month": [
@@ -1638,10 +1626,6 @@
         {
           "label": "11/26",
           "value": 169.3
-        },
-        {
-          "label": "11/27",
-          "value": 168.7
         }
       ],
       "news": [
